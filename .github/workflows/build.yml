@@ -1,10 +1,17 @@
 name: SwiftPackage 
 
-on: [push]
+on:
+  push:
+    branches:
+      - release/**
+env:
+  api_url: https://api.splatnet3.com/v3/authorize/version 
 
 jobs:
   build:
     runs-on: macos-latest
+    needs:
+      - version
     steps:
     - uses: actions/checkout@v1
     # Select Xcode version
@@ -28,16 +35,21 @@ jobs:
             -destination 'generic/platform=iOS'
             clean
   release:
-    needs:
-      - build
+    # needs:
+    #   - build
     name: Release
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
+      - name: Version
+        id: version
+        run: echo "::set-output name=text::$(curl -s ${{ env.api_url }} | jq -r '.version')"
+      - name: Web Version
+        id: web_version
+        run: echo "::set-output name=text::$(curl -s ${{ env.api_url }} | jq -r '.web_version')"
+      - name: Check
+        run: echo ${{ steps.version.outputs.version }} ${{ steps.web_version.outputs.version }}
       - name: Checkout code
         uses: actions/checkout@master
-      - name: Set time
-        id: version
-        run: echo "::set-output name=text::ver$(TZ=Asia/Tokyo date +%y%m%d%H%M)"
       - name: Create
         id: create_release
         uses: actions/create-release@v1
@@ -45,6 +57,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.version.outputs.text }}
-          release_name: ${{ steps.version.outputs.text }}
+          release_name: ${{ steps.web_version.outputs.text }}
           draft: false
           prerelease: false
