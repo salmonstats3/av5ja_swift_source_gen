@@ -11,8 +11,6 @@ env:
 jobs:
   build:
     runs-on: macos-latest
-    needs:
-      - version
     steps:
     - uses: actions/checkout@v1
     # Select Xcode version
