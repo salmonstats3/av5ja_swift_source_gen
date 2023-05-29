@@ -18,13 +18,14 @@ jobs:
             -scheme SplatNet3
             -sdk iphonesimulator
             -configuration Debug
+            -destination 'generic/platform=iOS'
             build
       # Run unit test
     - name: Run tests
       run: xcodebuild
             -scheme SplatNet3
             -sdk iphonesimulator
-            -destination 'platform=iOS Simulator,name=iPhone 13'
+            -destination 'generic/platform=iOS'
             clean test
   release:
     needs:
