@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - release/**
+      - develop/**
 env:
   api_url: https://api.splatnet3.com/v3/authorize/version 
 
