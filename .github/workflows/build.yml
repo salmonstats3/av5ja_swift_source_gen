@@ -15,7 +15,7 @@ jobs:
       # Run build
     - name: Build
       run: xcodebuild
-            -scheme Swift-github-actions
+            -scheme SplatNet3
             -sdk iphonesimulator
             -configuration Debug
             build
