@@ -11,7 +11,7 @@ import UIKit
 public struct QRReaderView: UIViewControllerRepresentable {
     @Environment(\.dismiss) var dismiss
     let reader: QRCaptureSession
-    let session: SP3Session = SP3Session()
+    let session = SP3Session()
     let view: UIView
 
     public init() {
@@ -23,7 +23,7 @@ public struct QRReaderView: UIViewControllerRepresentable {
                     Task(priority: .utility, operation: {
                         do {
                             let response = try await session.getCheckInWithQRCodeMutation(eventId: code)
-                        } catch(let error) {
+                        } catch {
                             SwiftyLogger.error(error)
                         }
                         UIApplication.shared.presentedViewController?.dismiss(animated: true)
@@ -32,12 +32,12 @@ public struct QRReaderView: UIViewControllerRepresentable {
             })
         }
     }
-    
+
     public func makeCoordinator() -> Coordinator {
     }
 
     public func makeUIViewController(context: Context) -> UIViewController {
-        let controller: UIViewController = UIViewController()
+        let controller = UIViewController()
         controller.view = self.view
         self.reader.startRunning()
         return controller

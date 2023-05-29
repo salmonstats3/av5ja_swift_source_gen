@@ -17,7 +17,7 @@ extension UIDevice {
     /// ビルド番号
     public var buildVersion: Int {
         guard let bundleVersion: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String,
-              let bundleVersion: Int = Int(bundleVersion)
+              let bundleVersion = Int(bundleVersion)
         else {
             return 0
         }
@@ -35,7 +35,6 @@ extension UIDevice {
 
     /// アプリバージョンをUInt64に変換した数値
     public var versionId: UInt64 {
-        UInt64(version.split(separator: ".").compactMap({ Int($0) }).map({ String(format: "%02d", $0)}).joined(), radix: 16) ?? 0
+        UInt64(version.split(separator: ".").compactMap({ Int($0) }).map({ String(format: "%02d", $0) }).joined(), radix: 16) ?? 0
     }
 }
-

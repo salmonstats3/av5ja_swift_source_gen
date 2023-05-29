@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class DetailFestRefethQuery: GraphQL {
-	public typealias ResponseType = DetailFestRefethQuery.Response
+	typealias ResponseType = DetailFestRefethQuery.Response
 	var hash: SHA256Hash = .DetailFestRefethQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

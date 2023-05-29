@@ -19,11 +19,11 @@ public struct IntegerRawValue<T: RawRepresentable>: Codable where T.RawValue == 
         let container = try decoder.singleValueContainer()
         let stringValue: String = try container.decode(String.self)
 
-        guard let data: Data = Data(base64Encoded: stringValue),
-              let stringValue: String = String(data: data, encoding: .utf8),
+        guard let data = Data(base64Encoded: stringValue),
+              let stringValue = String(data: data, encoding: .utf8),
               let capture: String = stringValue.capture(pattern: "-([0-9-]*)$", group: 1),
-              let intValue: Int = Int(capture),
-              let value: T = T(rawValue: intValue)
+              let intValue = Int(capture),
+              let value = T(rawValue: intValue)
         else {
             throw DecodingError.valueNotFound(T.self, .init(codingPath: container.codingPath, debugDescription: "Given value \(stringValue) is not associated for \(T.self)"))
         }
@@ -32,7 +32,7 @@ public struct IntegerRawValue<T: RawRepresentable>: Codable where T.RawValue == 
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        let hash: String = String(self.wrappedValue.rawValue)
+        let hash = String(self.wrappedValue.rawValue)
         try container.encode(hash)
     }
 }

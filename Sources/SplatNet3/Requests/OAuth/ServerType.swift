@@ -10,15 +10,12 @@ import Foundation
 public enum ServerType: String, CaseIterable, Identifiable, Codable {
     public var id: String { rawValue }
     case Imink  = "https://api.imink.app"
-    case Flapg  = "https://flapg.com"
     case Nxapi  = "https://nxapi-znca-api.fancy.org.uk"
 
     var path: String {
         switch self {
         case .Imink:
             return "f"
-        case .Flapg:
-            return "ika/api/login-main"
         case .Nxapi:
             return "api/znca/f"
         }

@@ -13,7 +13,6 @@ extension Locale {
     }
 
     public static var languageSP3Locale: String {
-        return NSLocalizedString(LocalizedType.CoopHistory_Locale.rawValue, bundle: .module, comment: "")
+        NSLocalizedString(LocalizedType.CoopHistory_Locale.rawValue, bundle: .module, comment: "")
     }
 }
-

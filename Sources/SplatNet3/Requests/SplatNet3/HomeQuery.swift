@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class HomeQuery: GraphQL {
-	public typealias ResponseType = HomeQuery.Response
+	typealias ResponseType = HomeQuery.Response
 	var hash: SHA256Hash = .HomeQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

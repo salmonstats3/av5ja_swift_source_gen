@@ -30,14 +30,14 @@ enum NSScriptMessage {
     case sourcePhotoLibrary
 
     init?(rawValue: Any?) {
-        let decoder: SPDecoder = SPDecoder()
+        let decoder = SPDecoder()
         guard let rawValue: String = rawValue as? String,
               let data: Data = rawValue.data(using: .utf8),
-              let script: NSScriptMessageName = NSScriptMessageName.from(rawValue: rawValue)
+              let script = NSScriptMessageName.from(rawValue: rawValue)
         else {
             return nil
         }
-        
+
         switch script {
         case .closeWebView:
             self = .closeWebView
@@ -130,7 +130,7 @@ enum NSScriptMessageName: String, CaseIterable {
     case sourcePhotoLibrary = #"{"source":"photo_library"}"#
 
     static func from(rawValue: String) -> Self? {
-        if let script: Self = Self(rawValue: rawValue) {
+        if let script = Self(rawValue: rawValue) {
             return script
         }
 
@@ -139,7 +139,7 @@ enum NSScriptMessageName: String, CaseIterable {
             return nil
         }
 
-        let decoder: SPDecoder = SPDecoder()
+        let decoder = SPDecoder()
         if let _ = try? decoder.decode(ShareURL.self, from: data) {
             return .invokeNativeShareUrl
         }

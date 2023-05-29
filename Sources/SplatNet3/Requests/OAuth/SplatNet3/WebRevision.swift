@@ -6,8 +6,8 @@
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 /// Revision
 public class WebRevision: RequestType {
@@ -36,8 +36,7 @@ public class WebRevision: RequestType {
 
         init(context: String) {
             if let version: String = context.capture(pattern: #"`(\d{1}\.\d{1}\.\d{1})-"#, group: 1),
-               let revision: String = context.capture(pattern: #"REACT_APP_REVISION:"([a-f0-9]{8})"#, group: 1)
-            {
+               let revision: String = context.capture(pattern: #"REACT_APP_REVISION:"([a-f0-9]{8})"#, group: 1) {
                 self.version = version
                 self.revision = revision
             } else {

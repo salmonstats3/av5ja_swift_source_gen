@@ -20,9 +20,9 @@ public struct UserInfo: SPCredential {
     /// ID
     var nsaid: String
     /// イカスミセッション
-    public internal(set) var iksmSession: String? = nil
+    public internal(set) var iksmSession: String?
     /// イカリング3トークン
-    public internal(set) var bulletToken: String? = nil
+    public internal(set) var bulletToken: String?
     /// セッショントークン
     var sessionToken: String
     /// GameServiceToken
@@ -33,7 +33,7 @@ public struct UserInfo: SPCredential {
     var expiration: Date
     /// リフレッシュが必要かどうか
     public var requiresRefresh: Bool {
-        return expiration <= Date(timeIntervalSinceNow: 0)
+        expiration <= Date(timeIntervalSinceNow: 0)
     }
 
     var requiresGameWebTokenRefresh: Bool {

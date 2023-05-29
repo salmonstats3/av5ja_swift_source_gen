@@ -1,21 +1,12 @@
-import XCTest
 @testable import Alamofire
 @testable import SplatNet3
+import XCTest
 
 final class SplatNet3Tests: XCTestCase {
-    let decoder: SPDecoder = SPDecoder()
+    private let decoder = SPDecoder()
 
-    func getListContents(_ type: JSONType) -> [URL] {
+    private func getListContents(_ type: JSONType) -> [URL] {
         return Bundle.module.urls(forResourcesWithExtension: "json", subdirectory: "JSON/\(type.rawValue)") ?? []
-    }
-
-    func testAssets() async throws {
-        do {
-            let session: SplatNet3.Session = SplatNet3.Session()
-//            try await session.getAssetsFromSplatNet3()
-        } catch (let error) {
-            print(error)
-        }
     }
 
     func testHistoryRecord() throws {
@@ -26,7 +17,7 @@ final class SplatNet3Tests: XCTestCase {
                 let response = try decoder.decode(HistoryRecordQuery.Response.self, from: data)
 //                dump(response)
             }
-        } catch (let error) {
+        } catch {
             SwiftyLogger.error(error.localizedDescription)
             throw error
         }
@@ -40,7 +31,7 @@ final class SplatNet3Tests: XCTestCase {
                 let response = try decoder.decode(CoopHistoryQuery.Response.self, from: data)
 //                dump(response)
             }
-        } catch (let error) {
+        } catch {
             SwiftyLogger.error(error.localizedDescription)
             throw error
         }
@@ -64,7 +55,7 @@ final class SplatNet3Tests: XCTestCase {
                     })
                 })
             }
-        } catch (let error) {
+        } catch {
             SwiftyLogger.error(error.localizedDescription)
             throw error
         }
@@ -79,7 +70,7 @@ final class SplatNet3Tests: XCTestCase {
                     let data: Data = try Data(contentsOf: path)
                 })
             }
-        } catch (let error) {
+        } catch {
             print(error)
             SwiftyLogger.error(error.localizedDescription)
             throw error
@@ -97,8 +88,7 @@ final class SplatNet3Tests: XCTestCase {
                     let data: Data = try Data(contentsOf: path)
                     let response: StageScheduleQuery.Response = try decoder.decode(StageScheduleQuery.Response.self, from: data)
                 })
-            } catch (let error) {
-                SwiftyLogger.info(path)
+            } catch {
                 SwiftyLogger.error(error)
                 throw error
             }
@@ -124,7 +114,7 @@ final class SplatNet3Tests: XCTestCase {
                     })
                 })
             }
-        } catch (let error) {
+        } catch {
             SwiftyLogger.error(error.localizedDescription)
             throw error
         }

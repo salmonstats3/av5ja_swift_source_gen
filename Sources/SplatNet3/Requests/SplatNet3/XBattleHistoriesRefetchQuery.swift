@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class XBattleHistoriesRefetchQuery: GraphQL {
-	public typealias ResponseType = XBattleHistoriesRefetchQuery.Response
+	typealias ResponseType = XBattleHistoriesRefetchQuery.Response
 	var hash: SHA256Hash = .XBattleHistoriesRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

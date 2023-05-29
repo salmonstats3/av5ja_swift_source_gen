@@ -5,13 +5,13 @@
 //  Created by devonly on 2023/03/16.
 //
 
-import Foundation
 import AVFoundation
+import Foundation
 import UIKit
 
 class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate {
     /// 処理を実行するキュー
-    private let queue: DispatchQueue = DispatchQueue(label: "QRCaptureSessioin")
+    private let queue = DispatchQueue(label: "QRCaptureSessioin")
     /// QRコードを読み取ったときに呼ばれる
     internal var onDidFinish: ((String) -> Void) = { _ in }
 
@@ -25,11 +25,10 @@ class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate
             return
         }
 
-        let metadataOutput: AVCaptureMetadataOutput = AVCaptureMetadataOutput()
+        let metadataOutput = AVCaptureMetadataOutput()
 
         if self.canAddInput(deviceInput),
-           self.canAddOutput(metadataOutput)
-        {
+           self.canAddOutput(metadataOutput) {
             self.addInput(deviceInput)
             self.addOutput(metadataOutput)
 
@@ -46,7 +45,7 @@ class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
         case .denied:
-            let alert: UIAlertController = UIAlertController(title: LocalizedType.QRCodeReader_Title.localized, message: LocalizedType.Error_ErrorOccurred.localized, preferredStyle: .alert)
+            let alert = UIAlertController(title: LocalizedType.QRCodeReader_Title.localized, message: LocalizedType.Error_ErrorOccurred.localized, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: LocalizedType.Common_Decide.localized, style: .default))
             UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
         case .restricted:
@@ -94,7 +93,7 @@ class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate
 
 class _QRReaderView: UIView {
     private let session: QRCaptureSession
-    private let previewLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer()
+    private let previewLayer = AVCaptureVideoPreviewLayer()
 
     /// イニシャライザ
     init(session: QRCaptureSession) {

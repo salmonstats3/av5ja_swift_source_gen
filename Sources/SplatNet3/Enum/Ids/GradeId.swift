@@ -5,8 +5,8 @@
 //  Created by devonly on 2022/11/25.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 public enum GradeId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Apprentice
@@ -23,7 +23,7 @@ public enum GradeId: Int, UnsafeRawRepresentable {
     case Eggsecutive_VP     = 8
 
     public var description: String {
-        return NSLocalizedString("CoopGrade_Grade_0\(rawValue)", bundle: .module, comment: "")
+        NSLocalizedString("CoopGrade_Grade_0\(rawValue)", bundle: .module, comment: "")
     }
 }
 
@@ -34,7 +34,7 @@ extension GradeId: Plottable {
     }
 
     public init?(primitivePlottable: String) {
-        guard let rawValue: Int = Int(primitivePlottable) else {
+        guard let rawValue = Int(primitivePlottable) else {
             return nil
         }
         self.init(rawValue: rawValue)

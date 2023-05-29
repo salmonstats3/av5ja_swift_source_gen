@@ -9,7 +9,7 @@ import Foundation
 import LinkPresentation
 
 class CustomShareItem: NSObject, UIActivityItemSource {
-    private let metadata: LPLinkMetadata = LPLinkMetadata()
+    private let metadata = LPLinkMetadata()
 
     init(content: ShareURL) {
         self.metadata.title = "Salmonia3+"
@@ -24,14 +24,14 @@ class CustomShareItem: NSObject, UIActivityItemSource {
     }
 
     func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
-        return ""
+        ""
     }
 
     func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
-        return activityViewControllerPlaceholderItem(activityViewController)
+        activityViewControllerPlaceholderItem(activityViewController)
     }
 
     func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
-        return metadata
+        metadata
     }
 }

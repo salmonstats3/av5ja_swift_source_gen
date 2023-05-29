@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class ChallengeRefetchQuery: GraphQL {
-	public typealias ResponseType = ChallengeRefetchQuery.Response
+	typealias ResponseType = ChallengeRefetchQuery.Response
 	var hash: SHA256Hash = .ChallengeRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

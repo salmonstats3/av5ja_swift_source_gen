@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class DownloadSearchReplayQuery: GraphQL {
-	public typealias ResponseType = DownloadSearchReplayQuery.Response
+	typealias ResponseType = DownloadSearchReplayQuery.Response
 	var hash: SHA256Hash = .DownloadSearchReplayQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

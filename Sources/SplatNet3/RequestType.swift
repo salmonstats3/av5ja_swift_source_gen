@@ -40,7 +40,7 @@ public extension RequestType {
     /// URLリクエストに変換する
     func asURLRequest() throws -> URLRequest {
         // swiftlint:disable:next force_unwrapping
-        let url: URL = URL(unsafeString: baseURL.appendingPathComponent(path).absoluteString.removingPercentEncoding!)
+        let url = URL(unsafeString: baseURL.appendingPathComponent(path).absoluteString.removingPercentEncoding!)
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.timeoutInterval = TimeInterval(10)
@@ -54,4 +54,3 @@ public extension RequestType {
         return request
     }
 }
-

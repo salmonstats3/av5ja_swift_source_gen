@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class WeaponRecordsRefetchQuery: GraphQL {
-	public typealias ResponseType = WeaponRecordsRefetchQuery.Response
+	typealias ResponseType = WeaponRecordsRefetchQuery.Response
 	var hash: SHA256Hash = .WeaponRecordsRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

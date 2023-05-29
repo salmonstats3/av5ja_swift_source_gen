@@ -14,7 +14,7 @@ class AccessToken: RequestType {
     typealias ResponseType = AccessToken.Response
 
     var method: HTTPMethod = .post
-    var baseURL: URL = URL(unsafeString: "https://accounts.nintendo.com/")
+    var baseURL = URL(unsafeString: "https://accounts.nintendo.com/")
     var path: String = "connect/1.0.0/api/token"
     var parameters: Parameters?
     //  swiftlint:disable:next discouraged_optional_collection
@@ -25,7 +25,7 @@ class AccessToken: RequestType {
         self.parameters = [
             "client_id": "71b963c1b7b6d119",
             "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer-session-token",
-            "session_token": sessionToken,
+            "session_token": sessionToken
         ]
     }
 

@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class CatalogQuery: GraphQL {
-	public typealias ResponseType = CatalogQuery.Response
+	typealias ResponseType = CatalogQuery.Response
 	var hash: SHA256Hash = .CatalogQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

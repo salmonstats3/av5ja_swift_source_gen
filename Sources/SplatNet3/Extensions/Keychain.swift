@@ -10,11 +10,11 @@ import Foundation
 import KeychainAccess
 
 extension Keychain {
-    static private let xWebVersion: String = "X-Web-View-Ver"
-    static private let xProductVersion: String = "X-ProductVersion"
-    static private let useSalmonStats: String = "SalmonStats"
-    static private let useEphemeralSession: String = "prefersEphemeralWebBrowserSession"
-    static private let primaryServer: String = "primaryFCalculationServer"
+    private static let xWebVersion: String = "X-Web-View-Ver"
+    private static let xProductVersion: String = "X-ProductVersion"
+    private static let useSalmonStats: String = "SalmonStats"
+    private static let useEphemeralSession: String = "prefersEphemeralWebBrowserSession"
+    private static let primaryServer: String = "primaryFCalculationServer"
 
     /// X-Web-View-Ver
     var version: String {
@@ -48,7 +48,7 @@ extension Keychain {
     var primaryServer: ServerType {
         get {
             guard let rawValue: String = try? get(Keychain.primaryServer),
-                  let server: ServerType = ServerType(rawValue: rawValue)
+                  let server = ServerType(rawValue: rawValue)
             else {
                 return ServerType.Imink
             }
@@ -62,7 +62,7 @@ extension Keychain {
     /// SalmonStats
     var useSalmonStats: Bool {
         get {
-            let decoder: JSONDecoder = JSONDecoder()
+            let decoder = JSONDecoder()
             guard let data: Data = try? getData(Keychain.useSalmonStats),
                   let rawValue: Bool = try? decoder.decode(Bool.self, from: data)
             else {
@@ -71,7 +71,7 @@ extension Keychain {
             return rawValue
         }
         set {
-            let encoder: JSONEncoder = JSONEncoder()
+            let encoder = JSONEncoder()
             guard let data: Data = try? encoder.encode(newValue)
             else {
                 return
@@ -83,7 +83,7 @@ extension Keychain {
     /// SalmonStats
     var useEphemeralSession: Bool {
         get {
-            let decoder: JSONDecoder = JSONDecoder()
+            let decoder = JSONDecoder()
             guard let data: Data = try? getData(Keychain.useEphemeralSession),
                   let rawValue: Bool = try? decoder.decode(Bool.self, from: data)
             else {
@@ -92,7 +92,7 @@ extension Keychain {
             return rawValue
         }
         set {
-            let encoder: JSONEncoder = JSONEncoder()
+            let encoder = JSONEncoder()
             guard let data: Data = try? encoder.encode(newValue)
             else {
                 return
@@ -104,7 +104,7 @@ extension Keychain {
     /// アカウント書き込み
     @discardableResult
     func set(_ account: UserInfo?) -> UserInfo? {
-        if let account = account {
+        if let account {
             try? set(try account.asData(), key: Bundle.main.bundleIdentifier!)
         }
         return account
@@ -129,7 +129,7 @@ extension Keychain {
 
     /// アカウント取得
     func get() -> UserInfo? {
-        let decoder: JSONDecoder = JSONDecoder()
+        let decoder = JSONDecoder()
 
         guard let data: Data = try? getData(Bundle.main.bundleIdentifier!) else {
             return nil
@@ -137,7 +137,7 @@ extension Keychain {
 
         do {
             return try decoder.decode(UserInfo.self, from: data)
-        } catch (let error) {
+        } catch {
             return nil
         }
     }

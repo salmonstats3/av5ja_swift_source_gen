@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//struct FullScreen<Content: View>: UIViewControllerRepresentable {
+// struct FullScreen<Content: View>: UIViewControllerRepresentable {
 //    @Binding var isPresented: Bool
 //    let content: () -> Content
 //    let transitionStyle: UIModalTransitionStyle
@@ -24,7 +24,7 @@ import SwiftUI
 //
 //    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
 //    }
-//}
+// }
 
 struct FullScreen<Content: View>: UIViewControllerRepresentable {
     @Binding var isPresented: Bool
@@ -54,7 +54,7 @@ struct FullScreen<Content: View>: UIViewControllerRepresentable {
     }
 
     func makeUIViewController(context: Context) -> ViewController<Content> {
-        return ViewController(
+        ViewController(
             coordinator: context.coordinator,
             transitionStyle: transitionStyle,
             presentationStyle: presentationStyle,
@@ -153,7 +153,7 @@ struct FullScreen<Content: View>: UIViewControllerRepresentable {
 
         // 表示
         func present() {
-            let hosting: UIHostingController = UIHostingController(rootView: content())
+            let hosting = UIHostingController(rootView: content())
             // Hostingの設定
             hosting.isModalInPresentation = isModalInPresentation
             hosting.modalPresentationStyle = presentationStyle
@@ -163,7 +163,7 @@ struct FullScreen<Content: View>: UIViewControllerRepresentable {
 
             if !self.isModalInPresentation {
                 // 個別の設定
-                let gesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+                let gesture = UITapGestureRecognizer(target: self, action: #selector(tapped))
                 gesture.delegate = self
                 hosting.view.addGestureRecognizer(gesture)
             }
@@ -179,4 +179,3 @@ struct FullScreen<Content: View>: UIViewControllerRepresentable {
         }
     }
 }
-

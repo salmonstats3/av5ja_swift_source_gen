@@ -33,6 +33,22 @@ public class SPAssetData<T: RawRepresentable>: Codable where T: Codable, T.RawVa
     let data: Data
 }
 
+public struct AssetData {
+    let key: String
+    let data: Data
+
+    init?(url: URL, data: Data) {
+        let ext: String = url.pathExtension
+        if let filename: String = url.lastPathComponent.capture(pattern: #"/media/(.*?)\."#, group: 1) {
+            self.key = "\(filename).\(ext)"
+            self.data = data
+        } else {
+            self.key = url.lastPathComponent
+            self.data = data
+        }
+    }
+}
+
 extension SPAssetType: Hashable, Equatable {
     public static func == (lhs: SPAssetType<T>, rhs: SPAssetType<T>) -> Bool {
         lhs.key == rhs.key

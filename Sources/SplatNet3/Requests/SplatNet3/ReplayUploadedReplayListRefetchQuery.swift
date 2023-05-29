@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class ReplayUploadedReplayListRefetchQuery: GraphQL {
-	public typealias ResponseType = ReplayUploadedReplayListRefetchQuery.Response
+	typealias ResponseType = ReplayUploadedReplayListRefetchQuery.Response
 	var hash: SHA256Hash = .ReplayUploadedReplayListRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

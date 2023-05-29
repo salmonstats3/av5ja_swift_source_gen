@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class VotesUpdateFestVoteMutation: GraphQL {
-	public typealias ResponseType = VotesUpdateFestVoteMutation.Response
+	typealias ResponseType = VotesUpdateFestVoteMutation.Response
 	var hash: SHA256Hash = .VotesUpdateFestVoteMutation
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

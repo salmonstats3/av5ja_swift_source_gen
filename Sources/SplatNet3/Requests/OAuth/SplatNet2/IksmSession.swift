@@ -23,7 +23,7 @@ class IksmSession: RequestType {
     init(accessToken: String) {
         self.headers = [
             "Cookie": "iksm_session=",
-            "X-GameWebToken": accessToken,
+            "X-GameWebToken": accessToken
         ]
     }
 
@@ -31,8 +31,8 @@ class IksmSession: RequestType {
         let iksmSession: String
 
         init(headers: [String: String]?) throws {
-            let url: URL = URL(unsafeString: "https://app.splatoon2.nintendo.net/")
-            guard let headers = headers,
+            let url = URL(unsafeString: "https://app.splatoon2.nintendo.net/")
+            guard let headers,
                   let iksmSession = HTTPCookie.cookies(withResponseHeaderFields: headers, for: url).first?.value
             else {
                 throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "No iksm session is included."))

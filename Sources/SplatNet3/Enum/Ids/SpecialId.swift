@@ -10,20 +10,20 @@ import Foundation
 public enum SpecialId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .SpRandomGreen
 	public var id: Int { rawValue }
-    
+
     case SpRandomGreen = -1
 	case SpUltraShot = 1
-	case SpNiceBall_Coop = 20006
-	case SpShockSonar_Coop = 20007
-	case SpMicroLaser_Coop = 20009
-	case SpJetpack_Coop = 20010
-	case SpChariot_Coop = 20012
-	case SpSkewer_Coop = 20013
-	case SpTripleTornado_Coop = 20014
-	case SpSuperLanding_Coop = 20101
+	case SpNiceBall_Coop = 20_006
+	case SpShockSonar_Coop = 20_007
+	case SpMicroLaser_Coop = 20_009
+	case SpJetpack_Coop = 20_010
+	case SpChariot_Coop = 20_012
+	case SpSkewer_Coop = 20_013
+	case SpTripleTornado_Coop = 20_014
+	case SpSuperLanding_Coop = 20_101
 
     public static var allCases: [SpecialId] {
-        return [
+        [
             .SpNiceBall_Coop,
             .SpShockSonar_Coop,
             .SpMicroLaser_Coop,

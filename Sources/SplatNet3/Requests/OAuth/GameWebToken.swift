@@ -14,7 +14,7 @@ class GameWebToken: RequestType {
     typealias ResponseType = GameWebToken.Response
 
     var method: HTTPMethod = .post
-    var baseURL: URL = URL(unsafeString: "https://api-lp1.znc.srv.nintendo.net/")
+    var baseURL = URL(unsafeString: "https://api-lp1.znc.srv.nintendo.net/")
     var path: String = "v2/Game/GetWebServiceToken"
     var parameters: Parameters?
     //  swiftlint:disable:next discouraged_optional_collection
@@ -24,7 +24,7 @@ class GameWebToken: RequestType {
         self.headers = [
             "X-Platform": "Android",
             "X-ProductVersion": "\(version.version)",
-            "Authorization": "Bearer \(accessToken.result.webApiServerCredential.accessToken)",
+            "Authorization": "Bearer \(accessToken.result.webApiServerCredential.accessToken)"
         ]
         self.parameters = [
             "parameter": [
@@ -32,8 +32,8 @@ class GameWebToken: RequestType {
                 "id": contentId.rawValue,
                 "registrationToken": accessToken.result.webApiServerCredential.accessToken,
                 "timestamp": imink.timestamp,
-                "requestId": imink.requestId,
-            ],
+                "requestId": imink.requestId
+            ]
         ]
     }
 

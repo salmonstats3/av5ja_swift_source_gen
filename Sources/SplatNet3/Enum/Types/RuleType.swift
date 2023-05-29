@@ -21,7 +21,7 @@ public enum RuleType: String, CaseIterable, Codable {
             let rawValue: String = try container.decode(String.self)
             return rawValue == "CONTEST" ? "TEAM_CONTEST" : rawValue
         }()
-        guard let rule: RuleType = RuleType(rawValue: rawValue)
+        guard let rule = RuleType(rawValue: rawValue)
         else {
             throw DecodingError.valueNotFound(RuleType.self, .init(codingPath: container.codingPath, debugDescription: "\(rawValue) is not associated of RuleType"))
         }

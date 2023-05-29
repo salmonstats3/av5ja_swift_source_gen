@@ -6,8 +6,8 @@
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 public protocol GraphQL: RequestType {
     var hash: SHA256Hash { get }
@@ -28,7 +28,7 @@ public extension GraphQL {
         "api/graphql"
     }
 
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         nil
     }
 
@@ -38,7 +38,7 @@ public extension GraphQL {
 
     func asURLRequest() throws -> URLRequest {
         // swiftlint:disable:next force_unwrapping
-        let url: URL = URL(unsafeString: baseURL.appendingPathComponent(path).absoluteString.removingPercentEncoding!)
+        let url = URL(unsafeString: baseURL.appendingPathComponent(path).absoluteString.removingPercentEncoding!)
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.timeoutInterval = TimeInterval(10)

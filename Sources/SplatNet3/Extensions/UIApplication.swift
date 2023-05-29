@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import UIKit
 import SwiftUI
+import UIKit
 
 extension UIApplication {
 //    /// UIKitのコンポーネントをSwiftUIに変換して表示する
@@ -83,9 +83,9 @@ extension UIApplication {
 
     /// ロード画面を表示して処理を実行する
     public func startAnimating(completion: @escaping () -> Void) {
-        let controller: UIViewController = UIViewController(nibName: nil, bundle: nil)
+        let controller = UIViewController(nibName: nil, bundle: nil)
 
-        let progress: UIActivityIndicatorView = UIActivityIndicatorView(style: .medium)
+        let progress = UIActivityIndicatorView(style: .medium)
         progress.overrideUserInterfaceStyle = .dark
         progress.hidesWhenStopped = true
         progress.startAnimating()
@@ -99,10 +99,10 @@ extension UIApplication {
         UIApplication.shared.presentedViewController?.dismiss(animated: true)
     }
 
-    public func startAnimatingWithAsync(completion: @escaping @Sendable () async throws -> Void) async throws -> Void {
-        let controller: UIViewController = UIViewController(nibName: nil, bundle: nil)
+    public func startAnimatingWithAsync(completion: @escaping @Sendable () async throws -> Void) async throws {
+        let controller = UIViewController(nibName: nil, bundle: nil)
 
-        let progress: UIActivityIndicatorView = UIActivityIndicatorView(style: .medium)
+        let progress = UIActivityIndicatorView(style: .medium)
         progress.overrideUserInterfaceStyle = .dark
         progress.hidesWhenStopped = true
         progress.startAnimating()
@@ -116,14 +116,14 @@ extension UIApplication {
         do {
             try await completion()
             UIApplication.shared.presentedViewController?.dismiss(animated: true)
-        } catch(let error) {
+        } catch {
             UIApplication.shared.presentedViewController?.dismiss(animated: true)
             throw error
         }
     }
 
     public func authorize(sessionToken: String, contentId: ContentId) {
-        let hosting: UIHostingController = UIHostingController(rootView: _SignInView(sessionToken: sessionToken))
+        let hosting = UIHostingController(rootView: _SignInView(sessionToken: sessionToken))
         hosting.modalPresentationStyle = .overFullScreen
         hosting.modalTransitionStyle = .coverVertical
         hosting.overrideUserInterfaceStyle = .dark
@@ -137,14 +137,13 @@ extension UIApplication {
     public func popToRootView() {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let rootViewController = windowScene.windows.first(where: { $0.isKeyWindow })?.rootViewController,
-           let navigationController = findNavigationController(rootViewController)
-        {
+           let navigationController = findNavigationController(rootViewController) {
             navigationController.popToRootViewController(animated: true)
         }
     }
 
     private func findNavigationController(_ viewController: UIViewController?) -> UINavigationController? {
-        guard let viewController = viewController else {
+        guard let viewController else {
             return nil
         }
 
@@ -172,4 +171,3 @@ extension UIViewController {
         present(viewControllerToPresent, animated: animated, completion: completion)
     }
 }
-

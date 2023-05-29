@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class VsHistoryDetailPagerRefetchQuery: GraphQL {
-	public typealias ResponseType = VsHistoryDetailPagerRefetchQuery.Response
+	typealias ResponseType = VsHistoryDetailPagerRefetchQuery.Response
 	var hash: SHA256Hash = .VsHistoryDetailPagerRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

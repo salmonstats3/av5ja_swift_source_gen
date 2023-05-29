@@ -5,14 +5,13 @@
 //  Created by devonly on 2022/11/25.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 public enum CoopStageId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Dummy
     public var id: Int { rawValue }
 
-    case Shakeall       = -2
     case Unknown        = -1
     case Tutorial       = 0
     case Shakeup        = 1
@@ -27,7 +26,7 @@ public enum CoopStageId: Int, UnsafeRawRepresentable {
     case Dummy          = -999
 
     public var description: String {
-        return NSLocalizedString("CoopStage_\(String(describing: self))", bundle: .module, comment: "")
+        NSLocalizedString("CoopStage_\(String(describing: self))", bundle: .module, comment: "")
     }
 
     public static let allCases: [CoopStageId] = [
@@ -52,7 +51,7 @@ extension CoopStageId: Plottable {
     }
 
     public init?(primitivePlottable: String) {
-        guard let rawValue: Int = Int(primitivePlottable) else {
+        guard let rawValue = Int(primitivePlottable) else {
             return nil
         }
         self.init(rawValue: rawValue)

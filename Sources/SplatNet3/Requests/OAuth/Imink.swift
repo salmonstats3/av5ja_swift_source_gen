@@ -62,7 +62,7 @@ class Imink: RequestType {
         } else {
             self.parameters = [
                 "token": accessToken.accessToken,
-                "hash_method": String(IminkType.nso.rawValue),
+                "hash_method": String(IminkType.nso.rawValue)
             ]
         }
     }
@@ -82,7 +82,7 @@ class Imink: RequestType {
         } else {
             self.parameters = [
                 "token": accessToken.result.webApiServerCredential.accessToken,
-                "hash_method": String(IminkType.nso.rawValue),
+                "hash_method": String(IminkType.nso.rawValue)
             ]
         }
     }

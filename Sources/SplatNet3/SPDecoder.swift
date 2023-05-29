@@ -9,7 +9,7 @@
 import Foundation
 
 public class SPDecoder: JSONDecoder {
-    public override init() {
+    override public init() {
         super.init()
         self.dateDecodingStrategy = .iso8601
         self.keyDecodingStrategy = .convertFromSnakeCase
@@ -17,7 +17,7 @@ public class SPDecoder: JSONDecoder {
 }
 
 public class SPEncoder: JSONEncoder {
-    public override init() {
+    override public init() {
         super.init()
         self.dateEncodingStrategy = .iso8601
         self.keyEncodingStrategy = .convertToSnakeCase

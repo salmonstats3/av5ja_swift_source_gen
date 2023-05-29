@@ -6,12 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
+import Foundation
 
 final class CheckinQuery: GraphQL {
-	public typealias ResponseType = CheckinQuery.Response
+	typealias ResponseType = CheckinQuery.Response
 	var hash: SHA256Hash = .CheckinQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
@@ -36,7 +35,7 @@ final class CheckinQuery: GraphQL {
         public let reward: Reward
 
         public init(from decoder: Decoder) throws {
-            let container =  try decoder.container(keyedBy: CodingKeys.self)
+            let container = try decoder.container(keyedBy: CodingKeys.self)
             self.id = try {
                 guard let rawValue: String = try? container.decode(String.self, forKey: .id).base64DecodedString
                 else {

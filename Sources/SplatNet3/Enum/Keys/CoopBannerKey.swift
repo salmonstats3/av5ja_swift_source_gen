@@ -5,12 +5,12 @@
 //  Created by devonly on 2022/11/25.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 public enum CoopBannerKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Unknown
-    public var id: String { rawValue }
+    public var id: Int { CoopBannerId.allCases[CoopBannerKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     case Unknown        = "ffa84f05a6437395a0a128cad1a99e8dd0f303ce4fd687fa648617a0075d7ad9"
     case Tutorial       = "744f65e62b538b63128469805c23592429f9830de7a1c12fdc910941fbeedfc4"

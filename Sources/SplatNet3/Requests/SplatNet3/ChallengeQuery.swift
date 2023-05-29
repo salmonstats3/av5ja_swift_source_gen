@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class ChallengeQuery: GraphQL {
-	public typealias ResponseType = ChallengeQuery.Response
+	typealias ResponseType = ChallengeQuery.Response
 	var hash: SHA256Hash = .ChallengeQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

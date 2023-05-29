@@ -5,12 +5,12 @@
 //  Created by devonly on 2022/11/24.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 public enum EnemyKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .SakelienBomber
-    public var id: String { rawValue }
+    public var id: Int { EnemyId.allCases[EnemyKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     case SakelienBomber     = "f59fe344bd941f90dc8d3458ffd29b6586c1cffd00864967e7766a5a931dc4f6"
     case SakelienCupTwins   = "03c31763738c5628db6d8e7dd3ba0fd2fcb79a1f47694488b51969375148edde"
@@ -29,7 +29,6 @@ public enum EnemyKey: String, UnsafeRawRepresentable {
     case SakelienGiant      = "75f39ca054c76c0c33cd71177780708e679d088c874a66101e9b76b001df8254"
     case SakeRope           = "b742da3433609ceb66aeab20827fefac63c1c1ddbf25c97ae709922e5c04ad77"
 }
-
 
 extension EnemyKey {
     public var localized: String {

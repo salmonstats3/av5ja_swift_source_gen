@@ -6,9 +6,9 @@
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
+import BetterSafariView
 import SwiftUI
 import WebKit
-import BetterSafariView
 
 public struct OAuthView: UIViewControllerRepresentable {
     typealias UIViewType = WKWebView
@@ -47,8 +47,8 @@ extension View {
                 OAuthView(contentId: contentId)
             })
         case .webkit:
-            let state: String = String.randomString
-            let verifier: String = String.randomString
+            let state = String.randomString
+            let verifier = String.randomString
             self.webAuthenticationSession(isPresented: isPresented, content: {
                 WebAuthenticationSession(url: URL(state: state, verifier: verifier), callbackURLScheme: "npf71b963c1b7b6d119", onCompletion: { result in
                     switch result {
@@ -57,7 +57,7 @@ extension View {
                             SwiftyLogger.error("The callbackURLScheme does not include session token code.")
                             return
                         }
-                        let hosting: UIHostingController = UIHostingController(
+                        let hosting = UIHostingController(
                             rootView: SignInView(code: code, verifier: verifier, contentId: contentId).environmentObject(session)
                         )
                         hosting.isModalInPresentation = true

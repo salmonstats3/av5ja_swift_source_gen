@@ -29,15 +29,15 @@ struct CoopResultDownloadView: View {
                         dismiss()
                     })
                 }
-    
+
                 if session.useSalmonStats {
-                    try await session.uploadAllCoopResultDetailQuery(results: results, completion: { value, total in
+                    try await session.uploadAllCoopResultDetailQuery(results: results, completion: { _, _ in
                     })
                 }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
                     dismiss()
                 })
-            } catch(let error) {
+            } catch {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
                     dismiss()
                 })
@@ -183,7 +183,7 @@ public struct CoopResultUploadView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
                         dismiss()
                     })
-                } catch(let error) {
+                } catch {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
                         dismiss()
                     })

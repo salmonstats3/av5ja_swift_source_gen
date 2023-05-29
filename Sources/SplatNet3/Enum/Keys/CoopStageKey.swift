@@ -5,12 +5,12 @@
 //  Created by devonly on 2022/11/25.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 public enum CoopStageKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Unknown
-    public var id: String { rawValue }
+    public var id: Int { CoopStageId.allCases[CoopStageKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     case Unknown        = "ffa84f05a6437395a0a128cad1a99e8dd0f303ce4fd687fa648617a0075d7ad9"
     case Tutorial       = "744f65e62b538b63128469805c23592429f9830de7a1c12fdc910941fbeedfc4"
@@ -24,6 +24,15 @@ public enum CoopStageKey: String, UnsafeRawRepresentable {
     case Carousel       = "2276a46e42a11637776ebc15cf2d46a589f1dba34a76d5c940c418ed7371d071"
     case Upland         = "3598b7f54248b84c47cde6b99aa45ff296a41d3d5f38eaccfe2327b2874fff0b"
     case Dummy          = "59a42245071d692c58b9825886f89f95e092ae0aa83a46617fdb4cbcb2f5f2b8"
+
+    public static let allCases: [Self] = [
+        .Shakeup,
+        .Shakespiral,
+        .Shakeship,
+        .Shakedent,
+        .Carousel,
+        .Upland
+    ]
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
