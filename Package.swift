@@ -41,9 +41,7 @@ let package = Package(
             resources: [.process("Resources")]),
         .testTarget(
             name: "SplatNet3Tests",
-            dependencies: ["SplatNet3"],
-            resources: [
-                .copy("JSON")
-            ])
+            dependencies: ["SplatNet3"]
+        )
     ]
 )
