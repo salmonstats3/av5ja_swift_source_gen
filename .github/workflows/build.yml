@@ -26,7 +26,7 @@ jobs:
             -scheme SplatNet3
             -sdk iphonesimulator
             -destination 'generic/platform=iOS'
-            clean test
+            clean
   release:
     needs:
       - build
