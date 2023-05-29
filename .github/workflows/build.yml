@@ -26,3 +26,24 @@ jobs:
             -sdk iphonesimulator
             -destination 'platform=iOS Simulator,name=iPhone 13'
             clean test
+  release:
+    needs:
+      - build
+    name: Release
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Set time
+        id: version
+        run: echo "::set-output name=text::ver$(TZ=Asia/Tokyo date +%y%m%d%H%M)"
+      - name: Create
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.version.outputs.text }}
+          release_name: ${{ steps.version.outputs.text }}
+          draft: false
+          prerelease: false
