@@ -34,8 +34,8 @@ jobs:
             -destination 'generic/platform=iOS'
             clean
   release:
-    # needs:
-    #   - build
+    needs:
+      - build
     name: Release
     runs-on: ubuntu-latest
     steps:
