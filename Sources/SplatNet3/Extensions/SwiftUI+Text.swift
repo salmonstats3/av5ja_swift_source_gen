@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import SDWebImageSwiftUI
 
 public extension Text {
     init(bundle: LocalizedType) {
@@ -16,7 +15,7 @@ public extension Text {
 
     init(_ value: EnemyId) {
         let index: Int = EnemyId.allCases.firstIndex(of: value) ?? 0
-        let enemyKey: EnemyKey = EnemyKey.allCases[index]
+        let enemyKey = EnemyKey.allCases[index]
         self.init(NSLocalizedString("CoopEnemy_\(String(describing: enemyKey))", bundle: .module, comment: ""))
     }
 
@@ -26,7 +25,7 @@ public extension Text {
 
     /// 称号をテキストに変換
     init(_ value: GradeId?) {
-        if let value = value {
+        if let value {
             self.init(NSLocalizedString("CoopGrade_Grade_0\(value.id)", bundle: .module, comment: ""))
         } else {
             self.init("-")
@@ -52,7 +51,7 @@ public extension Text {
 
     /// 任意のオプショナル型を変換
     init<T: LosslessStringConvertible>(_ value: T?) {
-        if let value = value {
+        if let value {
             self.init(verbatim: String(value))
         } else {
             self.init("-")
@@ -63,31 +62,4 @@ public extension Text {
 public enum ImageSize: Int, CaseIterable {
     case Regular
     case Header
-}
-
-extension FileManager {
-    var document: URL? {
-        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
-    }
-}
-
-extension WebImage {
-    public init<T: RawRepresentable>(_ value: T) where T: Codable, T.RawValue == Int {
-        self.init(url: FileManager.default.document?.appendingPathComponent("\(String(describing: T.self))/\(value.rawValue)", conformingTo: .png))
-    }
-}
-
-public extension Image {
-    init(_ value: CoopStageId) {
-        self.init("CoopStage/\(value.rawValue)", bundle: .module)
-    }
-
-    init(_ value: CoopStageId, size: ImageSize = .Regular) {
-        let namespace: String = size == .Regular ? "CoopStage" : "CoopStageHeader"
-        self.init("\(namespace)/\(value.rawValue)", bundle: .module)
-    }
-
-    init(_ value: ScaleType) {
-        self.init("Scale/\(value.rawValue)", bundle: .module)
-    }
 }

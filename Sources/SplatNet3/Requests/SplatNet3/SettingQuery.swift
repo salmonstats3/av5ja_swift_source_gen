@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class SettingQuery: GraphQL {
-	public typealias ResponseType = SettingQuery.Response
+	typealias ResponseType = SettingQuery.Response
 	var hash: SHA256Hash = .SettingQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -6,17 +6,16 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 final class CoopRecordQuery: GraphQL {
-    public typealias ResponseType = CoopRecordQuery.Response
+    typealias ResponseType = CoopRecordQuery.Response
     var hash: SHA256Hash = .CoopRecordQuery
     var variables: [String: String] = [:]
     var parameters: Parameters?
 
     init() {}
-
 
     // MARK: - Response
     public struct Response: Codable {

@@ -6,10 +6,8 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 public final class StageScheduleQuery: GraphQL {
 	public typealias ResponseType = StageScheduleQuery.Response
@@ -24,6 +22,11 @@ public final class StageScheduleQuery: GraphQL {
     // MARK: - Response
     public struct Response: Codable {
         public let data: DataClass
+
+        /// アセット
+        public var assets: [SPAssetType<CoopStageId>] {
+            data.coopGroupingSchedule.schedules.map({ SPAssetType<CoopStageId>(key: $0.setting.coopStage.id, url: $0.setting.coopStage.image.url) })
+        }
     }
 
     // MARK: - DataClass
@@ -53,11 +56,6 @@ public final class StageScheduleQuery: GraphQL {
         /// いつものバイト、ビッグラン、チームコンテンストのスケジュールをマージしたもの
         public var schedules: [CoopSchedule] {
             [regularSchedules, bigRunSchedules, teamContestSchedules].flatMap({ $0.nodes })
-        }
-
-        /// アセット
-        public var assets: [SPAssetType<CoopStageId>] {
-            [regularSchedules, bigRunSchedules, teamContestSchedules].flatMap({ $0.nodes }).map({ SPAssetType<CoopStageId>(key: $0.setting.coopStage.id, url: $0.setting.coopStage.image.url) })
         }
     }
 
@@ -149,7 +147,7 @@ public final class StageScheduleQuery: GraphQL {
         enum CodingKeys: String, CodingKey {
             case coopStage
             case weapons
-            case isCoopSetting  = "__isCoopSetting"
+            case isCoopSetting = "__isCoopSetting"
         }
 
         public init(from decoder: Decoder) throws {

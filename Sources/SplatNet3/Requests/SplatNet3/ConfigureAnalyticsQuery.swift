@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class ConfigureAnalyticsQuery: GraphQL {
-	public typealias ResponseType = ConfigureAnalyticsQuery.Response
+	typealias ResponseType = ConfigureAnalyticsQuery.Response
 	var hash: SHA256Hash = .ConfigureAnalyticsQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -6,15 +6,16 @@
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 import KeychainAccess
+import SwiftUI
 
 /// 基本となるリクエストなどが定義されたクラス
 open class Session: ObservableObject {
     /// 通信用のセッション
     public let session: Alamofire.Session = {
-        let configuration: URLSessionConfiguration = URLSessionConfiguration.default
+        let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 10
         configuration.httpMaximumConnectionsPerHost = 5
         configuration.httpCookieAcceptPolicy = .never
@@ -23,7 +24,7 @@ open class Session: ObservableObject {
     }()
 
     /// キーチェイン
-    private let keychain: Keychain = Keychain(service: Bundle.module.bundleIdentifier!)
+    private let keychain = Keychain(service: Bundle.module.bundleIdentifier!)
 
     /// X-Web-View-Ver
     public var version: String {
@@ -36,7 +37,7 @@ open class Session: ObservableObject {
     }
 
     /// デコーダー
-    public let decoder: SPDecoder = SPDecoder()
+    public let decoder = SPDecoder()
 
     /// Salmon Stats
     public var useSalmonStats: Bool {
@@ -61,17 +62,11 @@ open class Session: ObservableObject {
     /// アカウント情報
     @Published public var account: UserInfo?
 
-    /// 優先サーバー
-    @Published public var server: ServerType = .Imink {
-        willSet {
-            keychain.primaryServer = newValue
-        }
-    }
+    @AppStorage("APP_PRIMARY_F_SERVER") public var primaryServer: ServerType = .Imink
 
     init() {
         // インスタンス生成時にアカウントを読み込み
         self.account = keychain.get()
-        self.server = keychain.primaryServer
     }
 
     /// 一般的に使うリクエスト
@@ -135,11 +130,9 @@ open class Session: ObservableObject {
             throw DecodingError.valueNotFound(UserInfo.self, .init(codingPath: [], debugDescription: "Account Not Found"))
         }
         if account.requiresGameWebTokenRefresh {
-            SwiftyLogger.info("GameWebToken is expired.")
             return try await refresh(sessionToken: account.sessionToken, contentId: contentId)
         }
         if account.requiresRefresh {
-            SwiftyLogger.info("Bullet token is expired.")
             return try await refresh(gameWebToken: account.gameWebToken)
         }
         return account
@@ -155,13 +148,13 @@ open class Session: ObservableObject {
         switch contentId {
         case .SP2:
             let iksmSession: IksmSession.Response = try await getIksmSession(gameWebToken: gameWebToken)
-            let account: UserInfo = UserInfo(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken, iksmSession: iksmSession)
+            let account = UserInfo(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken, iksmSession: iksmSession)
             /// ログイン時はアカウントを上書き
             self.account = keychain.set(account)
             return account
         case .SP3:
             let bulletToken: BulletToken.Response = try await getBulletToken(gameWebToken: gameWebToken)
-            let account: UserInfo = UserInfo(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken.result.accessToken, bulletToken: bulletToken)
+            let account = UserInfo(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken.result.accessToken, bulletToken: bulletToken)
             /// ログイン時はアカウントを上書き
             self.account = keychain.set(account)
             return account
@@ -181,7 +174,7 @@ extension Session: RequestInterceptor {
     private func withSwiftyLogger<T>(execute: () async throws -> T) async throws -> T {
         do {
             return try await execute()
-        } catch(let error) {
+        } catch {
             SwiftyLogger.error(error)
             throw error
         }
@@ -204,68 +197,20 @@ extension Session: RequestInterceptor {
 
     /// ハッシュ取得
     func getHash(accessToken: AccessToken.Response) async throws -> Imink.Response {
-        let timestamp: UInt64 = UInt64(Date().timeIntervalSince1970 * 1000)
+        let timestamp = UInt64(Date().timeIntervalSince1970 * 1000)
         let requestId: String = UUID().uuidString
 
-        do {
-            let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: server, requestId: requestId, timestamp: timestamp))
-            return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-        } catch(let error) {
-            do {
-                if server == .Imink {
-                    throw error
-                }
-                let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: .Imink, requestId: requestId, timestamp: timestamp))
-                return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-            } catch(let error) {
-                do {
-                    if server == .Flapg {
-                        throw error
-                    }
-                    let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: .Flapg, requestId: requestId, timestamp: timestamp))
-                    return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-                } catch(let error) {
-                    if server == .Nxapi {
-                        throw error
-                    }
-                    let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: .Nxapi, requestId: requestId, timestamp: timestamp))
-                    return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-                }
-            }
-        }
+        let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
+        return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
     }
 
     /// ハッシュ取得
     func getHash(accessToken: GameServiceToken.Response) async throws -> Imink.Response {
-        let timestamp: UInt64 = UInt64(Date().timeIntervalSince1970 * 1000)
+        let timestamp = UInt64(Date().timeIntervalSince1970 * 1000)
         let requestId: String = UUID().uuidString
 
-        do {
-            let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: server, requestId: requestId, timestamp: timestamp))
-            return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-        } catch(let error) {
-            do {
-                if server == .Imink {
-                    throw error
-                }
-                let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: .Imink, requestId: requestId, timestamp: timestamp))
-                return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-            } catch(let error) {
-                do {
-                    if server == .Flapg {
-                        throw error
-                    }
-                    let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: .Flapg, requestId: requestId, timestamp: timestamp))
-                    return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-                } catch(let error) {
-                    if server == .Nxapi {
-                        throw error
-                    }
-                    let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: .Nxapi, requestId: requestId, timestamp: timestamp))
-                    return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
-                }
-            }
-        }
+        let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
+        return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
     }
 
     /// AppVersion
@@ -297,13 +242,13 @@ extension Session: RequestInterceptor {
 
     /// GameServiceToken取得
     func getGameServiceToken(accessToken: AccessToken.Response, version: AppVersion.Response) async throws -> GameServiceToken.Response {
-        let response : Imink.Response = try await getHash(accessToken: accessToken)
+        let response: Imink.Response = try await getHash(accessToken: accessToken)
         return try await request(GameServiceToken(imink: response, accessToken: accessToken, version: version))
     }
 
     /// GameWebToken取得
     func getGameWebToken(accessToken: GameServiceToken.Response, version: AppVersion.Response, contentId: ContentId) async throws -> GameWebToken.Response {
-        let response : Imink.Response = try await getHash(accessToken: accessToken)
+        let response: Imink.Response = try await getHash(accessToken: accessToken)
         return try await request(GameWebToken(imink: response, accessToken: accessToken, contentId: contentId, version: version))
     }
 

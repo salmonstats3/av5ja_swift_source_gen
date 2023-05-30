@@ -6,12 +6,12 @@
 //  
 //
 
-import WebKit
+import Alamofire
+import LinkPresentation
 import SDBridgeSwift
 import SwiftUI
 import UIKit
-import Alamofire
-import LinkPresentation
+import WebKit
 
 struct SplatNetView: UIViewControllerRepresentable {
     let contentId: ContentId
@@ -30,9 +30,9 @@ struct SplatNetView: UIViewControllerRepresentable {
     final class WebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         private var bridge: WebViewJavascriptBridge
         private var observer: NSKeyValueObservation?
-        private let session: SP3Session = SP3Session()
+        private let session = SP3Session()
         private let contentId: ContentId
-        private let configuration: WKWebViewConfiguration = WKWebViewConfiguration()
+        private let configuration = WKWebViewConfiguration()
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -57,13 +57,13 @@ struct SplatNetView: UIViewControllerRepresentable {
 
         init(contentId: ContentId) {
             /// リクエスト
-            let locale: String = NSLocalizedString(LocalizedType.CoopHistory_Locale.rawValue, bundle: .module, comment: "")
+            let locale: String = NSLocalizedString(LocalizedType.CommonLocaleLang.rawValue, bundle: .module, comment: "")
             var baseURL: URL = contentId.requestURL
             baseURL.queryItems([URLQueryItem(name: "lang", value: locale)])
-            var request: URLRequest = URLRequest(url: baseURL)
+            var request = URLRequest(url: baseURL)
             self.contentId = contentId
-            let webView: WKWebView = WKWebView(frame: .zero, configuration: configuration)
-            let indicator: UIActivityIndicatorView = UIActivityIndicatorView()
+            let webView = WKWebView(frame: .zero, configuration: configuration)
+            let indicator = UIActivityIndicatorView()
             indicator.hidesWhenStopped = true
             indicator.translatesAutoresizingMaskIntoConstraints = false
             self.bridge = WebViewJavascriptBridge(webView: webView)
@@ -91,7 +91,7 @@ struct SplatNetView: UIViewControllerRepresentable {
                         switch contentId {
                         case .SP2:
                             /// ヘッダーを更新
-                            request.headers.add(name: "X-GameWebToken", value: account.gameWebToken)
+                            request.headers.add(name: "X-GameWebToken", value: gameWebToken)
                             indicator.stopAnimating()
                             webView.load(request)
                         case .SP3:
@@ -105,7 +105,7 @@ struct SplatNetView: UIViewControllerRepresentable {
                             indicator.stopAnimating()
                             webView.load(request)
                         }
-                    } catch(let error) {
+                    } catch {
                         webView.load(request)
                     }
                 } else {
@@ -154,7 +154,7 @@ struct SplatNetView: UIViewControllerRepresentable {
 
         /// JavaScriptを実行する
         private func evaluateJavaScript(_ content: Any?) {
-            guard let script: NSScriptMessage = NSScriptMessage(rawValue: content) else {
+            guard let script = NSScriptMessage(rawValue: content) else {
                 return
             }
 
@@ -169,41 +169,41 @@ struct SplatNetView: UIViewControllerRepresentable {
                 let session: Alamofire.Session = Alamofire.Session()
                 Task(priority: .utility, operation: {
                     guard let data: Data = try? await session.download(content.imageUrl).serializingData().value,
-                          let image: UIImage = UIImage(data: data)
+                          let image = UIImage(data: data)
                     else {
                         return
                     }
                     let hashTag: String = (["Salmonia3"] + content.hashtags).map({ "#\($0)" }).joined(separator: " ")
-                    let controller: UIActivityViewController = UIActivityViewController(activityItems: [CustomShareItem(content: content), image, hashTag], applicationActivities: nil)
+                    let controller = UIActivityViewController(activityItems: [CustomShareItem(content: content), image, hashTag], applicationActivities: nil)
                     self.popover(controller, animated: true)
                 })
             case .invokeNativeShareUrl(let content):
-                let hashTag: String = ["Salmonia3", LocalizedType.MemoryPlayer_Title.localized].map({ "#\($0)" }).joined(separator: " ")
-                let controller: UIActivityViewController = UIActivityViewController(activityItems: [CustomShareItem(content: content), content.url, hashTag], applicationActivities: nil)
+                let hashTag: String = ["Salmonia3"].map({ "#\($0)" }).joined(separator: " ")
+                let controller = UIActivityViewController(activityItems: [CustomShareItem(content: content), content.url, hashTag], applicationActivities: nil)
                     self.popover(controller, animated: true)
             case .copyToClipboard(let content):
                 UIPasteboard.general.string = content
             case .downloadImages(let content):
                 Task(priority: .utility, operation: {
-                    let _ = await content.asyncMap({ imageURL in
+                    _ = await content.asyncMap({ imageURL in
                         let session: Alamofire.Session = Alamofire.Session()
                         guard let data: Data = try? await session.download(imageURL).serializingData().value,
-                              let image: UIImage = UIImage(data: data)
+                              let image = UIImage(data: data)
                         else {
                             return
                         }
                         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                     })
-                    let alert: UIAlertController = UIAlertController(
-                        title: LocalizedType.Common_Download.localized,
-                        message: LocalizedType.CoopHistory_SaveToPhotoLibrary.localized,
+                    let alert = UIAlertController(
+                        title: LocalizedType.CommonDownload.localized,
+                        message: LocalizedType.CommonSaveToPhotoLibrary.localized,
                         preferredStyle: .alert)
-                    let action: UIAlertAction = UIAlertAction(title: LocalizedType.Common_Close.localized, style: .default)
+                    let action = UIAlertAction(title: LocalizedType.CommonClose.localized, style: .default)
                     alert.addAction(action)
                     present(alert, animated: true)
                 })
             case .sourceCamera:
-                let reader: UIHostingController = UIHostingController(rootView: QRReaderView().edgesIgnoringSafeArea(.all))
+                let reader = UIHostingController(rootView: QRReaderView().edgesIgnoringSafeArea(.all))
                 reader.modalPresentationStyle = .formSheet
                 UIApplication.shared.presentedViewController?.present(reader, animated: true)
             default:
@@ -212,7 +212,7 @@ struct SplatNetView: UIViewControllerRepresentable {
         }
 
         /// ビューが切り替わったときにトークンを再生成するかどうかをチェックする
-        override public func viewDidLayoutSubviews() {
+        override func viewDidLayoutSubviews() {
         }
     }
 }

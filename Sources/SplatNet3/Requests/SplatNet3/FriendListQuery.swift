@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class FriendListQuery: GraphQL {
-	public typealias ResponseType = FriendListQuery.Response
+	typealias ResponseType = FriendListQuery.Response
 	var hash: SHA256Hash = .FriendListQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

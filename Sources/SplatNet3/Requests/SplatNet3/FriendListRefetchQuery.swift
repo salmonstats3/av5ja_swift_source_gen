@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class FriendListRefetchQuery: GraphQL {
-	public typealias ResponseType = FriendListRefetchQuery.Response
+	typealias ResponseType = FriendListRefetchQuery.Response
 	var hash: SHA256Hash = .FriendListRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

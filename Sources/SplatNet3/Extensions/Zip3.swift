@@ -30,7 +30,7 @@ public struct Zip3Sequence<A: Sequence, B: Sequence, C: Sequence>: Sequence, Ite
         self.c = sequence3.makeIterator()
     }
 
-    mutating public func next() -> (A.Element, B.Element, C.Element)? {
+    public mutating func next() -> (A.Element, B.Element, C.Element)? {
         guard let a = a.next(), let b = b.next(), let c = c.next() else { return nil }
         return (a, b, c)
     }
@@ -49,7 +49,7 @@ public struct Zip4Sequence<A: Sequence, B: Sequence, C: Sequence, D: Sequence>: 
         self.d = sequence4.makeIterator()
     }
 
-    mutating public func next() -> (A.Element, B.Element, C.Element, D.Element)? {
+    public mutating func next() -> (A.Element, B.Element, C.Element, D.Element)? {
         guard let a = a.next(), let b = b.next(), let c = c.next(), let d = d.next() else { return nil }
         return (a, b, c, d)
     }
@@ -70,7 +70,7 @@ public struct Zip5Sequence<A: Sequence, B: Sequence, C: Sequence, D: Sequence, E
         self.e = sequence5.makeIterator()
     }
 
-    mutating public func next() -> (A.Element, B.Element, C.Element, D.Element, E.Element)? {
+    public mutating func next() -> (A.Element, B.Element, C.Element, D.Element, E.Element)? {
         guard let a = a.next(), let b = b.next(), let c = c.next(), let d = d.next(), let e = e.next() else { return nil }
         return (a, b, c, d, e)
     }

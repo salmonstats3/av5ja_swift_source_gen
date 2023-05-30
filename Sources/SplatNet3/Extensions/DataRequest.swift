@@ -13,7 +13,7 @@ import SwiftyBeaver
 extension DataRequest {
     @discardableResult
     public func validationWithNXError() -> Self {
-        let decoder: JSONDecoder = JSONDecoder()
+        let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return cURLDescription(calling: { requestURL in
 #if DEBUG
@@ -33,7 +33,7 @@ extension DataRequest {
                 if let headers: HTTPHeaders = request?.headers {
                     headers.forEach({ header in
                         /// 認証に関するヘッダー以外を出力する
-                        let requestHeader: RequestHeader = RequestHeader(header: header)
+                        let requestHeader = RequestHeader(header: header)
                         SwiftyLogger.info("Request Headers: \(requestHeader.description)")
                     })
                 }
@@ -42,20 +42,18 @@ extension DataRequest {
                 if let httpBody: Data = request?.httpBody,
                    let dictionary: [String: Any] = try? JSONSerialization.jsonObject(with: httpBody) as? [String: Any],
                    let targetURL: URL = request?.url,
-                   !["results", "pages", "query"].contains(targetURL.lastPathComponent)
-                {
-                    dictionary.flatten.forEach({ (key, value) in
+                   !["results", "pages", "query"].contains(targetURL.lastPathComponent) {
+                    dictionary.flatten.forEach({ key, value in
                         SwiftyLogger.info("Request Body: \(key): \(value)")
                     })
                 }
 
-                if let data: Data = data,
+                if let data: Data,
                    let dictionary: [String: Any] = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
                    let targetURL: URL = request?.url,
-                   !["graphql", "results", "pages", "query"].contains(targetURL.lastPathComponent)
-                {
+                   !["graphql", "results", "pages", "query"].contains(targetURL.lastPathComponent) {
                     /// レスポンスボディ
-                    dictionary.flatten.forEach({ (key, value) in
+                    dictionary.flatten.forEach({ key, value in
                         SwiftyLogger.info("Response Body: \(key): \(value)")
                     })
                     if let failure = try? decoder.decode(Failure.NSO.self, from: data) {

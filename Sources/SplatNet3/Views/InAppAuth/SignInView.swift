@@ -12,7 +12,7 @@ import SwiftUI
 struct SignInView: View {
     @EnvironmentObject var session: SP3Session
     @Environment(\.dismiss) var dismiss
-    
+
     let code: String
     let verifier: String
     let contentId: ContentId
@@ -74,7 +74,7 @@ struct SignInView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
                         UIApplication.shared.rootViewController?.dismiss(animated: true)
                     })
-                } catch(let error) {
+                } catch {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
                         UIApplication.shared.rootViewController?.dismiss(animated: true)
                     })
@@ -85,7 +85,7 @@ struct SignInView: View {
 }
 
 struct _SignInView: View {
-    @StateObject var session: SP3Session = SP3Session()
+    @StateObject var session = SP3Session()
     @Environment(\.dismiss) var dismiss
     let sessionToken: String
     let contentId: ContentId
@@ -151,7 +151,7 @@ struct _SignInView: View {
                             session.objectWillChange.send()
                         })
                     })
-                } catch(let error) {
+                } catch {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
                         UIApplication.shared.rootViewController?.dismiss(animated: true)
                     })
@@ -160,4 +160,3 @@ struct _SignInView: View {
         })
     }
 }
-

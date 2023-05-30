@@ -35,9 +35,8 @@ public enum CoopHistory {
                 if let id: String = try? container.decode(String.self, forKey: .id),
                    let stringValue: String = id.base64DecodedString,
                    let rawValue: String = stringValue.capture(pattern: "([0-9]*)$", group: 1),
-                   let intValue: Int = Int(rawValue),
-                   let weaponId: S = S(rawValue: intValue)
-                {
+                   let intValue = Int(rawValue),
+                   let weaponId = S(rawValue: intValue) {
                     return weaponId
                 }
                 return try container.decode(S.self, forKey: .weaponId)

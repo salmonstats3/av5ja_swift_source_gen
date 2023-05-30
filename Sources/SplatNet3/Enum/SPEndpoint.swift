@@ -45,7 +45,7 @@ public enum SPEndpoint: String, CaseIterable, Identifiable {
 
     init<T: RequestType>(request: T) {
         let path: String = request.path.replacingOccurrences(of: "connect/1.0.0/", with: "")
-        if let value: SPEndpoint = SPEndpoint(rawValue: path) {
+        if let value = SPEndpoint(rawValue: path) {
             self = value
             return
         }

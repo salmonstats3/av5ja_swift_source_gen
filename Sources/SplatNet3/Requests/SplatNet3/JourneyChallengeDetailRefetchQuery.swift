@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class JourneyChallengeDetailRefetchQuery: GraphQL {
-	public typealias ResponseType = JourneyChallengeDetailRefetchQuery.Response
+	typealias ResponseType = JourneyChallengeDetailRefetchQuery.Response
 	var hash: SHA256Hash = .JourneyChallengeDetailRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -7,13 +7,13 @@
 //
 
 import Foundation
-import WebKit
 import SwiftUI
+import WebKit
 
 public class SPWebViewController: UIViewController, WKURLSchemeHandler {
-    @StateObject var session: SP3Session = SP3Session()
-    let state: String = String.randomString
-    let verifier: String = String.randomString
+    @StateObject var session = SP3Session()
+    let state = String.randomString
+    let verifier = String.randomString
     let contentId: ContentId
 
     public init(contentId: ContentId) {
@@ -22,10 +22,10 @@ public class SPWebViewController: UIViewController, WKURLSchemeHandler {
     }
 
     override public func viewDidLoad() {
-        let configuration: WKWebViewConfiguration = WKWebViewConfiguration()
+        let configuration = WKWebViewConfiguration()
         configuration.setURLSchemeHandler(self, forURLScheme: "npf71b963c1b7b6d119")
         configuration.applicationNameForUserAgent = "SplatNet/@tkgling"
-        let webView: SPWebView = SPWebView(frame: .zero, configuration: configuration)
+        let webView = SPWebView(frame: .zero, configuration: configuration)
         webView.load(URLRequest(url: URL(state: state, verifier: verifier)))
         self.view = webView
     }
@@ -41,7 +41,7 @@ public class SPWebViewController: UIViewController, WKURLSchemeHandler {
             return
         }
         Task {
-            let hosting: UIHostingController = UIHostingController(rootView: SignInView(code: code, verifier: verifier, contentId: contentId))
+            let hosting = UIHostingController(rootView: SignInView(code: code, verifier: verifier, contentId: contentId))
             hosting.isModalInPresentation = true
             hosting.modalTransitionStyle = .coverVertical
             hosting.modalPresentationStyle = .overFullScreen

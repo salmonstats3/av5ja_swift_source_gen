@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class ReplayModalReserveReplayDownloadMutation: GraphQL {
-	public typealias ResponseType = ReplayModalReserveReplayDownloadMutation.Response
+	typealias ResponseType = ReplayModalReserveReplayDownloadMutation.Response
 	var hash: SHA256Hash = .ReplayModalReserveReplayDownloadMutation
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class XRankingRefetchQuery: GraphQL {
-	public typealias ResponseType = XRankingRefetchQuery.Response
+	typealias ResponseType = XRankingRefetchQuery.Response
 	var hash: SHA256Hash = .XRankingRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

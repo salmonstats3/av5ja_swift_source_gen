@@ -53,12 +53,12 @@ public struct CoopResult: Codable {
         public func encode(to encoder: Encoder) throws {
             var container = encoder.container(keyedBy: CodingKeys.self)
 
-            if let startTime = startTime {
+            if let startTime {
                 try container.encode(startTime, forKey: .startTime)
             } else {
                 try container.encodeNil(forKey: .startTime)
             }
-            if let endTime = endTime {
+            if let endTime {
                 try container.encode(endTime, forKey: .endTime)
             } else {
                 try container.encodeNil(forKey: .endTime)
@@ -196,7 +196,7 @@ public struct CoopResult: Codable {
             self.id = content.waveNumber
             self.isClear = {
                 // EX-WAVEがあれば
-                if let bossDefeated = bossDefeated {
+                if let bossDefeated {
                     // ノルマがnullならEX-WAVEはbossDefeated、それ以外はクリア
                     return content.deliverNorm == nil ? bossDefeated : true
                 }
@@ -253,7 +253,6 @@ public struct CoopResult: Codable {
             self.isBossDefeated = isBossDefeated
             self.bossId = bossId
         }
-
     }
 
     public struct Nameplate: Codable {
@@ -267,7 +266,6 @@ public struct CoopResult: Codable {
             self.badges = badges
             self.background = background
         }
-
     }
 
     public struct Background: Codable {
@@ -307,8 +305,7 @@ public struct CoopResult: Codable {
         self.goldenIkuraAssistNum = ([content.myResult] + content.memberResults).map({ $0.goldenAssistCount }).reduce(0, +)
         self.smellMeter = content.smellMeter
         self.scenarioCode = content.scenarioCode
-        if let bossResult = content.bossResult
-        {
+        if let bossResult = content.bossResult {
             self.enemyURLs = content.enemyResults.map({ SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) }) + [SPAssetType(key: bossResult.boss.id, url: bossResult.boss.image.url)]
         } else {
             self.enemyURLs = content.enemyResults.map({ SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) })

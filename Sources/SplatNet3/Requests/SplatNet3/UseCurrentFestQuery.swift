@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class UseCurrentFestQuery: GraphQL {
-	public typealias ResponseType = UseCurrentFestQuery.Response
+	typealias ResponseType = UseCurrentFestQuery.Response
 	var hash: SHA256Hash = .UseCurrentFestQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

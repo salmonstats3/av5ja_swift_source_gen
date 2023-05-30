@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class DetailTabViewWeaponTopsLfRefetchQuery: GraphQL {
-	public typealias ResponseType = DetailTabViewWeaponTopsLfRefetchQuery.Response
+	typealias ResponseType = DetailTabViewWeaponTopsLfRefetchQuery.Response
 	var hash: SHA256Hash = .DetailTabViewWeaponTopsLfRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class PagerUpdateBattleHistoriesByVsModeQuery: GraphQL {
-	public typealias ResponseType = PagerUpdateBattleHistoriesByVsModeQuery.Response
+	typealias ResponseType = PagerUpdateBattleHistoriesByVsModeQuery.Response
 	var hash: SHA256Hash = .PagerUpdateBattleHistoriesByVsModeQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

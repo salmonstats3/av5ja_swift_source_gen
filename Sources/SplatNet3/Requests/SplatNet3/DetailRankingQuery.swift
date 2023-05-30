@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class DetailRankingQuery: GraphQL {
-	public typealias ResponseType = DetailRankingQuery.Response
+	typealias ResponseType = DetailRankingQuery.Response
 	var hash: SHA256Hash = .DetailRankingQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

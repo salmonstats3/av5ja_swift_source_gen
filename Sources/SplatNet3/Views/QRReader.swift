@@ -11,33 +11,33 @@ import UIKit
 public struct QRReaderView: UIViewControllerRepresentable {
     @Environment(\.dismiss) var dismiss
     let reader: QRCaptureSession
-    let session: SP3Session = SP3Session()
+    let session = SP3Session()
     let view: UIView
 
     public init() {
         self.reader = QRCaptureSession()
         self.view = _QRReaderView(session: reader)
-        self.reader.onDidFinish = { [self] code in
+        self.reader.onDidFinish = { _ in
             DispatchQueue.main.async(execute: {
                 UIApplication.shared.startAnimating(completion: {
-                    Task(priority: .utility, operation: {
-                        do {
-                            let response = try await session.getCheckInWithQRCodeMutation(eventId: code)
-                        } catch(let error) {
-                            SwiftyLogger.error(error)
-                        }
-                        UIApplication.shared.presentedViewController?.dismiss(animated: true)
-                    })
+//                    Task(priority: .utility, operation: {
+//                        do {
+//                            let response = try await session.getCheckInWithQRCodeMutation(eventId: code)
+//                        } catch {
+//                            SwiftyLogger.error(error)
+//                        }
+//                        UIApplication.shared.presentedViewController?.dismiss(animated: true)
+//                    })
                 })
             })
         }
     }
-    
+
     public func makeCoordinator() -> Coordinator {
     }
 
     public func makeUIViewController(context: Context) -> UIViewController {
-        let controller: UIViewController = UIViewController()
+        let controller = UIViewController()
         controller.view = self.view
         self.reader.startRunning()
         return controller

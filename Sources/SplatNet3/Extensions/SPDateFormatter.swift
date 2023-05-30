@@ -8,13 +8,13 @@
 import Foundation
 
 public class SPDateFormatter: DateFormatter {
-    public override init() {
+    override public init() {
         super.init()
         self.dateFormat = #"yyyyMMdd'T'HHmmss"#
         self.locale = Locale(identifier: "en_US_POSIX")
         self.timeZone = TimeZone(identifier: "UTC")
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -6,8 +6,8 @@
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 protocol SPCredential: AuthenticationCredential, Codable {
     /// ユーザーID

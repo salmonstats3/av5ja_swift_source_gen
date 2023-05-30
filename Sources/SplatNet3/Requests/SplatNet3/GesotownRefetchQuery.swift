@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class GesotownRefetchQuery: GraphQL {
-	public typealias ResponseType = GesotownRefetchQuery.Response
+	typealias ResponseType = GesotownRefetchQuery.Response
 	var hash: SHA256Hash = .GesotownRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

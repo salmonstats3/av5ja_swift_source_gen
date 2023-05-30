@@ -71,18 +71,18 @@ public enum WeaponId: Int, UnsafeRawRepresentable {
 	case Stringer_Short = 7020
 	case Saber_Normal = 8000
 	case Saber_Lite = 8010
-	case Blaster_Bear_Coop = 20900
-	case Charger_Bear_Coop = 22900
-	case Slosher_Bear_Coop = 23900
-	case Shelter_Bear_Coop = 26900
-	case Stringer_Bear_Coop = 27900
-	case Saber_Bear_Coop = 28900
+	case Blaster_Bear_Coop = 20_900
+	case Charger_Bear_Coop = 22_900
+	case Slosher_Bear_Coop = 23_900
+	case Shelter_Bear_Coop = 26_900
+	case Stringer_Bear_Coop = 27_900
+	case Saber_Bear_Coop = 28_900
 
     public static let regular: [WeaponId] = {
-        allCases.filter({ $0.rawValue >= 0 && $0.rawValue <= 20000 })
+        allCases.filter({ $0.rawValue >= 0 && $0.rawValue <= 20_000 })
     }()
 
     public static let rare: [WeaponId] = {
-        allCases.filter({ $0.rawValue >= 20000 })
+        allCases.filter({ $0.rawValue >= 20_000 })
     }()
 }

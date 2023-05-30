@@ -6,12 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
+import Foundation
 
 final class WeaponRecordQuery: GraphQL {
-	public typealias ResponseType = WeaponRecordQuery.Response
+	typealias ResponseType = WeaponRecordQuery.Response
 	var hash: SHA256Hash = .WeaponRecordQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
@@ -24,14 +23,14 @@ final class WeaponRecordQuery: GraphQL {
         public var assets: Asset {
             Asset(
                 weapons: data.weaponRecords.nodes.compactMap({ node in
-                    guard let weaponId: WeaponId = WeaponId(rawValue: node.weaponId)
+                    guard let weaponId = WeaponId(rawValue: node.weaponId)
                     else {
                         return nil
                     }
                     return SPAssetType(key: weaponId, url: node.image2d.url)
                 }),
                 specials: Array(Set(data.weaponRecords.nodes.compactMap({ node in
-                    guard let specialId: SpecialId = SpecialId(rawValue: node.specialWeapon.specialWeaponId + 20000)
+                    guard let specialId = SpecialId(rawValue: node.specialWeapon.specialWeaponId + 20_000)
                     else {
                         return nil
                     }

@@ -6,9 +6,8 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
+import Foundation
 
 public final class CoopHistoryDetailQuery: GraphQL {
 	public typealias ResponseType = Response

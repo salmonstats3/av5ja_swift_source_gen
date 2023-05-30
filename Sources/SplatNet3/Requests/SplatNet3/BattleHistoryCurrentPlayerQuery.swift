@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class BattleHistoryCurrentPlayerQuery: GraphQL {
-	public typealias ResponseType = BattleHistoryCurrentPlayerQuery.Response
+	typealias ResponseType = BattleHistoryCurrentPlayerQuery.Response
 	var hash: SHA256Hash = .BattleHistoryCurrentPlayerQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

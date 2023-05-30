@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class FestRecordRefetchQuery: GraphQL {
-	public typealias ResponseType = FestRecordRefetchQuery.Response
+	typealias ResponseType = FestRecordRefetchQuery.Response
 	var hash: SHA256Hash = .FestRecordRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

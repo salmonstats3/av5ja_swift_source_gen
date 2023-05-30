@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class GesotownQuery: GraphQL {
-	public typealias ResponseType = GesotownQuery.Response
+	typealias ResponseType = GesotownQuery.Response
 	var hash: SHA256Hash = .GesotownQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

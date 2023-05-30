@@ -6,10 +6,8 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 public protocol PartialHistoryGroup: Codable {
     var startTime: Date? { get }

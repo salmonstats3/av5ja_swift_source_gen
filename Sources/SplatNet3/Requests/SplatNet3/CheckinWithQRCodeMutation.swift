@@ -6,12 +6,10 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
+import Foundation
 
-
-final public class CheckinWithQRCodeMutation: GraphQL {
+public final class CheckinWithQRCodeMutation: GraphQL {
 	public typealias ResponseType = CheckinWithQRCodeMutation.Response
     public var hash: SHA256Hash = .CheckinWithQRCodeMutation
     public var variables: [String: String] = [:]

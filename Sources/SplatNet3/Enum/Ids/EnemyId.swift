@@ -5,8 +5,8 @@
 //  Created by devonly on 2022/11/24.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 public enum EnemyId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .SakelienBomber
@@ -30,7 +30,7 @@ public enum EnemyId: Int, UnsafeRawRepresentable {
     case SakeRope           = 24
 
     public var description: String {
-        return NSLocalizedString("CoopEnemy_\(String(describing: self))", bundle: .module, comment: "")
+        NSLocalizedString("CoopEnemy_\(String(describing: self))", bundle: .module, comment: "")
     }
 
     public static let regular: [EnemyId] = [
@@ -63,7 +63,7 @@ extension EnemyId: Plottable {
     }
 
     public init?(primitivePlottable: String) {
-        guard let rawValue: Int = Int(primitivePlottable) else {
+        guard let rawValue = Int(primitivePlottable) else {
             return nil
         }
         self.init(rawValue: rawValue)

@@ -22,7 +22,7 @@ protocol SP3IdType: Codable, CustomStringConvertible, Equatable, Identifiable {
 }
 
 public enum Common {
-    static let dateFormatter: SPDateFormatter = SPDateFormatter()
+    static let dateFormatter = SPDateFormatter()
 
     // MARK: - PlayerId
     public struct PlayerId: SP3IdType {
@@ -52,7 +52,7 @@ public enum Common {
         public init(description: String) throws {
             let rawValue: [String] = description.capture(pattern: #"^([A-z]*)-u-([a-z0-9]*):([T0-9]*)_([a-z0-9-]*):u-([a-z0-9]*)$"#, group: [0, 1, 2, 3, 4, 5])
             guard let playTime: Date = Common.dateFormatter.date(from: rawValue[3]),
-                  let uuid: UUID = UUID(uuidString: rawValue[4])
+                  let uuid = UUID(uuidString: rawValue[4])
             else {
                 throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "Given playerId could not decode."))
             }
@@ -102,10 +102,9 @@ public enum Common {
         }
 
         public init(description: String) throws {
-
             let rawValue: [String] = description.capture(pattern: #"^([A-z]*)-u-([a-z0-9]*):([T0-9]*)_([a-z0-9\-]*)$"#, group: [0, 1, 2, 3, 4])
 
-            guard let type: IdType = IdType(rawValue: rawValue[1])
+            guard let type = IdType(rawValue: rawValue[1])
             else {
                 throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "Invalid Type"))
             }
@@ -114,7 +113,7 @@ public enum Common {
                 throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "Invalid Date"))
             }
 
-            guard let uuid: UUID = UUID(uuidString: rawValue[4])
+            guard let uuid = UUID(uuidString: rawValue[4])
             else {
                 throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "Invalid UUID"))
             }
@@ -145,7 +144,7 @@ public enum Common {
 
         public var hash: T {
             guard let rawValue: String = url.absoluteString.capture(pattern: #"([\w\d]{64})_"#, group: 1),
-                  let value: T = T(rawValue: rawValue)
+                  let value = T(rawValue: rawValue)
             else {
                 return T.defaultValue
             }
@@ -186,7 +185,7 @@ public enum Common {
 extension KeyedDecodingContainer {
     public func decode(_ type: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal {
         let doubleValue: Double = try decode(Double.self, forKey: key)
-        guard let decimalValue: Decimal = Decimal(string: doubleValue.description)
+        guard let decimalValue = Decimal(string: doubleValue.description)
         else {
             throw DecodingError.typeMismatch(Decimal.self, .init(codingPath: codingPath, debugDescription: "Given value \(doubleValue) could not cast as Decimal"))
         }
@@ -198,7 +197,7 @@ extension KeyedDecodingContainer {
         else {
             return nil
         }
-        guard let decimalValue: Decimal = Decimal(string: doubleValue.description)
+        guard let decimalValue = Decimal(string: doubleValue.description)
         else {
             throw DecodingError.typeMismatch(Decimal.self, .init(codingPath: codingPath, debugDescription: "Given value \(doubleValue) could not cast as Decimal"))
         }

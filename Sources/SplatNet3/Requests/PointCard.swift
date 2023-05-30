@@ -35,7 +35,7 @@ public struct SP3PointCard: PointCard {
     public var defeatedBossCount: Int = 0
 
     public init() {}
-    
+
     public init(pointCard: CoopHistoryQuery.PointCard) {
         self.shiftsWorked = pointCard.playCount
         self.ikuraNum = pointCard.deliverCount

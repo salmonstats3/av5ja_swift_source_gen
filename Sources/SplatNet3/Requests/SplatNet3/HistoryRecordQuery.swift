@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class HistoryRecordQuery: GraphQL {
-	public typealias ResponseType = HistoryRecordQuery.Response
+	typealias ResponseType = HistoryRecordQuery.Response
 	var hash: SHA256Hash = .HistoryRecordQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
@@ -23,7 +21,7 @@ final class HistoryRecordQuery: GraphQL {
         public let data: ResponseData
 
         public var assets: [SPAssetType<BadgeInfoId>] {
-            data.playHistory.allBadges.map({ SPAssetType(key: $0.id , url: $0.image.url) })
+            data.playHistory.allBadges.map({ SPAssetType(key: $0.id, url: $0.image.url) })
         }
     }
 

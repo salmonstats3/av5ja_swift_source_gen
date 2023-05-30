@@ -11,8 +11,7 @@ import Foundation
 public extension Encodable {
     func asData() throws -> Data {
         let encoder: JSONEncoder = {
-            let encoder: JSONEncoder = JSONEncoder()
-            return encoder
+            JSONEncoder() as JSONEncoder
         }()
 
         return try encoder.encode(self)

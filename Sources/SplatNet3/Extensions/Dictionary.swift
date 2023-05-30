@@ -10,7 +10,7 @@ import Foundation
 
 extension Dictionary where Key == String, Value == Any {
     var flatten: [Key: Value] {
-        self.map({ (key, value) in
+        self.map({ key, value in
             if let dict: [Key: Value] = value as? [Key: Value] {
                 return dict.flatten
             }

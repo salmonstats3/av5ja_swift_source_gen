@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class DetailTabViewXRankingArRefetchQuery: GraphQL {
-	public typealias ResponseType = DetailTabViewXRankingArRefetchQuery.Response
+	typealias ResponseType = DetailTabViewXRankingArRefetchQuery.Response
 	var hash: SHA256Hash = .DetailTabViewXRankingArRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

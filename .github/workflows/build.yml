@@ -1,0 +1,67 @@
+name: SwiftPackage 
+
+on:
+  push:
+    branches:
+      - release/**
+      - develop/**
+env:
+  api_url: https://api.splatnet3.com/v3/authorize/version 
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    # Select Xcode version
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Select Xcode version
+      run: sudo xcode-select -s '/Applications/Xcode_14.0.1.app/Contents/Developer'
+    - name: Cache Swift Packages
+      uses: actions/cache@v1
+      with:
+        path: SourcePackages
+        key: ${{ runner.os }}-spm-${{ hashFiles('*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+        restore-keys: ${{ runner.os }}-spm-
+    # Run build
+    - name: Build
+      run: xcodebuild
+            -scheme SplatNet3
+            -sdk iphonesimulator
+            -destination 'generic/platform=iOS'
+            build
+      # Run unit test
+    - name: Run tests
+      run: xcodebuild
+            -scheme SplatNet3
+            -sdk iphonesimulator
+            -destination 'generic/platform=iOS'
+            clean
+  release:
+    needs:
+      - build
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Version
+        id: version
+        run: echo "::set-output name=text::$(curl -s ${{ env.api_url }} | jq -r '.version')"
+      - name: Web Version
+        id: web_version
+        run: echo "::set-output name=text::$(curl -s ${{ env.api_url }} | jq -r '.web_version')"
+      - name: Check
+        run: echo ${{ steps.version.outputs.version }} ${{ steps.web_version.outputs.version }}
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Create
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.version.outputs.text }}
+          release_name: ${{ steps.web_version.outputs.text }}
+          body: ""
+          draft: true
+          prerelease: false

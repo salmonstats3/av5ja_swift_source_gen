@@ -6,12 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
+import Foundation
 
 final class BankaraBattleHistoriesQuery: GraphQL {
-	public typealias ResponseType = BankaraBattleHistoriesQuery.Response
+	typealias ResponseType = BankaraBattleHistoriesQuery.Response
 	var hash: SHA256Hash = .BankaraBattleHistoriesQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

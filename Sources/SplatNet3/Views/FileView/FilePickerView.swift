@@ -11,9 +11,9 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 public struct FilePickerView: View {
-    public typealias Completeion = (URL) -> ()
+    public typealias Completeion = (URL) -> Void
     let fileType: [UTType]
-    let onSelected: (URL) -> ()
+    let onSelected: (URL) -> Void
 
     public init(fileType: [UTType], onSelected: @escaping Completeion) {
         self.fileType = fileType
@@ -27,7 +27,7 @@ public struct FilePickerView: View {
 
 private struct _FilePickerView: UIViewControllerRepresentable {
     let fileType: [UTType]
-    let onSelected: (URL) -> ()
+    let onSelected: (URL) -> Void
 
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -37,7 +37,7 @@ private struct _FilePickerView: UIViewControllerRepresentable {
     }
 
     func makeUIViewController(context: Context) -> UIDocumentPickerViewController {
-        let controller: UIDocumentPickerViewController = UIDocumentPickerViewController(forOpeningContentTypes: fileType, asCopy: true)
+        let controller = UIDocumentPickerViewController(forOpeningContentTypes: fileType, asCopy: true)
         controller.delegate = context.coordinator
         return controller
     }

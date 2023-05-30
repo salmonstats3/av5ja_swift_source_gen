@@ -9,7 +9,7 @@ import Foundation
 
 public enum WeaponKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Random_Green
-	public var id: String { rawValue }
+    public var id: Int { WeaponId.allCases[WeaponKey.allCases.firstIndex(of: self) ?? 0].id }
 
     case Dummy = "a23d035e2f37c502e85b6065ba777d93f42d6ca7017ed029baac6db512e3e17f"
 	case Random_Gold = "9d7272733ae2f2282938da17d69f13419a935eef42239132a02fcf37d8678f10"

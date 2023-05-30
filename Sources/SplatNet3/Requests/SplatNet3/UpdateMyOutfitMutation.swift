@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class UpdateMyOutfitMutation: GraphQL {
-	public typealias ResponseType = UpdateMyOutfitMutation.Response
+	typealias ResponseType = UpdateMyOutfitMutation.Response
 	var hash: SHA256Hash = .UpdateMyOutfitMutation
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

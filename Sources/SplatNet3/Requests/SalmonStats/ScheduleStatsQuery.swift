@@ -6,9 +6,8 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
+import Foundation
 
 protocol SalmonStats: RequestType {}
 
@@ -33,7 +32,7 @@ public final class ScheduleStatsQuery: SalmonStats {
     public var method: Alamofire.HTTPMethod = .get
     public var parameters: Alamofire.Parameters?
     public var path: String
-    public var headers: [String : String]?
+    public var headers: [String: String]?
 
     public typealias ResponseType = ScheduleStatsQuery.Response
 

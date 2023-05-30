@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 public struct SPProgress: Identifiable {
-    public let id: UUID = UUID()
+    public let id = UUID()
     public let path: SPEndpoint
     public var color: Color {
         self.path.color

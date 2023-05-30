@@ -10,7 +10,6 @@ import SwiftyBeaver
 import UIKit
 
 public class SwiftyLogger {
-
     static let logger: SwiftyBeaver.Type = SwiftyBeaver.self
     static let format: String = "$DHH:mm:ss$d $L: $M"
 
@@ -26,35 +25,35 @@ public class SwiftyLogger {
         }
     }
 
-    static public let baseURL: URL = {
+    public static let baseURL: URL = {
         guard let baseURL: URL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else {
             fatalError()
         }
         return baseURL.appendingPathComponent("swiftybeaver").appendingPathExtension("log")
     }()
 
-    static public func info(_ message: Any, context: Any? = nil) {
+    public static func info(_ message: Any, context: Any? = nil) {
         self.logger.info(message, context: context)
     }
 
-    static public func error(_ message: Any, context: Any? = nil) {
+    public static func error(_ message: Any, context: Any? = nil) {
         self.logger.error(message, context: context)
     }
 
-    static public func debug(_ message: Any, context: Any? = nil) {
+    public static func debug(_ message: Any, context: Any? = nil) {
         self.logger.debug(message, context: context)
     }
 
-    static public func warning(_ message: Any, context: Any? = nil) {
+    public static func warning(_ message: Any, context: Any? = nil) {
         self.logger.warning(message, context: context)
     }
 
-    static public func verbose(_ message: Any, context: Any? = nil) {
+    public static func verbose(_ message: Any, context: Any? = nil) {
         self.logger.verbose(message, context: context)
     }
 
-    static public func sizeOfFile() -> String {
-        let formatter: ByteCountFormatter = ByteCountFormatter()
+    public static func sizeOfFile() -> String {
+        let formatter = ByteCountFormatter()
         formatter.allowedUnits = [.useKB]
         formatter.countStyle = .file
         guard let attributes = try? FileManager.default.attributesOfItem(atPath: baseURL.path)
@@ -67,12 +66,12 @@ public class SwiftyLogger {
         return formatter.string(fromByteCount: bytes)
     }
 
-    static public func deleteAll() {
+    public static func deleteAll() {
         do {
             if FileManager.default.fileExists(atPath: baseURL.path) {
                 try FileManager.default.removeItem(atPath: baseURL.path)
             }
-        } catch(let error) {
+        } catch {
             self.error(error)
         }
     }

@@ -5,8 +5,8 @@
 //  Created by devonly on 2022/11/25.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 public enum EventId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Water_Levels
@@ -23,7 +23,7 @@ public enum EventId: Int, UnsafeRawRepresentable {
     case Mudmouth       = 8
 
     public var description: String {
-        return NSLocalizedString("CoopEvent_\(String(describing: self))", bundle: .module, comment: "")
+        NSLocalizedString("CoopEvent_\(String(describing: self))", bundle: .module, comment: "")
     }
 
     public static func allEvents(isBigRun: Bool = false) -> [EventId] {
@@ -34,7 +34,7 @@ public enum EventId: Int, UnsafeRawRepresentable {
                 .Rush,
                 .Griller,
                 .The_Mothership,
-                .Fog,
+                .Fog
             ]
         case false:
             return allCases
@@ -51,7 +51,7 @@ extension EventId: Plottable {
     }
 
     public init?(primitivePlottable: String) {
-        guard let rawValue: Int = Int(primitivePlottable) else {
+        guard let rawValue = Int(primitivePlottable) else {
             return nil
         }
         self.init(rawValue: rawValue)

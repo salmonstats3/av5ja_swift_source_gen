@@ -25,7 +25,7 @@ public struct UnsafeSHA256Hash<T: UnsafeRawRepresentable>: Codable {
 
         guard let capture: String = stringValue.capture(pattern: #"([\w\d]{64})_"#, group: 1),
               let rawValue: T.RawValue = T.RawValue(capture),
-              let value: T = T(rawValue: rawValue)
+              let value = T(rawValue: rawValue)
         else {
             self.wrappedValue = T.defaultValue
             return
@@ -51,11 +51,11 @@ public struct UnsafeRawValue<T: UnsafeRawRepresentable>: Codable {
         let container = try decoder.singleValueContainer()
         let stringValue: String = try container.decode(String.self)
 
-        guard let data: Data = Data(base64Encoded: stringValue),
-              let stringValue: String = String(data: data, encoding: .utf8),
+        guard let data = Data(base64Encoded: stringValue),
+              let stringValue = String(data: data, encoding: .utf8),
               let capture: String = stringValue.capture(pattern: "-([0-9-]*)$", group: 1),
               let rawValue: T.RawValue = T.RawValue(capture),
-              let value: T = T(rawValue: rawValue)
+              let value = T(rawValue: rawValue)
         else {
             self.wrappedValue = T.defaultValue
             return

@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class CoopPagerLatestCoopQuery: GraphQL {
-	public typealias ResponseType = CoopPagerLatestCoopQuery.Response
+	typealias ResponseType = CoopPagerLatestCoopQuery.Response
 	var hash: SHA256Hash = .CoopPagerLatestCoopQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class StageRecordQuery: GraphQL {
-	public typealias ResponseType = StageRecordQuery.Response
+	typealias ResponseType = StageRecordQuery.Response
 	var hash: SHA256Hash = .StageRecordQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

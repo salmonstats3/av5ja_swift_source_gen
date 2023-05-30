@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class PhotoAlbumQuery: GraphQL {
-	public typealias ResponseType = PhotoAlbumQuery.Response
+	typealias ResponseType = PhotoAlbumQuery.Response
 	var hash: SHA256Hash = .PhotoAlbumQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -5,8 +5,8 @@
 //  Copyright @2022 Magi, Corporation. All rights reserved.
 //
 
-import Foundation
 import Charts
+import Foundation
 
 @available(iOS 16.0, *)
 extension WeaponKey: Plottable {}

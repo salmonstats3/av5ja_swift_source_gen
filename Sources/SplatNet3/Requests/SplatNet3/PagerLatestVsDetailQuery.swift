@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class PagerLatestVsDetailQuery: GraphQL {
-	public typealias ResponseType = PagerLatestVsDetailQuery.Response
+	typealias ResponseType = PagerLatestVsDetailQuery.Response
 	var hash: SHA256Hash = .PagerLatestVsDetailQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

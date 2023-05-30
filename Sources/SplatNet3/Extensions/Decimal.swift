@@ -7,7 +7,7 @@
 
 import Foundation
 
-//extension Decimal {
+// extension Decimal {
 //    init(from decoder: Decoder) throws {
 //        let container = try decoder.singleValueContainer()
 //        let doubleValue: Double = try container.decode(Double.self)
@@ -18,4 +18,4 @@ import Foundation
 //        }
 //        self = decimalValue
 //    }
-//}
+// }

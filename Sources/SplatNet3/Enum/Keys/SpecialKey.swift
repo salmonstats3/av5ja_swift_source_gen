@@ -9,7 +9,19 @@ import Foundation
 
 public enum SpecialKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .SpRandomGreen
-	public var id: String { rawValue }
+    public var id: Int { SpecialId.allCases[SpecialKey.allCases.firstIndex(of: self) ?? 0].rawValue }
+
+    public static var allCases: [SpecialKey] {
+        [
+            .SpNiceBall,
+            .SpShockSonar,
+            .SpMicroLaser,
+            .SpJetpack,
+            .SpChariot,
+            .SpSkewer,
+            .SpTripleTornado
+        ]
+    }
 
     case SpRandomGreen = "473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1"
 	case SpUltraShot = "7269f1fa71d746d7b86ca2a71fc24c6ea4c764077ee50d692f80eddeaff90f1d"

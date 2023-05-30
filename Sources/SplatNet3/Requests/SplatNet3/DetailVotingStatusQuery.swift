@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class DetailVotingStatusQuery: GraphQL {
-	public typealias ResponseType = DetailVotingStatusQuery.Response
+	typealias ResponseType = DetailVotingStatusQuery.Response
 	var hash: SHA256Hash = .DetailVotingStatusQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

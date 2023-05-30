@@ -12,7 +12,7 @@ public extension Collection where Self.Iterator.Element: RandomAccessCollection 
     var transposed: [[Self.Iterator.Element.Iterator.Element]] {
         guard let firstRow = self.first else { return [] }
         return firstRow.indices.map { index in
-            self.map{ $0[index] }
+            self.map { $0[index] }
         }
     }
 }

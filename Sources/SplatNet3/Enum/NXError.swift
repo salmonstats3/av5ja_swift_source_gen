@@ -30,7 +30,7 @@ enum NXErrorDescription: String, CaseIterable, Codable {
     case OAUTH_FAILED   = "Client authentication failed"
 }
 
-enum NXErrorMessage:  String, CaseIterable, Codable {
+enum NXErrorMessage: String, CaseIterable, Codable {
     /// リクエストが誤っている
     case BAD_REQUEST        = "Bad request."
     /// 要求されているバージョンよりも低い

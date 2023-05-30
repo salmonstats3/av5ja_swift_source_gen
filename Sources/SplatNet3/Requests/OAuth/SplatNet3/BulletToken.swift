@@ -24,7 +24,7 @@ class BulletToken: RequestType {
         self.headers = [
             "X-Web-View-Ver": version,
             "X-NaCountry": "US",
-            "X-GameWebToken": accessToken,
+            "X-GameWebToken": accessToken
         ]
     }
 

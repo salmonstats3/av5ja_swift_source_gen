@@ -6,9 +6,8 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Charts
+import Foundation
 
 public enum GearInfoKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Hed_INV000

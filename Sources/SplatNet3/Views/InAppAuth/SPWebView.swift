@@ -7,12 +7,12 @@
 //
 
 import Foundation
-import WebKit
 import SwiftUI
+import WebKit
 
 class SPWebView: WKWebView, WKNavigationDelegate {
     let indicator: UIActivityIndicatorView = {
-        let indicator: UIActivityIndicatorView = UIActivityIndicatorView()
+        let indicator = UIActivityIndicatorView()
         indicator.hidesWhenStopped = true
         indicator.color = UIColor(SPColor.SplatNet3.SPOrange)
         indicator.style = .large

@@ -13,7 +13,7 @@ import Foundation
 class XVersion: RequestType {
     typealias ResponseType = XVersion.Response
 
-    var baseURL: URL = URL(unsafeString: "https://apps.apple.com/")
+    var baseURL = URL(unsafeString: "https://apps.apple.com/")
     var method: HTTPMethod = .get
     var path: String
     var parameters: Parameters?

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 extension SPProgress {
     init<T: GraphQL>(_ request: T) {
         let path: SPEndpoint = {

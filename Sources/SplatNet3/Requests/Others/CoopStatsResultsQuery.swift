@@ -5,16 +5,16 @@
 //  Created by devonly on 2022/12/04.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 import UIKit
 
 public class CoopStatsResultsQuery: RequestType {
     public typealias ResponseType = [Response]
     #if targetEnvironment(simulator)
-    public var baseURL: URL = URL(unsafeString: "http://localhost:8080/")
+    public var baseURL = URL(unsafeString: "http://localhost:8080/")
     #else
-    public var baseURL: URL = URL(unsafeString: "https://api.splatnet3.com/")
+    public var baseURL = URL(unsafeString: "https://api.splatnet3.com/")
     #endif
     public var path: String = "v1/results"
     public var parameters: Parameters?
@@ -39,7 +39,7 @@ public class CoopStatsResultsQuery: RequestType {
         ]
         #if targetEnvironment(simulator)
         if let result: CoopResult = results.last {
-            let encoder: JSONEncoder = JSONEncoder()
+            let encoder = JSONEncoder()
             encoder.dateEncodingStrategy = .iso8601
             self.parameters = [
                 "results": [result].map({ $0.asJSON() })
@@ -58,11 +58,11 @@ public class CoopStatsResultsQuery: RequestType {
 
     public struct Response: Codable {
         enum CodingKeys: String, CodingKey {
-            case salmonId   = "resultId"
+            case salmonId = "resultId"
             case uuid
             case playTime
         }
-        
+
         public let salmonId: Int
         public let uuid: UUID
         public let playTime: Date
@@ -72,7 +72,7 @@ public class CoopStatsResultsQuery: RequestType {
         }
 
         public init(from decoder: Decoder) throws {
-            let dateFormatter: ISO8601DateFormatter = ISO8601DateFormatter()
+            let dateFormatter = ISO8601DateFormatter()
             dateFormatter.formatOptions.insert(.withFractionalSeconds)
             let container = try decoder.container(keyedBy: CodingKeys.self)
             self.salmonId = try container.decode(Int.self, forKey: .salmonId)

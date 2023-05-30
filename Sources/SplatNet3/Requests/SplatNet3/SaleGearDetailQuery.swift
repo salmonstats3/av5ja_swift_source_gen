@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class SaleGearDetailQuery: GraphQL {
-	public typealias ResponseType = SaleGearDetailQuery.Response
+	typealias ResponseType = SaleGearDetailQuery.Response
 	var hash: SHA256Hash = .SaleGearDetailQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

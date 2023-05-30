@@ -6,13 +6,11 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
-
-import Foundation
 import Alamofire
-
+import Foundation
 
 final class MyOutfitCommonDataEquipmentsQuery: GraphQL {
-	public typealias ResponseType = MyOutfitCommonDataEquipmentsQuery.Response
+	typealias ResponseType = MyOutfitCommonDataEquipmentsQuery.Response
 	var hash: SHA256Hash = .MyOutfitCommonDataEquipmentsQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

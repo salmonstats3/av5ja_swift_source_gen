@@ -6,8 +6,8 @@
 //  
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 enum RequestHeader: CustomStringConvertible {
     case AUTHORIZATION(String)
