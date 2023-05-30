@@ -59,9 +59,8 @@ jobs:
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REF: ${{ github.ref }}
         with:
-          tag_name: ${REF##*/v}
+          tag_name: ${{ github.ref }}
           release_name: ${{ steps.web_version.outputs.text }}
           body: ""
           draft: false
