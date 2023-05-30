@@ -2,9 +2,9 @@ name: SwiftPackage
 
 on:
   push:
-    branches:
-      - release/**
-      - develop/**
+    tags:
+        - 'v*.*.*'
+
 env:
   api_url: https://api.splatnet3.com/v3/authorize/version 
 
@@ -59,9 +59,10 @@ jobs:
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REF: ${{ github.ref }}
         with:
-          tag_name: ${{ steps.version.outputs.text }}
+          tag_name: ${REF##*/v}
           release_name: ${{ steps.web_version.outputs.text }}
           body: ""
-          draft: true
+          draft: false
           prerelease: false
