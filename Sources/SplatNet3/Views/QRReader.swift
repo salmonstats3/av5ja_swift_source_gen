@@ -17,7 +17,7 @@ public struct QRReaderView: UIViewControllerRepresentable {
     public init() {
         self.reader = QRCaptureSession()
         self.view = _QRReaderView(session: reader)
-        self.reader.onDidFinish = { code in
+        self.reader.onDidFinish = { _ in
             DispatchQueue.main.async(execute: {
                 UIApplication.shared.startAnimating(completion: {
 //                    Task(priority: .utility, operation: {
