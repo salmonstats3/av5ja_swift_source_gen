@@ -45,8 +45,8 @@ class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
         case .denied:
-            let alert = UIAlertController(title: LocalizedType.QRCodeReader_Title.localized, message: LocalizedType.Error_ErrorOccurred.localized, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: LocalizedType.Common_Decide.localized, style: .default))
+            let alert = UIAlertController(title: LocalizedType.CommonAppSalmonia.localized, message: LocalizedType.CommonClose.localized, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.localized, style: .default))
             UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
         case .restricted:
             break
