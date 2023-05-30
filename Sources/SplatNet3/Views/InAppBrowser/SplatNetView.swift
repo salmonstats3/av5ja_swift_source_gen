@@ -57,7 +57,7 @@ struct SplatNetView: UIViewControllerRepresentable {
 
         init(contentId: ContentId) {
             /// リクエスト
-            let locale: String = NSLocalizedString(LocalizedType.CoopHistory_Locale.rawValue, bundle: .module, comment: "")
+            let locale: String = NSLocalizedString(LocalizedType.CommonLocaleLang.rawValue, bundle: .module, comment: "")
             var baseURL: URL = contentId.requestURL
             baseURL.queryItems([URLQueryItem(name: "lang", value: locale)])
             var request = URLRequest(url: baseURL)
@@ -91,7 +91,7 @@ struct SplatNetView: UIViewControllerRepresentable {
                         switch contentId {
                         case .SP2:
                             /// ヘッダーを更新
-                            request.headers.add(name: "X-GameWebToken", value: account.gameWebToken)
+                            request.headers.add(name: "X-GameWebToken", value: gameWebToken)
                             indicator.stopAnimating()
                             webView.load(request)
                         case .SP3:
@@ -178,7 +178,7 @@ struct SplatNetView: UIViewControllerRepresentable {
                     self.popover(controller, animated: true)
                 })
             case .invokeNativeShareUrl(let content):
-                let hashTag: String = ["Salmonia3", LocalizedType.MemoryPlayer_Title.localized].map({ "#\($0)" }).joined(separator: " ")
+                let hashTag: String = ["Salmonia3"].map({ "#\($0)" }).joined(separator: " ")
                 let controller = UIActivityViewController(activityItems: [CustomShareItem(content: content), content.url, hashTag], applicationActivities: nil)
                     self.popover(controller, animated: true)
             case .copyToClipboard(let content):
@@ -195,10 +195,10 @@ struct SplatNetView: UIViewControllerRepresentable {
                         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                     })
                     let alert = UIAlertController(
-                        title: LocalizedType.Common_Download.localized,
-                        message: LocalizedType.CoopHistory_SaveToPhotoLibrary.localized,
+                        title: LocalizedType.CommonDownload.localized,
+                        message: LocalizedType.CommonSaveToPhotoLibrary.localized,
                         preferredStyle: .alert)
-                    let action = UIAlertAction(title: LocalizedType.Common_Close.localized, style: .default)
+                    let action = UIAlertAction(title: LocalizedType.CommonClose.localized, style: .default)
                     alert.addAction(action)
                     present(alert, animated: true)
                 })

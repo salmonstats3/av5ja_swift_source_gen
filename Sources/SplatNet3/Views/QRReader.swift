@@ -17,17 +17,17 @@ public struct QRReaderView: UIViewControllerRepresentable {
     public init() {
         self.reader = QRCaptureSession()
         self.view = _QRReaderView(session: reader)
-        self.reader.onDidFinish = { [self] code in
+        self.reader.onDidFinish = { code in
             DispatchQueue.main.async(execute: {
                 UIApplication.shared.startAnimating(completion: {
-                    Task(priority: .utility, operation: {
-                        do {
-                            let response = try await session.getCheckInWithQRCodeMutation(eventId: code)
-                        } catch {
-                            SwiftyLogger.error(error)
-                        }
-                        UIApplication.shared.presentedViewController?.dismiss(animated: true)
-                    })
+//                    Task(priority: .utility, operation: {
+//                        do {
+//                            let response = try await session.getCheckInWithQRCodeMutation(eventId: code)
+//                        } catch {
+//                            SwiftyLogger.error(error)
+//                        }
+//                        UIApplication.shared.presentedViewController?.dismiss(animated: true)
+//                    })
                 })
             })
         }

@@ -28,7 +28,7 @@ extension SPError: LocalizedError {
         case .invalidURL:
             return NSLocalizedString("Given URL is invalid.", comment: "")
         case .invalidSignature:
-            return LocalizedType.CoopHistory_InvalidSignature.localized
+            return NSLocalizedString("Invalid signature.", comment: "")
         case .invalidFormat:
             return NSLocalizedString("Unacceptable format.", comment: "")
         case .invalidResultId:
@@ -36,7 +36,7 @@ extension SPError: LocalizedError {
         case .invalidExtension:
             return NSLocalizedString("Unacceptable extension.", comment: "")
         case .invalidVersion:
-            return LocalizedType.CoopHistory_MinimumVersion.localized
+            return NSLocalizedString("Invalid version.", comment: "")
         }
     }
 }
