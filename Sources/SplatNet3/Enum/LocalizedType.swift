@@ -9,7 +9,8 @@ import Foundation
 
 public enum LocalizedType: String, CaseIterable, Identifiable, Codable {
 	public var id: String { rawValue }
-	/// テッキュウ
+    public var localized: String { NSLocalizedString(rawValue, comment: "") }
+    /// テッキュウ
 	case CoopEnemy_SakeArtillery
 	/// ドロシャケ
 	case CoopEnemy_SakeBigMouth
