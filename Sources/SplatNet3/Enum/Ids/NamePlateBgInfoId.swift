@@ -1,5 +1,5 @@
 //
-//  NameplateId.swift
+//  NamePlageBgInfoId.swift
 //  SplatNet3
 //
 //  Created by tkgstrator on 2022/09/22
@@ -8,8 +8,9 @@
 
 import Foundation
 
-public enum NameplateId: Int, CaseIterable, Identifiable, Codable {
+public enum NamePlateBgInfoId: Int, UnsafeRawRepresentable {
 	public var id: Int { rawValue }
+	public static var defaultValue: Self = .Npl_Tutorial00
 	case Npl_Catalog_Season01_Lv01 = 11001
 	case Npl_Catalog_Season01_Lv02 = 11002
 	case Npl_Catalog_Season01_Lv03 = 11003

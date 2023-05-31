@@ -242,7 +242,7 @@ public enum LocalizedType: String, CaseIterable {
 	/// 非圧縮(JSON)
 	case CommonBackupNoCompress = "CommonBackupNoCompress"
 	/// { 0 }%
-	case Common% = "Common%"
+	case Common = "Common"
 	/// キャンセル
 	case CommonCancel = "CommonCancel"
 	/// ガチアサリ

@@ -1,5 +1,5 @@
 //
-//  NameplateKey.swift
+//  NamePlateBgInfoKey.swift
 //  SplatNet3
 //
 //  Created by tkgstrator on 2022/09/22
@@ -9,8 +9,9 @@
 
 import Foundation
 
-public enum NameplateKey: String, CaseIterable, Identifiable, Codable {
+public enum NamePlateBgInfoKey: String, UnsafeRawRepresentable {
 	public var id: String { rawValue }
+	public static var defaultValue: Self = .Npl_Tutorial00
 	case Npl_Catalog_Season01_Lv01 = "3fec40e770ba4df4fb8d6a0598f0820e045411e3d5cab77c4a47aef0a0e3b8a9"
 	case Npl_Catalog_Season01_Lv02 = "4944de43d46fb4e0514c287791171a9a44753a69229d04d53d9c1f4c2c9e5f23"
 	case Npl_Catalog_Season01_Lv03 = "d7b61473019f6ac56967bbd306f9d703302f411ff030976660cda56e6f967ea0"

@@ -1,5 +1,5 @@
 //
-//  BadgeId.swift
+//  BadgeInfoId.swift
 //  SplatNet3
 //
 //  Created by tkgstrator on 2022/09/22
@@ -8,8 +8,9 @@
 
 import Foundation
 
-public enum BadgeId: Int, CaseIterable, Identifiable, Codable {
+public enum BadgeInfoId: Int, UnsafeRawRepresentable {
 	public var id: Int { rawValue }
+	public static var defaultValue: Self = .CatalogueLevel_Lv00
 	case CatalogueLevel_Lv00 = 3102000
 	case CatalogueLevel_Lv01 = 3102001
 	case CoopBigRunTrophy_Lv00 = 5220000

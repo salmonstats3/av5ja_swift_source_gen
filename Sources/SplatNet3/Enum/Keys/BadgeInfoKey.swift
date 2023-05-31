@@ -1,5 +1,5 @@
 //
-//  BadgeKey.swift
+//  BadgeInfoKey.swift
 //  SplatNet3
 //
 //  Created by tkgstrator on 2022/09/22
@@ -8,8 +8,9 @@
 
 import Foundation
 
-public enum BadgeKey: String, CaseIterable, Identifiable, Codable {
+public enum BadgeInfoKey: String, UnsafeRawRepresentable {
 	public var id: String { rawValue }
+	public static var defaultValue: Self = .CatalogueLevel_Lv00
 	case CatalogueLevel_Lv00 = "50e5a765d3abce31e67ec24f94f64b5bd69accb1214e9db0a9a78c70a00a48fc"
 	case CatalogueLevel_Lv01 = "02819bde152f2adbeda3ad128caf70f4228b34f843dae059652397a9f87cbc01"
 	case CoopBigRunTrophy_Lv00 = "82f90f501fc139091a701308598a0282e4da8cf882d95fa2e153f63ae851d7e9"
