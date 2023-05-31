@@ -60,8 +60,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ steps.web_version.outputs.text }}
+          release_name: ${{ github.ref }}
+          tag_name: ${{ steps.web_version.outputs.text }}
           body: ""
           draft: false
           prerelease: false

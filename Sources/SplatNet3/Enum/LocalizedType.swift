@@ -6,6 +6,7 @@
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
+
 import Foundation
 
 public enum LocalizedType: String, CaseIterable {
@@ -94,12 +95,16 @@ public enum LocalizedType: String, CaseIterable {
 	case CoopStageCarousel = "CoopStageCarousel"
 	/// ムニ・エール海洋発電所
 	case CoopStageShakedent = "CoopStageShakedent"
+	/// すじこジャンクション跡
+	case CoopStageShakehighway = "CoopStageShakehighway"
 	/// 難破船ドン・ブラコ
 	case CoopStageShakeship = "CoopStageShakeship"
 	/// アラマキ砦
 	case CoopStageShakespiral = "CoopStageShakespiral"
 	/// シェケナダム
 	case CoopStageShakeup = "CoopStageShakeup"
+	/// マテガイ放水路
+	case CoopStageTemple = "CoopStageTemple"
 	/// アラマキ砦
 	case CoopStageTutorial = "CoopStageTutorial"
 	/// ？？？
@@ -236,6 +241,8 @@ public enum LocalizedType: String, CaseIterable {
 	case CommonBackupCompress = "CommonBackupCompress"
 	/// 非圧縮(JSON)
 	case CommonBackupNoCompress = "CommonBackupNoCompress"
+	/// { 0 }%
+	case Common% = "Common%"
 	/// キャンセル
 	case CommonCancel = "CommonCancel"
 	/// ガチアサリ
@@ -404,6 +411,46 @@ public enum LocalizedType: String, CaseIterable {
 	case CoopWaterLevel1 = "CoopWaterLevel1"
 	/// 満潮
 	case CoopWaterLevel2 = "CoopWaterLevel2"
+	/// 最後に遊んだ
+	case RecordLatestPlayed = "RecordLatestPlayed"
+	/// よく使う
+	case RecordLatestUsed = "RecordLatestUsed"
+	/// メイン
+	case RecordMain = "RecordMain"
+	/// じゅくれん度アップまで
+	case RecordNextSkillLevel = "RecordNextSkillLevel"
+	/// じゅくれん度
+	case RecordSkillLevel = "RecordSkillLevel"
+	/// 並び替え
+	case RecordSort = "RecordSort"
+	/// スペシャル
+	case RecordSpecial = "RecordSpecial"
+	/// ステージのきろく
+	case RecordStageRecord = "RecordStageRecord"
+	/// ステージ
+	case RecordStageRecordAppName = "RecordStageRecordAppName"
+	/// サブ
+	case RecordSub = "RecordSub"
+	/// きろく
+	case RecordTitle = "RecordTitle"
+	/// { 0 }p
+	case RecordTotalTurfPoint = "RecordTotalTurfPoint"
+	/// 塗りポイント
+	case RecordTurfPoint = "RecordTurfPoint"
+	/// 遊んでないステージ
+	case RecordUnplayedStages = "RecordUnplayedStages"
+	/// 未所持のブキ
+	case RecordUnusedWeapons = "RecordUnusedWeapons"
+	/// チョーシ
+	case RecordVibes = "RecordVibes"
+	/// ブキのきろく
+	case RecordWeaponRecord = "RecordWeaponRecord"
+	/// ブキ
+	case RecordWeaponRecordAppName = "RecordWeaponRecordAppName"
+	/// 勝利数
+	case RecordWinCount = "RecordWinCount"
+	/// { 0 }%
+	case RecordWinRatio = "RecordWinRatio"
 	/// バイトチームコンテスト
 	case CommonCoopTeamContest = "CommonCoopTeamContest"
 	/// はてな

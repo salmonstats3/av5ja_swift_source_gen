@@ -40,7 +40,7 @@ public final class CoopHistoryQuery: GraphQL {
         public let regularAverageClearWave: Decimal
         public let regularGrade: GradeType
         public let regularGradePoint: Int
-        public let monthlyGear: GearType
+//        public let monthlyGear: GearType
         public let scale: CoopHistory.Scale
         public let pointCard: PointCard
         public let historyGroups: Common.Node<HistoryGroup>

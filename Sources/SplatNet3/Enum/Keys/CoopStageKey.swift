@@ -21,8 +21,10 @@ public enum CoopStageKey: String, UnsafeRawRepresentable {
     case Shakeride      = "0b0376955f3909e9e95b81c640c66094f8f5d6b316d4fdf89f865dd332d6a13a"
     case Shakeship      = "1a29476c1ab5fdbc813e2df99cd290ce56dfe29755b97f671a7250e5f77f4961"
     case Shakedent      = "f1e4df4cff1dc5e0acc66a9654fecf949224f7e4f6bd36305d4600ac3fa3db7b"
+    case Shakehighway   = "0e05d4caa34089a447535708370286f4ee6068661359b4d7cf6c319863424f84"
     case Carousel       = "2276a46e42a11637776ebc15cf2d46a589f1dba34a76d5c940c418ed7371d071"
     case Upland         = "3598b7f54248b84c47cde6b99aa45ff296a41d3d5f38eaccfe2327b2874fff0b"
+    case Temple         = "71c7076fc2d23f1833c923747e8582e29eb275bed96d8360aa5d0ed6ae069230"
     case Dummy          = "59a42245071d692c58b9825886f89f95e092ae0aa83a46617fdb4cbcb2f5f2b8"
 
     public static let allCases: [Self] = [
@@ -30,8 +32,10 @@ public enum CoopStageKey: String, UnsafeRawRepresentable {
         .Shakespiral,
         .Shakeship,
         .Shakedent,
+        .Shakehighway,
         .Carousel,
-        .Upland
+        .Upland,
+        .Temple
     ]
 
     public init(from decoder: Decoder) throws {

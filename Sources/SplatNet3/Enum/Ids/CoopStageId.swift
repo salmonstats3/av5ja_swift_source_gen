@@ -21,8 +21,10 @@ public enum CoopStageId: Int, UnsafeRawRepresentable {
     case Shakeride      = 5
     case Shakeship      = 6
     case Shakedent      = 7
+    case Shakehighway   = 8
     case Carousel       = 100
     case Upland         = 102
+    case Temple         = 103
     case Dummy          = -999
 
     public var description: String {
@@ -34,8 +36,10 @@ public enum CoopStageId: Int, UnsafeRawRepresentable {
         .Shakespiral,
         .Shakeship,
         .Shakedent,
+        .Shakehighway,
         .Carousel,
-        .Upland
+        .Upland,
+        .Temple
     ]
 
     /// 通常のステージ
