@@ -1,0 +1,23 @@
+{
+  "name": "splatnet3-updator",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/encoding-japanese": "^2.0.1",
+    "@types/node": "^20.2.5",
+    "axios": "^1.4.0",
+    "class-transformer": "^0.5.1",
+    "encoding-japanese": "^2.0.0",
+    "iconv-lite": "^0.6.3",
+    "node-fetch": "^3.3.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "yaml-loader": "^0.8.0"
+  }
+}
