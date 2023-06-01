@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "predev": "yarn format",
+    "predev": "yarn format && yarn lint",
     "dev": "ts-node src/index.ts",
     "lint": "eslint --fix --ignore-path .gitignore './**/*.{js,ts}'",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'"
