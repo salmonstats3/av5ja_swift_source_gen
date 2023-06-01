@@ -55,8 +55,18 @@ export async function get_locale_bundles(): Promise<void> {
             const match: RegExpMatchArray | null = context.match(re)
 
             if (match !== null && match.length !== 0) {
+                const txt = match[1]
+                  .replace(/\\x([0-9A-Fa-f]{2})/g, (_, p1) =>
+                    String.fromCharCode(parseInt("0x00" + p1, 16))
+                  )
+                  .replace(/\\u([0-9A-Fa-f]{4})/g, (_, p1) =>
+                    String.fromCharCode(parseInt("0x" + p1, 16))
+                  )
+                  .replace(/\\"/g, "'")
+                  .replace(/\\'/g, "'")
+                const context: string = JSON.stringify(JSON.parse(txt), null, 2)
                 // @ts-ignore
-                createFile(match[1], `src/locales/${hash}/${locale.locale}.json`)
+                createFile(context, `src/locales/${hash}/${locale.locale}.json`)
             }
         }
     })
