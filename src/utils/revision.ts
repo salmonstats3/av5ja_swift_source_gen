@@ -42,12 +42,11 @@ async function get_locales(hash: string): Promise<LocaleType[]> {
         hash: result[2],
         id: result[1],
         hash: result[2],
-        revision: hash
       };
     })
     .map((item) => plainToInstance(LocaleType, item, { excludeExtraneousValues: true }))
     .concat([
-        plainToInstance(LocaleType, { id: 0, hash: hash, revision: hash }, { excludeExtraneousValues: true }),
+        plainToInstance(LocaleType, { id: 0, hash: hash }, { excludeExtraneousValues: true }),
     ])
     return results
 }

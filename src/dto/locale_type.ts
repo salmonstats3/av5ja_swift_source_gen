@@ -89,9 +89,6 @@ export class LocaleType {
     get locale(): LocaleKey {
         return Object.values(LocaleKey)[(Object.values(LocaleId) as number[]).indexOf(this.id)]
     }
-    
-    @Expose({ name: "revision" })
-    revision: string
 
     get xcode(): string {
         return prefix_xcode(this.id)
@@ -99,7 +96,7 @@ export class LocaleType {
 
     get url(): string {
         return this.id === LocaleId.USen
-        ? `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${this.revision}.js`
+        ? `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${this.hash}.js`
         : `https://api.lp1.av5ja.srv.nintendo.net/static/js/${this.locale}.${this.hash}.chunk.js`
     }
 }
