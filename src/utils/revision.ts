@@ -41,10 +41,15 @@ async function get_locales(hash: string): Promise<LocaleType[]> {
       return {
         hash: result[2],
         id: result[1],
+        hash: result[2],
+        revision: hash
       };
     })
-    .map((item) => plainToInstance(LocaleType, item, { excludeExtraneousValues: true }));
-  return results;
+    .map((item) => plainToInstance(LocaleType, item, { excludeExtraneousValues: true }))
+    .concat([
+        plainToInstance(LocaleType, { id: 0, hash: hash, revision: hash }, { excludeExtraneousValues: true }),
+    ])
+    return results
 }
 
 export async function get_locale_bundles(): Promise<void> {
