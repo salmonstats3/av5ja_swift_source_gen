@@ -1,8 +1,8 @@
 // import { URLType, Version, request } from "./dto/urls"
-import { EnumURLType } from "./dto/internal_type"
-import { URLType, Version } from "./dto/urls"
-import { OutputType, SwiftEnumWriter } from "./utils/enum"
-import { get_web_revision, get_locale_bundles } from "./utils/revision"
+import { EnumURLType } from "./dto/internal_type";
+import { URLType, Version } from "./dto/urls";
+import { OutputType, SwiftEnumWriter } from "./utils/enum";
+import { get_web_revision, get_locale_bundles } from "./utils/revision";
 
 // 内部データを取得する
 // Object.values(URLType).forEach(async (url) => {
@@ -11,9 +11,9 @@ import { get_web_revision, get_locale_bundles } from "./utils/revision"
 // })
 
 // イカリング3からデータを取得する
-const response = await get_web_revision()
-console.log(response)
-await get_locale_bundles()
+const response = await get_web_revision();
+console.log(response);
+await get_locale_bundles();
 
 Object.values(URLType).forEach(async (url) => {
     const data: EnumURLType = await EnumURLType.from(url, Version.V400)

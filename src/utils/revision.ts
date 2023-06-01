@@ -61,6 +61,7 @@ export async function get_locale_bundles(): Promise<void> {
       const match: RegExpMatchArray | null = context.match(re);
 
       if (match !== null && match.length !== 0) {
+<<<<<<< HEAD
         const txt = match[1]
           .replace(/\\x([0-9A-Fa-f]{2})/g, (_, p1) => String.fromCharCode(parseInt('0x00' + p1, 16)))
           .replace(/\\u([0-9A-Fa-f]{4})/g, (_, p1) => String.fromCharCode(parseInt('0x' + p1, 16)))
@@ -94,6 +95,8 @@ export async function get_locale_bundles(): Promise<void> {
             .filter(([_, value]) => value.length >= 2),
         );
         createFile(yaml.dump(objects), `src/locales/${hash}/${locale.locale}.yaml`);
+        // @ts-ignore
+        createFile(match[1], `src/locales/${hash}/${locale.locale}.json`);
       }
     }
   });
@@ -102,9 +105,9 @@ export async function get_locale_bundles(): Promise<void> {
 export const createFile = (data: string, filePath: string) => {
   fs.writeFile(filePath, data, (err) => {
     // ディレクトリ作成できなかったとき
-    if (err && err.code === 'ENOENT') {
+    if (err && err.code === "ENOENT") {
       // ディレクトリ部分だけ切り取り
-      const dir = filePath.substring(0, filePath.lastIndexOf('/'));
+      const dir = filePath.substring(0, filePath.lastIndexOf("/"));
 
       // 親ディレクトリ作成
       fs.mkdir(dir, { recursive: true }, (err) => {
