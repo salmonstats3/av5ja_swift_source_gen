@@ -1,7 +1,7 @@
 import { EnumURLType, InternalType } from "@/dto/internal_type";
 import { URLType } from "@/dto/urls";
 import dayjs from "dayjs";
-import fs from "fs";
+import { createFile } from "./revision";
 
 export const OutputType = {
   Key: "Key",
@@ -72,8 +72,8 @@ export class SwiftEnumWriter {
 
   write(output: OutputType): void {
     const context: string = this.source(output);
-    const file_name: string = this.type.split(".")[0] + output + ".swift";
-    fs.writeFile(`sources/${file_name}`, context, (_) => {});
+    const file_name: string = `sources/${output}s/${this.type.split(".")[0]}${output}.swift`;
+    createFile(context, file_name)
   }
 
   constructor(type: EnumURLType) {

@@ -1,0 +1,122 @@
+// Cannoniere
+"SakeArtillery" = "Cannoniere";
+// Fangonoide
+"SakeBigMouth" = "Fangonoide";
+// Fangonoide
+"SakeBigMouthGold" = "Fangonoide";
+// Salmocottero
+"SakeCopter" = "Salmocottero";
+// Tuffone
+"SakeDolphin" = "Tuffone";
+// Razziatore
+"SakeFlyBagman" = "Razziatore";
+// Trivellaccio
+"SakePillar" = "Trivellaccio";
+// Orroboros
+"SakeRope" = "Orroboros";
+// Coperchiotto
+"SakeSaucer" = "Coperchiotto";
+// Boccalone
+"Sakediver" = "Boccalone";
+// Grill
+"Sakedozer" = "Grill";
+// Bomber
+"SakelienBomber" = "Bomber";
+// Salmodrone
+"SakelienCupTwins" = "Salmodrone";
+// Colossalmonoide
+"SakelienGiant" = "Colossalmonoide";
+// Pinne d'oro
+"SakelienGolden" = "Pinne d'oro";
+// Pinna Pingue
+"SakelienLarge" = "Pinna Pingue";
+// Blindomito
+"SakelienShield" = "Blindomito";
+// Salmonello
+"SakelienSmall" = "Salmonello";
+// Anguilmone
+"SakelienSnake" = "Anguilmone";
+// Spadello
+"SakelienStandard" = "Spadello";
+// Pentolaio
+"SakelienTower" = "Pentolaio";
+// Piovasco
+"Sakerocket" = "Piovasco";
+// Apprendista
+"Grade00" = "Apprendista";
+// Tirocinante
+"Grade01" = "Tirocinante";
+// Carrierista
+"Grade02" = "Carrierista";
+// Promessa
+"Grade03" = "Promessa";
+// Professionista
+"Grade04" = "Professionista";
+// Professionista +1
+"Grade05" = "Professionista +1";
+// Professionista +2
+"Grade06" = "Professionista +2";
+// Professionista +3
+"Grade07" = "Professionista +3";
+// Dirigente
+"Grade08" = "Dirigente";
+// Apprendista
+"GradeArbeiter00" = "Apprendista";
+// Tirocinante
+"GradeArbeiter01" = "Tirocinante";
+// Carrierista
+"GradeArbeiter02" = "Carrierista";
+// Promessa
+"GradeArbeiter03" = "Promessa";
+// Professionista
+"GradeArbeiter04" = "Professionista";
+// Professionista +1
+"GradeArbeiter05" = "Professionista +1";
+// Professionista +2
+"GradeArbeiter06" = "Professionista +2";
+// Professionista +3
+"GradeArbeiter07" = "Professionista +3";
+// Dirigente
+"GradeArbeiter08" = "Dirigente";
+// Salopette arancione
+"COP001" = "Salopette arancione";
+// Salopette verde
+"COP002" = "Salopette verde";
+// Salopette gialla
+"COP003" = "Salopette gialla";
+// Salopette rosa
+"COP004" = "Salopette rosa";
+// Salopette blu
+"COP005" = "Salopette blu";
+// Salopette nera
+"COP006" = "Salopette nera";
+// Salopette bianca
+"COP007" = "Salopette bianca";
+// Tuta da pesca arancione
+"COP008" = "Tuta da pesca arancione";
+// Tuta da pesca nera
+"COP009" = "Tuta da pesca nera";
+// Tuta da pesca gialla
+"COP010" = "Tuta da pesca gialla";
+// Tuta da pesca marrone
+"COP011" = "Tuta da pesca marrone";
+// Soglioland
+"Carousel" = "Soglioland";
+// Centrale Anguilla Elettrica
+"Shakedent" = "Centrale Anguilla Elettrica";
+// R-Accordo musicale
+"Shakehighway" = "R-Accordo musicale";
+// Isoletta del relitto
+"Shakeship" = "Isoletta del relitto";
+// Fortezza Spiralsalmone
+"Shakespiral" = "Fortezza Spiralsalmone";
+// Diga salmonoide
+"Shakeup" = "Diga salmonoide";
+// Cisterna Cernia
+"Temple" = "Cisterna Cernia";
+// Fortezza Spiralsalmone
+"Tutorial" = "Fortezza Spiralsalmone";
+// ???
+"Unknown" = "???";
+// Campus Hippocampus
+"Upland" = "Campus Hippocampus";

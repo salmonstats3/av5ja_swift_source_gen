@@ -1,0 +1,122 @@
+// Bombarie
+"SakeArtillery" = "Bombarie";
+// Moddermuil
+"SakeBigMouth" = "Moddermuil";
+// Moddermuil
+"SakeBigMouthGold" = "Moddermuil";
+// Salmokopter
+"SakeCopter" = "Salmokopter";
+// Dompelaar
+"SakeDolphin" = "Dompelaar";
+// Zammel
+"SakeFlyBagman" = "Zammel";
+// Salmonoliet
+"SakePillar" = "Salmonoliet";
+// Horroboros
+"SakeRope" = "Horroboros";
+// Dreksel
+"SakeSaucer" = "Dreksel";
+// Snaai
+"Sakediver" = "Snaai";
+// Griller
+"Sakedozer" = "Griller";
+// Staalkop
+"SakelienBomber" = "Staalkop";
+// Salmodrone
+"SakelienCupTwins" = "Salmodrone";
+// Sumosalmo
+"SakelienGiant" = "Sumosalmo";
+// Goldie
+"SakelienGolden" = "Goldie";
+// Sallog
+"SakelienLarge" = "Sallog";
+// Jutter
+"SakelienShield" = "Jutter";
+// Salmini
+"SakelienSmall" = "Salmini";
+// Staal
+"SakelienSnake" = "Staal";
+// Salmo
+"SakelienStandard" = "Salmo";
+// Staaplo
+"SakelienTower" = "Staaplo";
+// Miezer
+"Sakerocket" = "Miezer";
+// Uitzendkracht
+"Grade00" = "Uitzendkracht";
+// Parttimer
+"Grade01" = "Parttimer";
+// Vaste kracht
+"Grade02" = "Vaste kracht";
+// Leidinggevende
+"Grade03" = "Leidinggevende";
+// Baas
+"Grade04" = "Baas";
+// Baas +1
+"Grade05" = "Baas +1";
+// Baas +2
+"Grade06" = "Baas +2";
+// Baas +3
+"Grade07" = "Baas +3";
+// Legende
+"Grade08" = "Legende";
+// Uitzendkracht
+"GradeArbeiter00" = "Uitzendkracht";
+// Parttimer
+"GradeArbeiter01" = "Parttimer";
+// Vaste kracht
+"GradeArbeiter02" = "Vaste kracht";
+// Leidinggevende
+"GradeArbeiter03" = "Leidinggevende";
+// Baas
+"GradeArbeiter04" = "Baas";
+// Baas +1
+"GradeArbeiter05" = "Baas +1";
+// Baas +2
+"GradeArbeiter06" = "Baas +2";
+// Baas +3
+"GradeArbeiter07" = "Baas +3";
+// Legende
+"GradeArbeiter08" = "Legende";
+// Oranje werkkloffie
+"COP001" = "Oranje werkkloffie";
+// Groen werkkloffie
+"COP002" = "Groen werkkloffie";
+// Geel werkkloffie
+"COP003" = "Geel werkkloffie";
+// Roze werkkloffie
+"COP004" = "Roze werkkloffie";
+// Blauw werkkloffie
+"COP005" = "Blauw werkkloffie";
+// Zwart werkkloffie
+"COP006" = "Zwart werkkloffie";
+// Wit werkkloffie
+"COP007" = "Wit werkkloffie";
+// Oranje ploeterkloffie
+"COP008" = "Oranje ploeterkloffie";
+// Zwart ploeterkloffie
+"COP009" = "Zwart ploeterkloffie";
+// Geel ploeterkloffie
+"COP010" = "Geel ploeterkloffie";
+// Bruin ploeterkloffie
+"COP011" = "Bruin ploeterkloffie";
+// Waterwonderland
+"Carousel" = "Waterwonderland";
+// Kwikwi-krachtcentrale
+"Shakedent" = "Kwikwi-krachtcentrale";
+// Graattraject
+"Shakehighway" = "Graattraject";
+// Wrak van de ms Grondel
+"Shakeship" = "Wrak van de ms Grondel";
+// Fort Ammoniet
+"Shakespiral" = "Fort Ammoniet";
+// Salmonietendam
+"Shakeup" = "Salmonietendam";
+// Baarsreservoir
+"Temple" = "Baarsreservoir";
+// Fort Ammoniet
+"Tutorial" = "Fort Ammoniet";
+// ???
+"Unknown" = "???";
+// Koraalcampus
+"Upland" = "Koraalcampus";

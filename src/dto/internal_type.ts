@@ -26,7 +26,7 @@ export interface InternalType {
 function calc_hash(key: string): string {
   const hash = createHash('sha256');
   hash.update(key);
-  return hash.digest('hex');
+  return hash.digest("hex");
 }
 
 export class CoopEnemyInfo implements InternalType {
