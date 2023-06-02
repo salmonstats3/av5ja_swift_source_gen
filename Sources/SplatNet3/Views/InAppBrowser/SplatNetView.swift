@@ -100,7 +100,7 @@ struct SplatNetView: UIViewControllerRepresentable {
                                 HTTPCookiePropertyKey.name: "_gtoken",
                                 HTTPCookiePropertyKey.value: account.gameWebToken,
                                 HTTPCookiePropertyKey.domain: contentId.requestURL.host!,
-                                HTTPCookiePropertyKey.path: "/"])!
+                                HTTPCookiePropertyKey.path: "/", ])!
                             await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
                             indicator.stopAnimating()
                             webView.load(request)

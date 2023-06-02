@@ -24,7 +24,7 @@ extension URL {
             "response_type": "session_token_code",
             "session_token_code_challenge": verifier.codeChallenge,
             "session_token_code_challenge_method": "S256",
-            "theme": "login_form"
+            "theme": "login_form",
         ]
         let queryItems: [URLQueryItem] = parameters.map({ URLQueryItem(name: $0.key, value: $0.value) })
         let baseURL = URL(unsafeString: "https://accounts.nintendo.com/connect/1.0.0/authorize")

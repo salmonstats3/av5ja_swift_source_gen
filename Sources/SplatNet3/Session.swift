@@ -197,7 +197,7 @@ extension Session: RequestInterceptor {
 
     /// ハッシュ取得
     func getHash(accessToken: AccessToken.Response) async throws -> Imink.Response {
-        let timestamp = UInt64(Date().timeIntervalSince1970 * 1000)
+        let timestamp = UInt64(Date().timeIntervalSince1970 * 1_000)
         let requestId: String = UUID().uuidString
 
         let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
@@ -206,7 +206,7 @@ extension Session: RequestInterceptor {
 
     /// ハッシュ取得
     func getHash(accessToken: GameServiceToken.Response) async throws -> Imink.Response {
-        let timestamp = UInt64(Date().timeIntervalSince1970 * 1000)
+        let timestamp = UInt64(Date().timeIntervalSince1970 * 1_000)
         let requestId: String = UUID().uuidString
 
         let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))

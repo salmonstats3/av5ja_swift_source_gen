@@ -29,7 +29,7 @@ class Imink: RequestType {
             "hash_method": String(IminkType.nso.rawValue),
             "timestamp": timestamp,
             "request_id": requestId,
-            "na_id": token.payload.sub
+            "na_id": token.payload.sub,
         ]
     }
 
@@ -43,7 +43,7 @@ class Imink: RequestType {
             "timestamp": timestamp,
             "request_id": requestId,
             "na_id": token.payload.sub,
-            "coral_user_id": accessToken.result.user.id.description
+            "coral_user_id": accessToken.result.user.id.description,
         ]
     }
 
@@ -57,12 +57,12 @@ class Imink: RequestType {
                 "hash_method": String(IminkType.nso.rawValue),
                 "timestamp": Date().timeIntervalSince1970,
                 "request_id": UUID().uuidString,
-                "na_id": na_id
+                "na_id": na_id,
             ]
         } else {
             self.parameters = [
                 "token": accessToken.accessToken,
-                "hash_method": String(IminkType.nso.rawValue)
+                "hash_method": String(IminkType.nso.rawValue),
             ]
         }
     }
@@ -77,12 +77,12 @@ class Imink: RequestType {
                 "timestamp": Date().timeIntervalSince1970,
                 "request_id": UUID().uuidString,
                 "na_id": na_id,
-                "coral_user_id": accessToken.result.user.id.description
+                "coral_user_id": accessToken.result.user.id.description,
             ]
         } else {
             self.parameters = [
                 "token": accessToken.result.webApiServerCredential.accessToken,
-                "hash_method": String(IminkType.nso.rawValue)
+                "hash_method": String(IminkType.nso.rawValue),
             ]
         }
     }

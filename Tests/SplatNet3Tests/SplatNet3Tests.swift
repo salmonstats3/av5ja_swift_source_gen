@@ -6,7 +6,7 @@ final class SplatNet3Tests: XCTestCase {
     private let decoder = SPDecoder()
 
     private func getListContents(_ type: JSONType) -> [URL] {
-        return Bundle.module.urls(forResourcesWithExtension: "json", subdirectory: "JSON/\(type.rawValue)") ?? []
+        Bundle.module.urls(forResourcesWithExtension: "json", subdirectory: "JSON/\(type.rawValue)") ?? []
     }
 
     func testHistoryRecord() throws {

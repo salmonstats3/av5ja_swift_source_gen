@@ -21,7 +21,7 @@ public extension CoopStageId {
         .Shakehighway,
         .Carousel,
         .Upland,
-        .Temple
+        .Temple,
     ]
 
     /// 通常のステージ
@@ -39,7 +39,7 @@ public extension CoopStageKey {
         .Shakehighway,
         .Carousel,
         .Upland,
-        .Temple
+        .Temple,
     ]
 }
 

@@ -23,7 +23,7 @@ class GameServiceToken: RequestType {
     init(imink: Imink.Response, accessToken: AccessToken.Response, version: AppVersion.Response) {
         self.headers = [
             "X-ProductVersion": "\(version.version)",
-            "X-Platform": "Android"
+            "X-Platform": "Android",
         ]
         self.parameters = [
             "parameter": [
@@ -33,8 +33,8 @@ class GameServiceToken: RequestType {
                 "requestId": imink.requestId,
                 "naCountry": "JP",
                 "naBirthday": "1990-01-01",
-                "language": "ja-JP"
-            ]
+                "language": "ja-JP",
+            ],
         ]
     }
 

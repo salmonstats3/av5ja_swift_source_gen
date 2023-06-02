@@ -16,259 +16,259 @@ public enum GearInfoHeadId: Int, UnsafeRawRepresentable {
     ///  ヘッドバンド ホワイト
     case HedFST000 = 1
     ///  ウーニーズBBキャップ
-    case HedCAP000 = 1000
+    case HedCAP000 = 1_000
     ///  キャンプキャップ
-    case HedCAP001 = 1001
+    case HedCAP001 = 1_001
     ///  ヤコメッシュ
-    case HedCAP002 = 1002
+    case HedCAP002 = 1_002
     ///  ビバレッジキャップ
-    case HedCAP003 = 1003
+    case HedCAP003 = 1_003
     ///  チドリキャップ
-    case HedCAP004 = 1004
+    case HedCAP004 = 1_004
     ///  イカベーダーキャップ
-    case HedCAP005 = 1005
+    case HedCAP005 = 1_005
     ///  カモメッシュ
-    case HedCAP006 = 1006
+    case HedCAP006 = 1_006
     ///  5パネルキャップ
-    case HedCAP007 = 1007
+    case HedCAP007 = 1_007
     ///  エゾッコメッシュ
-    case HedCAP008 = 1008
+    case HedCAP008 = 1_008
     ///  バックワードキャップ
-    case HedCAP009 = 1009
+    case HedCAP009 = 1_009
     ///  2ラインメッシュ
-    case HedCAP010 = 1010
+    case HedCAP010 = 1_010
     ///  ジェットキャップ
-    case HedCAP011 = 1011
+    case HedCAP011 = 1_011
     ///  テッカサイクルキャップ
-    case HedCAP012 = 1012
+    case HedCAP012 = 1_012
     ///  チャリキング帽
-    case HedCAP014 = 1014
+    case HedCAP014 = 1_014
     ///  ヒッコリーワークキャップ
-    case HedCAP020 = 1020
+    case HedCAP020 = 1_020
     ///  ウールウーニーズクラシック
-    case HedCAP021 = 1021
+    case HedCAP021 = 1_021
     ///  クラゲーダーキャップ
-    case HedCAP023 = 1023
+    case HedCAP023 = 1_023
     ///  ハウスタグデニムCAP
-    case HedCAP024 = 1024
+    case HedCAP024 = 1_024
     ///  ドゥーラグキャップガサネ
-    case HedCAP026 = 1026
+    case HedCAP026 = 1_026
     ///  シェーディングキャップ スミ
-    case HedCAP028 = 1028
+    case HedCAP028 = 1_028
     ///  マリンキャップ
-    case HedCAP031 = 1031
+    case HedCAP031 = 1_031
     ///  カモキャップ ドトン
-    case HedCAP034 = 1034
+    case HedCAP034 = 1_034
     ///  カモキャップ スイトン
-    case HedCAP035 = 1035
+    case HedCAP035 = 1_035
     ///  フィッシャーマンキャップ
-    case HedCAP036 = 1036
+    case HedCAP036 = 1_036
     ///  ボンボンニット
-    case HedNCP000 = 2000
+    case HedNCP000 = 2_000
     ///  ショートビーニー
-    case HedNCP001 = 2001
+    case HedNCP001 = 2_001
     ///  ボーダービーニー
-    case HedNCP002 = 2002
+    case HedNCP002 = 2_002
     ///  ウインターボンボン
-    case HedNCP003 = 2003
+    case HedNCP003 = 2_003
     ///  モンゴウベレー
-    case HedNCP004 = 2004
+    case HedNCP004 = 2_004
     ///  イカノルディック
-    case HedNCP005 = 2005
+    case HedNCP005 = 2_005
     ///  リブニット
-    case HedNCP008 = 2008
+    case HedNCP008 = 2_008
     ///  アナアキアンピンベレー
-    case HedNCP009 = 2009
+    case HedNCP009 = 2_009
     ///  チゴフグニット
-    case HedNCP013 = 2013
+    case HedNCP013 = 2_013
     ///  クロブチ レトロ
-    case HedEYE000 = 3000
+    case HedEYE000 = 3_000
     ///  スプラッシュゴーグル
-    case HedEYE001 = 3001
+    case HedEYE001 = 3_001
     ///  パイロットゴーグル
-    case HedEYE002 = 3002
+    case HedEYE002 = 3_002
     ///  イロメガネ
-    case HedEYE003 = 3003
+    case HedEYE003 = 3_003
     ///  アローバンド ブラック
-    case HedEYE004 = 3004
+    case HedEYE004 = 3_004
     ///  ダイバーゴーグル
-    case HedEYE005 = 3005
+    case HedEYE005 = 3_005
     ///  アローバンド ホワイト
-    case HedEYE006 = 3006
+    case HedEYE006 = 3_006
     ///  ダテコンタクト
-    case HedEYE007 = 3007
+    case HedEYE007 = 3_007
     ///  タレサン18K
-    case HedEYE008 = 3008
+    case HedEYE008 = 3_008
     ///  マルベッコー
-    case HedEYE009 = 3009
+    case HedEYE009 = 3_009
     ///  オクタグラス
-    case HedEYE010 = 3010
+    case HedEYE010 = 3_010
     ///  セルブロウ
-    case HedEYE011 = 3011
+    case HedEYE011 = 3_011
     ///  ダブルエッグサングラス
-    case HedEYE012 = 3012
+    case HedEYE012 = 3_012
     ///  マルサンSV925
-    case HedEYE014 = 3014
+    case HedEYE014 = 3_014
     ///  アナアキバスクベレー
-    case HedEYE015 = 3015
+    case HedEYE015 = 3_015
     ///  スイミングモーグル
-    case HedEYE016 = 3016
+    case HedEYE016 = 3_016
     ///  モーグル タタキベッチュー
-    case HedEYE018 = 3018
+    case HedEYE018 = 3_018
     ///  デメニギスゴーグル
-    case HedEYE021 = 3021
+    case HedEYE021 = 3_021
     ///  ８ビットフレーム
-    case HedEYE022 = 3022
+    case HedEYE022 = 3_022
     ///  ワイヤーグラス
-    case HedEYE023 = 3023
+    case HedEYE023 = 3_023
     ///  サンサンサングラス
-    case HedEYE024 = 3024
+    case HedEYE024 = 3_024
     ///  フロート クリアグラス
-    case HedEYE025 = 3025
+    case HedEYE025 = 3_025
     ///  バイカーシェード
-    case HedEYE026 = 3026
+    case HedEYE026 = 3_026
     ///  アナアキスクエアグラス
-    case HedEYE027 = 3027
+    case HedEYE027 = 3_027
     ///  クラムグラス
-    case HedEYE028 = 3028
+    case HedEYE028 = 3_028
     ///  タマサンBC925
-    case HedEYE029 = 3029
+    case HedEYE029 = 3_029
     ///  メダイサングラス
-    case HedEYE030 = 3030
+    case HedEYE030 = 3_030
     ///  フトブチスクエア
-    case HedEYE031 = 3031
+    case HedEYE031 = 3_031
     ///  ロブスターブーニー
-    case HedHAT000 = 4000
+    case HedHAT000 = 4_000
     ///  サファリハット
-    case HedHAT001 = 4001
+    case HedHAT001 = 4_001
     ///  キャンプハット
-    case HedHAT002 = 4002
+    case HedHAT002 = 4_002
     ///  フグベルハット
-    case HedHAT003 = 4003
+    case HedHAT003 = 4_003
     ///  スゲ
-    case HedHAT004 = 4004
+    case HedHAT004 = 4_004
     ///  イカンカン
-    case HedHAT005 = 4005
+    case HedHAT005 = 4_005
     ///  イカンカン クラシック
-    case HedHAT006 = 4006
+    case HedHAT006 = 4_006
     ///  トレジャーメット
-    case HedHAT007 = 4007
+    case HedHAT007 = 4_007
     ///  イカバケット
-    case HedHAT008 = 4008
+    case HedHAT008 = 4_008
     ///  パラソルチューリップ
-    case HedHAT010 = 4010
+    case HedHAT010 = 4_010
     ///  カイガラスゲ
-    case HedHAT012 = 4012
+    case HedHAT012 = 4_012
     ///  ボーラークラシック
-    case HedHAT015 = 4015
+    case HedHAT015 = 4_015
     ///  ステンシルデニムハット
-    case HedHAT016 = 4016
+    case HedHAT016 = 4_016
     ///  ホタテンガロン
-    case HedHAT017 = 4017
+    case HedHAT017 = 4_017
     ///  ストローハット
-    case HedHAT019 = 4019
+    case HedHAT019 = 4_019
     ///  エゾッコリーボーラー
-    case HedHAT020 = 4020
+    case HedHAT020 = 4_020
     ///  フグベルベルベルハット
-    case HedHAT021 = 4021
+    case HedHAT021 = 4_021
     ///  スタジオヘッドホン
-    case HedHDP000 = 5000
+    case HedHDP000 = 5_000
     ///  オーロラヘッドホン
-    case HedHDP001 = 5001
+    case HedHDP001 = 5_001
     ///  イヤーマフ
-    case HedHDP002 = 5002
+    case HedHDP002 = 5_002
     ///  ステカセヘッドホン
-    case HedHDP004 = 5004
+    case HedHDP004 = 5_004
     ///  ミミタコ8
-    case HedHDP007 = 5007
+    case HedHDP007 = 5_007
     ///  甲伝導エンペラEP
-    case HedHDP008 = 5008
+    case HedHDP008 = 5_008
     ///  ミミタコ8 RAW
-    case HedHDP009 = 5009
+    case HedHDP009 = 5_009
     ///  カモヘッドホン ドトン
-    case HedHDP011 = 5011
+    case HedHDP011 = 5_011
     ///  カモヘッドホン スイトン
-    case HedHDP012 = 5012
+    case HedHDP012 = 5_012
     ///  キャディ サンバイザー
-    case HedVIS000 = 6000
+    case HedVIS000 = 6_000
     ///  ヤキフグ サンバイザー
-    case HedVIS001 = 6001
+    case HedVIS001 = 6_001
     ///  サンサンサンバイザー
-    case HedVIS002 = 6002
+    case HedVIS002 = 6_002
     ///  ヤコバイザー
-    case HedVIS003 = 6003
+    case HedVIS003 = 6_003
     ///  フェイスバイザー
-    case HedVIS004 = 6004
+    case HedVIS004 = 6_004
     ///  ロブズ・10・バイザー
-    case HedVIS005 = 6005
+    case HedVIS005 = 6_005
     ///  サイクルメット
-    case HedMET000 = 7000
+    case HedMET000 = 7_000
     ///  ナイトビジョン
-    case HedMET002 = 7002
+    case HedMET002 = 7_002
     ///  スケボーメット
-    case HedMET004 = 7004
+    case HedMET004 = 7_004
     ///  バイザーメット
-    case HedMET005 = 7005
+    case HedMET005 = 7_005
     ///  ロゴヅクシMTBメット
-    case HedMET006 = 7006
+    case HedMET006 = 7_006
     ///  イカロスHKメット
-    case HedMET007 = 7007
+    case HedMET007 = 7_007
     ///  オクトメットプライズデコ
-    case HedMET009 = 7009
+    case HedMET009 = 7_009
     ///  シェルメット
-    case HedMET012 = 7012
+    case HedMET012 = 7_012
     ///  ホーンメットBF
-    case HedMET013 = 7013
+    case HedMET013 = 7_013
     ///  キャッチャーマスクFU
-    case HedMET014 = 7014
+    case HedMET014 = 7_014
     ///  ヘッキャ ムジ
-    case HedMET016 = 7016
+    case HedMET016 = 7_016
     ///  イシダイSTメット ホーム
-    case HedMET018 = 7018
+    case HedMET018 = 7_018
     ///  チゴフグメット
-    case HedMET019 = 7019
+    case HedMET019 = 7_019
     ///  タコマスク
-    case HedMSK000 = 8000
+    case HedMSK000 = 8_000
     ///  フェイスゴーグル
-    case HedMSK001 = 8001
+    case HedMSK001 = 8_001
     ///  エイズリーバンダナ
-    case HedMSK002 = 8002
+    case HedMSK002 = 8_002
     ///  イカスカルマスク
-    case HedMSK003 = 8003
+    case HedMSK003 = 8_003
     ///  ペインターマスク
-    case HedMSK004 = 8004
+    case HedMSK004 = 8_004
     ///  アナアキマスク
-    case HedMSK005 = 8005
+    case HedMSK005 = 8_005
     ///  キングタコスターマスク
-    case HedMSK006 = 8006
+    case HedMSK006 = 8_006
     ///  イカバッテンガード
-    case HedMSK007 = 8007
+    case HedMSK007 = 8_007
     ///  マスクドホッコリー
-    case HedMSK008 = 8008
+    case HedMSK008 = 8_008
     ///  フォーリマスク
-    case HedMSK011 = 8011
+    case HedMSK011 = 8_011
     ///  ブロブスマイルマスク
-    case HedMSK014 = 8014
+    case HedMSK014 = 8_014
     ///  エラブリースマスク
-    case HedMSK015 = 8015
+    case HedMSK015 = 8_015
     ///  トンビシールドR255
-    case HedMSK016 = 8016
+    case HedMSK016 = 8_016
     ///  トンビシールドRGB0
-    case HedMSK018 = 8018
+    case HedMSK018 = 8_018
     ///  バスケバンド
-    case HedHBD001 = 9001
+    case HedHBD001 = 9_001
     ///  スカッシュバンド
-    case HedHBD002 = 9002
+    case HedHBD002 = 9_002
     ///  テニスバンド
-    case HedHBD003 = 9003
+    case HedHBD003 = 9_003
     ///  ランニングバンド
-    case HedHBD004 = 9004
+    case HedHBD004 = 9_004
     ///  サッカーバンド
-    case HedHBD005 = 9005
+    case HedHBD005 = 9_005
     ///  ヤキフグビスケットバンダナ
-    case HedHBD007 = 9007
+    case HedHBD007 = 9_007
     ///  ピンポンバンド
-    case HedHBD009 = 9009
+    case HedHBD009 = 9_009
     ///  イカタコピアス 
     case HedACC003 = 10_003
     ///  バイトヘルメット オレンジ

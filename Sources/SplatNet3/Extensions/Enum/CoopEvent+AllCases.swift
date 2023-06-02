@@ -21,7 +21,7 @@ public extension CoopEventId {
                 .Rush,
                 .Griller,
                 .TheMothership,
-                .Fog
+                .Fog,
             ]
         case false:
             return allCases

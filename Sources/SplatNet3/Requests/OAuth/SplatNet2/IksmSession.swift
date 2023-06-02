@@ -23,7 +23,7 @@ class IksmSession: RequestType {
     init(accessToken: String) {
         self.headers = [
             "Cookie": "iksm_session=",
-            "X-GameWebToken": accessToken
+            "X-GameWebToken": accessToken,
         ]
     }
 

@@ -21,7 +21,7 @@ public extension CoopWaterLevelId {
                 .Rush,
                 .Griller,
                 .TheMothership,
-                .Fog
+                .Fog,
             ]
         case false:
             return CoopEventId.allCases

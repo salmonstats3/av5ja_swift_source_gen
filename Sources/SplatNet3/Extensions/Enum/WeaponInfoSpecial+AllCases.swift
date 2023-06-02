@@ -17,7 +17,7 @@ public extension WeaponInfoSpecialId {
             .SpJetpack,
             .SpChariot,
             .SpSkewer,
-            .SpTripleTornado
+            .SpTripleTornado,
         ]
     }
 }
@@ -31,7 +31,7 @@ public extension WeaponInfoSpecialKey {
             .SpJetpack,
             .SpChariot,
             .SpSkewer,
-            .SpTripleTornado
+            .SpTripleTornado,
         ]
     }
 }

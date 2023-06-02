@@ -60,77 +60,77 @@ public enum WeaponInfoMainId: Int, UnsafeRawRepresentable {
     ///  ボトルガイザー
     case ShooterFlash = 400
     ///  カーボンローラー
-    case RollerCompact = 1000
+    case RollerCompact = 1_000
     ///  スプラローラー
-    case RollerNormal = 1010
+    case RollerNormal = 1_010
     ///  ダイナモローラー
-    case RollerHeavy = 1020
+    case RollerHeavy = 1_020
     ///  ヴァルアブルローラー
-    case RollerHunter = 1030
+    case RollerHunter = 1_030
     ///  ワイドローラー
-    case RollerWide = 1040
+    case RollerWide = 1_040
     ///  パブロ
-    case BrushMini = 1100
+    case BrushMini = 1_100
     ///  ホクサイ
-    case BrushNormal = 1110
+    case BrushNormal = 1_110
     ///  フィンセント
-    case BrushHeavy = 1120
+    case BrushHeavy = 1_120
     ///  スクイックリン
-    case ChargerQuick = 2000
+    case ChargerQuick = 2_000
     ///  スプラチャージャー
-    case ChargerNormal = 2010
+    case ChargerNormal = 2_010
     ///  リッター4K
-    case ChargerLong = 2030
+    case ChargerLong = 2_030
     ///  14式竹筒銃
-    case ChargerLight = 2050
+    case ChargerLight = 2_050
     ///  ソイチューバー
-    case ChargerKeeper = 2060
+    case ChargerKeeper = 2_060
     ///  R-PEN
-    case ChargerPencil = 2070
+    case ChargerPencil = 2_070
     ///  バケットスロッシャー
-    case SlosherStrong = 3000
+    case SlosherStrong = 3_000
     ///  ヒッセン
-    case SlosherDiffusion = 3010
+    case SlosherDiffusion = 3_010
     ///  スクリュースロッシャー
-    case SlosherLauncher = 3020
+    case SlosherLauncher = 3_020
     ///  オーバーフロッシャー
-    case SlosherBathtub = 3030
+    case SlosherBathtub = 3_030
     ///  エクスプロッシャー
-    case SlosherWashtub = 3040
+    case SlosherWashtub = 3_040
     ///  スプラスピナー
-    case SpinnerQuick = 4000
+    case SpinnerQuick = 4_000
     ///  バレルスピナー
-    case SpinnerStandard = 4010
+    case SpinnerStandard = 4_010
     ///  ハイドラント
-    case SpinnerHyper = 4020
+    case SpinnerHyper = 4_020
     ///  クーゲルシュライバー
-    case SpinnerDownpour = 4030
+    case SpinnerDownpour = 4_030
     ///  ノーチラス
-    case SpinnerSerein = 4040
+    case SpinnerSerein = 4_040
     ///  スパッタリー
-    case ManeuverShort = 5000
+    case ManeuverShort = 5_000
     ///  スプラマニューバー
-    case ManeuverNormal = 5010
+    case ManeuverNormal = 5_010
     ///  ケルビン525
-    case ManeuverGallon = 5020
+    case ManeuverGallon = 5_020
     ///  デュアルスイーパー
-    case ManeuverDual = 5030
+    case ManeuverDual = 5_030
     ///  クアッドホッパー
-    case ManeuverStepper = 5040
+    case ManeuverStepper = 5_040
     ///  パラシェルター
-    case ShelterNormal = 6000
+    case ShelterNormal = 6_000
     ///  キャンピングシェルター
-    case ShelterWide = 6010
+    case ShelterWide = 6_010
     ///  スパイガジェット
-    case ShelterCompact = 6020
+    case ShelterCompact = 6_020
     ///  ストリンガー
-    case StringerNormal = 7010
+    case StringerNormal = 7_010
     ///  LACT-450
-    case StringerShort = 7020
+    case StringerShort = 7_020
     ///  ジムワイパー
-    case SaberNormal = 8000
+    case SaberNormal = 8_000
     ///  ドライブワイパー
-    case SaberLite = 8010
+    case SaberLite = 8_010
     ///  クマサン印のブラスター
     case BlasterBear = 20_900
     ///  クマサン印のチャージャー

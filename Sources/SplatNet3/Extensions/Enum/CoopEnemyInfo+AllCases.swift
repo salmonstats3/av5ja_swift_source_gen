@@ -27,12 +27,12 @@ public extension CoopEnemyInfoId {
         .SakeSaucer,
         .SakelienGolden,
         .Sakedozer,
-        .SakeBigMouth
+        .SakeBigMouth,
     ]
 
     static let boss: [CoopEnemyInfoId] = [
         .SakelienGiant,
-        .SakeRope
+        .SakeRope,
     ]
 }
 

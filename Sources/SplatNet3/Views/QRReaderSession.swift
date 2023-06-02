@@ -152,6 +152,6 @@ extension AVMetadataObject.ObjectType {
         .aztec,
         .interleaved2of5,
         .itf14,
-        .dataMatrix
+        .dataMatrix,
     ]
 }

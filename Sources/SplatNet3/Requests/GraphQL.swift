@@ -51,9 +51,9 @@ public extension GraphQL {
             "extensions": [
                 "persistedQuery": [
                     "version": version,
-                    "sha256Hash": hash.rawValue
-                ]
-            ]
+                    "sha256Hash": hash.rawValue,
+                ],
+            ],
         ]
         return try encoding.encode(request, with: parameters)
     }

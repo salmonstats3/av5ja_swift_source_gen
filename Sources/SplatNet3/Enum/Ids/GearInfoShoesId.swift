@@ -12,251 +12,251 @@ public enum GearInfoShoesId: Int, UnsafeRawRepresentable {
     public var id: Int { rawValue }
 
     ///  グリッチョ ブルー
-    case ShsSLO000 = 1000
+    case ShsSLO000 = 1_000
     ///  キャンバス バナナ
-    case ShsSLO001 = 1001
+    case ShsSLO001 = 1_001
     ///  グリッチョ グリーン 限定版
-    case ShsSLO002 = 1002
+    case ShsSLO002 = 1_002
     ///  シーホース ホワイト
-    case ShsSLO003 = 1003
+    case ShsSLO003 = 1_003
     ///  グリッチョ オレンジ
-    case ShsSLO004 = 1004
+    case ShsSLO004 = 1_004
     ///  シーホース ブラックレザー
-    case ShsSLO005 = 1005
+    case ShsSLO005 = 1_005
     ///  キャンバス クマノミ
-    case ShsSLO006 = 1006
+    case ShsSLO006 = 1_006
     ///  シーホース イエロー
-    case ShsSLO007 = 1007
+    case ShsSLO007 = 1_007
     ///  ベリベリホワイト
-    case ShsSLO008 = 1008
+    case ShsSLO008 = 1_008
     ///  ベリベリレッド
-    case ShsSLO009 = 1009
+    case ShsSLO009 = 1_009
     ///  ユデスパイカ
-    case ShsSLO010 = 1010
+    case ShsSLO010 = 1_010
     ///  レアスパイカ
-    case ShsSLO011 = 1011
+    case ShsSLO011 = 1_011
     ///  ボルダーシューズ タイノエ
-    case ShsSLO012 = 1012
+    case ShsSLO012 = 1_012
     ///  NNJグリーン
-    case ShsSLO021 = 1021
+    case ShsSLO021 = 1_021
     ///  ザ・ベース ルーキー
-    case ShsSLO022 = 1022
+    case ShsSLO022 = 1_022
     ///  クラム600 カンロ
-    case ShsSLO023 = 1023
+    case ShsSLO023 = 1_023
     ///  ザ・ベース ボス
-    case ShsSLO024 = 1024
+    case ShsSLO024 = 1_024
     ///  クラム600 コハク
-    case ShsSLO025 = 1025
+    case ShsSLO025 = 1_025
     ///  シーホースHi レッド
-    case ShsSHI000 = 2000
+    case ShsSHI000 = 2_000
     ///  シーホースHi ゾンビ
-    case ShsSHI001 = 2001
+    case ShsSHI001 = 2_001
     ///  キャンバスHi マッシュルーム
-    case ShsSHI002 = 2002
+    case ShsSHI002 = 2_002
     ///  シーホースHi パープル
-    case ShsSHI003 = 2003
+    case ShsSHI003 = 2_003
     ///  キャンバスHi モロヘイヤ
-    case ShsSHI004 = 2004
+    case ShsSHI004 = 2_004
     ///  キャンバスHi トマト
-    case ShsSHI005 = 2005
+    case ShsSHI005 = 2_005
     ///  シーホースHi ゴールド
-    case ShsSHI006 = 2006
+    case ShsSHI006 = 2_006
     ///  シャークモカシン
-    case ShsSHI008 = 2008
+    case ShsSHI008 = 2_008
     ///  ジョーズモカシン
-    case ShsSHI009 = 2009
+    case ShsSHI009 = 2_009
     ///  デカロニックチョコレート
-    case ShsSHI010 = 2010
+    case ShsSHI010 = 2_010
     ///  デカロニックミント
-    case ShsSHI011 = 2011
+    case ShsSHI011 = 2_011
     ///  オルカHi サンセット
-    case ShsSHI016 = 2016
+    case ShsSHI016 = 2_016
     ///  エギング4 アカクロ
-    case ShsSHI017 = 2017
+    case ShsSHI017 = 2_017
     ///  エギング4 アオクロ
-    case ShsSHI018 = 2018
+    case ShsSHI018 = 2_018
     ///  エギング5 シロアカ
-    case ShsSHI025 = 2025
+    case ShsSHI025 = 2_025
     ///  パワーリセットHi
-    case ShsSHI042 = 2042
+    case ShsSHI042 = 2_042
     ///  テンヤ8 レッド
-    case ShsSHI043 = 2043
+    case ShsSHI043 = 2_043
     ///  テンヤ8 パープル
-    case ShsSHI044 = 2044
+    case ShsSHI044 = 2_044
     ///  01STER コハク
-    case ShsSHI045 = 2045
+    case ShsSHI045 = 2_045
     ///  ウノアシHi
-    case ShsSHI046 = 2046
+    case ShsSHI046 = 2_046
     ///  カモスニーカー ドトン
-    case ShsSHI047 = 2047
+    case ShsSHI047 = 2_047
     ///  カモスニーカー スイトン
-    case ShsSHI048 = 2048
+    case ShsSHI048 = 2_048
     ///  パーチHi ホワイト
-    case ShsSHI049 = 2049
+    case ShsSHI049 = 2_049
     ///  01STER カンロ
-    case ShsSHI052 = 2052
+    case ShsSHI052 = 2_052
     ///  ピンクビーンズ
-    case ShsSHT000 = 3000
+    case ShsSHT000 = 3_000
     ///  オレンジアローズ
-    case ShsSHT001 = 3001
+    case ShsSHT001 = 3_001
     ///  ウミウシイエロー
-    case ShsSHT002 = 3002
+    case ShsSHT002 = 3_002
     ///  ホワイトアローズ
-    case ShsSHT003 = 3003
+    case ShsSHT003 = 3_003
     ///  シアンビーンズ
-    case ShsSHT004 = 3004
+    case ShsSHT004 = 3_004
     ///  ウミウシブルー
-    case ShsSHT005 = 3005
+    case ShsSHT005 = 3_005
     ///  ウミウシレッド
-    case ShsSHT006 = 3006
+    case ShsSHT006 = 3_006
     ///  ウミウシパープル
-    case ShsSHT007 = 3007
+    case ShsSHT007 = 3_007
     ///  クレイジーアローズ
-    case ShsSHT008 = 3008
+    case ShsSHT008 = 3_008
     ///  ブラックビーンズ
-    case ShsSHT009 = 3009
+    case ShsSHT009 = 3_009
     ///  アロメッシュイエロー
-    case ShsSHT012 = 3012
+    case ShsSHT012 = 3_012
     ///  アローズ タタキベッチュー
-    case ShsSHT013 = 3013
+    case ShsSHT013 = 3_013
     ///  イカサシ スクランブル
-    case ShsSHT020 = 3020
+    case ShsSHT020 = 3_020
     ///  グッピーフラミンゴ
-    case ShsSHT021 = 3021
+    case ShsSHT021 = 3_021
     ///  MOVEレッド
-    case ShsSHT022 = 3022
+    case ShsSHT022 = 3_022
     ///  MODZ-9
-    case ShsSHT023 = 3023
+    case ShsSHT023 = 3_023
     ///  シェルバシラWO
-    case ShsSHT024 = 3024
+    case ShsSHT024 = 3_024
     ///  フカヒレニマイバ
-    case ShsSHT025 = 3025
+    case ShsSHT025 = 3_025
     ///  シャコナックル
-    case ShsSHT026 = 3026
+    case ShsSHT026 = 3_026
     ///  オイスタークロッグ
-    case ShsSDL000 = 4000
+    case ShsSDL000 = 4_000
     ///  チョコクロッグ
-    case ShsSDL001 = 4001
+    case ShsSDL001 = 4_001
     ///  ブルーベリーコンフォート
-    case ShsCFS000 = 4002
+    case ShsCFS000 = 4_002
     ///  アケビコンフォート
-    case ShsCFS001 = 4003
+    case ShsCFS001 = 4_003
     ///  デルタストラップ ネオン
-    case ShsSDL003 = 4007
+    case ShsSDL003 = 4_007
     ///  BBサンダル
-    case ShsSDL004 = 4008
+    case ShsSDL004 = 4_008
     ///  デルタストラップ スノー
-    case ShsSDL005 = 4009
+    case ShsSDL005 = 4_009
     ///  デルタストラップ ルミナス
-    case ShsSDL006 = 4010
+    case ShsSDL006 = 4_010
     ///  ヤキフグシャワサン アカ
-    case ShsSDL007 = 4011
+    case ShsSDL007 = 4_011
     ///  ヤキフグシャワサン キ
-    case ShsSDL008 = 4012
+    case ShsSDL008 = 4_012
     ///  フィッシュボーンワラチ
-    case ShsSDL010 = 4014
+    case ShsSDL010 = 4_014
     ///  アローズサンダル アオキ
-    case ShsSDL011 = 4015
+    case ShsSDL011 = 4_015
     ///  BSサンダル
-    case ShsSDL012 = 4016
+    case ShsSDL012 = 4_016
     ///  べリべリサン オレンジ
-    case ShsSDL013 = 4017
+    case ShsSDL013 = 4_017
     ///  アローズサンダル ムラキ
-    case ShsSDL014 = 4018
+    case ShsSDL014 = 4_018
     ///  アナアキストラップ レザー
-    case ShsSDL015 = 4019
+    case ShsSDL015 = 4_019
     ///  べリべリサン マゼンタ
-    case ShsSDL017 = 4021
+    case ShsSDL017 = 4_021
     ///  べリべリサン シアン
-    case ShsSDL018 = 4022
+    case ShsSDL018 = 4_022
     ///  エゾックロッグ ネイビー
-    case ShsSDL019 = 4023
+    case ShsSDL019 = 4_023
     ///  エゾックロッグ レッド
-    case ShsSDL020 = 4024
+    case ShsSDL020 = 4_024
     ///  エゾックロッグ イエロー
-    case ShsSDL021 = 4025
+    case ShsSDL021 = 4_025
     ///  エゾックロッグ グリーン
-    case ShsSDL022 = 4026
+    case ShsSDL022 = 4_026
     ///  トレッキングライト
-    case ShsTRS000 = 5000
+    case ShsTRS000 = 5_000
     ///  トレッキングカスタム
-    case ShsTRS001 = 5001
+    case ShsTRS001 = 5_001
     ///  トレッキングプロ
-    case ShsTRS002 = 5002
+    case ShsTRS002 = 5_002
     ///  モトクロスブーツ
-    case ShsBOT000 = 6000
+    case ShsBOT000 = 6_000
     ///  ヌバックブーツ イエロー
-    case ShsBOT001 = 6001
+    case ShsBOT001 = 6_001
     ///  ヌバックブーツ レッド
-    case ShsBOT002 = 6002
+    case ShsBOT002 = 6_002
     ///  モトクロス ソリッドブルー
-    case ShsBOT003 = 6003
+    case ShsBOT003 = 6_003
     ///  レイニーモスグリーン
-    case ShsBOT004 = 6004
+    case ShsBOT004 = 6_004
     ///  レイニーアセロラ
-    case ShsBOT005 = 6005
+    case ShsBOT005 = 6_005
     ///  ロッキンホワイト
-    case ShsBOT006 = 6006
+    case ShsBOT006 = 6_006
     ///  ロッキンチェリー
-    case ShsBOT007 = 6007
+    case ShsBOT007 = 6_007
     ///  ロッキンイエロー
-    case ShsBOT008 = 6008
+    case ShsBOT008 = 6_008
     ///  レイニーシャボン
-    case ShsBOT009 = 6009
+    case ShsBOT009 = 6_009
     ///  ミルキーダウンブーツ
-    case ShsBOT010 = 6010
+    case ShsBOT010 = 6_010
     ///  アイスダウンブーツ
-    case ShsBOT011 = 6011
+    case ShsBOT011 = 6_011
     ///  ハンティングブーツ
-    case ShsBOT012 = 6012
+    case ShsBOT012 = 6_012
     ///  ロッキンブラック
-    case ShsBOT013 = 6013
+    case ShsBOT013 = 6_013
     ///  モトクロスM-DCB
-    case ShsBOT019 = 6019
+    case ShsBOT019 = 6_019
     ///  ヌバックブーツxSJ
-    case ShsBOT020 = 6020
+    case ShsBOT020 = 6_020
     ///  ダックブーツ スノウ
-    case ShsBOT021 = 6021
+    case ShsBOT021 = 6_021
     ///  カセブカブーツ レッド
-    case ShsBOT023 = 6023
+    case ShsBOT023 = 6_023
     ///  カセブカブーツ ダップル
-    case ShsBOT024 = 6024
+    case ShsBOT024 = 6_024
     ///  ロッキンピンク
-    case ShsBOT025 = 6025
+    case ShsBOT025 = 6_025
     ///  ウォームブーツ
-    case ShsBOT026 = 6026
+    case ShsBOT026 = 6_026
     ///  カモチャームブーツ
-    case ShsBOT027 = 6027
+    case ShsBOT027 = 6_027
     ///  スリッポン ブルー
-    case ShsSLP000 = 7000
+    case ShsSLP000 = 7_000
     ///  スリッポン レッド
-    case ShsSLP001 = 7001
+    case ShsSLP001 = 7_001
     ///  スリッポン チドリ
-    case ShsSLP002 = 7002
+    case ShsSLP002 = 7_002
     ///  チゴフグスリッポン
-    case ShsSLP004 = 7004
+    case ShsSLP004 = 7_004
     ///  ラバーソール ホワイト
-    case ShsLTS000 = 8000
+    case ShsLTS000 = 8_000
     ///  ラバーソール チェリー
-    case ShsLTS001 = 8001
+    case ShsLTS001 = 8_001
     ///  ラバーソール ターコイズ
-    case ShsLTS002 = 8002
+    case ShsLTS002 = 8_002
     ///  イカスミチップ
-    case ShsLTS003 = 8003
+    case ShsLTS003 = 8_003
     ///  イカヤキチップ
-    case ShsLTS004 = 8004
+    case ShsLTS004 = 8_004
     ///  イカボウズキャメル
-    case ShsLTS005 = 8005
+    case ShsLTS005 = 8_005
     ///  ネイビーチップ レッドソール
-    case ShsLTS007 = 8007
+    case ShsLTS007 = 8_007
     ///  アナアキラバー ハバネロ
-    case ShsLTS010 = 8010
+    case ShsLTS010 = 8_010
     ///  アナアキラバー フェイク
-    case ShsLTS011 = 8011
+    case ShsLTS011 = 8_011
     ///  チャッカブーツ サンド
-    case ShsLTS013 = 8013
+    case ShsLTS013 = 8_013
     ///  デッキシューズ フカイリ
-    case ShsLTS014 = 8014
+    case ShsLTS014 = 8_014
     ///  マッドラバー
     case ShsCOP101 = 21_001
     ///  スクールローファー ハイソ
