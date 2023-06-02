@@ -14,18 +14,18 @@ final class SPImageService: ObservableObject {
         let documentURL: URL? = FileManager.default.document
 
         switch type {
-        case is WeaponId.Type:
-            if let weaponId = WeaponId(rawValue: rawValue),
-               WeaponId.regular.contains(weaponId) {
-                self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponIllust.rawValue)/\(rawValue)", conformingTo: .png)
+        case is WeaponInfoMainId.Type:
+            if let weaponId = WeaponInfoMainId(rawValue: rawValue),
+               WeaponInfoMainId.regular.contains(weaponId) {
+                self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
             } else {
                 self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.UIImg.rawValue)/\(rawValue)", conformingTo: .png)
             }
         case is CoopStageId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgIcon.rawValue)/\(rawValue)", conformingTo: .png)
-        case is CoopBannerId.Type:
+        case is CoopStageBannerId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgBanner.rawValue)/\(rawValue)", conformingTo: .png)
-        case is EnemyId.Type:
+        case is CoopEnemyInfoId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.CoopEnemyImg.rawValue)/\(rawValue)", conformingTo: .png)
         default:
             self.documentPath = documentURL

@@ -7,8 +7,10 @@
 
 import Foundation
 
-public enum ModeType: String, CaseIterable, Codable {
+/// サーモンランにおけるバイトモード
+public enum ModeType: String, UnsafeRawRepresentable {
     public var id: String { rawValue }
+    public static var defaultValue: ModeType = .UNKNOWN
 
     case UNKNOWN
     case REGULAR

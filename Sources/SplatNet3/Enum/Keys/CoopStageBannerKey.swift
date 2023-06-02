@@ -1,5 +1,5 @@
 //
-//  CoopStageKey.swift
+//  CoopStageBannerKey.swift
 //
 //  Created by tkgstrator on 2023/06/03
 //  Copyright @2023 Magi, Corporation. All rights reserved.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-public enum CoopStageKey: String, UnsafeRawRepresentable {
+public enum CoopStageBannerKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Unknown
-    public var id: Int { CoopStageId.allCases[CoopStageKey.allCases.firstIndex(of: self) ?? 0].rawValue }
+    public var id: Int { CoopStageBannerId.allCases[CoopStageBannerKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     /// ？？？
     case Unknown = "b764cdc0eab7137467211272fa539f1260d1bf2e71bcf6ff3bdc960f5c16aa14"

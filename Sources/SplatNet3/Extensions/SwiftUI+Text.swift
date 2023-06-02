@@ -13,18 +13,18 @@ public extension Text {
         self.init(NSLocalizedString(bundle.rawValue, bundle: .module, comment: ""))
     }
 
-    init(_ value: EnemyId) {
-        let index: Int = EnemyId.allCases.firstIndex(of: value) ?? 0
-        let enemyKey = EnemyKey.allCases[index]
+    init(_ value: CoopEnemyInfoId) {
+        let index: Int = CoopEnemyInfoId.allCases.firstIndex(of: value) ?? 0
+        let enemyKey = CoopEnemyInfoKey.allCases[index]
         self.init(NSLocalizedString("CoopEnemy_\(String(describing: enemyKey))", bundle: .module, comment: ""))
     }
 
-    init(_ value: EnemyKey) {
+    init(_ value: CoopEnemyInfoKey) {
         self.init(NSLocalizedString("CoopEnemy_\(String(describing: value))", bundle: .module, comment: ""))
     }
 
     /// 称号をテキストに変換
-    init(_ value: GradeId?) {
+    init(_ value: CoopGradeId?) {
         if let value {
             self.init(NSLocalizedString("CoopGrade_Grade_0\(value.id)", bundle: .module, comment: ""))
         } else {
@@ -32,12 +32,12 @@ public extension Text {
         }
     }
 
-    init(_ waterLevel: WaterLevelId) {
+    init(_ waterLevel: CoopWaterLevelId) {
         self.init(NSLocalizedString("CoopHistory_WaveLevel\(waterLevel.rawValue)", bundle: .module, comment: ""))
     }
 
-    init(_ eventType: EventId) {
-        if eventType == .Water_Levels {
+    init(_ eventType: CoopEventId) {
+        if eventType == .WaterLevels {
             self.init("-")
         } else {
             self.init(NSLocalizedString("CoopEvent_\(String(describing: eventType))", bundle: .module, comment: ""))

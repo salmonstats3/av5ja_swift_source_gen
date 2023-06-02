@@ -12,11 +12,11 @@ public struct CoopSchedule: Codable {
     public let stageId: CoopStageId
     public let startTime: Date
     public let endTime: Date
-    public let weaponList: [WeaponId]
-    public let rareWeapon: WeaponId?
+    public let weaponList: [WeaponInfoMainId]
+    public let rareWeapon: WeaponInfoMainId?
     public let mode: ModeType
     public let rule: RuleType
-    public let estimatedKingSalmonId: EnemyId?
+    public let estimatedKingSalmonId: CoopEnemyInfoId?
     public let setting: CoopSetting
 
     public init(from decoder: Decoder) throws {
@@ -24,8 +24,8 @@ public struct CoopSchedule: Codable {
         self.stageId = try container.decode(CoopStageId.self, forKey: .stageId)
         self.startTime = try container.decode(Date.self, forKey: .startTime)
         self.endTime = try container.decode(Date.self, forKey: .endTime)
-        self.weaponList = try container.decode([WeaponId].self, forKey: .weaponList)
-        self.rareWeapon = try container.decodeIfPresent(WeaponId.self, forKey: .rareWeapon)
+        self.weaponList = try container.decode([WeaponInfoMainId].self, forKey: .weaponList)
+        self.rareWeapon = try container.decodeIfPresent(WeaponInfoMainId.self, forKey: .rareWeapon)
         let setting: CoopSetting = try container.decode(CoopSetting.self, forKey: .setting)
         self.mode = setting == .CoopTeamContestSetting ? .LIMITED : .REGULAR
         self.rule = {
@@ -39,7 +39,7 @@ public struct CoopSchedule: Codable {
             }
         }()
         self.setting = setting
-        self.estimatedKingSalmonId = try container.decodeIfPresent(EnemyId.self, forKey: .estimatedKingSalmonId)
+        self.estimatedKingSalmonId = try container.decodeIfPresent(CoopEnemyInfoId.self, forKey: .estimatedKingSalmonId)
     }
 
     init(schedule: StageScheduleQuery.CoopSchedule) {
@@ -57,7 +57,7 @@ public struct CoopSchedule: Codable {
                 return .TEAM_CONTEST
             }
         }()
-        self.weaponList = schedule.setting.weapons.map({ $0.image.hash.asWeaponId() })
+        self.weaponList = schedule.setting.weapons.map({ WeaponInfoMainId(key: $0.image.hash) })
         self.rareWeapon = nil
         self.setting = schedule.setting.isCoopSetting
         self.estimatedKingSalmonId = nil

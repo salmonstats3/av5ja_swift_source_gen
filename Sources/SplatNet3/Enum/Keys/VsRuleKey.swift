@@ -8,12 +8,12 @@
 import Foundation
 
 public enum VsRuleKey: String, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .TURF_WAR
+    public static var defaultValue: Self = .TURFWAR
     public var id: String { rawValue }
 
-    case TURF_WAR       = "TURF_WAR"
+    case TURFWAR       = "TURF_WAR"
     case SPLATZONES     = "AREA"
-    case TOWER_CONTROL  = "LOFT"
+    case TOWERCONTROL  = "LOFT"
     case RAINMAKER      = "GOAL"
-    case CLAM_BLITZ     = "CLAM"
+    case CLAMBLITZ     = "CLAM"
 }

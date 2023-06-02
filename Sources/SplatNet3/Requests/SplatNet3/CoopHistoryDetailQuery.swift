@@ -62,7 +62,7 @@ public final class CoopHistoryDetailQuery: GraphQL {
     // MARK: - BossResult
     public struct BossResult: Codable {
         public let hasDefeatBoss: Bool
-        public let boss: CoopHistory.Content<EnemyKey, EnemyId>
+        public let boss: CoopHistory.Content<CoopEnemyInfoKey, CoopEnemyInfoId>
     }
 
     // MARK: - EnemyResult
@@ -119,8 +119,8 @@ public final class CoopHistoryDetailQuery: GraphQL {
     // MARK: - WaveResult
     public struct WaveResult: Codable {
         public let waveNumber: Int
-        public let waterLevel: WaterLevelId
-        public let eventWave: CoopHistory.Element<EventId>?
+        public let waterLevel: CoopWaterLevelId
+        public let eventWave: CoopHistory.Element<CoopEventId>?
         public let deliverNorm: Int?
         public let goldenPopCount: Int
         public let teamDeliverCount: Int?

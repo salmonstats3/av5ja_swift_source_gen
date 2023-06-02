@@ -68,7 +68,7 @@ public enum CoopHistory {
     // MARK: - BossResult
     public struct BossResult: Codable {
         public let hasDefeatBoss: Bool
-        public let boss: CoopHistory.Element<EnemyId>
+        public let boss: CoopHistory.Element<CoopEnemyInfoId>
     }
 
     // MARK: - HistoryDetailElement

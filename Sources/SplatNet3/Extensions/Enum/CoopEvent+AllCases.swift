@@ -1,39 +1,26 @@
 //
-//  EventId.swift
-//  
+//  CoopEvent+AllCases.swift
 //
-//  Created by devonly on 2022/11/25.
+//  Created by tkgstrator on 2023/01/30
+//  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 
 import Charts
 import Foundation
 
-public enum EventId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Water_Levels
-    public var id: Int { rawValue }
-
-    case Water_Levels   = 0
-    case Rush           = 1
-    case Goldie_Seeking = 2
-    case Griller        = 3
-    case The_Mothership = 4
-    case Fog            = 5
-    case Cohock_Charge  = 6
-    case Giant          = 7
-    case Mudmouth       = 8
-
-    public var description: String {
+public extension CoopEventId {
+    var description: String {
         NSLocalizedString("CoopEvent_\(String(describing: self))", bundle: .module, comment: "")
     }
 
-    public static func allEvents(isBigRun: Bool = false) -> [EventId] {
+    static func allEvents(isBigRun: Bool = false) -> [Self] {
         switch isBigRun {
         case true:
             return [
-                .Water_Levels,
+                .WaterLevels,
                 .Rush,
                 .Griller,
-                .The_Mothership,
+                .TheMothership,
                 .Fog
             ]
         case false:
@@ -42,10 +29,11 @@ public enum EventId: Int, UnsafeRawRepresentable {
     }
 }
 
-extension EventId: Identifiable {}
+@available(iOS 16.0, *)
+extension EventKey: Plottable {}
 
 @available(iOS 16.0, *)
-extension EventId: Plottable {
+extension CoopEventId: Plottable {
     public var primitivePlottable: String {
         String(self.rawValue)
     }

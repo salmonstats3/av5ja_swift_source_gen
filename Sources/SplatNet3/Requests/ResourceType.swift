@@ -53,8 +53,8 @@ public struct ResourceType: Codable {
             self.data = data
             self.hash = hash
 
-            /// WeaponKey
-            if let rawValue: String = WeaponKey(rawValue: hash)?.id.description {
+            /// WeaponInfoMainKey
+            if let rawValue: String = WeaponInfoMainKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
@@ -66,19 +66,19 @@ public struct ResourceType: Codable {
             }
 
             /// StageBannerKey
-            if let rawValue: String = CoopBannerKey(rawValue: hash)?.id.description {
+            if let rawValue: String = CoopStageBannerKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// EnemyKey
-            if let rawValue: String = EnemyKey(rawValue: hash)?.id.description {
+            /// CoopEnemyInfoKey
+            if let rawValue: String = CoopEnemyInfoKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// SpecialKey
-            if let rawValue: String = SpecialKey(rawValue: hash)?.id.description {
+            /// WeaponInfoSpecialKey
+            if let rawValue: String = WeaponInfoSpecialKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
@@ -98,7 +98,7 @@ public enum ResourceURLType: String, CaseIterable, Codable {
     case StageImgBanner     = "stage_img/banner"
     case StageImgIcon       = "stage_img/icon"
     case UIImg              = "ui_img"
-    case WeaponIllust       = "weapon_illust"
+    case WeaponInfoMainIdllust = "weapon_illust"
     case CoopEnemyImg       = "coop_enemy_img"
     case SpecialImg         = "special_img"
     case StaticMedia        = "static/media"
@@ -117,8 +117,8 @@ public enum ResourceURLType: String, CaseIterable, Codable {
             self.init(rawValue: ResourceURLType.UIImg.rawValue)
             return
         }
-        if url.absoluteString.contains(ResourceURLType.WeaponIllust.rawValue) {
-            self.init(rawValue: ResourceURLType.WeaponIllust.rawValue)
+        if url.absoluteString.contains(ResourceURLType.WeaponInfoMainIdllust.rawValue) {
+            self.init(rawValue: ResourceURLType.WeaponInfoMainIdllust.rawValue)
             return
         }
         if url.absoluteString.contains(ResourceURLType.CoopEnemyImg.rawValue) {

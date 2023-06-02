@@ -7,8 +7,10 @@
 
 import Foundation
 
-public enum VsRuleType: Int, CaseIterable, Codable {
+/// バンカラマッチのモード
+public enum VsRuleType: Int, UnsafeRawRepresentable {
     public var id: Int { rawValue }
+    public static var defaultValue: VsRuleType = .TURF_WAR
 
     case TURF_WAR       = 0
     case SPLATZONES     = 1

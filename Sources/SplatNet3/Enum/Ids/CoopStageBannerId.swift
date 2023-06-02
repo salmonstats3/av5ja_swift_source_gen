@@ -1,5 +1,5 @@
 //
-//  CoopStageId.swift
+//  CoopStageBannerId.swift
 //
 //  Created by tkgstrator on 2023/06/03
 //  Copyright @2023 Magi, Corporation. All rights reserved.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum CoopStageId: Int, UnsafeRawRepresentable {
+public enum CoopStageBannerId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Unknown
     public var id: Int { rawValue }
 

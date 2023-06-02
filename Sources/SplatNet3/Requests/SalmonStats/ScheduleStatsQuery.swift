@@ -67,17 +67,17 @@ public final class ScheduleStatsQuery: SalmonStats {
     }
 
     public struct EnemyResult: Codable, Identifiable {
-        public var id: EnemyId { enemyId }
+        public var id: CoopEnemyInfoId { enemyId }
         public let count: Int
         public let killCount: Int
-        public let enemyId: EnemyId
+        public let enemyId: CoopEnemyInfoId
     }
 
     public struct WaveResult: Codable, Identifiable {
         public var id: Int { waterLevel.rawValue * 10 + eventType.rawValue }
         public let goldenIkuraNum: Int
-        public let waterLevel: WaterLevelId
-        public let eventType: EventId
+        public let waterLevel: CoopWaterLevelId
+        public let eventType: CoopEventId
         public let count: Int
     }
 }
