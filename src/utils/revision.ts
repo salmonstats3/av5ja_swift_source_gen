@@ -69,7 +69,7 @@ export async function get_locale_bundles(): Promise<void> {
         const context: string = JSON.stringify(JSON.parse(txt), null, 2);
         // Save JSON and YAML
         createFile(context, `src/locales/${hash}/${locale.locale}.json`);
-        const objects = Object.fromEntries(
+        const objects: any = Object.fromEntries(
           Object.entries(camelcaseKeys(JSON.parse(context), { pascalCase: true }))
             .filter(
               ([key, value]) =>
