@@ -1,0 +1,622 @@
+/// 鐵球魚
+"SakeArtillery" = "鐵球魚";
+/// 泥鮭魚
+"SakeBigMouth" = "泥鮭魚";
+/// 泥鮭魚
+"SakeBigMouthGold" = "泥鮭魚";
+/// 直升機鮭魚
+"SakeCopter" = "直升機鮭魚";
+/// 潛水魚
+"SakeDolphin" = "潛水魚";
+/// 拾蛋魚
+"SakeFlyBagman" = "拾蛋魚";
+/// 柱魚
+"SakePillar" = "柱魚";
+/// 辰龍
+"SakeRope" = "辰龍";
+/// 鍋蓋魚
+"SakeSaucer" = "鍋蓋魚";
+/// 鼴鼠魚
+"Sakediver" = "鼴鼠魚";
+/// 烤架魚
+"Sakedozer" = "烤架魚";
+/// 炸彈魚
+"SakelienBomber" = "炸彈魚";
+/// 墊肩飛魚
+"SakelienCupTwins" = "墊肩飛魚";
+/// 橫綱
+"SakelienGiant" = "橫綱";
+/// 金鮭魚
+"SakelienGolden" = "金鮭魚";
+/// 大胖魚
+"SakelienLarge" = "大胖魚";
+/// 鐵板魚
+"SakelienShield" = "鐵板魚";
+/// 小鮭魚
+"SakelienSmall" = "小鮭魚";
+/// 蛇魚
+"SakelienSnake" = "蛇魚";
+/// 鮭魚
+"SakelienStandard" = "鮭魚";
+/// 高塔魚
+"SakelienTower" = "高塔魚";
+/// 蝙蝠魚
+"Sakerocket" = "蝙蝠魚";
+/// 新手
+"Grade00" = "新手";
+/// 半吊子
+"Grade01" = "半吊子";
+/// 獨當一面
+"Grade02" = "獨當一面";
+/// 熟練
+"Grade03" = "熟練";
+/// 達人
+"Grade04" = "達人";
+/// 達人+1
+"Grade05" = "達人+1";
+/// 達人+2
+"Grade06" = "達人+2";
+/// 達人+3
+"Grade07" = "達人+3";
+/// 傳說
+"Grade08" = "傳說";
+/// 新手 打工仔
+"GradeArbeiter00" = "新手 打工仔";
+/// 半吊子 打工仔
+"GradeArbeiter01" = "半吊子 打工仔";
+/// 獨當一面 打工仔
+"GradeArbeiter02" = "獨當一面 打工仔";
+/// 熟練 打工仔
+"GradeArbeiter03" = "熟練 打工仔";
+/// 達人 打工仔
+"GradeArbeiter04" = "達人 打工仔";
+/// 達人+1 打工仔
+"GradeArbeiter05" = "達人+1 打工仔";
+/// 達人+2 打工仔
+"GradeArbeiter06" = "達人+2 打工仔";
+/// 達人+3 打工仔
+"GradeArbeiter07" = "達人+3 打工仔";
+/// 傳說 打工仔
+"GradeArbeiter08" = "傳說 打工仔";
+/// 打工連身工作服 橘色
+"COP001" = "打工連身工作服 橘色";
+/// 打工連身工作服 綠色
+"COP002" = "打工連身工作服 綠色";
+/// 打工連身工作服 黃色
+"COP003" = "打工連身工作服 黃色";
+/// 打工連身工作服 粉紅色
+"COP004" = "打工連身工作服 粉紅色";
+/// 打工連身工作服 藍色
+"COP005" = "打工連身工作服 藍色";
+/// 打工連身工作服 黑色
+"COP006" = "打工連身工作服 黑色";
+/// 打工連身工作服 白色
+"COP007" = "打工連身工作服 白色";
+/// 打工防水衣 橘色
+"COP008" = "打工防水衣 橘色";
+/// 打工防水衣 黑色
+"COP009" = "打工防水衣 黑色";
+/// 打工防水衣 黃色
+"COP010" = "打工防水衣 黃色";
+/// 打工防水衣 棕色
+"COP011" = "打工防水衣 棕色";
+/// 醋飯海洋世界
+"Carousel" = "醋飯海洋世界";
+/// 麥年海洋發電所
+"Shakedent" = "麥年海洋發電所";
+/// 生筋子系統交流道遺址
+"Shakehighway" = "生筋子系統交流道遺址";
+/// 漂浮落難船
+"Shakeship" = "漂浮落難船";
+/// 新卷堡
+"Shakespiral" = "新卷堡";
+/// 鮭壩
+"Shakeup" = "鮭壩";
+/// 竹蟶疏洪道
+"Temple" = "竹蟶疏洪道";
+/// 新卷堡
+"Tutorial" = "新卷堡";
+/// ？？？
+"Unknown" = "？？？";
+/// 海女美術大學
+"Upland" = "海女美術大學";
+/// CommonCancel,取消
+"0" = "CommonCancel,取消";
+/// CommonClamBlitz,真格蛤蜊
+"1" = "CommonClamBlitz,真格蛤蜊";
+/// CommonClose,關閉
+"2" = "CommonClose,關閉";
+/// CommonCoopBigRun,大型跑
+"3" = "CommonCoopBigRun,大型跑";
+/// CommonCoopTeamContest,團隊打工競賽
+"4" = "CommonCoopTeamContest,團隊打工競賽";
+/// CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"5" = "CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// CommonDecide,確定
+"6" = "CommonDecide,確定";
+/// CommonDownload,下載
+"7" = "CommonDownload,下載";
+/// CommonEnd,結束
+"8" = "CommonEnd,結束";
+/// CommonGearPowerBlank,問號
+"9" = "CommonGearPowerBlank,問號";
+/// CommonHome,主頁
+"10" = "CommonHome,主頁";
+/// CommonIkaring3,魷魚圈 3
+"11" = "CommonIkaring3,魷魚圈 3";
+/// CommonNowLoading,載入中
+"12" = "CommonNowLoading,載入中";
+/// CommonPullToRefresh,下拉更新
+"13" = "CommonPullToRefresh,下拉更新";
+/// CommonRainmaker,真格魚虎對戰
+"14" = "CommonRainmaker,真格魚虎對戰";
+/// CommonShare,分享
+"15" = "CommonShare,分享";
+/// CommonSplatZones,真格區域
+"16" = "CommonSplatZones,真格區域";
+/// CommonTowerControl,真格塔樓
+"17" = "CommonTowerControl,真格塔樓";
+/// CommonTricolor,三色奪寶攻擊
+"18" = "CommonTricolor,三色奪寶攻擊";
+/// CommonTricolorMatch,三色奪寶比賽
+"19" = "CommonTricolorMatch,三色奪寶比賽";
+/// CommonTurfWar,占地對戰
+"20" = "CommonTurfWar,占地對戰";
+/// CommonWpnNotfound,問號
+"21" = "CommonWpnNotfound,問號";
+/// CoopHistoryAvailable,出現數
+"22" = "CoopHistoryAvailable,出現數";
+/// CoopHistoryAvailableBoss,已出現的頭目鮭魚
+"23" = "CoopHistoryAvailableBoss,已出現的頭目鮭魚";
+/// CoopHistoryAverageClearWaves,平均完成WAVE數
+"24" = "CoopHistoryAverageClearWaves,平均完成WAVE數";
+/// CoopHistoryBigrun,大型跑
+"25" = "CoopHistoryBigrun,大型跑";
+/// CoopHistoryBonus,完成獎勵
+"26" = "CoopHistoryBonus,完成獎勵";
+/// CoopHistoryBossAvailable,頭目鮭魚出現！
+"27" = "CoopHistoryBossAvailable,頭目鮭魚出現！";
+/// CoopHistoryClear,Clear!!
+"28" = "CoopHistoryClear,Clear!!";
+/// CoopHistoryDangerRatio,危險度
+"29" = "CoopHistoryDangerRatio,危險度";
+/// CoopHistoryDefeatBoss,擊倒頭目鮭魚！
+"30" = "CoopHistoryDefeatBoss,擊倒頭目鮭魚！";
+/// CoopHistoryDefeatBossCount,已擊倒的頭目鮭魚
+"31" = "CoopHistoryDefeatBossCount,已擊倒的頭目鮭魚";
+/// CoopHistoryDefeated,成功擊倒！
+"32" = "CoopHistoryDefeated,成功擊倒！";
+/// CoopHistoryDefeatedEnemies,已擊倒的巨大鮭魚
+"33" = "CoopHistoryDefeatedEnemies,已擊倒的巨大鮭魚";
+/// CoopHistoryDefeatedEnemiesGuide,※括號內的數字為自己擊倒的數量
+"34" = "CoopHistoryDefeatedEnemiesGuide,※括號內的數字為自己擊倒的數量";
+/// CoopHistoryDeliverCount,已收集的鮭魚卵
+"35" = "CoopHistoryDeliverCount,已收集的鮭魚卵";
+/// CoopHistoryEnemy,巨大鮭魚
+"36" = "CoopHistoryEnemy,巨大鮭魚";
+/// CoopHistoryExWave,EX-WAVE
+"37" = "CoopHistoryExWave,EX-WAVE";
+/// CoopHistoryFailure,Failure
+"38" = "CoopHistoryFailure,Failure";
+/// CoopHistoryGj,GJ！
+"39" = "CoopHistoryGj,GJ！";
+/// CoopHistoryGoToStats,返回打工記錄一覽
+"40" = "CoopHistoryGoToStats,返回打工記錄一覽";
+/// CoopHistoryGoldenDeliverCount,已收集的金鮭魚卵
+"41" = "CoopHistoryGoldenDeliverCount,已收集的金鮭魚卵";
+/// CoopHistoryHighestScore,最高分數
+"42" = "CoopHistoryHighestScore,最高分數";
+/// CoopHistoryHistory,打工記錄
+"43" = "CoopHistoryHistory,打工記錄";
+/// CoopHistoryJobPoint,獲得點數
+"44" = "CoopHistoryJobPoint,獲得點數";
+/// CoopHistoryJobRatio,評價倍率
+"45" = "CoopHistoryJobRatio,評價倍率";
+/// CoopHistoryKumaPointCard,熊先生集點卡
+"46" = "CoopHistoryKumaPointCard,熊先生集點卡";
+/// CoopHistoryLatest,前往最新打工
+"47" = "CoopHistoryLatest,前往最新打工";
+/// CoopHistoryLimitedPoint,現有的期間限定點數
+"48" = "CoopHistoryLimitedPoint,現有的期間限定點數";
+/// CoopHistoryMonthlyReward,本月的裝備
+"49" = "CoopHistoryMonthlyReward,本月的裝備";
+/// CoopHistoryNext,下一場打工
+"50" = "CoopHistoryNext,下一場打工";
+/// CoopHistoryNg,NG
+"51" = "CoopHistoryNg,NG";
+/// CoopHistoryNoData,沒有打工記錄
+"52" = "CoopHistoryNoData,沒有打工記錄";
+/// CoopHistoryNotAvailable,無法顯示打工記錄
+"53" = "CoopHistoryNotAvailable,無法顯示打工記錄";
+/// CoopHistoryNotAvailableDescription,可瀏覽的打工記錄僅限最新的50戰
+"54" = "CoopHistoryNotAvailableDescription,可瀏覽的打工記錄僅限最新的50戰";
+/// CoopHistoryNotDefeated,擊倒失敗……
+"55" = "CoopHistoryNotDefeated,擊倒失敗……";
+/// CoopHistoryPlayCount,打工次數
+"56" = "CoopHistoryPlayCount,打工次數";
+/// CoopHistoryPrevious,上一場打工
+"57" = "CoopHistoryPrevious,上一場打工";
+/// CoopHistoryPrivate,私人
+"58" = "CoopHistoryPrivate,私人";
+/// CoopHistoryRecruit,招募員工
+"59" = "CoopHistoryRecruit,招募員工";
+/// CoopHistoryRecruitTag1,簡單
+"60" = "CoopHistoryRecruitTag1,簡單";
+/// CoopHistoryRecruitTag2,收集鮭魚卵
+"61" = "CoopHistoryRecruitTag2,收集鮭魚卵";
+/// CoopHistoryRecruitTitle,～穿上超魷型的制服收集鮭魚卵～
+"62" = "CoopHistoryRecruitTitle,～穿上超魷型的制服收集鮭魚卵～";
+/// CoopHistoryRegular,一般打工
+"63" = "CoopHistoryRegular,一般打工";
+/// CoopHistoryRegularPoint,現有點數
+"64" = "CoopHistoryRegularPoint,現有點數";
+/// CoopHistoryRescueCount,救援次數
+"65" = "CoopHistoryRescueCount,救援次數";
+/// CoopHistoryRescuedCount,被救助的次數
+"66" = "CoopHistoryRescuedCount,被救助的次數";
+/// CoopHistoryScale,鱗片
+"67" = "CoopHistoryScale,鱗片";
+/// CoopHistoryScaleBronze,銅鱗片
+"68" = "CoopHistoryScaleBronze,銅鱗片";
+/// CoopHistoryScaleGold,金鱗片
+"69" = "CoopHistoryScaleGold,金鱗片";
+/// CoopHistoryScaleSilver,銀鱗片
+"70" = "CoopHistoryScaleSilver,銀鱗片";
+/// CoopHistoryScore,打工分數
+"71" = "CoopHistoryScore,打工分數";
+/// CoopHistorySeeSchedule,查看時間表
+"72" = "CoopHistorySeeSchedule,查看時間表";
+/// CoopHistorySmellMeter,頭目槽
+"73" = "CoopHistorySmellMeter,頭目槽";
+/// CoopHistorySupplyWeapon,派發武器
+"74" = "CoopHistorySupplyWeapon,派發武器";
+/// CoopHistoryTeamContest,團隊打工競賽
+"75" = "CoopHistoryTeamContest,團隊打工競賽";
+/// CoopHistoryTitle,SALMON RUN
+"76" = "CoopHistoryTitle,SALMON RUN";
+/// CoopHistoryTotalPoint,累計點數
+"77" = "CoopHistoryTotalPoint,累計點數";
+/// CoopHistoryWave,WAVE
+"78" = "CoopHistoryWave,WAVE";
+/// CoopHistoryWaveLevel0,乾潮
+"79" = "CoopHistoryWaveLevel0,乾潮";
+/// CoopHistoryWaveLevel1,普通
+"80" = "CoopHistoryWaveLevel1,普通";
+/// CoopHistoryWaveLevel2,滿潮
+"81" = "CoopHistoryWaveLevel2,滿潮";
+/// ErrorBackToHome,返回主頁
+"82" = "ErrorBackToHome,返回主頁";
+/// ErrorCurrentlyNotAvailable,目前無法使用，請稍待片刻。
+"83" = "ErrorCurrentlyNotAvailable,目前無法使用，請稍待片刻。";
+/// ErrorError,錯誤
+"84" = "ErrorError,錯誤";
+/// ErrorErrorOccurred,發生錯誤。
+"85" = "ErrorErrorOccurred,發生錯誤。";
+/// ErrorErrorReopen,讀取失敗。
+"86" = "ErrorErrorReopen,讀取失敗。";
+/// ErrorMaintenanceDescription,目前伺服器正在維護中，請稍後再重新連接。
+"87" = "ErrorMaintenanceDescription,目前伺服器正在維護中，請稍後再重新連接。";
+/// ErrorMaintenanceTitle,請稍待片刻
+"88" = "ErrorMaintenanceTitle,請稍待片刻";
+/// ErrorNetworkNotAvailable,讀取失敗，請在良好的網路環境下重新再試一次。
+"89" = "ErrorNetworkNotAvailable,讀取失敗，請在良好的網路環境下重新再試一次。";
+/// ErrorReload,重新讀取
+"90" = "ErrorReload,重新讀取";
+/// RecordLatestPlayed,最後遊玩時間
+"91" = "RecordLatestPlayed,最後遊玩時間";
+/// RecordLatestUsed,常用武器
+"92" = "RecordLatestUsed,常用武器";
+/// RecordMain,主要武器
+"93" = "RecordMain,主要武器";
+/// RecordNextSkillLevel,離熟練度提升仍需
+"94" = "RecordNextSkillLevel,離熟練度提升仍需";
+/// RecordSkillLevel,熟練度
+"95" = "RecordSkillLevel,熟練度";
+/// RecordSort,排序
+"96" = "RecordSort,排序";
+/// RecordSpecial,特殊武器
+"97" = "RecordSpecial,特殊武器";
+/// RecordStageRecord,場地記錄
+"98" = "RecordStageRecord,場地記錄";
+/// RecordStageRecordAppName,場地
+"99" = "RecordStageRecordAppName,場地";
+/// RecordSub,次要武器
+"100" = "RecordSub,次要武器";
+/// RecordTitle,記錄
+"101" = "RecordTitle,記錄";
+/// RecordTurfPoint,塗墨點數
+"102" = "RecordTurfPoint,塗墨點數";
+/// RecordUnplayedStages,未遊玩的場地
+"103" = "RecordUnplayedStages,未遊玩的場地";
+/// RecordUnusedWeapons,未持有的武器
+"104" = "RecordUnusedWeapons,未持有的武器";
+/// RecordVibes,狀態值
+"105" = "RecordVibes,狀態值";
+/// RecordWeaponRecord,武器記錄
+"106" = "RecordWeaponRecord,武器記錄";
+/// RecordWeaponRecordAppName,武器
+"107" = "RecordWeaponRecordAppName,武器";
+/// RecordWinCount,獲勝數
+"108" = "RecordWinCount,獲勝數";
+/// SettingsAcknowledgements,著作權聲明
+"109" = "SettingsAcknowledgements,著作權聲明";
+/// SettingsAppName,設定
+"110" = "SettingsAppName,設定";
+/// SettingsCredits,工作人員
+"111" = "SettingsCredits,工作人員";
+/// SettingsExpansionPass,前往擴充票購買網站
+"112" = "SettingsExpansionPass,前往擴充票購買網站";
+/// SettingsTitle,設定
+"113" = "SettingsTitle,設定";
+/// StageScheduleBankara,蠻頹比賽
+"114" = "StageScheduleBankara,蠻頹比賽";
+/// StageScheduleBankaraOpen,開放
+"115" = "StageScheduleBankaraOpen,開放";
+/// StageScheduleBankaraOpenChallenge,挑戰
+"116" = "StageScheduleBankaraOpenChallenge,挑戰";
+/// StageScheduleCoop,SALMON RUN
+"117" = "StageScheduleCoop,SALMON RUN";
+/// StageScheduleCoopCurrentPeriodStart,NOW OPEN！
+"118" = "StageScheduleCoopCurrentPeriodStart,NOW OPEN！";
+/// StageScheduleEvent,活動比賽
+"119" = "StageScheduleEvent,活動比賽";
+/// StageScheduleEventCurrentSchedule,現在
+"120" = "StageScheduleEventCurrentSchedule,現在";
+/// StageScheduleEventFuture,下下次
+"121" = "StageScheduleEventFuture,下下次";
+/// StageScheduleEventHolding,舉行中！！
+"122" = "StageScheduleEventHolding,舉行中！！";
+/// StageScheduleEventNext,下次
+"123" = "StageScheduleEventNext,下次";
+/// StageScheduleEventNextSchedule,下一場
+"124" = "StageScheduleEventNextSchedule,下一場";
+/// StageScheduleEventNoData,時間表未定
+"125" = "StageScheduleEventNoData,時間表未定";
+/// StageScheduleEventUnknownData,？？？？？
+"126" = "StageScheduleEventUnknownData,？？？？？";
+/// StageScheduleEventmatch,活動舉行！
+"127" = "StageScheduleEventmatch,活動舉行！";
+/// StageScheduleFuture,下下次
+"128" = "StageScheduleFuture,下下次";
+/// StageScheduleGuideOpenBrowser,將開啟網路瀏覽器
+"129" = "StageScheduleGuideOpenBrowser,將開啟網路瀏覽器";
+/// StageScheduleNext,下次
+"130" = "StageScheduleNext,下次";
+/// StageScheduleNoticeBigrun,大型跑接近中！
+"131" = "StageScheduleNoticeBigrun,大型跑接近中！";
+/// StageScheduleNoticeLimited,團隊打工競賽舉行預告！
+"132" = "StageScheduleNoticeLimited,團隊打工競賽舉行預告！";
+/// StageScheduleNowClosed,祭典比賽舉行中！
+"133" = "StageScheduleNowClosed,祭典比賽舉行中！";
+/// StageScheduleOpen,開放！
+"134" = "StageScheduleOpen,開放！";
+/// StageScheduleOpenBigrun,大型跑發生中！
+"135" = "StageScheduleOpenBigrun,大型跑發生中！";
+/// StageScheduleOpenLimited,團隊打工競賽舉行中！
+"136" = "StageScheduleOpenLimited,團隊打工競賽舉行中！";
+/// StageSchedulePrivate,私人比賽
+"137" = "StageSchedulePrivate,私人比賽";
+/// StageScheduleRecruit,大型跑要來了！！打工大招募
+"138" = "StageScheduleRecruit,大型跑要來了！！打工大招募";
+/// StageScheduleRecruitTeamContest,團隊打工競賽！大家一起組隊參加吧！
+"139" = "StageScheduleRecruitTeamContest,團隊打工競賽！大家一起組隊參加吧！";
+/// StageScheduleRegular,一般比賽
+"140" = "StageScheduleRegular,一般比賽";
+/// StageScheduleRules,查看規則
+"141" = "StageScheduleRules,查看規則";
+/// StageScheduleSeeAllRules,請從此處確認詳細規則
+"142" = "StageScheduleSeeAllRules,請從此處確認詳細規則";
+/// StageScheduleSuppliedWeaponRandom,隨機
+"143" = "StageScheduleSuppliedWeaponRandom,隨機";
+/// StageScheduleSuppliedWeapons,派發武器
+"144" = "StageScheduleSuppliedWeapons,派發武器";
+/// StageScheduleTitle,時間表
+"145" = "StageScheduleTitle,時間表";
+/// StageScheduleWinRateByRules,個別規則勝率
+"146" = "StageScheduleWinRateByRules,個別規則勝率";
+/// StageScheduleXmatch,X比賽
+"147" = "StageScheduleXmatch,X比賽";
+/// CommonAbout,關於
+"148" = "CommonAbout,關於";
+/// RecordActualValue,實際的
+"149" = "RecordActualValue,實際的";
+/// CommonAppearances,外觀
+"150" = "CommonAppearances,外觀";
+/// CommonApplication,應用程式
+"151" = "CommonApplication,應用程式";
+/// RecordAverageScore,平均
+"152" = "RecordAverageScore,平均";
+/// CommonBackupResults,備份
+"153" = "CommonBackupResults,備份";
+/// CommonBackupCompress,壓縮（ZIP）
+"154" = "CommonBackupCompress,壓縮（ZIP）";
+/// CommonBackupMessage,備份資料庫
+"155" = "CommonBackupMessage,備份資料庫";
+/// CommonBackupPlain,純文字（JSON）
+"156" = "CommonBackupPlain,純文字（JSON）";
+/// CommonAppCredit,信用
+"157" = "CommonAppCredit,信用";
+/// CommonDarkMode,暗色模式
+"158" = "CommonDarkMode,暗色模式";
+/// CommonDataManagement,資料管理
+"159" = "CommonDataManagement,資料管理";
+/// CoopHistoryDeathCount,救援計數
+"160" = "CoopHistoryDeathCount,救援計數";
+/// CoopHistoryDefeatedCount,擊敗計數
+"161" = "CoopHistoryDefeatedCount,擊敗計數";
+/// CoopHistoryEstimatedValue,預估
+"162" = "CoopHistoryEstimatedValue,預估";
+/// CoopHistoryEventClearRatio,清除比率
+"163" = "CoopHistoryEventClearRatio,清除比率";
+/// CoopHistoryEventFrequency,事件頻率
+"164" = "CoopHistoryEventFrequency,事件頻率";
+/// CommonFAQ,常見問題
+"165" = "CommonFAQ,常見問題";
+/// CommonGamingMode,遊戲模式
+"166" = "CommonGamingMode,遊戲模式";
+/// CoopHistoryGradeId,成績
+"167" = "CoopHistoryGradeId,成績";
+/// CoopHistoryGradePoint,成績點數
+"168" = "CoopHistoryGradePoint,成績點數";
+/// CoopHistoryHighestRecord,最高的
+"169" = "CoopHistoryHighestRecord,最高的";
+/// CommonIkaring2,SplatNet2
+"170" = "CommonIkaring2,SplatNet2";
+/// CommonInvalid,無效的
+"171" = "CommonInvalid,無效的";
+/// CommonLanguages,語言
+"172" = "CommonLanguages,語言";
+/// CommonShareLogMessage,傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。
+"173" = "CommonShareLogMessage,傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。";
+/// CommonShareLog,分享日誌
+"174" = "CommonShareLog,分享日誌";
+/// CommonLogSize,日誌文件
+"175" = "CommonLogSize,日誌文件";
+/// CommonMyPage,我的頁面
+"176" = "CommonMyPage,我的頁面";
+/// CoopHistoryPlayerCrew,組
+"177" = "CoopHistoryPlayerCrew,組";
+/// CoopHistoryPlayerYou,您
+"178" = "CoopHistoryPlayerYou,您";
+/// CommonPrivacyPolicy,隱私政策
+"179" = "CommonPrivacyPolicy,隱私政策";
+/// CommonRequestForm,表格
+"180" = "CommonRequestForm,表格";
+/// CommonRequestFormBug,錯誤
+"181" = "CommonRequestFormBug,錯誤";
+/// CommonRequestFormContent,內容
+"182" = "CommonRequestFormContent,內容";
+/// CommonRequestFormEnhancement,增強
+"183" = "CommonRequestFormEnhancement,增強";
+/// CommonRequestFormFeature,功能
+"184" = "CommonRequestFormFeature,功能";
+/// CommonRequestFormTitle,標題
+"185" = "CommonRequestFormTitle,標題";
+/// CommonRequestFormType,類型
+"186" = "CommonRequestFormType,類型";
+/// CommonRequsetFormSubmit,提交
+"187" = "CommonRequsetFormSubmit,提交";
+/// CommonRestore,還原
+"188" = "CommonRestore,還原";
+/// CommonRestoreMessage,在「檔案」應用程式中選擇要還原的檔案。
+"189" = "CommonRestoreMessage,在「檔案」應用程式中選擇要還原的檔案。";
+/// CoopHistoryResultsCount,結果計數
+"190" = "CoopHistoryResultsCount,結果計數";
+/// CommonRoleDebuger,除錯
+"191" = "CommonRoleDebuger,除錯";
+/// CommonRoleDeveloper,開發者
+"192" = "CommonRoleDeveloper,開發者";
+/// CommonRoleTester,測試者
+"193" = "CommonRoleTester,測試者";
+/// CommonRoleTranslator,翻譯者
+"194" = "CommonRoleTranslator,翻譯者";
+/// CommonSaveToPhotoLibrary,儲存成功
+"195" = "CommonSaveToPhotoLibrary,儲存成功";
+/// CommonScheduleSync,同步排程
+"196" = "CommonScheduleSync,同步排程";
+/// CommonScheduleSyncMessage,從伺服器檢索排程。
+"197" = "CommonScheduleSyncMessage,從伺服器檢索排程。";
+/// CommonSignIn,登入
+"198" = "CommonSignIn,登入";
+/// CommonSignOut,登出
+"199" = "CommonSignOut,登出";
+/// CommonSignOutSuccessfully,登出成功
+"200" = "CommonSignOutSuccessfully,登出成功";
+/// CommonSignOutMessage,取消連結任天堂Switch帳戶。
+"201" = "CommonSignOutMessage,取消連結任天堂Switch帳戶。";
+/// CommonSourceCode,原始碼
+"202" = "CommonSourceCode,原始碼";
+/// CoopHistorySuppliedRatio,供應比率
+"203" = "CoopHistorySuppliedRatio,供應比率";
+/// CommonUpdateRequired,需要應用程式更新
+"204" = "CommonUpdateRequired,需要應用程式更新";
+/// CommonUserData,使用者資料
+"205" = "CommonUserData,使用者資料";
+/// CommonValid,有效的
+"206" = "CommonValid,有效的";
+/// CommonAppVersion,版本
+"207" = "CommonAppVersion,版本";
+/// CommonWipeLog,清除日誌
+"208" = "CommonWipeLog,清除日誌";
+/// CommonWipeLogMessage,清除所有日誌。
+"209" = "CommonWipeLogMessage,清除所有日誌。";
+/// CommonWipeResults,清除結果
+"210" = "CommonWipeResults,清除結果";
+/// CommonWipeResultsMessage,清除所有資料。
+"211" = "CommonWipeResultsMessage,清除所有資料。";
+/// CommonWriteReview,撰寫評論
+"212" = "CommonWriteReview,撰寫評論";
+/// CoopHistoryOverallRecord,整體
+"213" = "CoopHistoryOverallRecord,整體";
+/// CommonGoldenEggs,金蛋
+"214" = "CommonGoldenEggs,金蛋";
+/// CommonPowerEggs,能量蛋
+"215" = "CommonPowerEggs,能量蛋";
+/// CommonOverview,概述
+"216" = "CommonOverview,概述";
+/// CommonLocale,zh-TW
+"217" = "CommonLocale,zh-TW";
+/// CommonLanguageCode,2
+"218" = "CommonLanguageCode,2";
+/// CommonDatabase,資料庫
+"219" = "CommonDatabase,資料庫";
+/// CommonXProductVersion,X-ProductVersion
+"220" = "CommonXProductVersion,X-ProductVersion";
+/// CommonXWebViewVer,X-WebViewVer
+"221" = "CommonXWebViewVer,X-WebViewVer";
+/// CommonUpload,上傳
+"222" = "CommonUpload,上傳";
+/// CommonCreditDevelop,開發者
+"223" = "CommonCreditDevelop,開發者";
+/// CommonCreditTest,測試者
+"224" = "CommonCreditTest,測試者";
+/// CommonCreditDesign,UI/UX設計
+"225" = "CommonCreditDesign,UI/UX設計";
+/// CoopHistoryTeamPointCard,團隊點數卡
+"226" = "CoopHistoryTeamPointCard,團隊點數卡";
+/// CoopHistoryUseEstimatedValue,使用預估值
+"227" = "CoopHistoryUseEstimatedValue,使用預估值";
+/// CommonUseSecureSession,使用 Safari 的身份驗證
+"228" = "CommonUseSecureSession,使用 Safari 的身份驗證";
+/// CommonCheckInReward,獎勵
+"229" = "CommonCheckInReward,獎勵";
+/// CommonGetCheckInReward,掃描QR碼獲取所有獎勵。
+"230" = "CommonGetCheckInReward,掃描QR碼獲取所有獎勵。";
+/// CoopHistoryTeamResult,團隊
+"231" = "CoopHistoryTeamResult,團隊";
+/// CoopHistoryPlayerResult,您
+"232" = "CoopHistoryPlayerResult,您";
+/// CoopHistoryCrewAvgResult,船員的平均數
+"233" = "CoopHistoryCrewAvgResult,船員的平均數";
+/// CoopHistoryCrewResult,船員
+"234" = "CoopHistoryCrewResult,船員";
+/// CoopHistoryWaveResult,海浪
+"235" = "CoopHistoryWaveResult,海浪";
+/// CoopHistoryHighestScore,最高
+"236" = "CoopHistoryHighestScore,最高";
+/// CoopHistoryAverageScore,平均
+"237" = "CoopHistoryAverageScore,平均";
+/// CommonRequirediOS16,您必須更新到iOS 16或更高版本才能使用此功能
+"238" = "CommonRequirediOS16,您必須更新到iOS 16或更高版本才能使用此功能";
+/// CommonRequiredSignIn,登錄 Nintendo 帳戶才能使用此應用程式
+"239" = "CommonRequiredSignIn,登錄 Nintendo 帳戶才能使用此應用程式";
+/// CommonRestoreSuccessMessage,成功還原結果
+"240" = "CommonRestoreSuccessMessage,成功還原結果";
+/// CommonRestoreFailureMessage,還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。
+"241" = "CommonRestoreFailureMessage,還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。";
+/// CommonResultsCount,結果
+"242" = "CommonResultsCount,結果";
+/// CommonDeveloperAnswer,開發者的回應
+"243" = "CommonDeveloperAnswer,開發者的回應";
+/// CommonMinimumVersion,無法恢復以不支援的版本備份的結果
+"244" = "CommonMinimumVersion,無法恢復以不支援的版本備份的結果";
+/// ErrorInvalidSignature,由於備份簽名不匹配，無法恢復。結果可能已被篡改
+"245" = "ErrorInvalidSignature,由於備份簽名不匹配，無法恢復。結果可能已被篡改";
+/// CommonUseSystemTheme,取決於設備設置
+"246" = "CommonUseSystemTheme,取決於設備設置";
+/// CommonLicense,許可證
+"247" = "CommonLicense,許可證";
+/// DateTimeYearFormat,yyyy M/d HH:mm
+"248" = "DateTimeYearFormat,yyyy M/d HH:mm";
+/// DateTimeFormat,M/d HH:mm
+"249" = "DateTimeFormat,M/d HH:mm";

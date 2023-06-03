@@ -7,8 +7,7 @@ import { LocaleId, LocaleKey } from './locale_type';
 import fetch, { Response } from 'node-fetch';
 import camelcaseKeys from 'camelcase-keys';
 import yaml from 'js-yaml';
-// import fetch, { Response } from 'node-fetch';
-// import camelcaseKeys from 'camelcase-keys';
+import fs from 'fs';
 
 /**
  * 翻訳, ソースコードを出力するクラス
@@ -150,7 +149,7 @@ export class Translation {
   /**
    * イカリング3からJSONを取得する
    */
-  private async get_bundle(): Promise<string> {
+  private async get_bundle(): Promise<[string, unknown][]> {
     // PascalCaseに変換
     const context = camelcaseKeys(JSON.parse(await this.get_context()), { pascalCase: true })
     // JSONを保存
@@ -180,11 +179,6 @@ export class Translation {
     // YAMLを保存
     createFile(yaml.dump(objects), `src/locales/${this.hash}/${this.key}.yaml`)
     return Object.entries(objects)
-      .flatMap(([key, value]) => [
-        `/// ${value}`,
-        `"${key}" = "${value}";`
-      ])
-      .join('\n')
   }
 
   /**
@@ -198,15 +192,58 @@ export class Translation {
       });
     }
 
-    // イカリング3から翻訳ファイルを取得
-    const objects = await this.get_bundle();
-    console.log(objects)
-
+    const objects: [string, unknown][] = (await this.get_bundle()).concat(this.get_yaml());
     // 翻訳ファイルの作成
     const translation: string = [this.CoopEnemy, this.CoopGrade, this.CoopSkinName, this.CoopStageName]
       .map((translation: TranslationType) => translation.translations)
-      .concat(objects)
+      .concat(Object.entries(objects).map(([key, value]) => [
+        `/// ${value}`,
+        `"${key}" = "${value}";`,
+      ].join('\n')))
       .join('\n');
-    createFile(translation, `sources/Resources/${this.xcode}.lproj/Internal.strings`);
+    createFile(translation, `sources/Resources/${this.xcode}.lproj/Localizable.strings`);
+
+    if (this.id === LocaleId.JPja) {
+      const source: string = this.get_source(objects);
+      createFile(source, 'sources/LocalizedType.swift');
+    }
+  }
+
+  /**
+   * YAMLから翻訳データを読み込む
+   * @returns 
+   */
+  private get_yaml(): [string, unknown][] {
+    const data = JSON.parse(JSON.stringify(yaml.load(fs.readFileSync(`src/locales/default.yaml`, 'utf8'))))
+    return Object.entries(data).map(([key, values]) => {
+      const value: string | undefined = Object.entries(values as object).find(([key, _]) => key === this.xcode)?.[1] as string | undefined
+      return [key, value] 
+    })
+  }
+
+  private get_source(objects: object): string {
+    const created_at: string = dayjs().format('YYYY/MM/DD');
+    const created_year: string = dayjs().format('YYYY');
+    let translations: string[] = [
+      '//',
+      `//  LocalizedType.swift`,
+      '//',
+      `//  Created by tkgstrator on ${created_at}`,
+      `//  Copyright @${created_year} Magi, Corporation. All rights reserved.`,
+      '//',
+      '',
+      'import Foundation',
+      '',
+      `public enum LocalizedType: String, CaseIterable, Identifiable {`,
+      `    public var id: String { rawValue }`, 
+      '',
+    ];
+
+    Object.values(objects).sort().forEach(([key, value]) => {
+      translations.push(`    /// ${value}`);
+      translations.push(`    case ${key}`);
+    });
+    translations.push('}');
+    return translations.join('\n');
   }
 }

@@ -1,0 +1,628 @@
+/// Artilleroide
+"SakeArtillery" = "Artilleroide";
+/// Morrolodo
+"SakeBigMouth" = "Morrolodo";
+/// Morrolodo
+"SakeBigMouthGold" = "Morrolodo";
+/// Salmocóptero
+"SakeCopter" = "Salmocóptero";
+/// Chapotero
+"SakeDolphin" = "Chapotero";
+/// Rastrerón
+"SakeFlyBagman" = "Rastrerón";
+/// Viga
+"SakePillar" = "Viga";
+/// Dragón
+"SakeRope" = "Dragón";
+/// Tapaollas
+"SakeSaucer" = "Tapaollas";
+/// Fáucex
+"Sakediver" = "Fáucex";
+/// Chaparrilla
+"Sakedozer" = "Chaparrilla";
+/// Ferroz
+"SakelienBomber" = "Ferroz";
+/// Drónido
+"SakelienCupTwins" = "Drónido";
+/// Salmonote
+"SakelienGiant" = "Salmonote";
+/// Salmóreo
+"SakelienGolden" = "Salmóreo";
+/// Escamacarra
+"SakelienLarge" = "Escamacarra";
+/// Chatarrónido
+"SakelienShield" = "Chatarrónido";
+/// Cenutrín
+"SakelienSmall" = "Cenutrín";
+/// Raspoide
+"SakelienSnake" = "Raspoide";
+/// Salmoche
+"SakelienStandard" = "Salmoche";
+/// Pilónido
+"SakelienTower" = "Pilónido";
+/// Barreno
+"Sakerocket" = "Barreno";
+/// Aprendiz
+"Grade00" = "Aprendiz";
+/// Subordinado
+"Grade01" = "Subordinado";
+/// Capataz
+"Grade02" = "Capataz";
+/// Gerente
+"Grade03" = "Gerente";
+/// Jefe
+"Grade04" = "Jefe";
+/// Jefe +1
+"Grade05" = "Jefe +1";
+/// Jefe +2
+"Grade06" = "Jefe +2";
+/// Jefe +3
+"Grade07" = "Jefe +3";
+/// Director
+"Grade08" = "Director";
+/// Aprendiz eventual
+"GradeArbeiter00" = "Aprendiz eventual";
+/// Subordinado eventual
+"GradeArbeiter01" = "Subordinado eventual";
+/// Capataz eventual
+"GradeArbeiter02" = "Capataz eventual";
+/// Gerente eventual
+"GradeArbeiter03" = "Gerente eventual";
+/// Jefe eventual
+"GradeArbeiter04" = "Jefe eventual";
+/// Jefe +1 eventual
+"GradeArbeiter05" = "Jefe +1 eventual";
+/// Jefe +2 eventual
+"GradeArbeiter06" = "Jefe +2 eventual";
+/// Jefe +3 eventual
+"GradeArbeiter07" = "Jefe +3 eventual";
+/// Director eventual
+"GradeArbeiter08" = "Director eventual";
+/// Mono de trabajo naranja
+"COP001" = "Mono de trabajo naranja";
+/// Mono de trabajo verde
+"COP002" = "Mono de trabajo verde";
+/// Mono de trabajo amarillo
+"COP003" = "Mono de trabajo amarillo";
+/// Mono de trabajo rosa
+"COP004" = "Mono de trabajo rosa";
+/// Mono de trabajo azul
+"COP005" = "Mono de trabajo azul";
+/// Mono de trabajo negro
+"COP006" = "Mono de trabajo negro";
+/// Mono de trabajo blanco
+"COP007" = "Mono de trabajo blanco";
+/// Vadeador naranja
+"COP008" = "Vadeador naranja";
+/// Vadeador negro
+"COP009" = "Vadeador negro";
+/// Vadeador amarillo
+"COP010" = "Vadeador amarillo";
+/// Vadeador marrón
+"COP011" = "Vadeador marrón";
+/// Pirañalandia
+"Carousel" = "Pirañalandia";
+/// Hidrocentral Pilpil
+"Shakedent" = "Hidrocentral Pilpil";
+/// Salmopista
+"Shakehighway" = "Salmopista";
+/// Bahía Deriva
+"Shakeship" = "Bahía Deriva";
+/// Fuerte Espiral
+"Shakespiral" = "Fuerte Espiral";
+/// Presa salmónida
+"Shakeup" = "Presa salmónida";
+/// Cisterna Navajuela
+"Temple" = "Cisterna Navajuela";
+/// Fuerte Espiral
+"Tutorial" = "Fuerte Espiral";
+/// (?)
+"Unknown" = "(?)";
+/// Instituto Coralino
+"Upland" = "Instituto Coralino";
+/// CommonCancel,Cancelar
+"0" = "CommonCancel,Cancelar";
+/// CommonClamBlitz,Asalto almeja
+"1" = "CommonClamBlitz,Asalto almeja";
+/// CommonClose,Cerrar
+"2" = "CommonClose,Cerrar";
+/// CommonCoopBigRun,Big Run
+"3" = "CommonCoopBigRun,Big Run";
+/// CommonCoopTeamContest,Alianza alevínica
+"4" = "CommonCoopTeamContest,Alianza alevínica";
+/// CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"5" = "CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// CommonDecide,Aceptar
+"6" = "CommonDecide,Aceptar";
+/// CommonDownload,Descargar
+"7" = "CommonDownload,Descargar";
+/// CommonEnd,Cerrar
+"8" = "CommonEnd,Cerrar";
+/// CommonGearPowerBlank,Desconocido
+"9" = "CommonGearPowerBlank,Desconocido";
+/// CommonHome,Inicio
+"10" = "CommonHome,Inicio";
+/// CommonIkaring3,SplatNet 3
+"11" = "CommonIkaring3,SplatNet 3";
+/// CommonNowLoading,Cargando...
+"12" = "CommonNowLoading,Cargando...";
+/// CommonPullToRefresh,Arrastra para actualizar
+"13" = "CommonPullToRefresh,Arrastra para actualizar";
+/// CommonRainmaker,Pez dorado
+"14" = "CommonRainmaker,Pez dorado";
+/// CommonShare,Compartir
+"15" = "CommonShare,Compartir";
+/// CommonSplatZones,Pintazonas
+"16" = "CommonSplatZones,Pintazonas";
+/// CommonTowerControl,Torre
+"17" = "CommonTowerControl,Torre";
+/// CommonTricolor,Combate tricolor
+"18" = "CommonTricolor,Combate tricolor";
+/// CommonTricolorMatch,Pugna tricolor
+"19" = "CommonTricolorMatch,Pugna tricolor";
+/// CommonTurfWar,Territorial
+"20" = "CommonTurfWar,Territorial";
+/// CommonWpnNotfound,Desconocido
+"21" = "CommonWpnNotfound,Desconocido";
+/// CoopHistoryAvailable,Apariciones
+"22" = "CoopHistoryAvailable,Apariciones";
+/// CoopHistoryAvailableBoss,Encuentro con el gran jefe
+"23" = "CoopHistoryAvailableBoss,Encuentro con el gran jefe";
+/// CoopHistoryAverageClearWaves,Media de ofensivas superadas
+"24" = "CoopHistoryAverageClearWaves,Media de ofensivas superadas";
+/// CoopHistoryBigrun,Big Run
+"25" = "CoopHistoryBigrun,Big Run";
+/// CoopHistoryBigrunBronze,Bronce
+"26" = "CoopHistoryBigrunBronze,Bronce";
+/// CoopHistoryBigrunGold,Oro
+"27" = "CoopHistoryBigrunGold,Oro";
+/// CoopHistoryBigrunSilver,Plata
+"28" = "CoopHistoryBigrunSilver,Plata";
+/// CoopHistoryBonus,Recomp.
+"29" = "CoopHistoryBonus,Recomp.";
+/// CoopHistoryBossAvailable,¡Gran jefe a la vista!
+"30" = "CoopHistoryBossAvailable,¡Gran jefe a la vista!";
+/// CoopHistoryClear,¡Bravo!
+"31" = "CoopHistoryClear,¡Bravo!";
+/// CoopHistoryDangerRatio,Nivel de riesgo
+"32" = "CoopHistoryDangerRatio,Nivel de riesgo";
+/// CoopHistoryDefeatBoss,¡Gran jefe al ataque!
+"33" = "CoopHistoryDefeatBoss,¡Gran jefe al ataque!";
+/// CoopHistoryDefeatBossCount,Grandes jefes eliminados
+"34" = "CoopHistoryDefeatBossCount,Grandes jefes eliminados";
+/// CoopHistoryDefeated,¡Victoria!
+"35" = "CoopHistoryDefeated,¡Victoria!";
+/// CoopHistoryDefeatedEnemies,Grandes salmónidos eliminados
+"36" = "CoopHistoryDefeatedEnemies,Grandes salmónidos eliminados";
+/// CoopHistoryDefeatedEnemiesGuide,* Entre paréntesis se indican los que tú has eliminado.
+"37" = "CoopHistoryDefeatedEnemiesGuide,* Entre paréntesis se indican los que tú has eliminado.";
+/// CoopHistoryDeliverCount,Caviar rojo
+"38" = "CoopHistoryDeliverCount,Caviar rojo";
+/// CoopHistoryEnemy,Gran salmónido
+"39" = "CoopHistoryEnemy,Gran salmónido";
+/// CoopHistoryExWave,Ofensiva extra
+"40" = "CoopHistoryExWave,Ofensiva extra";
+/// CoopHistoryFailure,Lástima...
+"41" = "CoopHistoryFailure,Lástima...";
+/// CoopHistoryGoToStats,Volver a los resultados de tareas
+"42" = "CoopHistoryGoToStats,Volver a los resultados de tareas";
+/// CoopHistoryGoldenDeliverCount,Alevines
+"43" = "CoopHistoryGoldenDeliverCount,Alevines";
+/// CoopHistoryHighestScore,Récord
+"44" = "CoopHistoryHighestScore,Récord";
+/// CoopHistoryHistory,Resultados de tareas
+"45" = "CoopHistoryHistory,Resultados de tareas";
+/// CoopHistoryJobPoint,Puntos
+"46" = "CoopHistoryJobPoint,Puntos";
+/// CoopHistoryJobRatio,Tasa de valoración
+"47" = "CoopHistoryJobRatio,Tasa de valoración";
+/// CoopHistoryKumaPointCard,Puntos de Don Oso
+"48" = "CoopHistoryKumaPointCard,Puntos de Don Oso";
+/// CoopHistoryLatest,Más reciente
+"49" = "CoopHistoryLatest,Más reciente";
+/// CoopHistoryLimitedPoint,Puntos eventuales actuales
+"50" = "CoopHistoryLimitedPoint,Puntos eventuales actuales";
+/// CoopHistoryMonthlyReward,Objeto del mes
+"51" = "CoopHistoryMonthlyReward,Objeto del mes";
+/// CoopHistoryNext,Siguiente
+"52" = "CoopHistoryNext,Siguiente";
+/// CoopHistoryNoData,No hay resultados de tareas.
+"53" = "CoopHistoryNoData,No hay resultados de tareas.";
+/// CoopHistoryNotAvailable,Resultados de tareas no disponibles
+"54" = "CoopHistoryNotAvailable,Resultados de tareas no disponibles";
+/// CoopHistoryNotAvailableDescription,Solo los 50 registros más recientes están disponibles.
+"55" = "CoopHistoryNotAvailableDescription,Solo los 50 registros más recientes están disponibles.";
+/// CoopHistoryNotDefeated,No pudo ser...
+"56" = "CoopHistoryNotDefeated,No pudo ser...";
+/// CoopHistoryPlayCount,Encargos completados
+"57" = "CoopHistoryPlayCount,Encargos completados";
+/// CoopHistoryPrevious,Anterior
+"58" = "CoopHistoryPrevious,Anterior";
+/// CoopHistoryPrivate,Trabajo privado
+"59" = "CoopHistoryPrivate,Trabajo privado";
+/// CoopHistoryRecruit,¡Se busca personal!
+"60" = "CoopHistoryRecruit,¡Se busca personal!";
+/// CoopHistoryRecruitDescription,Una labor apta incluso para gente sin experiencia. ¡Basta con tener energía y actitud positiva para ganar escamas de forma cómoda!
+"61" = "CoopHistoryRecruitDescription,Una labor apta incluso para gente sin experiencia. ¡Basta con tener energía y actitud positiva para ganar escamas de forma cómoda!";
+/// CoopHistoryRecruitTag1,¡Es fácil!
+"62" = "CoopHistoryRecruitTag1,¡Es fácil!";
+/// CoopHistoryRecruitTag2,Recolección de caviar rojo
+"63" = "CoopHistoryRecruitTag2,Recolección de caviar rojo";
+/// CoopHistoryRecruitTitle,¡Reunir caviar es lo tuyo!
+"64" = "CoopHistoryRecruitTitle,¡Reunir caviar es lo tuyo!";
+/// CoopHistoryRegular,Encargo normal
+"65" = "CoopHistoryRegular,Encargo normal";
+/// CoopHistoryRegularPoint,Saldo actual
+"66" = "CoopHistoryRegularPoint,Saldo actual";
+/// CoopHistoryRescueCount,Compañeros rescatados
+"67" = "CoopHistoryRescueCount,Compañeros rescatados";
+/// CoopHistoryRescuedCount,Número de rescates
+"68" = "CoopHistoryRescuedCount,Número de rescates";
+/// CoopHistoryScale,Escamas
+"69" = "CoopHistoryScale,Escamas";
+/// CoopHistoryScaleBronze,Escama de bronce
+"70" = "CoopHistoryScaleBronze,Escama de bronce";
+/// CoopHistoryScaleGold,Escama de oro
+"71" = "CoopHistoryScaleGold,Escama de oro";
+/// CoopHistoryScaleSilver,Escama de plata
+"72" = "CoopHistoryScaleSilver,Escama de plata";
+/// CoopHistoryScore,Rendim.
+"73" = "CoopHistoryScore,Rendim.";
+/// CoopHistorySeeSchedule,Ver calendario
+"74" = "CoopHistorySeeSchedule,Ver calendario";
+/// CoopHistorySmellMeter,salmómetro
+"75" = "CoopHistorySmellMeter,salmómetro";
+/// CoopHistorySupplyWeapon,Armas asignadas
+"76" = "CoopHistorySupplyWeapon,Armas asignadas";
+/// CoopHistoryTeamContest,Alianza alevínica
+"77" = "CoopHistoryTeamContest,Alianza alevínica";
+/// CoopHistoryTitle,Salmon Run
+"78" = "CoopHistoryTitle,Salmon Run";
+/// CoopHistoryTotalPoint,Puntos totales
+"79" = "CoopHistoryTotalPoint,Puntos totales";
+/// CoopHistoryWave,Ofensiva
+"80" = "CoopHistoryWave,Ofensiva";
+/// CoopHistoryWaveLevel0,Marea baja
+"81" = "CoopHistoryWaveLevel0,Marea baja";
+/// CoopHistoryWaveLevel1,Normal
+"82" = "CoopHistoryWaveLevel1,Normal";
+/// CoopHistoryWaveLevel2,Marea alta
+"83" = "CoopHistoryWaveLevel2,Marea alta";
+/// ErrorBackToHome,Volver al inicio
+"84" = "ErrorBackToHome,Volver al inicio";
+/// ErrorCurrentlyNotAvailable,No disponible actualmente. Inténtalo de nuevo más tarde.
+"85" = "ErrorCurrentlyNotAvailable,No disponible actualmente. Inténtalo de nuevo más tarde.";
+/// ErrorError,Error
+"86" = "ErrorError,Error";
+/// ErrorErrorOccurred,Se ha producido un error.
+"87" = "ErrorErrorOccurred,Se ha producido un error.";
+/// ErrorErrorReopen,No se han podido cargar los datos.
+"88" = "ErrorErrorReopen,No se han podido cargar los datos.";
+/// ErrorMaintenanceDescription,Se están efectuando labores de mantenimiento en el servidor. Inténtalo de nuevo más tarde.
+"89" = "ErrorMaintenanceDescription,Se están efectuando labores de mantenimiento en el servidor. Inténtalo de nuevo más tarde.";
+/// ErrorMaintenanceTitle,Espera unos instantes...
+"90" = "ErrorMaintenanceTitle,Espera unos instantes...";
+/// ErrorNetworkNotAvailable,No se han podido cargar los datos. Comprueba tu conexión a internet y vuelve a intentarlo.
+"91" = "ErrorNetworkNotAvailable,No se han podido cargar los datos. Comprueba tu conexión a internet y vuelve a intentarlo.";
+/// ErrorNotSupported,No se puede mostrar SplatNet 3. Comprueba tu conexión a internet y vuelve a intentarlo más tarde. Si el problema no se soluciona, comprueba que tu navegador de internet esté actualizado a la versión más reciente. Si sigue mostrándose este mensaje, es posible que SplatNet 3 no sea compatible con tu dispositivo o con los ajustes actuales.
+"92" = "ErrorNotSupported,No se puede mostrar SplatNet 3. Comprueba tu conexión a internet y vuelve a intentarlo más tarde. Si el problema no se soluciona, comprueba que tu navegador de internet esté actualizado a la versión más reciente. Si sigue mostrándose este mensaje, es posible que SplatNet 3 no sea compatible con tu dispositivo o con los ajustes actuales.";
+/// ErrorReload,Actualizar
+"93" = "ErrorReload,Actualizar";
+/// RecordLatestPlayed,Más reciente
+"94" = "RecordLatestPlayed,Más reciente";
+/// RecordLatestUsed,Frecuentes
+"95" = "RecordLatestUsed,Frecuentes";
+/// RecordMain,Principal
+"96" = "RecordMain,Principal";
+/// RecordNextSkillLevel,Siguiente nivel
+"97" = "RecordNextSkillLevel,Siguiente nivel";
+/// RecordSkillLevel,Destreza
+"98" = "RecordSkillLevel,Destreza";
+/// RecordSort,Ordenar
+"99" = "RecordSort,Ordenar";
+/// RecordSpecial,Especial
+"100" = "RecordSpecial,Especial";
+/// RecordStageRecord,Escenarios
+"101" = "RecordStageRecord,Escenarios";
+/// RecordStageRecordAppName,Escenarios
+"102" = "RecordStageRecordAppName,Escenarios";
+/// RecordSub,Secundaria
+"103" = "RecordSub,Secundaria";
+/// RecordTitle,Estadísticas
+"104" = "RecordTitle,Estadísticas";
+/// RecordTurfPoint,Sup. entintada
+"105" = "RecordTurfPoint,Sup. entintada";
+/// RecordUnplayedStages,Sin estrenar
+"106" = "RecordUnplayedStages,Sin estrenar";
+/// RecordUnusedWeapons,No obtenidas aún
+"107" = "RecordUnusedWeapons,No obtenidas aún";
+/// RecordVibes,Evaluación
+"108" = "RecordVibes,Evaluación";
+/// RecordWeaponRecord,Historial de armas
+"109" = "RecordWeaponRecord,Historial de armas";
+/// RecordWeaponRecordAppName,Armas
+"110" = "RecordWeaponRecordAppName,Armas";
+/// RecordWinCount,Victorias
+"111" = "RecordWinCount,Victorias";
+/// SettingsAcknowledgements,Derechos de autor
+"112" = "SettingsAcknowledgements,Derechos de autor";
+/// SettingsAppName,Ajustes
+"113" = "SettingsAppName,Ajustes";
+/// SettingsCredits,Créditos
+"114" = "SettingsCredits,Créditos";
+/// SettingsExpansionPass,Ir a la información del pase de expansión
+"115" = "SettingsExpansionPass,Ir a la información del pase de expansión";
+/// SettingsTitle,Ajustes
+"116" = "SettingsTitle,Ajustes";
+/// StageScheduleBankara,Combate caótico
+"117" = "StageScheduleBankara,Combate caótico";
+/// StageScheduleBankaraOpen,Informal
+"118" = "StageScheduleBankaraOpen,Informal";
+/// StageScheduleBankaraOpenChallenge,Formal
+"119" = "StageScheduleBankaraOpenChallenge,Formal";
+/// StageScheduleCoop,Salmon Run
+"120" = "StageScheduleCoop,Salmon Run";
+/// StageScheduleCoopCurrentPeriodStart,¡En curso!
+"121" = "StageScheduleCoopCurrentPeriodStart,¡En curso!";
+/// StageScheduleEvent,Combate evento
+"122" = "StageScheduleEvent,Combate evento";
+/// StageScheduleEventCurrentSchedule,Actualmente
+"123" = "StageScheduleEventCurrentSchedule,Actualmente";
+/// StageScheduleEventFuture,Más adelante
+"124" = "StageScheduleEventFuture,Más adelante";
+/// StageScheduleEventHolding,¡En curso!
+"125" = "StageScheduleEventHolding,¡En curso!";
+/// StageScheduleEventNext,A continuación
+"126" = "StageScheduleEventNext,A continuación";
+/// StageScheduleEventNextSchedule,Próximamente
+"127" = "StageScheduleEventNextSchedule,Próximamente";
+/// StageScheduleEventNoData,Calendario sin determinar
+"128" = "StageScheduleEventNoData,Calendario sin determinar";
+/// StageScheduleEventUnknownData,(?)
+"129" = "StageScheduleEventUnknownData,(?)";
+/// StageScheduleEventmatch,¡Evento en curso!
+"130" = "StageScheduleEventmatch,¡Evento en curso!";
+/// StageScheduleFuture,Posteriores
+"131" = "StageScheduleFuture,Posteriores";
+/// StageScheduleGuideOpenBrowser,Se abrirá una nueva ventana del navegador.
+"132" = "StageScheduleGuideOpenBrowser,Se abrirá una nueva ventana del navegador.";
+/// StageScheduleNext,Próximo
+"133" = "StageScheduleNext,Próximo";
+/// StageScheduleNoticeBigrun,¡Big Run a la vista!
+"134" = "StageScheduleNoticeBigrun,¡Big Run a la vista!";
+/// StageScheduleNoticeLimited,¡Anuncio de alianza alevínica!
+"135" = "StageScheduleNoticeLimited,¡Anuncio de alianza alevínica!";
+/// StageScheduleNowClosed,¡Festival en curso!
+"136" = "StageScheduleNowClosed,¡Festival en curso!";
+/// StageScheduleOpen,Actual
+"137" = "StageScheduleOpen,Actual";
+/// StageScheduleOpenBigrun,¡Big Run en marcha!
+"138" = "StageScheduleOpenBigrun,¡Big Run en marcha!";
+/// StageScheduleOpenLimited,¡Alianza alevínica disponible!
+"139" = "StageScheduleOpenLimited,¡Alianza alevínica disponible!";
+/// StageSchedulePrivate,Combate privado
+"140" = "StageSchedulePrivate,Combate privado";
+/// StageScheduleRecruit,¡Tenemos Big Run! ¡Don Oso, S. A. busca trabajadores! ()
+"141" = "StageScheduleRecruit,¡Tenemos Big Run! ¡Don Oso, S. A. busca trabajadores! ()";
+/// StageScheduleRecruitTeamContest,¡Forma una cuadrilla y participa en alianza alevínica!
+"142" = "StageScheduleRecruitTeamContest,¡Forma una cuadrilla y participa en alianza alevínica!";
+/// StageScheduleRegular,Combate amistoso
+"143" = "StageScheduleRegular,Combate amistoso";
+/// StageScheduleRules,Ver las reglas
+"144" = "StageScheduleRules,Ver las reglas";
+/// StageScheduleSeeAllRules,Reglas detalladas
+"145" = "StageScheduleSeeAllRules,Reglas detalladas";
+/// StageScheduleSuppliedWeaponRandom,Al azar
+"146" = "StageScheduleSuppliedWeaponRandom,Al azar";
+/// StageScheduleSuppliedWeapons,Armas asignadas
+"147" = "StageScheduleSuppliedWeapons,Armas asignadas";
+/// StageScheduleTitle,Calendarios
+"148" = "StageScheduleTitle,Calendarios";
+/// StageScheduleWinRateByRules,Tasa de victorias por modo
+"149" = "StageScheduleWinRateByRules,Tasa de victorias por modo";
+/// StageScheduleXmatch,Combate X
+"150" = "StageScheduleXmatch,Combate X";
+/// CommonAbout,Acerca de
+"151" = "CommonAbout,Acerca de";
+/// RecordActualValue,Actual
+"152" = "RecordActualValue,Actual";
+/// CommonAppearances,Comparecencias
+"153" = "CommonAppearances,Comparecencias";
+/// CommonApplication,Aplicación
+"154" = "CommonApplication,Aplicación";
+/// RecordAverageScore,Media
+"155" = "RecordAverageScore,Media";
+/// CommonBackupResults,Copia de seguridad
+"156" = "CommonBackupResults,Copia de seguridad";
+/// CommonBackupCompress,Comprimir(ZIP)
+"157" = "CommonBackupCompress,Comprimir(ZIP)";
+/// CommonBackupMessage,Copia de seguridad de la base de datos
+"158" = "CommonBackupMessage,Copia de seguridad de la base de datos";
+/// CommonBackupPlain,Simple(JSON)
+"159" = "CommonBackupPlain,Simple(JSON)";
+/// CommonAppCredit,Crédito
+"160" = "CommonAppCredit,Crédito";
+/// CommonDarkMode,Modo oscuro
+"161" = "CommonDarkMode,Modo oscuro";
+/// CommonDataManagement,Gestión de datos
+"162" = "CommonDataManagement,Gestión de datos";
+/// CoopHistoryDeathCount,Recuento rescatado
+"163" = "CoopHistoryDeathCount,Recuento rescatado";
+/// CoopHistoryDefeatedCount,Recuento derrotado
+"164" = "CoopHistoryDefeatedCount,Recuento derrotado";
+/// CoopHistoryEstimatedValue,Estimación
+"165" = "CoopHistoryEstimatedValue,Estimación";
+/// CoopHistoryEventClearRatio,Relación clara
+"166" = "CoopHistoryEventClearRatio,Relación clara";
+/// CoopHistoryEventFrequency,Frecuencia de los eventos
+"167" = "CoopHistoryEventFrequency,Frecuencia de los eventos";
+/// CommonFAQ,PREGUNTAS FRECUENTES
+"168" = "CommonFAQ,PREGUNTAS FRECUENTES";
+/// CommonGamingMode,Modo de juego
+"169" = "CommonGamingMode,Modo de juego";
+/// CoopHistoryGradeId,Grado
+"170" = "CoopHistoryGradeId,Grado";
+/// CoopHistoryGradePoint,Calificación
+"171" = "CoopHistoryGradePoint,Calificación";
+/// CoopHistoryHighestRecord,Más alto
+"172" = "CoopHistoryHighestRecord,Más alto";
+/// CommonIkaring2,SplatNet2
+"173" = "CommonIkaring2,SplatNet2";
+/// CommonInvalid,No válido
+"174" = "CommonInvalid,No válido";
+/// CommonLanguages,Idiomas
+"175" = "CommonLanguages,Idiomas";
+/// CommonShareLogMessage,Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.
+"176" = "CommonShareLogMessage,Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.";
+/// CommonShareLog,Compartir registros
+"177" = "CommonShareLog,Compartir registros";
+/// CommonLogSize,Archivos de registro
+"178" = "CommonLogSize,Archivos de registro";
+/// CommonMyPage,Mi página
+"179" = "CommonMyPage,Mi página";
+/// CoopHistoryPlayerCrew,Tripulación
+"180" = "CoopHistoryPlayerCrew,Tripulación";
+/// CoopHistoryPlayerYou,Usted
+"181" = "CoopHistoryPlayerYou,Usted";
+/// CommonPrivacyPolicy,Política de privacidad
+"182" = "CommonPrivacyPolicy,Política de privacidad";
+/// CommonRequestForm,Formulario
+"183" = "CommonRequestForm,Formulario";
+/// CommonRequestFormBug,Error
+"184" = "CommonRequestFormBug,Error";
+/// CommonRequestFormContent,Contenido
+"185" = "CommonRequestFormContent,Contenido";
+/// CommonRequestFormEnhancement,Mejora
+"186" = "CommonRequestFormEnhancement,Mejora";
+/// CommonRequestFormFeature,Característica
+"187" = "CommonRequestFormFeature,Característica";
+/// CommonRequestFormTitle,Título
+"188" = "CommonRequestFormTitle,Título";
+/// CommonRequestFormType,Tipo
+"189" = "CommonRequestFormType,Tipo";
+/// CommonRequsetFormSubmit,Enviar
+"190" = "CommonRequsetFormSubmit,Enviar";
+/// CommonRestore,Restaurar
+"191" = "CommonRestore,Restaurar";
+/// CommonRestoreMessage,Seleccione el archivo que desea restaurar en la aplicación Archivos.
+"192" = "CommonRestoreMessage,Seleccione el archivo que desea restaurar en la aplicación Archivos.";
+/// CoopHistoryResultsCount,Recuento de resultados
+"193" = "CoopHistoryResultsCount,Recuento de resultados";
+/// CommonRoleDebuger,Depurar
+"194" = "CommonRoleDebuger,Depurar";
+/// CommonRoleDeveloper,Desarrollador
+"195" = "CommonRoleDeveloper,Desarrollador";
+/// CommonRoleTester,Testor
+"196" = "CommonRoleTester,Testor";
+/// CommonRoleTranslator,Traductor
+"197" = "CommonRoleTranslator,Traductor";
+/// CommonSaveToPhotoLibrary,Guardado correctamente
+"198" = "CommonSaveToPhotoLibrary,Guardado correctamente";
+/// CommonScheduleSync,Sincronizar horario
+"199" = "CommonScheduleSync,Sincronizar horario";
+/// CommonScheduleSyncMessage,Recupera la programación del servidor.
+"200" = "CommonScheduleSyncMessage,Recupera la programación del servidor.";
+/// CommonSignIn,Iniciar sesión
+"201" = "CommonSignIn,Iniciar sesión";
+/// CommonSignOut,Cerrar sesión
+"202" = "CommonSignOut,Cerrar sesión";
+/// CommonSignOutSuccessfully,Cerrar sesión correctamente
+"203" = "CommonSignOutSuccessfully,Cerrar sesión correctamente";
+/// CommonSignOutMessage,Desvincula la cuenta de Nintendo Switch.
+"204" = "CommonSignOutMessage,Desvincula la cuenta de Nintendo Switch.";
+/// CommonSourceCode,Código fuente
+"205" = "CommonSourceCode,Código fuente";
+/// CoopHistorySuppliedRatio,Proporción suministrada
+"206" = "CoopHistorySuppliedRatio,Proporción suministrada";
+/// CommonUpdateRequired,Es necesario actualizar la aplicación
+"207" = "CommonUpdateRequired,Es necesario actualizar la aplicación";
+/// CommonUserData,Datos del usuario
+"208" = "CommonUserData,Datos del usuario";
+/// CommonValid,Válido
+"209" = "CommonValid,Válido";
+/// CommonAppVersion,Versión
+"210" = "CommonAppVersion,Versión";
+/// CommonWipeLog,Limpiar registros
+"211" = "CommonWipeLog,Limpiar registros";
+/// CommonWipeLogMessage,Limpia todos los registros.
+"212" = "CommonWipeLogMessage,Limpia todos los registros.";
+/// CommonWipeResults,Resultados de la limpieza
+"213" = "CommonWipeResults,Resultados de la limpieza";
+/// CommonWipeResultsMessage,Borra todos los datos.
+"214" = "CommonWipeResultsMessage,Borra todos los datos.";
+/// CommonWriteReview,Escriba un comentario
+"215" = "CommonWriteReview,Escriba un comentario";
+/// CoopHistoryOverallRecord,En general
+"216" = "CoopHistoryOverallRecord,En general";
+/// CommonGoldenEggs,Huevos de oro
+"217" = "CommonGoldenEggs,Huevos de oro";
+/// CommonPowerEggs,Huevos de energía
+"218" = "CommonPowerEggs,Huevos de energía";
+/// CommonOverview,Visión general
+"219" = "CommonOverview,Visión general";
+/// CommonLocale,es-ES
+"220" = "CommonLocale,es-ES";
+/// CommonLanguageCode,0
+"221" = "CommonLanguageCode,0";
+/// CommonDatabase,Base de datos
+"222" = "CommonDatabase,Base de datos";
+/// CommonXProductVersion,X-ProductVersion
+"223" = "CommonXProductVersion,X-ProductVersion";
+/// CommonXWebViewVer,X-WebViewVer
+"224" = "CommonXWebViewVer,X-WebViewVer";
+/// CommonUpload,Cargar
+"225" = "CommonUpload,Cargar";
+/// CommonCreditDevelop,Desarrollador
+"226" = "CommonCreditDevelop,Desarrollador";
+/// CommonCreditTest,Comprobador
+"227" = "CommonCreditTest,Comprobador";
+/// CommonCreditDesign,Diseño UI/UX
+"228" = "CommonCreditDesign,Diseño UI/UX";
+/// CoopHistoryTeamPointCard,Tarjeta de puntos del equipo
+"229" = "CoopHistoryTeamPointCard,Tarjeta de puntos del equipo";
+/// CoopHistoryUseEstimatedValue,Utilizar valores estimados
+"230" = "CoopHistoryUseEstimatedValue,Utilizar valores estimados";
+/// CommonUseSecureSession,Utilizar la sesión de empheral
+"231" = "CommonUseSecureSession,Utilizar la sesión de empheral";
+/// CommonCheckInReward,Recompensas
+"232" = "CommonCheckInReward,Recompensas";
+/// CommonGetCheckInReward,Consigue todas las recompensas por códigos QR.
+"233" = "CommonGetCheckInReward,Consigue todas las recompensas por códigos QR.";
+/// CoopHistoryTeamResult,Equipo
+"234" = "CoopHistoryTeamResult,Equipo";
+/// CoopHistoryPlayerResult,Usted
+"235" = "CoopHistoryPlayerResult,Usted";
+/// CoopHistoryCrewAvgResult,Avg de la tripulación
+"236" = "CoopHistoryCrewAvgResult,Avg de la tripulación";
+/// CoopHistoryCrewResult,Tripulación
+"237" = "CoopHistoryCrewResult,Tripulación";
+/// CoopHistoryWaveResult,Olas
+"238" = "CoopHistoryWaveResult,Olas";
+/// CoopHistoryHighestScore,Max
+"239" = "CoopHistoryHighestScore,Max";
+/// CoopHistoryAverageScore,Avg
+"240" = "CoopHistoryAverageScore,Avg";
+/// CommonRequirediOS16,Debes actualizar a iOS16 o superior para utilizar esta función
+"241" = "CommonRequirediOS16,Debes actualizar a iOS16 o superior para utilizar esta función";
+/// CommonRequiredSignIn,Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.
+"242" = "CommonRequiredSignIn,Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.";
+/// CommonRestoreSuccessMessage,Restaurar resultados con éxito
+"243" = "CommonRestoreSuccessMessage,Restaurar resultados con éxito";
+/// CommonRestoreFailureMessage,Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.
+"244" = "CommonRestoreFailureMessage,Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.";
+/// CommonResultsCount,Resultados
+"245" = "CommonResultsCount,Resultados";
+/// CommonDeveloperAnswer,Respuesta del promotor
+"246" = "CommonDeveloperAnswer,Respuesta del promotor";
+/// CommonMinimumVersion,Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.
+"247" = "CommonMinimumVersion,Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.";
+/// ErrorInvalidSignature,Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.
+"248" = "ErrorInvalidSignature,Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.";
+/// CommonUseSystemTheme,Utilizar la configuración del dispositivo
+"249" = "CommonUseSystemTheme,Utilizar la configuración del dispositivo";
+/// CommonLicense,Licencia
+"250" = "CommonLicense,Licencia";
+/// DateTimeYearFormat,dd-MM-yyyy (HH:mm)
+"251" = "DateTimeYearFormat,dd-MM-yyyy (HH:mm)";
+/// DateTimeFormat,dd-MM HH:mm
+"252" = "DateTimeFormat,dd-MM HH:mm";

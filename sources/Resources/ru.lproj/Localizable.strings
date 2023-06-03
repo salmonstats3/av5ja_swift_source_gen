@@ -1,0 +1,632 @@
+/// ядровик
+"SakeArtillery" = "ядровик";
+/// илистый ревун
+"SakeBigMouth" = "илистый ревун";
+/// илистый ревун
+"SakeBigMouthGold" = "илистый ревун";
+/// геликомуль
+"SakeCopter" = "геликомуль";
+/// хулахлюп
+"SakeDolphin" = "хулахлюп";
+/// умыкумжа
+"SakeFlyBagman" = "умыкумжа";
+/// бурмонид
+"SakePillar" = "бурмонид";
+/// скверноборос
+"SakeRope" = "скверноборос";
+/// мокрышка
+"SakeSaucer" = "мокрышка";
+/// Жуй-Горбуш
+"Sakediver" = "Жуй-Горбуш";
+/// жаровнер
+"Sakedozer" = "жаровнер";
+/// Дядя Семг
+"SakelienBomber" = "Дядя Семг";
+/// неркетчик
+"SakelienCupTwins" = "неркетчик";
+/// Исполид
+"SakelienGiant" = "Исполид";
+/// Великий Сам О’Нид
+"SakelienGolden" = "Великий Сам О’Нид";
+/// сковорейдер
+"SakelienLarge" = "сковорейдер";
+/// кетанкист
+"SakelienShield" = "кетанкист";
+/// малетчик
+"SakelienSmall" = "малетчик";
+/// громыхариус
+"SakelienSnake" = "громыхариус";
+/// скороварвар
+"SakelienStandard" = "скороварвар";
+/// Котельный Сиг
+"SakelienTower" = "Котельный Сиг";
+/// метеоголец
+"Sakerocket" = "метеоголец";
+/// Рабочий
+"Grade00" = "Рабочий";
+/// Бригадир
+"Grade01" = "Бригадир";
+/// Старший бригадир
+"Grade02" = "Старший бригадир";
+/// Зам. начальника
+"Grade03" = "Зам. начальника";
+/// Начальник
+"Grade04" = "Начальник";
+/// Начальник +1
+"Grade05" = "Начальник +1";
+/// Начальник +2
+"Grade06" = "Начальник +2";
+/// Начальник +3
+"Grade07" = "Начальник +3";
+/// Гендиректор
+"Grade08" = "Гендиректор";
+/// Рабочий
+"GradeArbeiter00" = "Рабочий";
+/// Бригадир
+"GradeArbeiter01" = "Бригадир";
+/// Старший бригадир
+"GradeArbeiter02" = "Старший бригадир";
+/// Зам. начальника
+"GradeArbeiter03" = "Зам. начальника";
+/// Начальник
+"GradeArbeiter04" = "Начальник";
+/// Начальник +1
+"GradeArbeiter05" = "Начальник +1";
+/// Начальник +2
+"GradeArbeiter06" = "Начальник +2";
+/// Начальник +3
+"GradeArbeiter07" = "Начальник +3";
+/// Гендиректор
+"GradeArbeiter08" = "Гендиректор";
+/// Оранжевый комбинезон
+"COP001" = "Оранжевый комбинезон";
+/// Зеленый комбинезон
+"COP002" = "Зеленый комбинезон";
+/// Желтый комбинезон
+"COP003" = "Желтый комбинезон";
+/// Розовый комбинезон
+"COP004" = "Розовый комбинезон";
+/// Голубой комбинезон
+"COP005" = "Голубой комбинезон";
+/// Черный комбинезон
+"COP006" = "Черный комбинезон";
+/// Белый комбинезон
+"COP007" = "Белый комбинезон";
+/// Гидрокомплект «Оранж»
+"COP008" = "Гидрокомплект «Оранж»";
+/// Гидрокомплект «Нуар»
+"COP009" = "Гидрокомплект «Нуар»";
+/// Гидрокомплект «Лимон»
+"COP010" = "Гидрокомплект «Лимон»";
+/// Гидрокомплект «Какао»
+"COP011" = "Гидрокомплект «Какао»";
+/// Луна-парк «Язь»
+"Carousel" = "Луна-парк «Язь»";
+/// ГЭС-комплекс «Лом»
+"Shakedent" = "ГЭС-комплекс «Лом»";
+/// Развязка «Песнепляска»
+"Shakehighway" = "Развязка «Песнепляска»";
+/// Корабль «Дон Брак»
+"Shakeship" = "Корабль «Дон Брак»";
+/// Наутиплекс
+"Shakespiral" = "Наутиплекс";
+/// Самонидская ГЭС
+"Shakeup" = "Самонидская ГЭС";
+/// Приливослив
+"Temple" = "Приливослив";
+/// Наутиплекс
+"Tutorial" = "Наутиплекс";
+/// ???
+"Unknown" = "???";
+/// Академия «Лепота»
+"Upland" = "Академия «Лепота»";
+/// CommonCancel,Отмена
+"0" = "CommonCancel,Отмена";
+/// CommonClamBlitz,Устробол
+"1" = "CommonClamBlitz,Устробол";
+/// CommonClose,Закрыть
+"2" = "CommonClose,Закрыть";
+/// CommonCoopBigRun,Big Run
+"3" = "CommonCoopBigRun,Big Run";
+/// CommonCoopTeamContest,Икорный овертайм
+"4" = "CommonCoopTeamContest,Икорный овертайм";
+/// CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"5" = "CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// CommonDecide,OK
+"6" = "CommonDecide,OK";
+/// CommonDownload,Загрузить
+"7" = "CommonDownload,Загрузить";
+/// CommonEnd,Закрыть
+"8" = "CommonEnd,Закрыть";
+/// CommonGearPowerBlank,Нет данных
+"9" = "CommonGearPowerBlank,Нет данных";
+/// CommonHome,Главная
+"10" = "CommonHome,Главная";
+/// CommonIkaring3,SplatNet 3
+"11" = "CommonIkaring3,SplatNet 3";
+/// CommonNowLoading,Загрузка данных...
+"12" = "CommonNowLoading,Загрузка данных...";
+/// CommonPullToRefresh,Потяните, чтобы обновить
+"13" = "CommonPullToRefresh,Потяните, чтобы обновить";
+/// CommonRainmaker,Мегакарп
+"14" = "CommonRainmaker,Мегакарп";
+/// CommonShare,Поделиться
+"15" = "CommonShare,Поделиться";
+/// CommonSplatZones,Бой за зоны
+"16" = "CommonSplatZones,Бой за зоны";
+/// CommonTowerControl,Бой за башню
+"17" = "CommonTowerControl,Бой за башню";
+/// CommonTricolor,Трехцветный бой
+"18" = "CommonTricolor,Трехцветный бой";
+/// CommonTricolorMatch,Трехцветный бой
+"19" = "CommonTricolorMatch,Трехцветный бой";
+/// CommonTurfWar,Бой за район
+"20" = "CommonTurfWar,Бой за район";
+/// CommonWpnNotfound,Нет данных
+"21" = "CommonWpnNotfound,Нет данных";
+/// CoopHistoryAvailable,появилось
+"22" = "CoopHistoryAvailable,появилось";
+/// CoopHistoryAvailableBoss,Стычек с самонидами-королями:
+"23" = "CoopHistoryAvailableBoss,Стычек с самонидами-королями:";
+/// CoopHistoryAverageClearWaves,В среднем волн зачищено
+"24" = "CoopHistoryAverageClearWaves,В среднем волн зачищено";
+/// CoopHistoryBigrun,Big Run
+"25" = "CoopHistoryBigrun,Big Run";
+/// CoopHistoryBigrunBronze,Бронза
+"26" = "CoopHistoryBigrunBronze,Бронза";
+/// CoopHistoryBigrunGold,Золото
+"27" = "CoopHistoryBigrunGold,Золото";
+/// CoopHistoryBigrunSilver,Серебро
+"28" = "CoopHistoryBigrunSilver,Серебро";
+/// CoopHistoryBonus,Награда
+"29" = "CoopHistoryBonus,Награда";
+/// CoopHistoryBossAvailable,Появился самонид-король!
+"30" = "CoopHistoryBossAvailable,Появился самонид-король!";
+/// CoopHistoryClear,Успех!
+"31" = "CoopHistoryClear,Успех!";
+/// CoopHistoryDangerRatio,Сложность
+"32" = "CoopHistoryDangerRatio,Сложность";
+/// CoopHistoryDefeatBoss,Самонид-король атакует!
+"33" = "CoopHistoryDefeatBoss,Самонид-король атакует!";
+/// CoopHistoryDefeatBossCount,Побеждено самонидов-королей:
+"34" = "CoopHistoryDefeatBossCount,Побеждено самонидов-королей:";
+/// CoopHistoryDefeated,Победа!
+"35" = "CoopHistoryDefeated,Победа!";
+/// CoopHistoryDefeatedEnemies,Самонидских боссов побеждено
+"36" = "CoopHistoryDefeatedEnemies,Самонидских боссов побеждено";
+/// CoopHistoryDefeatedEnemiesGuide,Примечание: число в скобках — побежденные тобой враги.
+"37" = "CoopHistoryDefeatedEnemiesGuide,Примечание: число в скобках — побежденные тобой враги.";
+/// CoopHistoryDeliverCount,Икринок:
+"38" = "CoopHistoryDeliverCount,Икринок:";
+/// CoopHistoryEnemy,Самонидских боссов:
+"39" = "CoopHistoryEnemy,Самонидских боссов:";
+/// CoopHistoryExWave,Волна +
+"40" = "CoopHistoryExWave,Волна +";
+/// CoopHistoryFailure,Провал
+"41" = "CoopHistoryFailure,Провал";
+/// CoopHistoryGoToStats,Назад к рабочим показателям
+"42" = "CoopHistoryGoToStats,Назад к рабочим показателям";
+/// CoopHistoryGoldenDeliverCount,Золотых икринок:
+"43" = "CoopHistoryGoldenDeliverCount,Золотых икринок:";
+/// CoopHistoryHighestScore,Рекорд
+"44" = "CoopHistoryHighestScore,Рекорд";
+/// CoopHistoryHistory,Рабочие показатели
+"45" = "CoopHistoryHistory,Рабочие показатели";
+/// CoopHistoryJobPoint,Твои очки
+"46" = "CoopHistoryJobPoint,Твои очки";
+/// CoopHistoryJobRatio,Должность
+"47" = "CoopHistoryJobRatio,Должность";
+/// CoopHistoryKumaPointCard,Отчетная карта
+"48" = "CoopHistoryKumaPointCard,Отчетная карта";
+/// CoopHistoryLatest,Послед. смена
+"49" = "CoopHistoryLatest,Послед. смена";
+/// CoopHistoryLimitedPoint,Сейчас спецочков:
+"50" = "CoopHistoryLimitedPoint,Сейчас спецочков:";
+/// CoopHistoryMonthlyReward,Снаряжение месяца
+"51" = "CoopHistoryMonthlyReward,Снаряжение месяца";
+/// CoopHistoryNext,След. смена
+"52" = "CoopHistoryNext,След. смена";
+/// CoopHistoryNoData,Нет рабочих показателей.
+"53" = "CoopHistoryNoData,Нет рабочих показателей.";
+/// CoopHistoryNotAvailable,Рабочие показатели недоступны
+"54" = "CoopHistoryNotAvailable,Рабочие показатели недоступны";
+/// CoopHistoryNotAvailableDescription,Доступно только 50 последних смен.
+"55" = "CoopHistoryNotAvailableDescription,Доступно только 50 последних смен.";
+/// CoopHistoryNotDefeated,Не удалось победить...
+"56" = "CoopHistoryNotDefeated,Не удалось победить...";
+/// CoopHistoryP,очк.
+"57" = "CoopHistoryP,очк.";
+/// CoopHistoryPlayCount,Отработано смен:
+"58" = "CoopHistoryPlayCount,Отработано смен:";
+/// CoopHistoryPrevious,Пред. смена
+"59" = "CoopHistoryPrevious,Пред. смена";
+/// CoopHistoryPrivate,Частная смена
+"60" = "CoopHistoryPrivate,Частная смена";
+/// CoopHistoryRecruit,Ищем сотрудников!
+"61" = "CoopHistoryRecruit,Ищем сотрудников!";
+/// CoopHistoryRecruitDescription,Подходящая работенка для позитивных и амбициозных новичков. Работай не покладая щупалец и зарабатывай легкие чешуйки!
+"62" = "CoopHistoryRecruitDescription,Подходящая работенка для позитивных и амбициозных новичков. Работай не покладая щупалец и зарабатывай легкие чешуйки!";
+/// CoopHistoryRecruitTag1,Проще морской капусты!
+"63" = "CoopHistoryRecruitTag1,Проще морской капусты!";
+/// CoopHistoryRecruitTag2,Сбор икринок — дело веселое и прибыльное!
+"64" = "CoopHistoryRecruitTag2,Сбор икринок — дело веселое и прибыльное!";
+/// CoopHistoryRecruitTitle,Собирай икринки стильно!
+"65" = "CoopHistoryRecruitTitle,Собирай икринки стильно!";
+/// CoopHistoryRegular,Обычная смена
+"66" = "CoopHistoryRegular,Обычная смена";
+/// CoopHistoryRegularPoint,За смену:
+"67" = "CoopHistoryRegularPoint,За смену:";
+/// CoopHistoryRescueCount,Спасено коллег:
+"68" = "CoopHistoryRescueCount,Спасено коллег:";
+/// CoopHistoryRescuedCount,Спасений
+"69" = "CoopHistoryRescuedCount,Спасений";
+/// CoopHistoryScale,Чешуек
+"70" = "CoopHistoryScale,Чешуек";
+/// CoopHistoryScaleBronze,Бронзовая чешуйка
+"71" = "CoopHistoryScaleBronze,Бронзовая чешуйка";
+/// CoopHistoryScaleGold,Золотая чешуйка
+"72" = "CoopHistoryScaleGold,Золотая чешуйка";
+/// CoopHistoryScaleSilver,Серебряная чешуйка
+"73" = "CoopHistoryScaleSilver,Серебряная чешуйка";
+/// CoopHistoryScore,Общий КПД
+"74" = "CoopHistoryScore,Общий КПД";
+/// CoopHistorySeeSchedule,Дата/период
+"75" = "CoopHistorySeeSchedule,Дата/период";
+/// CoopHistorySmellMeter,Король-шкала
+"76" = "CoopHistorySmellMeter,Король-шкала";
+/// CoopHistorySupplyWeapon,Табельное оружие
+"77" = "CoopHistorySupplyWeapon,Табельное оружие";
+/// CoopHistoryTeamContest,Икорный овертайм
+"78" = "CoopHistoryTeamContest,Икорный овертайм";
+/// CoopHistoryTitle,Salmon Run
+"79" = "CoopHistoryTitle,Salmon Run";
+/// CoopHistoryTotalPoint,Всего очков:
+"80" = "CoopHistoryTotalPoint,Всего очков:";
+/// CoopHistoryWave,Волна
+"81" = "CoopHistoryWave,Волна";
+/// CoopHistoryWaveLevel0,Отлив
+"82" = "CoopHistoryWaveLevel0,Отлив";
+/// CoopHistoryWaveLevel1,Норм.
+"83" = "CoopHistoryWaveLevel1,Норм.";
+/// CoopHistoryWaveLevel2,Прилив
+"84" = "CoopHistoryWaveLevel2,Прилив";
+/// ErrorBackToHome,На главную
+"85" = "ErrorBackToHome,На главную";
+/// ErrorCurrentlyNotAvailable,В данный момент недоступно. Пожалуйста, попробуй позже.
+"86" = "ErrorCurrentlyNotAvailable,В данный момент недоступно. Пожалуйста, попробуй позже.";
+/// ErrorError,Ошибка
+"87" = "ErrorError,Ошибка";
+/// ErrorErrorOccurred,Произошла ошибка.
+"88" = "ErrorErrorOccurred,Произошла ошибка.";
+/// ErrorErrorReopen,Загрузка не удалась.
+"89" = "ErrorErrorReopen,Загрузка не удалась.";
+/// ErrorMaintenanceDescription,Технические работы на сервере. Пожалуйста, попробуй позже.
+"90" = "ErrorMaintenanceDescription,Технические работы на сервере. Пожалуйста, попробуй позже.";
+/// ErrorMaintenanceTitle,Минуточку...
+"91" = "ErrorMaintenanceTitle,Минуточку...";
+/// ErrorNetworkNotAvailable,Загрузка не удалась. Проверь подключение к Интернету и повтори попытку.
+"92" = "ErrorNetworkNotAvailable,Загрузка не удалась. Проверь подключение к Интернету и повтори попытку.";
+/// ErrorNotSupported,Невозможно отобразить SplatNet 3. Проверь подключение к Интернету, подожди некоторое время и повтори попытку. Если проблема сохраняется, убедись, что твой интернет-браузер был обновлен до самой актуальной версии. Если ты продолжаешь получать это сообщение, вероятно, приложение SplatNet 3 несовместимо с твоими текущими настройками или устройством.
+"93" = "ErrorNotSupported,Невозможно отобразить SplatNet 3. Проверь подключение к Интернету, подожди некоторое время и повтори попытку. Если проблема сохраняется, убедись, что твой интернет-браузер был обновлен до самой актуальной версии. Если ты продолжаешь получать это сообщение, вероятно, приложение SplatNet 3 несовместимо с твоими текущими настройками или устройством.";
+/// ErrorReload,Обновить
+"94" = "ErrorReload,Обновить";
+/// RecordLatestPlayed,Недавние бои
+"95" = "RecordLatestPlayed,Недавние бои";
+/// RecordLatestUsed,Любимое
+"96" = "RecordLatestUsed,Любимое";
+/// RecordMain,Основное
+"97" = "RecordMain,Основное";
+/// RecordNextSkillLevel,Следующий ур.
+"98" = "RecordNextSkillLevel,Следующий ур.";
+/// RecordSkillLevel,Свежесть
+"99" = "RecordSkillLevel,Свежесть";
+/// RecordSort,Сортировать
+"100" = "RecordSort,Сортировать";
+/// RecordSpecial,Особое
+"101" = "RecordSpecial,Особое";
+/// RecordStageRecord,Арены
+"102" = "RecordStageRecord,Арены";
+/// RecordStageRecordAppName,Арены
+"103" = "RecordStageRecordAppName,Арены";
+/// RecordSub,Запасное
+"104" = "RecordSub,Запасное";
+/// RecordTitle,Статистика
+"105" = "RecordTitle,Статистика";
+/// RecordTotalTurfPoint,очк.
+"106" = "RecordTotalTurfPoint,очк.";
+/// RecordTurfPoint,Прокрас
+"107" = "RecordTurfPoint,Прокрас";
+/// RecordUnplayedStages,Не было боев
+"108" = "RecordUnplayedStages,Не было боев";
+/// RecordUnusedWeapons,Еще нет
+"109" = "RecordUnusedWeapons,Еще нет";
+/// RecordVibes,Шкала свежести
+"110" = "RecordVibes,Шкала свежести";
+/// RecordWeaponRecord,Оружие
+"111" = "RecordWeaponRecord,Оружие";
+/// RecordWeaponRecordAppName,Оружие
+"112" = "RecordWeaponRecordAppName,Оружие";
+/// RecordWinCount,Побед:
+"113" = "RecordWinCount,Побед:";
+/// SettingsAcknowledgements,Авторские права
+"114" = "SettingsAcknowledgements,Авторские права";
+/// SettingsAppName,Настройки
+"115" = "SettingsAppName,Настройки";
+/// SettingsCredits,Над игрой работали
+"116" = "SettingsCredits,Над игрой работали";
+/// SettingsExpansionPass,К информации о талоне на расширение
+"117" = "SettingsExpansionPass,К информации о талоне на расширение";
+/// SettingsTitle,Настройки
+"118" = "SettingsTitle,Настройки";
+/// StageScheduleBankara,Стихийный бой
+"119" = "StageScheduleBankara,Стихийный бой";
+/// StageScheduleBankaraOpen,Открытый
+"120" = "StageScheduleBankaraOpen,Открытый";
+/// StageScheduleBankaraOpenChallenge,Серия
+"121" = "StageScheduleBankaraOpenChallenge,Серия";
+/// StageScheduleCoop,Salmon Run
+"122" = "StageScheduleCoop,Salmon Run";
+/// StageScheduleCoopCurrentPeriodStart,Идет!
+"123" = "StageScheduleCoopCurrentPeriodStart,Идет!";
+/// StageScheduleEvent,Бой-событие
+"124" = "StageScheduleEvent,Бой-событие";
+/// StageScheduleEventCurrentSchedule,Сейчас
+"125" = "StageScheduleEventCurrentSchedule,Сейчас";
+/// StageScheduleEventFuture,Скоро
+"126" = "StageScheduleEventFuture,Скоро";
+/// StageScheduleEventHolding,Идет!
+"127" = "StageScheduleEventHolding,Идет!";
+/// StageScheduleEventNext,Следующий
+"128" = "StageScheduleEventNext,Следующий";
+/// StageScheduleEventNextSchedule,Следующий
+"129" = "StageScheduleEventNextSchedule,Следующий";
+/// StageScheduleEventNoData,Бои-события в настоящий момент не запланированы.
+"130" = "StageScheduleEventNoData,Бои-события в настоящий момент не запланированы.";
+/// StageScheduleEventUnknownData,???
+"131" = "StageScheduleEventUnknownData,???";
+/// StageScheduleEventmatch,Идет!
+"132" = "StageScheduleEventmatch,Идет!";
+/// StageScheduleFuture,Скоро
+"133" = "StageScheduleFuture,Скоро";
+/// StageScheduleGuideOpenBrowser,Будет открыто новое окно браузера.
+"134" = "StageScheduleGuideOpenBrowser,Будет открыто новое окно браузера.";
+/// StageScheduleNext,Следующий
+"135" = "StageScheduleNext,Следующий";
+/// StageScheduleNoticeBigrun,Big Run скоро начнется!
+"136" = "StageScheduleNoticeBigrun,Big Run скоро начнется!";
+/// StageScheduleNoticeLimited,Объявление: скоро начнется икорный овертайм!
+"137" = "StageScheduleNoticeLimited,Объявление: скоро начнется икорный овертайм!";
+/// StageScheduleNowClosed,Идет Сплатфест!
+"138" = "StageScheduleNowClosed,Идет Сплатфест!";
+/// StageScheduleOpen,Сейчас
+"139" = "StageScheduleOpen,Сейчас";
+/// StageScheduleOpenBigrun,Идет Big Run!
+"140" = "StageScheduleOpenBigrun,Идет Big Run!";
+/// StageScheduleOpenLimited,Доступен икорный овертайм!
+"141" = "StageScheduleOpenLimited,Доступен икорный овертайм!";
+/// StageSchedulePrivate,Частный бой
+"142" = "StageSchedulePrivate,Частный бой";
+/// StageScheduleRecruit,Идет Big Run! «Потапыч Inc.» нанимает всех подряд! Всех-всех! ()
+"143" = "StageScheduleRecruit,Идет Big Run! «Потапыч Inc.» нанимает всех подряд! Всех-всех! ()";
+/// StageScheduleRecruitTeamContest,Доступен икорный овертайм. Собери себе команду коллег для особой порции... веселья!
+"144" = "StageScheduleRecruitTeamContest,Доступен икорный овертайм. Собери себе команду коллег для особой порции... веселья!";
+/// StageScheduleRegular,Бой салаг
+"145" = "StageScheduleRegular,Бой салаг";
+/// StageScheduleRules,Правила
+"146" = "StageScheduleRules,Правила";
+/// StageScheduleSeeAllRules,Подробные правила
+"147" = "StageScheduleSeeAllRules,Подробные правила";
+/// StageScheduleSuppliedWeaponRandom,Случайное
+"148" = "StageScheduleSuppliedWeaponRandom,Случайное";
+/// StageScheduleSuppliedWeapons,Табельное оружие
+"149" = "StageScheduleSuppliedWeapons,Табельное оружие";
+/// StageScheduleTitle,Расписание
+"150" = "StageScheduleTitle,Расписание";
+/// StageScheduleWinRateByRules,Доля побед по режимам
+"151" = "StageScheduleWinRateByRules,Доля побед по режимам";
+/// StageScheduleXmatch,Бой X
+"152" = "StageScheduleXmatch,Бой X";
+/// CommonAbout,О сайте
+"153" = "CommonAbout,О сайте";
+/// RecordActualValue,Фактический
+"154" = "RecordActualValue,Фактический";
+/// CommonAppearances,Внешний вид
+"155" = "CommonAppearances,Внешний вид";
+/// CommonApplication,Приложение
+"156" = "CommonApplication,Приложение";
+/// RecordAverageScore,Среднее
+"157" = "RecordAverageScore,Среднее";
+/// CommonBackupResults,Резервное копирование
+"158" = "CommonBackupResults,Резервное копирование";
+/// CommonBackupCompress,Сжать (ZIP)
+"159" = "CommonBackupCompress,Сжать (ZIP)";
+/// CommonBackupMessage,Резервное копирование базы данных
+"160" = "CommonBackupMessage,Резервное копирование базы данных";
+/// CommonBackupPlain,Plain(JSON)
+"161" = "CommonBackupPlain,Plain(JSON)";
+/// CommonAppCredit,Кредит
+"162" = "CommonAppCredit,Кредит";
+/// CommonDarkMode,Темный режим
+"163" = "CommonDarkMode,Темный режим";
+/// CommonDataManagement,Управление данными
+"164" = "CommonDataManagement,Управление данными";
+/// CoopHistoryDeathCount,Спасенный граф
+"165" = "CoopHistoryDeathCount,Спасенный граф";
+/// CoopHistoryDefeatedCount,Проигранный счет
+"166" = "CoopHistoryDefeatedCount,Проигранный счет";
+/// CoopHistoryEstimatedValue,Оценка
+"167" = "CoopHistoryEstimatedValue,Оценка";
+/// CoopHistoryEventClearRatio,Четкое соотношение
+"168" = "CoopHistoryEventClearRatio,Четкое соотношение";
+/// CoopHistoryEventFrequency,Частота событий
+"169" = "CoopHistoryEventFrequency,Частота событий";
+/// CommonFAQ,ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+"170" = "CommonFAQ,ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ";
+/// CommonGamingMode,Игровой режим
+"171" = "CommonGamingMode,Игровой режим";
+/// CoopHistoryGradeId,Класс
+"172" = "CoopHistoryGradeId,Класс";
+/// CoopHistoryGradePoint,Балл за оценку
+"173" = "CoopHistoryGradePoint,Балл за оценку";
+/// CoopHistoryHighestRecord,Самый высокий
+"174" = "CoopHistoryHighestRecord,Самый высокий";
+/// CommonIkaring2,SplatNet2
+"175" = "CommonIkaring2,SplatNet2";
+/// CommonInvalid,Неверный
+"176" = "CommonInvalid,Неверный";
+/// CommonLanguages,Языки
+"177" = "CommonLanguages,Языки";
+/// CommonShareLogMessage,Отправляйте журналы разработчику. Отправка файла журнала при возникновении ошибки облегчит разработчику выявление и устранение причины ошибки. Файл журнала не содержит никакой личной информации.
+"178" = "CommonShareLogMessage,Отправляйте журналы разработчику. Отправка файла журнала при возникновении ошибки облегчит разработчику выявление и устранение причины ошибки. Файл журнала не содержит никакой личной информации.";
+/// CommonShareLog,Делить журналы
+"179" = "CommonShareLog,Делить журналы";
+/// CommonLogSize,Файлы журналов
+"180" = "CommonLogSize,Файлы журналов";
+/// CommonMyPage,Моя страница
+"181" = "CommonMyPage,Моя страница";
+/// CoopHistoryPlayerCrew,Экипаж
+"182" = "CoopHistoryPlayerCrew,Экипаж";
+/// CoopHistoryPlayerYou,Вы
+"183" = "CoopHistoryPlayerYou,Вы";
+/// CommonPrivacyPolicy,Политика конфиденциальности
+"184" = "CommonPrivacyPolicy,Политика конфиденциальности";
+/// CommonRequestForm,Форма
+"185" = "CommonRequestForm,Форма";
+/// CommonRequestFormBug,Ошибка
+"186" = "CommonRequestFormBug,Ошибка";
+/// CommonRequestFormContent,Содержание
+"187" = "CommonRequestFormContent,Содержание";
+/// CommonRequestFormEnhancement,Усиление
+"188" = "CommonRequestFormEnhancement,Усиление";
+/// CommonRequestFormFeature,Характеристика
+"189" = "CommonRequestFormFeature,Характеристика";
+/// CommonRequestFormTitle,Название
+"190" = "CommonRequestFormTitle,Название";
+/// CommonRequestFormType,Тип
+"191" = "CommonRequestFormType,Тип";
+/// CommonRequsetFormSubmit,Отправить
+"192" = "CommonRequsetFormSubmit,Отправить";
+/// CommonRestore,Восстановить
+"193" = "CommonRestore,Восстановить";
+/// CommonRestoreMessage,Выберите файл для восстановления в приложении "Файлы".
+"194" = "CommonRestoreMessage,Выберите файл для восстановления в приложении "Файлы".";
+/// CoopHistoryResultsCount,Подсчет результатов
+"195" = "CoopHistoryResultsCount,Подсчет результатов";
+/// CommonRoleDebuger,Отладка
+"196" = "CommonRoleDebuger,Отладка";
+/// CommonRoleDeveloper,Разработчик
+"197" = "CommonRoleDeveloper,Разработчик";
+/// CommonRoleTester,Testor
+"198" = "CommonRoleTester,Testor";
+/// CommonRoleTranslator,Переводчик
+"199" = "CommonRoleTranslator,Переводчик";
+/// CommonSaveToPhotoLibrary,Сохранено успешно
+"200" = "CommonSaveToPhotoLibrary,Сохранено успешно";
+/// CommonScheduleSync,Расписание синхронизации
+"201" = "CommonScheduleSync,Расписание синхронизации";
+/// CommonScheduleSyncMessage,Получение расписания с сервера.
+"202" = "CommonScheduleSyncMessage,Получение расписания с сервера.";
+/// CommonSignIn,Войти
+"203" = "CommonSignIn,Войти";
+/// CommonSignOut,Выписаться
+"204" = "CommonSignOut,Выписаться";
+/// CommonSignOutSuccessfully,Успешно выйти из системы
+"205" = "CommonSignOutSuccessfully,Успешно выйти из системы";
+/// CommonSignOutMessage,Отвяжите учетную запись Nintendo Switch.
+"206" = "CommonSignOutMessage,Отвяжите учетную запись Nintendo Switch.";
+/// CommonSourceCode,Исходный код
+"207" = "CommonSourceCode,Исходный код";
+/// CoopHistorySuppliedRatio,Коэффициент обеспеченности
+"208" = "CoopHistorySuppliedRatio,Коэффициент обеспеченности";
+/// CommonUpdateRequired,Требуется обновление приложения
+"209" = "CommonUpdateRequired,Требуется обновление приложения";
+/// CommonUserData,Данные пользователя
+"210" = "CommonUserData,Данные пользователя";
+/// CommonValid,Действителен
+"211" = "CommonValid,Действителен";
+/// CommonAppVersion,Версия
+"212" = "CommonAppVersion,Версия";
+/// CommonWipeLog,Протирать журналы
+"213" = "CommonWipeLog,Протирать журналы";
+/// CommonWipeLogMessage,Протрите все журналы.
+"214" = "CommonWipeLogMessage,Протрите все журналы.";
+/// CommonWipeResults,Результаты вытирания
+"215" = "CommonWipeResults,Результаты вытирания";
+/// CommonWipeResultsMessage,Сотрите все данные.
+"216" = "CommonWipeResultsMessage,Сотрите все данные.";
+/// CommonWriteReview,Написать отзыв
+"217" = "CommonWriteReview,Написать отзыв";
+/// CoopHistoryOverallRecord,В целом
+"218" = "CoopHistoryOverallRecord,В целом";
+/// CommonGoldenEggs,Золотые яйца
+"219" = "CommonGoldenEggs,Золотые яйца";
+/// CommonPowerEggs,Энергетические яйца
+"220" = "CommonPowerEggs,Энергетические яйца";
+/// CommonOverview,Обзор
+"221" = "CommonOverview,Обзор";
+/// CommonLocale,ru-RU
+"222" = "CommonLocale,ru-RU";
+/// CommonLanguageCode,0
+"223" = "CommonLanguageCode,0";
+/// CommonDatabase,База данных
+"224" = "CommonDatabase,База данных";
+/// CommonXProductVersion,X-ProductVersion
+"225" = "CommonXProductVersion,X-ProductVersion";
+/// CommonXWebViewVer,X-WebViewVer
+"226" = "CommonXWebViewVer,X-WebViewVer";
+/// CommonUpload,Загрузить
+"227" = "CommonUpload,Загрузить";
+/// CommonCreditDevelop,Разработчик
+"228" = "CommonCreditDevelop,Разработчик";
+/// CommonCreditTest,Тестер
+"229" = "CommonCreditTest,Тестер";
+/// CommonCreditDesign,UI/UX дизайн
+"230" = "CommonCreditDesign,UI/UX дизайн";
+/// CoopHistoryTeamPointCard,Карточка командных очков
+"231" = "CoopHistoryTeamPointCard,Карточка командных очков";
+/// CoopHistoryUseEstimatedValue,Использовать оценочные значения
+"232" = "CoopHistoryUseEstimatedValue,Использовать оценочные значения";
+/// CommonUseSecureSession,Используйте эмфиральную сессию
+"233" = "CommonUseSecureSession,Используйте эмфиральную сессию";
+/// CommonCheckInReward,Вознаграждения
+"234" = "CommonCheckInReward,Вознаграждения";
+/// CommonGetCheckInReward,Получите все вознаграждения за QR-коды.
+"235" = "CommonGetCheckInReward,Получите все вознаграждения за QR-коды.";
+/// CoopHistoryTeamResult,Команда
+"236" = "CoopHistoryTeamResult,Команда";
+/// CoopHistoryPlayerResult,Вы
+"237" = "CoopHistoryPlayerResult,Вы";
+/// CoopHistoryCrewAvgResult,Экипаж
+"238" = "CoopHistoryCrewAvgResult,Экипаж";
+/// CoopHistoryCrewResult,Экипаж
+"239" = "CoopHistoryCrewResult,Экипаж";
+/// CoopHistoryWaveResult,Волны
+"240" = "CoopHistoryWaveResult,Волны";
+/// CoopHistoryHighestScore,Макс
+"241" = "CoopHistoryHighestScore,Макс";
+/// CoopHistoryAverageScore,Avg
+"242" = "CoopHistoryAverageScore,Avg";
+/// CommonRequirediOS16,Для использования этой функции необходимо обновить iOS до версии 16 или выше
+"243" = "CommonRequirediOS16,Для использования этой функции необходимо обновить iOS до версии 16 или выше";
+/// CommonRequiredSignIn,Для использования этого приложения вам необходимо войти в систему под своей учетной записью Nintendo. Войдите в систему на Моей странице.
+"244" = "CommonRequiredSignIn,Для использования этого приложения вам необходимо войти в систему под своей учетной записью Nintendo. Войдите в систему на Моей странице.";
+/// CommonRestoreSuccessMessage,Успешное восстановление результатов
+"245" = "CommonRestoreSuccessMessage,Успешное восстановление результатов";
+/// CommonRestoreFailureMessage,Сбой результатов восстановления. Неподдерживаемый формат или подпись не соответствует из-за того, что файл был подделан.
+"246" = "CommonRestoreFailureMessage,Сбой результатов восстановления. Неподдерживаемый формат или подпись не соответствует из-за того, что файл был подделан.";
+/// CommonResultsCount,Результаты
+"247" = "CommonResultsCount,Результаты";
+/// CommonDeveloperAnswer,Ответ разработчика
+"248" = "CommonDeveloperAnswer,Ответ разработчика";
+/// CommonMinimumVersion,Из-за того, что резервная копия данных была создана в неподдерживаемой версии, восстановить ее не удалось.
+"249" = "CommonMinimumVersion,Из-за того, что резервная копия данных была создана в неподдерживаемой версии, восстановить ее не удалось.";
+/// ErrorInvalidSignature,Из-за несовпадения сигнатур данных, восстановить их не удалось.
+"250" = "ErrorInvalidSignature,Из-за несовпадения сигнатур данных, восстановить их не удалось.";
+/// CommonUseSystemTheme,Использовать настройки устройства
+"251" = "CommonUseSystemTheme,Использовать настройки устройства";
+/// CommonLicense,Лицензия
+"252" = "CommonLicense,Лицензия";
+/// DateTimeYearFormat,dd.MM.yyyy, HH:mm
+"253" = "DateTimeYearFormat,dd.MM.yyyy, HH:mm";
+/// DateTimeFormat,dd.MM, HH:mm
+"254" = "DateTimeFormat,dd.MM, HH:mm";
