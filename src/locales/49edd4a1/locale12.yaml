@@ -80,15 +80,6 @@ CoopHistoryWave: WAVE
 CoopHistoryWaveLevel0: 干潮
 CoopHistoryWaveLevel1: 普通
 CoopHistoryWaveLevel2: 满潮
-CoopRecordAppName: 打工
-CoopRecordAttended: 参加次数：
-CoopRecordBigrun: 大型跑
-CoopRecordHighestJobRate: 最高评价
-CoopRecordHighestScore: 最高分数
-CoopRecordMore: 显示更多
-CoopRecordNoData: 无记录
-CoopRecordTeamContest: 团队打工竞赛
-CoopRecordTitle: 鲑鱼跑记录
 ErrorBackToHome: 返回主页
 ErrorCurrentlyNotAvailable: 目前无法使用，请稍候。
 ErrorError: 错误
@@ -98,74 +89,6 @@ ErrorMaintenanceDescription: 目前服务器正在维护，请稍后再重新连
 ErrorMaintenanceTitle: 请稍候。
 ErrorNetworkNotAvailable: 读取失败，请在互联网环境良好的地方再次尝试。
 ErrorReload: 再次读取
-FesRecordAppName: 祭典
-FesRecordAttack: 进攻
-FesRecordAverage: 平均
-FesRecordChallenge: 挑战
-FesRecordComingSoon: 即将举行
-FesRecordContributionChallenge: 贡献度 挑战
-FesRecordContributionRegular: 贡献度 开放
-FesRecordContributionTricolor: 贡献度 三色夺宝比赛
-FesRecordDefense: 防守
-FesRecordFestPower: 战力
-FesRecordFestRanking: 祭典百杰
-FesRecordGotHoragai: 法螺获得数量
-FesRecordGuideWillParticipates: 预定参加的好友可能会更改队伍
-FesRecordHighestFestPower: 最高祭典战力
-FesRecordHoragai: 法螺获得率
-FesRecordNotVoted: 未定的好友
-FesRecordOnGoing: 举行中！！
-FesRecordPastFestivals: 至今为止的祭典
-FesRecordPreVoteButton: 问卷实施中
-FesRecordRegular: 开放
-FesRecordSeeAllVotes: 查看好友参加的队伍
-FesRecordSeeFestRanking: 查看祭典百杰
-FesRecordTitle: 祭典记录
-FesRecordTotal: 累计
-FesRecordUndecided: 未定
-FesRecordVote: 预定参加
-FesRecordVoteRatio: 得票率
-FesRecordVoted: 已回答
-FesRecordVotedInGame: 投票完成
-FesRecordVotingStatus: 好友的投票情况
-FesRecordWaitingForResult: 正在统计结果
-FesRecordWin: WIN!
-FesRecordYourRecord: 个人记录
-HeroRecordAgent1: 1号
-HeroRecordAgent2: 2号
-HeroRecordAnnotation: 请选择尺寸开始下载
-HeroRecordAppName: 英雄模式
-HeroRecordAreaMemorialPhoto: 抓拍照片
-HeroRecordBossStage: Boss
-HeroRecordClearReward: 英雄模式 通关特典
-HeroRecordGetReward: 获得特典
-HeroRecordNawabariMapCompleteReward: 幻界探索率100% 达成特典
-HeroRecordNawabariMapProgress: 幻界探索率
-HeroRecordNawabariMapSubCleared: 恭喜通关！
-HeroRecordNawabariMapSubComplete: 恭喜探索率达到100%！
-HeroRecordNawabariMapSubInProgress: 如果幻界的探索率达到100%就会……？
-HeroRecordNext: 下一个地域
-HeroRecordNoEquipments: 无装备
-HeroRecordPrev: 上一个地域
-HeroRecordRecruitment: 征求眼神犀利的年轻人！！
-HeroRecordRecruitmentSub: 在英雄模式开始你的冒险吧！
-HeroRecordSearchRatio: 探索率
-HeroRecordSeePhotograph: 查看抓拍照片
-HeroRecordSite: 地域
-HeroRecordSite1: 未来乌托邦乐园
-HeroRecordSite2: 安心生活工厂
-HeroRecordSite3: 长青新城
-HeroRecordSite4: 堆填梦乐园
-HeroRecordSite5: 罗汉柏绿色山丘
-HeroRecordSite6: 幸福研究室
-HeroRecordTitle: 英雄模式记录
-HeroRecordWallpaper: 特制壁纸
-MyOutfitsErrorSave: 保存失败
-QrCodeReaderErrorAlreadyGotDescription: 已领取过此报酬
-QrCodeReaderErrorAlreadyGotTitle: 已领取
-QrCodeReaderErrorNotCompatibleDescription: 此QR Code无法通过《鱿鱼圈 3》读取
-QrCodeReaderErrorNotCompatibleTitle: 错误
-QrCodeReaderErrorRewardExpiredDescription: 此QR Code已失效
 RecordLatestPlayed: 最后游玩时间
 RecordLatestUsed: 常用武器
 RecordMain: 主要武器
@@ -184,8 +107,6 @@ RecordVibes: 状态值
 RecordWeaponRecord: 武器记录
 RecordWeaponRecordAppName: 武器
 RecordWinCount: 胜利数
-RoomCreatorErrorAlreadyExist: 已存在创建的房间。最多只能同时存在一个通过“建房”创建的房间。
-RoomCreatorErrorMakeRoom: 未能成功创建房间。
 SettingsAcknowledgements: 权利标识
 SettingsAppName: 设置
 SettingsCredits: 制作人员
@@ -205,12 +126,6 @@ StageScheduleEventNextSchedule: 下一场
 StageScheduleEventNoData: 日程未定
 StageScheduleEventUnknownData: ？？？？？
 StageScheduleEventmatch: 活动举行！
-StageScheduleFestival: 祭典比赛
-StageScheduleFestivalAnnounced: 即将举行
-StageScheduleFestivalAt: 开始！
-StageScheduleFestivalAttack: 进攻
-StageScheduleFestivalDefense: 防守
-StageScheduleFestivalHolding: 举行中！
 StageScheduleFuture: 下下次
 StageScheduleGuideOpenBrowser: 将打开Web浏览器
 StageScheduleNext: 下次
@@ -226,7 +141,6 @@ StageScheduleRecruitTeamContest: 团队打工竞赛！组成队伍参加吧！
 StageScheduleRegular: 一般比赛
 StageScheduleRules: 查看规则
 StageScheduleSeeAllRules: 可在此处查看详细规则
-StageScheduleSeeFestivalRecord: 查看祭典记录
 StageScheduleSuppliedWeaponRandom: 随机
 StageScheduleSuppliedWeapons: 发放武器
 StageScheduleTitle: 日程

@@ -85,18 +85,6 @@ CoopHistoryWave: Волна
 CoopHistoryWaveLevel0: Отлив
 CoopHistoryWaveLevel1: Норм.
 CoopHistoryWaveLevel2: Прилив
-CoopRecordAppName: Смена
-CoopRecordAttended: 'Смен:'
-CoopRecordBigrun: Big Run
-CoopRecordBigrunBronze: Бронза
-CoopRecordBigrunGold: Золото
-CoopRecordBigrunSilver: Серебро
-CoopRecordHighestJobRate: Лучшая должность
-CoopRecordHighestScore: Рекорд
-CoopRecordMore: Подробнее
-CoopRecordNoData: Данных нет.
-CoopRecordTeamContest: Икорный овертайм
-CoopRecordTitle: Статистика
 ErrorBackToHome: На главную
 ErrorCurrentlyNotAvailable: В данный момент недоступно. Пожалуйста, попробуй позже.
 ErrorError: Ошибка
@@ -112,73 +100,6 @@ ErrorNotSupported: >-
   продолжаешь получать это сообщение, вероятно, приложение SplatNet 3
   несовместимо с твоими текущими настройками или устройством.
 ErrorReload: Обновить
-FesRecordAppName: Сплатфест
-FesRecordAttack: Нападающие
-FesRecordAverage: 'В среднем:'
-FesRecordChallenge: Профи
-FesRecordComingSoon: Скоро!
-FesRecordContributionChallenge: Вклад (профи)
-FesRecordContributionRegular: Вклад (открытый)
-FesRecordContributionTricolor: Вклад (трехцветный бой)
-FesRecordDefense: Защитники
-FesRecordFestPower: Сила команды «
-FesRecordFestRanking: ТОП-100 (Сплатфест)
-FesRecordGotHoragai: Получено раковин
-FesRecordGuideWillParticipates: Друзья могут и передумать!
-FesRecordHighestFestPower: Топ-сила в Сплатфесте
-FesRecordHoragai: Раковины
-FesRecordNotVoted: Не определились
-FesRecordOnGoing: Идет!
-FesRecordPastFestivals: Предыдущие Сплатфесты
-FesRecordPreVoteButton: Идет голосование
-FesRecordRegular: Открытый
-FesRecordSeeAllVotes: Команды друзей
-FesRecordSeeFestRanking: ТОП-100 (Сплатфест)
-FesRecordTitle: Сплатфесты
-FesRecordTotal: 'Всего:'
-FesRecordUndecided: Пока нет голоса
-FesRecordVote: Присоединятся
-FesRecordVoteRatio: Симпатии
-FesRecordVoted: Проголосовали
-FesRecordVotedInGame: Уже присоединились
-FesRecordVotingStatus: Голоса друзей
-FesRecordWaitingForResult: Данных об итогах еще нет...
-FesRecordWin: Успех!
-FesRecordYourRecord: Твои особенности
-HeroRecordAgent1: Агент 001
-HeroRecordAgent2: Агент 002
-HeroRecordAnnotation: Выбери размер и загружай.
-HeroRecordAppName: Сюжет
-HeroRecordAreaMemorialPhoto: Снимок
-HeroRecordBossStage: Уровень с боссом
-HeroRecordClearReward: Бонус за прохождение сюжета
-HeroRecordGetReward: Бонус!
-HeroRecordNawabariMapCompleteReward: Бонус за 100%-е исследование Альтерны
-HeroRecordNawabariMapProgress: Прогресс исследования Альтерны
-HeroRecordNawabariMapSubCleared: Поздравляем! Сюжет пройден!
-HeroRecordNawabariMapSubComplete: Поздравляем! Альтерна полностью исследована!
-HeroRecordNawabariMapSubInProgress: Что будет, если исследовать всю Альтерну?
-HeroRecordNext: Следующий
-HeroRecordNoEquipments: Нет снаряжения
-HeroRecordPrev: Предыдущий
-HeroRecordRecruitmentSub: Пройди сюжет и узнай!
-HeroRecordSearchRatio: Прогресс исследования
-HeroRecordSeePhotograph: Посмотреть снимок
-HeroRecordSite: Область
-HeroRecordSite1: Утопичный остров
-HeroRecordSite2: Завод «Гармония»
-HeroRecordSite3: Криогород надежды
-HeroRecordSite4: Свалка мечты
-HeroRecordSite5: Холмы эколеса
-HeroRecordSite6: Лаборатория счастья
-HeroRecordTitle: Сюжет
-HeroRecordWallpaper: Особые обои
-MyOutfitsErrorSave: Не удалось сохранить.
-QrCodeReaderErrorAlreadyGotDescription: Эта награда уже получена.
-QrCodeReaderErrorAlreadyGotTitle: Уже использован
-QrCodeReaderErrorNotCompatibleDescription: Этот QR-код невозможно считать в SplatNet 3.
-QrCodeReaderErrorNotCompatibleTitle: Произошла ошибка.
-QrCodeReaderErrorRewardExpiredDescription: Срок действия этого QR-кода истек.
 RecordLatestPlayed: Недавние бои
 RecordLatestUsed: Любимое
 RecordMain: Основное
@@ -198,8 +119,6 @@ RecordVibes: Шкала свежести
 RecordWeaponRecord: Оружие
 RecordWeaponRecordAppName: Оружие
 RecordWinCount: 'Побед:'
-RoomCreatorErrorAlreadyExist: Твой бой уже создан. Одновременно можно создать только один бой.
-RoomCreatorErrorMakeRoom: Невозможно создать бой.
 SettingsAcknowledgements: Авторские права
 SettingsAppName: Настройки
 SettingsCredits: Над игрой работали
@@ -219,12 +138,6 @@ StageScheduleEventNextSchedule: Следующий
 StageScheduleEventNoData: Бои-события в настоящий момент не запланированы.
 StageScheduleEventUnknownData: '???'
 StageScheduleEventmatch: Идет!
-StageScheduleFestival: Сплатфест-бой
-StageScheduleFestivalAnnounced: Скоро!
-StageScheduleFestivalAt: 'Начало: !'
-StageScheduleFestivalAttack: Нападающие
-StageScheduleFestivalDefense: Защитники
-StageScheduleFestivalHolding: Идет!
 StageScheduleFuture: Скоро
 StageScheduleGuideOpenBrowser: Будет открыто новое окно браузера.
 StageScheduleNext: Следующий
@@ -242,7 +155,6 @@ StageScheduleRecruitTeamContest: >-
 StageScheduleRegular: Бой салаг
 StageScheduleRules: Правила
 StageScheduleSeeAllRules: Подробные правила
-StageScheduleSeeFestivalRecord: Сплатфесты
 StageScheduleSuppliedWeaponRandom: Случайное
 StageScheduleSuppliedWeapons: Табельное оружие
 StageScheduleTitle: Расписание

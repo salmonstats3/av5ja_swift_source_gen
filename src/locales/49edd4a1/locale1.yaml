@@ -84,18 +84,6 @@ CoopHistoryWave: Wave
 CoopHistoryWaveLevel0: Low Tide
 CoopHistoryWaveLevel1: Normal
 CoopHistoryWaveLevel2: High Tide
-CoopRecordAppName: Work
-CoopRecordAttended: 'Times Participated:'
-CoopRecordBigrun: Big Run
-CoopRecordBigrunBronze: Bronze
-CoopRecordBigrunGold: Gold
-CoopRecordBigrunSilver: Silver
-CoopRecordHighestJobRate: Highest Pay Grade
-CoopRecordHighestScore: High Score
-CoopRecordMore: See More
-CoopRecordNoData: No records.
-CoopRecordTeamContest: Eggstra Work
-CoopRecordTitle: Salmon Run Stats
 ErrorBackToHome: Back to Home
 ErrorError: Error
 ErrorErrorOccurred: An error occurred.
@@ -112,72 +100,6 @@ ErrorNotSupported: >-
   receive this message, it may be possible that SplatNet 3 is not compatible
   with your current settings or device.
 ErrorReload: Refresh
-FesRecordAppName: Splatfest
-FesRecordAttack: Attacking
-FesRecordAverage: Average
-FesRecordChallenge: Pro
-FesRecordComingSoon: Coming Soon!
-FesRecordContributionChallenge: Clout - Pro
-FesRecordContributionRegular: Clout - Open
-FesRecordContributionTricolor: Tricolor Battle Clout
-FesRecordDefense: Defending
-FesRecordFestRanking: Splatfest Top 100
-FesRecordGotHoragai: Conch Shells Obtained
-FesRecordGuideWillParticipates: Your friends could still change their minds.
-FesRecordHighestFestPower: Highest Splatfest Power
-FesRecordHoragai: Conch Shells
-FesRecordNotVoted: Undecided
-FesRecordOnGoing: Open Now!
-FesRecordPastFestivals: Splatfests So Far
-FesRecordPreVoteButton: Poll Open
-FesRecordRegular: Open
-FesRecordSeeAllVotes: Friends' Teams
-FesRecordSeeFestRanking: View Splatfest Top 100
-FesRecordTitle: Splatfest Stats
-FesRecordTotal: Total
-FesRecordUndecided: Pending
-FesRecordVote: Planning to Join
-FesRecordVoteRatio: Votes
-FesRecordVoted: Voted
-FesRecordVotedInGame: Already Joined
-FesRecordVotingStatus: How Your Friends Voted
-FesRecordWaitingForResult: Calculating results...
-FesRecordWin: VICTORY
-FesRecordYourRecord: Your Stats
-HeroRecordAgent1: Agent 1
-HeroRecordAgent2: Agent 2
-HeroRecordAnnotation: Select a size and download.
-HeroRecordAppName: Story Mode
-HeroRecordAreaMemorialPhoto: Snapshot
-HeroRecordBossStage: Boss Stage
-HeroRecordClearReward: Story Mode Clear Bonus
-HeroRecordGetReward: Bonus!
-HeroRecordNawabariMapCompleteReward: Alterna 100% Exploration Bonus
-HeroRecordNawabariMapProgress: Alterna Exploration Rate
-HeroRecordNawabariMapSubCleared: Congratulations on completing Story Mode!
-HeroRecordNawabariMapSubComplete: Congratulations on fully exploring Alterna!
-HeroRecordNawabariMapSubInProgress: What could happen if you explored ALL of Alterna...
-HeroRecordNext: Next
-HeroRecordNoEquipments: No Gear
-HeroRecordPrev: Previous
-HeroRecordRecruitmentSub: Why not try Story Mode and find out?
-HeroRecordSearchRatio: Exploration Rate
-HeroRecordSeePhotograph: View Snapshot
-HeroRecordSite: Site
-HeroRecordSite1: Future Utopia Island
-HeroRecordSite2: Cozy & Safe Factory
-HeroRecordSite3: Cryogenic Hopetown
-HeroRecordSite4: Landfill Dreamland
-HeroRecordSite5: Eco-Forest Treehills
-HeroRecordSite6: Happiness Research Lab
-HeroRecordTitle: Story Mode Stats
-HeroRecordWallpaper: Special Wallpaper
-MyOutfitsErrorSave: Could not save.
-QrCodeReaderErrorAlreadyGotDescription: You have already redeemed this reward.
-QrCodeReaderErrorAlreadyGotTitle: Already Redeemed
-QrCodeReaderErrorNotCompatibleDescription: That QR Code cannot be read by SplatNet 3.
-QrCodeReaderErrorNotCompatibleTitle: Error
-QrCodeReaderErrorRewardExpiredDescription: This QR Code is no longer active.
 RecordLatestPlayed: Last Played
 RecordLatestUsed: Most Used
 RecordMain: Main
@@ -196,8 +118,6 @@ RecordVibes: Fresh Meter
 RecordWeaponRecord: Weapon Stats
 RecordWeaponRecordAppName: Weapons
 RecordWinCount: Wins
-RoomCreatorErrorAlreadyExist: You've already created a room. You can only create one room at a time.
-RoomCreatorErrorMakeRoom: Unable to create a room.
 SettingsAcknowledgements: Copyrights
 SettingsAppName: Settings
 SettingsCredits: Credits
@@ -217,12 +137,6 @@ StageScheduleEventNextSchedule: Next
 StageScheduleEventNoData: No Challenges currently scheduled.
 StageScheduleEventUnknownData: '???'
 StageScheduleEventmatch: Event Now Open!
-StageScheduleFestival: Splatfest Battle
-StageScheduleFestivalAnnounced: Coming Soon!
-StageScheduleFestivalAt: Starts !
-StageScheduleFestivalAttack: Attacking
-StageScheduleFestivalDefense: Defending
-StageScheduleFestivalHolding: Now Open!
 StageScheduleFuture: Future
 StageScheduleGuideOpenBrowser: This will open a new browser window.
 StageScheduleNext: Next
@@ -238,7 +152,6 @@ StageScheduleRecruitTeamContest: Eggstra Work is available now. Recruit some cow
 StageScheduleRegular: Regular Battle
 StageScheduleRules: See Rules
 StageScheduleSeeAllRules: See Detailed Rules
-StageScheduleSeeFestivalRecord: Splatfest Stats
 StageScheduleSuppliedWeaponRandom: Random
 StageScheduleSuppliedWeapons: Supplied Weapons
 StageScheduleTitle: Schedule

@@ -84,18 +84,6 @@ CoopHistoryWave: Welle
 CoopHistoryWaveLevel0: Ebbe
 CoopHistoryWaveLevel1: Normal
 CoopHistoryWaveLevel2: Flut
-CoopRecordAppName: Schicht
-CoopRecordAttended: 'Teilnahmen:'
-CoopRecordBigrun: Big Run
-CoopRecordBigrunBronze: Bronze
-CoopRecordBigrunGold: Gold
-CoopRecordBigrunSilver: Silber
-CoopRecordHighestJobRate: Höchste Bewertung
-CoopRecordHighestScore: Highscore
-CoopRecordMore: Mehr
-CoopRecordNoData: Keine Daten
-CoopRecordTeamContest: Team-Wettkampf
-CoopRecordTitle: Salmon Run-Daten
 ErrorBackToHome: Zurück zur Startseite
 ErrorCurrentlyNotAvailable: Momentan nicht verfügbar. Bitte warte etwas und versuche es dann erneut.
 ErrorError: Fehler
@@ -116,72 +104,6 @@ ErrorNotSupported: >-
   ist es möglich, dass SplatNet 3 nicht mit deinen momentanen Einstellungen oder
   deinem Smartgerät kompatibel ist.
 ErrorReload: Aktualisieren
-FesRecordAppName: Splatfest
-FesRecordAttack: Angreifer
-FesRecordAverage: Durchschnitt
-FesRecordChallenge: Profi
-FesRecordComingSoon: Demnächst!
-FesRecordContributionChallenge: Beitrag – Profi
-FesRecordContributionRegular: Beitrag – Offen
-FesRecordContributionTricolor: Beitrag – Dreifarb-Match
-FesRecordDefense: Verteidiger
-FesRecordFestRanking: Splatfest Top 100
-FesRecordGotHoragai: Erhaltene Tritonshörner
-FesRecordGuideWillParticipates: Deine Freunde könnten sich noch umentscheiden.
-FesRecordHighestFestPower: Rekord Splatfest-Power
-FesRecordHoragai: Tritonshörner
-FesRecordNotVoted: Unentschlossen
-FesRecordOnGoing: Jetzt geöffnet!
-FesRecordPastFestivals: Bisherige Splatfeste
-FesRecordPreVoteButton: Abstimmung eröffnet
-FesRecordRegular: Offen
-FesRecordSeeAllVotes: Teams deiner Freunde
-FesRecordSeeFestRanking: Splatfest Top 100
-FesRecordTitle: Splatfest-Statistiken
-FesRecordTotal: Gesamt
-FesRecordUndecided: Noch ausstehend
-FesRecordVote: Interessiert
-FesRecordVoteRatio: Stimmen
-FesRecordVoted: Abgestimmt
-FesRecordVotedInGame: Schon beigetreten
-FesRecordVotingStatus: So haben deine Freunde gewählt
-FesRecordWaitingForResult: Ergebnisberechnung...
-FesRecordWin: Sieg!
-FesRecordYourRecord: Statistiken
-HeroRecordAgent1: Nr. 1
-HeroRecordAgent2: Nr. 2
-HeroRecordAnnotation: Wähle die gewünschte Größe.
-HeroRecordAppName: Story-Modus
-HeroRecordAreaMemorialPhoto: Schnappschuss
-HeroRecordBossStage: Bosslevel
-HeroRecordClearReward: Abschlussbonus Story-Modus
-HeroRecordGetReward: Bonus!
-HeroRecordNawabariMapCompleteReward: 'Bonus: Alterna 100 % erkundet'
-HeroRecordNawabariMapProgress: Erkundung von Alterna
-HeroRecordNawabariMapSubCleared: Glückwunsch zum Abschluss des Story-Modus!
-HeroRecordNawabariMapSubComplete: Glückwunsch zum vollständigen Erkunden von Alterna!
-HeroRecordNawabariMapSubInProgress: Was wohl passiert, wenn du ganz Alterna erkundest...?
-HeroRecordNext: Weiter
-HeroRecordNoEquipments: Keine Ausrüstung
-HeroRecordPrev: Zurück
-HeroRecordRecruitmentSub: Finde es im Story-Modus heraus!
-HeroRecordSearchRatio: Erkundung
-HeroRecordSeePhotograph: Schnappschuss ansehen
-HeroRecordSite: Sektor
-HeroRecordSite1: Utopia-Zukunftsinsel
-HeroRecordSite2: Harmonie-Fabrik
-HeroRecordSite3: Cryo-Hoffnungsstadt
-HeroRecordSite4: Traumlanddeponie
-HeroRecordSite5: Ökowald-Baumhügel
-HeroRecordSite6: Glückseligkeitslabor
-HeroRecordTitle: Story-Modus
-HeroRecordWallpaper: Spezial-Hintergrundbild
-MyOutfitsErrorSave: Speichern nicht möglich.
-QrCodeReaderErrorAlreadyGotDescription: Du hast diese Belohnung bereits erhalten.
-QrCodeReaderErrorAlreadyGotTitle: Bereits eingelöst
-QrCodeReaderErrorNotCompatibleDescription: Diese QR-Code kann von SplatNet 3 nicht erkannt werden.
-QrCodeReaderErrorNotCompatibleTitle: Fehler
-QrCodeReaderErrorRewardExpiredDescription: Dieser QR-Code ist nicht mehr gültig.
 RecordLatestPlayed: Zuletzt gespielt
 RecordLatestUsed: Meistgenutzt
 RecordMain: Hauptwaffe
@@ -200,10 +122,6 @@ RecordVibes: Miezrichter-Skala
 RecordWeaponRecord: Waffen
 RecordWeaponRecordAppName: Waffen
 RecordWinCount: Siege
-RoomCreatorErrorAlreadyExist: >-
-  Du hast bereits einen Raum erstellt. Es kann jeweils nur ein Raum gleichzeitig
-  erstellt werden.
-RoomCreatorErrorMakeRoom: Erstellung des Raums nicht möglich.
 SettingsAcknowledgements: Copyrights
 SettingsAppName: Einstellungen
 SettingsCredits: Credits
@@ -223,12 +141,6 @@ StageScheduleEventNextSchedule: Als Nächstes
 StageScheduleEventNoData: Momentan sind keine Event-Kämpfe geplant.
 StageScheduleEventUnknownData: '???'
 StageScheduleEventmatch: Event läuft jetzt!
-StageScheduleFestival: Splatfest-Kampf
-StageScheduleFestivalAnnounced: Demnächst!
-StageScheduleFestivalAt: 'Start:  Uhr!'
-StageScheduleFestivalAttack: Angriff
-StageScheduleFestivalDefense: Verteidigung
-StageScheduleFestivalHolding: Läuft!
 StageScheduleFuture: Danach
 StageScheduleGuideOpenBrowser: Text wird als neues Browserfenster geöffnet.
 StageScheduleNext: Demnächst
@@ -244,7 +156,6 @@ StageScheduleRecruitTeamContest: Team-Wettkampf jetzt spielbar! Finde Mitarbeite
 StageScheduleRegular: Standardkampf
 StageScheduleRules: Regeln lesen
 StageScheduleSeeAllRules: Detaillierte Regeln lesen
-StageScheduleSeeFestivalRecord: Splatfest-Statistiken
 StageScheduleSuppliedWeaponRandom: Zufall
 StageScheduleSuppliedWeapons: Verfügbare Waffen
 StageScheduleTitle: Zeitplan

@@ -84,18 +84,6 @@ CoopHistoryWave: Ofensiva
 CoopHistoryWaveLevel0: Marea baja
 CoopHistoryWaveLevel1: Normal
 CoopHistoryWaveLevel2: Marea alta
-CoopRecordAppName: Encargos
-CoopRecordAttended: 'Participaciones:'
-CoopRecordBigrun: Big Run
-CoopRecordBigrunBronze: Bronce
-CoopRecordBigrunGold: Oro
-CoopRecordBigrunSilver: Plata
-CoopRecordHighestJobRate: Mejor valoración
-CoopRecordHighestScore: Récord
-CoopRecordMore: Ver más
-CoopRecordNoData: Sin datos
-CoopRecordTeamContest: Alianza alevínica
-CoopRecordTitle: Estadísticas
 ErrorBackToHome: Volver al inicio
 ErrorCurrentlyNotAvailable: No disponible actualmente. Inténtalo de nuevo más tarde.
 ErrorError: Error
@@ -115,73 +103,6 @@ ErrorNotSupported: >-
   mostrándose este mensaje, es posible que SplatNet 3 no sea compatible con tu
   dispositivo o con los ajustes actuales.
 ErrorReload: Actualizar
-FesRecordAppName: Festival
-FesRecordAttack: Al ataque
-FesRecordAverage: 'Media:'
-FesRecordChallenge: Formal
-FesRecordComingSoon: ¡Próximamente!
-FesRecordContributionChallenge: Aportación (formal)
-FesRecordContributionRegular: Aportación (informal)
-FesRecordContributionTricolor: Aportación (pugna tricolor)
-FesRecordDefense: En defensa
-FesRecordFestPower: Energía
-FesRecordFestRanking: 100 mejores del festival
-FesRecordGotHoragai: Caracolas obtenidas
-FesRecordGuideWillParticipates: Tus amigos aún podrían cambiar de idea.
-FesRecordHighestFestPower: Mayor energía festiva
-FesRecordHoragai: Tasa de caracolas
-FesRecordNotVoted: No se ha decidido
-FesRecordOnGoing: ¡En curso!
-FesRecordPastFestivals: Festivales anteriores
-FesRecordPreVoteButton: Encuesta en curso
-FesRecordRegular: Informal
-FesRecordSeeAllVotes: Equipos de tus amigos
-FesRecordSeeFestRanking: Ver los 100 mejores
-FesRecordTitle: Festivales
-FesRecordTotal: 'Total:'
-FesRecordUndecided: Pendiente
-FesRecordVote: Piensa participar
-FesRecordVoteRatio: Votos
-FesRecordVoted: Ha contestado
-FesRecordVotedInGame: Ha votado
-FesRecordVotingStatus: Votos de amigos
-FesRecordWaitingForResult: Calculando los resultados...
-FesRecordWin: Victoria
-FesRecordYourRecord: Tus estadísticas
-HeroRecordAgent1: Agente 1
-HeroRecordAgent2: Agente 2
-HeroRecordAnnotation: Selecciona un tamaño para descargar.
-HeroRecordAppName: Modo historia
-HeroRecordAreaMemorialPhoto: Captura
-HeroRecordBossStage: Escenario de gran salmónido
-HeroRecordClearReward: Bonificación por completar el modo historia
-HeroRecordGetReward: ¡Bonificación!
-HeroRecordNawabariMapCompleteReward: Bonificación por explorar Alterna al 100 %
-HeroRecordNawabariMapProgress: Tasa de exploración de Alterna
-HeroRecordNawabariMapSubCleared: Has completado el modo historia. ¡Enhorabuena!
-HeroRecordNawabariMapSubComplete: ¡Enhorabuena por explorar toda Alterna!
-HeroRecordNawabariMapSubInProgress: ¿Qué pasaría si explorases Alterna en su totalidad?
-HeroRecordNext: Siguiente
-HeroRecordNoEquipments: Sin equipamiento
-HeroRecordPrev: Anterior
-HeroRecordRecruitmentSub: ¿Y si lo descubres probando el modo historia?
-HeroRecordSearchRatio: Tasa de exploración
-HeroRecordSeePhotograph: Ver captura
-HeroRecordSite: Zona
-HeroRecordSite1: Isla utópica futura
-HeroRecordSite2: Fábrica de la armonía
-HeroRecordSite3: Ciudad criogénica
-HeroRecordSite4: Edén sobre las aguas
-HeroRecordSite5: Colinas ecosostenibles
-HeroRecordSite6: Laboratorio de felicidad
-HeroRecordTitle: Estadísticas modo historia
-HeroRecordWallpaper: Imagen de fondo especial
-MyOutfitsErrorSave: No se han podido guardar los datos.
-QrCodeReaderErrorAlreadyGotDescription: Ya has obtenido esta recompensa.
-QrCodeReaderErrorAlreadyGotTitle: Ya obtenida
-QrCodeReaderErrorNotCompatibleDescription: El código QR no es válido para SplatNet 3.
-QrCodeReaderErrorNotCompatibleTitle: Error
-QrCodeReaderErrorRewardExpiredDescription: El código QR ya no es válido.
 RecordLatestPlayed: Más reciente
 RecordLatestUsed: Frecuentes
 RecordMain: Principal
@@ -200,8 +121,6 @@ RecordVibes: Evaluación
 RecordWeaponRecord: Historial de armas
 RecordWeaponRecordAppName: Armas
 RecordWinCount: Victorias
-RoomCreatorErrorAlreadyExist: Ya has creado una sala. No puede crearse más de una sala a la vez.
-RoomCreatorErrorMakeRoom: No se puede crear la sala.
 SettingsAcknowledgements: Derechos de autor
 SettingsAppName: Ajustes
 SettingsCredits: Créditos
@@ -221,12 +140,6 @@ StageScheduleEventNextSchedule: Próximamente
 StageScheduleEventNoData: Calendario sin determinar
 StageScheduleEventUnknownData: (?)
 StageScheduleEventmatch: ¡Evento en curso!
-StageScheduleFestival: Combate temático
-StageScheduleFestivalAnnounced: ¡Próximamente!
-StageScheduleFestivalAt: ¡Comienza a las !
-StageScheduleFestivalAttack: Al ataque
-StageScheduleFestivalDefense: En defensa
-StageScheduleFestivalHolding: ¡En curso!
 StageScheduleFuture: Posteriores
 StageScheduleGuideOpenBrowser: Se abrirá una nueva ventana del navegador.
 StageScheduleNext: Próximo
@@ -242,7 +155,6 @@ StageScheduleRecruitTeamContest: ¡Forma una cuadrilla y participa en alianza al
 StageScheduleRegular: Combate amistoso
 StageScheduleRules: Ver las reglas
 StageScheduleSeeAllRules: Reglas detalladas
-StageScheduleSeeFestivalRecord: Datos del festival
 StageScheduleSuppliedWeaponRandom: Al azar
 StageScheduleSuppliedWeapons: Armas asignadas
 StageScheduleTitle: Calendarios

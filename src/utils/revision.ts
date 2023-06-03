@@ -73,21 +73,23 @@ export async function get_locale_bundles(): Promise<void> {
           Object.entries(camelcaseKeys(JSON.parse(context), { pascalCase: true }))
             .filter(
               ([key, value]) =>
-                (key.includes('Common') ||
-                  key.includes('CoopHistory') ||
-                  key.includes('Error') ||
-                  key.includes('Record') ||
-                  key.includes('Settings') ||
-                  key.includes('StageSchedule')) &&
+                (key.match(/^Common/) ||
+                  key.match(/^CoopHistory/) ||
+                  key.match(/^Error/) ||
+                  key.match(/^Record/) ||
+                  key.match(/^Settings/) ||
+                  key.match(/^StageSchedule/)) &&
                 !key.includes('%') &&
-                !(value as string).match(/<|>/),
+                !(value as string).match(/<|>/) &&
+                !key.match(/Fes/),
             )
             .map(([key, value]) => [
               key,
               (value as string)
                 .trim()
                 .replace(/{.*}|^'|'$/g, '')
-                .trim(),
+                .trim()
+                .replace(/：|:^/g, ''),
             ])
             .filter(([_, value]) => value.length >= 2),
         );

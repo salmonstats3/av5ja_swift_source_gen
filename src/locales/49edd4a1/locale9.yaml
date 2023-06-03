@@ -80,15 +80,6 @@ CoopHistoryWave: WAVE
 CoopHistoryWaveLevel0: 간조
 CoopHistoryWaveLevel1: 보통
 CoopHistoryWaveLevel2: 만조
-CoopRecordAppName: 아르바이트
-CoopRecordAttended: '참가 횟수:'
-CoopRecordBigrun: 빅 런
-CoopRecordHighestJobRate: 최고 평가
-CoopRecordHighestScore: 하이 스코어
-CoopRecordMore: 더 보기
-CoopRecordNoData: 기록이 없습니다
-CoopRecordTeamContest: 아르바이트 팀 콘테스트
-CoopRecordTitle: 새먼 런 기록
 ErrorBackToHome: 홈으로 돌아가기
 ErrorCurrentlyNotAvailable: 현재 이용할 수 없습니다. 잠시 기다려 주십시오.
 ErrorError: 에러
@@ -98,73 +89,6 @@ ErrorMaintenanceDescription: 현재 서버 점검 중입니다. 잠시 후에 �
 ErrorMaintenanceTitle: 잠시 기다려 주십시오
 ErrorNetworkNotAvailable: 로딩에 실패했습니다. 통신 환경이 좋은 곳에서 다시 시도해 주십시오.
 ErrorReload: 새로 고침
-FesRecordAppName: 페스티벌
-FesRecordAttack: 공격
-FesRecordAverage: 평균
-FesRecordChallenge: 챌린지
-FesRecordComingSoon: 개최 예정
-FesRecordContributionChallenge: 공헌도 챌린지
-FesRecordContributionRegular: 공헌도 오픈
-FesRecordContributionTricolor: 공헌도 트리컬러 매치
-FesRecordDefense: 수비
-FesRecordFestPower: 파워
-FesRecordFestRanking: 페스티벌 톱 100
-FesRecordGotHoragai: 소라고둥 획득 개수
-FesRecordGuideWillParticipates: 참가 예정인 친구의 팀이 변경될 수 있습니다
-FesRecordHighestFestPower: 최고 페스티벌 파워
-FesRecordHoragai: 소라고둥 획득률
-FesRecordNotVoted: 미정인 친구
-FesRecordOnGoing: 개최 중!!
-FesRecordPastFestivals: 지금까지의 페스티벌
-FesRecordPreVoteButton: 설문 실시 중
-FesRecordRegular: 오픈
-FesRecordSeeAllVotes: 친구의 참가 팀 보기
-FesRecordSeeFestRanking: 페스티벌 톱 100 보기
-FesRecordTitle: 페스티벌 기록
-FesRecordTotal: 누적
-FesRecordUndecided: 미정
-FesRecordVote: 참가 예정
-FesRecordVoteRatio: 득표율
-FesRecordVoted: 응답 완료
-FesRecordVotedInGame: 투표 완료
-FesRecordVotingStatus: 친구 투표 상황
-FesRecordWaitingForResult: 결과를 집계 중입니다
-FesRecordWin: WIN!
-FesRecordYourRecord: 당신의 기록
-HeroRecordAgent1: 1호
-HeroRecordAgent2: 2호
-HeroRecordAnnotation: 사이즈를 선택하여 다운로드해 주십시오
-HeroRecordAppName: 히어로 모드
-HeroRecordAreaMemorialPhoto: 스냅 사진
-HeroRecordBossStage: 보스
-HeroRecordClearReward: 히어로 모드 클리어 특전
-HeroRecordGetReward: 특전 획득
-HeroRecordNawabariMapCompleteReward: 얼터너 탐색률 100% 달성 특전
-HeroRecordNawabariMapProgress: 얼터너 탐색률
-HeroRecordNawabariMapSubCleared: 클리어 축하드립니다!
-HeroRecordNawabariMapSubComplete: 100% 답파 축하드립니다!
-HeroRecordNawabariMapSubInProgress: 얼터너를 100% 답파하면…?
-HeroRecordNext: 다음으로
-HeroRecordNoEquipments: 장비 없음
-HeroRecordPrev: 이전으로
-HeroRecordRecruitmentSub: 히어로 모드를 시작하여 모험을 진행하자
-HeroRecordSearchRatio: 탐색률
-HeroRecordSeePhotograph: 스냅 사진 보기
-HeroRecordSite: 사이트
-HeroRecordSite1: 미래 유토피아 랜드
-HeroRecordSite2: 안심 라이프 팩토리
-HeroRecordSite3: 장수 영 뉴 타운
-HeroRecordSite4: 매립 드림랜드
-HeroRecordSite5: 나한백 그린힐스
-HeroRecordSite6: 행복 리서치 랩
-HeroRecordTitle: 히어로 모드 기록
-HeroRecordWallpaper: 스페셜 배경 화면
-MyOutfitsErrorSave: 저장에 실패했습니다
-QrCodeReaderErrorAlreadyGotDescription: 이미 획득한 보상입니다
-QrCodeReaderErrorAlreadyGotTitle: 이미 획득했습니다
-QrCodeReaderErrorNotCompatibleDescription: 오징어넷 3로 읽어 들일 수 없는 QR Code입니다
-QrCodeReaderErrorNotCompatibleTitle: 에러
-QrCodeReaderErrorRewardExpiredDescription: 유효하지 않은 QR Code입니다
 RecordLatestPlayed: 마지막 플레이
 RecordLatestUsed: 사용 빈도
 RecordMain: 메인
@@ -183,8 +107,6 @@ RecordVibes: 컨디션
 RecordWeaponRecord: 무기 기록
 RecordWeaponRecordAppName: 무기
 RecordWinCount: 승리 수
-RoomCreatorErrorAlreadyExist: 이미 만들어진 방이 있습니다. 「방 만들기」로 만들 수 있는 방은 동시에 1개까지입니다.
-RoomCreatorErrorMakeRoom: 방을 만들지 못했습니다.
 SettingsAcknowledgements: 권리 표기
 SettingsAppName: 설정
 SettingsCredits: 크레디트
@@ -204,12 +126,6 @@ StageScheduleEventNextSchedule: 다음
 StageScheduleEventNoData: 스케줄이 미정입니다
 StageScheduleEventUnknownData: '?????'
 StageScheduleEventmatch: 이벤트 개최!
-StageScheduleFestival: 페스티벌 매치
-StageScheduleFestivalAnnounced: 개최 예정
-StageScheduleFestivalAt: 스타트!
-StageScheduleFestivalAttack: 공격
-StageScheduleFestivalDefense: 수비
-StageScheduleFestivalHolding: 개최 중!
 StageScheduleFuture: 그다음
 StageScheduleGuideOpenBrowser: 웹 브라우저가 열립니다
 StageScheduleNext: 다음
@@ -225,7 +141,6 @@ StageScheduleRecruitTeamContest: 아르바이트 팀 콘테스트! 팀을 만들
 StageScheduleRegular: 레귤러 매치
 StageScheduleRules: 룰 보기
 StageScheduleSeeAllRules: 자세한 룰 보기
-StageScheduleSeeFestivalRecord: 페스티벌 기록 보기
 StageScheduleSuppliedWeaponRandom: 랜덤
 StageScheduleSuppliedWeapons: 지급 무기
 StageScheduleTitle: 스케줄

@@ -84,18 +84,6 @@ CoopHistoryWave: e golf
 CoopHistoryWaveLevel0: Eb
 CoopHistoryWaveLevel1: Normaal
 CoopHistoryWaveLevel2: Vloed
-CoopRecordAppName: Klussen
-CoopRecordAttended: 'Aantal keer meegedaan:'
-CoopRecordBigrun: Big Run
-CoopRecordBigrunBronze: Brons
-CoopRecordBigrunGold: Goud
-CoopRecordBigrunSilver: Zilver
-CoopRecordHighestJobRate: Hoogste beoordeling
-CoopRecordHighestScore: Topscore
-CoopRecordMore: Meer info
-CoopRecordNoData: Geen gegevens
-CoopRecordTeamContest: Bedrijfseitje
-CoopRecordTitle: Statistieken
 ErrorBackToHome: Naar het beginscherm
 ErrorCurrentlyNotAvailable: Momenteel niet beschikbaar. Probeer het later nog eens.
 ErrorError: Fout
@@ -113,72 +101,6 @@ ErrorNotSupported: >-
   bericht blijft zien, dan wordt SplatNet 3 mogelijk niet ondersteund door je
   huidige apparaat of met je huidige instellingen.
 ErrorReload: Opnieuw laden
-FesRecordAppName: Splatfest
-FesRecordAttack: Aanval
-FesRecordAverage: Gemiddelde
-FesRecordChallenge: Pro
-FesRecordComingSoon: Binnenkort!
-FesRecordContributionChallenge: Invloed (pro)
-FesRecordContributionRegular: Invloed (open)
-FesRecordContributionTricolor: Invloed (driekleurengevecht)
-FesRecordDefense: Verdediging
-FesRecordFestRanking: Splatfest Top 100
-FesRecordGotHoragai: Ontvangen prijsschelpen
-FesRecordGuideWillParticipates: Je vrienden kunnen nog steeds van team wisselen.
-FesRecordHighestFestPower: Grootste Splatfest-kracht
-FesRecordHoragai: Prijsschelpen
-FesRecordNotVoted: Twijfelt nog
-FesRecordOnGoing: Nu geopend!
-FesRecordPastFestivals: Splatfests tot nu toe
-FesRecordPreVoteButton: Stemming geopend
-FesRecordRegular: Open
-FesRecordSeeAllVotes: Teams van je vrienden
-FesRecordSeeFestRanking: Splatfest Top 100 bekijken
-FesRecordTitle: Splatfest-statistieken
-FesRecordTotal: Totaal
-FesRecordUndecided: Nog open
-FesRecordVote: Ik doe mee!
-FesRecordVoteRatio: Stemmen
-FesRecordVoted: Gestemd
-FesRecordVotedInGame: Deelnemer
-FesRecordVotingStatus: Zo hebben je vrienden gestemd
-FesRecordWaitingForResult: Bezig de uitslag te berekenen...
-FesRecordWin: Gewonnen!
-FesRecordYourRecord: Je statistieken
-HeroRecordAgent1: Agent 1
-HeroRecordAgent2: Agent 2
-HeroRecordAnnotation: Kies een formaat.
-HeroRecordAppName: Verhaal
-HeroRecordAreaMemorialPhoto: Foto
-HeroRecordBossStage: Eindbaaslevel
-HeroRecordClearReward: 'Voltooiingsbonus: verhaal'
-HeroRecordGetReward: Bonus!
-HeroRecordNawabariMapCompleteReward: 'Bonus: Alterna 100% verkend'
-HeroRecordNawabariMapProgress: Verkenning van Alterna
-HeroRecordNawabariMapSubCleared: Gefeliciteerd met het voltooien van het verhaal!
-HeroRecordNawabariMapSubComplete: Gefeliciteerd met je volledige verkenning van Alterna!
-HeroRecordNawabariMapSubInProgress: Wat zou er gebeuren als je HEEL Alterna verkende?
-HeroRecordNext: Verder
-HeroRecordNoEquipments: Geen uitrusting
-HeroRecordPrev: Terug
-HeroRecordRecruitmentSub: Kom erachter in het verhaal!
-HeroRecordSearchRatio: Verkend
-HeroRecordSeePhotograph: Foto bekijken
-HeroRecordSite: Sector
-HeroRecordSite1: Futura
-HeroRecordSite2: Alles Pluis-fabriek
-HeroRecordSite3: Behoudenhuizen
-HeroRecordSite4: Vuilnishoop van de hoop
-HeroRecordSite5: Eco-bos Groenheuvels
-HeroRecordSite6: Gelukslaboratorium
-HeroRecordTitle: Statistieken (verhaal)
-HeroRecordWallpaper: Speciaal wallpaper
-MyOutfitsErrorSave: Opslaan niet mogelijk.
-QrCodeReaderErrorAlreadyGotDescription: Je hebt deze beloning al ontvangen.
-QrCodeReaderErrorAlreadyGotTitle: Al ontvangen
-QrCodeReaderErrorNotCompatibleDescription: Deze QR-code kan niet door SplatNet 3 worden gelezen.
-QrCodeReaderErrorNotCompatibleTitle: Fout
-QrCodeReaderErrorRewardExpiredDescription: Deze QR-code is niet meer geldig.
 RecordLatestPlayed: Als laatste gespeeld
 RecordLatestUsed: Meest gebruikt
 RecordMain: Hoofdwapen
@@ -197,8 +119,6 @@ RecordVibes: Versheid
 RecordWeaponRecord: Wapens
 RecordWeaponRecordAppName: Wapens
 RecordWinCount: Overwinningen
-RoomCreatorErrorAlreadyExist: Je hebt al een kamer gemaakt. Je kunt er maar één tegelijk maken.
-RoomCreatorErrorMakeRoom: Er kan geen kamer worden gemaakt.
 SettingsAcknowledgements: Copyrights
 SettingsAppName: Instellingen
 SettingsCredits: Credits
@@ -218,12 +138,6 @@ StageScheduleEventNextSchedule: Volgende
 StageScheduleEventNoData: Er zijn momenteel geen eventgevechten gepland.
 StageScheduleEventUnknownData: '???'
 StageScheduleEventmatch: Event nu bezig!
-StageScheduleFestival: Splatfest-gevecht
-StageScheduleFestivalAnnounced: Binnenkort!
-StageScheduleFestivalAt: Begint om !
-StageScheduleFestivalAttack: Aanval
-StageScheduleFestivalDefense: Verdediging
-StageScheduleFestivalHolding: Nu bezig!
 StageScheduleFuture: Daarna
 StageScheduleGuideOpenBrowser: Hierdoor opent zich een nieuw browservenster.
 StageScheduleNext: Volgende
@@ -241,7 +155,6 @@ StageScheduleRecruitTeamContest: >-
 StageScheduleRegular: Standaardgevecht
 StageScheduleRules: Regels bekijken
 StageScheduleSeeAllRules: Uitgebreide regels bekijken
-StageScheduleSeeFestivalRecord: Splatfest-statistieken
 StageScheduleSuppliedWeaponRandom: Willekeurig
 StageScheduleSuppliedWeapons: Beschikbare wapens
 StageScheduleTitle: Levelschema

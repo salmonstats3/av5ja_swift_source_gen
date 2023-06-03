@@ -80,15 +80,6 @@ CoopHistoryWave: WAVE
 CoopHistoryWaveLevel0: 干潮
 CoopHistoryWaveLevel1: 普通
 CoopHistoryWaveLevel2: 満潮
-CoopRecordAppName: バイト
-CoopRecordAttended: 参加回数：
-CoopRecordBigrun: ビッグラン
-CoopRecordHighestJobRate: 最高評価
-CoopRecordHighestScore: ハイスコア
-CoopRecordMore: もっと見る
-CoopRecordNoData: きろくがありません
-CoopRecordTeamContest: バイトチームコンテスト
-CoopRecordTitle: サーモンランのきろく
 ErrorBackToHome: ホームに戻る
 ErrorCurrentlyNotAvailable: 現在利用できません。しばらくお待ちください
 ErrorError: エラー
@@ -97,73 +88,6 @@ ErrorErrorReopen: 読みこみに失敗しました
 ErrorMaintenanceDescription: ただいまサーバーのメンテナンス中です。時間をおいて再度アクセスしてください。
 ErrorMaintenanceTitle: しばらくお待ちください
 ErrorReload: 再読みこみ
-FesRecordAppName: フェス
-FesRecordAttack: 攻撃
-FesRecordAverage: へいきん
-FesRecordChallenge: チャレンジ
-FesRecordComingSoon: もうすぐ開催
-FesRecordContributionChallenge: こうけん度 チャレンジ
-FesRecordContributionRegular: こうけん度 オープン
-FesRecordContributionTricolor: こうけん度 トリカラマッチ
-FesRecordDefense: 守備
-FesRecordFestPower: パワー
-FesRecordFestRanking: フェス100ケツ
-FesRecordGotHoragai: ホラガイ獲得個数
-FesRecordGuideWillParticipates: 参加予定のフレンドはチームが変わることがあります
-FesRecordHighestFestPower: 最高フェスパワー
-FesRecordHoragai: ホラガイ獲得率
-FesRecordNotVoted: 未定のフレンド
-FesRecordOnGoing: 開催中！！
-FesRecordPastFestivals: これまでのフェス
-FesRecordPreVoteButton: アンケート実施中
-FesRecordRegular: オープン
-FesRecordSeeAllVotes: フレンドの参加チームを見る
-FesRecordSeeFestRanking: フェス100ケツを見る
-FesRecordTitle: フェスのきろく
-FesRecordTotal: るいけい
-FesRecordUndecided: 未定
-FesRecordVote: 参加予定
-FesRecordVoteRatio: 得票率
-FesRecordVoted: 回答済み
-FesRecordVotedInGame: 投票済み
-FesRecordVotingStatus: フレンドの投票状況
-FesRecordWaitingForResult: 結果を集計中です
-FesRecordWin: WIN!
-FesRecordYourRecord: あなたのきろく
-HeroRecordAgent1: １号
-HeroRecordAgent2: ２号
-HeroRecordAnnotation: サイズを選んでダウンロードしてください
-HeroRecordAppName: ヒーローモード
-HeroRecordAreaMemorialPhoto: スナップ写真
-HeroRecordBossStage: ボス
-HeroRecordClearReward: ヒーローモード クリア特典
-HeroRecordGetReward: 特典をゲット
-HeroRecordNawabariMapCompleteReward: オルタナ探索率100% 達成特典
-HeroRecordNawabariMapProgress: オルタナ探索率
-HeroRecordNawabariMapSubCleared: クリアおめでとう！
-HeroRecordNawabariMapSubComplete: 100%踏破おめでとう！
-HeroRecordNawabariMapSubInProgress: オルタナを100%踏破すると…？
-HeroRecordNext: 次へ
-HeroRecordNoEquipments: そうびなし
-HeroRecordPrev: 前へ
-HeroRecordRecruitment: イイ目をしたワカモノ求む！！
-HeroRecordRecruitmentSub: ヒーローモード をはじめて冒険をすすめよう
-HeroRecordSearchRatio: 探索率
-HeroRecordSeePhotograph: スナップ写真を見る
-HeroRecordSite: サイト
-HeroRecordSite1: みらいユートピアランド
-HeroRecordSite2: あんしんライフファクトリー
-HeroRecordSite3: ながいきヤングニュータウン
-HeroRecordSite4: うめたてドリームランド
-HeroRecordSite5: あすなろグリーンヒルズ
-HeroRecordSite6: しあわせリサーチラボ
-HeroRecordTitle: ヒーローモードのきろく
-HeroRecordWallpaper: 特製壁紙
-MyOutfitsErrorSave: 保存に失敗しました
-QrCodeReaderErrorAlreadyGotDescription: このほうしゅうはすでに獲得済みです
-QrCodeReaderErrorAlreadyGotTitle: すでに獲得しています
-QrCodeReaderErrorNotCompatibleTitle: エラー
-QrCodeReaderErrorRewardExpiredDescription: このQRコードはすでに無効です
 RecordLatestPlayed: 最後に遊んだ
 RecordLatestUsed: よく使う
 RecordMain: メイン
@@ -182,8 +106,6 @@ RecordVibes: チョーシ
 RecordWeaponRecord: ブキのきろく
 RecordWeaponRecordAppName: ブキ
 RecordWinCount: 勝利数
-RoomCreatorErrorAlreadyExist: すでに部屋を作っています。「ヘヤタテ」で作ることのできる部屋は同時にひとつまでです。
-RoomCreatorErrorMakeRoom: 部屋を作ることができませんでした。
 SettingsAcknowledgements: 権利表記
 SettingsAppName: 設定
 SettingsCredits: クレジット
@@ -203,12 +125,6 @@ StageScheduleEventNextSchedule: つぎ
 StageScheduleEventNoData: スケジュールが未定です
 StageScheduleEventUnknownData: '?????'
 StageScheduleEventmatch: イベント開催！
-StageScheduleFestival: フェスマッチ
-StageScheduleFestivalAnnounced: もうすぐ開催
-StageScheduleFestivalAt: スタート！
-StageScheduleFestivalAttack: 攻撃
-StageScheduleFestivalDefense: 守備
-StageScheduleFestivalHolding: 開催中！
 StageScheduleFuture: そのつぎ
 StageScheduleGuideOpenBrowser: Webブラウザが開きます
 StageScheduleNext: つぎ
@@ -224,7 +140,6 @@ StageScheduleRecruitTeamContest: バイトチームコンテスト！チーム�
 StageScheduleRegular: レギュラーマッチ
 StageScheduleRules: ルールを見る
 StageScheduleSeeAllRules: 詳しいルールはこちら
-StageScheduleSeeFestivalRecord: フェスのきろくを見る
 StageScheduleSuppliedWeaponRandom: ランダム
 StageScheduleSuppliedWeapons: 支給ブキ
 StageScheduleTitle: スケジュール
