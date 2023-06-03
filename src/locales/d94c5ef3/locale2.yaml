@@ -1,0 +1,159 @@
+CommonCancel: Cancel
+CommonClamBlitz: Clam Blitz
+CommonClose: Close
+CommonCoopBigRun: Big Run
+CommonCoopTeamContest: Eggstra Work
+CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+CommonDecide: OK
+CommonDownload: Download
+CommonEnd: Exit
+CommonGearPowerBlank: Unknown
+CommonHome: Home
+CommonIkaring3: SplatNet 3
+CommonNowLoading: Loading
+CommonPullToRefresh: Pull to Refresh
+CommonRainmaker: Rainmaker
+CommonShare: Share
+CommonSplatZones: Splat Zones
+CommonTowerControl: Tower Control
+CommonTricolor: Tricolor Battle
+CommonTricolorMatch: Tricolor Battle
+CommonTurfWar: Turf War
+CommonWpnNotfound: Unknown
+CoopHistoryAvailable: Appearances
+CoopHistoryAvailableBoss: King Salmonid Fought
+CoopHistoryAverageClearWaves: Average Waves Cleared
+CoopHistoryBigrun: Big Run
+CoopHistoryBigrunBronze: Bronze
+CoopHistoryBigrunGold: Gold
+CoopHistoryBigrunSilver: Silver
+CoopHistoryBonus: Clear Bonus
+CoopHistoryBossAvailable: King Salmonid Sighting!
+CoopHistoryClear: Clear!
+CoopHistoryDangerRatio: Hazard Level
+CoopHistoryDefeatBoss: King Salmonid Attack!
+CoopHistoryDefeatBossCount: King Salmonids defeated
+CoopHistoryDefeated: Defeated!
+CoopHistoryDefeatedEnemies: Boss Salmonids Defeated
+CoopHistoryDefeatedEnemiesGuide: 'Note: The number in parentheses is how many enemies YOU defeated.'
+CoopHistoryDeliverCount: Power Eggs collected
+CoopHistoryEnemy: Boss Salmonids
+CoopHistoryExWave: XTRAWAVE
+CoopHistoryFailure: Defeat
+CoopHistoryGoToStats: Back to Job Logs
+CoopHistoryGoldenDeliverCount: Golden Eggs collected
+CoopHistoryHighestScore: High Score
+CoopHistoryHistory: Job Logs
+CoopHistoryJobPoint: Your Points
+CoopHistoryJobRatio: Pay Grade
+CoopHistoryKumaPointCard: Grizzco Point Card
+CoopHistoryLatest: Last Job
+CoopHistoryLimitedPoint: Current special bonus points
+CoopHistoryMonthlyReward: This Month's Gear
+CoopHistoryNext: Next Job
+CoopHistoryNoData: No job logs to display.
+CoopHistoryNotAvailable: Job Logs Unavailable
+CoopHistoryNotAvailableDescription: Only the 50 most recent entries are available.
+CoopHistoryNotDefeated: Failed...
+CoopHistoryPlayCount: Shifts worked
+CoopHistoryPrevious: Previous Job
+CoopHistoryPrivate: Private Job
+CoopHistoryRecruit: Staff Wanted!
+CoopHistoryRecruitDescription: >-
+  A beginner-friendly job for energetic and positive individuals who are willing
+  to put it all on the line. Work hard for easy scales!
+CoopHistoryRecruitTag1: It's Easy!
+CoopHistoryRecruitTag2: Collect Power Eggs for Fun and Profit!
+CoopHistoryRecruitTitle: Collecting Power Eggs Suits You!
+CoopHistoryRegular: Normal Job
+CoopHistoryRegularPoint: Current points
+CoopHistoryRescueCount: Crew members rescued
+CoopHistoryRescuedCount: Times Rescued
+CoopHistoryScale: Scales
+CoopHistoryScaleBronze: Bronze Scale
+CoopHistoryScaleGold: Gold Scale
+CoopHistoryScaleSilver: Silver Scale
+CoopHistoryScore: Job Score
+CoopHistorySeeSchedule: View Schedule
+CoopHistorySmellMeter: Salmometer
+CoopHistorySupplyWeapon: Supplied Weapons
+CoopHistoryTeamContest: Eggstra Work
+CoopHistoryTitle: Salmon Run
+CoopHistoryTotalPoint: Total points
+CoopHistoryWave: Wave
+CoopHistoryWaveLevel0: Low Tide
+CoopHistoryWaveLevel1: Normal
+CoopHistoryWaveLevel2: High Tide
+ErrorBackToHome: Back to Home
+ErrorError: Error
+ErrorErrorOccurred: An error occurred.
+ErrorErrorReopen: Loading failed.
+ErrorMaintenanceDescription: >-
+  The server is currently undergoing maintenance. Please wait a bit, then try
+  again.
+ErrorMaintenanceTitle: Standby...
+ErrorNetworkNotAvailable: Loading failed. Please check your internet connection and try again.
+ErrorNotSupported: >-
+  SplatNet 3 cannot be displayed. Please check your internet connection and wait
+  a bit before trying again. If the problem isn't resolved, check your internet
+  browser to make sure it has been updated to the latest version. If you still
+  receive this message, it may be possible that SplatNet 3 is not compatible
+  with your current settings or device.
+ErrorReload: Refresh
+RecordLatestPlayed: Last Played
+RecordLatestUsed: Most Used
+RecordMain: Main
+RecordNextSkillLevel: Next Freshness Up
+RecordSkillLevel: Freshness
+RecordSort: Sort
+RecordSpecial: Special
+RecordStageRecord: Stage Stats
+RecordStageRecordAppName: Stages
+RecordSub: Sub
+RecordTitle: Stats
+RecordTurfPoint: Turf Inked
+RecordUnplayedStages: Unplayed Stages
+RecordUnusedWeapons: Not Yet Obtained
+RecordVibes: Fresh Meter
+RecordWeaponRecord: Weapon Stats
+RecordWeaponRecordAppName: Weapons
+RecordWinCount: Wins
+SettingsAcknowledgements: Copyrights
+SettingsAppName: Settings
+SettingsCredits: Credits
+SettingsExpansionPass: Visit Expansion Pass Purchase Site
+SettingsTitle: Settings
+StageScheduleBankara: Anarchy Battle
+StageScheduleBankaraOpen: Open
+StageScheduleBankaraOpenChallenge: Series
+StageScheduleCoop: Salmon Run
+StageScheduleCoopCurrentPeriodStart: NOW OPEN!
+StageScheduleEvent: Challenge
+StageScheduleEventCurrentSchedule: Now
+StageScheduleEventFuture: Future
+StageScheduleEventHolding: Now Open!
+StageScheduleEventNext: Next Time
+StageScheduleEventNextSchedule: Next
+StageScheduleEventNoData: No Challenges currently scheduled.
+StageScheduleEventUnknownData: '???'
+StageScheduleEventmatch: Event Now Open!
+StageScheduleFuture: Future
+StageScheduleGuideOpenBrowser: This will open a new browser window.
+StageScheduleNext: Next
+StageScheduleNoticeBigrun: Big Run coming soon!
+StageScheduleNoticeLimited: 'Announcement: Eggstra Work coming soon!'
+StageScheduleNowClosed: Splatfest Active!
+StageScheduleOpen: Now
+StageScheduleOpenBigrun: Big Run in progress!
+StageScheduleOpenLimited: Eggstra Work available now!
+StageSchedulePrivate: Private Battle
+StageScheduleRecruit: Big Run happening now! Grizzco hiring ANYONE!
+StageScheduleRecruitTeamContest: Eggstra Work is available now. Recruit some coworkers and join in the...fun?
+StageScheduleRegular: Regular Battle
+StageScheduleRules: See Rules
+StageScheduleSeeAllRules: See Detailed Rules
+StageScheduleSuppliedWeaponRandom: Random
+StageScheduleSuppliedWeapons: Supplied Weapons
+StageScheduleTitle: Schedule
+StageScheduleWinRateByRules: Win Rate by Mode
+StageScheduleXmatch: X Battle
