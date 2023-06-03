@@ -57,7 +57,7 @@ struct SplatNetView: UIViewControllerRepresentable {
 
         init(contentId: ContentId) {
             /// リクエスト
-            let locale: String = NSLocalizedString(LocalizedType.CoopHistory_Locale.rawValue, bundle: .module, comment: "")
+            let locale: String = NSLocalizedString(LocalizedType.CommonLocale.rawValue, bundle: .module, comment: "")
             var baseURL: URL = contentId.requestURL
             baseURL.queryItems([URLQueryItem(name: "lang", value: locale)])
             var request = URLRequest(url: baseURL)
@@ -195,10 +195,10 @@ struct SplatNetView: UIViewControllerRepresentable {
                         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                     })
                     let alert = UIAlertController(
-                        title: LocalizedType.Common_Download.localized,
-                        message: LocalizedType.CoopHistory_SaveToPhotoLibrary.localized,
+                        title: LocalizedType.CommonDownload.description,
+                        message: LocalizedType.CommonSaveToPhotoLibrary.description,
                         preferredStyle: .alert)
-                    let action = UIAlertAction(title: LocalizedType.Common_Close.localized, style: .default)
+                    let action = UIAlertAction(title: LocalizedType.CommonClose.description, style: .default)
                     alert.addAction(action)
                     present(alert, animated: true)
                 })

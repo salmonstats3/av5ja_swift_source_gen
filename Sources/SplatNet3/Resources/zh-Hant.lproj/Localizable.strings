@@ -1,896 +1,618 @@
-CoopEnemy_SakeArtillery = "鐵球魚";
-CoopEnemy_SakeBigMouth = "泥鮭魚";
-CoopEnemy_SakeBigMouthGold = "泥鮭魚";
-CoopEnemy_SakeCopter = "直升機鮭魚";
-CoopEnemy_SakeDolphin = "潛水魚";
-CoopEnemy_SakeFlyBagman = "拾蛋魚";
-CoopEnemy_SakePillar = "柱魚";
-CoopEnemy_SakeRope = "辰龍";
-CoopEnemy_SakeSaucer = "鍋蓋魚";
-CoopEnemy_Sakediver = "鼴鼠魚";
-CoopEnemy_Sakedozer = "烤架魚";
-CoopEnemy_SakelienBomber = "炸彈魚";
-CoopEnemy_SakelienCupTwins = "墊肩飛魚";
-CoopEnemy_SakelienGiant = "橫綱";
-CoopEnemy_SakelienGolden = "金鮭魚";
-CoopEnemy_SakelienLarge = "大胖魚";
-CoopEnemy_SakelienShield = "鐵板魚";
-CoopEnemy_SakelienSmall = "小鮭魚";
-CoopEnemy_SakelienSnake = "蛇魚";
-CoopEnemy_SakelienStandard = "鮭魚";
-CoopEnemy_SakelienTower = "高塔魚";
-CoopEnemy_Sakerocket = "蝙蝠魚";
-SkinName_COP001 = "打工連身工作服 橘色";
-SkinName_COP002 = "打工連身工作服 綠色";
-SkinName_COP003 = "打工連身工作服 黃色";
-SkinName_COP004 = "打工連身工作服 粉紅色";
-SkinName_COP005 = "打工連身工作服 藍色";
-SkinName_COP006 = "打工連身工作服 黑色";
-SkinName_COP007 = "打工連身工作服 白色";
-SkinName_COP008 = "打工防水衣 橘色";
-SkinName_COP009 = "打工防水衣 黑色";
-SkinName_COP010 = "打工防水衣 黃色";
-SkinName_COP011 = "打工防水衣 棕色";
-CoopGrade_Grade_00 = "新手";
-CoopGrade_Grade_01 = "半吊子";
-CoopGrade_Grade_02 = "獨當一面";
-CoopGrade_Grade_03 = "熟練";
-CoopGrade_Grade_04 = "達人";
-CoopGrade_Grade_05 = "達人+1";
-CoopGrade_Grade_06 = "達人+2";
-CoopGrade_Grade_07 = "達人+3";
-CoopGrade_Grade_08 = "傳說";
-ParamName_Blaze = "連射力";
-ParamName_Charge = "蓄力速度";
-ParamName_Defence = "耐久度";
-ParamName_Explosion = "爆發力";
-ParamName_Mobility = "機動性";
-ParamName_PaintSpeed = "塗墨前進速度";
-ParamName_Power = "攻擊力";
-ParamName_Range = "射程";
-ParamName_Weight = "輕巧度";
-WeaponTypeName_Blaster = "爆破槍";
-WeaponTypeName_Brush = "畫筆";
-WeaponTypeName_Charger = "蓄力狙擊槍";
-WeaponTypeName_Maneuver = "機動槍";
-WeaponTypeName_Roller = "滾筒";
-WeaponTypeName_Saber = "刮水刀";
-WeaponTypeName_Shelter = "防空傘";
-WeaponTypeName_Shooter = "射擊槍";
-WeaponTypeName_Slosher = "潑桶";
-WeaponTypeName_Spinner = "旋轉槍";
-WeaponTypeName_Stringer = "獵魚弓";
-CoopEvent_Griller = "烤架魚出動";
-CoopEvent_Fog = "霧";
-CoopEvent_Goldie_Seeking = "尋找金鮭魚";
-CoopEvent_The_Mothership = "走私魚來襲";
-CoopEvent_Cohock_Charge = "大胖魚大量出現";
-CoopEvent_Giant = "巨型龍捲風";
-CoopEvent_Rush = "狂潮";
-CoopEvent_Mudmouth = "泥鮭魚噴發";
-CoopEvent_Water_Levels = "-";
-CoopHistory_SakeArtillery = "鐵球魚";
-CoopHistory_SakeArtilleryCannon = "發射台";
-CoopHistory_SakeBigBoss = "頭目鮭魚";
-CoopHistory_SakeBigBossGauge = "頭目槽";
-CoopHistory_SakeDolphin = "潛水魚";
-CoopHistory_SakeFlyBagman = "拾蛋魚";
-CoopHistory_SakePillar = "柱魚";
-CoopHistory_SakeRope = "辰龍";
-CoopHistory_SakeSaucer = "鍋蓋魚";
-CoopHistory_SakeTamaire = "泥鮭魚";
-CoopHistory_Sakediver = "鼴鼠魚";
-CoopHistory_Sakedozer = "烤架魚";
-CoopHistory_SakelienBomber = "炸彈魚";
-CoopHistory_SakelienCupTwins = "墊肩飛魚";
-CoopHistory_SakelienGiant = "橫綱";
-CoopHistory_SakelienGolden = "金鮭魚";
-CoopHistory_SakelienLarge = "大胖魚";
-CoopHistory_SakelienShield = "鐵板魚";
-CoopHistory_SakelienSmall = "小鮭魚";
-CoopHistory_SakelienSnake = "蛇魚";
-CoopHistory_SakelienStandard = "鮭魚";
-CoopHistory_SakelienTower = "高塔魚";
-CoopHistory_Sakepuncher = "走私魚";
-CoopHistory_SakepuncherBulletSimpl = "直升機鮭魚";
-CoopHistory_Sakerocket = "蝙蝠魚";
-CoopStage_Carousel = "醋飯海洋世界";
-CoopStage_Shakedent = "麥年海洋發電所";
-CoopStage_Shakeship = "漂浮落難船";
-CoopStage_Shakespiral = "新卷堡";
-CoopStage_Shakeup = "鮭壩";
-CoopStage_Tutorial = "新卷堡";
-CoopStage_Unknown = "？？？";
-CoopStage_Upland = "海女美術大學";
-Carousel_BigrunOpening = "在大型跑中保護城鎮吧！";
-Carousel_BigrunResult = "大型跑結果公布！";
-Carousel_CoopHistory = "SALMON RUN";
-Carousel_ExpansionPass = "「尚興市」發布中！";
-Carousel_ExpansionPass2 = "「秩序篇」發布中！";
-Carousel_FestOpening = "祭典開幕！！";
-Carousel_FestResult = "祭典結果公布！！";
-Carousel_Gesotown = "獨家特殊裝備現正販售中";
-Carousel_HeroRecord = "嶄新的英雄故事";
-Carousel_MemoryPlayer = "記憶播放器";
-Carousel_Myoutfits = "個人穿搭";
-Carousel_OfficialTournament = "Splatoon甲子園開催中！";
-Carousel_OfficialTournamentFinal = "Splatoon甲子園決勝戦";
-Carousel_PhotoAlbum = "相簿";
-Carousel_Robichi = "誠徵支持者！";
-Carousel_StatsLatestSeason = "前賽季的記錄在這裡！";
-Carousel_TeamContestOpening = "參加團隊打工競賽吧！";
-Carousel_TeamContestResult = "團隊打工競賽結果公布！";
-Carousel_VsHistory = "對戰戰績";
-Catalog_Byname = "別名";
-Catalog_CardPack = "卡包";
-Catalog_CardPackFresh = "新鮮卡包";
-Catalog_CardSleeve = "卡套";
-Catalog_Emote = "表情";
-Catalog_Figure = "裝飾品";
-Catalog_NamePlateBg = "背景";
-Catalog_Sticker = "貼紙";
-Catalog_AppName = "目錄";
-Catalog_Available = "可兌換";
-Catalog_BigrunBonus = "大型跑舉辦中！點數<em>1.2倍</em>！";
-Catalog_BonusDescription = "提升目錄等級<br />獲得神秘禮盒吧！";
-Catalog_BonusGuide = "等級每提升10皆可獲得神秘禮盒。";
-Catalog_BonusTitle = "獎勵！等級101～";
-Catalog_Complete = "COMPLETE！";
-Catalog_Current = " / { 1 }";
-Catalog_CurrentExtraLevel = "Lv.";
-Catalog_CurrentPoint = "累計 p";
-Catalog_DailyBonus = "本日首次獲勝就能獲得總共<em></em>點！";
-Catalog_DrinkTicket = "飲料券";
-Catalog_EndOfSeason = "<em></em>即將結束，目錄點數<em>1.2倍</em>放送中！";
-Catalog_FesBonus = "祭典舉行中！點數<em>1.2倍</em>！";
-Catalog_FoodTicket = "美食券";
-Catalog_Got = "獲得！";
-Catalog_Guide = "<em>將等級提升到4之後就去雜貨店領取目錄吧！</em>";
-Catalog_ItemAmount = "x";
-Catalog_Level = "目錄等級";
-Catalog_Limit = "到為止";
-Catalog_MysteryBox = "神秘禮盒";
-Catalog_NextBonus = "下一個";
-Catalog_Page = "頁";
-Catalog_Pager = "/{ 1 }頁";
-Catalog_Period = " 舉行中！";
-Catalog_Point = "目錄點數";
-Catalog_Signboard = "雜貨店";
-Catalog_Title = "目錄";
-Catalog_Welcome = "超魷型目錄發布中！";
-Catalog_WelcomeDescription = "透過對戰累積目錄點數<br />獲得道具吧！";
-Challenge_AboutGraffiti = "我在旅程的途中發現了超～酥脆的火熱塗鴉！傳給你看喔～";
-Challenge_AppName = "遊龍";
-Challenge_Black = "黑";
-Challenge_Blue = "藍";
-Challenge_Challenger = "挑戰者";
-Challenge_ChooseChallenge = "選擇要支持的挑戰";
-Challenge_Clear = "已達成";
-Challenge_Complete = "達成！";
-Challenge_CompleteReward = "達成特典";
-Challenge_CurrentPoint = "可用於支持阿龍的塗墨點數";
-Challenge_DearAllOfYou = "阿龍獻給各位支持者的留言";
-Challenge_DownloadGraffiti = "下載塗鴉";
-Challenge_DownloadIcon = "下載頭像";
-Challenge_DownloadWallpaper = "下載桌布";
-Challenge_Green = "綠";
-Challenge_GuideGraffiti = "可下載贈送的塗鴉";
-Challenge_GuideRewardByName = "可透過大廳設備領取別名獎勵";
-Challenge_GuideRewardIcon = "可下載頭像獎勵";
-Challenge_GuideRewardImage = "可下載圖片獎勵";
-Challenge_GuideRewardSleeve = "可透過大廳設備領取卡套獎勵";
-Challenge_HowToPlay = "持續塗墨累積點數支持阿龍的旅程吧！<br />說不定還能獲得旅程的回憶喔！";
-Challenge_Journey = "旅程";
-Challenge_LookingForSupporters = "誠徵支持者！";
-Challenge_Orange = "橘";
-Challenge_Point = "p";
-Challenge_PointForSupport = "支持所需的塗墨點數";
-Challenge_PointNotEnough = "（還差p）";
-Challenge_Purple = "紫";
-Challenge_Red = "紅";
-Challenge_RemainsOfChallenge = "離全數達成還剩<span></span>";
-Challenge_Rob = "阿龍";
-Challenge_RobJourney = "阿龍的酥脆之旅";
-Challenge_SelectColor = "請選擇適用的顏色開始下載";
-Challenge_SelectSize = "請選擇適用的大小開始下載";
-Challenge_SendingPoint = "點數發送中……";
-Challenge_Story1 = "大家過得還「酥」適嗎～？我是孤芳自賞的酥脆旅行者阿龍啦！<br />這個企劃是為了讓我有機會用旅行的方式回顧我至今為止的人生軌跡，<br />目前正在進行群眾募資喔～！";
-Challenge_Story2 = "我會騎著單車環遊以前曾經去過的火熱景點喔～！<br />我希望能藉此重新找到自己「目前」的定位，好好地「脆」鍊自我，<br />而且我也想要向支持我的各位分享我在這趟旅程中得到「新知」、「發現」、「Notice」。<br />想必會讓各位興奮到炸上雲霄對吧！？";
-Challenge_Story3 = "我會將旅程中自感覺最火熱的風景照等內容獻給支持我的各位喔～<br />如果可以讓各位融為一個群體，感覺到「大家都是一起同行的旅伴」，我想肯定會令人更心跳加速吧～！<br />總而言之，就讓我們迅速地展開這趟酥脆的火熱之旅吧，還請多多關照囉～！";
-Challenge_Support = "支持";
-Challenge_Supported = "已支持";
-Challenge_TermOfUse = "※ 請不要把圖片加工、用於營利用途或再次發布。";
-Challenge_Title = "遊龍";
-Challenge_Transparent = "無色";
-Challenge_Turquoise = "松石綠";
-Challenge_White = "白";
-Challenge_Yellow = "黃";
-Challenge_YourPoint = "目前持有p";
-Common_Cancel = "取消";
-Common_ClamBlitz = "真格蛤蜊";
-Common_Close = "關閉";
-Common_ColonRule = "：";
-Common_CoopBigRun = "大型跑";
-Common_CoopTeamContest = "團隊打工競賽";
-Common_CopyrightQrCode = "QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
-Common_Decide = "確定";
-Common_Download = "下載";
-Common_End = "結束";
-Common_GearPowerBlank = "？";
-Common_Home = "主頁";
-Common_Ikaring3 = "魷魚圈 3";
-Common_NowLoading = "載入中";
-Common_PullToRefresh = "下拉更新";
-Common_Rainmaker = "真格魚虎對戰";
-Common_Share = "分享";
-Common_SplatZones = "真格區域";
-Common_TowerControl = "真格塔樓";
-Common_Tricolor = "三色奪寶攻擊";
-Common_TricolorMatch = "三色奪寶比賽";
-Common_TurfWar = "占地對戰";
-Common_WpnNotfound = "問號";
-CoopHistory_Available = "出現數";
-CoopHistory_AvailableBoss = "已出現的頭目鮭魚";
-CoopHistory_AverageClearWaves = "平均完成WAVE數";
-CoopHistory_Bigrun = "大型跑";
-CoopHistory_BigrunBronze = "銅";
-CoopHistory_BigrunGold = "金";
-CoopHistory_BigrunSilver = "銀";
-CoopHistory_Bonus = "完成獎勵";
-CoopHistory_BossAvailable = "頭目鮭魚出現！";
-CoopHistory_Clear = "Clear!!";
-CoopHistory_DangerRatio = "危險度";
-CoopHistory_DefeatBoss = "擊倒頭目鮭魚！";
-CoopHistory_DefeatBossCount = "已擊倒的頭目鮭魚";
-CoopHistory_Defeated = "成功擊倒！";
-CoopHistory_DefeatedEnemies = "已擊倒的巨大鮭魚";
-CoopHistory_DefeatedEnemiesGuide = "※括號內的數字為自己擊倒的數量";
-CoopHistory_DeliverCount = "已收集的鮭魚卵";
-CoopHistory_Enemy = "巨大鮭魚";
-CoopHistory_ExWave = "EX-WAVE";
-CoopHistory_Failure = "Failure";
-CoopHistory_Gj = "GJ！";
-CoopHistory_GoToStats = "返回打工記錄一覽";
-CoopHistory_GoldenDeliverCount = "已收集的金鮭魚卵";
-CoopHistory_HighestScore = "最高記錄";
-CoopHistory_History = "打工記錄";
-CoopHistory_JobPoint = "獲得點數";
-CoopHistory_JobRatio = "評價倍率";
-CoopHistory_KumaPointCard = "熊先生集點卡";
-CoopHistory_Latest = "前往最新打工";
-CoopHistory_LimitedPoint = "現有的期間限定點數";
-CoopHistory_MonthlyReward = "本月的裝備";
-CoopHistory_Next = "下一場打工";
-CoopHistory_Ng = "NG";
-CoopHistory_NoData = "沒有打工記錄";
-CoopHistory_NotAvailable = "無法顯示打工記錄";
-CoopHistory_NotAvailableDescription = "可瀏覽的打工記錄僅限最新的50戰";
-CoopHistory_NotDefeated = "擊倒失敗……";
-CoopHistory_P = "p";
-CoopHistory_PlayCount = "打工次數";
-CoopHistory_Previous = "上一場打工";
-CoopHistory_Private = "私人";
-CoopHistory_Recruit = "招募員工";
-CoopHistory_RecruitDescription = "你想不想在一個無拘無束的職場裡打工呢？<br />沒有經驗也不用擔心！歡迎開朗有活力的人加入我們！";
-CoopHistory_RecruitTag1 = "簡單";
-CoopHistory_RecruitTag2 = "收集鮭魚卵";
-CoopHistory_RecruitTitle = "～穿上超魷型的制服收集鮭魚卵～";
-CoopHistory_Regular = "一般打工";
-CoopHistory_RegularPoint = "現有點數";
-CoopHistory_RescueCount = "救援次數";
-CoopHistory_RescuedCount = "被救助的次數";
-CoopHistory_Scale = "鱗片";
-CoopHistory_ScaleBronze = "銅鱗片";
-CoopHistory_ScaleGold = "金鱗片";
-CoopHistory_ScaleSilver = "銀鱗片";
-CoopHistory_Score = "打工分數";
-CoopHistory_SeeSchedule = "查看時間表";
-CoopHistory_SmellMeter = "頭目槽";
-CoopHistory_SupplyWeapon = "派發武器";
-CoopHistory_TeamContest = "團隊打工競賽";
-CoopHistory_Title = "SALMON RUN";
-CoopHistory_TotalPoint = "累計點數";
-CoopHistory_Wave = "WAVE ";
-CoopHistory_WaveLevel0 = "乾潮";
-CoopHistory_WaveLevel1 = "普通";
-CoopHistory_WaveLevel2 = "滿潮";
-CoopRecord_AppName = "打工";
-CoopRecord_Attended = "參加次數︰";
-CoopRecord_Bigrun = "大型跑";
-CoopRecord_BigrunBronze = "銅";
-CoopRecord_BigrunGold = "金";
-CoopRecord_BigrunSilver = "銀";
-CoopRecord_HighestJobRate = "最高評價";
-CoopRecord_HighestScore = "最高分數";
-CoopRecord_More = "顯示更多";
-CoopRecord_NoData = "沒有記錄";
-CoopRecord_TeamContest = "團隊打工競賽";
-CoopRecord_Title = "SALMON RUN記錄";
-Error_BackToHome = "返回主頁";
-Error_CurrentlyNotAvailable = "目前無法使用，請稍待片刻。";
-Error_Error = "錯誤";
-Error_ErrorOccurred = "發生錯誤。";
-Error_ErrorReopen = "讀取失敗。";
-Error_MaintenanceDescription = "目前伺服器正在維護中，請稍後再重新連接。";
-Error_MaintenanceTitle = "請稍待片刻";
-Error_NetworkNotAvailable = "讀取失敗，請在良好的網路環境下重新再試一次。";
-Error_NotSupported = "無法顯示「魷魚圈 3」。請過一段時間後在通訊環境良好的地方再次嘗試。<br />如果問題仍然無法解決，請確認瀏覽器是否已更新至最新版本。<br />如果仍然顯示此畫面，有可能是您的使用環境無法使用「魷魚圈 3」。";
-Error_Reload = "重新讀取";
-FesRecord_AppName = "祭典";
-FesRecord_Attack = "進攻";
-FesRecord_Average = "平均";
-FesRecord_Challenge = "挑戰";
-FesRecord_ComingSoon = "即將舉行";
-FesRecord_ContributionChallenge = "貢獻度 挑戰";
-FesRecord_ContributionRegular = "貢獻度 開放";
-FesRecord_ContributionTricolor = "貢獻度 三色奪寶比賽";
-FesRecord_Defense = "防守";
-FesRecord_FestPower = "{ 1 }戰力";
-FesRecord_FestRanking = "祭典100豪傑";
-FesRecord_GotHoragai = "法螺獲得數量";
-FesRecord_GuideVote = "此問卷在遊戲內進行投票前可隨意更改。<br />查看大家預定參加的陣營，然後到蠻頹鎮廣場的投票所完成投票吧！";
-FesRecord_GuideWillParticipates = "預定參加的朋友將有可能會更改隊伍";
-FesRecord_HighestFestPower = "最高祭典戰力";
-FesRecord_Horagai = "法螺獲得率";
-FesRecord_NotVoted = "未定的朋友";
-FesRecord_OnGoing = "舉行中！！";
-FesRecord_PastFestivals = "至今為止的祭典";
-FesRecord_PreVoteButton = "問卷實施中";
-FesRecord_PreVoteGuide = "可以查看朋友預定參加的陣營，<br />大家一起組隊參加吧！";
-FesRecord_PreVoteTitle = "大家要選擇哪個陣營？<br />問卷實施中";
-FesRecord_Rank = "<small>第</small> <small>名</small>";
-FesRecord_Regular = "開放";
-FesRecord_SeeAllVotes = "查看朋友參加的隊伍";
-FesRecord_SeeFestRanking = "查看祭典100豪傑";
-FesRecord_Title = "祭典記錄";
-FesRecord_Total = "累計";
-FesRecord_Undecided = "未定";
-FesRecord_Vote = "預定參加";
-FesRecord_VoteRatio = "得票率";
-FesRecord_Voted = "答覆完成";
-FesRecord_VotedInGame = "投票完成";
-FesRecord_VotingStatus = "朋友的投票狀況";
-FesRecord_WaitingForResult = "正在統計結果";
-FesRecord_Win = "WIN！";
-FesRecord_WinTeam = "<span></span>獲勝！";
-FesRecord_YourRecord = "個人記錄";
-Footer_BigrunAnnouncement = "<em>大型跑</em>警報！小心鮭魚侵襲！";
-Footer_BigrunNowOpening = "<em>大型跑</em>發生中！保護城鎮免受鮭魚侵害！";
-Footer_EndOfSeason = "<em></em>即將結束。";
-Footer_EndOfSeason_ = "<em></em>即將結束。";
-Footer_FestAnnouncement = "<em></em>祭典開幕！快去完成問卷，和朋友一起參加吧！";
-Footer_FestNowOpening = "<em></em>祭典舉行中！前往廣場完成投票獲得祭典T恤吧！";
-FriendList_AppName = "朋友列表";
-FriendList_InCoopGame = "打工中";
-FriendList_InMiniGame = "占地鬥士";
-FriendList_InVsGame = "比賽中";
-FriendList_IsLocked = "有密碼";
-FriendList_NoFriends = "朋友的遊玩狀況將在此顯示";
-FriendList_Offline = "離線";
-FriendList_Online = "線上";
-FriendList_Recruiting = "招募中";
-FriendList_Reload = "重新讀取";
-FriendList_Title = "朋友列表";
-FriendList_VoiceChatEnabled = "可以語音聊天";
-GesoTown_AppName = "魷魚鬚商城";
-GesoTown_BackToGesotown = "返回魷魚鬚商城";
-GesoTown_Description = "在此商店中<br />可以取得附加<em>裝備能力</em>與平時不同的<em>特殊裝備</em>";
-GesoTown_Feature = "本日精選";
-GesoTown_Featured = "精選";
-GesoTown_FrequentGearPower = "比較容易附加於<strong></strong>的裝備能力";
-GesoTown_Limit = "到<em></em>為止";
-GesoTown_Money = "金錢";
-GesoTown_Next = "下一個裝備";
-GesoTown_NextFeature = "次回精選";
-GesoTown_NotAvailable = "逾期";
-GesoTown_Order = "預訂";
-GesoTown_OrderNow = "把握機會馬上預訂！";
-GesoTown_Ordered = "已預訂";
-GesoTown_Pending = "庫存確認中……";
-GesoTown_Previous = "上一個裝備";
-GesoTown_RemainAlmostFinished = "即將結束";
-GesoTown_RemainHour = "還有小時";
-GesoTown_RemainMinute = "還有分鐘";
-GesoTown_Remind = "已經有已預訂的裝備";
-GesoTown_RemindCaution = "已預訂的裝備將被取消";
-GesoTown_Rule1 = "1次僅能預訂1個裝備";
-GesoTown_Rule2 = "透過位於廣場的刺冠即可購買已預訂的裝備";
-GesoTown_Rule3 = "如果在購買完成前預訂新裝備，原本已預訂的裝備將被取消";
-GesoTown_Rule4 = "購買完成後，即可預訂新的裝備";
-GesoTown_Stock = "目前販售的裝備";
-GesoTown_StockGuide = "商品陣容每隔4小時便會更換";
-GesoTown_Title = "魷魚鬚商城";
-GesoTown_UnableToOrder = "無法受理";
-GesoTown_UnableToOrderMessage = "目前沒有販售此商品";
-HeroRecord_Agent1 = "1號";
-HeroRecord_Agent2 = "2號";
-HeroRecord_Annotation = "請選擇適用的大小開始下載";
-HeroRecord_AppName = "英雄模式";
-HeroRecord_AreaMemorialPhoto = "快拍照片";
-HeroRecord_BossStage = "Boss";
-HeroRecord_ClearReward = "英雄模式 過關特典";
-HeroRecord_GetReward = "獲得特典";
-HeroRecord_NawabariMapCompleteReward = "幻界探索率100％ 達成特典";
-HeroRecord_NawabariMapProgress = "幻界探索率";
-HeroRecord_NawabariMapSubCleared = "恭喜成功過關！";
-HeroRecord_NawabariMapSubComplete = "恭喜探索率達到100％！";
-HeroRecord_NawabariMapSubInProgress = "如果幻界的探索率達到100％就會……？";
-HeroRecord_Next = "下個地域";
-HeroRecord_NoEquipments = "無裝備";
-HeroRecord_Prev = "上個地域";
-HeroRecord_Recruitment = "誠徵眼神犀利的年輕人！！";
-HeroRecord_RecruitmentSub = "到英雄模式展開第一場冒險吧！";
-HeroRecord_SearchRatio = "探索率";
-HeroRecord_SeePhotograph = "查看快拍照片";
-HeroRecord_Site = "地域 ";
-HeroRecord_Site1 = "未來烏托邦樂園";
-HeroRecord_Site2 = "安心生活工廠";
-HeroRecord_Site3 = "長青新城";
-HeroRecord_Site4 = "堆填夢樂園";
-HeroRecord_Site5 = "羅漢柏綠色山丘";
-HeroRecord_Site6 = "幸福研究室";
-HeroRecord_Title = "英雄模式記錄";
-HeroRecord_Wallpaper = "特製桌布";
-History_AllBadges = "所有徽章（）";
-History_AppName = "記錄";
-History_Badge = "徽章";
-History_Count = "<small>次</small>";
-History_EstimatedRanking = "預估名次";
-History_FrequentlyUsedWeapon = "最常使用的武器";
-History_HighestUdemae = "最高技術";
-History_HighestXranking = "最高X排名‧最高X戰力";
-History_Latest = "最近3個月";
-History_LatestBadge = "最近獲得的徽章";
-History_Monthly = "單月";
-History_Others = "其他";
-History_PastXmatchAnnotation = "※X比賽的記錄將會在賽季結束後，於統計完成時公布。統計可能需要幾天才能完成。";
-History_Rank = "等級";
-History_Ranking = "<small>第</small><small>名</small>";
-History_Season = "賽季";
-History_ShowAllBadges = "查看所有徽章";
-History_ShowLess = "減少顯示";
-History_ShowMore = "顯示更多";
-History_ShowXranking = "查看X排名";
-History_Since = "從開始遊玩（{ 1 }更新）";
-History_Summary = "總覽";
-History_Title = "記錄";
-History_TotalTurfPoint = "至今為止的塗墨面積";
-History_TotalWin = "總獲勝數";
-History_TurfPoint = "p";
-History_Udemae = "技術";
-History_Weapon = "武器記錄";
-History_WeaponUsage = "武器使用率";
-History_Xmatch = "X比賽";
-Landing_Caution = "※在尚未安裝應用程式的情況下，按下此按鍵將無法開啟應用程式";
-Landing_Copyright = "Apple、Apple標誌和Apple Store是Apple Inc.的商標。Google Play和Google Play標誌是Google LLC的商標。";
-Landing_DlAppStore = "App Store下載";
-Landing_DlGooglePlay = "Google Play立即下載";
-Landing_Download = "請從此處下載應用程式";
-Landing_Nso = "Nintendo Switch Online";
-Landing_OpenApp = "開啟應用程式";
-Landing_Splatoon3 = "《斯普拉遁 3》";
-Landing_Title = "開啟智慧型手機應用程式「Nintendo Switch Online」";
-MemoryPlayer_AppName = "記憶播放器";
-MemoryPlayer_Copied = "複製完成";
-MemoryPlayer_Download = "下載對戰記憶";
-MemoryPlayer_FailedDownload = "預約下載失敗";
-MemoryPlayer_Guide = "使用《斯普拉遁 3》大廳設備中的記憶播放器<br />即可播放已下載的對戰記憶";
-MemoryPlayer_Loading = "Loading……";
-MemoryPlayer_Notice = "目前顯示內容為最新的50件<br />儲存期限為30天";
-MemoryPlayer_Placeholder = "輸入代碼";
-MemoryPlayer_ReplayCode = "下載代碼";
-MemoryPlayer_ReplayNotAvailable = "沒有找到資料";
-MemoryPlayer_ReservedDownload = "預約下載成功";
-MemoryPlayer_Send = "發送";
-MemoryPlayer_Title = "記憶播放器";
-MemoryPlayer_UploadBy = "上傳者";
-MemoryPlayer_Uploaded = "上傳的對戰記憶";
-MyOutfits_Add = "建立個人穿搭";
-MyOutfits_AddCurrentEquipments = "+ 將此裝備新增至個人穿搭";
-MyOutfits_All = "全部顯示";
-MyOutfits_AppName = "個人穿搭";
-MyOutfits_Brand = "品牌";
-MyOutfits_CameraOption = "鏡頭選項";
-MyOutfits_CloseCameraOption = "隱藏鏡頭選項";
-MyOutfits_Cloth = "服裝";
-MyOutfits_CurrentEquipments = "目前裝備";
-MyOutfits_CurrentEquipmentsGuide = "目前裝備將會顯示最後一次進行對戰時的內容";
-MyOutfits_CurrentGear = "目前選擇的裝備";
-MyOutfits_CurrentWeapon = "目前選擇的武器";
-MyOutfits_ErrorSave = "儲存失敗";
-MyOutfits_Exp = "經驗值 <em></em>";
-MyOutfits_Filter = "篩選";
-MyOutfits_Gear = "裝備";
-MyOutfits_GearPower = "裝備能力";
-MyOutfits_GearPowerAnnotation = "1個追加裝備能力的效果為基本裝備能力的0.3倍";
-MyOutfits_Guide = "嘗試建立個人穿搭吧";
-MyOutfits_GuideGearPowerButton = "選擇裝備後將會顯示裝備能力的細節";
-MyOutfits_GuideLimitation = "最多可以建立5套個人穿搭";
-MyOutfits_Gyro = "陀螺儀操作靈敏度";
-MyOutfits_GyroControl = "陀螺儀操作";
-MyOutfits_HandheldMode = "手提模式";
-MyOutfits_Hashtag = "個人穿搭";
-MyOutfits_Head = "頭部裝備";
-MyOutfits_Main = "主要武器";
-MyOutfits_NoGears = "沒有符合條件的裝備";
-MyOutfits_NoWeapons = "沒有符合條件的武器";
-MyOutfits_Normal = "正常";
-MyOutfits_Number = "個人穿搭";
-MyOutfits_Off = "OFF";
-MyOutfits_On = "ON";
-MyOutfits_OpenCameraOption = "顯示鏡頭選項";
-MyOutfits_RControl = " 左右操作";
-MyOutfits_RHorizontal = " 操作靈敏度";
-MyOutfits_RHorizontalUnavailable = "陀螺儀操作設為OFF時無效";
-MyOutfits_RVertical = " 上下操作";
-MyOutfits_RVerticalUnavailable = "陀螺儀操作設為ON時無效";
-MyOutfits_Rarity = "稀有度 ";
-MyOutfits_Reverse = "反轉";
-MyOutfits_Save = "儲存";
-MyOutfits_Select = "選擇";
-MyOutfits_SelectCloth = "選擇服裝";
-MyOutfits_SelectHead = "選擇頭部裝備";
-MyOutfits_SelectShoes = "選擇鞋子";
-MyOutfits_SelectSlot = "選擇儲存位置";
-MyOutfits_SelectWeapon = "選擇武器";
-MyOutfits_Share = "分享";
-MyOutfits_Shoes = "鞋子";
-MyOutfits_Special = "特殊武器";
-MyOutfits_Sub = "次要武器";
-MyOutfits_SubmitGear = "確定";
-MyOutfits_SubmitWeapon = "確定";
-MyOutfits_Title = "個人穿搭";
-MyOutfits_TurfPoint = "至今為止的塗墨面積 <em>p</em>";
-MyOutfits_TvTabletopMode = "TV模式/桌上模式";
-MyOutfits_Weapon = "武器";
-PhotoAlbum_Annotation = "最多可以上傳20張照片<br />儲存期限為3個月";
-PhotoAlbum_AppName = "相簿";
-PhotoAlbum_Select = "選擇";
-PhotoAlbum_Title = "相簿";
-QRCodeReader_AppName = "QR碼掃描器";
-QRCodeReader_CheckinDate = "日程：";
-QRCodeReader_ConfirmationAllow = "同意";
-QRCodeReader_ConfirmationDeny = "不同意";
-QRCodeReader_ErrorAlreadyGotDescription = "已領取過此報酬";
-QRCodeReader_ErrorAlreadyGotTitle = "已領取";
-QRCodeReader_ErrorNotCompatibleDescription = "沒有可透過《魷魚圈 3》讀取的QR碼";
-QRCodeReader_ErrorNotCompatibleTitle = "錯誤";
-QRCodeReader_ErrorRewardExpiredDescription = "此QR碼已經失效";
-QRCodeReader_EuConfirmation = "您可以在《魷魚圈 3》中使用QR碼讀取功能。<br />當您使用此功能時，系統會將您讀取的QR碼資訊發送給任天堂，您可以在應用程式中查看QR碼的讀取記錄。以上過程將有可能使任天堂得知您的位置資訊。<br />您接下來所做的選擇將不會被儲存，您每一次讀取QR碼時，系統都會尋求獲得您的同意（GDPR【第】6条【第】1項(a)）。";
-QRCodeReader_Guide = "讀取位於特定地點的QR碼<br />即可獲得特別報酬";
-QRCodeReader_History = "歷史記錄";
-QRCodeReader_HowToGetReward = "使用《斯普拉遁 3》的大廳設備<br />領取報酬吧！";
-QRCodeReader_NoData = "顯示以往的讀取歷史記錄";
-QRCodeReader_ReadQrcodeByCamera = "使用照相機讀取QR碼";
-QRCodeReader_ReadQrcodeByFile = "從已儲存的圖片中讀取";
-QRCodeReader_Title = "QR碼掃描器";
-Record_LatestPlayed = "最後遊玩時間";
-Record_LatestUsed = "常用武器";
-Record_Main = "主要武器";
-Record_NextSkillLevel = "離熟練度提升仍需";
-Record_SkillLevel = "熟練度";
-Record_Sort = "排序";
-Record_Special = "特殊武器";
-Record_StageRecord = "場地記錄";
-Record_StageRecordAppName = "場地";
-Record_Sub = "次要武器";
-Record_Title = "記錄";
-Record_TotalTurfPoint = "p";
-Record_TurfPoint = "塗墨點數";
-Record_UnplayedStages = "未遊玩的場地";
-Record_UnusedWeapons = "未持有的武器";
-Record_Vibes = "狀態值";
-Record_WeaponRecord = "武器記錄";
-Record_WeaponRecordAppName = "武器";
-Record_WinCount = "獲勝數";
-Record_WinRatio = "%";
-Settings_Acknowledgements = "著作權聲明";
-Settings_AppName = "設定";
-Settings_Credits = "工作人員";
-Settings_ExpansionPass = "前往擴充票購買網站";
-Settings_Title = "設定";
-StageSchedule_Bankara = "蠻頹比賽";
-StageSchedule_BankaraOpen = "開放";
-StageSchedule_BankaraOpenChallenge = "挑戰";
-StageSchedule_Coop = "SALMON RUN";
-StageSchedule_CoopCurrentPeriodStart = "NOW OPEN！";
-StageSchedule_Eventmatch = "活動舉行！";
-StageSchedule_Festival = "祭典比賽";
-StageSchedule_FestivalAnnounced = "即將舉行";
-StageSchedule_FestivalAt = " 開始！";
-StageSchedule_FestivalAttack = "進攻";
-StageSchedule_FestivalDefense = "防守";
-StageSchedule_FestivalHolding = "舉行中！！";
-StageSchedule_FestivalPeriod = " - { 1 }";
-StageSchedule_Future = "下下次";
-StageSchedule_League = "聯盟比賽";
-StageSchedule_Next = "下次";
-StageSchedule_NoticeBigrun = "大型跑接近中！";
-StageSchedule_NoticeLimited = "團隊打工競賽舉行預告！";
-StageSchedule_NowClosed = "祭典比賽舉行中！";
-StageSchedule_Open = "開放！";
-StageSchedule_OpenBigrun = "大型跑發生中！";
-StageSchedule_OpenLimited = "團隊打工競賽舉行中！";
-StageSchedule_Private = "私人比賽";
-StageSchedule_Recruit = "大型跑要來了！！打工大招募 ";
-StageSchedule_RecruitTeamContest = "團隊打工競賽！大家一起組隊參加吧！";
-StageSchedule_Regular = "一般比賽";
-StageSchedule_SeeFestivalRecord = "查看祭典記錄";
-StageSchedule_SuppliedWeaponRandom = "隨機";
-StageSchedule_SuppliedWeapons = "派發武器";
-StageSchedule_Title = "時間表";
-StageSchedule_WinRateByRules = "個別規則勝率";
-StageSchedule_Xmatch = "X比賽";
-VSHistory_100x = "100倍比賽";
-VSHistory_10x = "10倍比賽";
-VSHistory_333x = "333倍比賽";
-VSHistory_AnnotationExemption = "因人數不足的情況持續過久，比賽結果不會以落敗計算";
-VSHistory_AnnotationNocontest = "本次對戰已被判定為無效比賽。";
-VSHistory_AnnotationPenalty = "比賽未能正常結束。";
-VSHistory_Attack = "進攻";
-VSHistory_Average = "最近分鐘的平均值";
-VSHistory_AwardGold = "金";
-VSHistory_AwardSilver = "銀";
-VSHistory_Bankara = "蠻頹比賽";
-VSHistory_BankaraChallenge = "蠻頹比賽（挑戰）";
-VSHistory_BankaraOpen = "蠻頹比賽（開放）";
-VSHistory_Cleaning = "結算";
-VSHistory_Contribute = "貢獻度 ";
-VSHistory_Count = "計數";
-VSHistory_DeathCount = "陣亡次數";
-VSHistory_Defense = "防守";
-VSHistory_Draw = "DRAW";
-VSHistory_EquippedGear = "使用的裝備";
-VSHistory_EquippedWeapon = "使用的武器";
-VSHistory_FesChallenge = "祭典比賽（挑戰）";
-VSHistory_FesOpen = "祭典比賽（開放）";
-VSHistory_FesTeam = "隊伍";
-VSHistory_FesWinProof = "祭典之證";
-VSHistory_FestPower = "{ 1 }戰力";
-VSHistory_Festival = "祭典比賽";
-VSHistory_FestivalShell = "祭典貝 x";
-VSHistory_GoToStats = "返回對戰記錄";
-VSHistory_GotAwards = "獲得的表揚";
-VSHistory_GotTricolorTreasure = "奪得塗滿告示牌";
-VSHistory_InChallenge = "挑戰中";
-VSHistory_KillCount = "擊倒次數";
-VSHistory_Knockout = "完勝！";
-VSHistory_Latest = "最近50戰";
-VSHistory_LatestBattle = "最新的對戰";
-VSHistory_LatestTab = "最近";
-VSHistory_Lose = "LOSE……";
-VSHistory_Measurement = "X戰力計算中";
-VSHistory_NextBattle = "下一場對戰";
-VSHistory_NoData = "沒有對戰記錄";
-VSHistory_NotAvailable = "無法顯示對戰記錄";
-VSHistory_NotAvailableDescription = "可瀏覽的對戰記錄僅限各模式最新的50戰";
-VSHistory_OutfitBonus = "（團隊穿搭獎勵 x）";
-VSHistory_PreviousBattle = "上一場對戰";
-VSHistory_Private = "私人比賽";
-VSHistory_Promo = "晉級戰";
-VSHistory_Regular = "一般比賽";
-VSHistory_SpCount = "特殊武器發動次數";
-VSHistory_Title = "對戰";
-VSHistory_TryCount = "奪取次數";
-VSHistory_TurfPoint = "p";
-VSHistory_UdemaePoint = "技術點數";
-VSHistory_UdemaePointScore = "p";
-VSHistory_UdemaeReset = "挑戰中止";
-VSHistory_UdemaeUp = "技術提升！";
-VSHistory_Win = "WIN！";
-VSHistory_WinMeterGuide = "關於勝敗數";
-VSHistory_Wins = "連勝";
-VSHistory_Xcrown = "王冠";
-VSHistory_Xmatch = "X比賽";
-VSHistory_Xpower = "X戰力 ";
-Welcome_About = "《魷魚圈 3》是《斯普拉遁 3》的連動服務。除了這裡介紹的功能之外，還有很多各式各樣的用途。";
-Welcome_Feature1 = "查看對戰的戰績還有時間表，<br />拉開與勁敵之間的差距吧！";
-Welcome_Feature1Alt = "對戰戰績與時間表";
-Welcome_Feature2 = "獻給各位時尚教主一個好消息！<br />以後隨時隨地都能編輯個人穿搭囉！";
-Welcome_Feature3 = "支持獨自踏上旅程的阿龍<br />獲得特殊報酬吧！";
-Welcome_Feature4 = "只有在這裡才找得到的特規商品！<br />到魷魚鬚商城查看限定裝備吧！";
-Welcome_Features = "Features";
-Welcome_Link = "https://store-jp.nintendo.com/list/software/70010000046394.html";
-Welcome_OtherFeatures = "除此之外還有很多方便的功能！";
-Welcome_Service = "專為極限玩家準備的超魷型服務。";
-Welcome_Splatoon3 = "《斯普拉遁 3》";
-Welcome_Store = "前往購買網站";
-Welcome_Store1 = "My Nintendo Store";
-Welcome_Widgets = "小工具";
-XRanking_All = "全部顯示";
-XRanking_AppName = "X排名";
-XRanking_Atlantic = "組別‧艾洛眼";
-XRanking_EstimatedRank = "預估第名";
-XRanking_Measurement = "計算中";
-XRanking_Open = "舉行中！！";
-XRanking_Pacific = "組別‧暇古";
-XRanking_PastRankings = "過去的排名";
-XRanking_PastRankingsAnnotation = "※過去的排名將會在賽季結束後，於統計完成時公布。統計可能需要幾天才能完成。";
-XRanking_Period = " - { 1 }";
-XRanking_Rank = "<small>第</small><small>名</small>";
-XRanking_Region = "組別";
-XRanking_SeeRanking = "查看排名";
-XRanking_SeeWeaponTop = "查看頂尖武器";
-XRanking_SelectWeapon = "選擇武器";
-XRanking_Title = "X排名";
-XRanking_Top500 = "Top 500";
-XRanking_TopPlayers = "頂尖玩家";
-XRanking_WeaponTop = "頂尖武器玩家";
-XRanking_WeaponTopSingular = "頂尖武器玩家";
-XRanking_Xcrown = "王冠";
-XRanking_Xpower = "<small>X戰力</small> ";
-Challenge_Challenge210Description = "橘色的天空看起來真是油光閃閃呢～";
-Challenge_Challenge210Reward = "別名";
-Challenge_Challenge210Title = "鮭壩";
-Challenge_Challenge21Description = "接觸到藝術之後，感覺有股烈火直達內心深處呢～！";
-Challenge_Challenge21Reward = "非常亮眼的照片";
-Challenge_Challenge21Title = "金眼鯛美術館";
-Challenge_Challenge22Description = "這裡的餐廳炸物超好吃，是個人氣破表的火熱景點喔～";
-Challenge_Challenge22Reward = "撿到的貼紙";
-Challenge_Challenge22Title = "海女美術大學";
-Challenge_Challenge23Description = "橋上的風很大，把我酥脆的外皮吹掉了好幾塊！";
-Challenge_Challenge23Reward = "非常亮眼的照片";
-Challenge_Challenge23Title = "真鯖跨海大橋";
-Challenge_Challenge24Description = "焊接的聲音跟油炸很像，所以心情也會跟著劈里啪啦地心跳加速喔！";
-Challenge_Challenge24Reward = "撿到的貼紙";
-Challenge_Challenge24Title = "鱘魚造船廠";
-Challenge_Challenge25Description = "只要在晚餐時間聞到炸物的香氣，就會讓人想馬上趕回家呢～";
-Challenge_Challenge25Reward = "非常亮眼的照片";
-Challenge_Challenge25Title = "比目魚住宅區";
-Challenge_Challenge26Description = "啊！這裡正在販售新的炸油！！";
-Challenge_Challenge26Reward = "撿到的貼紙";
-Challenge_Challenge26Title = "座頭購物中心";
-Challenge_Challenge27Description = "這裡充滿了令人心跳加速的要素，得小心別興奮過度喔～！酥啊～！！！";
-Challenge_Challenge27Reward = "非常亮眼的照片";
-Challenge_Challenge27Title = "鬼頭刀SPA度假區";
-Challenge_Challenge28Description = "在搭了雲霄飛車之後，感覺身體不知為何變得好輕盈呢～";
-Challenge_Challenge28Reward = "塗鴉桌布";
-Challenge_Challenge28Title = "醋飯海洋世界";
-Challenge_Challenge29Description = "看來尚興地區也有能夠快速賺錢的爽脆打工呢～！話說，這是哪裡啊～？";
-Challenge_Challenge29Reward = "黃昏時刻的照片";
-Challenge_Challenge29Title = "漂浮落難船";
-Challenge_Journey2Description = "「挑戰者阿龍」的下一個目的地已經決定是「尚興地區」囉～<br />目前正在氣勢如虹地招募願意持續支持這趟旅程的支持者喔！<br />尚興地區是我踏上旅程之前居住的城鎮，那裡現在依然是個洋溢著尚興風格，既璀璨又火熱的地方呢～<br />我想要去看看那些充滿回憶的地點，與此同時回顧「過去的自己」，並再度「脆」鍊「現在的自己」！<br />這趟「再脆之旅」感覺超火熱的對吧！？還請多多關照囉～！";
-Challenge_Journey2Gratitude = "我能順利地完成這趟再脆之旅都是多虧有你的支持喔！謝謝～！<br />這是我要送給你的謝禮！<br />我已經先把東西送到大廳設備了，記得去領取喔～";
-Challenge_Journey2Title = "旅程的途中<br />～重點不是要對哪條路塗墨，而是在塗了墨的路上怎麼前進～";
-CoopHistory_Limited = "期間限定";
-VSHistory_EstimatedRoomPower = "人的{ 1 }戰力預估值{ 2 }";
-Widgets_AlbumDescription = "顯示《魷魚圈 3》的相簿圖片";
-Widgets_AlbumNoPhoto = "在《斯普拉遁 3》中拍攝的超魷型照片<br />都會顯示在這裡喔！";
-Widgets_AlbumTitle = "相簿";
-Widgets_EquipmentsDescription = "顯示《斯普拉遁 3》的目前裝備";
-Widgets_EquipmentsTitle = "目前裝備";
-Widgets_ErrorsNoData = "這個小工具是《斯普拉遁 3》的連動服務，在遊玩遊戲累積資料數據後即可使用";
-Widgets_ErrorsNotLoggedIn = "請登入智慧型手機應用程式「Nintendo Switch Online」";
-Widgets_ErrorsOutOfService = "目前無法使用";
-Widgets_ErrorsUpdateRequired = "請更新Nintendo Switch Online應用程式";
-Widgets_Loading = "載入中";
-Widgets_StagesBankara = "蠻頹比賽";
-Widgets_StagesCoop = "SALMON RUN";
-Widgets_StagesDatetimeFormat = "M/d HH:mm";
-Widgets_StagesDescription = "顯示《斯普拉遁 3》的場地時間表";
-Widgets_StagesDescriptionAndroid = "顯示《斯普拉遁 3》的場地時間表以及目前裝備";
-Widgets_StagesFestMatch = "祭典比賽舉行中！";
-Widgets_StagesFestMatchAnnounced = "祭典比賽即將舉行";
-Widgets_StagesLeague = "聯盟比賽";
-Widgets_StagesNoData = "沒有時間表";
-Widgets_StagesNowOpen = "開放！";
-Widgets_StagesRegular = "一般比賽";
-Widgets_StagesSeparator = " - ";
-Widgets_StagesSettingsMode = "顯示的模式";
-Widgets_StagesSuppliedWeapons = "派發武器";
-Widgets_StagesTimeFormat = "HH:mm";
-Widgets_StagesTitle = "場地時間表";
-Widgets_StagesXmatch = "X比賽";
-Widgets_StagesYearDatetimeFormat = "yyyy M/d HH:mm";
-Widgets_VsCount = "%@計數";
-Widgets_VsKnockout = "完勝！";
-Widgets_VsNoData = "沒有對戰記錄";
-Widgets_VsPercent = "%@%";
-Widgets_VsTurfPoint = "%@p";
-Widgets_VshistoryDescription = "顯示《斯普拉遁 3》的對戰記錄";
-Widgets_VshistoryDraw = "DRAW";
-Widgets_VshistoryLose = "LOSE……";
-Widgets_VshistoryTitle = "對戰記錄";
-Widgets_VshistoryWin = "WIN！";
-CoopHistory_About = "關於";
-CoopHistory_ActualValue = "實際的";
-CoopHistory_Appearances = "外觀";
-CoopHistory_Application = "應用程式";
-CoopHistory_AverageRecord = "平均";
-CoopHistory_Backup = "備份";
-CoopHistory_BackupCompress = "壓縮（ZIP）";
-CoopHistory_BackupContext = "備份資料庫";
-CoopHistory_BackupPlain = "純文字（JSON）";
-CoopHistory_Credit = "信用";
-CoopHistory_DarkMode = "暗色模式";
-CoopHistory_DataManagement = "資料管理";
-CoopHistory_DeathCount = "救援計數";
-CoopHistory_DefeatedCount = "擊敗計數";
-CoopHistory_EstimatedValue = "預估";
-CoopHistory_EventClearRatio = "清除比率";
-CoopHistory_EventFrequency = "事件頻率";
-CoopHistory_FAQ = "常見問題";
-CoopHistory_GamingMode = "遊戲模式";
-CoopHistory_GradeId = "成績";
-CoopHistory_GradePoint = "成績點數";
-CoopHistory_HighestRecord = "最高的";
-CoopHistory_Ikaring2 = "SplatNet2";
-CoopHistory_Ikaring3 = "SplatNet3";
-CoopHistory_Invalid = "無效的";
-CoopHistory_Languages = "語言";
-CoopHistory_ShareLogToDeveloper = "傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。";
-CoopHistory_ShareLog = "分享日誌";
-CoopHistory_LogSize = "日誌文件";
-CoopHistory_MyPage = "我的頁面";
-CoopHistory_PlayerCrew = "組";
-CoopHistory_PlayerYou = "您";
-CoopHistory_PrivacyPolicy = "隱私政策";
-CoopHistory_RequestForm = "表格";
-CoopHistory_RequestFormBug = "錯誤";
-CoopHistory_RequestFormContent = "內容";
-CoopHistory_RequestFormEnhancement = "增強";
-CoopHistory_RequestFormFeature = "功能";
-CoopHistory_RequestFormTitle = "標題";
-CoopHistory_RequestFormType = "類型";
-CoopHistory_RequsetFormSubmit = "提交";
-CoopHistory_Restore = "還原";
-CoopHistory_RestoreContext = "在「檔案」應用程式中選擇要還原的檔案。";
-CoopHistory_ResultsCount = "結果";
-CoopHistory_Role_Debuger = "除錯";
-CoopHistory_Role_Developer = "開發者";
-CoopHistory_Role_Tester = "測試者";
-CoopHistory_Role_Translator = "翻譯者";
-CoopHistory_SaveToPhotoLibrary = "儲存成功";
-CoopHistory_ScheduleSync = "同步排程";
-CoopHistory_ScheduleSyncContext = "從伺服器檢索排程。";
-CoopHistory_SignIn = "登入";
-CoopHistory_SignOut = "登出";
-CoopHistory_SignOutSuccessfully = "登出成功";
-CoopHistory_SignOutContext = "取消連結任天堂Switch帳戶。";
-CoopHistory_SourceCode = "原始碼";
-CoopHistory_SuppliedRatio = "供應比率";
-CoopHistory_UpdateRequired = "需要應用程式更新";
-CoopHistory_UserData = "使用者資料";
-CoopHistory_Valid = "有效的";
-CoopHistory_Version = "版本";
-CoopHistory_WipeLog = "清除日誌";
-CoopHistory_WipeLogContext = "清除所有日誌。";
-CoopHistory_WipeResults = "清除結果";
-CoopHistory_WipeResultsContext = "清除所有資料。";
-CoopHistory_WriteReview = "撰寫評論";
-CoopHistory_OverallRecord = "整體";
-CoopHistory_GoldenEggs = "金蛋";
-CoopHistory_PowerEggs = "能量蛋";
-CoopHistory_Overview = "概述";
-CoopHistory_Locale = "zh-TW";
-CoopHistory_LanguageCode = "2";
-CoopStage_Shakeall = "全部";
-CoopHistory_Database = "資料庫";
-CoopHistory_XProductVersion = "X-產品版本";
-CoopHistory_XWebViewVer = "X-WebView版本";
-CoopHistory_Upload = "上傳";
-CoopHistory_CreditDevelop = "開發者";
-CoopHistory_CreditTest = "測試者";
-CoopHistory_CreditDesign = "UI/UX設計";
-CoopStage_Dummy = "???";
-CoopHistory_TeamPointCard = "團隊點數卡";
-CoopHistory_UseEstimatedValue = "使用預估值";
-CoopHistory_UseEmpheralSession = "使用 Safari 的身份驗證";
-CoopHistory_CheckInReward = "獎勵";
-CoopHistory_GetCheckInReward = "掃描QR碼獲取所有獎勵。";
-CoopHistory_TeamResult = "團隊";
-CoopHistory_PlayerResult = "您";
-CoopHistory_CrewAvgResult = "船員的平均數";
-CoopHistory_CrewResult = "船員";
-CoopHistory_WaveResult = "海浪";
-CoopHistory_HighestValue = "最高";
-CoopHistory_AverageValue = "平均";
-CoopHistory_RequirediOS16 = "您必須更新到iOS 16或更高版本才能使用此功能";
-CoopHistory_RequiredSignIn = "登錄 Nintendo 帳戶才能使用此應用程式";
-CoopHistory_RestoreSuccess = "成功還原結果";
-CoopHistory_RestoreFailure = "還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。";
-CoopHistory_DeveloperAnswer = "開發者的回應";
-CoopHistory_MinimumVersion = "無法恢復以不支援的版本備份的結果";
-CoopHistory_InvalidSignature = "由於備份簽名不匹配，無法恢復。結果可能已被篡改";
-CoopHistory_SystemTheme = "取決於設備設置";
-CoopHistory_License = "許可證";
+/// 鐵球魚
+"SakeArtillery" = "鐵球魚";
+/// 泥鮭魚
+"SakeBigMouth" = "泥鮭魚";
+/// 泥鮭魚
+"SakeBigMouthGold" = "泥鮭魚";
+/// 直升機鮭魚
+"SakeCopter" = "直升機鮭魚";
+/// 潛水魚
+"SakeDolphin" = "潛水魚";
+/// 拾蛋魚
+"SakeFlyBagman" = "拾蛋魚";
+/// 柱魚
+"SakePillar" = "柱魚";
+/// 辰龍
+"SakeRope" = "辰龍";
+/// 鍋蓋魚
+"SakeSaucer" = "鍋蓋魚";
+/// 鼴鼠魚
+"Sakediver" = "鼴鼠魚";
+/// 烤架魚
+"Sakedozer" = "烤架魚";
+/// 炸彈魚
+"SakelienBomber" = "炸彈魚";
+/// 墊肩飛魚
+"SakelienCupTwins" = "墊肩飛魚";
+/// 橫綱
+"SakelienGiant" = "橫綱";
+/// 金鮭魚
+"SakelienGolden" = "金鮭魚";
+/// 大胖魚
+"SakelienLarge" = "大胖魚";
+/// 鐵板魚
+"SakelienShield" = "鐵板魚";
+/// 小鮭魚
+"SakelienSmall" = "小鮭魚";
+/// 蛇魚
+"SakelienSnake" = "蛇魚";
+/// 鮭魚
+"SakelienStandard" = "鮭魚";
+/// 高塔魚
+"SakelienTower" = "高塔魚";
+/// 蝙蝠魚
+"Sakerocket" = "蝙蝠魚";
+/// 新手
+"Grade00" = "新手";
+/// 半吊子
+"Grade01" = "半吊子";
+/// 獨當一面
+"Grade02" = "獨當一面";
+/// 熟練
+"Grade03" = "熟練";
+/// 達人
+"Grade04" = "達人";
+/// 達人+1
+"Grade05" = "達人+1";
+/// 達人+2
+"Grade06" = "達人+2";
+/// 達人+3
+"Grade07" = "達人+3";
+/// 傳說
+"Grade08" = "傳說";
+/// 新手 打工仔
+"GradeArbeiter00" = "新手 打工仔";
+/// 半吊子 打工仔
+"GradeArbeiter01" = "半吊子 打工仔";
+/// 獨當一面 打工仔
+"GradeArbeiter02" = "獨當一面 打工仔";
+/// 熟練 打工仔
+"GradeArbeiter03" = "熟練 打工仔";
+/// 達人 打工仔
+"GradeArbeiter04" = "達人 打工仔";
+/// 達人+1 打工仔
+"GradeArbeiter05" = "達人+1 打工仔";
+/// 達人+2 打工仔
+"GradeArbeiter06" = "達人+2 打工仔";
+/// 達人+3 打工仔
+"GradeArbeiter07" = "達人+3 打工仔";
+/// 傳說 打工仔
+"GradeArbeiter08" = "傳說 打工仔";
+/// 打工連身工作服 橘色
+"COP001" = "打工連身工作服 橘色";
+/// 打工連身工作服 綠色
+"COP002" = "打工連身工作服 綠色";
+/// 打工連身工作服 黃色
+"COP003" = "打工連身工作服 黃色";
+/// 打工連身工作服 粉紅色
+"COP004" = "打工連身工作服 粉紅色";
+/// 打工連身工作服 藍色
+"COP005" = "打工連身工作服 藍色";
+/// 打工連身工作服 黑色
+"COP006" = "打工連身工作服 黑色";
+/// 打工連身工作服 白色
+"COP007" = "打工連身工作服 白色";
+/// 打工防水衣 橘色
+"COP008" = "打工防水衣 橘色";
+/// 打工防水衣 黑色
+"COP009" = "打工防水衣 黑色";
+/// 打工防水衣 黃色
+"COP010" = "打工防水衣 黃色";
+/// 打工防水衣 棕色
+"COP011" = "打工防水衣 棕色";
+/// 醋飯海洋世界
+"Carousel" = "醋飯海洋世界";
+/// 麥年海洋發電所
+"Shakedent" = "麥年海洋發電所";
+/// 生筋子系統交流道遺址
+"Shakehighway" = "生筋子系統交流道遺址";
+/// 漂浮落難船
+"Shakeship" = "漂浮落難船";
+/// 新卷堡
+"Shakespiral" = "新卷堡";
+/// 鮭壩
+"Shakeup" = "鮭壩";
+/// 竹蟶疏洪道
+"Temple" = "竹蟶疏洪道";
+/// 新卷堡
+"Tutorial" = "新卷堡";
+/// ？？？
+"Unknown" = "？？？";
+/// 海女美術大學
+"Upland" = "海女美術大學";
+/// 取消
+"CommonCancel" = "取消";
+/// 真格蛤蜊
+"CommonClamBlitz" = "真格蛤蜊";
+/// 關閉
+"CommonClose" = "關閉";
+/// 大型跑
+"CommonCoopBigRun" = "大型跑";
+/// 團隊打工競賽
+"CommonCoopTeamContest" = "團隊打工競賽";
+/// QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"CommonCopyrightQrCode" = "QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// 確定
+"CommonDecide" = "確定";
+/// 下載
+"CommonDownload" = "下載";
+/// 結束
+"CommonEnd" = "結束";
+/// 問號
+"CommonGearPowerBlank" = "問號";
+/// 主頁
+"CommonHome" = "主頁";
+/// 魷魚圈 3
+"CommonIkaring3" = "魷魚圈 3";
+/// 載入中
+"CommonNowLoading" = "載入中";
+/// 下拉更新
+"CommonPullToRefresh" = "下拉更新";
+/// 真格魚虎對戰
+"CommonRainmaker" = "真格魚虎對戰";
+/// 分享
+"CommonShare" = "分享";
+/// 真格區域
+"CommonSplatZones" = "真格區域";
+/// 真格塔樓
+"CommonTowerControl" = "真格塔樓";
+/// 三色奪寶攻擊
+"CommonTricolor" = "三色奪寶攻擊";
+/// 三色奪寶比賽
+"CommonTricolorMatch" = "三色奪寶比賽";
+/// 占地對戰
+"CommonTurfWar" = "占地對戰";
+/// 問號
+"CommonWpnNotfound" = "問號";
+/// 出現數
+"CoopHistoryAvailable" = "出現數";
+/// 已出現的頭目鮭魚
+"CoopHistoryAvailableBoss" = "已出現的頭目鮭魚";
+/// 平均完成WAVE數
+"CoopHistoryAverageClearWaves" = "平均完成WAVE數";
+/// 大型跑
+"CoopHistoryBigrun" = "大型跑";
+/// 完成獎勵
+"CoopHistoryBonus" = "完成獎勵";
+/// 頭目鮭魚出現！
+"CoopHistoryBossAvailable" = "頭目鮭魚出現！";
+/// Clear!!
+"CoopHistoryClear" = "Clear!!";
+/// 危險度
+"CoopHistoryDangerRatio" = "危險度";
+/// 擊倒頭目鮭魚！
+"CoopHistoryDefeatBoss" = "擊倒頭目鮭魚！";
+/// 已擊倒的頭目鮭魚
+"CoopHistoryDefeatBossCount" = "已擊倒的頭目鮭魚";
+/// 成功擊倒！
+"CoopHistoryDefeated" = "成功擊倒！";
+/// 已擊倒的巨大鮭魚
+"CoopHistoryDefeatedEnemies" = "已擊倒的巨大鮭魚";
+/// ※括號內的數字為自己擊倒的數量
+"CoopHistoryDefeatedEnemiesGuide" = "※括號內的數字為自己擊倒的數量";
+/// 已收集的鮭魚卵
+"CoopHistoryDeliverCount" = "已收集的鮭魚卵";
+/// 巨大鮭魚
+"CoopHistoryEnemy" = "巨大鮭魚";
+/// EX-WAVE
+"CoopHistoryExWave" = "EX-WAVE";
+/// Failure
+"CoopHistoryFailure" = "Failure";
+/// GJ！
+"CoopHistoryGj" = "GJ！";
+/// 返回打工記錄一覽
+"CoopHistoryGoToStats" = "返回打工記錄一覽";
+/// 已收集的金鮭魚卵
+"CoopHistoryGoldenDeliverCount" = "已收集的金鮭魚卵";
+/// 最高分數
+"CoopHistoryHighestScore" = "最高分數";
+/// 打工記錄
+"CoopHistoryHistory" = "打工記錄";
+/// 獲得點數
+"CoopHistoryJobPoint" = "獲得點數";
+/// 評價倍率
+"CoopHistoryJobRatio" = "評價倍率";
+/// 熊先生集點卡
+"CoopHistoryKumaPointCard" = "熊先生集點卡";
+/// 前往最新打工
+"CoopHistoryLatest" = "前往最新打工";
+/// 現有的期間限定點數
+"CoopHistoryLimitedPoint" = "現有的期間限定點數";
+/// 本月的裝備
+"CoopHistoryMonthlyReward" = "本月的裝備";
+/// 下一場打工
+"CoopHistoryNext" = "下一場打工";
+/// NG
+"CoopHistoryNg" = "NG";
+/// 沒有打工記錄
+"CoopHistoryNoData" = "沒有打工記錄";
+/// 無法顯示打工記錄
+"CoopHistoryNotAvailable" = "無法顯示打工記錄";
+/// 可瀏覽的打工記錄僅限最新的50戰
+"CoopHistoryNotAvailableDescription" = "可瀏覽的打工記錄僅限最新的50戰";
+/// 擊倒失敗……
+"CoopHistoryNotDefeated" = "擊倒失敗……";
+/// 打工次數
+"CoopHistoryPlayCount" = "打工次數";
+/// 上一場打工
+"CoopHistoryPrevious" = "上一場打工";
+/// 私人
+"CoopHistoryPrivate" = "私人";
+/// 招募員工
+"CoopHistoryRecruit" = "招募員工";
+/// 簡單
+"CoopHistoryRecruitTag1" = "簡單";
+/// 收集鮭魚卵
+"CoopHistoryRecruitTag2" = "收集鮭魚卵";
+/// ～穿上超魷型的制服收集鮭魚卵～
+"CoopHistoryRecruitTitle" = "～穿上超魷型的制服收集鮭魚卵～";
+/// 一般打工
+"CoopHistoryRegular" = "一般打工";
+/// 現有點數
+"CoopHistoryRegularPoint" = "現有點數";
+/// 救援次數
+"CoopHistoryRescueCount" = "救援次數";
+/// 被救助的次數
+"CoopHistoryRescuedCount" = "被救助的次數";
+/// 鱗片
+"CoopHistoryScale" = "鱗片";
+/// 銅鱗片
+"CoopHistoryScaleBronze" = "銅鱗片";
+/// 金鱗片
+"CoopHistoryScaleGold" = "金鱗片";
+/// 銀鱗片
+"CoopHistoryScaleSilver" = "銀鱗片";
+/// 打工分數
+"CoopHistoryScore" = "打工分數";
+/// 查看時間表
+"CoopHistorySeeSchedule" = "查看時間表";
+/// 頭目槽
+"CoopHistorySmellMeter" = "頭目槽";
+/// 派發武器
+"CoopHistorySupplyWeapon" = "派發武器";
+/// 團隊打工競賽
+"CoopHistoryTeamContest" = "團隊打工競賽";
+/// SALMON RUN
+"CoopHistoryTitle" = "SALMON RUN";
+/// 累計點數
+"CoopHistoryTotalPoint" = "累計點數";
+/// WAVE
+"CoopHistoryWave" = "WAVE";
+/// 乾潮
+"CoopHistoryWaveLevel0" = "乾潮";
+/// 普通
+"CoopHistoryWaveLevel1" = "普通";
+/// 滿潮
+"CoopHistoryWaveLevel2" = "滿潮";
+/// 返回主頁
+"ErrorBackToHome" = "返回主頁";
+/// 目前無法使用，請稍待片刻。
+"ErrorCurrentlyNotAvailable" = "目前無法使用，請稍待片刻。";
+/// 錯誤
+"ErrorError" = "錯誤";
+/// 發生錯誤。
+"ErrorErrorOccurred" = "發生錯誤。";
+/// 讀取失敗。
+"ErrorErrorReopen" = "讀取失敗。";
+/// 目前伺服器正在維護中，請稍後再重新連接。
+"ErrorMaintenanceDescription" = "目前伺服器正在維護中，請稍後再重新連接。";
+/// 請稍待片刻
+"ErrorMaintenanceTitle" = "請稍待片刻";
+/// 讀取失敗，請在良好的網路環境下重新再試一次。
+"ErrorNetworkNotAvailable" = "讀取失敗，請在良好的網路環境下重新再試一次。";
+/// 重新讀取
+"ErrorReload" = "重新讀取";
+/// 最後遊玩時間
+"RecordLatestPlayed" = "最後遊玩時間";
+/// 常用武器
+"RecordLatestUsed" = "常用武器";
+/// 主要武器
+"RecordMain" = "主要武器";
+/// 離熟練度提升仍需
+"RecordNextSkillLevel" = "離熟練度提升仍需";
+/// 熟練度
+"RecordSkillLevel" = "熟練度";
+/// 排序
+"RecordSort" = "排序";
+/// 特殊武器
+"RecordSpecial" = "特殊武器";
+/// 場地記錄
+"RecordStageRecord" = "場地記錄";
+/// 場地
+"RecordStageRecordAppName" = "場地";
+/// 次要武器
+"RecordSub" = "次要武器";
+/// 記錄
+"RecordTitle" = "記錄";
+/// 塗墨點數
+"RecordTurfPoint" = "塗墨點數";
+/// 未遊玩的場地
+"RecordUnplayedStages" = "未遊玩的場地";
+/// 未持有的武器
+"RecordUnusedWeapons" = "未持有的武器";
+/// 狀態值
+"RecordVibes" = "狀態值";
+/// 武器記錄
+"RecordWeaponRecord" = "武器記錄";
+/// 武器
+"RecordWeaponRecordAppName" = "武器";
+/// 獲勝數
+"RecordWinCount" = "獲勝數";
+/// 著作權聲明
+"SettingsAcknowledgements" = "著作權聲明";
+/// 設定
+"SettingsAppName" = "設定";
+/// 工作人員
+"SettingsCredits" = "工作人員";
+/// 前往擴充票購買網站
+"SettingsExpansionPass" = "前往擴充票購買網站";
+/// 設定
+"SettingsTitle" = "設定";
+/// 蠻頹比賽
+"StageScheduleBankara" = "蠻頹比賽";
+/// 開放
+"StageScheduleBankaraOpen" = "開放";
+/// 挑戰
+"StageScheduleBankaraOpenChallenge" = "挑戰";
+/// SALMON RUN
+"StageScheduleCoop" = "SALMON RUN";
+/// NOW OPEN！
+"StageScheduleCoopCurrentPeriodStart" = "NOW OPEN！";
+/// 活動比賽
+"StageScheduleEvent" = "活動比賽";
+/// 現在
+"StageScheduleEventCurrentSchedule" = "現在";
+/// 下下次
+"StageScheduleEventFuture" = "下下次";
+/// 舉行中！！
+"StageScheduleEventHolding" = "舉行中！！";
+/// 下次
+"StageScheduleEventNext" = "下次";
+/// 下一場
+"StageScheduleEventNextSchedule" = "下一場";
+/// 時間表未定
+"StageScheduleEventNoData" = "時間表未定";
+/// ？？？？？
+"StageScheduleEventUnknownData" = "？？？？？";
+/// 活動舉行！
+"StageScheduleEventmatch" = "活動舉行！";
+/// 下下次
+"StageScheduleFuture" = "下下次";
+/// 將開啟網路瀏覽器
+"StageScheduleGuideOpenBrowser" = "將開啟網路瀏覽器";
+/// 下次
+"StageScheduleNext" = "下次";
+/// 大型跑接近中！
+"StageScheduleNoticeBigrun" = "大型跑接近中！";
+/// 團隊打工競賽舉行預告！
+"StageScheduleNoticeLimited" = "團隊打工競賽舉行預告！";
+/// 祭典比賽舉行中！
+"StageScheduleNowClosed" = "祭典比賽舉行中！";
+/// 開放！
+"StageScheduleOpen" = "開放！";
+/// 大型跑發生中！
+"StageScheduleOpenBigrun" = "大型跑發生中！";
+/// 團隊打工競賽舉行中！
+"StageScheduleOpenLimited" = "團隊打工競賽舉行中！";
+/// 私人比賽
+"StageSchedulePrivate" = "私人比賽";
+/// 大型跑要來了！！打工大招募
+"StageScheduleRecruit" = "大型跑要來了！！打工大招募";
+/// 團隊打工競賽！大家一起組隊參加吧！
+"StageScheduleRecruitTeamContest" = "團隊打工競賽！大家一起組隊參加吧！";
+/// 一般比賽
+"StageScheduleRegular" = "一般比賽";
+/// 查看規則
+"StageScheduleRules" = "查看規則";
+/// 請從此處確認詳細規則
+"StageScheduleSeeAllRules" = "請從此處確認詳細規則";
+/// 隨機
+"StageScheduleSuppliedWeaponRandom" = "隨機";
+/// 派發武器
+"StageScheduleSuppliedWeapons" = "派發武器";
+/// 時間表
+"StageScheduleTitle" = "時間表";
+/// 個別規則勝率
+"StageScheduleWinRateByRules" = "個別規則勝率";
+/// X比賽
+"StageScheduleXmatch" = "X比賽";
+/// 關於
+"CommonAbout" = "關於";
+/// 實際的
+"RecordActualValue" = "實際的";
+/// 外觀
+"CommonAppearances" = "外觀";
+/// 應用程式
+"CommonApplication" = "應用程式";
+/// 平均
+"RecordAverageScore" = "平均";
+/// 備份
+"CommonBackupResults" = "備份";
+/// 壓縮（ZIP）
+"CommonBackupCompress" = "壓縮（ZIP）";
+/// 備份資料庫
+"CommonBackupMessage" = "備份資料庫";
+/// 純文字（JSON）
+"CommonBackupPlain" = "純文字（JSON）";
+/// 信用
+"CommonAppCredit" = "信用";
+/// 暗色模式
+"CommonDarkMode" = "暗色模式";
+/// 資料管理
+"CommonDataManagement" = "資料管理";
+/// 救援計數
+"CoopHistoryDeathCount" = "救援計數";
+/// 擊敗計數
+"CoopHistoryDefeatedCount" = "擊敗計數";
+/// 預估
+"CoopHistoryEstimatedValue" = "預估";
+/// 清除比率
+"CoopHistoryEventClearRatio" = "清除比率";
+/// 事件頻率
+"CoopHistoryEventFrequency" = "事件頻率";
+/// 常見問題
+"CommonFAQ" = "常見問題";
+/// 遊戲模式
+"CommonGamingMode" = "遊戲模式";
+/// 成績
+"CoopHistoryGradeId" = "成績";
+/// 成績點數
+"CoopHistoryGradePoint" = "成績點數";
+/// 最高的
+"CoopHistoryHighestRecord" = "最高的";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// 無效的
+"CommonInvalid" = "無效的";
+/// 語言
+"CommonLanguages" = "語言";
+/// 傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。
+"CommonShareLogMessage" = "傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。";
+/// 分享日誌
+"CommonShareLog" = "分享日誌";
+/// 日誌文件
+"CommonLogSize" = "日誌文件";
+/// 我的頁面
+"CommonMyPage" = "我的頁面";
+/// 組
+"CoopHistoryPlayerCrew" = "組";
+/// 您
+"CoopHistoryPlayerYou" = "您";
+/// 隱私政策
+"CommonPrivacyPolicy" = "隱私政策";
+/// 表格
+"CommonRequestForm" = "表格";
+/// 錯誤
+"CommonRequestFormBug" = "錯誤";
+/// 內容
+"CommonRequestFormContent" = "內容";
+/// 增強
+"CommonRequestFormEnhancement" = "增強";
+/// 功能
+"CommonRequestFormFeature" = "功能";
+/// 標題
+"CommonRequestFormTitle" = "標題";
+/// 類型
+"CommonRequestFormType" = "類型";
+/// 提交
+"CommonRequsetFormSubmit" = "提交";
+/// 還原
+"CommonRestore" = "還原";
+/// 在「檔案」應用程式中選擇要還原的檔案。
+"CommonRestoreMessage" = "在「檔案」應用程式中選擇要還原的檔案。";
+/// 結果計數
+"CoopHistoryResultsCount" = "結果計數";
+/// 除錯
+"CommonRoleDebuger" = "除錯";
+/// 開發者
+"CommonRoleDeveloper" = "開發者";
+/// 測試者
+"CommonRoleTester" = "測試者";
+/// 翻譯者
+"CommonRoleTranslator" = "翻譯者";
+/// 儲存成功
+"CommonSaveToPhotoLibrary" = "儲存成功";
+/// 同步排程
+"CommonScheduleSync" = "同步排程";
+/// 從伺服器檢索排程。
+"CommonScheduleSyncMessage" = "從伺服器檢索排程。";
+/// 登入
+"CommonSignIn" = "登入";
+/// 登出
+"CommonSignOut" = "登出";
+/// 登出成功
+"CommonSignOutSuccessfully" = "登出成功";
+/// 取消連結任天堂Switch帳戶。
+"CommonSignOutMessage" = "取消連結任天堂Switch帳戶。";
+/// 原始碼
+"CommonSourceCode" = "原始碼";
+/// 供應比率
+"CoopHistorySuppliedRatio" = "供應比率";
+/// 需要應用程式更新
+"CommonUpdateRequired" = "需要應用程式更新";
+/// 使用者資料
+"CommonUserData" = "使用者資料";
+/// 有效的
+"CommonValid" = "有效的";
+/// 版本
+"CommonAppVersion" = "版本";
+/// 清除日誌
+"CommonWipeLog" = "清除日誌";
+/// 清除所有日誌。
+"CommonWipeLogMessage" = "清除所有日誌。";
+/// 清除結果
+"CommonWipeResults" = "清除結果";
+/// 清除所有資料。
+"CommonWipeResultsMessage" = "清除所有資料。";
+/// 撰寫評論
+"CommonWriteReview" = "撰寫評論";
+/// 整體
+"CoopHistoryOverallRecord" = "整體";
+/// 金蛋
+"CommonGoldenEggs" = "金蛋";
+/// 能量蛋
+"CommonPowerEggs" = "能量蛋";
+/// 概述
+"CommonOverview" = "概述";
+/// zh-TW
+"CommonLocale" = "zh-TW";
+/// 2
+"CommonLanguageCode" = "2";
+/// 資料庫
+"CommonDatabase" = "資料庫";
+/// X-ProductVersion
+"CommonXProductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXWebViewVer" = "X-WebViewVer";
+/// 上傳
+"CommonUpload" = "上傳";
+/// 開發者
+"CommonCreditDevelop" = "開發者";
+/// 測試者
+"CommonCreditTest" = "測試者";
+/// UI/UX設計
+"CommonCreditDesign" = "UI/UX設計";
+/// 團隊點數卡
+"CoopHistoryTeamPointCard" = "團隊點數卡";
+/// 使用預估值
+"CoopHistoryUseEstimatedValue" = "使用預估值";
+/// 使用 Safari 的身份驗證
+"CommonUseSecureSession" = "使用 Safari 的身份驗證";
+/// 獎勵
+"CommonCheckInReward" = "獎勵";
+/// 掃描QR碼獲取所有獎勵。
+"CommonGetCheckInReward" = "掃描QR碼獲取所有獎勵。";
+/// 團隊
+"CoopHistoryTeamResult" = "團隊";
+/// 您
+"CoopHistoryPlayerResult" = "您";
+/// 船員的平均數
+"CoopHistoryCrewAvgResult" = "船員的平均數";
+/// 船員
+"CoopHistoryCrewResult" = "船員";
+/// 海浪
+"CoopHistoryWaveResult" = "海浪";
+/// 最高
+"CoopRecordHighestScore" = "最高";
+/// 平均
+"CoopRecordAverageScore" = "平均";
+/// 您必須更新到iOS 16或更高版本才能使用此功能
+"CommonRequirediOS16" = "您必須更新到iOS 16或更高版本才能使用此功能";
+/// 登錄 Nintendo 帳戶才能使用此應用程式
+"CommonRequiredSignIn" = "登錄 Nintendo 帳戶才能使用此應用程式";
+/// 成功還原結果
+"CommonRestoreSuccessMessage" = "成功還原結果";
+/// 還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。
+"CommonRestoreFailureMessage" = "還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。";
+/// 結果
+"CommonResultsCount" = "結果";
+/// 開發者的回應
+"CommonDeveloperAnswer" = "開發者的回應";
+/// 無法恢復以不支援的版本備份的結果
+"CommonMinimumVersion" = "無法恢復以不支援的版本備份的結果";
+/// 由於備份簽名不匹配，無法恢復。結果可能已被篡改
+"ErrorInvalidSignature" = "由於備份簽名不匹配，無法恢復。結果可能已被篡改";
+/// 取決於設備設置
+"CommonUseSystemTheme" = "取決於設備設置";
+/// 許可證
+"CommonLicense" = "許可證";

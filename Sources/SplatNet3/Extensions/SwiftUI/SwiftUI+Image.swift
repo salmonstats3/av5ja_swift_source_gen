@@ -57,6 +57,7 @@ public struct SPImage: View {
 }
 
 public extension Image {
+    /// URLから初期化
     init(url: URL?) {
         if let url: URL,
            let data: Data = try? Data(contentsOf: url),
@@ -65,18 +66,5 @@ public extension Image {
         } else {
             self.init(uiImage: UIImage())
         }
-    }
-
-    init(_ value: CoopStageId) {
-        self.init("", bundle: .module)
-    }
-
-    init(_ value: CoopStageId, size: ImageSize = .Regular) {
-        let namespace: String = size == .Regular ? "CoopStage" : "CoopStageHeader"
-        self.init("\(namespace)/\(value.rawValue)", bundle: .module)
-    }
-
-    init(_ value: ScaleType) {
-        self.init("Scale/\(value.rawValue)", bundle: .module)
     }
 }
