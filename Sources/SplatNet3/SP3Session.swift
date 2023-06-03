@@ -199,10 +199,10 @@ open class SP3Session: Session {
 //            /// 一般的なアセットの取得
 //            try await getCoopAssetsFromSplatNet3()
 //            /// 通常ブキ画像
-//            let weaponURLs: [SPAssetType<WeaponId>] = try await request(WeaponRecordQuery()).assets.weapons
+//            let weaponURLs: [SPAssetType<WeaponInfoMainId>] = try await request(WeaponRecordQuery()).assets.weapons
 //            try await getAssetsFromSplatNet3(assetURLs: weaponURLs)
 //            /// スペシャル画像
-//            let specialURLs: [SPAssetType<SpecialId>] = try await request(WeaponRecordQuery()).assets.specials
+//            let specialURLs: [SPAssetType<WeaponInfoSpecialId>] = try await request(WeaponRecordQuery()).assets.specials
 //            try await getAssetsFromSplatNet3(assetURLs: specialURLs)
 //            /// ステージ画像
 //            let stageURLs: [SPAssetType<CoopStageId>] = (try await request(StageScheduleQuery()).assets) + (try await request(CoopRecordQuery()).assets)

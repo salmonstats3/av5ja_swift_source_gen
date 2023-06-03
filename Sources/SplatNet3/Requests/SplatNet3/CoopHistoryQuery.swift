@@ -40,13 +40,13 @@ public final class CoopHistoryQuery: GraphQL {
         public let regularAverageClearWave: Decimal
         public let regularGrade: GradeType
         public let regularGradePoint: Int
-        public let monthlyGear: GearType
+//        public let monthlyGear: GearType
         public let scale: CoopHistory.Scale
         public let pointCard: PointCard
         public let historyGroups: Common.Node<HistoryGroup>
 
-        var weaponURLs: [SPAssetType<WeaponId>] {
-            historyGroups.nodes.flatMap({ $0.historyDetails.nodes.flatMap({ $0.weapons.map({ SPAssetType(key: $0.image.hash.asWeaponId(), url: $0.image.url) }) }) })
+        var weaponURLs: [SPAssetType<WeaponInfoMainId>] {
+            historyGroups.nodes.flatMap({ $0.historyDetails.nodes.flatMap({ $0.weapons.map({ SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) }) }) })
         }
     }
 

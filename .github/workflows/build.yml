@@ -16,8 +16,6 @@ jobs:
     # Select Xcode version
     - name: Show Xcode version
       run: xcodebuild -version
-    - name: Select Xcode version
-      run: sudo xcode-select -s '/Applications/Xcode_14.0.1.app/Contents/Developer'
     - name: Cache Swift Packages
       uses: actions/cache@v1
       with:
@@ -60,8 +58,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ steps.web_version.outputs.text }}
+          release_name: ${{ github.ref }}
+          tag_name: ${{ steps.web_version.outputs.text }}
           body: ""
           draft: false
           prerelease: false

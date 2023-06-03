@@ -7,8 +7,9 @@
 
 import Foundation
 
-public enum ScaleType: Int, CaseIterable, Codable, Identifiable {
+public enum ScaleType: Int, UnsafeRawRepresentable {
     public var id: Int { rawValue }
+    public static var defaultValue: ScaleType = .BRONZE
 
     case BRONZE = 0
     case SILVER = 1

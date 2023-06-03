@@ -9,10 +9,10 @@ import Foundation
 
 extension Locale {
     static var languageSP3Code: LocaleType {
-        LocaleType(rawValue: NSLocalizedString(LocalizedType.CommonLocaleLang.rawValue, bundle: .module, comment: "")) ?? .JP
+        LocaleType(rawValue: NSLocalizedString(LocalizedType.CommonLanguageCode.rawValue, bundle: .module, comment: "")) ?? .JP
     }
 
     public static var languageSP3Locale: String {
-        NSLocalizedString(LocalizedType.CommonLocaleLang.rawValue, bundle: .module, comment: "")
+        NSLocalizedString(LocalizedType.CommonLocale.rawValue, bundle: .module, comment: "")
     }
 }

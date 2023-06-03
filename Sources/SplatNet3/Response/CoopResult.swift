@@ -11,7 +11,7 @@ public struct CoopResult: Codable {
     public let id: Common.ResultId
     public let scale: [Int?]
     @NullCodable public var jobScore: Int?
-    @NullCodable public var gradeId: GradeId?
+    @NullCodable public var gradeId: CoopGradeId?
     @NullCodable public var kumaPoint: Int?
     public let waveDetails: [WaveResult]
     public let jobResult: JobResult
@@ -30,15 +30,15 @@ public struct CoopResult: Codable {
     public let ikuraNum: Int
     @NullCodable public var smellMeter: Int?
     @NullCodable public var scenarioCode: String?
-    let enemyURLs: [SPAssetType<EnemyId>]
-    let weaponURLs: [SPAssetType<WeaponId>]
+    let enemyURLs: [SPAssetType<CoopEnemyInfoId>]
+    let weaponURLs: [SPAssetType<WeaponInfoMainId>]
 
     public struct Schedule: Codable, Hashable {
         public let startTime: Date?
         public let endTime: Date?
         public let mode: ModeType
         public let rule: RuleType
-        public let weaponList: [WeaponId]
+        public let weaponList: [WeaponInfoMainId]
         public let stageId: CoopStageId
 
         init(schedule: CoopHistoryQuery.CoopSchedule, content: CoopHistoryDetailQuery.CoopHistoryDetail) {
@@ -46,7 +46,7 @@ public struct CoopResult: Codable {
             self.endTime = schedule.endTime
             self.mode = schedule.mode
             self.rule = schedule.rule
-            self.weaponList = content.weapons.map({ $0.image.hash.asWeaponId() })
+            self.weaponList = content.weapons.map({ WeaponInfoMainId(key: $0.image.hash) })
             self.stageId = content.coopStage.id
         }
 
@@ -74,7 +74,7 @@ public struct CoopResult: Codable {
             endTime: Date? = nil,
             mode: ModeType,
             rule: RuleType,
-            weaponList: [WeaponId],
+            weaponList: [WeaponInfoMainId],
             stageId: CoopStageId
         ) {
             self.startTime = startTime
@@ -99,18 +99,18 @@ public struct CoopResult: Codable {
         public let ikuraNum: Int
         public let deadCount: Int
         public let helpCount: Int
-        public let weaponList: [WeaponId]
-        @NullCodable public var specialId: SpecialId?
+        public let weaponList: [WeaponInfoMainId]
+        @NullCodable public var specialId: WeaponInfoSpecialId?
         public let specialCounts: [Int]
         public let bossKillCounts: [Int]
         public let bossKillCountsTotal: Int
-        public let uniform: SkinInfoId
+        public let uniform: CoopSkinInfoId
         public let species: SpeciesType
 
         init(
             content: CoopHistoryDetailQuery.MemberResult,
             results: [CoopHistoryDetailQuery.EnemyResult],
-            specialCounts: [[SpecialId]],
+            specialCounts: [[WeaponInfoSpecialId]],
             isMyself: Bool
         ) {
             self.id = content.player.id.description
@@ -131,7 +131,7 @@ public struct CoopResult: Codable {
             self.ikuraNum = content.deliverCount
             self.deadCount = content.rescuedCount
             self.helpCount = content.rescueCount
-            self.weaponList = content.weapons.map({ $0.image.hash.asWeaponId() })
+            self.weaponList = content.weapons.map({ WeaponInfoMainId(key: $0.image.hash) })
             self.specialId = content.specialWeapon?.weaponId
             self.specialCounts = specialCounts.map({ $0.filter({ $0 == content.specialWeapon?.weaponId }).count })
             self.bossKillCounts = isMyself ? results.bossKillCounts() : Array(repeating: -1, count: 14)
@@ -153,12 +153,12 @@ public struct CoopResult: Codable {
             ikuraNum: Int,
             deadCount: Int,
             helpCount: Int,
-            weaponList: [WeaponId],
-            specialId: SpecialId? = nil,
+            weaponList: [WeaponInfoMainId],
+            specialId: WeaponInfoSpecialId? = nil,
             specialCounts: [Int],
             bossKillCounts: [Int],
             bossKillCountsTotal: Int,
-            uniform: SkinInfoId,
+            uniform: CoopSkinInfoId,
             species: SpeciesType
         ) {
             self.id = id
@@ -186,8 +186,8 @@ public struct CoopResult: Codable {
     public struct WaveResult: Codable, Identifiable {
         public let id: Int
         public let isClear: Bool
-        public let waterLevel: WaterLevelId
-        public let eventType: EventId
+        public let waterLevel: CoopWaterLevelId
+        public let eventType: CoopEventId
         @NullCodable public var goldenIkuraNum: Int?
         @NullCodable public var quotaNum: Int?
         public let goldenIkuraPopNum: Int
@@ -204,7 +204,7 @@ public struct CoopResult: Codable {
                 return !(content.waveNumber == resultWave)
             }()
             self.waterLevel = content.waterLevel
-            self.eventType = content.eventWave?.id ?? .Water_Levels
+            self.eventType = content.eventWave?.id ?? .WaterLevels
             self.goldenIkuraNum = content.teamDeliverCount
             self.quotaNum = content.deliverNorm
             self.goldenIkuraPopNum = content.goldenPopCount
@@ -213,8 +213,8 @@ public struct CoopResult: Codable {
         public init(
             id: Int,
             isClear: Bool,
-            waterLevel: WaterLevelId,
-            eventType: EventId,
+            waterLevel: CoopWaterLevelId,
+            eventType: CoopEventId,
             goldenIkuraNum: Int? = nil,
             quotaNum: Int? = nil,
             goldenIkuraPopNum: Int
@@ -233,7 +233,7 @@ public struct CoopResult: Codable {
         public let isClear: Bool
         @NullCodable public var failureWave: Int?
         @NullCodable public var isBossDefeated: Bool?
-        @NullCodable public var bossId: EnemyId?
+        @NullCodable public var bossId: CoopEnemyInfoId?
 
         init(content: CoopHistoryDetailQuery.CoopHistoryDetail) {
             self.isClear = content.resultWave == 0
@@ -246,7 +246,7 @@ public struct CoopResult: Codable {
             isClear: Bool,
             failureWave: Int? = nil,
             isBossDefeated: Bool? = nil,
-            bossId: EnemyId? = nil
+            bossId: CoopEnemyInfoId? = nil
         ) {
             self.isClear = isClear
             self.failureWave = failureWave
@@ -288,7 +288,7 @@ public struct CoopResult: Codable {
         self.kumaPoint = content.jobPoint
         self.waveDetails = content.waveResults.map({ WaveResult(content: $0, resultWave: content.resultWave, bossDefeated: content.bossResult?.hasDefeatBoss) })
         self.jobResult = JobResult(content: content)
-        let specialCounts: [[SpecialId]] = content.waveResults.map({ $0.specialWeapons.map({ $0.id }) })
+        let specialCounts: [[WeaponInfoSpecialId]] = content.waveResults.map({ $0.specialWeapons.map({ $0.id }) })
         self.myResult = PlayerResult(content: content.myResult, results: content.enemyResults, specialCounts: specialCounts, isMyself: true)
         self.otherResults = content.memberResults.map({ PlayerResult(content: $0, results: [], specialCounts: specialCounts, isMyself: false) })
         self.gradeId = content.afterGrade?.id
@@ -311,15 +311,15 @@ public struct CoopResult: Codable {
             self.enemyURLs = content.enemyResults.map({ SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) })
         }
         self.weaponURLs =
-        ([content.myResult] + content.memberResults).flatMap({ $0.weapons.map({ SPAssetType(key: $0.image.hash.asWeaponId(), url: $0.image.url) }) })
-        + content.weapons.map({ SPAssetType(key: $0.image.hash.asWeaponId(), url: $0.image.url) })
+        ([content.myResult] + content.memberResults).flatMap({ $0.weapons.map({ SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) }) })
+        + content.weapons.map({ SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) })
     }
 
     public init(
         id: Common.ResultId,
         scale: [Int?],
         jobScore: Int? = nil,
-        gradeId: GradeId? = nil,
+        gradeId: CoopGradeId? = nil,
         kumaPoint: Int? = nil,
         waveDetails: [CoopResult.WaveResult],
         jobResult: CoopResult.JobResult,
@@ -368,19 +368,19 @@ public struct CoopResult: Codable {
 
 extension Collection where Element == CoopHistoryDetailQuery.EnemyResult {
     func bossKillCounts() -> [Int] {
-        EnemyId.regular.compactMap({ element in
+        CoopEnemyInfoId.regular.compactMap({ element in
             self.first(where: { $0.enemy.id == element })?.defeatCount ?? .zero
         })
     }
 
     func teamBossKillCounts() -> [Int] {
-        EnemyId.regular.compactMap({ element in
+        CoopEnemyInfoId.regular.compactMap({ element in
             self.first(where: { $0.enemy.id == element })?.teamDefeatCount ?? .zero
         })
     }
 
     func bossCounts() -> [Int] {
-        EnemyId.regular.compactMap({ element in
+        CoopEnemyInfoId.regular.compactMap({ element in
             self.first(where: { $0.enemy.id == element })?.popCount ?? .zero
         })
     }

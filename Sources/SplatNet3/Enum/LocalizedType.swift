@@ -1,465 +1,507 @@
 //
 //  LocalizedType.swift
-//  SplatNet3
 //
-//  Created by tkgstrator on 2022/09/22
-//  Copyright © 2022 Magi, Corporation. All rights reserved.
+//  Created by tkgstrator on 2023/06/04
+//  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
 
-public enum LocalizedType: String, CaseIterable {
-	public var localized: String { NSLocalizedString(rawValue, bundle: .module, comment: "") }
-	/// テッキュウ
-	case CoopEnemySakeArtillery = "CoopEnemySakeArtillery"
-	/// ドロシャケ
-	case CoopEnemySakeBigMouth = "CoopEnemySakeBigMouth"
-	/// ドロシャケ
-	case CoopEnemySakeBigMouthGold = "CoopEnemySakeBigMouthGold"
-	/// シャケコプター
-	case CoopEnemySakeCopter = "CoopEnemySakeCopter"
-	/// ダイバー
-	case CoopEnemySakeDolphin = "CoopEnemySakeDolphin"
-	/// タマヒロイ
-	case CoopEnemySakeFlyBagman = "CoopEnemySakeFlyBagman"
-	/// ハシラ
-	case CoopEnemySakePillar = "CoopEnemySakePillar"
-	/// タツ
-	case CoopEnemySakeRope = "CoopEnemySakeRope"
-	/// ナベブタ
-	case CoopEnemySakeSaucer = "CoopEnemySakeSaucer"
-	/// モグラ
-	case CoopEnemySakediver = "CoopEnemySakediver"
-	/// グリル
-	case CoopEnemySakedozer = "CoopEnemySakedozer"
-	/// バクダン
-	case CoopEnemySakelienBomber = "CoopEnemySakelienBomber"
-	/// カタパッド
-	case CoopEnemySakelienCupTwins = "CoopEnemySakelienCupTwins"
-	/// ヨコヅナ
-	case CoopEnemySakelienGiant = "CoopEnemySakelienGiant"
-	/// キンシャケ
-	case CoopEnemySakelienGolden = "CoopEnemySakelienGolden"
-	/// ドスコイ
-	case CoopEnemySakelienLarge = "CoopEnemySakelienLarge"
-	/// テッパン
-	case CoopEnemySakelienShield = "CoopEnemySakelienShield"
-	/// コジャケ
-	case CoopEnemySakelienSmall = "CoopEnemySakelienSmall"
-	/// ヘビ
-	case CoopEnemySakelienSnake = "CoopEnemySakelienSnake"
-	/// シャケ
-	case CoopEnemySakelienStandard = "CoopEnemySakelienStandard"
-	/// タワー
-	case CoopEnemySakelienTower = "CoopEnemySakelienTower"
-	/// コウモリ
-	case CoopEnemySakerocket = "CoopEnemySakerocket"
-	/// かけだし
-	case CoopGrade00 = "CoopGrade00"
-	/// はんにんまえ
-	case CoopGrade01 = "CoopGrade01"
-	/// いちにんまえ
-	case CoopGrade02 = "CoopGrade02"
-	/// じゅくれん
-	case CoopGrade03 = "CoopGrade03"
-	/// たつじん
-	case CoopGrade04 = "CoopGrade04"
-	/// たつじん＋１
-	case CoopGrade05 = "CoopGrade05"
-	/// たつじん＋２
-	case CoopGrade06 = "CoopGrade06"
-	/// たつじん＋３
-	case CoopGrade07 = "CoopGrade07"
-	/// でんせつ
-	case CoopGrade08 = "CoopGrade08"
-	/// かけだし アルバイター
-	case CoopGradeArbeiter00 = "CoopGradeArbeiter00"
-	/// はんにんまえ アルバイター
-	case CoopGradeArbeiter01 = "CoopGradeArbeiter01"
-	/// いちにんまえ アルバイター
-	case CoopGradeArbeiter02 = "CoopGradeArbeiter02"
-	/// じゅくれん アルバイター
-	case CoopGradeArbeiter03 = "CoopGradeArbeiter03"
-	/// たつじん アルバイター
-	case CoopGradeArbeiter04 = "CoopGradeArbeiter04"
-	/// たつじん＋１ アルバイター
-	case CoopGradeArbeiter05 = "CoopGradeArbeiter05"
-	/// たつじん＋２ アルバイター
-	case CoopGradeArbeiter06 = "CoopGradeArbeiter06"
-	/// たつじん＋３ アルバイター
-	case CoopGradeArbeiter07 = "CoopGradeArbeiter07"
-	/// でんせつ アルバイター
-	case CoopGradeArbeiter08 = "CoopGradeArbeiter08"
-	/// スメーシーワールド
-	case CoopStageCarousel = "CoopStageCarousel"
-	/// ムニ・エール海洋発電所
-	case CoopStageShakedent = "CoopStageShakedent"
-	/// 難破船ドン・ブラコ
-	case CoopStageShakeship = "CoopStageShakeship"
-	/// アラマキ砦
-	case CoopStageShakespiral = "CoopStageShakespiral"
-	/// シェケナダム
-	case CoopStageShakeup = "CoopStageShakeup"
-	/// アラマキ砦
-	case CoopStageTutorial = "CoopStageTutorial"
-	/// ？？？
-	case CoopStageUnknown = "CoopStageUnknown"
-	/// 海女美術大学
-	case CoopStageUpland = "CoopStageUpland"
-	/// 0
-	case CommonLocaleLang = "CommonLocaleLang"
-	/// ja-JP
-	case CommonSplatNet3Locale = "CommonSplatNet3Locale"
-	/// 実測値
-	case CommonActualValue = "CommonActualValue"
-	/// Salmonia3+
-	case CommonAppSalmonia = "CommonAppSalmonia"
-	/// アプリを更新してください
-	case CommonAppUpdateRequired = "CommonAppUpdateRequired"
-	/// チャート
-	case CommonCharts = "CommonCharts"
-	/// クリア率
-	case CommonClearRatio = "CommonClearRatio"
-	/// この操作は取り消せません。続行して良いですか。
-	case CommonConfirmDanger = "CommonConfirmDanger"
-	/// カスタマイズ
-	case CommonCustomize = "CommonCustomize"
-	/// ダークモード
-	case CommonDarkMode = "CommonDarkMode"
-	/// データ管理
-	case CommonDataManagements = "CommonDataManagements"
-	/// 助けられた回数
-	case CommonDeathCount = "CommonDeathCount"
-	/// オオモノシャケ討伐率
-	case CommonDefeatedRatio = "CommonDefeatedRatio"
-	/// オオモノシャケを倒した数
-	case CommonDefeatedSakelienCount = "CommonDefeatedSakelienCount"
-	/// 推定値
-	case CommonEstimatedValue = "CommonEstimatedValue"
-	/// イベントクリア率
-	case CommonEventClearRatio = "CommonEventClearRatio"
-	/// イベント発生率
-	case CommonEventProbability = "CommonEventProbability"
-	/// ゲーミングモード
-	case CommonGamingMode = "CommonGamingMode"
-	/// スケジュール取得
-	case CommonGetSchedules = "CommonGetSchedules"
-	/// 過去のスケジュールデータを取得します
-	case CommonGetSchedulesTxt = "CommonGetSchedulesTxt"
-	/// 金イクラ納品数
-	case CommonGoldenEggsCollected = "CommonGoldenEggsCollected"
-	/// 称号
-	case CommonGradeId = "CommonGradeId"
-	/// 評価ポイント
-	case CommonGradePoint = "CommonGradePoint"
-	/// イクラ取得率
-	case CommonIkuraRatio = "CommonIkuraRatio"
-	/// 記録
-	case CommonJobResults = "CommonJobResults"
-	/// バイト
-	case CommonJobWorks = "CommonJobWorks"
-	/// マイページ
-	case CommonMyPage = "CommonMyPage"
-	/// すすむ
-	case CommonNext = "CommonNext"
-	/// なかま
-	case CommonPlayerCrew = "CommonPlayerCrew"
-	/// あなた
-	case CommonPlayerYou = "CommonPlayerYou"
-	/// イクラ獲得数
-	case CommonPowerEggsCollected = "CommonPowerEggsCollected"
-	/// プライバシーポリシー
-	case CommonPrivacyPolicy = "CommonPrivacyPolicy"
-	/// 保存成功しました。
-	case CommonSaveToPhotoLibrary = "CommonSaveToPhotoLibrary"
-	/// アプリ設定
-	case CommonSettings = "CommonSettings"
-	/// ログイン
-	case CommonSignIn = "CommonSignIn"
-	/// ニンテンドーアカウントにログイン
-	case CommonSignInTitle = "CommonSignInTitle"
-	/// ニンテンドーアカウントはニンテンドースイッチに連携されている必要があります。
-	case CommonSignInTxt = "CommonSignInTxt"
-	/// ブキ支給回数
-	case CommonSuppliedCount = "CommonSuppliedCount"
-	/// ブキ支給率
-	case CommonSuppliedMainProb = "CommonSuppliedMainProb"
-	/// ブキ支給率
-	case CommonSuppliedSpecialProb = "CommonSuppliedSpecialProb"
-	/// 利用データの収集について
-	case CommonTrackingData = "CommonTrackingData"
-	/// 許可を選択した場合、アプリケーションはCookieを含むデータを収集し、コンテンツ、製品、サービスを最適化するためにGoogle Analyticsサービスのサーバーに送信します。
-	case CommonTrackingDataTxt = "CommonTrackingDataTxt"
-	/// アカウント連携解除
-	case CommonUnlinkAccounts = "CommonUnlinkAccounts"
-	/// アプリとニンテンドースイッチオンラインのアカウント連携を解除します（アカウントは削除されません）
-	case CommonUnlinkAccountsTxt = "CommonUnlinkAccountsTxt"
-	/// ようこそSalmonia3+へ
-	case CommonWelcomeApp = "CommonWelcomeApp"
-	/// もっと便利なサーモンランライフを！
-	case CommonWelcomeAppTxt = "CommonWelcomeAppTxt"
-	/// データ消去
-	case CommonWipeData = "CommonWipeData"
-	/// アプリで保存されているデータを削除します
-	case CommonWipeDataTxt = "CommonWipeDataTxt"
-	/// レビューを書く
-	case CommonWriteReview = "CommonWriteReview"
-	/// フォーム
-	case CommonForm = "CommonForm"
-	/// 種類
-	case CommonFormType = "CommonFormType"
-	/// バグ修正
-	case CommonFormTypeBug = "CommonFormTypeBug"
-	/// 機能追加
-	case CommonFormTypeFeature = "CommonFormTypeFeature"
-	/// 改善案
-	case CommonFormTypeEnhancement = "CommonFormTypeEnhancement"
-	/// タイトル
-	case CommonFormTitle = "CommonFormTitle"
-	/// 内容
-	case CommonFormContent = "CommonFormContent"
-	/// 送信
-	case CommonFormSubmit = "CommonFormSubmit"
-	/// 復元
-	case CommonRestore = "CommonRestore"
-	/// バックアップからリザルトを復元します
-	case CommonRestoreTxt = "CommonRestoreTxt"
-	/// バックアップ
-	case CommonBackup = "CommonBackup"
-	/// リザルトをバックアップします
-	case CommonBackupTxt = "CommonBackupTxt"
-	/// ログ
-	case CommonLog = "CommonLog"
-	/// 開発者にログを送信します（個人を特定する情報は含まれません）
-	case CommonLogTxt = "CommonLogTxt"
-	/// 圧縮(ZIP)
-	case CommonBackupCompress = "CommonBackupCompress"
-	/// 非圧縮(JSON)
-	case CommonBackupNoCompress = "CommonBackupNoCompress"
-	/// キャンセル
-	case CommonCancel = "CommonCancel"
-	/// ガチアサリ
-	case CommonClamBlitz = "CommonClamBlitz"
-	/// 閉じる
-	case CommonClose = "CommonClose"
-	/// : 
-	case CommonColonRule = "CommonColonRule"
-	/// ビッグラン
-	case CommonCoopBigRun = "CommonCoopBigRun"
-	/// QRコードは、株式会社デンソーウェーブの登録商標です。
-	case CommonCopyrightQrCode = "CommonCopyrightQrCode"
-	/// 決定
-	case CommonDecide = "CommonDecide"
-	/// ダウンロード
-	case CommonDownload = "CommonDownload"
-	/// おわる
-	case CommonEnd = "CommonEnd"
-	/// はてな
-	case CommonGearPowerBlank = "CommonGearPowerBlank"
-	/// ホーム
-	case CommonHome = "CommonHome"
-	/// イカリング３
-	case CommonIkaring3 = "CommonIkaring3"
-	/// ロード中
-	case CommonNowLoading = "CommonNowLoading"
-	/// ひっぱって更新
-	case CommonPullToRefresh = "CommonPullToRefresh"
-	/// ガチホコバトル
-	case CommonRainmaker = "CommonRainmaker"
-	/// シェア
-	case CommonShare = "CommonShare"
-	/// ガチエリア
-	case CommonSplatZones = "CommonSplatZones"
-	/// ガチヤグラ
-	case CommonTowerControl = "CommonTowerControl"
-	/// トリカラアタック
-	case CommonTricolor = "CommonTricolor"
-	/// トリカラマッチ
-	case CommonTricolorMatch = "CommonTricolorMatch"
-	/// ナワバリバトル
-	case CommonTurfWar = "CommonTurfWar"
-	/// 出現数
-	case CoopHistoryAvailable = "CoopHistoryAvailable"
-	/// 出現したオカシラシャケ
-	case CoopHistoryAvailableBoss = "CoopHistoryAvailableBoss"
-	/// 平均クリアWAVE数
-	case CoopHistoryAverageClearWaves = "CoopHistoryAverageClearWaves"
-	/// ビッグラン
-	case CoopHistoryBigrun = "CoopHistoryBigrun"
-	/// クリアボーナス
-	case CoopHistoryBonus = "CoopHistoryBonus"
-	/// オカシラシャケ出現！
-	case CoopHistoryBossAvailable = "CoopHistoryBossAvailable"
-	/// Clear!!
-	case CoopHistoryClear = "CoopHistoryClear"
-	/// キケン度
-	case CoopHistoryDangerRatio = "CoopHistoryDangerRatio"
-	/// オカシラシャケ撃破！
-	case CoopHistoryDefeatBoss = "CoopHistoryDefeatBoss"
-	/// 倒したオカシラシャケ
-	case CoopHistoryDefeatBossCount = "CoopHistoryDefeatBossCount"
-	/// 倒した！
-	case CoopHistoryDefeated = "CoopHistoryDefeated"
-	/// 倒したオオモノシャケ
-	case CoopHistoryDefeatedEnemies = "CoopHistoryDefeatedEnemies"
-	/// ※カッコ内の数字は自分で倒した数です
-	case CoopHistoryDefeatedEnemiesGuide = "CoopHistoryDefeatedEnemiesGuide"
-	/// 集めたイクラ
-	case CoopHistoryDeliverCount = "CoopHistoryDeliverCount"
-	/// オオモノシャケ
-	case CoopHistoryEnemy = "CoopHistoryEnemy"
-	/// EX-WAVE
-	case CoopHistoryExWave = "CoopHistoryExWave"
-	/// Failure
-	case CoopHistoryFailure = "CoopHistoryFailure"
-	/// GJ!
-	case CoopHistoryGj = "CoopHistoryGj"
-	/// バイトヒストリー一覧に戻る
-	case CoopHistoryGoToStats = "CoopHistoryGoToStats"
-	/// 集めた金イクラ
-	case CoopHistoryGoldenDeliverCount = "CoopHistoryGoldenDeliverCount"
-	/// 最高きろく
-	case CoopHistoryHighestScore = "CoopHistoryHighestScore"
-	/// バイトヒストリー
-	case CoopHistoryHistory = "CoopHistoryHistory"
-	/// 獲得ポイント
-	case CoopHistoryJobPoint = "CoopHistoryJobPoint"
-	/// 評価レート
-	case CoopHistoryJobRatio = "CoopHistoryJobRatio"
-	/// クマサンポイントカード
-	case CoopHistoryKumaPointCard = "CoopHistoryKumaPointCard"
-	/// 最新のバイトへ
-	case CoopHistoryLatest = "CoopHistoryLatest"
-	/// 期間限定
-	case CoopHistoryLimited = "CoopHistoryLimited"
-	/// 今月のギア
-	case CoopHistoryMonthlyReward = "CoopHistoryMonthlyReward"
-	/// 次のバイト
-	case CoopHistoryNext = "CoopHistoryNext"
-	/// NG
-	case CoopHistoryNg = "CoopHistoryNg"
-	/// バイトヒストリーがありません
-	case CoopHistoryNoData = "CoopHistoryNoData"
-	/// バイトヒストリーを表示できません
-	case CoopHistoryNotAvailable = "CoopHistoryNotAvailable"
-	/// 閲覧できるバイトヒストリーは、最新の50戦までです。
-	case CoopHistoryNotAvailableDescription = "CoopHistoryNotAvailableDescription"
-	/// 倒せなかった...
-	case CoopHistoryNotDefeated = "CoopHistoryNotDefeated"
-	/// { 0 }p
-	case CoopHistoryP = "CoopHistoryP"
-	/// バイト回数
-	case CoopHistoryPlayCount = "CoopHistoryPlayCount"
-	/// 前のバイト
-	case CoopHistoryPrevious = "CoopHistoryPrevious"
-	/// プライベート
-	case CoopHistoryPrivate = "CoopHistoryPrivate"
-	/// スタッフ募集！
-	case CoopHistoryRecruit = "CoopHistoryRecruit"
-	/// 初心者でも安心！元気で明るい方大歓迎！<br />アットホームな職場でアルバイトをしてみませんか？
-	case CoopHistoryRecruitDescription = "CoopHistoryRecruitDescription"
-	/// 簡単
-	case CoopHistoryRecruitTag1 = "CoopHistoryRecruitTag1"
-	/// イクラ集め
-	case CoopHistoryRecruitTag2 = "CoopHistoryRecruitTag2"
-	/// ～イカした制服でイクラ集め～
-	case CoopHistoryRecruitTitle = "CoopHistoryRecruitTitle"
-	/// いつものバイト
-	case CoopHistoryRegular = "CoopHistoryRegular"
-	/// 現在のポイント
-	case CoopHistoryRegularPoint = "CoopHistoryRegularPoint"
-	/// 助けた回数
-	case CoopHistoryRescueCount = "CoopHistoryRescueCount"
-	/// たすけてもらったかいすう
-	case CoopHistoryRescuedCount = "CoopHistoryRescuedCount"
-	/// ウロコ
-	case CoopHistoryScale = "CoopHistoryScale"
-	/// ドウウロコ
-	case CoopHistoryScaleBronze = "CoopHistoryScaleBronze"
-	/// キンウロコ
-	case CoopHistoryScaleGold = "CoopHistoryScaleGold"
-	/// ギンウロコ
-	case CoopHistoryScaleSilver = "CoopHistoryScaleSilver"
-	/// バイトスコア
-	case CoopHistoryScore = "CoopHistoryScore"
-	/// スケジュールを見る
-	case CoopHistorySeeSchedule = "CoopHistorySeeSchedule"
-	/// オカシラゲージ
-	case CoopHistorySmellMeter = "CoopHistorySmellMeter"
-	/// 支給ブキ
-	case CoopHistorySupplyWeapon = "CoopHistorySupplyWeapon"
-	/// サーモンラン
-	case CoopHistoryTitle = "CoopHistoryTitle"
-	/// るいけいポイント
-	case CoopHistoryTotalPoint = "CoopHistoryTotalPoint"
-	/// WAVE 1
-	case CoopWave1 = "CoopWave1"
-	/// WAVE 2
-	case CoopWave2 = "CoopWave2"
-	/// WAVE 3
-	case CoopWave3 = "CoopWave3"
-	/// 干潮
-	case CoopWaterLevel0 = "CoopWaterLevel0"
-	/// 普通
-	case CoopWaterLevel1 = "CoopWaterLevel1"
-	/// 満潮
-	case CoopWaterLevel2 = "CoopWaterLevel2"
-	/// バイトチームコンテスト
-	case CommonCoopTeamContest = "CommonCoopTeamContest"
-	/// はてな
-	case CommonWpnNotfound = "CommonWpnNotfound"
-	/// 銅
-	case CoopHistoryBigrunBronze = "CoopHistoryBigrunBronze"
-	/// 金
-	case CoopHistoryBigrunGold = "CoopHistoryBigrunGold"
-	/// 銀
-	case CoopHistoryBigrunSilver = "CoopHistoryBigrunSilver"
-	/// 現在の期間限定ポイント
-	case CoopHistoryLimitedPoint = "CoopHistoryLimitedPoint"
-	/// バイトチームコンテスト
-	case CoopHistoryTeamContest = "CoopHistoryTeamContest"
-	/// バイト
-	case CoopRecordAppName = "CoopRecordAppName"
-	/// 参加回数： { 0 }
-	case CoopRecordAttended = "CoopRecordAttended"
-	/// ビッグラン
-	case CoopRecordBigrun = "CoopRecordBigrun"
-	/// 銅
-	case CoopRecordBigrunBronze = "CoopRecordBigrunBronze"
-	/// 金
-	case CoopRecordBigrunGold = "CoopRecordBigrunGold"
-	/// 銀
-	case CoopRecordBigrunSilver = "CoopRecordBigrunSilver"
-	/// 最高評価
-	case CoopRecordHighestJobRate = "CoopRecordHighestJobRate"
-	/// ハイスコア
-	case CoopRecordHighestScore = "CoopRecordHighestScore"
-	/// もっと見る
-	case CoopRecordMore = "CoopRecordMore"
-	/// きろくがありません
-	case CoopRecordNoData = "CoopRecordNoData"
-	/// バイトチームコンテスト
-	case CoopRecordTeamContest = "CoopRecordTeamContest"
-	/// サーモンランのきろく
-	case CoopRecordTitle = "CoopRecordTitle"
-	/// M/d HH:mm
-	case DatetimeFormat = "DatetimeFormat"
-	/// yyyy M/d HH:mm
-	case DatetimeYearFormat = "DatetimeYearFormat"
-	/// ラッシュ
-	case CoopEvent1 = "CoopEvent1"
-	/// キンシャケ探し
-	case CoopEvent2 = "CoopEvent2"
-	/// グリル発進
-	case CoopEvent3 = "CoopEvent3"
-	/// ハコビヤ襲来
-	case CoopEvent4 = "CoopEvent4"
-	/// 霧
-	case CoopEvent5 = "CoopEvent5"
-	/// ドスコイ大量発生
-	case CoopEvent6 = "CoopEvent6"
-	/// 巨大タツマキ
-	case CoopEvent7 = "CoopEvent7"
-	/// ドロシャケ噴出
-	case CoopEvent8 = "CoopEvent8"
+public enum LocalizedType: String, CaseIterable, Identifiable {
+    public var id: String { rawValue }
+
+    /// About
+    case CommonAbout
+    /// クレジット
+    case CommonAppCredit
+    /// バージョン
+    case CommonAppVersion
+    /// 外観
+    case CommonAppearances
+    /// アプリ
+    case CommonApplication
+    /// 圧縮(ZIP)
+    case CommonBackupCompress
+    /// データベースのバックアップを出力します。
+    case CommonBackupMessage
+    /// 非圧縮(JSON)
+    case CommonBackupPlain
+    /// バックアップ
+    case CommonBackupResults
+    /// キャンセル
+    case CommonCancel
+    /// 報酬
+    case CommonCheckInReward
+    /// ガチアサリ
+    case CommonClamBlitz
+    /// 閉じる
+    case CommonClose
+    /// ビッグラン
+    case CommonCoopBigRun
+    /// バイトチームコンテスト
+    case CommonCoopTeamContest
+    /// QRコードは、株式会社デンソーウェーブの登録商標です。
+    case CommonCopyrightQrCode
+    /// UI/UXデザイン
+    case CommonCreditDesign
+    /// 開発
+    case CommonCreditDevelop
+    /// テスト
+    case CommonCreditTest
+    /// ダークモード
+    case CommonDarkMode
+    /// データ管理
+    case CommonDataManagement
+    /// データベース
+    case CommonDatabase
+    /// 決定
+    case CommonDecide
+    /// デベロッパの回答
+    case CommonDeveloperAnswer
+    /// ダウンロード
+    case CommonDownload
+    /// おわる
+    case CommonEnd
+    /// よくあるご質問
+    case CommonFAQ
+    /// ゲーミングモード
+    case CommonGamingMode
+    /// はてな
+    case CommonGearPowerBlank
+    /// 過去に配布されていたQRコードの報酬を取得します。
+    case CommonGetCheckInReward
+    /// 金イクラ
+    case CommonGoldenEggs
+    /// ホーム
+    case CommonHome
+    /// イカリング2
+    case CommonIkaring2
+    /// イカリング３
+    case CommonIkaring3
+    /// 無効
+    case CommonInvalid
+    /// 0
+    case CommonLanguageCode
+    /// 言語
+    case CommonLanguages
+    /// ライセンス
+    case CommonLicense
+    /// ja-JP
+    case CommonLocale
+    /// ログファイル
+    case CommonLogSize
+    /// サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
+    case CommonMinimumVersion
+    /// マイページ
+    case CommonMyPage
+    /// ロード中
+    case CommonNowLoading
+    /// 概要
+    case CommonOverview
+    /// イクラ
+    case CommonPowerEggs
+    /// プライバシーポリシー
+    case CommonPrivacyPolicy
+    /// ひっぱって更新
+    case CommonPullToRefresh
+    /// ガチホコバトル
+    case CommonRainmaker
+    /// フォーム
+    case CommonRequestForm
+    /// バグ修正
+    case CommonRequestFormBug
+    /// 内容
+    case CommonRequestFormContent
+    /// 改善案
+    case CommonRequestFormEnhancement
+    /// 機能追加
+    case CommonRequestFormFeature
+    /// タイトル
+    case CommonRequestFormTitle
+    /// 種類
+    case CommonRequestFormType
+    /// このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
+    case CommonRequiredSignIn
+    /// この機能を利用するにはiOS16以上にアップデートする必要があります。
+    case CommonRequirediOS16
+    /// 送信
+    case CommonRequsetFormSubmit
+    /// リストア
+    case CommonRestore
+    /// リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
+    case CommonRestoreFailureMessage
+    /// ファイルアプリからリストアするファイルを選択してください。
+    case CommonRestoreMessage
+    /// リザルト復元に成功しました。
+    case CommonRestoreSuccessMessage
+    /// リザルト件数
+    case CommonResultsCount
+    /// デバッグ
+    case CommonRoleDebuger
+    /// 開発
+    case CommonRoleDeveloper
+    /// テスト
+    case CommonRoleTester
+    /// 翻訳
+    case CommonRoleTranslator
+    /// 保存しました
+    case CommonSaveToPhotoLibrary
+    /// スケジュール同期
+    case CommonScheduleSync
+    /// スケジュールサーバーから過去のスケジュールを取得します
+    case CommonScheduleSyncMessage
+    /// シェア
+    case CommonShare
+    /// ログ送信
+    case CommonShareLog
+    /// 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
+    case CommonShareLogMessage
+    /// ログイン
+    case CommonSignIn
+    /// ログアウト
+    case CommonSignOut
+    /// ニンテンドーアカウントとの連携を解除します
+    case CommonSignOutMessage
+    /// ログアウト成功しました
+    case CommonSignOutSuccessfully
+    /// ソースコード
+    case CommonSourceCode
+    /// ガチエリア
+    case CommonSplatZones
+    /// ガチヤグラ
+    case CommonTowerControl
+    /// トリカラアタック
+    case CommonTricolor
+    /// トリカラマッチ
+    case CommonTricolorMatch
+    /// ナワバリバトル
+    case CommonTurfWar
+    /// アプリをアップデートしてください
+    case CommonUpdateRequired
+    /// アップロード
+    case CommonUpload
+    /// Safariの認証を利用する
+    case CommonUseSecureSession
+    /// 端末の設定を利用する
+    case CommonUseSystemTheme
+    /// ユーザーデータ
+    case CommonUserData
+    /// 有効
+    case CommonValid
+    /// ログ消去
+    case CommonWipeLog
+    /// 保存されている全てのログを消去します。
+    case CommonWipeLogMessage
+    /// リザルト消去
+    case CommonWipeResults
+    /// 保存されている全てのリザルトを消去します。
+    case CommonWipeResultsMessage
+    /// はてな
+    case CommonWpnNotfound
+    /// レビューを書く
+    case CommonWriteReview
+    /// X-ProductVersion
+    case CommonXProductVersion
+    /// X-WebViewVer
+    case CommonXWebViewVer
+    /// 出現数
+    case CoopHistoryAvailable
+    /// 出現したオカシラシャケ
+    case CoopHistoryAvailableBoss
+    /// 平均クリアWAVE数
+    case CoopHistoryAverageClearWaves
+    /// ビッグラン
+    case CoopHistoryBigrun
+    /// クリアボーナス
+    case CoopHistoryBonus
+    /// オカシラシャケ出現！
+    case CoopHistoryBossAvailable
+    /// Clear!!
+    case CoopHistoryClear
+    /// なかまの平均
+    case CoopHistoryCrewAvgResult
+    /// なかま
+    case CoopHistoryCrewResult
+    /// キケン度
+    case CoopHistoryDangerRatio
+    /// 助けられた回数
+    case CoopHistoryDeathCount
+    /// オカシラシャケ撃破！
+    case CoopHistoryDefeatBoss
+    /// 倒したオカシラシャケ
+    case CoopHistoryDefeatBossCount
+    /// 倒した！
+    case CoopHistoryDefeated
+    /// オオモノシャケをたおした数
+    case CoopHistoryDefeatedCount
+    /// 倒したオオモノシャケ
+    case CoopHistoryDefeatedEnemies
+    /// ※カッコ内の数字は自分で倒した数です
+    case CoopHistoryDefeatedEnemiesGuide
+    /// 集めたイクラ
+    case CoopHistoryDeliverCount
+    /// オオモノシャケ
+    case CoopHistoryEnemy
+    /// 推定値
+    case CoopHistoryEstimatedValue
+    /// イベントクリア率
+    case CoopHistoryEventClearRatio
+    /// イベント発生率
+    case CoopHistoryEventFrequency
+    /// EX-WAVE
+    case CoopHistoryExWave
+    /// Failure
+    case CoopHistoryFailure
+    /// GJ!
+    case CoopHistoryGj
+    /// バイトヒストリー一覧に戻る
+    case CoopHistoryGoToStats
+    /// 集めた金イクラ
+    case CoopHistoryGoldenDeliverCount
+    /// 称号
+    case CoopHistoryGradeId
+    /// 評価ポイント
+    case CoopHistoryGradePoint
+    /// 最高きろく
+    case CoopHistoryHighestRecord
+    /// ハイスコア
+    case CoopHistoryHighestScore
+    /// バイトヒストリー
+    case CoopHistoryHistory
+    /// 獲得ポイント
+    case CoopHistoryJobPoint
+    /// 評価レート
+    case CoopHistoryJobRatio
+    /// クマサンポイントカード
+    case CoopHistoryKumaPointCard
+    /// 最新のバイトへ
+    case CoopHistoryLatest
+    /// 現在の期間限定ポイント
+    case CoopHistoryLimitedPoint
+    /// 今月のギア
+    case CoopHistoryMonthlyReward
+    /// 次のバイト
+    case CoopHistoryNext
+    /// NG
+    case CoopHistoryNg
+    /// バイトヒストリーがありません
+    case CoopHistoryNoData
+    /// バイトヒストリーを表示できません
+    case CoopHistoryNotAvailable
+    /// 閲覧できるバイトヒストリーは、最新の50戦までです。
+    case CoopHistoryNotAvailableDescription
+    /// 倒せなかった...
+    case CoopHistoryNotDefeated
+    /// 総合きろく
+    case CoopHistoryOverallRecord
+    /// バイト回数
+    case CoopHistoryPlayCount
+    /// なかま
+    case CoopHistoryPlayerCrew
+    /// あなた
+    case CoopHistoryPlayerResult
+    /// あなた
+    case CoopHistoryPlayerYou
+    /// 前のバイト
+    case CoopHistoryPrevious
+    /// プライベート
+    case CoopHistoryPrivate
+    /// スタッフ募集！
+    case CoopHistoryRecruit
+    /// 簡単
+    case CoopHistoryRecruitTag1
+    /// イクラ集め
+    case CoopHistoryRecruitTag2
+    /// ～イカした制服でイクラ集め～
+    case CoopHistoryRecruitTitle
+    /// いつものバイト
+    case CoopHistoryRegular
+    /// 現在のポイント
+    case CoopHistoryRegularPoint
+    /// 助けた回数
+    case CoopHistoryRescueCount
+    /// たすけてもらったかいすう
+    case CoopHistoryRescuedCount
+    /// リザルト件数
+    case CoopHistoryResultsCount
+    /// ウロコ
+    case CoopHistoryScale
+    /// ドウウロコ
+    case CoopHistoryScaleBronze
+    /// キンウロコ
+    case CoopHistoryScaleGold
+    /// ギンウロコ
+    case CoopHistoryScaleSilver
+    /// バイトスコア
+    case CoopHistoryScore
+    /// スケジュールを見る
+    case CoopHistorySeeSchedule
+    /// オカシラゲージ
+    case CoopHistorySmellMeter
+    /// 支給率
+    case CoopHistorySuppliedRatio
+    /// 支給ブキ
+    case CoopHistorySupplyWeapon
+    /// バイトチームコンテスト
+    case CoopHistoryTeamContest
+    /// チームポイントカード
+    case CoopHistoryTeamPointCard
+    /// チーム
+    case CoopHistoryTeamResult
+    /// サーモンラン
+    case CoopHistoryTitle
+    /// るいけいポイント
+    case CoopHistoryTotalPoint
+    /// 推定値を表示
+    case CoopHistoryUseEstimatedValue
+    /// WAVE
+    case CoopHistoryWave
+    /// 干潮
+    case CoopHistoryWaveLevel0
+    /// 普通
+    case CoopHistoryWaveLevel1
+    /// 満潮
+    case CoopHistoryWaveLevel2
+    /// Waves
+    case CoopHistoryWaveResult
+    /// 平均
+    case CoopRecordAverageScore
+    /// 最高
+    case CoopRecordHighestScore
+    /// ホームに戻る
+    case ErrorBackToHome
+    /// 現在利用できません。しばらくお待ちください
+    case ErrorCurrentlyNotAvailable
+    /// エラー
+    case ErrorError
+    /// エラーが発生しました
+    case ErrorErrorOccurred
+    /// 読みこみに失敗しました
+    case ErrorErrorReopen
+    /// バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
+    case ErrorInvalidSignature
+    /// ただいまサーバーのメンテナンス中です。時間をおいて再度アクセスしてください。
+    case ErrorMaintenanceDescription
+    /// しばらくお待ちください
+    case ErrorMaintenanceTitle
+    /// 再読みこみ
+    case ErrorReload
+    /// 実測値
+    case RecordActualValue
+    /// 平均きろく
+    case RecordAverageScore
+    /// 最後に遊んだ
+    case RecordLatestPlayed
+    /// よく使う
+    case RecordLatestUsed
+    /// メイン
+    case RecordMain
+    /// じゅくれん度アップまで
+    case RecordNextSkillLevel
+    /// じゅくれん度
+    case RecordSkillLevel
+    /// 並び替え
+    case RecordSort
+    /// スペシャル
+    case RecordSpecial
+    /// ステージのきろく
+    case RecordStageRecord
+    /// ステージ
+    case RecordStageRecordAppName
+    /// サブ
+    case RecordSub
+    /// きろく
+    case RecordTitle
+    /// 塗りポイント
+    case RecordTurfPoint
+    /// 遊んでないステージ
+    case RecordUnplayedStages
+    /// 未所持のブキ
+    case RecordUnusedWeapons
+    /// チョーシ
+    case RecordVibes
+    /// ブキのきろく
+    case RecordWeaponRecord
+    /// ブキ
+    case RecordWeaponRecordAppName
+    /// 勝利数
+    case RecordWinCount
+    /// 権利表記
+    case SettingsAcknowledgements
+    /// 設定
+    case SettingsAppName
+    /// クレジット
+    case SettingsCredits
+    /// エキスパンション・パス 購入サイトへ
+    case SettingsExpansionPass
+    /// 設定
+    case SettingsTitle
+    /// バンカラマッチ
+    case StageScheduleBankara
+    /// オープン
+    case StageScheduleBankaraOpen
+    /// チャレンジ
+    case StageScheduleBankaraOpenChallenge
+    /// サーモンラン
+    case StageScheduleCoop
+    /// NOW OPEN！
+    case StageScheduleCoopCurrentPeriodStart
+    /// イベントマッチ
+    case StageScheduleEvent
+    /// いま
+    case StageScheduleEventCurrentSchedule
+    /// そのつぎ
+    case StageScheduleEventFuture
+    /// 開催中！
+    case StageScheduleEventHolding
+    /// 次回
+    case StageScheduleEventNext
+    /// つぎ
+    case StageScheduleEventNextSchedule
+    /// スケジュールが未定です
+    case StageScheduleEventNoData
+    /// ?????
+    case StageScheduleEventUnknownData
+    /// イベント開催！
+    case StageScheduleEventmatch
+    /// そのつぎ
+    case StageScheduleFuture
+    /// Webブラウザが開きます
+    case StageScheduleGuideOpenBrowser
+    /// つぎ
+    case StageScheduleNext
+    /// ビッグラン接近中！
+    case StageScheduleNoticeBigrun
+    /// バイトチームコンテスト開催予告！
+    case StageScheduleNoticeLimited
+    /// フェスマッチ開催中！
+    case StageScheduleNowClosed
+    /// オープン！
+    case StageScheduleOpen
+    /// ビッグラン発生中！
+    case StageScheduleOpenBigrun
+    /// バイトチームコンテスト開催中！
+    case StageScheduleOpenLimited
+    /// プライベートマッチ
+    case StageSchedulePrivate
+    /// ビッグランがやってくる！！バイト大募集
+    case StageScheduleRecruit
+    /// バイトチームコンテスト！チームを組んで参加しよう！
+    case StageScheduleRecruitTeamContest
+    /// レギュラーマッチ
+    case StageScheduleRegular
+    /// ルールを見る
+    case StageScheduleRules
+    /// 詳しいルールはこちら
+    case StageScheduleSeeAllRules
+    /// ランダム
+    case StageScheduleSuppliedWeaponRandom
+    /// 支給ブキ
+    case StageScheduleSuppliedWeapons
+    /// スケジュール
+    case StageScheduleTitle
+    /// ルールごとの勝率
+    case StageScheduleWinRateByRules
+    /// Xマッチ
+    case StageScheduleXmatch
 }

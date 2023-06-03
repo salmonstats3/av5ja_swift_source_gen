@@ -7,8 +7,9 @@
 
 import Foundation
 
-public enum SpeciesType: String, CaseIterable, Identifiable, Codable {
+public enum SpeciesType: String, UnsafeRawRepresentable {
     public var id: String { rawValue }
+    public static var defaultValue: SpeciesType = .UNKNOWN
 
     case UNKNOWN
     case INKLING

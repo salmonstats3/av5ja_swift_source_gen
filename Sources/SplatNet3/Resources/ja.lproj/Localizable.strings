@@ -1,227 +1,616 @@
-"Common%" = "{ 0 }%";
-"CommonActualValue" = "実測値";
-"CommonAppSalmonia" = "Salmonia3+";
-"CommonAppUpdateRequired" = "アプリを更新してください";
-"CommonBackup" = "バックアップ";
-"CommonBackupCompress" = "圧縮(ZIP)";
-"CommonBackupNoCompress" = "非圧縮(JSON)";
-"CommonBackupTxt" = "リザルトをバックアップします";
+/// テッキュウ
+"SakeArtillery" = "テッキュウ";
+/// ドロシャケ
+"SakeBigMouth" = "ドロシャケ";
+/// ドロシャケ
+"SakeBigMouthGold" = "ドロシャケ";
+/// シャケコプター
+"SakeCopter" = "シャケコプター";
+/// ダイバー
+"SakeDolphin" = "ダイバー";
+/// タマヒロイ
+"SakeFlyBagman" = "タマヒロイ";
+/// ハシラ
+"SakePillar" = "ハシラ";
+/// タツ
+"SakeRope" = "タツ";
+/// ナベブタ
+"SakeSaucer" = "ナベブタ";
+/// モグラ
+"Sakediver" = "モグラ";
+/// グリル
+"Sakedozer" = "グリル";
+/// バクダン
+"SakelienBomber" = "バクダン";
+/// カタパッド
+"SakelienCupTwins" = "カタパッド";
+/// ヨコヅナ
+"SakelienGiant" = "ヨコヅナ";
+/// キンシャケ
+"SakelienGolden" = "キンシャケ";
+/// ドスコイ
+"SakelienLarge" = "ドスコイ";
+/// テッパン
+"SakelienShield" = "テッパン";
+/// コジャケ
+"SakelienSmall" = "コジャケ";
+/// ヘビ
+"SakelienSnake" = "ヘビ";
+/// シャケ
+"SakelienStandard" = "シャケ";
+/// タワー
+"SakelienTower" = "タワー";
+/// コウモリ
+"Sakerocket" = "コウモリ";
+/// かけだし
+"Grade00" = "かけだし";
+/// はんにんまえ
+"Grade01" = "はんにんまえ";
+/// いちにんまえ
+"Grade02" = "いちにんまえ";
+/// じゅくれん
+"Grade03" = "じゅくれん";
+/// たつじん
+"Grade04" = "たつじん";
+/// たつじん＋１
+"Grade05" = "たつじん＋１";
+/// たつじん＋２
+"Grade06" = "たつじん＋２";
+/// たつじん＋３
+"Grade07" = "たつじん＋３";
+/// でんせつ
+"Grade08" = "でんせつ";
+/// かけだし アルバイター
+"GradeArbeiter00" = "かけだし アルバイター";
+/// はんにんまえ アルバイター
+"GradeArbeiter01" = "はんにんまえ アルバイター";
+/// いちにんまえ アルバイター
+"GradeArbeiter02" = "いちにんまえ アルバイター";
+/// じゅくれん アルバイター
+"GradeArbeiter03" = "じゅくれん アルバイター";
+/// たつじん アルバイター
+"GradeArbeiter04" = "たつじん アルバイター";
+/// たつじん＋１ アルバイター
+"GradeArbeiter05" = "たつじん＋１ アルバイター";
+/// たつじん＋２ アルバイター
+"GradeArbeiter06" = "たつじん＋２ アルバイター";
+/// たつじん＋３ アルバイター
+"GradeArbeiter07" = "たつじん＋３ アルバイター";
+/// でんせつ アルバイター
+"GradeArbeiter08" = "でんせつ アルバイター";
+/// バイトツナギ オレンジ
+"COP001" = "バイトツナギ オレンジ";
+/// バイトツナギ グリーン
+"COP002" = "バイトツナギ グリーン";
+/// バイトツナギ イエロー
+"COP003" = "バイトツナギ イエロー";
+/// バイトツナギ ピンク
+"COP004" = "バイトツナギ ピンク";
+/// バイトツナギ ブルー
+"COP005" = "バイトツナギ ブルー";
+/// バイトツナギ ブラック
+"COP006" = "バイトツナギ ブラック";
+/// バイトツナギ ホワイト
+"COP007" = "バイトツナギ ホワイト";
+/// バイトウェーダー オレンジ
+"COP008" = "バイトウェーダー オレンジ";
+/// バイトウェーダー ブラック
+"COP009" = "バイトウェーダー ブラック";
+/// バイトウェーダー イエロー
+"COP010" = "バイトウェーダー イエロー";
+/// バイトウェーダー ブラウン
+"COP011" = "バイトウェーダー ブラウン";
+/// スメーシーワールド
+"Carousel" = "スメーシーワールド";
+/// ムニ・エール海洋発電所
+"Shakedent" = "ムニ・エール海洋発電所";
+/// すじこジャンクション跡
+"Shakehighway" = "すじこジャンクション跡";
+/// 難破船ドン・ブラコ
+"Shakeship" = "難破船ドン・ブラコ";
+/// アラマキ砦
+"Shakespiral" = "アラマキ砦";
+/// シェケナダム
+"Shakeup" = "シェケナダム";
+/// マテガイ放水路
+"Temple" = "マテガイ放水路";
+/// アラマキ砦
+"Tutorial" = "アラマキ砦";
+/// ？？？
+"Unknown" = "？？？";
+/// 海女美術大学
+"Upland" = "海女美術大学";
+/// キャンセル
 "CommonCancel" = "キャンセル";
-"CommonCharts" = "チャート";
+/// ガチアサリ
 "CommonClamBlitz" = "ガチアサリ";
-"CommonClearRatio" = "クリア率";
+/// 閉じる
 "CommonClose" = "閉じる";
-"CommonColonRule" = ":";
-"CommonConfirmDanger" = "この操作は取り消せません。続行して良いですか。";
+/// ビッグラン
 "CommonCoopBigRun" = "ビッグラン";
+/// バイトチームコンテスト
 "CommonCoopTeamContest" = "バイトチームコンテスト";
+/// QRコードは、株式会社デンソーウェーブの登録商標です。
 "CommonCopyrightQrCode" = "QRコードは、株式会社デンソーウェーブの登録商標です。";
-"CommonCustomize" = "カスタマイズ";
-"CommonDarkMode" = "ダークモード";
-"CommonDataManagements" = "データ管理";
-"CommonDeathCount" = "助けられた回数";
+/// 決定
 "CommonDecide" = "決定";
-"CommonDefeatedRatio" = "オオモノシャケ討伐率";
-"CommonDefeatedSakelienCount" = "オオモノシャケを倒した数";
+/// ダウンロード
 "CommonDownload" = "ダウンロード";
+/// おわる
 "CommonEnd" = "おわる";
-"CommonEstimatedValue" = "推定値";
-"CommonEventClearRatio" = "イベントクリア率";
-"CommonEventProbability" = "イベント発生率";
-"CommonForm" = "フォーム";
-"CommonFormContent" = "内容";
-"CommonFormSubmit" = "送信";
-"CommonFormTitle" = "タイトル";
-"CommonFormType" = "種類";
-"CommonFormTypeBug" = "バグ修正";
-"CommonFormTypeEnhancement" = "改善案";
-"CommonFormTypeFeature" = "機能追加";
-"CommonGamingMode" = "ゲーミングモード";
+/// はてな
 "CommonGearPowerBlank" = "はてな";
-"CommonGetSchedules" = "スケジュール取得";
-"CommonGetSchedulesTxt" = "過去のスケジュールデータを取得します";
-"CommonGoldenEggsCollected" = "金イクラ納品数";
-"CommonGradeId" = "称号";
-"CommonGradePoint" = "評価ポイント";
+/// ホーム
 "CommonHome" = "ホーム";
+/// イカリング３
 "CommonIkaring3" = "イカリング３";
-"CommonIkuraRatio" = "イクラ取得率";
-"CommonJobResults" = "記録";
-"CommonJobWorks" = "バイト";
-"CommonLocaleLang" = "0";
-"CommonLog" = "ログ";
-"CommonLogTxt" = "開発者にログを送信します（個人を特定する情報は含まれません）";
-"CommonMyPage" = "マイページ";
-"CommonNext" = "すすむ";
+/// ロード中
 "CommonNowLoading" = "ロード中";
-"CommonPlayerCrew" = "なかま";
-"CommonPlayerYou" = "あなた";
-"CommonPowerEggsCollected" = "イクラ獲得数";
-"CommonPrivacyPolicy" = "プライバシーポリシー";
+/// ひっぱって更新
 "CommonPullToRefresh" = "ひっぱって更新";
+/// ガチホコバトル
 "CommonRainmaker" = "ガチホコバトル";
-"CommonRestore" = "復元";
-"CommonRestoreTxt" = "バックアップからリザルトを復元します";
-"CommonSaveToPhotoLibrary" = "保存成功しました。";
-"CommonSettings" = "アプリ設定";
+/// シェア
 "CommonShare" = "シェア";
-"CommonSignIn" = "ログイン";
-"CommonSignInTitle" = "ニンテンドーアカウントにログイン";
-"CommonSignInTxt" = "ニンテンドーアカウントはニンテンドースイッチに連携されている必要があります。";
-"CommonSplatNet3Locale" = "ja-JP";
+/// ガチエリア
 "CommonSplatZones" = "ガチエリア";
-"CommonSuppliedCount" = "ブキ支給回数";
-"CommonSuppliedMainProb" = "ブキ支給率";
-"CommonSuppliedSpecialProb" = "ブキ支給率";
+/// ガチヤグラ
 "CommonTowerControl" = "ガチヤグラ";
-"CommonTrackingData" = "利用データの収集について";
-"CommonTrackingDataTxt" = "許可を選択した場合、アプリケーションはCookieを含むデータを収集し、コンテンツ、製品、サービスを最適化するためにGoogle Analyticsサービスのサーバーに送信します。";
+/// トリカラアタック
 "CommonTricolor" = "トリカラアタック";
+/// トリカラマッチ
 "CommonTricolorMatch" = "トリカラマッチ";
+/// ナワバリバトル
 "CommonTurfWar" = "ナワバリバトル";
-"CommonUnlinkAccounts" = "アカウント連携解除";
-"CommonUnlinkAccountsTxt" = "アプリとニンテンドースイッチオンラインのアカウント連携を解除します（アカウントは削除されません）";
-"CommonWelcomeApp" = "ようこそSalmonia3+へ";
-"CommonWelcomeAppTxt" = "もっと便利なサーモンランライフを！";
-"CommonWipeData" = "データ消去";
-"CommonWipeDataTxt" = "アプリで保存されているデータを削除します";
+/// はてな
 "CommonWpnNotfound" = "はてな";
-"CommonWriteReview" = "レビューを書く";
-"CoopEnemySakeArtillery" = "テッキュウ";
-"CoopEnemySakeBigMouth" = "ドロシャケ";
-"CoopEnemySakeBigMouthGold" = "ドロシャケ";
-"CoopEnemySakeCopter" = "シャケコプター";
-"CoopEnemySakeDolphin" = "ダイバー";
-"CoopEnemySakeFlyBagman" = "タマヒロイ";
-"CoopEnemySakePillar" = "ハシラ";
-"CoopEnemySakeRope" = "タツ";
-"CoopEnemySakeSaucer" = "ナベブタ";
-"CoopEnemySakediver" = "モグラ";
-"CoopEnemySakedozer" = "グリル";
-"CoopEnemySakelienBomber" = "バクダン";
-"CoopEnemySakelienCupTwins" = "カタパッド";
-"CoopEnemySakelienGiant" = "ヨコヅナ";
-"CoopEnemySakelienGolden" = "キンシャケ";
-"CoopEnemySakelienLarge" = "ドスコイ";
-"CoopEnemySakelienShield" = "テッパン";
-"CoopEnemySakelienSmall" = "コジャケ";
-"CoopEnemySakelienSnake" = "ヘビ";
-"CoopEnemySakelienStandard" = "シャケ";
-"CoopEnemySakelienTower" = "タワー";
-"CoopEnemySakerocket" = "コウモリ";
-"CoopEvent1" = "ラッシュ";
-"CoopEvent2" = "キンシャケ探し";
-"CoopEvent3" = "グリル発進";
-"CoopEvent4" = "ハコビヤ襲来";
-"CoopEvent5" = "霧";
-"CoopEvent6" = "ドスコイ大量発生";
-"CoopEvent7" = "巨大タツマキ";
-"CoopEvent8" = "ドロシャケ噴出";
-"CoopGrade00" = "かけだし";
-"CoopGrade01" = "はんにんまえ";
-"CoopGrade02" = "いちにんまえ";
-"CoopGrade03" = "じゅくれん";
-"CoopGrade04" = "たつじん";
-"CoopGrade05" = "たつじん＋１";
-"CoopGrade06" = "たつじん＋２";
-"CoopGrade07" = "たつじん＋３";
-"CoopGrade08" = "でんせつ";
-"CoopGradeArbeiter00" = "かけだし アルバイター";
-"CoopGradeArbeiter01" = "はんにんまえ アルバイター";
-"CoopGradeArbeiter02" = "いちにんまえ アルバイター";
-"CoopGradeArbeiter03" = "じゅくれん アルバイター";
-"CoopGradeArbeiter04" = "たつじん アルバイター";
-"CoopGradeArbeiter05" = "たつじん＋１ アルバイター";
-"CoopGradeArbeiter06" = "たつじん＋２ アルバイター";
-"CoopGradeArbeiter07" = "たつじん＋３ アルバイター";
-"CoopGradeArbeiter08" = "でんせつ アルバイター";
+/// 出現数
 "CoopHistoryAvailable" = "出現数";
+/// 出現したオカシラシャケ
 "CoopHistoryAvailableBoss" = "出現したオカシラシャケ";
+/// 平均クリアWAVE数
 "CoopHistoryAverageClearWaves" = "平均クリアWAVE数";
+/// ビッグラン
 "CoopHistoryBigrun" = "ビッグラン";
-"CoopHistoryBigrunBronze" = "銅";
-"CoopHistoryBigrunGold" = "金";
-"CoopHistoryBigrunSilver" = "銀";
+/// クリアボーナス
 "CoopHistoryBonus" = "クリアボーナス";
+/// オカシラシャケ出現！
 "CoopHistoryBossAvailable" = "オカシラシャケ出現！";
+/// Clear!!
 "CoopHistoryClear" = "Clear!!";
+/// キケン度
 "CoopHistoryDangerRatio" = "キケン度";
+/// オカシラシャケ撃破！
 "CoopHistoryDefeatBoss" = "オカシラシャケ撃破！";
+/// 倒したオカシラシャケ
 "CoopHistoryDefeatBossCount" = "倒したオカシラシャケ";
+/// 倒した！
 "CoopHistoryDefeated" = "倒した！";
+/// 倒したオオモノシャケ
 "CoopHistoryDefeatedEnemies" = "倒したオオモノシャケ";
+/// ※カッコ内の数字は自分で倒した数です
 "CoopHistoryDefeatedEnemiesGuide" = "※カッコ内の数字は自分で倒した数です";
+/// 集めたイクラ
 "CoopHistoryDeliverCount" = "集めたイクラ";
+/// オオモノシャケ
 "CoopHistoryEnemy" = "オオモノシャケ";
+/// EX-WAVE
 "CoopHistoryExWave" = "EX-WAVE";
+/// Failure
 "CoopHistoryFailure" = "Failure";
+/// GJ!
 "CoopHistoryGj" = "GJ!";
+/// バイトヒストリー一覧に戻る
 "CoopHistoryGoToStats" = "バイトヒストリー一覧に戻る";
+/// 集めた金イクラ
 "CoopHistoryGoldenDeliverCount" = "集めた金イクラ";
-"CoopHistoryHighestScore" = "最高きろく";
+/// ハイスコア
+"CoopHistoryHighestScore" = "ハイスコア";
+/// バイトヒストリー
 "CoopHistoryHistory" = "バイトヒストリー";
+/// 獲得ポイント
 "CoopHistoryJobPoint" = "獲得ポイント";
+/// 評価レート
 "CoopHistoryJobRatio" = "評価レート";
+/// クマサンポイントカード
 "CoopHistoryKumaPointCard" = "クマサンポイントカード";
+/// 最新のバイトへ
 "CoopHistoryLatest" = "最新のバイトへ";
-"CoopHistoryLimited" = "期間限定";
+/// 現在の期間限定ポイント
 "CoopHistoryLimitedPoint" = "現在の期間限定ポイント";
+/// 今月のギア
 "CoopHistoryMonthlyReward" = "今月のギア";
+/// 次のバイト
 "CoopHistoryNext" = "次のバイト";
+/// NG
 "CoopHistoryNg" = "NG";
+/// バイトヒストリーがありません
 "CoopHistoryNoData" = "バイトヒストリーがありません";
+/// バイトヒストリーを表示できません
 "CoopHistoryNotAvailable" = "バイトヒストリーを表示できません";
+/// 閲覧できるバイトヒストリーは、最新の50戦までです。
 "CoopHistoryNotAvailableDescription" = "閲覧できるバイトヒストリーは、最新の50戦までです。";
+/// 倒せなかった...
 "CoopHistoryNotDefeated" = "倒せなかった...";
-"CoopHistoryP" = "{ 0 }p";
+/// バイト回数
 "CoopHistoryPlayCount" = "バイト回数";
+/// 前のバイト
 "CoopHistoryPrevious" = "前のバイト";
+/// プライベート
 "CoopHistoryPrivate" = "プライベート";
+/// スタッフ募集！
 "CoopHistoryRecruit" = "スタッフ募集！";
-"CoopHistoryRecruitDescription" = "初心者でも安心！元気で明るい方大歓迎！<br />アットホームな職場でアルバイトをしてみませんか？";
+/// 簡単
 "CoopHistoryRecruitTag1" = "簡単";
+/// イクラ集め
 "CoopHistoryRecruitTag2" = "イクラ集め";
+/// ～イカした制服でイクラ集め～
 "CoopHistoryRecruitTitle" = "～イカした制服でイクラ集め～";
+/// いつものバイト
 "CoopHistoryRegular" = "いつものバイト";
+/// 現在のポイント
 "CoopHistoryRegularPoint" = "現在のポイント";
+/// 助けた回数
 "CoopHistoryRescueCount" = "助けた回数";
+/// たすけてもらったかいすう
 "CoopHistoryRescuedCount" = "たすけてもらったかいすう";
+/// ウロコ
 "CoopHistoryScale" = "ウロコ";
+/// ドウウロコ
 "CoopHistoryScaleBronze" = "ドウウロコ";
+/// キンウロコ
 "CoopHistoryScaleGold" = "キンウロコ";
+/// ギンウロコ
 "CoopHistoryScaleSilver" = "ギンウロコ";
+/// バイトスコア
 "CoopHistoryScore" = "バイトスコア";
+/// スケジュールを見る
 "CoopHistorySeeSchedule" = "スケジュールを見る";
+/// オカシラゲージ
 "CoopHistorySmellMeter" = "オカシラゲージ";
+/// 支給ブキ
 "CoopHistorySupplyWeapon" = "支給ブキ";
+/// バイトチームコンテスト
 "CoopHistoryTeamContest" = "バイトチームコンテスト";
+/// サーモンラン
 "CoopHistoryTitle" = "サーモンラン";
+/// るいけいポイント
 "CoopHistoryTotalPoint" = "るいけいポイント";
-"CoopRecordAppName" = "バイト";
-"CoopRecordAttended" = "参加回数： { 0 }";
-"CoopRecordBigrun" = "ビッグラン";
-"CoopRecordBigrunBronze" = "銅";
-"CoopRecordBigrunGold" = "金";
-"CoopRecordBigrunSilver" = "銀";
-"CoopRecordHighestJobRate" = "最高評価";
-"CoopRecordHighestScore" = "ハイスコア";
-"CoopRecordMore" = "もっと見る";
-"CoopRecordNoData" = "きろくがありません";
-"CoopRecordTeamContest" = "バイトチームコンテスト";
-"CoopRecordTitle" = "サーモンランのきろく";
-"CoopStageCarousel" = "スメーシーワールド";
-"CoopStageShakedent" = "ムニ・エール海洋発電所";
-"CoopStageShakeship" = "難破船ドン・ブラコ";
-"CoopStageShakespiral" = "アラマキ砦";
-"CoopStageShakeup" = "シェケナダム";
-"CoopStageTutorial" = "アラマキ砦";
-"CoopStageUnknown" = "？？？";
-"CoopStageUpland" = "海女美術大学";
-"CoopWaterLevel0" = "干潮";
-"CoopWaterLevel1" = "普通";
-"CoopWaterLevel2" = "満潮";
-"CoopWave1" = "WAVE 1";
-"CoopWave2" = "WAVE 2";
-"CoopWave3" = "WAVE 3";
-"DatetimeFormat" = "M/d HH:mm";
-"DatetimeYearFormat" = "yyyy M/d HH:mm";
+/// WAVE
+"CoopHistoryWave" = "WAVE";
+/// 干潮
+"CoopHistoryWaveLevel0" = "干潮";
+/// 普通
+"CoopHistoryWaveLevel1" = "普通";
+/// 満潮
+"CoopHistoryWaveLevel2" = "満潮";
+/// ホームに戻る
+"ErrorBackToHome" = "ホームに戻る";
+/// 現在利用できません。しばらくお待ちください
+"ErrorCurrentlyNotAvailable" = "現在利用できません。しばらくお待ちください";
+/// エラー
+"ErrorError" = "エラー";
+/// エラーが発生しました
+"ErrorErrorOccurred" = "エラーが発生しました";
+/// 読みこみに失敗しました
+"ErrorErrorReopen" = "読みこみに失敗しました";
+/// ただいまサーバーのメンテナンス中です。時間をおいて再度アクセスしてください。
+"ErrorMaintenanceDescription" = "ただいまサーバーのメンテナンス中です。時間をおいて再度アクセスしてください。";
+/// しばらくお待ちください
+"ErrorMaintenanceTitle" = "しばらくお待ちください";
+/// 再読みこみ
+"ErrorReload" = "再読みこみ";
+/// 最後に遊んだ
+"RecordLatestPlayed" = "最後に遊んだ";
+/// よく使う
+"RecordLatestUsed" = "よく使う";
+/// メイン
+"RecordMain" = "メイン";
+/// じゅくれん度アップまで
+"RecordNextSkillLevel" = "じゅくれん度アップまで";
+/// じゅくれん度
+"RecordSkillLevel" = "じゅくれん度";
+/// 並び替え
+"RecordSort" = "並び替え";
+/// スペシャル
+"RecordSpecial" = "スペシャル";
+/// ステージのきろく
+"RecordStageRecord" = "ステージのきろく";
+/// ステージ
+"RecordStageRecordAppName" = "ステージ";
+/// サブ
+"RecordSub" = "サブ";
+/// きろく
+"RecordTitle" = "きろく";
+/// 塗りポイント
+"RecordTurfPoint" = "塗りポイント";
+/// 遊んでないステージ
+"RecordUnplayedStages" = "遊んでないステージ";
+/// 未所持のブキ
+"RecordUnusedWeapons" = "未所持のブキ";
+/// チョーシ
+"RecordVibes" = "チョーシ";
+/// ブキのきろく
+"RecordWeaponRecord" = "ブキのきろく";
+/// ブキ
+"RecordWeaponRecordAppName" = "ブキ";
+/// 勝利数
+"RecordWinCount" = "勝利数";
+/// 権利表記
+"SettingsAcknowledgements" = "権利表記";
+/// 設定
+"SettingsAppName" = "設定";
+/// クレジット
+"SettingsCredits" = "クレジット";
+/// エキスパンション・パス 購入サイトへ
+"SettingsExpansionPass" = "エキスパンション・パス 購入サイトへ";
+/// 設定
+"SettingsTitle" = "設定";
+/// バンカラマッチ
+"StageScheduleBankara" = "バンカラマッチ";
+/// オープン
+"StageScheduleBankaraOpen" = "オープン";
+/// チャレンジ
+"StageScheduleBankaraOpenChallenge" = "チャレンジ";
+/// サーモンラン
+"StageScheduleCoop" = "サーモンラン";
+/// NOW OPEN！
+"StageScheduleCoopCurrentPeriodStart" = "NOW OPEN！";
+/// イベントマッチ
+"StageScheduleEvent" = "イベントマッチ";
+/// いま
+"StageScheduleEventCurrentSchedule" = "いま";
+/// そのつぎ
+"StageScheduleEventFuture" = "そのつぎ";
+/// 開催中！
+"StageScheduleEventHolding" = "開催中！";
+/// 次回
+"StageScheduleEventNext" = "次回";
+/// つぎ
+"StageScheduleEventNextSchedule" = "つぎ";
+/// スケジュールが未定です
+"StageScheduleEventNoData" = "スケジュールが未定です";
+/// ?????
+"StageScheduleEventUnknownData" = "?????";
+/// イベント開催！
+"StageScheduleEventmatch" = "イベント開催！";
+/// そのつぎ
+"StageScheduleFuture" = "そのつぎ";
+/// Webブラウザが開きます
+"StageScheduleGuideOpenBrowser" = "Webブラウザが開きます";
+/// つぎ
+"StageScheduleNext" = "つぎ";
+/// ビッグラン接近中！
+"StageScheduleNoticeBigrun" = "ビッグラン接近中！";
+/// バイトチームコンテスト開催予告！
+"StageScheduleNoticeLimited" = "バイトチームコンテスト開催予告！";
+/// フェスマッチ開催中！
+"StageScheduleNowClosed" = "フェスマッチ開催中！";
+/// オープン！
+"StageScheduleOpen" = "オープン！";
+/// ビッグラン発生中！
+"StageScheduleOpenBigrun" = "ビッグラン発生中！";
+/// バイトチームコンテスト開催中！
+"StageScheduleOpenLimited" = "バイトチームコンテスト開催中！";
+/// プライベートマッチ
+"StageSchedulePrivate" = "プライベートマッチ";
+/// ビッグランがやってくる！！バイト大募集
+"StageScheduleRecruit" = "ビッグランがやってくる！！バイト大募集";
+/// バイトチームコンテスト！チームを組んで参加しよう！
+"StageScheduleRecruitTeamContest" = "バイトチームコンテスト！チームを組んで参加しよう！";
+/// レギュラーマッチ
+"StageScheduleRegular" = "レギュラーマッチ";
+/// ルールを見る
+"StageScheduleRules" = "ルールを見る";
+/// 詳しいルールはこちら
+"StageScheduleSeeAllRules" = "詳しいルールはこちら";
+/// ランダム
+"StageScheduleSuppliedWeaponRandom" = "ランダム";
+/// 支給ブキ
+"StageScheduleSuppliedWeapons" = "支給ブキ";
+/// スケジュール
+"StageScheduleTitle" = "スケジュール";
+/// ルールごとの勝率
+"StageScheduleWinRateByRules" = "ルールごとの勝率";
+/// Xマッチ
+"StageScheduleXmatch" = "Xマッチ";
+/// About
+"CommonAbout" = "About";
+/// 実測値
+"RecordActualValue" = "実測値";
+/// 外観
+"CommonAppearances" = "外観";
+/// アプリ
+"CommonApplication" = "アプリ";
+/// 平均きろく
+"RecordAverageScore" = "平均きろく";
+/// バックアップ
+"CommonBackupResults" = "バックアップ";
+/// 圧縮(ZIP)
+"CommonBackupCompress" = "圧縮(ZIP)";
+/// データベースのバックアップを出力します。
+"CommonBackupMessage" = "データベースのバックアップを出力します。";
+/// 非圧縮(JSON)
+"CommonBackupPlain" = "非圧縮(JSON)";
+/// クレジット
+"CommonAppCredit" = "クレジット";
+/// ダークモード
+"CommonDarkMode" = "ダークモード";
+/// データ管理
+"CommonDataManagement" = "データ管理";
+/// 助けられた回数
+"CoopHistoryDeathCount" = "助けられた回数";
+/// オオモノシャケをたおした数
+"CoopHistoryDefeatedCount" = "オオモノシャケをたおした数";
+/// 推定値
+"CoopHistoryEstimatedValue" = "推定値";
+/// イベントクリア率
+"CoopHistoryEventClearRatio" = "イベントクリア率";
+/// イベント発生率
+"CoopHistoryEventFrequency" = "イベント発生率";
+/// よくあるご質問
+"CommonFAQ" = "よくあるご質問";
+/// ゲーミングモード
+"CommonGamingMode" = "ゲーミングモード";
+/// 称号
+"CoopHistoryGradeId" = "称号";
+/// 評価ポイント
+"CoopHistoryGradePoint" = "評価ポイント";
+/// 最高きろく
+"CoopHistoryHighestRecord" = "最高きろく";
+/// イカリング2
+"CommonIkaring2" = "イカリング2";
+/// 無効
+"CommonInvalid" = "無効";
+/// 言語
+"CommonLanguages" = "言語";
+/// 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
+"CommonShareLogMessage" = "開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。";
+/// ログ送信
+"CommonShareLog" = "ログ送信";
+/// ログファイル
+"CommonLogSize" = "ログファイル";
+/// マイページ
+"CommonMyPage" = "マイページ";
+/// なかま
+"CoopHistoryPlayerCrew" = "なかま";
+/// あなた
+"CoopHistoryPlayerYou" = "あなた";
+/// プライバシーポリシー
+"CommonPrivacyPolicy" = "プライバシーポリシー";
+/// フォーム
+"CommonRequestForm" = "フォーム";
+/// バグ修正
+"CommonRequestFormBug" = "バグ修正";
+/// 内容
+"CommonRequestFormContent" = "内容";
+/// 改善案
+"CommonRequestFormEnhancement" = "改善案";
+/// 機能追加
+"CommonRequestFormFeature" = "機能追加";
+/// タイトル
+"CommonRequestFormTitle" = "タイトル";
+/// 種類
+"CommonRequestFormType" = "種類";
+/// 送信
+"CommonRequsetFormSubmit" = "送信";
+/// リストア
+"CommonRestore" = "リストア";
+/// ファイルアプリからリストアするファイルを選択してください。
+"CommonRestoreMessage" = "ファイルアプリからリストアするファイルを選択してください。";
+/// リザルト件数
+"CoopHistoryResultsCount" = "リザルト件数";
+/// デバッグ
+"CommonRoleDebuger" = "デバッグ";
+/// 開発
+"CommonRoleDeveloper" = "開発";
+/// テスト
+"CommonRoleTester" = "テスト";
+/// 翻訳
+"CommonRoleTranslator" = "翻訳";
+/// 保存しました
+"CommonSaveToPhotoLibrary" = "保存しました";
+/// スケジュール同期
+"CommonScheduleSync" = "スケジュール同期";
+/// スケジュールサーバーから過去のスケジュールを取得します
+"CommonScheduleSyncMessage" = "スケジュールサーバーから過去のスケジュールを取得します";
+/// ログイン
+"CommonSignIn" = "ログイン";
+/// ログアウト
+"CommonSignOut" = "ログアウト";
+/// ログアウト成功しました
+"CommonSignOutSuccessfully" = "ログアウト成功しました";
+/// ニンテンドーアカウントとの連携を解除します
+"CommonSignOutMessage" = "ニンテンドーアカウントとの連携を解除します";
+/// ソースコード
+"CommonSourceCode" = "ソースコード";
+/// 支給率
+"CoopHistorySuppliedRatio" = "支給率";
+/// アプリをアップデートしてください
+"CommonUpdateRequired" = "アプリをアップデートしてください";
+/// ユーザーデータ
+"CommonUserData" = "ユーザーデータ";
+/// 有効
+"CommonValid" = "有効";
+/// バージョン
+"CommonAppVersion" = "バージョン";
+/// ログ消去
+"CommonWipeLog" = "ログ消去";
+/// 保存されている全てのログを消去します。
+"CommonWipeLogMessage" = "保存されている全てのログを消去します。";
+/// リザルト消去
+"CommonWipeResults" = "リザルト消去";
+/// 保存されている全てのリザルトを消去します。
+"CommonWipeResultsMessage" = "保存されている全てのリザルトを消去します。";
+/// レビューを書く
+"CommonWriteReview" = "レビューを書く";
+/// 総合きろく
+"CoopHistoryOverallRecord" = "総合きろく";
+/// 金イクラ
+"CommonGoldenEggs" = "金イクラ";
+/// イクラ
+"CommonPowerEggs" = "イクラ";
+/// 概要
+"CommonOverview" = "概要";
+/// ja-JP
+"CommonLocale" = "ja-JP";
+/// 0
+"CommonLanguageCode" = "0";
+/// データベース
+"CommonDatabase" = "データベース";
+/// X-ProductVersion
+"CommonXProductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXWebViewVer" = "X-WebViewVer";
+/// アップロード
+"CommonUpload" = "アップロード";
+/// 開発
+"CommonCreditDevelop" = "開発";
+/// テスト
+"CommonCreditTest" = "テスト";
+/// UI/UXデザイン
+"CommonCreditDesign" = "UI/UXデザイン";
+/// チームポイントカード
+"CoopHistoryTeamPointCard" = "チームポイントカード";
+/// 推定値を表示
+"CoopHistoryUseEstimatedValue" = "推定値を表示";
+/// Safariの認証を利用する
+"CommonUseSecureSession" = "Safariの認証を利用する";
+/// 報酬
+"CommonCheckInReward" = "報酬";
+/// 過去に配布されていたQRコードの報酬を取得します。
+"CommonGetCheckInReward" = "過去に配布されていたQRコードの報酬を取得します。";
+/// チーム
+"CoopHistoryTeamResult" = "チーム";
+/// あなた
+"CoopHistoryPlayerResult" = "あなた";
+/// なかまの平均
+"CoopHistoryCrewAvgResult" = "なかまの平均";
+/// なかま
+"CoopHistoryCrewResult" = "なかま";
+/// Waves
+"CoopHistoryWaveResult" = "Waves";
+/// 最高
+"CoopRecordHighestScore" = "最高";
+/// 平均
+"CoopRecordAverageScore" = "平均";
+/// この機能を利用するにはiOS16以上にアップデートする必要があります。
+"CommonRequirediOS16" = "この機能を利用するにはiOS16以上にアップデートする必要があります。";
+/// このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
+"CommonRequiredSignIn" = "このアプリを利用するにはニンテンドーアカウントでログインする必要があります。";
+/// リザルト復元に成功しました。
+"CommonRestoreSuccessMessage" = "リザルト復元に成功しました。";
+/// リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
+"CommonRestoreFailureMessage" = "リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。";
+/// リザルト件数
+"CommonResultsCount" = "リザルト件数";
+/// デベロッパの回答
+"CommonDeveloperAnswer" = "デベロッパの回答";
+/// サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
+"CommonMinimumVersion" = "サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。";
+/// バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
+"ErrorInvalidSignature" = "バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。";
+/// 端末の設定を利用する
+"CommonUseSystemTheme" = "端末の設定を利用する";
+/// ライセンス
+"CommonLicense" = "ライセンス";

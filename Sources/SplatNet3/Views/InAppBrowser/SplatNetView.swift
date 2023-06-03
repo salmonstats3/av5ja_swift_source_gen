@@ -57,7 +57,7 @@ struct SplatNetView: UIViewControllerRepresentable {
 
         init(contentId: ContentId) {
             /// リクエスト
-            let locale: String = NSLocalizedString(LocalizedType.CommonLocaleLang.rawValue, bundle: .module, comment: "")
+            let locale: String = NSLocalizedString(LocalizedType.CommonLocale.rawValue, bundle: .module, comment: "")
             var baseURL: URL = contentId.requestURL
             baseURL.queryItems([URLQueryItem(name: "lang", value: locale)])
             var request = URLRequest(url: baseURL)
@@ -100,7 +100,7 @@ struct SplatNetView: UIViewControllerRepresentable {
                                 HTTPCookiePropertyKey.name: "_gtoken",
                                 HTTPCookiePropertyKey.value: account.gameWebToken,
                                 HTTPCookiePropertyKey.domain: contentId.requestURL.host!,
-                                HTTPCookiePropertyKey.path: "/"])!
+                                HTTPCookiePropertyKey.path: "/", ])!
                             await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
                             indicator.stopAnimating()
                             webView.load(request)
@@ -195,10 +195,10 @@ struct SplatNetView: UIViewControllerRepresentable {
                         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                     })
                     let alert = UIAlertController(
-                        title: LocalizedType.CommonDownload.localized,
-                        message: LocalizedType.CommonSaveToPhotoLibrary.localized,
+                        title: LocalizedType.CommonDownload.description,
+                        message: LocalizedType.CommonSaveToPhotoLibrary.description,
                         preferredStyle: .alert)
-                    let action = UIAlertAction(title: LocalizedType.CommonClose.localized, style: .default)
+                    let action = UIAlertAction(title: LocalizedType.CommonClose.description, style: .default)
                     alert.addAction(action)
                     present(alert, animated: true)
                 })

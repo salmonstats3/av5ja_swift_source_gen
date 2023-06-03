@@ -7,24 +7,13 @@
 
 import Foundation
 
-public enum RuleType: String, CaseIterable, Codable {
+/// サーモンランにおけるルールモード
+public enum RuleType: String, UnsafeRawRepresentable {
     public var id: String { rawValue }
+    public static var defaultValue: RuleType = .UNKNOWN
 
     case UNKNOWN
     case REGULAR
     case BIG_RUN
     case TEAM_CONTEST
-
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        let rawValue: String = try {
-            let rawValue: String = try container.decode(String.self)
-            return rawValue == "CONTEST" ? "TEAM_CONTEST" : rawValue
-        }()
-        guard let rule = RuleType(rawValue: rawValue)
-        else {
-            throw DecodingError.valueNotFound(RuleType.self, .init(codingPath: container.codingPath, debugDescription: "\(rawValue) is not associated of RuleType"))
-        }
-        self = rule
-    }
 }

@@ -25,7 +25,7 @@ class SessionToken: RequestType {
         self.parameters = [
             "client_id": "71b963c1b7b6d119",
             "session_token_code": code,
-            "session_token_code_verifier": verifier
+            "session_token_code_verifier": verifier,
         ]
     }
 

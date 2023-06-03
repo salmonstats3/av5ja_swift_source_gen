@@ -1,61 +1,34 @@
 //
 //  CoopStageId.swift
-//  
 //
-//  Created by devonly on 2022/11/25.
+//  Created by tkgstrator on 2023/06/03
+//  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 
-import Charts
 import Foundation
 
 public enum CoopStageId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Dummy
+    public static var defaultValue: Self = .Unknown
     public var id: Int { rawValue }
 
-    case Unknown        = -1
-    case Tutorial       = 0
-    case Shakeup        = 1
-    case Shakespiral    = 2
-    case Shakehouse     = 3
-    case Shakelift      = 4
-    case Shakeride      = 5
-    case Shakeship      = 6
-    case Shakedent      = 7
-    case Carousel       = 100
-    case Upland         = 102
-    case Dummy          = -999
-
-    public var description: String {
-        NSLocalizedString("CoopStage_\(String(describing: self))", bundle: .module, comment: "")
-    }
-
-    public static let allCases: [CoopStageId] = [
-        .Shakeup,
-        .Shakespiral,
-        .Shakeship,
-        .Shakedent,
-        .Carousel,
-        .Upland
-    ]
-
-    /// 通常のステージ
-    public static let regular: [CoopStageId] = allCases.filter({ $0.rawValue > 0 && $0.rawValue < 100 })
-    /// ビッグラン用のステージ
-    public static let bigRun: [CoopStageId] = allCases.filter({ $0.rawValue >= 100 })
-}
-
-@available(iOS 16.0, *)
-extension CoopStageId: Plottable {
-    public var primitivePlottable: String {
-        String(self.rawValue)
-    }
-
-    public init?(primitivePlottable: String) {
-        guard let rawValue = Int(primitivePlottable) else {
-            return nil
-        }
-        self.init(rawValue: rawValue)
-    }
-
-    public typealias PrimitivePlottable = String
+    /// ？？？
+    case Unknown = -999
+    /// アラマキ砦
+    case Tutorial = 0
+    /// シェケナダム
+    case Shakeup = 1
+    /// アラマキ砦
+    case Shakespiral = 2
+    /// 難破船ドン・ブラコ
+    case Shakeship = 6
+    /// ムニ・エール海洋発電所
+    case Shakedent = 7
+    /// すじこジャンクション跡
+    case Shakehighway = 8
+    /// スメーシーワールド
+    case Carousel = 100
+    /// 海女美術大学
+    case Upland = 102
+    /// マテガイ放水路
+    case Temple = 103
 }

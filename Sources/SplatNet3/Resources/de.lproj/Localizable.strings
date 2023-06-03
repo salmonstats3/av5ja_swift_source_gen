@@ -1,227 +1,624 @@
-"Common%" = "{ 0 } %";
-"CommonActualValue" = "Tatsächlicher Wert";
-"CommonAppSalmonia" = "Salmonellen3+";
-"CommonAppUpdateRequired" = "Erforderliches App-Upgrade.";
-"CommonBackup" = "Sicherung";
-"CommonBackupCompress" = "Komprimieren(ZIP)";
-"CommonBackupNoCompress" = "Klartext(JSON)";
-"CommonBackupTxt" = "Ergebnisse sichern";
+/// Kanonya
+"SakeArtillery" = "Kanonya";
+/// Schlämmermaul
+"SakeBigMouth" = "Schlämmermaul";
+/// Schlämmermaul
+"SakeBigMouthGold" = "Schlämmermaul";
+/// Kopta
+"SakeCopter" = "Kopta";
+/// Sturmreifer
+"SakeDolphin" = "Sturmreifer";
+/// Samko
+"SakeFlyBagman" = "Samko";
+/// Mobelisk
+"SakePillar" = "Mobelisk";
+/// Horroboros
+"SakeRope" = "Horroboros";
+/// Deckler
+"SakeSaucer" = "Deckler";
+/// Grablax
+"Sakediver" = "Grablax";
+/// Killgrill
+"Sakedozer" = "Killgrill";
+/// Bäm
+"SakelienBomber" = "Bäm";
+/// Rakzak
+"SakelienCupTwins" = "Rakzak";
+/// Malmsalm
+"SakelienGiant" = "Malmsalm";
+/// Goldie
+"SakelienGolden" = "Goldie";
+/// Brocken
+"SakelienLarge" = "Brocken";
+/// Pfanndit
+"SakelienShield" = "Pfanndit";
+/// Salmini
+"SakelienSmall" = "Salmini";
+/// Staal
+"SakelienSnake" = "Staal";
+/// Salmo
+"SakelienStandard" = "Salmo";
+/// Stapla
+"SakelienTower" = "Stapla";
+/// Regnar
+"Sakerocket" = "Regnar";
+/// Azubi
+"Grade00" = "Azubi";
+/// Teilzeitkraft
+"Grade01" = "Teilzeitkraft";
+/// Fachpersonal
+"Grade02" = "Fachpersonal";
+/// Führungskraft
+"Grade03" = "Führungskraft";
+/// Boss
+"Grade04" = "Boss";
+/// Boss +1
+"Grade05" = "Boss +1";
+/// Boss +2
+"Grade06" = "Boss +2";
+/// Boss +3
+"Grade07" = "Boss +3";
+/// Legende
+"Grade08" = "Legende";
+/// Azubi
+"GradeArbeiter00" = "Azubi";
+/// Teilzeitkraft
+"GradeArbeiter01" = "Teilzeitkraft";
+/// Fachpersonal
+"GradeArbeiter02" = "Fachpersonal";
+/// Führungskraft
+"GradeArbeiter03" = "Führungskraft";
+/// Boss
+"GradeArbeiter04" = "Boss";
+/// Boss +1
+"GradeArbeiter05" = "Boss +1";
+/// Boss +2
+"GradeArbeiter06" = "Boss +2";
+/// Boss +3
+"GradeArbeiter07" = "Boss +3";
+/// Legende
+"GradeArbeiter08" = "Legende";
+/// Orange Arbeitsklamotten
+"COP001" = "Orange Arbeitsklamotten";
+/// Grüne Arbeitsklamotten
+"COP002" = "Grüne Arbeitsklamotten";
+/// Gelbe Arbeitsklamotten
+"COP003" = "Gelbe Arbeitsklamotten";
+/// Rosa Arbeitsklamotten
+"COP004" = "Rosa Arbeitsklamotten";
+/// Blaue Arbeitsklamotten
+"COP005" = "Blaue Arbeitsklamotten";
+/// Schwarze Arbeitsklamotten
+"COP006" = "Schwarze Arbeitsklamotten";
+/// Weiße Arbeitsklamotten
+"COP007" = "Weiße Arbeitsklamotten";
+/// Orange Wattwater
+"COP008" = "Orange Wattwater";
+/// Schwarze Wattwater
+"COP009" = "Schwarze Wattwater";
+/// Gelbe Wattwater
+"COP010" = "Gelbe Wattwater";
+/// Braune Wattwater
+"COP011" = "Braune Wattwater";
+/// Flunder-Funpark
+"Carousel" = "Flunder-Funpark";
+/// Wasserkraftwerk Stromschnell
+"Shakedent" = "Wasserkraftwerk Stromschnell";
+/// Hakenzahn-Highway
+"Shakehighway" = "Hakenzahn-Highway";
+/// Schiffswrack-Insel
+"Shakeship" = "Schiffswrack-Insel";
+/// Fort Nautilax
+"Shakespiral" = "Fort Nautilax";
+/// Salmoniden-Damm
+"Shakeup" = "Salmoniden-Damm";
+/// Schwertmuschel-Reservoir
+"Temple" = "Schwertmuschel-Reservoir";
+/// Fort Nautilax
+"Tutorial" = "Fort Nautilax";
+/// ???
+"Unknown" = "???";
+/// Perlmutt-Akademie
+"Upland" = "Perlmutt-Akademie";
+/// Abbrechen
 "CommonCancel" = "Abbrechen";
-"CommonCharts" = "Diagramme";
+/// Muschelchaos
 "CommonClamBlitz" = "Muschelchaos";
-"CommonClearRatio" = "Räumungsrate";
+/// Schließen
 "CommonClose" = "Schließen";
-"CommonColonRule" = ":";
-"CommonConfirmDanger" = "Dieser Vorgang kann nicht rückgängig gemacht werden.";
+/// Big Run
 "CommonCoopBigRun" = "Big Run";
+/// Team-Wettkampf
 "CommonCoopTeamContest" = "Team-Wettkampf";
+/// QR Code is a registered trademark of DENSO WAVE INCORPORATED.
 "CommonCopyrightQrCode" = "QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
-"CommonCustomize" = "Anpassen";
-"CommonDarkMode" = "Dunkler Modus";
-"CommonDataManagements" = "Verwaltung der Daten";
-"CommonDeathCount" = "Der Tod zählt";
+/// OK
 "CommonDecide" = "OK";
-"CommonDefeatedRatio" = "Verhältnis besiegter Boss";
-"CommonDefeatedSakelienCount" = "Boss Salmoniden besiegt";
+/// Herunterladen
 "CommonDownload" = "Herunterladen";
+/// Schließen
 "CommonEnd" = "Schließen";
-"CommonEstimatedValue" = "Geschätzter Wert";
-"CommonEventClearRatio" = "Ereignisfreigabequote";
-"CommonEventProbability" = "Häufigkeit der Ereignisse";
-"CommonForm" = "Formular";
-"CommonFormContent" = "Inhalt";
-"CommonFormSubmit" = "Einreichen";
-"CommonFormTitle" = "Titel";
-"CommonFormType" = "Typ";
-"CommonFormTypeBug" = "Fehler";
-"CommonFormTypeEnhancement" = "Erweiterung";
-"CommonFormTypeFeature" = "Merkmal";
-"CommonGamingMode" = "Spiele-Modus";
+/// Unbekannt
 "CommonGearPowerBlank" = "Unbekannt";
-"CommonGetSchedules" = "Zeitpläne synchronisieren";
-"CommonGetSchedulesTxt" = "Abrufen von Zeitplandaten";
-"CommonGoldenEggsCollected" = "Goldene Eier gesammelt";
-"CommonGradeId" = "Klasse";
-"CommonGradePoint" = "Notenpunkte";
+/// Startseite
 "CommonHome" = "Startseite";
+/// SplatNet 3
 "CommonIkaring3" = "SplatNet 3";
-"CommonIkuraRatio" = "Ei-Verhältnis";
-"CommonJobResults" = "Ergebnisse";
-"CommonJobWorks" = "Arbeitsschicht";
-"CommonLocaleLang" = "0";
-"CommonLog" = "Protokoll";
-"CommonLogTxt" = "Senden von Protokollen an Entwickler (ohne persönliche Daten)";
-"CommonMyPage" = "Meine Seite";
-"CommonNext" = "Weiter";
+/// Ladevorgang...
 "CommonNowLoading" = "Ladevorgang...";
-"CommonPlayerCrew" = "Besatzung";
-"CommonPlayerYou" = "Sie";
-"CommonPowerEggsCollected" = "Gelieferte Stromeier";
-"CommonPrivacyPolicy" = "Datenschutzbestimmungen";
+/// Zum Aktualisieren ziehen
 "CommonPullToRefresh" = "Zum Aktualisieren ziehen";
+/// Operation Goldfisch
 "CommonRainmaker" = "Operation Goldfisch";
-"CommonRestore" = "Wiederherstellen";
-"CommonRestoreTxt" = "Alle Daten aus der Sicherung wiederherstellen";
-"CommonSaveToPhotoLibrary" = "Erfolgreich gespeichert.";
-"CommonSettings" = "App-Einstellungen";
+/// Teilen
 "CommonShare" = "Teilen";
-"CommonSignIn" = "Eintragen";
-"CommonSignInTitle" = "Melden Sie sich mit Ihrem Nintendo-Konto an";
-"CommonSignInTxt" = "Ihr Nintendo-Konto muss mit einer Nintendo Switch-Konsole verknüpft sein";
-"CommonSplatNet3Locale" = "de-DE";
+/// Herrschaft
 "CommonSplatZones" = "Herrschaft";
-"CommonSuppliedCount" = "Gelieferte Waffen";
-"CommonSuppliedMainProb" = "Gelieferte Waffen";
-"CommonSuppliedSpecialProb" = "Gelieferte Spezialitäten";
+/// Turm-Kommando
 "CommonTowerControl" = "Turm-Kommando";
-"CommonTrackingData" = "Über die Verfolgung von Nutzungsdaten";
-"CommonTrackingDataTxt" = "Wenn Sie die Option Zulassen wählen, sammelt die Anwendung Daten, auch über Cookies, und sendet sie an den Server des Google Analytics Service, um Inhalte, Produkte und Dienstleistungen zu optimieren.";
+/// Dreifarb-Angriff
 "CommonTricolor" = "Dreifarb-Angriff";
+/// Dreifarb-Match
 "CommonTricolorMatch" = "Dreifarb-Match";
+/// Revierkampf
 "CommonTurfWar" = "Revierkampf";
-"CommonUnlinkAccounts" = "Entkopplung";
-"CommonUnlinkAccountsTxt" = "Entkopplung von Nintendo Switch Online-Konten (das Konto wird nicht gelöscht).";
-"CommonWelcomeApp" = "Willkommen bei Salmonia3";
-"CommonWelcomeAppTxt" = "Verbessern Sie Ihr Online-Spielerlebnis mit dem Salmonia3+!";
-"CommonWipeData" = "Ergebnisse löschen";
-"CommonWipeDataTxt" = "Löschen Sie alle Ergebnisse in der App.";
+/// Unbekannt
 "CommonWpnNotfound" = "Unbekannt";
-"CommonWriteReview" = "Eine Bewertung schreiben";
-"CoopEnemySakeArtillery" = "Kanonya";
-"CoopEnemySakeBigMouth" = "Schlämmermaul";
-"CoopEnemySakeBigMouthGold" = "Schlämmermaul";
-"CoopEnemySakeCopter" = "Kopta";
-"CoopEnemySakeDolphin" = "Sturmreifer";
-"CoopEnemySakeFlyBagman" = "Samko";
-"CoopEnemySakePillar" = "Mobelisk";
-"CoopEnemySakeRope" = "Horroboros";
-"CoopEnemySakeSaucer" = "Deckler";
-"CoopEnemySakediver" = "Grablax";
-"CoopEnemySakedozer" = "Killgrill";
-"CoopEnemySakelienBomber" = "Bäm";
-"CoopEnemySakelienCupTwins" = "Rakzak";
-"CoopEnemySakelienGiant" = "Malmsalm";
-"CoopEnemySakelienGolden" = "Goldie";
-"CoopEnemySakelienLarge" = "Brocken";
-"CoopEnemySakelienShield" = "Pfanndit";
-"CoopEnemySakelienSmall" = "Salmini";
-"CoopEnemySakelienSnake" = "Staal";
-"CoopEnemySakelienStandard" = "Salmo";
-"CoopEnemySakelienTower" = "Stapla";
-"CoopEnemySakerocket" = "Regnar";
-"CoopEvent1" = "Ansturm";
-"CoopEvent2" = "Goldie-Suche";
-"CoopEvent3" = "Killgrills";
-"CoopEvent4" = "Das Mutterschiff";
-"CoopEvent5" = "Nebel";
-"CoopEvent6" = "Brocken-Sturmangriff";
-"CoopEvent7" = "Riesentornados";
-"CoopEvent8" = "Schlämmermaul-Eruptionen";
-"CoopGrade00" = "Azubi";
-"CoopGrade01" = "Teilzeitkraft";
-"CoopGrade02" = "Fachpersonal";
-"CoopGrade03" = "Führungskraft";
-"CoopGrade04" = "Boss";
-"CoopGrade05" = "Boss +1";
-"CoopGrade06" = "Boss +2";
-"CoopGrade07" = "Boss +3";
-"CoopGrade08" = "Legende";
-"CoopGradeArbeiter00" = "Azubi";
-"CoopGradeArbeiter01" = "Teilzeitkraft";
-"CoopGradeArbeiter02" = "Fachpersonal";
-"CoopGradeArbeiter03" = "Führungskraft";
-"CoopGradeArbeiter04" = "Boss";
-"CoopGradeArbeiter05" = "Boss +1";
-"CoopGradeArbeiter06" = "Boss +2";
-"CoopGradeArbeiter07" = "Boss +3";
-"CoopGradeArbeiter08" = "Legende";
+/// Auftritte
 "CoopHistoryAvailable" = "Auftritte";
+/// Ober-Salmonide bekämpft
 "CoopHistoryAvailableBoss" = "Ober-Salmonide bekämpft";
+/// Durchschn. überstandene Wellen
 "CoopHistoryAverageClearWaves" = "Durchschn. überstandene Wellen";
+/// Big Run
 "CoopHistoryBigrun" = "Big Run";
+/// Bronze
 "CoopHistoryBigrunBronze" = "Bronze";
+/// Gold
 "CoopHistoryBigrunGold" = "Gold";
+/// Silber
 "CoopHistoryBigrunSilver" = "Silber";
+/// Abschluss
 "CoopHistoryBonus" = "Abschluss";
+/// Ober-Salmonide gesichtet!
 "CoopHistoryBossAvailable" = "Ober-Salmonide gesichtet!";
+/// Geschafft!
 "CoopHistoryClear" = "Geschafft!";
+/// Gefahrenstufe
 "CoopHistoryDangerRatio" = "Gefahrenstufe";
+/// Ober-Salmoniden-Angriff!
 "CoopHistoryDefeatBoss" = "Ober-Salmoniden-Angriff!";
+/// Besiegte Ober-Salmoniden
 "CoopHistoryDefeatBossCount" = "Besiegte Ober-Salmoniden";
+/// Besiegt!
 "CoopHistoryDefeated" = "Besiegt!";
+/// Besiegte Boss-Salmoniden
 "CoopHistoryDefeatedEnemies" = "Besiegte Boss-Salmoniden";
+/// *Die Zahl in Klammern zeigt, wie viele davon du selbst besiegt hast.
 "CoopHistoryDefeatedEnemiesGuide" = "*Die Zahl in Klammern zeigt, wie viele davon du selbst besiegt hast.";
+/// Gesammelte Fischeier
 "CoopHistoryDeliverCount" = "Gesammelte Fischeier";
+/// Boss-Salmoniden
 "CoopHistoryEnemy" = "Boss-Salmoniden";
+/// Extra-Welle
 "CoopHistoryExWave" = "Extra-Welle";
+/// Schade...
 "CoopHistoryFailure" = "Schade...";
-"CoopHistoryGj" = "✓";
+/// Zurück zu den Schicht-Daten
 "CoopHistoryGoToStats" = "Zurück zu den Schicht-Daten";
+/// Gesammelte Gold-Fischeier
 "CoopHistoryGoldenDeliverCount" = "Gesammelte Gold-Fischeier";
-"CoopHistoryHighestScore" = "Rekord";
+/// Highscore
+"CoopHistoryHighestScore" = "Highscore";
+/// Karriere
 "CoopHistoryHistory" = "Karriere";
+/// Dein Punktestand
 "CoopHistoryJobPoint" = "Dein Punktestand";
+/// Bewertung
 "CoopHistoryJobRatio" = "Bewertung";
+/// Bärenpunkte-Karte
 "CoopHistoryKumaPointCard" = "Bärenpunkte-Karte";
+/// Letzte Schicht
 "CoopHistoryLatest" = "Letzte Schicht";
-"CoopHistoryLimited" = "Nur begrenzte Zeit";
+/// Spezial-Bonuspunktestand
 "CoopHistoryLimitedPoint" = "Spezial-Bonuspunktestand";
+/// Monatsangebot
 "CoopHistoryMonthlyReward" = "Monatsangebot";
+/// Vor
 "CoopHistoryNext" = "Vor";
-"CoopHistoryNg" = "✘";
+/// Keine Schicht-Daten vorhanden.
 "CoopHistoryNoData" = "Keine Schicht-Daten vorhanden.";
+/// Schicht-Daten nicht verfügbar
 "CoopHistoryNotAvailable" = "Schicht-Daten nicht verfügbar";
+/// Nur die letzten 50 Einträge sind verfügbar.
 "CoopHistoryNotAvailableDescription" = "Nur die letzten 50 Einträge sind verfügbar.";
+/// Gescheitert...
 "CoopHistoryNotDefeated" = "Gescheitert...";
-"CoopHistoryP" = "{ 0 } P";
+/// Angetretene Schichten
 "CoopHistoryPlayCount" = "Angetretene Schichten";
+/// Zurück
 "CoopHistoryPrevious" = "Zurück";
+/// Private Schicht
 "CoopHistoryPrivate" = "Private Schicht";
+/// Eierjäger gesucht!
 "CoopHistoryRecruit" = "Eierjäger gesucht!";
+/// Jung? Spontan? Risikofreudig? Aufstrebende, fleißige Talente lieben diesen schuppenmäßig gut bezahlten Job!
 "CoopHistoryRecruitDescription" = "Jung? Spontan? Risikofreudig? Aufstrebende, fleißige Talente lieben diesen schuppenmäßig gut bezahlten Job!";
+/// Supereinfach!
 "CoopHistoryRecruitTag1" = "Supereinfach!";
+/// Fischeiersammeln bringt Spaß und Profit!
 "CoopHistoryRecruitTag2" = "Fischeiersammeln bringt Spaß und Profit!";
+/// Fischeiersammeln! Der beste Job der Welt!
 "CoopHistoryRecruitTitle" = "Fischeiersammeln! Der beste Job der Welt!";
+/// Standardschicht
 "CoopHistoryRegular" = "Standardschicht";
+/// Punktestand
 "CoopHistoryRegularPoint" = "Punktestand";
+/// Gerettete Teamkollegen
 "CoopHistoryRescueCount" = "Gerettete Teamkollegen";
+/// Benötigte Rettungen
 "CoopHistoryRescuedCount" = "Benötigte Rettungen";
+/// Schuppen
 "CoopHistoryScale" = "Schuppen";
+/// Bronzeschuppe
 "CoopHistoryScaleBronze" = "Bronzeschuppe";
+/// Goldschuppe
 "CoopHistoryScaleGold" = "Goldschuppe";
+/// Silberschuppe
 "CoopHistoryScaleSilver" = "Silberschuppe";
+/// Leistung
 "CoopHistoryScore" = "Leistung";
+/// Arbeitszeiten
 "CoopHistorySeeSchedule" = "Arbeitszeiten";
+/// Salmometer
 "CoopHistorySmellMeter" = "Salmometer";
+/// Verfügbare Waffen
 "CoopHistorySupplyWeapon" = "Verfügbare Waffen";
+/// Team-Wettkampf
 "CoopHistoryTeamContest" = "Team-Wettkampf";
+/// Salmon Run
 "CoopHistoryTitle" = "Salmon Run";
+/// Gesamtpunkte
 "CoopHistoryTotalPoint" = "Gesamtpunkte";
-"CoopRecordAppName" = "Schicht";
-"CoopRecordAttended" = "Teilnahmen: { 0 }";
-"CoopRecordBigrun" = "Big Run";
-"CoopRecordBigrunBronze" = "Bronze";
-"CoopRecordBigrunGold" = "Gold";
-"CoopRecordBigrunSilver" = "Silber";
-"CoopRecordHighestJobRate" = "Höchste Bewertung";
-"CoopRecordHighestScore" = "Highscore";
-"CoopRecordMore" = "Mehr";
-"CoopRecordNoData" = "Keine Daten";
-"CoopRecordTeamContest" = "Team-Wettkampf";
-"CoopRecordTitle" = "Salmon Run-Daten";
-"CoopStageCarousel" = "Flunder-Funpark";
-"CoopStageShakedent" = "Wasserkraftwerk Stromschnell";
-"CoopStageShakeship" = "Schiffswrack-Insel";
-"CoopStageShakespiral" = "Fort Nautilax";
-"CoopStageShakeup" = "Salmoniden-Damm";
-"CoopStageTutorial" = "Fort Nautilax";
-"CoopStageUnknown" = "???";
-"CoopStageUpland" = "Perlmutt-Akademie";
-"CoopWaterLevel0" = "Ebbe";
-"CoopWaterLevel1" = "Normal";
-"CoopWaterLevel2" = "Flut";
-"CoopWave1" = "Welle 1";
-"CoopWave2" = "Welle 2";
-"CoopWave3" = "Welle 3";
-"DatetimeFormat" = "dd.MM. HH:mm";
-"DatetimeYearFormat" = "dd.MM.yyyy HH:mm";
+/// Welle
+"CoopHistoryWave" = "Welle";
+/// Ebbe
+"CoopHistoryWaveLevel0" = "Ebbe";
+/// Normal
+"CoopHistoryWaveLevel1" = "Normal";
+/// Flut
+"CoopHistoryWaveLevel2" = "Flut";
+/// Zurück zur Startseite
+"ErrorBackToHome" = "Zurück zur Startseite";
+/// Momentan nicht verfügbar. Bitte warte etwas und versuche es dann erneut.
+"ErrorCurrentlyNotAvailable" = "Momentan nicht verfügbar. Bitte warte etwas und versuche es dann erneut.";
+/// Fehler
+"ErrorError" = "Fehler";
+/// Ein Fehler ist aufgetreten.
+"ErrorErrorOccurred" = "Ein Fehler ist aufgetreten.";
+/// Ladevorgang fehlgeschlagen.
+"ErrorErrorReopen" = "Ladevorgang fehlgeschlagen.";
+/// Aufgrund von Server-Wartungsarbeiten steht dieser Service momentan nicht zur Verfügung. Bitte versuche es später erneut.
+"ErrorMaintenanceDescription" = "Aufgrund von Server-Wartungsarbeiten steht dieser Service momentan nicht zur Verfügung. Bitte versuche es später erneut.";
+/// Bitte warten...
+"ErrorMaintenanceTitle" = "Bitte warten...";
+/// Ladevorgang fehlgeschlagen. Bitte überprüfe die Verbindung mit dem Internet und versuche es erneut.
+"ErrorNetworkNotAvailable" = "Ladevorgang fehlgeschlagen. Bitte überprüfe die Verbindung mit dem Internet und versuche es erneut.";
+/// SplatNet 3 kann nicht angezeigt werden. Bitte überprüfe deine Internetverbindung und warte etwas, bevor du es erneut versuchst. Wenn das Problem dadurch nicht behoben wird, überprüfe, ob du die aktuelle Version deines Browsers verwendest. Wenn dir weiterhin diese Nachricht angezeigt wird, ist es möglich, dass SplatNet 3 nicht mit deinen momentanen Einstellungen oder deinem Smartgerät kompatibel ist.
+"ErrorNotSupported" = "SplatNet 3 kann nicht angezeigt werden. Bitte überprüfe deine Internetverbindung und warte etwas, bevor du es erneut versuchst. Wenn das Problem dadurch nicht behoben wird, überprüfe, ob du die aktuelle Version deines Browsers verwendest. Wenn dir weiterhin diese Nachricht angezeigt wird, ist es möglich, dass SplatNet 3 nicht mit deinen momentanen Einstellungen oder deinem Smartgerät kompatibel ist.";
+/// Aktualisieren
+"ErrorReload" = "Aktualisieren";
+/// Zuletzt gespielt
+"RecordLatestPlayed" = "Zuletzt gespielt";
+/// Meistgenutzt
+"RecordLatestUsed" = "Meistgenutzt";
+/// Hauptwaffe
+"RecordMain" = "Hauptwaffe";
+/// Nächste Stufe
+"RecordNextSkillLevel" = "Nächste Stufe";
+/// Waffen-Style
+"RecordSkillLevel" = "Waffen-Style";
+/// Sortieren
+"RecordSort" = "Sortieren";
+/// Spezialwaffe
+"RecordSpecial" = "Spezialwaffe";
+/// Arenen
+"RecordStageRecord" = "Arenen";
+/// Arenen
+"RecordStageRecordAppName" = "Arenen";
+/// Sekundärwaffe
+"RecordSub" = "Sekundärwaffe";
+/// Statistiken
+"RecordTitle" = "Statistiken";
+/// Gefärbte Fläche
+"RecordTurfPoint" = "Gefärbte Fläche";
+/// Ungespielt
+"RecordUnplayedStages" = "Ungespielt";
+/// Noch freizuschaltende Waffen
+"RecordUnusedWeapons" = "Noch freizuschaltende Waffen";
+/// Miezrichter-Skala
+"RecordVibes" = "Miezrichter-Skala";
+/// Waffen
+"RecordWeaponRecord" = "Waffen";
+/// Waffen
+"RecordWeaponRecordAppName" = "Waffen";
+/// Siege
+"RecordWinCount" = "Siege";
+/// Copyrights
+"SettingsAcknowledgements" = "Copyrights";
+/// Einstellungen
+"SettingsAppName" = "Einstellungen";
+/// Credits
+"SettingsCredits" = "Credits";
+/// Zu Informationen über den Erweiterungspass
+"SettingsExpansionPass" = "Zu Informationen über den Erweiterungspass";
+/// Einstellungen
+"SettingsTitle" = "Einstellungen";
+/// Anarchie-Kampf
+"StageScheduleBankara" = "Anarchie-Kampf";
+/// Offen
+"StageScheduleBankaraOpen" = "Offen";
+/// Serie
+"StageScheduleBankaraOpenChallenge" = "Serie";
+/// Salmon Run
+"StageScheduleCoop" = "Salmon Run";
+/// JETZT GEÖFFNET!
+"StageScheduleCoopCurrentPeriodStart" = "JETZT GEÖFFNET!";
+/// Event-Kampf
+"StageScheduleEvent" = "Event-Kampf";
+/// Aktuell
+"StageScheduleEventCurrentSchedule" = "Aktuell";
+/// Danach
+"StageScheduleEventFuture" = "Danach";
+/// Läuft!
+"StageScheduleEventHolding" = "Läuft!";
+/// Demnächst
+"StageScheduleEventNext" = "Demnächst";
+/// Als Nächstes
+"StageScheduleEventNextSchedule" = "Als Nächstes";
+/// Momentan sind keine Event-Kämpfe geplant.
+"StageScheduleEventNoData" = "Momentan sind keine Event-Kämpfe geplant.";
+/// ???
+"StageScheduleEventUnknownData" = "???";
+/// Event läuft jetzt!
+"StageScheduleEventmatch" = "Event läuft jetzt!";
+/// Danach
+"StageScheduleFuture" = "Danach";
+/// Text wird als neues Browserfenster geöffnet.
+"StageScheduleGuideOpenBrowser" = "Text wird als neues Browserfenster geöffnet.";
+/// Demnächst
+"StageScheduleNext" = "Demnächst";
+/// Demnächst: Big Run!
+"StageScheduleNoticeBigrun" = "Demnächst: Big Run!";
+/// Ankündigung: Team-Wettkampf demnächst verfügbar!
+"StageScheduleNoticeLimited" = "Ankündigung: Team-Wettkampf demnächst verfügbar!";
+/// Splatfest!
+"StageScheduleNowClosed" = "Splatfest!";
+/// Aktuell
+"StageScheduleOpen" = "Aktuell";
+/// Big Run läuft jetzt!
+"StageScheduleOpenBigrun" = "Big Run läuft jetzt!";
+/// Team-Wettkampf jetzt verfügbar!
+"StageScheduleOpenLimited" = "Team-Wettkampf jetzt verfügbar!";
+/// Privater Kampf
+"StageSchedulePrivate" = "Privater Kampf";
+/// Big Run läuft! Die Bär GmbH stellt jeden ein! JEDEN! ()
+"StageScheduleRecruit" = "Big Run läuft! Die Bär GmbH stellt jeden ein! JEDEN! ()";
+/// Team-Wettkampf jetzt spielbar! Finde Mitarbeiter und rein ins... Vergnügen?
+"StageScheduleRecruitTeamContest" = "Team-Wettkampf jetzt spielbar! Finde Mitarbeiter und rein ins... Vergnügen?";
+/// Standardkampf
+"StageScheduleRegular" = "Standardkampf";
+/// Regeln lesen
+"StageScheduleRules" = "Regeln lesen";
+/// Detaillierte Regeln lesen
+"StageScheduleSeeAllRules" = "Detaillierte Regeln lesen";
+/// Zufall
+"StageScheduleSuppliedWeaponRandom" = "Zufall";
+/// Verfügbare Waffen
+"StageScheduleSuppliedWeapons" = "Verfügbare Waffen";
+/// Zeitplan
+"StageScheduleTitle" = "Zeitplan";
+/// Siege nach Kampfart
+"StageScheduleWinRateByRules" = "Siege nach Kampfart";
+/// X-Kampf
+"StageScheduleXmatch" = "X-Kampf";
+/// Über
+"CommonAbout" = "Über";
+/// Aktuell
+"RecordActualValue" = "Aktuell";
+/// Auftritte
+"CommonAppearances" = "Auftritte";
+/// Anmeldung
+"CommonApplication" = "Anmeldung";
+/// Durchschnitt
+"RecordAverageScore" = "Durchschnitt";
+/// Sicherung
+"CommonBackupResults" = "Sicherung";
+/// Komprimieren(ZIP)
+"CommonBackupCompress" = "Komprimieren(ZIP)";
+/// Datenbank sichern
+"CommonBackupMessage" = "Datenbank sichern";
+/// Klartext(JSON)
+"CommonBackupPlain" = "Klartext(JSON)";
+/// Kredit
+"CommonAppCredit" = "Kredit";
+/// Dunkler Modus
+"CommonDarkMode" = "Dunkler Modus";
+/// Datenverwaltung
+"CommonDataManagement" = "Datenverwaltung";
+/// Gerettete Anzahl
+"CoopHistoryDeathCount" = "Gerettete Anzahl";
+/// Geschlagene Zählung
+"CoopHistoryDefeatedCount" = "Geschlagene Zählung";
+/// Geschätzte
+"CoopHistoryEstimatedValue" = "Geschätzte";
+/// Klares Verhältnis
+"CoopHistoryEventClearRatio" = "Klares Verhältnis";
+/// Häufigkeit der Ereignisse
+"CoopHistoryEventFrequency" = "Häufigkeit der Ereignisse";
+/// FAQ
+"CommonFAQ" = "FAQ";
+/// Spiele-Modus
+"CommonGamingMode" = "Spiele-Modus";
+/// Klasse
+"CoopHistoryGradeId" = "Klasse";
+/// Notenpunkt
+"CoopHistoryGradePoint" = "Notenpunkt";
+/// Höchste
+"CoopHistoryHighestRecord" = "Höchste";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// Ungültig
+"CommonInvalid" = "Ungültig";
+/// Sprachen
+"CommonLanguages" = "Sprachen";
+/// Protokolle an den Entwickler senden. Das Versenden der Protokolldatei bei Auftreten eines Fehlers erleichtert es dem Entwickler, die Fehlerursache zu ermitteln und zu beheben. Die Protokolldatei enthält keine persönlich identifizierbaren Informationen.
+"CommonShareLogMessage" = "Protokolle an den Entwickler senden. Das Versenden der Protokolldatei bei Auftreten eines Fehlers erleichtert es dem Entwickler, die Fehlerursache zu ermitteln und zu beheben. Die Protokolldatei enthält keine persönlich identifizierbaren Informationen.";
+/// Protokolle teilen
+"CommonShareLog" = "Protokolle teilen";
+/// Log-Dateien
+"CommonLogSize" = "Log-Dateien";
+/// Meine Seite
+"CommonMyPage" = "Meine Seite";
+/// Besatzung
+"CoopHistoryPlayerCrew" = "Besatzung";
+/// Sie
+"CoopHistoryPlayerYou" = "Sie";
+/// Datenschutzbestimmungen
+"CommonPrivacyPolicy" = "Datenschutzbestimmungen";
+/// Formular
+"CommonRequestForm" = "Formular";
+/// Fehler
+"CommonRequestFormBug" = "Fehler";
+/// Inhalt
+"CommonRequestFormContent" = "Inhalt";
+/// Erweiterung
+"CommonRequestFormEnhancement" = "Erweiterung";
+/// Merkmal
+"CommonRequestFormFeature" = "Merkmal";
+/// Titel
+"CommonRequestFormTitle" = "Titel";
+/// Typ
+"CommonRequestFormType" = "Typ";
+/// Einreichen
+"CommonRequsetFormSubmit" = "Einreichen";
+/// Wiederherstellen
+"CommonRestore" = "Wiederherstellen";
+/// Wählen Sie die wiederherzustellende Datei in der Dateien-App aus.
+"CommonRestoreMessage" = "Wählen Sie die wiederherzustellende Datei in der Dateien-App aus.";
+/// Ergebnisse zählen
+"CoopHistoryResultsCount" = "Ergebnisse zählen";
+/// Debuggen
+"CommonRoleDebuger" = "Debuggen";
+/// Entwickler
+"CommonRoleDeveloper" = "Entwickler";
+/// Testor
+"CommonRoleTester" = "Testor";
+/// Übersetzer
+"CommonRoleTranslator" = "Übersetzer";
+/// Erfolgreich gespeichert
+"CommonSaveToPhotoLibrary" = "Erfolgreich gespeichert";
+/// Zeitplan synchronisieren
+"CommonScheduleSync" = "Zeitplan synchronisieren";
+/// Abrufen des Zeitplans vom Server.
+"CommonScheduleSyncMessage" = "Abrufen des Zeitplans vom Server.";
+/// Eintragen
+"CommonSignIn" = "Eintragen";
+/// Abmelden
+"CommonSignOut" = "Abmelden";
+/// Erfolgreich abmelden
+"CommonSignOutSuccessfully" = "Erfolgreich abmelden";
+/// Entkoppeln Sie das Nintendo Switch-Konto.
+"CommonSignOutMessage" = "Entkoppeln Sie das Nintendo Switch-Konto.";
+/// Quellcode
+"CommonSourceCode" = "Quellcode";
+/// Angegebenes Verhältnis
+"CoopHistorySuppliedRatio" = "Angegebenes Verhältnis";
+/// App-Update ist erforderlich
+"CommonUpdateRequired" = "App-Update ist erforderlich";
+/// Benutzerdaten
+"CommonUserData" = "Benutzerdaten";
+/// Gültig
+"CommonValid" = "Gültig";
+/// Version
+"CommonAppVersion" = "Version";
+/// Protokolle wischen
+"CommonWipeLog" = "Protokolle wischen";
+/// Wischen Sie alle Protokolle ab.
+"CommonWipeLogMessage" = "Wischen Sie alle Protokolle ab.";
+/// Ergebnisse wischen
+"CommonWipeResults" = "Ergebnisse wischen";
+/// Löschen Sie alle Daten.
+"CommonWipeResultsMessage" = "Löschen Sie alle Daten.";
+/// Eine Bewertung schreiben
+"CommonWriteReview" = "Eine Bewertung schreiben";
+/// Insgesamt
+"CoopHistoryOverallRecord" = "Insgesamt";
+/// Goldene Eier
+"CommonGoldenEggs" = "Goldene Eier";
+/// Power-Eier
+"CommonPowerEggs" = "Power-Eier";
+/// Übersicht
+"CommonOverview" = "Übersicht";
+/// de-DE
+"CommonLocale" = "de-DE";
+/// 0
+"CommonLanguageCode" = "0";
+/// Datenbank
+"CommonDatabase" = "Datenbank";
+/// X-ProductVersion
+"CommonXProductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXWebViewVer" = "X-WebViewVer";
+/// Hochladen
+"CommonUpload" = "Hochladen";
+/// Entwickler
+"CommonCreditDevelop" = "Entwickler";
+/// Tester
+"CommonCreditTest" = "Tester";
+/// UI/UX Gestaltung
+"CommonCreditDesign" = "UI/UX Gestaltung";
+/// Team-Punktekarte
+"CoopHistoryTeamPointCard" = "Team-Punktekarte";
+/// Geschätzte Werte verwenden
+"CoopHistoryUseEstimatedValue" = "Geschätzte Werte verwenden";
+/// Empherische Sitzung verwenden
+"CommonUseSecureSession" = "Empherische Sitzung verwenden";
+/// Belohnungen
+"CommonCheckInReward" = "Belohnungen";
+/// Holen Sie sich alle Belohnungen für QR-Codes.
+"CommonGetCheckInReward" = "Holen Sie sich alle Belohnungen für QR-Codes.";
+/// Team
+"CoopHistoryTeamResult" = "Team";
+/// Sie
+"CoopHistoryPlayerResult" = "Sie";
+/// Avg der Besatzung
+"CoopHistoryCrewAvgResult" = "Avg der Besatzung";
+/// Besatzung
+"CoopHistoryCrewResult" = "Besatzung";
+/// Wellen
+"CoopHistoryWaveResult" = "Wellen";
+/// Max
+"CoopRecordHighestScore" = "Max";
+/// Avg
+"CoopRecordAverageScore" = "Avg";
+/// Sie müssen auf iOS16 oder höher aktualisieren, um diese Funktion nutzen zu können
+"CommonRequirediOS16" = "Sie müssen auf iOS16 oder höher aktualisieren, um diese Funktion nutzen zu können";
+/// Um diese App zu verwenden, müssen Sie sich mit Ihrem Nintendo-Konto anmelden. Bitte melden Sie sich auf der Seite Meine Seite an.
+"CommonRequiredSignIn" = "Um diese App zu verwenden, müssen Sie sich mit Ihrem Nintendo-Konto anmelden. Bitte melden Sie sich auf der Seite Meine Seite an.";
+/// Ergebnisse erfolgreich wiederherstellen
+"CommonRestoreSuccessMessage" = "Ergebnisse erfolgreich wiederherstellen";
+/// Wiederherstellungsergebnisse sind fehlgeschlagen. Nicht unterstütztes Format oder die Signatur stimmt nicht überein, weil die Datei manipuliert wurde.
+"CommonRestoreFailureMessage" = "Wiederherstellungsergebnisse sind fehlgeschlagen. Nicht unterstütztes Format oder die Signatur stimmt nicht überein, weil die Datei manipuliert wurde.";
+/// Ergebnisse
+"CommonResultsCount" = "Ergebnisse";
+/// Antwort des Entwicklers
+"CommonDeveloperAnswer" = "Antwort des Entwicklers";
+/// Da die Daten von einer nicht unterstützten Version gesichert wurden, konnten sie nicht wiederhergestellt werden.
+"CommonMinimumVersion" = "Da die Daten von einer nicht unterstützten Version gesichert wurden, konnten sie nicht wiederhergestellt werden.";
+/// Da die Signatur der Daten nicht übereinstimmt, konnte sie nicht wiederhergestellt werden.
+"ErrorInvalidSignature" = "Da die Signatur der Daten nicht übereinstimmt, konnte sie nicht wiederhergestellt werden.";
+/// Geräteeinstellungen verwenden
+"CommonUseSystemTheme" = "Geräteeinstellungen verwenden";
+/// Lizenz
+"CommonLicense" = "Lizenz";

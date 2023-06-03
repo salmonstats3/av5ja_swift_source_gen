@@ -14,18 +14,18 @@ final class SPImageService: ObservableObject {
         let documentURL: URL? = FileManager.default.document
 
         switch type {
-        case is WeaponId.Type:
-            if let weaponId = WeaponId(rawValue: rawValue),
-               WeaponId.regular.contains(weaponId) {
-                self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponIllust.rawValue)/\(rawValue)", conformingTo: .png)
+        case is WeaponInfoMainId.Type:
+            if let weaponId = WeaponInfoMainId(rawValue: rawValue),
+               WeaponInfoMainId.regular.contains(weaponId) {
+                self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
             } else {
                 self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.UIImg.rawValue)/\(rawValue)", conformingTo: .png)
             }
         case is CoopStageId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgIcon.rawValue)/\(rawValue)", conformingTo: .png)
-        case is CoopBannerId.Type:
+        case is CoopStageBannerId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgBanner.rawValue)/\(rawValue)", conformingTo: .png)
-        case is EnemyId.Type:
+        case is CoopEnemyInfoId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.CoopEnemyImg.rawValue)/\(rawValue)", conformingTo: .png)
         default:
             self.documentPath = documentURL
@@ -57,6 +57,7 @@ public struct SPImage: View {
 }
 
 public extension Image {
+    /// URLから初期化
     init(url: URL?) {
         if let url: URL,
            let data: Data = try? Data(contentsOf: url),
@@ -65,18 +66,5 @@ public extension Image {
         } else {
             self.init(uiImage: UIImage())
         }
-    }
-
-    init(_ value: CoopStageId) {
-        self.init("", bundle: .module)
-    }
-
-    init(_ value: CoopStageId, size: ImageSize = .Regular) {
-        let namespace: String = size == .Regular ? "CoopStage" : "CoopStageHeader"
-        self.init("\(namespace)/\(value.rawValue)", bundle: .module)
-    }
-
-    init(_ value: ScaleType) {
-        self.init("Scale/\(value.rawValue)", bundle: .module)
     }
 }

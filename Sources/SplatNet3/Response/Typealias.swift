@@ -7,11 +7,11 @@
 
 import Foundation
 
-public typealias SpecialType = CoopHistory.SPWeapon<SpecialKey, SpecialId>
-public typealias SpecialTypes = CoopHistory.Content<SpecialKey, SpecialId>
-public typealias EnemyType = CoopHistory.Content<EnemyKey, EnemyId>
-public typealias WeaponType = Common.Image<WeaponKey>
-public typealias SkinType = CoopHistory.Content<SkinInfoKey, SkinInfoId>
-public typealias GradeType = CoopHistory.Element<GradeId>
-public typealias GearType = Common.Image<GearInfoKey>
+public typealias SpecialType = CoopHistory.SPWeapon<WeaponInfoSpecialKey, WeaponInfoSpecialId>
+public typealias SpecialTypes = CoopHistory.Content<WeaponInfoSpecialKey, WeaponInfoSpecialId>
+public typealias EnemyType = CoopHistory.Content<CoopEnemyInfoKey, CoopEnemyInfoId>
+public typealias WeaponType = Common.Image<WeaponInfoMainKey>
+public typealias SkinType = CoopHistory.Content<CoopSkinInfoKey, CoopSkinInfoId>
+public typealias GradeType = CoopHistory.Element<CoopGradeId>
+// public typealias GearType = Common.Image<GearInfoKey>
 public typealias CoopStageType = CoopHistory.Content<CoopStageKey, CoopStageId>

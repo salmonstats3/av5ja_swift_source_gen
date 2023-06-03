@@ -45,8 +45,8 @@ class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
         case .denied:
-            let alert = UIAlertController(title: LocalizedType.CommonAppSalmonia.localized, message: LocalizedType.CommonClose.localized, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.localized, style: .default))
+            let alert = UIAlertController(title: LocalizedType.CommonHome.description, message: LocalizedType.CommonClose.description, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.description, style: .default))
             UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
         case .restricted:
             break
@@ -152,6 +152,6 @@ extension AVMetadataObject.ObjectType {
         .aztec,
         .interleaved2of5,
         .itf14,
-        .dataMatrix
+        .dataMatrix,
     ]
 }
