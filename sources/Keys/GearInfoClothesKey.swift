@@ -8,7 +8,7 @@
 import Foundation
 
 public enum GearInfoClothesKey: String, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Clt_FST001
+    public static var defaultValue: Self = .CltFST001
     public var id: Int { GearInfoClothesId.allCases[GearInfoClothesKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     ///  わかばイカＴ

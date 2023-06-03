@@ -38,14 +38,14 @@ export class SwiftEnumWriter {
       if (output === OutputType.Key) {
         return [
           `public enum ${class_name}Key: String, UnsafeRawRepresentable {`,
-          `    public static var defaultValue: Self = .${this.values[0].row_id}`,
+          `    public static var defaultValue: Self = .${this.values[0].row_id.replace(/_/g, "")}`,
           `    public var id: Int { ${class_name}Id.allCases[${class_name}Key.allCases.firstIndex(of: self) ?? 0].rawValue }`,
           "",
         ];
       } else {
         return [
           `public enum ${class_name}Id: Int, UnsafeRawRepresentable {`,
-          `    public static var defaultValue: Self = .${this.values[0].row_id}`,
+          `    public static var defaultValue: Self = .${this.values[0].row_id.replace(/_/g, "")}`,
           `    public var id: Int { rawValue }`,
           "",
         ];

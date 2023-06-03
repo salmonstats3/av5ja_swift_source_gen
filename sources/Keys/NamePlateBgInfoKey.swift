@@ -8,7 +8,7 @@
 import Foundation
 
 public enum NamePlateBgInfoKey: String, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Npl_Tutorial00
+    public static var defaultValue: Self = .NplTutorial00
     public var id: Int { NamePlateBgInfoId.allCases[NamePlateBgInfoKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     case NplTutorial00 = "dba78c8ed1013d420aacb669d31a002691f2bb4ec0c1c853e34244c40dc68ea8"

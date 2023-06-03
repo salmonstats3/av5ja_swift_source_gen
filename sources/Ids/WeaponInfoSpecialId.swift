@@ -8,7 +8,7 @@
 import Foundation
 
 public enum WeaponInfoSpecialId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Random_Green
+    public static var defaultValue: Self = .RandomGreen
     public var id: Int { rawValue }
 
     ///  緑ランダム

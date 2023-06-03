@@ -8,7 +8,7 @@
 import Foundation
 
 public enum BadgeInfoId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .WeaponLevel_Shooter_Short_00_Lv00
+    public static var defaultValue: Self = .WeaponLevelShooterShort00Lv00
     public var id: Int { rawValue }
 
     case WeaponLevelShooterShort00Lv00 = 1000000

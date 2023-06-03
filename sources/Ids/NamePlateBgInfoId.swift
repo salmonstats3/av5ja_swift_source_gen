@@ -8,7 +8,7 @@
 import Foundation
 
 public enum NamePlateBgInfoId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Npl_Tutorial00
+    public static var defaultValue: Self = .NplTutorial00
     public var id: Int { rawValue }
 
     case NplTutorial00 = 1

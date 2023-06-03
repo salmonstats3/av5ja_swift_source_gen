@@ -8,7 +8,7 @@
 import Foundation
 
 public enum GearInfoHeadId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Hed_INV000
+    public static var defaultValue: Self = .HedINV000
     public var id: Int { rawValue }
 
     ///  INVISIBLE

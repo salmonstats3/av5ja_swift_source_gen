@@ -8,7 +8,7 @@
 import Foundation
 
 public enum BadgeInfoKey: String, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .WeaponLevel_Shooter_Short_00_Lv00
+    public static var defaultValue: Self = .WeaponLevelShooterShort00Lv00
     public var id: Int { BadgeInfoId.allCases[BadgeInfoKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     case WeaponLevelShooterShort00Lv00 = "0aeaa3308fbcdb3addd1217662a6ab570c8155c1c86ce8fdcbdffc31c65e9e17"

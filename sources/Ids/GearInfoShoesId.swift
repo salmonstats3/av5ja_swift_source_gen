@@ -8,7 +8,7 @@
 import Foundation
 
 public enum GearInfoShoesId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Shs_SLO000
+    public static var defaultValue: Self = .ShsSLO000
     public var id: Int { rawValue }
 
     ///  グリッチョ ブルー

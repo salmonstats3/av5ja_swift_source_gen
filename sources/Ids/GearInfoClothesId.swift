@@ -8,7 +8,7 @@
 import Foundation
 
 public enum GearInfoClothesId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .Clt_FST001
+    public static var defaultValue: Self = .CltFST001
     public var id: Int { rawValue }
 
     ///  わかばイカＴ
