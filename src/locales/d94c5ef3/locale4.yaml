@@ -1,0 +1,163 @@
+CommonCancel: Cancelar
+CommonClamBlitz: Asalto almeja
+CommonClose: Cerrar
+CommonCoopBigRun: Big Run
+CommonCoopTeamContest: Recolección extra
+CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+CommonDecide: Aceptar
+CommonDownload: Descargar
+CommonEnd: Cerrar
+CommonGearPowerBlank: Vacía
+CommonHome: Inicio
+CommonIkaring3: SplatNet 3
+CommonNowLoading: Cargando...
+CommonPullToRefresh: Arrastra para actualizar
+CommonRainmaker: Pez dorado
+CommonShare: Compartir
+CommonSplatZones: Pintazonas
+CommonTowerControl: Torreón
+CommonTricolor: Combate tricolor
+CommonTricolorMatch: Combate tricolor
+CommonTurfWar: Territorial
+CommonWpnNotfound: Vacía
+CoopHistoryAvailable: Apariciones
+CoopHistoryAvailableBoss: Gran jefe salmónido enfrentado
+CoopHistoryAverageClearWaves: 'Media de oleadas superadas:'
+CoopHistoryBigrun: Big Run
+CoopHistoryBigrunBronze: Bronce
+CoopHistoryBigrunGold: Oro
+CoopHistoryBigrunSilver: Plata
+CoopHistoryBonus: Recomp.
+CoopHistoryBossAvailable: ¡Gran jefe a la vista!
+CoopHistoryClear: ¡Victoria!
+CoopHistoryDangerRatio: Nivel de riesgo
+CoopHistoryDefeatBoss: ¡Gran jefe al ataque!
+CoopHistoryDefeatBossCount: Grandes jefes salmónidos derrotados
+CoopHistoryDefeated: ¡Victoria!
+CoopHistoryDefeatedEnemies: Grandes salmónidos eliminados
+CoopHistoryDefeatedEnemiesGuide: '* Entre paréntesis se indican los que tú eliminaste.'
+CoopHistoryDeliverCount: Huevecillos de poder
+CoopHistoryEnemy: Gran salmónido
+CoopHistoryExWave: Oleada extra
+CoopHistoryFailure: Derrota...
+CoopHistoryGoToStats: Volver a los resultados de tareas
+CoopHistoryGoldenDeliverCount: Huevecillos dorados
+CoopHistoryHighestScore: Récord
+CoopHistoryHistory: Resultados de tareas
+CoopHistoryJobPoint: Puntos
+CoopHistoryJobRatio: Grado
+CoopHistoryKumaPointCard: Tarjeta de Don Oso
+CoopHistoryLatest: Más reciente
+CoopHistoryLimitedPoint: Puntos especiales actuales
+CoopHistoryMonthlyReward: Objeto del mes
+CoopHistoryNext: Siguiente
+CoopHistoryNoData: No hay resultados de tareas.
+CoopHistoryNotAvailable: Resultados de tareas no disponibles
+CoopHistoryNotAvailableDescription: Solo los 50 registros más recientes están disponibles.
+CoopHistoryNotDefeated: No se logró...
+CoopHistoryP: p.
+CoopHistoryPlayCount: Encargos realizados
+CoopHistoryPrevious: Anterior
+CoopHistoryPrivate: Trabajo privado
+CoopHistoryRecruit: ¡Se busca personal!
+CoopHistoryRecruitDescription: >-
+  Una labor apta incluso para gente sin experiencia. ¡Basta con tener energía y
+  actitud positiva para ganar escamas de manera fácil!
+CoopHistoryRecruitTag1: Trabajo fácil
+CoopHistoryRecruitTag2: Remuneración generosa
+CoopHistoryRecruitTitle: ¡Recolecta huevecillos de poder con nosotros!
+CoopHistoryRegular: Encargo normal
+CoopHistoryRegularPoint: Saldo de puntos
+CoopHistoryRescueCount: Compañeros rescatados
+CoopHistoryRescuedCount: Número de rescates
+CoopHistoryScale: Escamas
+CoopHistoryScaleBronze: Escama de bronce
+CoopHistoryScaleGold: Escama de oro
+CoopHistoryScaleSilver: Escama de plata
+CoopHistoryScore: Rendim.
+CoopHistorySeeSchedule: Ver calendario
+CoopHistorySmellMeter: salmómetro
+CoopHistorySupplyWeapon: Armas disponibles
+CoopHistoryTeamContest: Recolección extra
+CoopHistoryTitle: Salmon Run
+CoopHistoryTotalPoint: Puntos totales
+CoopHistoryWave: Oleada
+CoopHistoryWaveLevel0: Marea baja
+CoopHistoryWaveLevel1: Normal
+CoopHistoryWaveLevel2: Marea alta
+ErrorBackToHome: Volver al inicio
+ErrorError: Error
+ErrorErrorOccurred: Se produjo un error.
+ErrorErrorReopen: No se pudieron cargar los datos.
+ErrorMaintenanceDescription: >-
+  Se están realizando labores de mantenimiento en el servidor. Inténtalo de
+  nuevo más tarde.
+ErrorMaintenanceTitle: En espera...
+ErrorNetworkNotAvailable: >-
+  No se pudieron cargar los datos. Comprueba tu conexión a internet e inténtalo
+  de nuevo.
+ErrorNotSupported: >-
+  No se puede mostrar SplatNet 3. Comprueba tu conexión a internet y vuelve a
+  intentarlo más tarde. Si el problema no se soluciona, comprueba que tu
+  navegador de internet esté actualizado a la versión más reciente. Si sigues
+  recibiendo este mensaje, es posible que SplatNet 3 no sea compatible con tu
+  dispositivo o con los ajustes actuales.
+ErrorReload: Actualizar
+RecordLatestPlayed: Más reciente
+RecordLatestUsed: Más usados
+RecordMain: Principal
+RecordNextSkillLevel: Siguiente nivel
+RecordSkillLevel: Destreza
+RecordSort: Ordenar
+RecordSpecial: Especial
+RecordStageRecord: Escenarios
+RecordStageRecordAppName: Escenarios
+RecordSub: Secundaria
+RecordTitle: Estadísticas
+RecordTotalTurfPoint: p.
+RecordTurfPoint: Territorio pintado
+RecordUnplayedStages: Sin estrenar
+RecordUnusedWeapons: No obtenidas aún
+RecordVibes: Valoración
+RecordWeaponRecord: Armas
+RecordWeaponRecordAppName: Armas
+RecordWinCount: Victorias
+SettingsAcknowledgements: Derechos de autor
+SettingsAppName: Ajustes
+SettingsCredits: Créditos
+SettingsExpansionPass: Visita el sitio del pase de expansión
+SettingsTitle: Ajustes
+StageScheduleBankara: Combate caótico
+StageScheduleBankaraOpen: Informal
+StageScheduleBankaraOpenChallenge: Formal
+StageScheduleCoop: Salmon Run
+StageScheduleCoopCurrentPeriodStart: ¡En curso!
+StageScheduleEvent: Combate especial
+StageScheduleEventCurrentSchedule: Actual
+StageScheduleEventFuture: Posterior
+StageScheduleEventHolding: ¡En curso!
+StageScheduleEventNext: Próximo
+StageScheduleEventNextSchedule: Siguiente
+StageScheduleEventNoData: Calendario sin determinar
+StageScheduleEventUnknownData: (?)
+StageScheduleEventmatch: ¡Evento en curso!
+StageScheduleFuture: Posteriores
+StageScheduleGuideOpenBrowser: Se abrirá una nueva ventana del navegador.
+StageScheduleNext: Siguiente
+StageScheduleNoticeBigrun: ¡Big Run a la vista!
+StageScheduleNoticeLimited: ¡Anuncio de recolección extra!
+StageScheduleNowClosed: ¡Festival en curso!
+StageScheduleOpen: Actual
+StageScheduleOpenBigrun: ¡Big Run en marcha!
+StageScheduleOpenLimited: ¡Recolección extra disponible!
+StageSchedulePrivate: Combate privado
+StageScheduleRecruit: ¡Tenemos Big Run! ¡Don Oso, S. A. busca personal! ()
+StageScheduleRecruitTeamContest: ¡Reúne un grupo de trabajo y aprovecha la recolección extra!
+StageScheduleRegular: Combate amistoso
+StageScheduleRules: Ver las reglas
+StageScheduleSeeAllRules: Reglas detalladas
+StageScheduleSuppliedWeaponRandom: Al azar
+StageScheduleSuppliedWeapons: Armas disponibles
+StageScheduleTitle: Calendario
+StageScheduleWinRateByRules: Tasa de victorias
+StageScheduleXmatch: Combate X

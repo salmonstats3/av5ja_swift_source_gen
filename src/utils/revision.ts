@@ -67,8 +67,12 @@ export async function get_locale_bundles(): Promise<void> {
           .replace(/\\"/g, "'")
           .replace(/\\'/g, "'");
         const context: string = JSON.stringify(JSON.parse(txt), null, 2);
-        // Save JSON and YAML
+        // Save JSON
         createFile(context, `src/locales/${hash}/${locale.locale}.json`);
+<<<<<<< HEAD
+=======
+        // Filter JSON keys
+>>>>>>> 371469a (fix dependencies)
         const objects = Object.fromEntries(
           Object.entries(camelcaseKeys(JSON.parse(context), { pascalCase: true }))
             .filter(
@@ -93,9 +97,13 @@ export async function get_locale_bundles(): Promise<void> {
             ])
             .filter(([_, value]) => value.length >= 2),
         );
+        // Save YAML
         createFile(yaml.dump(objects), `src/locales/${hash}/${locale.locale}.yaml`);
+<<<<<<< HEAD
         // @ts-ignore
         createFile(match[1], `src/locales/${hash}/${locale.locale}.json`);
+=======
+>>>>>>> 371469a (fix dependencies)
       }
     }
   });
@@ -104,9 +112,15 @@ export async function get_locale_bundles(): Promise<void> {
 export const createFile = (data: string, filePath: string) => {
   fs.writeFile(filePath, data, (err) => {
     // ディレクトリ作成できなかったとき
+<<<<<<< HEAD
     if (err && err.code === "ENOENT") {
       // ディレクトリ部分だけ切り取り
       const dir = filePath.substring(0, filePath.lastIndexOf("/"));
+=======
+    if (err && err.code === 'ENOENT') {
+      // ディレクトリ部分だけ切り取り
+      const dir = filePath.substring(0, filePath.lastIndexOf('/'));
+>>>>>>> 371469a (fix dependencies)
 
       // 親ディレクトリ作成
       fs.mkdir(dir, { recursive: true }, (err) => {

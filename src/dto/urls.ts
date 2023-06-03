@@ -1,11 +1,7 @@
 import { plainToInstance } from 'class-transformer';
 import fetch from 'node-fetch';
 
-<<<<<<< HEAD
-import { BadgeInfo, CoopEnemyInfo, CoopSkinInfo, GearInfo, InternalType, NamePlateBgInfo, WeaponInfo } from './internal_type';
-=======
 import { BadgeInfo, CoopEnemyInfo, CoopSkinInfo, GearInfo, InternalType, NamePlateBgInfo, WeaponInfoMain, WeaponInfoSpecial } from './internal_type';
->>>>>>> 3fdc445 (rebase from master)
 
 const base_url = (version: Version): string => {
   return `https://leanny.github.io/splat3/data/mush/${version}/`;

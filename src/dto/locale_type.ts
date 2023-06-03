@@ -42,35 +42,35 @@ export const LocaleId = {
 export const prefix_xcode = (locale: LocaleId): string => {
   switch (locale) {
     case LocaleId.EUde:
-      return 'de';
+      return "de";
     case LocaleId.EUen:
-      return 'en';
+      return "en";
     case LocaleId.USen:
-      return 'en-US';
+      return "en-US";
     case LocaleId.EUes:
-      return 'es';
+      return "es";
     case LocaleId.USes:
-      return 'es-US';
+      return "es-US";
     case LocaleId.USfr:
-      return 'fr-US';
+      return "fr-US";
     case LocaleId.EUfr:
-      return 'fr';
+      return "fr";
     case LocaleId.EUit:
-      return 'it';
+      return "it";
     case LocaleId.JPja:
-      return 'ja';
+      return "ja";
     case LocaleId.KRko:
-      return 'ko';
+      return "ko";
     case LocaleId.EUnl:
-      return 'nl';
+      return "nl";
     case LocaleId.EUru:
-      return 'ru';
+      return "ru";
     case LocaleId.CNzh:
-      return 'zh-Hans';
+      return "zh-Hans";
     case LocaleId.TWzh:
-      return 'zh-Hant';
+      return "zh-Hant";
     default:
-      throw new Error('Invalid Locale');
+      throw new Error("Invalid Locale");
   }
 };
 
