@@ -1,0 +1,255 @@
+CommonCancel: Annuler
+CommonClamBlitz: Pluie de palourdes
+CommonClose: Fermer
+CommonCoopBigRun: Big Run
+CommonCoopTeamContest: Défi œuf sup
+CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+CommonDecide: OK
+CommonDownload: Télécharger
+CommonEnd: Fermer
+CommonGearPowerBlank: Inconnu
+CommonHome: Accueil
+CommonIkaring3: SplatNet 3
+CommonNowLoading: Chargement...
+CommonPullToRefresh: Tirer pour actualiser
+CommonRainmaker: Mission Bazookarpe
+CommonShare: Partager
+CommonSplatZones: Défense de zone
+CommonTowerControl: Expédition risquée
+CommonTricolor: Match tricolore
+CommonTricolorMatch: Match tricolore
+CommonTurfWar: Guerre de territoire
+CommonWpnNotfound: Inconnu
+CoopHistoryAvailable: Apparus
+CoopHistoryAvailableBoss: Salmonarque combattu
+CoopHistoryAverageClearWaves: "Vagues terminées (moyenne)\_:"
+CoopHistoryBigrun: Big Run
+CoopHistoryBigrunBronze: Bronze
+CoopHistoryBigrunGold: Or
+CoopHistoryBigrunSilver: Argent
+CoopHistoryBonus: Récomp.
+CoopHistoryBossAvailable: Salmonarque en approche!
+CoopHistoryClear: Réussite!
+CoopHistoryDangerRatio: "Niveau de danger\_:"
+CoopHistoryDefeatBoss: Attaque de salmonarque!
+CoopHistoryDefeatBossCount: Salmonarques vaincus
+CoopHistoryDefeated: Vaincu!
+CoopHistoryDefeatedEnemies: Salmonoboss vaincus
+CoopHistoryDefeatedEnemiesGuide: >-
+  Remarque : Le nombre d'ennemis que tu as vaincus toi-même est indiqué entre
+  parenthèses.
+CoopHistoryDeliverCount: Œufs de poi. collectés
+CoopHistoryEnemy: Salmonoboss
+CoopHistoryExWave: Vague +
+CoopHistoryFailure: Échec...
+CoopHistoryGoToStats: Retour aux stats de missions
+CoopHistoryGoldenDeliverCount: Œufs dorés collectés
+CoopHistoryHighestScore: Record
+CoopHistoryHistory: Stats de missions
+CoopHistoryJobPoint: Tes points
+CoopHistoryJobRatio: Éval.
+CoopHistoryKumaPointCard: Carte point M. Ours
+CoopHistoryLatest: Dernière mission
+CoopHistoryLimitedPoint: Points de prix spéciaux actuels
+CoopHistoryMonthlyReward: Pièce d'équipement du mois
+CoopHistoryNext: Suivant
+CoopHistoryNoData: Aucune stat de mission disponible.
+CoopHistoryNotAvailable: Les stats de missions ne sont pas disponibles.
+CoopHistoryNotAvailableDescription: Seules les 50 entrées les plus récentes sont disponibles.
+CoopHistoryNotDefeated: Échec...
+CoopHistoryP: p.
+CoopHistoryPlayCount: Sessions de travail
+CoopHistoryPrevious: Précédent
+CoopHistoryPrivate: Mission privée
+CoopHistoryRecruit: On embauche!
+CoopHistoryRecruitDescription: >-
+  Un travail taillé pour ceux qui ont de l'énergie et de l'optimisme à revendre,
+  et qui sont prêts à bosser dur pour empocher un tas d'écailles. Motivation
+  exigée. Débutants acceptés.
+CoopHistoryRecruitTag1: C'est facile!
+CoopHistoryRecruitTag2: La collecte d'œufs, c'est le fun et ça rapporte!
+CoopHistoryRecruitTitle: La collecte d'œufs, un travail de rêve!
+CoopHistoryRegular: Mission normale
+CoopHistoryRegularPoint: Points actuels
+CoopHistoryRescueCount: Collègues secourus
+CoopHistoryRescuedCount: Secours reçus
+CoopHistoryScale: Écailles
+CoopHistoryScaleBronze: Écaille de bronze
+CoopHistoryScaleGold: Écaille d'or
+CoopHistoryScaleSilver: Écaille d'argent
+CoopHistoryScore: Pointage
+CoopHistorySeeSchedule: Consulter l'horaire
+CoopHistorySmellMeter: Salmomètre
+CoopHistorySupplyWeapon: Armes fournies
+CoopHistoryTeamContest: Défi œuf sup
+CoopHistoryTitle: Salmon Run
+CoopHistoryTotalPoint: Total des points
+CoopHistoryWave: Vague
+CoopHistoryWaveLevel0: Marée basse
+CoopHistoryWaveLevel1: Normal
+CoopHistoryWaveLevel2: Marée haute
+CoopRecordAppName: Missions
+CoopRecordAttended: 'Nombre de participations :'
+CoopRecordBigrun: Big Run
+CoopRecordBigrunBronze: Bronze
+CoopRecordBigrunGold: Or
+CoopRecordBigrunSilver: Argent
+CoopRecordHighestJobRate: Meilleure évaluation
+CoopRecordHighestScore: Record
+CoopRecordMore: Afficher plus d'infos
+CoopRecordNoData: Aucune donnée
+CoopRecordTeamContest: Défi œuf sup
+CoopRecordTitle: Statistiques
+ErrorBackToHome: Retour à l'accueil
+ErrorCurrentlyNotAvailable: Actuellement indisponible. Réessaie plus tard.
+ErrorError: Erreur
+ErrorErrorOccurred: Une erreur est survenue.
+ErrorErrorReopen: Échec du chargement.
+ErrorMaintenanceDescription: Le serveur est en cours de maintenance. Réessaie plus tard.
+ErrorMaintenanceTitle: Patiente quelques instants...
+ErrorNetworkNotAvailable: Échec du chargement. Vérifie ta connexion à Internet, puis réessaie.
+ErrorNotSupported: >-
+  SplatNet 3 ne peut pas s'afficher. Vérifie ta connexion Internet et attends un
+  peu, puis réessaie. Si le problème persiste, assure-toi que ton navigateur
+  Internet a installé sa mise à jour la plus récente. Si ce message continue à
+  apparaître, il se peut que SplatNet 3 ne soit pas compatible avec tes
+  paramètres ou ton appareil actuels.
+ErrorReload: Actualiser
+FesRecordAppName: Festival
+FesRecordAttack: En attaque
+FesRecordAverage: Moyenne
+FesRecordChallenge: Défi
+FesRecordComingSoon: C'est pour bientôt!
+FesRecordContributionChallenge: Contribution (défi)
+FesRecordContributionRegular: Contribution (ouvert)
+FesRecordContributionTricolor: Contribution (match tricolore)
+FesRecordDefense: En défense
+FesRecordFestPower: Puissance
+FesRecordFestRanking: Top 100 du festival
+FesRecordGotHoragai: Conques obtenues
+FesRecordGuideWillParticipates: Tes amis peuvent encore changer d'avis.
+FesRecordHighestFestPower: Meilleure puissance du festival
+FesRecordHoragai: Conques
+FesRecordNotVoted: Indécis
+FesRecordOnGoing: En cours!
+FesRecordPastFestivals: Festivals précédents
+FesRecordPreVoteButton: Vote en cours
+FesRecordRegular: Ouvert
+FesRecordSeeAllVotes: Équipes de tes amis
+FesRecordSeeFestRanking: Voir le top 100 du festival
+FesRecordTitle: Stats - festivals
+FesRecordTotal: Total
+FesRecordUndecided: En suspens
+FesRecordVote: Participation prévue
+FesRecordVoteRatio: Votes
+FesRecordVoted: J'ai voté!
+FesRecordVotedInGame: Se sont déjà exprimés
+FesRecordVotingStatus: Votes de tes amis
+FesRecordWaitingForResult: Calcul des résultats...
+FesRecordWin: VICTOIRE
+FesRecordYourRecord: Tes stats
+HeroRecordAgent1: Numéro 1
+HeroRecordAgent2: Numéro 2
+HeroRecordAnnotation: Choisis une taille et lance le téléchargement.
+HeroRecordAppName: Mode Histoire
+HeroRecordAreaMemorialPhoto: Photo d'écran
+HeroRecordBossStage: Niveau de boss
+HeroRecordClearReward: Mode Histoire terminé - Bonus
+HeroRecordGetReward: Bonus!
+HeroRecordNawabariMapCompleteReward: Alterna explorée à 100 % - Bonus
+HeroRecordNawabariMapProgress: Taux d'exploration d'Alterna
+HeroRecordNawabariMapSubCleared: Félicitations, tu as terminé le mode Histoire!
+HeroRecordNawabariMapSubComplete: Félicitations, tu as intégralement exploré Alterna!
+HeroRecordNawabariMapSubInProgress: Que se passera-t-il une fois que tu auras exploré tout Alterna?
+HeroRecordNext: Suivant
+HeroRecordNoEquipments: Pas d'équipement
+HeroRecordPrev: Précédent
+HeroRecordRecruitmentSub: "Un seul moyen de le savoir\_: tenter le mode Histoire!"
+HeroRecordSearchRatio: Taux d'exploration
+HeroRecordSeePhotograph: Voir la photo d'écran
+HeroRecordSite: Secteur
+HeroRecordSite1: Utopîle Futura
+HeroRecordSite2: Usine du confort
+HeroRecordSite3: Cryophoria
+HeroRecordSite4: Éden des ordures
+HeroRecordSite5: Jardins luxuriants
+HeroRecordSite6: Labo du bonheur
+HeroRecordTitle: Stats du mode Histoire
+HeroRecordWallpaper: Fond d'écran spécial
+MyOutfitsErrorSave: La sauvegarde a échoué.
+QrCodeReaderErrorAlreadyGotDescription: Tu as déjà récupéré cette récompense.
+QrCodeReaderErrorAlreadyGotTitle: Déjà récupérée
+QrCodeReaderErrorNotCompatibleDescription: "Ce code QR ne peut pas être lu avec SplatNet\_3."
+QrCodeReaderErrorNotCompatibleTitle: Erreur
+QrCodeReaderErrorRewardExpiredDescription: Ce code QR n'est plus actif.
+RecordLatestPlayed: Dernières parcourues
+RecordLatestUsed: Favoris
+RecordMain: Principale
+RecordNextSkillLevel: Prochaine amél.
+RecordSkillLevel: Coolitude
+RecordSort: Trier
+RecordSpecial: Spéciale
+RecordStageRecord: Stats - cartes
+RecordStageRecordAppName: Cartes
+RecordSub: Secondaire
+RecordTitle: Stats
+RecordTotalTurfPoint: p.
+RecordTurfPoint: Surf. encrée
+RecordUnplayedStages: Cartes non parcourues
+RecordUnusedWeapons: Pas encore obtenues
+RecordVibes: Jauge d'appréciation
+RecordWeaponRecord: Stats - armes
+RecordWeaponRecordAppName: Armes
+RecordWinCount: 'Victoires :'
+RoomCreatorErrorAlreadyExist: Tu as déjà créé une session. Tu ne peux créer qu'une session à la fois.
+RoomCreatorErrorMakeRoom: Création de session impossible
+SettingsAcknowledgements: Droits d'auteur
+SettingsAppName: Paramètres
+SettingsCredits: Crédits
+SettingsExpansionPass: Visiter le site d'achat de la Passe d'extension
+SettingsTitle: Paramètres
+StageScheduleBankara: Match anarchie
+StageScheduleBankaraOpen: Ouvert
+StageScheduleBankaraOpenChallenge: Série
+StageScheduleCoop: Salmon Run
+StageScheduleCoopCurrentPeriodStart: OUVERT!
+StageScheduleEvent: Match épreuve
+StageScheduleEventCurrentSchedule: Actuellement
+StageScheduleEventFuture: Plus tard
+StageScheduleEventHolding: En cours!
+StageScheduleEventNext: Prochain
+StageScheduleEventNextSchedule: Tout à l'heure
+StageScheduleEventNoData: Aucun match épreuve prévu pour le moment.
+StageScheduleEventUnknownData: '???'
+StageScheduleEventmatch: L'événement a commencé!
+StageScheduleFestival: Festimatch
+StageScheduleFestivalAnnounced: Bientôt!
+StageScheduleFestivalAt: 'Début : !'
+StageScheduleFestivalAttack: En attaque
+StageScheduleFestivalDefense: En défense
+StageScheduleFestivalHolding: En cours!
+StageScheduleFuture: Plus tard
+StageScheduleGuideOpenBrowser: Cette opération entraînera l'ouverture d'une nouvelle fenêtre de navigateur.
+StageScheduleNext: Tout à l'heure
+StageScheduleNoticeBigrun: Big Run en approche!
+StageScheduleNoticeLimited: Défi œuf sup' en approche!
+StageScheduleNowClosed: Festival en cours!
+StageScheduleOpen: Actuel
+StageScheduleOpenBigrun: Big Run en cours!
+StageScheduleOpenLimited: Défi œuf sup' disponible!
+StageSchedulePrivate: Match privé
+StageScheduleRecruit: >-
+  Un Big Run est en cours! M. Ours Cie embauche, tous types de profils acceptés!
+  ()
+StageScheduleRecruitTeamContest: >-
+  Un défi œuf sup' est disponible. Recrute des joueurs et fais honneur à M. Ours
+  Cie!
+StageScheduleRegular: Match classique
+StageScheduleRules: Voir les règles
+StageScheduleSeeAllRules: Voir les règles en détail
+StageScheduleSeeFestivalRecord: Statistiques du festival
+StageScheduleSuppliedWeaponRandom: Aléatoire
+StageScheduleSuppliedWeapons: Armes fournies
+StageScheduleTitle: Horaire
+StageScheduleWinRateByRules: Taux de victoire par mode
+StageScheduleXmatch: Match X

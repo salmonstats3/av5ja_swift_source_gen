@@ -1,0 +1,233 @@
+CommonCancel: 취소
+CommonClamBlitz: 랭크 바지락
+CommonClose: 닫기
+CommonCoopBigRun: 빅 런
+CommonCoopTeamContest: 아르바이트 팀 콘테스트
+CommonCopyrightQrCode: QR Code는 일본 및 여러 나라에서 DENSO WAVE INCORPORATED의 등록상표입니다
+CommonDecide: 결정
+CommonDownload: 다운로드
+CommonEnd: 끝내기
+CommonGearPowerBlank: 물음표
+CommonIkaring3: 오징어넷 3
+CommonNowLoading: 로딩 중
+CommonPullToRefresh: 당겨서 새로 고침
+CommonRainmaker: 랭크 피시 배틀
+CommonShare: 공유
+CommonSplatZones: 랭크 에어리어
+CommonTowerControl: 랭크 타워
+CommonTricolor: 트리컬러 어택
+CommonTricolorMatch: 트리컬러 매치
+CommonTurfWar: 영역 배틀
+CommonWpnNotfound: 물음표
+CoopHistoryAvailable: 출현 수
+CoopHistoryAvailableBoss: 출현한 두목연어
+CoopHistoryAverageClearWaves: 평균 클리어 WAVE 수
+CoopHistoryBigrun: 빅 런
+CoopHistoryBonus: 클리어 보너스
+CoopHistoryBossAvailable: 두목연어 출현!
+CoopHistoryClear: Clear!!
+CoopHistoryDangerRatio: 위험도
+CoopHistoryDefeatBoss: 두목연어 격파!
+CoopHistoryDefeatBossCount: 쓰러뜨린 두목연어
+CoopHistoryDefeated: 쓰러뜨렸다!
+CoopHistoryDefeatedEnemies: 쓰러뜨린 거물연어
+CoopHistoryDefeatedEnemiesGuide: ※괄호 안의 숫자는 직접 쓰러뜨린 숫자입니다
+CoopHistoryDeliverCount: 모은 연어알
+CoopHistoryEnemy: 거물연어
+CoopHistoryExWave: EX-WAVE
+CoopHistoryFailure: Failure
+CoopHistoryGj: GJ!
+CoopHistoryGoToStats: 아르바이트 히스토리 목록으로 돌아가기
+CoopHistoryGoldenDeliverCount: 모은 황금 연어알
+CoopHistoryHighestScore: 하이 스코어
+CoopHistoryHistory: 아르바이트 히스토리
+CoopHistoryJobPoint: 획득 포인트
+CoopHistoryJobRatio: 평가 비율
+CoopHistoryKumaPointCard: Mr. 베어 포인트 카드
+CoopHistoryLatest: 최근 히스토리
+CoopHistoryLimitedPoint: 현재 기간 한정 포인트
+CoopHistoryMonthlyReward: 이달의 기어
+CoopHistoryNext: 다음 히스토리
+CoopHistoryNg: NG
+CoopHistoryNoData: 아르바이트 히스토리가 없습니다
+CoopHistoryNotAvailable: 아르바이트 히스토리를 표시할 수 없습니다
+CoopHistoryNotAvailableDescription: 최신 아르바이트 히스토리는 50전까지 열람할 수 있습니다.
+CoopHistoryNotDefeated: 쓰러뜨리지 못했다…
+CoopHistoryPlayCount: 아르바이트 횟수
+CoopHistoryPrevious: 이전 히스토리
+CoopHistoryPrivate: 프라이빗
+CoopHistoryRecruit: 스태프 모집!
+CoopHistoryRecruitDescription: 경력이 없어도 OK! 밝고 기운찬 분 환영! 가족 같은 분위기의 직장에서 아르바이트해 보지 않으시겠습니까?
+CoopHistoryRecruitTag1: 간단
+CoopHistoryRecruitTag2: 연어알 모으기
+CoopHistoryRecruitTitle: ～어메이징한 작업복을 입고 연어알 모으기～
+CoopHistoryRegular: 일반 아르바이트
+CoopHistoryRegularPoint: 현재 포인트
+CoopHistoryRescueCount: 도와준 횟수
+CoopHistoryRescuedCount: 도움받은 횟수
+CoopHistoryScale: 비늘
+CoopHistoryScaleBronze: 동 비늘
+CoopHistoryScaleGold: 황금 비늘
+CoopHistoryScaleSilver: 은 비늘
+CoopHistoryScore: 아르바이트 스코어
+CoopHistorySeeSchedule: 스케줄 보기
+CoopHistorySmellMeter: 두목 게이지
+CoopHistorySupplyWeapon: 지급 무기
+CoopHistoryTeamContest: 아르바이트 팀 콘테스트
+CoopHistoryTitle: 새먼 런
+CoopHistoryTotalPoint: 누적 포인트
+CoopHistoryWave: WAVE
+CoopHistoryWaveLevel0: 간조
+CoopHistoryWaveLevel1: 보통
+CoopHistoryWaveLevel2: 만조
+CoopRecordAppName: 아르바이트
+CoopRecordAttended: '참가 횟수:'
+CoopRecordBigrun: 빅 런
+CoopRecordHighestJobRate: 최고 평가
+CoopRecordHighestScore: 하이 스코어
+CoopRecordMore: 더 보기
+CoopRecordNoData: 기록이 없습니다
+CoopRecordTeamContest: 아르바이트 팀 콘테스트
+CoopRecordTitle: 새먼 런 기록
+ErrorBackToHome: 홈으로 돌아가기
+ErrorCurrentlyNotAvailable: 현재 이용할 수 없습니다. 잠시 기다려 주십시오.
+ErrorError: 에러
+ErrorErrorOccurred: 에러가 발생했습니다
+ErrorErrorReopen: 로딩에 실패했습니다
+ErrorMaintenanceDescription: 현재 서버 점검 중입니다. 잠시 후에 다시 접속해 주십시오.
+ErrorMaintenanceTitle: 잠시 기다려 주십시오
+ErrorNetworkNotAvailable: 로딩에 실패했습니다. 통신 환경이 좋은 곳에서 다시 시도해 주십시오.
+ErrorReload: 새로 고침
+FesRecordAppName: 페스티벌
+FesRecordAttack: 공격
+FesRecordAverage: 평균
+FesRecordChallenge: 챌린지
+FesRecordComingSoon: 개최 예정
+FesRecordContributionChallenge: 공헌도 챌린지
+FesRecordContributionRegular: 공헌도 오픈
+FesRecordContributionTricolor: 공헌도 트리컬러 매치
+FesRecordDefense: 수비
+FesRecordFestPower: 파워
+FesRecordFestRanking: 페스티벌 톱 100
+FesRecordGotHoragai: 소라고둥 획득 개수
+FesRecordGuideWillParticipates: 참가 예정인 친구의 팀이 변경될 수 있습니다
+FesRecordHighestFestPower: 최고 페스티벌 파워
+FesRecordHoragai: 소라고둥 획득률
+FesRecordNotVoted: 미정인 친구
+FesRecordOnGoing: 개최 중!!
+FesRecordPastFestivals: 지금까지의 페스티벌
+FesRecordPreVoteButton: 설문 실시 중
+FesRecordRegular: 오픈
+FesRecordSeeAllVotes: 친구의 참가 팀 보기
+FesRecordSeeFestRanking: 페스티벌 톱 100 보기
+FesRecordTitle: 페스티벌 기록
+FesRecordTotal: 누적
+FesRecordUndecided: 미정
+FesRecordVote: 참가 예정
+FesRecordVoteRatio: 득표율
+FesRecordVoted: 응답 완료
+FesRecordVotedInGame: 투표 완료
+FesRecordVotingStatus: 친구 투표 상황
+FesRecordWaitingForResult: 결과를 집계 중입니다
+FesRecordWin: WIN!
+FesRecordYourRecord: 당신의 기록
+HeroRecordAgent1: 1호
+HeroRecordAgent2: 2호
+HeroRecordAnnotation: 사이즈를 선택하여 다운로드해 주십시오
+HeroRecordAppName: 히어로 모드
+HeroRecordAreaMemorialPhoto: 스냅 사진
+HeroRecordBossStage: 보스
+HeroRecordClearReward: 히어로 모드 클리어 특전
+HeroRecordGetReward: 특전 획득
+HeroRecordNawabariMapCompleteReward: 얼터너 탐색률 100% 달성 특전
+HeroRecordNawabariMapProgress: 얼터너 탐색률
+HeroRecordNawabariMapSubCleared: 클리어 축하드립니다!
+HeroRecordNawabariMapSubComplete: 100% 답파 축하드립니다!
+HeroRecordNawabariMapSubInProgress: 얼터너를 100% 답파하면…?
+HeroRecordNext: 다음으로
+HeroRecordNoEquipments: 장비 없음
+HeroRecordPrev: 이전으로
+HeroRecordRecruitmentSub: 히어로 모드를 시작하여 모험을 진행하자
+HeroRecordSearchRatio: 탐색률
+HeroRecordSeePhotograph: 스냅 사진 보기
+HeroRecordSite: 사이트
+HeroRecordSite1: 미래 유토피아 랜드
+HeroRecordSite2: 안심 라이프 팩토리
+HeroRecordSite3: 장수 영 뉴 타운
+HeroRecordSite4: 매립 드림랜드
+HeroRecordSite5: 나한백 그린힐스
+HeroRecordSite6: 행복 리서치 랩
+HeroRecordTitle: 히어로 모드 기록
+HeroRecordWallpaper: 스페셜 배경 화면
+MyOutfitsErrorSave: 저장에 실패했습니다
+QrCodeReaderErrorAlreadyGotDescription: 이미 획득한 보상입니다
+QrCodeReaderErrorAlreadyGotTitle: 이미 획득했습니다
+QrCodeReaderErrorNotCompatibleDescription: 오징어넷 3로 읽어 들일 수 없는 QR Code입니다
+QrCodeReaderErrorNotCompatibleTitle: 에러
+QrCodeReaderErrorRewardExpiredDescription: 유효하지 않은 QR Code입니다
+RecordLatestPlayed: 마지막 플레이
+RecordLatestUsed: 사용 빈도
+RecordMain: 메인
+RecordNextSkillLevel: 다음 숙련도까지
+RecordSkillLevel: 숙련도
+RecordSort: 정렬
+RecordSpecial: 스페셜
+RecordStageRecord: 스테이지 기록
+RecordStageRecordAppName: 스테이지
+RecordSub: 서브
+RecordTitle: 기록
+RecordTurfPoint: 색칠 포인트
+RecordUnplayedStages: 미플레이 스테이지
+RecordUnusedWeapons: 미소지 무기
+RecordVibes: 컨디션
+RecordWeaponRecord: 무기 기록
+RecordWeaponRecordAppName: 무기
+RecordWinCount: 승리 수
+RoomCreatorErrorAlreadyExist: 이미 만들어진 방이 있습니다. 「방 만들기」로 만들 수 있는 방은 동시에 1개까지입니다.
+RoomCreatorErrorMakeRoom: 방을 만들지 못했습니다.
+SettingsAcknowledgements: 권리 표기
+SettingsAppName: 설정
+SettingsCredits: 크레디트
+SettingsExpansionPass: 익스팬션 패스 구입 사이트로
+SettingsTitle: 설정
+StageScheduleBankara: 카오폴리스 매치
+StageScheduleBankaraOpen: 오픈
+StageScheduleBankaraOpenChallenge: 챌린지
+StageScheduleCoop: 새먼 런
+StageScheduleCoopCurrentPeriodStart: NOW OPEN!
+StageScheduleEvent: 이벤트 매치
+StageScheduleEventCurrentSchedule: 지금
+StageScheduleEventFuture: 그다음
+StageScheduleEventHolding: 개최 중!
+StageScheduleEventNext: 예고
+StageScheduleEventNextSchedule: 다음
+StageScheduleEventNoData: 스케줄이 미정입니다
+StageScheduleEventUnknownData: '?????'
+StageScheduleEventmatch: 이벤트 개최!
+StageScheduleFestival: 페스티벌 매치
+StageScheduleFestivalAnnounced: 개최 예정
+StageScheduleFestivalAt: 스타트!
+StageScheduleFestivalAttack: 공격
+StageScheduleFestivalDefense: 수비
+StageScheduleFestivalHolding: 개최 중!
+StageScheduleFuture: 그다음
+StageScheduleGuideOpenBrowser: 웹 브라우저가 열립니다
+StageScheduleNext: 다음
+StageScheduleNoticeBigrun: 빅 런 접근 중!
+StageScheduleNoticeLimited: 아르바이트 팀 콘테스트 개최 예고!
+StageScheduleNowClosed: 페스티벌 매치 개최 중!
+StageScheduleOpen: 오픈!
+StageScheduleOpenBigrun: 빅 런 발생 중!
+StageScheduleOpenLimited: 아르바이트 팀 콘테스트 개최 중!
+StageSchedulePrivate: 프라이빗 매치
+StageScheduleRecruit: 빅 런이 온다! 아르바이트 대모집
+StageScheduleRecruitTeamContest: 아르바이트 팀 콘테스트! 팀을 만들어 참가하자!
+StageScheduleRegular: 레귤러 매치
+StageScheduleRules: 룰 보기
+StageScheduleSeeAllRules: 자세한 룰 보기
+StageScheduleSeeFestivalRecord: 페스티벌 기록 보기
+StageScheduleSuppliedWeaponRandom: 랜덤
+StageScheduleSuppliedWeapons: 지급 무기
+StageScheduleTitle: 스케줄
+StageScheduleWinRateByRules: 룰별 승률
+StageScheduleXmatch: X 매치

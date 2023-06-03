@@ -1,6 +1,8 @@
 import fs from 'fs';
 
+import camelcaseKeys from 'camelcase-keys';
 import { plainToInstance } from 'class-transformer';
+import yaml from 'js-yaml';
 import fetch, { Response } from 'node-fetch';
 
 import { LocaleType } from '../dto/locale_type';
@@ -65,7 +67,31 @@ export async function get_locale_bundles(): Promise<void> {
           .replace(/\\"/g, "'")
           .replace(/\\'/g, "'");
         const context: string = JSON.stringify(JSON.parse(txt), null, 2);
+        // Save JSON and YAML
         createFile(context, `src/locales/${hash}/${locale.locale}.json`);
+        const objects = Object.fromEntries(
+          Object.entries(camelcaseKeys(JSON.parse(context), { pascalCase: true }))
+            .filter(
+              ([key, value]) =>
+                (key.includes('Common') ||
+                  key.includes('CoopHistory') ||
+                  key.includes('Error') ||
+                  key.includes('Record') ||
+                  key.includes('Settings') ||
+                  key.includes('StageSchedule')) &&
+                !key.includes('%') &&
+                !(value as string).match(/<|>/),
+            )
+            .map(([key, value]) => [
+              key,
+              (value as string)
+                .trim()
+                .replace(/{.*}|^'|'$/g, '')
+                .trim(),
+            ])
+            .filter(([_, value]) => value.length >= 2),
+        );
+        createFile(yaml.dump(objects), `src/locales/${hash}/${locale.locale}.yaml`);
       }
     }
   });

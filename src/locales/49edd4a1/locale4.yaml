@@ -1,0 +1,251 @@
+CommonCancel: Cancelar
+CommonClamBlitz: Asalto almeja
+CommonClose: Cerrar
+CommonCoopBigRun: Big Run
+CommonCoopTeamContest: Recolección extra
+CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+CommonDecide: Aceptar
+CommonDownload: Descargar
+CommonEnd: Cerrar
+CommonGearPowerBlank: Vacía
+CommonHome: Inicio
+CommonIkaring3: SplatNet 3
+CommonNowLoading: Cargando...
+CommonPullToRefresh: Arrastra para actualizar
+CommonRainmaker: Pez dorado
+CommonShare: Compartir
+CommonSplatZones: Pintazonas
+CommonTowerControl: Torreón
+CommonTricolor: Combate tricolor
+CommonTricolorMatch: Combate tricolor
+CommonTurfWar: Territorial
+CommonWpnNotfound: Vacía
+CoopHistoryAvailable: Apariciones
+CoopHistoryAvailableBoss: Gran jefe salmónido enfrentado
+CoopHistoryAverageClearWaves: 'Media de oleadas superadas:'
+CoopHistoryBigrun: Big Run
+CoopHistoryBigrunBronze: Bronce
+CoopHistoryBigrunGold: Oro
+CoopHistoryBigrunSilver: Plata
+CoopHistoryBonus: Recomp.
+CoopHistoryBossAvailable: ¡Gran jefe a la vista!
+CoopHistoryClear: ¡Victoria!
+CoopHistoryDangerRatio: Nivel de riesgo
+CoopHistoryDefeatBoss: ¡Gran jefe al ataque!
+CoopHistoryDefeatBossCount: Grandes jefes salmónidos derrotados
+CoopHistoryDefeated: ¡Victoria!
+CoopHistoryDefeatedEnemies: Grandes salmónidos eliminados
+CoopHistoryDefeatedEnemiesGuide: '* Entre paréntesis se indican los que tú eliminaste.'
+CoopHistoryDeliverCount: Huevecillos de poder
+CoopHistoryEnemy: Gran salmónido
+CoopHistoryExWave: Oleada extra
+CoopHistoryFailure: Derrota...
+CoopHistoryGoToStats: Volver a los resultados de tareas
+CoopHistoryGoldenDeliverCount: Huevecillos dorados
+CoopHistoryHighestScore: Récord
+CoopHistoryHistory: Resultados de tareas
+CoopHistoryJobPoint: Puntos
+CoopHistoryJobRatio: Grado
+CoopHistoryKumaPointCard: Tarjeta de Don Oso
+CoopHistoryLatest: Más reciente
+CoopHistoryLimitedPoint: Puntos especiales actuales
+CoopHistoryMonthlyReward: Objeto del mes
+CoopHistoryNext: Siguiente
+CoopHistoryNoData: No hay resultados de tareas.
+CoopHistoryNotAvailable: Resultados de tareas no disponibles
+CoopHistoryNotAvailableDescription: Solo los 50 registros más recientes están disponibles.
+CoopHistoryNotDefeated: No se logró...
+CoopHistoryP: p.
+CoopHistoryPlayCount: Encargos realizados
+CoopHistoryPrevious: Anterior
+CoopHistoryPrivate: Trabajo privado
+CoopHistoryRecruit: ¡Se busca personal!
+CoopHistoryRecruitDescription: >-
+  Una labor apta incluso para gente sin experiencia. ¡Basta con tener energía y
+  actitud positiva para ganar escamas de manera fácil!
+CoopHistoryRecruitTag1: Trabajo fácil
+CoopHistoryRecruitTag2: Remuneración generosa
+CoopHistoryRecruitTitle: ¡Recolecta huevecillos de poder con nosotros!
+CoopHistoryRegular: Encargo normal
+CoopHistoryRegularPoint: Saldo de puntos
+CoopHistoryRescueCount: Compañeros rescatados
+CoopHistoryRescuedCount: Número de rescates
+CoopHistoryScale: Escamas
+CoopHistoryScaleBronze: Escama de bronce
+CoopHistoryScaleGold: Escama de oro
+CoopHistoryScaleSilver: Escama de plata
+CoopHistoryScore: Rendim.
+CoopHistorySeeSchedule: Ver calendario
+CoopHistorySmellMeter: salmómetro
+CoopHistorySupplyWeapon: Armas disponibles
+CoopHistoryTeamContest: Recolección extra
+CoopHistoryTitle: Salmon Run
+CoopHistoryTotalPoint: Puntos totales
+CoopHistoryWave: Oleada
+CoopHistoryWaveLevel0: Marea baja
+CoopHistoryWaveLevel1: Normal
+CoopHistoryWaveLevel2: Marea alta
+CoopRecordAppName: Encargos
+CoopRecordAttended: 'Participaciones:'
+CoopRecordBigrun: Big Run
+CoopRecordBigrunBronze: Bronce
+CoopRecordBigrunGold: Oro
+CoopRecordBigrunSilver: Plata
+CoopRecordHighestJobRate: Mayor grado
+CoopRecordHighestScore: Récord
+CoopRecordMore: Ver más
+CoopRecordNoData: Sin datos
+CoopRecordTeamContest: Recolección extra
+CoopRecordTitle: Estadísticas
+ErrorBackToHome: Volver al inicio
+ErrorError: Error
+ErrorErrorOccurred: Se produjo un error.
+ErrorErrorReopen: No se pudieron cargar los datos.
+ErrorMaintenanceDescription: >-
+  Se están realizando labores de mantenimiento en el servidor. Inténtalo de
+  nuevo más tarde.
+ErrorMaintenanceTitle: En espera...
+ErrorNetworkNotAvailable: >-
+  No se pudieron cargar los datos. Comprueba tu conexión a internet e inténtalo
+  de nuevo.
+ErrorNotSupported: >-
+  No se puede mostrar SplatNet 3. Comprueba tu conexión a internet y vuelve a
+  intentarlo más tarde. Si el problema no se soluciona, comprueba que tu
+  navegador de internet esté actualizado a la versión más reciente. Si sigues
+  recibiendo este mensaje, es posible que SplatNet 3 no sea compatible con tu
+  dispositivo o con los ajustes actuales.
+ErrorReload: Actualizar
+FesRecordAppName: Festivales
+FesRecordAttack: Al ataque
+FesRecordAverage: 'Media:'
+FesRecordChallenge: Formal
+FesRecordComingSoon: ¡Próximamente!
+FesRecordContributionChallenge: Aportación (formal)
+FesRecordContributionRegular: Aportación (informal)
+FesRecordContributionTricolor: Aportación (combate tricolor)
+FesRecordDefense: En defensa
+FesRecordFestPower: Fuerza
+FesRecordFestRanking: 100 mejores del festival
+FesRecordGotHoragai: Caracolas obtenidas
+FesRecordGuideWillParticipates: Tus amigos todavía pueden cambiar de idea.
+FesRecordHighestFestPower: Mayor fuerza festiva
+FesRecordHoragai: Caracolas
+FesRecordNotVoted: No se ha decidido
+FesRecordOnGoing: ¡En curso!
+FesRecordPastFestivals: Festivales
+FesRecordPreVoteButton: Encuesta en curso
+FesRecordRegular: Informal
+FesRecordSeeAllVotes: Equipos de tus amigos
+FesRecordSeeFestRanking: Ver los 100 mejores
+FesRecordTitle: Festivales
+FesRecordTotal: 'Total:'
+FesRecordUndecided: Pendiente
+FesRecordVote: Piensa participar
+FesRecordVoteRatio: Votos
+FesRecordVoted: Respondió
+FesRecordVotedInGame: Ya votó
+FesRecordVotingStatus: Respuestas de amigos
+FesRecordWaitingForResult: Calculando los resultados...
+FesRecordWin: Victoria
+FesRecordYourRecord: Tus estadísticas
+HeroRecordAgent1: Agente 1
+HeroRecordAgent2: Agente 2
+HeroRecordAnnotation: Selecciona un tamaño para descargar.
+HeroRecordAppName: Modo historia
+HeroRecordAreaMemorialPhoto: Captura
+HeroRecordBossStage: Escenario del jefe
+HeroRecordClearReward: Bonificación por completar el modo historia
+HeroRecordGetReward: ¡Bonificación!
+HeroRecordNawabariMapCompleteReward: Bonificación por explorar Alterna al 100 %
+HeroRecordNawabariMapProgress: 'Tasa de exploración de Alterna:'
+HeroRecordNawabariMapSubCleared: Completaste el modo historia. ¡Felicidades!
+HeroRecordNawabariMapSubComplete: ¡Felicidades por explorar toda Alterna!
+HeroRecordNawabariMapSubInProgress: ¿Qué pasará si exploras Alterna por completo?
+HeroRecordNext: Siguiente
+HeroRecordNoEquipments: Sin equipamiento
+HeroRecordPrev: Anterior
+HeroRecordRecruitmentSub: ¿Y si lo descubres probando el modo historia?
+HeroRecordSearchRatio: 'Tasa de exploración:'
+HeroRecordSeePhotograph: Ver captura
+HeroRecordSite: Zona
+HeroRecordSite1: Isla utópica futura
+HeroRecordSite2: Fábrica de la armonía
+HeroRecordSite3: Ciudad criogénica
+HeroRecordSite4: Edén sobre las aguas
+HeroRecordSite5: Colinas ecosustentables
+HeroRecordSite6: Laboratorio de felicidad
+HeroRecordTitle: Modo historia
+HeroRecordWallpaper: Fondo de pantalla especial
+MyOutfitsErrorSave: No se pudieron guardar los datos.
+QrCodeReaderErrorAlreadyGotDescription: Ya obtuviste esta recompensa.
+QrCodeReaderErrorAlreadyGotTitle: Ya obtenida
+QrCodeReaderErrorNotCompatibleDescription: El código QR no es válido para SplatNet 3.
+QrCodeReaderErrorNotCompatibleTitle: Error
+QrCodeReaderErrorRewardExpiredDescription: El código QR ya no es válido.
+RecordLatestPlayed: Más reciente
+RecordLatestUsed: Más usados
+RecordMain: Principal
+RecordNextSkillLevel: Siguiente nivel
+RecordSkillLevel: Destreza
+RecordSort: Ordenar
+RecordSpecial: Especial
+RecordStageRecord: Escenarios
+RecordStageRecordAppName: Escenarios
+RecordSub: Secundaria
+RecordTitle: Estadísticas
+RecordTotalTurfPoint: p.
+RecordTurfPoint: Territorio pintado
+RecordUnplayedStages: Sin estrenar
+RecordUnusedWeapons: No obtenidas aún
+RecordVibes: Valoración
+RecordWeaponRecord: Armas
+RecordWeaponRecordAppName: Armas
+RecordWinCount: Victorias
+RoomCreatorErrorAlreadyExist: Ya creaste un grupo. No puede crearse más de un grupo a la vez.
+RoomCreatorErrorMakeRoom: No se puede crear el grupo.
+SettingsAcknowledgements: Derechos de autor
+SettingsAppName: Ajustes
+SettingsCredits: Créditos
+SettingsExpansionPass: Visita el sitio del pase de expansión
+SettingsTitle: Ajustes
+StageScheduleBankara: Combate caótico
+StageScheduleBankaraOpen: Informal
+StageScheduleBankaraOpenChallenge: Formal
+StageScheduleCoop: Salmon Run
+StageScheduleCoopCurrentPeriodStart: ¡En curso!
+StageScheduleEvent: Combate especial
+StageScheduleEventCurrentSchedule: Actual
+StageScheduleEventFuture: Posterior
+StageScheduleEventHolding: ¡En curso!
+StageScheduleEventNext: Próximo
+StageScheduleEventNextSchedule: Siguiente
+StageScheduleEventNoData: Calendario sin determinar
+StageScheduleEventUnknownData: (?)
+StageScheduleEventmatch: ¡Evento en curso!
+StageScheduleFestival: Combate temático
+StageScheduleFestivalAnnounced: ¡Próximamente!
+StageScheduleFestivalAt: 'Plazo:'
+StageScheduleFestivalAttack: Al ataque
+StageScheduleFestivalDefense: En defensa
+StageScheduleFestivalHolding: ¡En curso!
+StageScheduleFuture: Posteriores
+StageScheduleGuideOpenBrowser: Se abrirá una nueva ventana del navegador.
+StageScheduleNext: Siguiente
+StageScheduleNoticeBigrun: ¡Big Run a la vista!
+StageScheduleNoticeLimited: ¡Anuncio de recolección extra!
+StageScheduleNowClosed: ¡Festival en curso!
+StageScheduleOpen: Actual
+StageScheduleOpenBigrun: ¡Big Run en marcha!
+StageScheduleOpenLimited: ¡Recolección extra disponible!
+StageSchedulePrivate: Combate privado
+StageScheduleRecruit: ¡Tenemos Big Run! ¡Don Oso, S. A. busca personal! ()
+StageScheduleRecruitTeamContest: ¡Reúne un grupo de trabajo y aprovecha la recolección extra!
+StageScheduleRegular: Combate amistoso
+StageScheduleRules: Ver las reglas
+StageScheduleSeeAllRules: Reglas detalladas
+StageScheduleSeeFestivalRecord: Datos del festival
+StageScheduleSuppliedWeaponRandom: Al azar
+StageScheduleSuppliedWeapons: Armas disponibles
+StageScheduleTitle: Calendario
+StageScheduleWinRateByRules: Tasa de victorias
+StageScheduleXmatch: Combate X
