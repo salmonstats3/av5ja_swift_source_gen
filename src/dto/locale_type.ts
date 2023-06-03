@@ -1,4 +1,6 @@
-import { Expose, Transform } from "class-transformer";
+import { Expose, Transform, plainToInstance } from "class-transformer";
+import fetch from "node-fetch";
+import { Translation } from "./translation";
 
 export const LocaleKey = {
   EUde: "locale0",
@@ -20,7 +22,7 @@ export const LocaleKey = {
 export const LocaleId = {
   EUde: 139,
   EUen: 495,
-  USen: 999,
+  USen: 0,
   EUes: 888,
   USes: 835,
   USfr: 479,
@@ -77,23 +79,89 @@ export const prefix_xcode = (locale: LocaleId): string => {
 export type LocaleId = (typeof LocaleId)[keyof typeof LocaleId];
 export type LocaleKey = (typeof LocaleKey)[keyof typeof LocaleKey];
 
+async function get_game_web_version_hash(): Promise<string> {
+  const url = 'https://api.lp1.av5ja.srv.nintendo.net/';
+  const re = new RegExp('main.([a-z0-9]{8}).js');
+
+  const response: string = await (await fetch(url)).text();
+  return re.test(response) ? re.exec(response)![1] : 'bd36a652';
+}
+
+async function get_locales(hash: string): Promise<LocaleType[]> {
+  const base_url = `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${hash}.js`;
+  const response: string = await (await fetch(base_url)).text();
+
+  const hashes = /([\d]{2,3}):"([a-f0-9]{8})"/g;
+  const results = [...response.matchAll(hashes)]
+    .map((result) => {
+      return {
+        hash: result[2],
+        id: result[1],
+      };
+    })
+    .map((item) => plainToInstance(LocaleType, item, { excludeExtraneousValues: true }))
+    .concat([plainToInstance(LocaleType, { hash: hash, id: 0 }, { excludeExtraneousValues: true })]);
+  return results;
+}
+
 export class LocaleType {
-  @Expose({ name: 'id' })
+  /**
+   * 全パターン
+   * @returns
+   */
+  static async all_cases(): Promise<LocaleType[]> {
+    const hash: string = await get_game_web_version_hash()
+    return await get_locales(hash)
+  }
+
+  /**
+   * 翻訳クラスの取得
+   * @returns 
+   */
+  async get_translation(): Promise<Translation> {
+    const locale: string = Object.keys(LocaleId)[Object.values(LocaleId).indexOf(this.id)]
+    const url = `https://leanny.github.io/splat3/data/language/${locale}.json`
+    const objects = { ...JSON.parse(await (await fetch(url)).text()), ...{ id: this.id, key: this.key, locale: this.locale, xcode: this.xcode } }
+    return plainToInstance(Translation, objects, { excludeExtraneousValues: true })
+  }
+
+  /**
+   * LocaleId
+   */
+  @Expose({ name: "id" })
   @Transform((param) => Object.values(LocaleId)[(Object.values(LocaleId) as number[]).indexOf(parseInt(param.value, 10))])
   readonly id: LocaleId;
 
-  @Expose({ name: 'hash' })
-  readonly hash: string;
+  /**
+   * Hash 
+   */
+  @Expose({ name: "hash" })
+  hash: string;
 
-  @Expose({ name: 'locale' })
-  get locale(): LocaleKey {
+  /**
+   * Key 
+   */
+  get key(): LocaleKey {
     return Object.values(LocaleKey)[(Object.values(LocaleId) as number[]).indexOf(this.id)];
   }
+  
+  /**
+   * 内部LocaleCode 
+   */
+  get locale(): string {
+    return Object.keys(LocaleId)[Object.values(LocaleId).indexOf(this.id)]
+  }
 
-  get xcode(): string {
+  /**
+   * Xcode用のLocaleCode 
+   */
+  private get xcode(): string {
     return prefix_xcode(this.id);
   }
 
+  /** 
+   * イカリング3のURL
+   */
   get url(): string {
     return this.id === LocaleId.USen
       ? `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${this.hash}.js`
