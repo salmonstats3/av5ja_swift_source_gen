@@ -13,18 +13,26 @@ public extension CoopWaterLevelId {
         NSLocalizedString("CoopEvent_\(String(describing: self))", bundle: .module, comment: "")
     }
 
-    static func allEvents(isBigRun: Bool = false) -> [CoopEventId] {
-        switch isBigRun {
-        case true:
-            return [
-                .WaterLevels,
-                .Rush,
-                .Griller,
-                .TheMothership,
-                .Fog,
-            ]
-        case false:
-            return CoopEventId.allCases
+    public static var allCases: [WaterLevelId] = [
+        .HighTide,
+        .NormalTide,
+        .LowTide
+    ]
+
+    public static func allTides(_ eventId: EventId, isBigRun: Bool = false) -> [WaterLevelId] {
+        switch eventId {
+        case .WaterLevels:
+            return [.HighTide, .NormalTide, .LowTide]
+        case .Rush, .Goldie_Seeking, .Griller:
+            return isBigRun ? [.HighTide, .NormalTide, .LowTide] : [.HighTide, .NormalTide]
+        case .TheMothership, .Fog:
+            return [.HighTide, .NormalTide, .LowTide]
+        case .CohockCharge:
+            return [.LowTide]
+        case .Giant:
+            return [.LowTide]
+        case .Mudmouth:
+            return [.HighTide, .NormalTide]
         }
     }
 }
