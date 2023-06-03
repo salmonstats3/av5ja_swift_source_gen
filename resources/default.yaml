@@ -1,4 +1,4 @@
-About:
+CommonAbout:
   ja: About
   en-GB: About
   en: About
@@ -13,7 +13,7 @@ About:
   ru: О сайте
   zh-Hant: 關於
   zh-Hans: 关于
-ActualValue:
+RecordActualValue:
   ja: 実測値
   en-GB: Actual
   en: Actual
@@ -28,7 +28,7 @@ ActualValue:
   ru: Фактический
   zh-Hant: 實際的
   zh-Hans: 实际情况
-Appearances:
+CommonAppearances:
     ja: 外観
     en-GB: Appearances
     en: Appearances
@@ -43,7 +43,7 @@ Appearances:
     ru: Внешний вид
     zh-Hant: 外觀
     zh-Hans: 出场
-Application:
+CommonApplication:
     ja: アプリ
     en-GB: Application
     en: Application
@@ -58,7 +58,7 @@ Application:
     ru: Приложение
     zh-Hant: 應用程式
     zh-Hans: 应用
-AverageRecord:
+RecordAverageScore:
     ja: 平均きろく
     en-GB: Average
     en: Average
@@ -73,7 +73,7 @@ AverageRecord:
     ru: Среднее
     zh-Hant: 平均
     zh-Hans: 平均值
-Backup:
+CommonBackupResults:
     ja: バックアップ
     en-GB: Backup
     en: Backup
@@ -88,7 +88,7 @@ Backup:
     ru: Резервное копирование
     zh-Hant: 備份
     zh-Hans: 备份
-BackupCompress:
+CommonBackupCompress:
     ja: 圧縮(ZIP)
     en-GB: Compress(ZIP)
     en: Compress(ZIP)
@@ -103,7 +103,7 @@ BackupCompress:
     ru: Сжать (ZIP)
     zh-Hant: 壓縮（ZIP）
     zh-Hans: 压缩(ZIP)
-BackupContext:
+CommonBackupMessage:
     ja: データベースのバックアップを出力します。
     en-GB: Backup database
     en: Backup database
@@ -118,7 +118,7 @@ BackupContext:
     ru: Резервное копирование базы данных
     zh-Hant: 備份資料庫
     zh-Hans: 备份数据库
-BackupPlain:
+CommonBackupPlain:
     ja: 非圧縮(JSON)
     en-GB: Plain(JSON)
     en: Plain(JSON)
@@ -133,7 +133,7 @@ BackupPlain:
     ru: Plain(JSON)
     zh-Hant: 純文字（JSON）
     zh-Hans: Plain(JSON)
-Credit:
+CommonAppCredit:
     ja: クレジット
     en-GB: Credit
     en: Credit
@@ -148,7 +148,7 @@ Credit:
     ru: Кредит
     zh-Hant: 信用
     zh-Hans: 信用
-DarkMode:
+CommonDarkMode:
     ja: ダークモード
     en-GB: Dark mode
     en: Dark mode
@@ -163,7 +163,7 @@ DarkMode:
     ru: Темный режим
     zh-Hant: 暗色模式
     zh-Hans: 黑暗模式
-DataManagement:
+CommonDataManagement:
     ja: データ管理
     en-GB: Data Management
     en: Data Management
@@ -178,7 +178,7 @@ DataManagement:
     ru: Управление данными
     zh-Hant: 資料管理
     zh-Hans: 数据管理
-DeathCount:
+CoopHistoryDeathCount:
     ja: 助けられた回数
     en-GB: Rescued count
     en: Rescued count
@@ -193,7 +193,7 @@ DeathCount:
     ru: Спасенный граф
     zh-Hant: 救援計數
     zh-Hans: 获救人数
-DefeatedCount:
+CoopHistoryDefeatedCount:
     ja: オオモノシャケをたおした数
     en-GB: Defeated count
     en: Defeated count
@@ -208,7 +208,7 @@ DefeatedCount:
     ru: Проигранный счет
     zh-Hant: 擊敗計數
     zh-Hans: 被打败的次数
-EstimatedValue:
+CoopHistoryEstimatedValue:
     ja: 推定値
     en-GB: Estimated
     en: Estimated
@@ -223,7 +223,7 @@ EstimatedValue:
     ru: Оценка
     zh-Hant: 預估
     zh-Hans: 估计的
-EventClearRatio:
+CoopHistoryEventClearRatio:
     ja: イベントクリア率
     en-GB: Clear ratio
     en: Clear ratio
@@ -238,7 +238,7 @@ EventClearRatio:
     ru: Четкое соотношение
     zh-Hant: 清除比率
     zh-Hans: 清除率
-EventFrequency:
+CoopHistoryEventFrequency:
     ja: イベント発生率
     en-GB: Event frequency
     en: Event frequency
@@ -253,7 +253,7 @@ EventFrequency:
     ru: Частота событий
     zh-Hant: 事件頻率
     zh-Hans: 事件频率
-FAQ:
+CommonFAQ:
     ja: よくあるご質問
     en-GB: FAQ
     en: FAQ
@@ -268,7 +268,7 @@ FAQ:
     ru: ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
     zh-Hant: 常見問題
     zh-Hans: 常见问题
-GamingMode:
+CommonGamingMode:
     ja: ゲーミングモード
     en-GB: Gaming mode
     en: Gaming mode
@@ -283,7 +283,7 @@ GamingMode:
     ru: Игровой режим
     zh-Hant: 遊戲模式
     zh-Hans: 游戏模式
-GradeId:
+CoopHistoryGradeId:
     ja: 称号
     en-GB: Grade
     en: Grade
@@ -298,7 +298,7 @@ GradeId:
     ru: Класс
     zh-Hant: 成績
     zh-Hans: 等级
-GradePoint:
+CoopHistoryGradePoint:
     ja: 評価ポイント
     en-GB: Grade point
     en: Grade point
@@ -313,7 +313,7 @@ GradePoint:
     ru: Балл за оценку
     zh-Hant: 成績點數
     zh-Hans: 成绩点
-HighestRecord:
+CoopHistoryHighestRecord:
     ja: 最高きろく
     en-GB: Highest
     en: Highest
@@ -328,7 +328,7 @@ HighestRecord:
     ru: Самый высокий
     zh-Hant: 最高的
     zh-Hans: 最高的
-Ikaring2:
+CommonIkaring2:
     ja: イカリング2
     en-GB: SplatNet2
     en: SplatNet2
@@ -343,22 +343,7 @@ Ikaring2:
     ru: SplatNet2
     zh-Hant: SplatNet2
     zh-Hans: SplatNet2
-Ikaring3:
-    ja: イカリング3
-    en-GB: SplatNet3
-    en: SplatNet3
-    de: SplatNet3
-    es: SplatNet3
-    es-MX: SplatNet3
-    fr-CA: SplatNet3
-    fr: SplatNet3
-    it: SplatNet3
-    ko: SplatNet3
-    nl: SplatNet3
-    ru: SplatNet3
-    zh-Hant: SplatNet3
-    zh-Hans: SplatNet3
-Invalid:
+CommonInvalid:
     ja: 無効
     en-GB: Invalid
     en: Invalid
@@ -373,7 +358,7 @@ Invalid:
     ru: Неверный
     zh-Hant: 無效的
     zh-Hans: 无效
-Languages:
+CommonLanguages:
     ja: 言語
     en-GB: Languages
     en: Languages
@@ -388,7 +373,7 @@ Languages:
     ru: Языки
     zh-Hant: 語言
     zh-Hans: 语言
-ShareLogToDeveloper:
+CommonShareLogMessage:
     ja: 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
     en-GB: Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.
     en: Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.
@@ -403,7 +388,7 @@ ShareLogToDeveloper:
     ru: Отправляйте журналы разработчику. Отправка файла журнала при возникновении ошибки облегчит разработчику выявление и устранение причины ошибки. Файл журнала не содержит никакой личной информации.
     zh-Hant: 傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。
     zh-Hans: 发送日志给开发人员。当出现错误时发送日志文件将有助于开发人员识别和纠正错误的原因。日志文件不包含任何个人身份识别信息。
-ShareLog:
+CommonShareLog:
     ja: ログ送信
     en-GB: Share logs
     en: Share logs
@@ -418,7 +403,7 @@ ShareLog:
     ru: Делить журналы
     zh-Hant: 分享日誌
     zh-Hans: 分享日志
-LogSize:
+CommonLogSize:
     ja: ログファイル
     en-GB: Log files
     en: Log files
@@ -433,7 +418,7 @@ LogSize:
     ru: Файлы журналов
     zh-Hant: 日誌文件
     zh-Hans: 日志文件
-MyPage:
+CommonMyPage:
     ja: マイページ
     en-GB: My page
     en: My page
@@ -448,7 +433,7 @@ MyPage:
     ru: Моя страница
     zh-Hant: 我的頁面
     zh-Hans: 我的页面
-PlayerCrew:
+CoopHistoryPlayerCrew:
     ja: なかま
     en-GB: Crew
     en: Crew
@@ -463,7 +448,7 @@ PlayerCrew:
     ru: Экипаж
     zh-Hant: 組
     zh-Hans: 职员
-PlayerYou:
+CoopHistoryPlayerYou:
     ja: あなた
     en-GB: You
     en: You
@@ -478,7 +463,7 @@ PlayerYou:
     ru: Вы
     zh-Hant: 您
     zh-Hans: 你
-PrivacyPolicy:
+CommonPrivacyPolicy:
     ja: プライバシーポリシー
     en-GB: Privacy Policy
     en: Privacy Policy
@@ -493,7 +478,7 @@ PrivacyPolicy:
     ru: Политика конфиденциальности
     zh-Hant: 隱私政策
     zh-Hans: 隐私政策
-RequestForm:
+CommonRequestForm:
     ja: フォーム
     en-GB: Form
     en: Form
@@ -508,7 +493,7 @@ RequestForm:
     ru: Форма
     zh-Hant: 表格
     zh-Hans: 形状
-RequestFormBug:
+CommonRequestFormBug:
     ja: バグ修正
     en-GB: Bug
     en: Bug
@@ -523,7 +508,7 @@ RequestFormBug:
     ru: Ошибка
     zh-Hant: 錯誤
     zh-Hans: 错误
-RequestFormContent:
+CommonRequestFormContent:
     ja: 内容
     en-GB: Content
     en: Content
@@ -538,7 +523,7 @@ RequestFormContent:
     ru: Содержание
     zh-Hant: 內容
     zh-Hans: 内容
-RequestFormEnhancement:
+CommonRequestFormEnhancement:
     ja: 改善案
     en-GB: Enhancement
     en: Enhancement
@@ -553,7 +538,7 @@ RequestFormEnhancement:
     ru: Усиление
     zh-Hant: 增強
     zh-Hans: 增强功能
-RequestFormFeature:
+CommonRequestFormFeature:
     ja: 機能追加
     en-GB: Feature
     en: Feature
@@ -568,7 +553,7 @@ RequestFormFeature:
     ru: Характеристика
     zh-Hant: 功能
     zh-Hans: 特点
-RequestFormTitle:
+CommonRequestFormTitle:
     ja: タイトル
     en-GB: Title
     en: Title
@@ -583,7 +568,7 @@ RequestFormTitle:
     ru: Название
     zh-Hant: 標題
     zh-Hans: 标题
-RequestFormType:
+CommonRequestFormType:
     ja: 種類
     en-GB: Type
     en: Type
@@ -598,7 +583,7 @@ RequestFormType:
     ru: Тип
     zh-Hant: 類型
     zh-Hans: 类型
-RequsetFormSubmit:
+CommonRequsetFormSubmit:
     ja: 送信
     en-GB: Submit
     en: Submit
@@ -613,7 +598,7 @@ RequsetFormSubmit:
     ru: Отправить
     zh-Hant: 提交
     zh-Hans: 提交
-Restore:
+CommonRestore:
     ja: リストア
     en-GB: Restore
     en: Restore
@@ -628,7 +613,7 @@ Restore:
     ru: Восстановить
     zh-Hant: 還原
     zh-Hans: 恢复
-RestoreContext:
+CommonRestoreMessage:
     ja: ファイルアプリからリストアするファイルを選択してください。
     en-GB: Select file to restore in Files app.
     en: Select file to restore in Files app.
@@ -643,7 +628,7 @@ RestoreContext:
     ru: Выберите файл для восстановления в приложении "Файлы".
     zh-Hant: 在「檔案」應用程式中選擇要還原的檔案。
     zh-Hans: 在文件应用程序中选择要恢复的文件。
-ResultsCount:
+CoopHistoryResultsCount:
     ja: リザルト件数
     en-GB: Results count
     en: Results count
@@ -658,7 +643,7 @@ ResultsCount:
     ru: Подсчет результатов
     zh-Hant: 結果計數
     zh-Hans: 结果计数
-Role_Debuger:
+CommonRoleDebuger:
     ja: デバッグ
     en-GB: Debug
     en: Debug
@@ -673,7 +658,7 @@ Role_Debuger:
     ru: Отладка
     zh-Hant: 除錯
     zh-Hans: 调试
-Role_Developer:
+CommonRoleDeveloper:
     ja: 開発
     en-GB: Developer
     en: Developer
@@ -688,7 +673,7 @@ Role_Developer:
     ru: Разработчик
     zh-Hant: 開發者
     zh-Hans: 开发商
-Role_Tester:
+CommonRoleTester:
     ja: テスト
     en-GB: Testor
     en: Testor
@@ -703,7 +688,7 @@ Role_Tester:
     ru: Testor
     zh-Hant: 測試者
     zh-Hans: 检验员
-Role_Translator:
+CommonRoleTranslator:
     ja: 翻訳
     en-GB: Translator
     en: Translator
@@ -718,7 +703,7 @@ Role_Translator:
     ru: Переводчик
     zh-Hant: 翻譯者
     zh-Hans: 翻译人员
-SaveToPhotoLibrary:
+CommonSaveToPhotoLibrary:
     ja: 保存しました
     en-GB: Saved successfully
     en: Saved successfully
@@ -733,7 +718,7 @@ SaveToPhotoLibrary:
     ru: Сохранено успешно
     zh-Hant: 儲存成功
     zh-Hans: 已成功保存
-ScheduleSync:
+CommonScheduleSync:
     ja: スケジュール同期
     en-GB: Sync Schedule
     en: Sync Schedule
@@ -748,7 +733,7 @@ ScheduleSync:
     ru: Расписание синхронизации
     zh-Hant: 同步排程
     zh-Hans: 同步时间表
-ScheduleSyncContext:
+CommonScheduleSyncMessage:
     ja: スケジュールサーバーから過去のスケジュールを取得します
     en-GB: Retrieve schedule from the server.
     en: Retrieve schedule from the server.
@@ -763,7 +748,7 @@ ScheduleSyncContext:
     ru: Получение расписания с сервера.
     zh-Hant: 從伺服器檢索排程。
     zh-Hans: 从服务器检索时间表。
-SignIn:
+CommonSignIn:
     ja: ログイン
     en-GB: Sign in
     en: Sign in
@@ -778,7 +763,7 @@ SignIn:
     ru: Войти
     zh-Hant: 登入
     zh-Hans: 登录
-SignOut:
+CommonSignOut:
     ja: ログアウト
     en-GB: Sign out
     en: Sign out
@@ -793,7 +778,7 @@ SignOut:
     ru: Выписаться
     zh-Hant: 登出
     zh-Hans: 签出
-SignOutSuccessfully:
+CommonSignOutSuccessfully:
     ja: ログアウト成功しました
     en-GB: Sign out successfully
     en: 
@@ -808,7 +793,7 @@ SignOutSuccessfully:
     ru: Успешно выйти из системы
     zh-Hant: 登出成功
     zh-Hans: 登出成功
-SignOutContext:
+CommonSignOutMessage:
     ja: ニンテンドーアカウントとの連携を解除します
     en-GB: Unlink the Nintendo Switch account.
     en: Unlink the Nintendo Switch account.
@@ -823,7 +808,7 @@ SignOutContext:
     ru: Отвяжите учетную запись Nintendo Switch.
     zh-Hant: 取消連結任天堂Switch帳戶。
     zh-Hans: 解除对Nintendo Switch账户的链接。
-SourceCode:
+CommonSourceCode:
     ja: ソースコード
     en-GB: Source code
     en: Source code
@@ -838,7 +823,7 @@ SourceCode:
     ru: Исходный код
     zh-Hant: 原始碼
     zh-Hans: 源代码
-SuppliedRatio:
+CoopHistorySuppliedRatio:
     ja: 支給率
     en-GB: Supplied ratio
     en: Supplied ratio
@@ -853,7 +838,7 @@ SuppliedRatio:
     ru: Коэффициент обеспеченности
     zh-Hant: 供應比率
     zh-Hans: 提供的比率
-UpdateRequired:
+CommonUpdateRequired:
     ja: アプリをアップデートしてください
     en-GB: App update is required
     en: App update is required
@@ -868,7 +853,7 @@ UpdateRequired:
     ru: Требуется обновление приложения
     zh-Hant: 需要應用程式更新
     zh-Hans: 需要更新应用程序
-UserData:
+CommonUserData:
     ja: ユーザーデータ
     en-GB: User data
     en: User data
@@ -883,7 +868,7 @@ UserData:
     ru: Данные пользователя
     zh-Hant: 使用者資料
     zh-Hans: 用户数据
-Valid:
+CommonValid:
     ja: 有効
     en-GB: Valid
     en: Valid
@@ -898,7 +883,7 @@ Valid:
     ru: Действителен
     zh-Hant: 有效的
     zh-Hans: 有效
-Version:
+CommonAppVersion:
     ja: バージョン
     en-GB: Version
     en: Version
@@ -913,7 +898,7 @@ Version:
     ru: Версия
     zh-Hant: 版本
     zh-Hans: 版本
-WipeLog:
+CommonWipeLog:
     ja: ログ消去
     en-GB: Wipe logs
     en: Wipe logs
@@ -928,7 +913,7 @@ WipeLog:
     ru: Протирать журналы
     zh-Hant: 清除日誌
     zh-Hans: 擦拭日志
-WipeLogContext:
+CommonWipeLogMessage:
     ja: 保存されている全てのログを消去します。
     en-GB: Wipe all of logs.
     en: Wipe all of logs.
@@ -943,7 +928,7 @@ WipeLogContext:
     ru: Протрите все журналы.
     zh-Hant: 清除所有日誌。
     zh-Hans: 擦拭所有的日志。
-WipeResults:
+CommonWipeResults:
     ja: リザルト消去
     en-GB: Wipe results
     en: Wipe results
@@ -958,7 +943,7 @@ WipeResults:
     ru: Результаты вытирания
     zh-Hant: 清除結果
     zh-Hans: 擦拭结果
-WipeResultsContext:
+CommonWipeResultsMessage:
     ja: 保存されている全てのリザルトを消去します。
     en-GB: Wipe all of data.
     en: Wipe all of data.
@@ -973,7 +958,7 @@ WipeResultsContext:
     ru: Сотрите все данные.
     zh-Hant: 清除所有資料。
     zh-Hans: 擦除所有数据。
-WriteReview:
+CommonWriteReview:
     ja: レビューを書く
     en-GB: Write a review
     en: Write a review
@@ -988,7 +973,7 @@ WriteReview:
     ru: Написать отзыв
     zh-Hant: 撰寫評論
     zh-Hans: 撰写评论
-OverallRecord:
+CoopHistoryOverallRecord:
     ja: 総合きろく
     en-GB: Overall
     en: Overall
@@ -1003,7 +988,7 @@ OverallRecord:
     ru: В целом
     zh-Hant: 整體
     zh-Hans: 总的来说
-GoldenEggs:
+CommonGoldenEggs:
     ja: 金イクラ
     en-GB: Golden Eggs
     en: Golden Eggs
@@ -1018,7 +1003,7 @@ GoldenEggs:
     ru: Золотые яйца
     zh-Hant: 金蛋
     zh-Hans: 金蛋
-PowerEggs:
+CommonPowerEggs:
     ja: イクラ
     en-GB: Power Eggs
     en: Power Eggs
@@ -1033,7 +1018,7 @@ PowerEggs:
     ru: Энергетические яйца
     zh-Hant: 能量蛋
     zh-Hans: 动力蛋
-Overview:
+CommonOverview:
     ja: 概要
     en-GB: Overview
     en: Overview
@@ -1048,7 +1033,7 @@ Overview:
     ru: Обзор
     zh-Hant: 概述
     zh-Hans: 概述
-Locale:
+CommonLocale:
     ja: ja-JP
     en-GB: en-GB
     en: en-US
@@ -1063,7 +1048,7 @@ Locale:
     ru: ru-RU
     zh-Hant: zh-TW
     zh-Hans: zh-CN
-LanguageCode:
+CommonLanguageCode:
     ja: 0
     en-GB: 0
     en: 0
@@ -1078,7 +1063,7 @@ LanguageCode:
     ru: 0
     zh-Hant: 2
     zh-Hans: 1
-Database:
+CommonDatabase:
     ja: データベース
     en-GB: Database
     en: Database
@@ -1093,7 +1078,7 @@ Database:
     ru: База данных
     zh-Hant: 資料庫
     zh-Hans: 数据库
-XProductVersion:
+CommonXProductVersion:
     ja: X-ProductVersion
     en-GB: X-ProductVersion
     en: X-ProductVersion
@@ -1108,7 +1093,7 @@ XProductVersion:
     ru: X-ProductVersion
     zh-Hant: X-ProductVersion
     zh-Hans: X-ProductVersion
-XWebViewVer:
+CommonXWebViewVer:
     ja: X-WebViewVer
     en-GB: X-WebViewVer
     en: X-WebViewVer
@@ -1123,7 +1108,7 @@ XWebViewVer:
     ru: X-WebViewVer
     zh-Hant: X-WebViewVer
     zh-Hans: X-WebViewVer
-Upload:
+CommonUpload:
     ja: アップロード
     en-GB: Upload
     en: Upload
@@ -1138,7 +1123,7 @@ Upload:
     ru: Загрузить
     zh-Hant: 上傳
     zh-Hans: 上传
-CreditDevelop:
+CommonCreditDevelop:
     ja: 開発
     en-GB: Developer
     en: Developer
@@ -1153,7 +1138,7 @@ CreditDevelop:
     ru: Разработчик
     zh-Hant: 開發者
     zh-Hans: 开发商
-CreditTest:
+CommonCreditTest:
     ja: テスト
     en-GB: Tester
     en: Tester
@@ -1168,7 +1153,7 @@ CreditTest:
     ru: Тестер
     zh-Hant: 測試者
     zh-Hans: 测试员
-CreditDesign:
+CommonCreditDesign:
     ja: UI/UXデザイン
     en-GB: UI/UX Design
     en: UI/UX Design
@@ -1183,7 +1168,7 @@ CreditDesign:
     ru: UI/UX дизайн
     zh-Hant: UI/UX設計
     zh-Hans: UI/UX设计
-TeamPointCard:
+CoopHistoryTeamPointCard:
     ja: チームポイントカード
     en-GB: Team Point Card
     en: Team Point Card
@@ -1198,7 +1183,7 @@ TeamPointCard:
     ru: Карточка командных очков
     zh-Hant: 團隊點數卡
     zh-Hans: 团队积分卡
-UseEstimatedValue:
+CoopHistoryUseEstimatedValue:
     ja: 推定値を表示
     en-GB: Use estimated values
     en: Use estimated values
@@ -1213,7 +1198,7 @@ UseEstimatedValue:
     ru: Использовать оценочные значения
     zh-Hant: 使用預估值
     zh-Hans: 使用估计值
-UseEmpheralSession:
+CommonUseSecureSession:
     ja: Safariの認証を利用する
     en-GB: Use empheral session
     en: Use empheral session
@@ -1228,7 +1213,7 @@ UseEmpheralSession:
     ru: Используйте эмфиральную сессию
     zh-Hant: 使用 Safari 的身份驗證
     zh-Hans: 使用 Safari 的身份验证
-CheckInReward:
+CommonCheckInReward:
     ja: 報酬
     en-GB: Rewards
     en: Rewards
@@ -1243,7 +1228,7 @@ CheckInReward:
     ru: Вознаграждения
     zh-Hant: 獎勵
     zh-Hans: 奖励
-GetCheckInReward:
+CommonGetCheckInReward:
     ja: 過去に配布されていたQRコードの報酬を取得します。
     en-GB: Get all of rewards for QR codes.
     en: Get all of rewards for QR codes.
@@ -1258,7 +1243,7 @@ GetCheckInReward:
     ru: Получите все вознаграждения за QR-коды.
     zh-Hant: 掃描QR碼獲取所有獎勵。
     zh-Hans: 获得二维码的所有奖励。
-TeamResult:
+CoopHistoryTeamResult:
     ja: チーム
     en-GB: Team
     en: Team
@@ -1273,7 +1258,7 @@ TeamResult:
     ru: Команда
     zh-Hant: 團隊
     zh-Hans: 团队
-PlayerResult:
+CoopHistoryPlayerResult:
     ja: あなた
     en-GB: You
     en: You
@@ -1288,7 +1273,7 @@ PlayerResult:
     ru: Вы
     zh-Hant: 您
     zh-Hans: 你
-CrewAvgResult:
+CoopHistoryCrewAvgResult:
     ja: なかまの平均
     en-GB: Avg of the crew
     en: Avg of the crew
@@ -1303,7 +1288,7 @@ CrewAvgResult:
     ru: Экипаж
     zh-Hant: 船員的平均數
     zh-Hans: 船员的平均数
-CrewResult:
+CoopHistoryCrewResult:
     ja: なかま
     en-GB: Crew
     en: Crew
@@ -1318,7 +1303,7 @@ CrewResult:
     ru: Экипаж
     zh-Hant: 船員
     zh-Hans: 船员
-WaveResult:
+CoopHistoryWaveResult:
     ja: Waves
     en-GB: Waves
     en: Waves
@@ -1333,7 +1318,7 @@ WaveResult:
     ru: Волны
     zh-Hant: 海浪
     zh-Hans: 波浪
-HighestValue:
+CoopHistoryHighestScore:
     ja: 最高
     en-GB: Max
     en: Max
@@ -1348,7 +1333,7 @@ HighestValue:
     ru: Макс
     zh-Hant: 最高
     zh-Hans: 最大
-AverageValue:
+CoopHistoryAverageScore:
     ja: 平均
     en-GB: Avg
     en: Avg
@@ -1363,7 +1348,7 @@ AverageValue:
     ru: Avg
     zh-Hant: 平均
     zh-Hans: 平均
-RequirediOS16:
+CommonRequirediOS16:
     ja: この機能を利用するにはiOS16以上にアップデートする必要があります。
     en-GB: You must update to iOS16 or higher to use this feature
     en: You must update to iOS16 or higher to use this feature
@@ -1378,7 +1363,7 @@ RequirediOS16:
     ru: Для использования этой функции необходимо обновить iOS до версии 16 или выше
     zh-Hant: 您必須更新到iOS 16或更高版本才能使用此功能
     zh-Hans: 你必须更新到iOS16或更高版本才能使用这一功能
-RequiredSignIn:
+CommonRequiredSignIn:
     ja: このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
     en-GB: Using this app, you need be sign in with your Nintendo account. Please sign in from on My page.
     en: Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.
@@ -1393,7 +1378,7 @@ RequiredSignIn:
     ru: Для использования этого приложения вам необходимо войти в систему под своей учетной записью Nintendo. Войдите в систему на Моей странице.
     zh-Hant: 登錄 Nintendo 帳戶才能使用此應用程式
     zh-Hans: 登录 Nintendo 帐户才能使用此应用程序
-RestoreSuccess:
+CommonRestoreSuccessMessage:
     ja: リザルト復元に成功しました。
     en-GB: Restore results successfully
     en: Restore results successfully
@@ -1408,7 +1393,7 @@ RestoreSuccess:
     ru: Успешное восстановление результатов
     zh-Hant: 成功還原結果
     zh-Hans: 成功恢复结果
-RestoreFailure:
+CommonRestoreFailureMessage:
     ja: リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
     en-GB: Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
     en: Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
@@ -1423,7 +1408,7 @@ RestoreFailure:
     ru: Сбой результатов восстановления. Неподдерживаемый формат или подпись не соответствует из-за того, что файл был подделан.
     zh-Hant: 還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。
     zh-Hans: 恢复结果失败。由于文件被篡改，不支持的格式或签名不匹配。
-ResultsCount:
+CommonResultsCount:
     ja: リザルト件数
     en-GB: Results
     en: Results
@@ -1438,7 +1423,7 @@ ResultsCount:
     ru: Результаты
     zh-Hant: 結果
     zh-Hans: 结果
-DeveloperAnswer:
+CommonDeveloperAnswer:
     ja: デベロッパの回答
     en-GB: 'Developer''s response'
     en: 'Developer''s response'
@@ -1453,7 +1438,7 @@ DeveloperAnswer:
     ru: Ответ разработчика
     zh-Hant: 開發者的回應
     zh-Hans: 开发者的回应
-MinimumVersion:
+CommonMinimumVersion:
     ja: サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
     en-GB: Due to the data backuped by unsupported version, could not restore.
     en: Due to the data backuped by unsupported version, could not restore.
@@ -1468,7 +1453,7 @@ MinimumVersion:
     ru: Из-за того, что резервная копия данных была создана в неподдерживаемой версии, восстановить ее не удалось.
     zh-Hant: 無法恢復以不支援的版本備份的結果
     zh-Hans: 无法恢复以不支持的版本备份的结果
-InvalidSignature:
+ErrorInvalidSignature:
     ja: バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
     en-GB: Due to the unmatch the signature of data, could not restore.
     en: Due to the unmatch the signature of data, could not restore.
@@ -1483,7 +1468,7 @@ InvalidSignature:
     ru: Из-за несовпадения сигнатур данных, восстановить их не удалось.
     zh-Hant: 由於備份簽名不匹配，無法恢復。結果可能已被篡改
     zh-Hans: 由于备份签名不匹配，无法恢复。结果可能已被篡改
-SystemTheme:
+CommonUseSystemTheme:
     ja: 端末の設定を利用する
     en-GB: Use device settings
     en: Use device settings
@@ -1498,7 +1483,7 @@ SystemTheme:
     ru: Использовать настройки устройства
     zh-Hant: 取決於設備設置
     zh-Hans: 根据设备设置而定
-License:
+CommonLicense:
     ja: ライセンス
     en-GB: License
     en: License
