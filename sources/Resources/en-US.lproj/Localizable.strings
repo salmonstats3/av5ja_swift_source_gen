@@ -420,207 +420,203 @@
 "148" = "StageScheduleWinRateByRules,Win Rate by Mode";
 /// StageScheduleXmatch,X Battle
 "149" = "StageScheduleXmatch,X Battle";
-/// CommonAbout,About
-"150" = "CommonAbout,About";
-/// RecordActualValue,Actual
-"151" = "RecordActualValue,Actual";
-/// CommonAppearances,Appearances
-"152" = "CommonAppearances,Appearances";
-/// CommonApplication,Application
-"153" = "CommonApplication,Application";
-/// RecordAverageScore,Average
-"154" = "RecordAverageScore,Average";
-/// CommonBackupResults,Backup
-"155" = "CommonBackupResults,Backup";
-/// CommonBackupCompress,Compress(ZIP)
-"156" = "CommonBackupCompress,Compress(ZIP)";
-/// CommonBackupMessage,Backup database
-"157" = "CommonBackupMessage,Backup database";
-/// CommonBackupPlain,Plain(JSON)
-"158" = "CommonBackupPlain,Plain(JSON)";
-/// CommonAppCredit,Credit
-"159" = "CommonAppCredit,Credit";
-/// CommonDarkMode,Dark mode
-"160" = "CommonDarkMode,Dark mode";
-/// CommonDataManagement,Data Management
-"161" = "CommonDataManagement,Data Management";
-/// CoopHistoryDeathCount,Rescued count
-"162" = "CoopHistoryDeathCount,Rescued count";
-/// CoopHistoryDefeatedCount,Defeated count
-"163" = "CoopHistoryDefeatedCount,Defeated count";
-/// CoopHistoryEstimatedValue,Estimated
-"164" = "CoopHistoryEstimatedValue,Estimated";
-/// CoopHistoryEventClearRatio,Clear ratio
-"165" = "CoopHistoryEventClearRatio,Clear ratio";
-/// CoopHistoryEventFrequency,Event frequency
-"166" = "CoopHistoryEventFrequency,Event frequency";
-/// CommonFAQ,FAQ
-"167" = "CommonFAQ,FAQ";
-/// CommonGamingMode,Gaming mode
-"168" = "CommonGamingMode,Gaming mode";
-/// CoopHistoryGradeId,Grade
-"169" = "CoopHistoryGradeId,Grade";
-/// CoopHistoryGradePoint,Grade point
-"170" = "CoopHistoryGradePoint,Grade point";
-/// CoopHistoryHighestRecord,Highest
-"171" = "CoopHistoryHighestRecord,Highest";
-/// CommonIkaring2,SplatNet2
-"172" = "CommonIkaring2,SplatNet2";
-/// CommonInvalid,Invalid
-"173" = "CommonInvalid,Invalid";
-/// CommonLanguages,Languages
-"174" = "CommonLanguages,Languages";
-/// CommonShareLogMessage,Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.
-"175" = "CommonShareLogMessage,Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.";
-/// CommonShareLog,Share logs
-"176" = "CommonShareLog,Share logs";
-/// CommonLogSize,Log files
-"177" = "CommonLogSize,Log files";
-/// CommonMyPage,My page
-"178" = "CommonMyPage,My page";
-/// CoopHistoryPlayerCrew,Crew
-"179" = "CoopHistoryPlayerCrew,Crew";
-/// CoopHistoryPlayerYou,You
-"180" = "CoopHistoryPlayerYou,You";
-/// CommonPrivacyPolicy,Privacy Policy
-"181" = "CommonPrivacyPolicy,Privacy Policy";
-/// CommonRequestForm,Form
-"182" = "CommonRequestForm,Form";
-/// CommonRequestFormBug,Bug
-"183" = "CommonRequestFormBug,Bug";
-/// CommonRequestFormContent,Content
-"184" = "CommonRequestFormContent,Content";
-/// CommonRequestFormEnhancement,Enhancement
-"185" = "CommonRequestFormEnhancement,Enhancement";
-/// CommonRequestFormFeature,Feature
-"186" = "CommonRequestFormFeature,Feature";
-/// CommonRequestFormTitle,Title
-"187" = "CommonRequestFormTitle,Title";
-/// CommonRequestFormType,Type
-"188" = "CommonRequestFormType,Type";
-/// CommonRequsetFormSubmit,Submit
-"189" = "CommonRequsetFormSubmit,Submit";
-/// CommonRestore,Restore
-"190" = "CommonRestore,Restore";
-/// CommonRestoreMessage,Select file to restore in Files app.
-"191" = "CommonRestoreMessage,Select file to restore in Files app.";
-/// CoopHistoryResultsCount,Results count
-"192" = "CoopHistoryResultsCount,Results count";
-/// CommonRoleDebuger,Debug
-"193" = "CommonRoleDebuger,Debug";
-/// CommonRoleDeveloper,Developer
-"194" = "CommonRoleDeveloper,Developer";
-/// CommonRoleTester,Testor
-"195" = "CommonRoleTester,Testor";
-/// CommonRoleTranslator,Translator
-"196" = "CommonRoleTranslator,Translator";
-/// CommonSaveToPhotoLibrary,Saved successfully
-"197" = "CommonSaveToPhotoLibrary,Saved successfully";
-/// CommonScheduleSync,Sync Schedule
-"198" = "CommonScheduleSync,Sync Schedule";
-/// CommonScheduleSyncMessage,Retrieve schedule from the server.
-"199" = "CommonScheduleSyncMessage,Retrieve schedule from the server.";
-/// CommonSignIn,Sign in
-"200" = "CommonSignIn,Sign in";
-/// CommonSignOut,Sign out
-"201" = "CommonSignOut,Sign out";
+/// CommonAbout,
+"150" = "CommonAbout,";
+/// RecordActualValue,
+"151" = "RecordActualValue,";
+/// CommonAppearances,
+"152" = "CommonAppearances,";
+/// CommonApplication,
+"153" = "CommonApplication,";
+/// RecordAverageScore,
+"154" = "RecordAverageScore,";
+/// CommonBackupResults,
+"155" = "CommonBackupResults,";
+/// CommonBackupCompress,
+"156" = "CommonBackupCompress,";
+/// CommonBackupMessage,
+"157" = "CommonBackupMessage,";
+/// CommonBackupPlain,
+"158" = "CommonBackupPlain,";
+/// CommonAppCredit,
+"159" = "CommonAppCredit,";
+/// CommonDarkMode,
+"160" = "CommonDarkMode,";
+/// CommonDataManagement,
+"161" = "CommonDataManagement,";
+/// CoopHistoryDeathCount,
+"162" = "CoopHistoryDeathCount,";
+/// CoopHistoryDefeatedCount,
+"163" = "CoopHistoryDefeatedCount,";
+/// CoopHistoryEstimatedValue,
+"164" = "CoopHistoryEstimatedValue,";
+/// CoopHistoryEventClearRatio,
+"165" = "CoopHistoryEventClearRatio,";
+/// CoopHistoryEventFrequency,
+"166" = "CoopHistoryEventFrequency,";
+/// CommonFAQ,
+"167" = "CommonFAQ,";
+/// CommonGamingMode,
+"168" = "CommonGamingMode,";
+/// CoopHistoryGradeId,
+"169" = "CoopHistoryGradeId,";
+/// CoopHistoryGradePoint,
+"170" = "CoopHistoryGradePoint,";
+/// CoopHistoryHighestRecord,
+"171" = "CoopHistoryHighestRecord,";
+/// CommonIkaring2,
+"172" = "CommonIkaring2,";
+/// CommonInvalid,
+"173" = "CommonInvalid,";
+/// CommonLanguages,
+"174" = "CommonLanguages,";
+/// CommonShareLogMessage,
+"175" = "CommonShareLogMessage,";
+/// CommonShareLog,
+"176" = "CommonShareLog,";
+/// CommonLogSize,
+"177" = "CommonLogSize,";
+/// CommonMyPage,
+"178" = "CommonMyPage,";
+/// CoopHistoryPlayerCrew,
+"179" = "CoopHistoryPlayerCrew,";
+/// CoopHistoryPlayerYou,
+"180" = "CoopHistoryPlayerYou,";
+/// CommonPrivacyPolicy,
+"181" = "CommonPrivacyPolicy,";
+/// CommonRequestForm,
+"182" = "CommonRequestForm,";
+/// CommonRequestFormBug,
+"183" = "CommonRequestFormBug,";
+/// CommonRequestFormContent,
+"184" = "CommonRequestFormContent,";
+/// CommonRequestFormEnhancement,
+"185" = "CommonRequestFormEnhancement,";
+/// CommonRequestFormFeature,
+"186" = "CommonRequestFormFeature,";
+/// CommonRequestFormTitle,
+"187" = "CommonRequestFormTitle,";
+/// CommonRequestFormType,
+"188" = "CommonRequestFormType,";
+/// CommonRequsetFormSubmit,
+"189" = "CommonRequsetFormSubmit,";
+/// CommonRestore,
+"190" = "CommonRestore,";
+/// CommonRestoreMessage,
+"191" = "CommonRestoreMessage,";
+/// CoopHistoryResultsCount,
+"192" = "CoopHistoryResultsCount,";
+/// CommonRoleDebuger,
+"193" = "CommonRoleDebuger,";
+/// CommonRoleDeveloper,
+"194" = "CommonRoleDeveloper,";
+/// CommonRoleTester,
+"195" = "CommonRoleTester,";
+/// CommonRoleTranslator,
+"196" = "CommonRoleTranslator,";
+/// CommonSaveToPhotoLibrary,
+"197" = "CommonSaveToPhotoLibrary,";
+/// CommonScheduleSync,
+"198" = "CommonScheduleSync,";
+/// CommonScheduleSyncMessage,
+"199" = "CommonScheduleSyncMessage,";
+/// CommonSignIn,
+"200" = "CommonSignIn,";
+/// CommonSignOut,
+"201" = "CommonSignOut,";
 /// CommonSignOutSuccessfully,
 "202" = "CommonSignOutSuccessfully,";
-/// CommonSignOutMessage,Unlink the Nintendo Switch account.
-"203" = "CommonSignOutMessage,Unlink the Nintendo Switch account.";
-/// CommonSourceCode,Source code
-"204" = "CommonSourceCode,Source code";
-/// CoopHistorySuppliedRatio,Supplied ratio
-"205" = "CoopHistorySuppliedRatio,Supplied ratio";
-/// CommonUpdateRequired,App update is required
-"206" = "CommonUpdateRequired,App update is required";
-/// CommonUserData,User data
-"207" = "CommonUserData,User data";
-/// CommonValid,Valid
-"208" = "CommonValid,Valid";
-/// CommonAppVersion,Version
-"209" = "CommonAppVersion,Version";
-/// CommonWipeLog,Wipe logs
-"210" = "CommonWipeLog,Wipe logs";
-/// CommonWipeLogMessage,Wipe all of logs.
-"211" = "CommonWipeLogMessage,Wipe all of logs.";
-/// CommonWipeResults,Wipe results
-"212" = "CommonWipeResults,Wipe results";
-/// CommonWipeResultsMessage,Wipe all of data.
-"213" = "CommonWipeResultsMessage,Wipe all of data.";
-/// CommonWriteReview,Write a review
-"214" = "CommonWriteReview,Write a review";
-/// CoopHistoryOverallRecord,Overall
-"215" = "CoopHistoryOverallRecord,Overall";
-/// CommonGoldenEggs,Golden Eggs
-"216" = "CommonGoldenEggs,Golden Eggs";
-/// CommonPowerEggs,Power Eggs
-"217" = "CommonPowerEggs,Power Eggs";
-/// CommonOverview,Overview
-"218" = "CommonOverview,Overview";
-/// CommonLocale,en-US
-"219" = "CommonLocale,en-US";
-/// CommonLanguageCode,0
-"220" = "CommonLanguageCode,0";
-/// CommonDatabase,Database
-"221" = "CommonDatabase,Database";
-/// CommonXProductVersion,X-ProductVersion
-"222" = "CommonXProductVersion,X-ProductVersion";
-/// CommonXWebViewVer,X-WebViewVer
-"223" = "CommonXWebViewVer,X-WebViewVer";
-/// CommonUpload,Upload
-"224" = "CommonUpload,Upload";
-/// CommonCreditDevelop,Developer
-"225" = "CommonCreditDevelop,Developer";
-/// CommonCreditTest,Tester
-"226" = "CommonCreditTest,Tester";
-/// CommonCreditDesign,UI/UX Design
-"227" = "CommonCreditDesign,UI/UX Design";
-/// CoopHistoryTeamPointCard,Team Point Card
-"228" = "CoopHistoryTeamPointCard,Team Point Card";
-/// CoopHistoryUseEstimatedValue,Use estimated values
-"229" = "CoopHistoryUseEstimatedValue,Use estimated values";
-/// CommonUseSecureSession,Use empheral session
-"230" = "CommonUseSecureSession,Use empheral session";
-/// CommonCheckInReward,Rewards
-"231" = "CommonCheckInReward,Rewards";
-/// CommonGetCheckInReward,Get all of rewards for QR codes.
-"232" = "CommonGetCheckInReward,Get all of rewards for QR codes.";
-/// CoopHistoryTeamResult,Team
-"233" = "CoopHistoryTeamResult,Team";
-/// CoopHistoryPlayerResult,You
-"234" = "CoopHistoryPlayerResult,You";
-/// CoopHistoryCrewAvgResult,Avg of the crew
-"235" = "CoopHistoryCrewAvgResult,Avg of the crew";
-/// CoopHistoryCrewResult,Crew
-"236" = "CoopHistoryCrewResult,Crew";
-/// CoopHistoryWaveResult,Waves
-"237" = "CoopHistoryWaveResult,Waves";
-/// CoopHistoryHighestScore,Max
-"238" = "CoopHistoryHighestScore,Max";
-/// CoopHistoryAverageScore,Avg
-"239" = "CoopHistoryAverageScore,Avg";
-/// CommonRequirediOS16,You must update to iOS16 or higher to use this feature
-"240" = "CommonRequirediOS16,You must update to iOS16 or higher to use this feature";
-/// CommonRequiredSignIn,Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.
-"241" = "CommonRequiredSignIn,Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.";
-/// CommonRestoreSuccessMessage,Restore results successfully
-"242" = "CommonRestoreSuccessMessage,Restore results successfully";
-/// CommonRestoreFailureMessage,Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
-"243" = "CommonRestoreFailureMessage,Restore results failure. Unsupported format or signature does not match due to file has been tampered with.";
-/// CommonResultsCount,Results
-"244" = "CommonResultsCount,Results";
-/// CommonDeveloperAnswer,Developer's response
-"245" = "CommonDeveloperAnswer,Developer's response";
-/// CommonMinimumVersion,Due to the data backuped by unsupported version, could not restore.
-"246" = "CommonMinimumVersion,Due to the data backuped by unsupported version, could not restore.";
-/// ErrorInvalidSignature,Due to the unmatch the signature of data, could not restore.
-"247" = "ErrorInvalidSignature,Due to the unmatch the signature of data, could not restore.";
-/// CommonUseSystemTheme,Use device settings
-"248" = "CommonUseSystemTheme,Use device settings";
-/// CommonLicense,License
-"249" = "CommonLicense,License";
-/// DateTimeYearFormat,M/d/yyyy h:mm a
-"250" = "DateTimeYearFormat,M/d/yyyy h:mm a";
-/// DateTimeFormat,MM/dd h:mm a
-"251" = "DateTimeFormat,MM/dd h:mm a";
+/// CommonSignOutMessage,
+"203" = "CommonSignOutMessage,";
+/// CommonSourceCode,
+"204" = "CommonSourceCode,";
+/// CoopHistorySuppliedRatio,
+"205" = "CoopHistorySuppliedRatio,";
+/// CommonUpdateRequired,
+"206" = "CommonUpdateRequired,";
+/// CommonUserData,
+"207" = "CommonUserData,";
+/// CommonValid,
+"208" = "CommonValid,";
+/// CommonAppVersion,
+"209" = "CommonAppVersion,";
+/// CommonWipeLog,
+"210" = "CommonWipeLog,";
+/// CommonWipeLogMessage,
+"211" = "CommonWipeLogMessage,";
+/// CommonWipeResults,
+"212" = "CommonWipeResults,";
+/// CommonWipeResultsMessage,
+"213" = "CommonWipeResultsMessage,";
+/// CommonWriteReview,
+"214" = "CommonWriteReview,";
+/// CoopHistoryOverallRecord,
+"215" = "CoopHistoryOverallRecord,";
+/// CommonGoldenEggs,
+"216" = "CommonGoldenEggs,";
+/// CommonPowerEggs,
+"217" = "CommonPowerEggs,";
+/// CommonOverview,
+"218" = "CommonOverview,";
+/// CommonLocale,
+"219" = "CommonLocale,";
+/// CommonLanguageCode,
+"220" = "CommonLanguageCode,";
+/// CommonDatabase,
+"221" = "CommonDatabase,";
+/// CommonXProductVersion,
+"222" = "CommonXProductVersion,";
+/// CommonXWebViewVer,
+"223" = "CommonXWebViewVer,";
+/// CommonUpload,
+"224" = "CommonUpload,";
+/// CommonCreditDevelop,
+"225" = "CommonCreditDevelop,";
+/// CommonCreditTest,
+"226" = "CommonCreditTest,";
+/// CommonCreditDesign,
+"227" = "CommonCreditDesign,";
+/// CoopHistoryTeamPointCard,
+"228" = "CoopHistoryTeamPointCard,";
+/// CoopHistoryUseEstimatedValue,
+"229" = "CoopHistoryUseEstimatedValue,";
+/// CommonUseSecureSession,
+"230" = "CommonUseSecureSession,";
+/// CommonCheckInReward,
+"231" = "CommonCheckInReward,";
+/// CommonGetCheckInReward,
+"232" = "CommonGetCheckInReward,";
+/// CoopHistoryTeamResult,
+"233" = "CoopHistoryTeamResult,";
+/// CoopHistoryPlayerResult,
+"234" = "CoopHistoryPlayerResult,";
+/// CoopHistoryCrewAvgResult,
+"235" = "CoopHistoryCrewAvgResult,";
+/// CoopHistoryCrewResult,
+"236" = "CoopHistoryCrewResult,";
+/// CoopHistoryWaveResult,
+"237" = "CoopHistoryWaveResult,";
+/// CoopHistoryHighestScore,
+"238" = "CoopHistoryHighestScore,";
+/// CoopHistoryAverageScore,
+"239" = "CoopHistoryAverageScore,";
+/// CommonRequirediOS16,
+"240" = "CommonRequirediOS16,";
+/// CommonRequiredSignIn,
+"241" = "CommonRequiredSignIn,";
+/// CommonRestoreSuccessMessage,
+"242" = "CommonRestoreSuccessMessage,";
+/// CommonRestoreFailureMessage,
+"243" = "CommonRestoreFailureMessage,";
+/// CommonResultsCount,
+"244" = "CommonResultsCount,";
+/// CommonDeveloperAnswer,
+"245" = "CommonDeveloperAnswer,";
+/// CommonMinimumVersion,
+"246" = "CommonMinimumVersion,";
+/// ErrorInvalidSignature,
+"247" = "ErrorInvalidSignature,";
+/// CommonUseSystemTheme,
+"248" = "CommonUseSystemTheme,";
+/// CommonLicense,
+"249" = "CommonLicense,";

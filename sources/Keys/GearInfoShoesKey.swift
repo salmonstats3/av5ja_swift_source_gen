@@ -1,7 +1,7 @@
 //
 //  GearInfoShoes.swift
 //
-//  Created by tkgstrator on 2023/06/03
+//  Created by tkgstrator on 2023/06/04
 //  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 

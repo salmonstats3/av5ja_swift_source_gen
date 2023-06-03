@@ -1,7 +1,7 @@
 //
 //  LocalizedType.swift
 //
-//  Created by tkgstrator on 2023/06/03
+//  Created by tkgstrator on 2023/06/04
 //  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 
@@ -368,10 +368,6 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryWaveLevel2
     /// Waves
     case CoopHistoryWaveResult
-    /// M/d HH:mm
-    case DateTimeFormat
-    /// yyyy M/d HH:mm
-    case DateTimeYearFormat
     /// ホームに戻る
     case ErrorBackToHome
     /// 現在利用できません。しばらくお待ちください

@@ -614,7 +614,3 @@
 "245" = "CommonUseSystemTheme,端末の設定を利用する";
 /// CommonLicense,ライセンス
 "246" = "CommonLicense,ライセンス";
-/// DateTimeYearFormat,yyyy M/d HH:mm
-"247" = "DateTimeYearFormat,yyyy M/d HH:mm";
-/// DateTimeFormat,M/d HH:mm
-"248" = "DateTimeFormat,M/d HH:mm";

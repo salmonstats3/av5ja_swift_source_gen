@@ -42,10 +42,12 @@ class TranslationType extends Map<string, string> {
       `    public var id: Int { ${this.name.slice(0, -3)}Id.allCases[${this.name}.allCases.firstIndex(of: self) ?? 0].rawValue }`,
       '',
     ];
-
-    this.forEach((value, key) => {
-      translations.push(`    /// ${value}`);
-      translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
+    this
+    .forEach((value, key) => {
+      if (!/Arbeiter/.test(key)) {
+        translations.push(`    /// ${value}`);
+        translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
+      }
     });
     translations.push('}');
     return translations.join('\n');
@@ -214,7 +216,7 @@ export class Translation {
    * @returns 
    */
   private get_yaml(): [string, unknown][] {
-    const data = JSON.parse(JSON.stringify(yaml.load(fs.readFileSync(`src/locales/default.yaml`, 'utf8'))))
+    const data = JSON.parse(JSON.stringify(yaml.load(fs.readFileSync(`resources/default.yaml`, 'utf8'))))
     return Object.entries(data).map(([key, values]) => {
       const value: string | undefined = Object.entries(values as object).find(([key, _]) => key === this.xcode)?.[1] as string | undefined
       return [key, value] 

@@ -616,7 +616,3 @@
 "246" = "CommonUseSystemTheme,장치 설정에 따라 다릅니다";
 /// CommonLicense,라이선스
 "247" = "CommonLicense,라이선스";
-/// DateTimeYearFormat,yyyy M/d HH:mm
-"248" = "DateTimeYearFormat,yyyy M/d HH:mm";
-/// DateTimeFormat,M/d HH:mm
-"249" = "DateTimeFormat,M/d HH:mm";

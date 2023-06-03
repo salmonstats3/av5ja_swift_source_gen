@@ -622,7 +622,3 @@
 "249" = "CommonUseSystemTheme,Geräteeinstellungen verwenden";
 /// CommonLicense,Lizenz
 "250" = "CommonLicense,Lizenz";
-/// DateTimeYearFormat,dd.MM/yyyy HH:mm
-"251" = "DateTimeYearFormat,dd.MM/yyyy HH:mm";
-/// DateTimeFormat,dd.MM HH:mm
-"252" = "DateTimeFormat,dd.MM HH:mm";

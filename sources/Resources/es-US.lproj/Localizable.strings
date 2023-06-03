@@ -624,7 +624,3 @@
 "250" = "CommonUseSystemTheme,";
 /// CommonLicense,
 "251" = "CommonLicense,";
-/// DateTimeYearFormat,
-"252" = "DateTimeYearFormat,";
-/// DateTimeFormat,
-"253" = "DateTimeFormat,";

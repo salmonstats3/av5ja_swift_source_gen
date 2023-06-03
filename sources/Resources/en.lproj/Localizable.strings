@@ -524,8 +524,8 @@
 "200" = "CommonSignIn,Sign in";
 /// CommonSignOut,Sign out
 "201" = "CommonSignOut,Sign out";
-/// CommonSignOutSuccessfully,Sign out successfully
-"202" = "CommonSignOutSuccessfully,Sign out successfully";
+/// CommonSignOutSuccessfully,
+"202" = "CommonSignOutSuccessfully,";
 /// CommonSignOutMessage,Unlink the Nintendo Switch account.
 "203" = "CommonSignOutMessage,Unlink the Nintendo Switch account.";
 /// CommonSourceCode,Source code
@@ -558,8 +558,8 @@
 "217" = "CommonPowerEggs,Power Eggs";
 /// CommonOverview,Overview
 "218" = "CommonOverview,Overview";
-/// CommonLocale,en-GB
-"219" = "CommonLocale,en-GB";
+/// CommonLocale,en-US
+"219" = "CommonLocale,en-US";
 /// CommonLanguageCode,0
 "220" = "CommonLanguageCode,0";
 /// CommonDatabase,Database
@@ -602,8 +602,8 @@
 "239" = "CoopHistoryAverageScore,Avg";
 /// CommonRequirediOS16,You must update to iOS16 or higher to use this feature
 "240" = "CommonRequirediOS16,You must update to iOS16 or higher to use this feature";
-/// CommonRequiredSignIn,Using this app, you need be sign in with your Nintendo account. Please sign in from on My page.
-"241" = "CommonRequiredSignIn,Using this app, you need be sign in with your Nintendo account. Please sign in from on My page.";
+/// CommonRequiredSignIn,Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.
+"241" = "CommonRequiredSignIn,Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.";
 /// CommonRestoreSuccessMessage,Restore results successfully
 "242" = "CommonRestoreSuccessMessage,Restore results successfully";
 /// CommonRestoreFailureMessage,Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
@@ -620,7 +620,3 @@
 "248" = "CommonUseSystemTheme,Use device settings";
 /// CommonLicense,License
 "249" = "CommonLicense,License";
-/// DateTimeYearFormat,dd/MM/yyyy HH:mm
-"250" = "DateTimeYearFormat,dd/MM/yyyy HH:mm";
-/// DateTimeFormat,dd/MM HH:mm
-"251" = "DateTimeFormat,dd/MM HH:mm";

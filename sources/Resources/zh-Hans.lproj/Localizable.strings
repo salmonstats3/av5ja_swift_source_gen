@@ -616,7 +616,3 @@
 "246" = "CommonUseSystemTheme,根据设备设置而定";
 /// CommonLicense,许可证
 "247" = "CommonLicense,许可证";
-/// DateTimeYearFormat,yyyy M/d HH:mm
-"248" = "DateTimeYearFormat,yyyy M/d HH:mm";
-/// DateTimeFormat,M/d HH:mm
-"249" = "DateTimeFormat,M/d HH:mm";

@@ -626,7 +626,3 @@
 "251" = "CommonUseSystemTheme,Использовать настройки устройства";
 /// CommonLicense,Лицензия
 "252" = "CommonLicense,Лицензия";
-/// DateTimeYearFormat,dd.MM.yyyy, HH:mm
-"253" = "DateTimeYearFormat,dd.MM.yyyy, HH:mm";
-/// DateTimeFormat,dd.MM, HH:mm
-"254" = "DateTimeFormat,dd.MM, HH:mm";

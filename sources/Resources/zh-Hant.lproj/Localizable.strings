@@ -616,7 +616,3 @@
 "246" = "CommonUseSystemTheme,取決於設備設置";
 /// CommonLicense,許可證
 "247" = "CommonLicense,許可證";
-/// DateTimeYearFormat,yyyy M/d HH:mm
-"248" = "DateTimeYearFormat,yyyy M/d HH:mm";
-/// DateTimeFormat,M/d HH:mm
-"249" = "DateTimeFormat,M/d HH:mm";
