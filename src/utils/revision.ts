@@ -5,8 +5,6 @@ import fetch, { Response } from 'node-fetch';
 
 import { LocaleType } from '../dto/locale_type';
 
-// import iconv from "iconv-lite";
-
 async function get_game_web_version_hash(): Promise<string> {
   const url = 'https://api.lp1.av5ja.srv.nintendo.net/';
   const re = new RegExp('main.([a-z0-9]{8}).js');
@@ -43,7 +41,8 @@ async function get_locales(hash: string): Promise<LocaleType[]> {
         id: result[1],
       };
     })
-    .map((item) => plainToInstance(LocaleType, item, { excludeExtraneousValues: true }));
+    .map((item) => plainToInstance(LocaleType, item, { excludeExtraneousValues: true }))
+    .concat([plainToInstance(LocaleType, { hash: hash, id: 0 }, { excludeExtraneousValues: true })]);
   return results;
 }
 

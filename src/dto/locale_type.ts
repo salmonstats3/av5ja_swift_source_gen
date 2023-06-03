@@ -29,7 +29,7 @@ export const LocaleId = {
   JPja: 31,
   KRko: 401,
   TWzh: 56,
-  USen: 999,
+  USen: 0,
   USes: 835,
   USfr: 479,
 } as const;
@@ -80,22 +80,23 @@ export type LocaleKey = (typeof LocaleKey)[keyof typeof LocaleKey];
 export class LocaleType {
   @Expose({ name: 'id' })
   @Transform((param) => Object.values(LocaleId)[(Object.values(LocaleId) as number[]).indexOf(parseInt(param.value, 10))])
-  id: LocaleId;
+  readonly id: LocaleId;
 
   @Expose({ name: 'hash' })
-  hash: string;
+  readonly hash: string;
 
   @Expose({ name: 'locale' })
   get locale(): LocaleKey {
     return Object.values(LocaleKey)[(Object.values(LocaleId) as number[]).indexOf(this.id)];
   }
 
-  @Expose({ name: 'xcode' })
   get xcode(): string {
     return prefix_xcode(this.id);
   }
 
   get url(): string {
-    return `https://api.lp1.av5ja.srv.nintendo.net/static/js/${this.locale}.${this.hash}.chunk.js`;
+    return this.id === LocaleId.USen
+      ? `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${this.hash}.js`
+      : `https://api.lp1.av5ja.srv.nintendo.net/static/js/${this.locale}.${this.hash}.chunk.js`;
   }
 }
