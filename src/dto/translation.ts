@@ -198,7 +198,7 @@ export class Translation {
     // 翻訳ファイルの作成
     const translation: string = [this.CoopEnemy, this.CoopGrade, this.CoopSkinName, this.CoopStageName]
       .map((translation: TranslationType) => translation.translations)
-      .concat(Object.entries(objects).map(([key, value]) => [
+      .concat(objects.map(([key, value]) => [
         `/// ${value}`,
         `"${key}" = "${value}";`,
       ].join('\n')))

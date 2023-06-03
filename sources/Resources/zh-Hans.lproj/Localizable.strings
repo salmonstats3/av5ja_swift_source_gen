@@ -120,499 +120,499 @@
 "Unknown" = "？？？";
 /// 海女美术大学
 "Upland" = "海女美术大学";
-/// CommonCancel,取消
-"0" = "CommonCancel,取消";
-/// CommonClamBlitz,真格蛤蜊
-"1" = "CommonClamBlitz,真格蛤蜊";
-/// CommonClose,关闭
-"2" = "CommonClose,关闭";
-/// CommonCoopBigRun,大型跑
-"3" = "CommonCoopBigRun,大型跑";
-/// CommonCoopTeamContest,团队打工竞赛
-"4" = "CommonCoopTeamContest,团队打工竞赛";
-/// CommonCopyrightQrCode,QR Code为DENSO WAVE INCORPORATED在日本及外国的注册商标
-"5" = "CommonCopyrightQrCode,QR Code为DENSO WAVE INCORPORATED在日本及外国的注册商标";
-/// CommonDecide,确定
-"6" = "CommonDecide,确定";
-/// CommonDownload,下载
-"7" = "CommonDownload,下载";
-/// CommonEnd,结束
-"8" = "CommonEnd,结束";
-/// CommonGearPowerBlank,问号
-"9" = "CommonGearPowerBlank,问号";
-/// CommonHome,主页
-"10" = "CommonHome,主页";
-/// CommonIkaring3,鱿鱼圈 3
-"11" = "CommonIkaring3,鱿鱼圈 3";
-/// CommonNowLoading,加载中
-"12" = "CommonNowLoading,加载中";
-/// CommonPullToRefresh,下拉更新
-"13" = "CommonPullToRefresh,下拉更新";
-/// CommonRainmaker,真格鱼虎对战
-"14" = "CommonRainmaker,真格鱼虎对战";
-/// CommonShare,分享
-"15" = "CommonShare,分享";
-/// CommonSplatZones,真格区域
-"16" = "CommonSplatZones,真格区域";
-/// CommonTowerControl,真格塔楼
-"17" = "CommonTowerControl,真格塔楼";
-/// CommonTricolor,三色夺宝攻击
-"18" = "CommonTricolor,三色夺宝攻击";
-/// CommonTricolorMatch,三色夺宝比赛
-"19" = "CommonTricolorMatch,三色夺宝比赛";
-/// CommonTurfWar,占地对战
-"20" = "CommonTurfWar,占地对战";
-/// CommonWpnNotfound,问号
-"21" = "CommonWpnNotfound,问号";
-/// CoopHistoryAvailable,出现数量
-"22" = "CoopHistoryAvailable,出现数量";
-/// CoopHistoryAvailableBoss,已出现的头目鲑鱼
-"23" = "CoopHistoryAvailableBoss,已出现的头目鲑鱼";
-/// CoopHistoryAverageClearWaves,平均通关的WAVE数
-"24" = "CoopHistoryAverageClearWaves,平均通关的WAVE数";
-/// CoopHistoryBigrun,大型跑
-"25" = "CoopHistoryBigrun,大型跑";
-/// CoopHistoryBonus,通关奖励
-"26" = "CoopHistoryBonus,通关奖励";
-/// CoopHistoryBossAvailable,头目鲑鱼出现！
-"27" = "CoopHistoryBossAvailable,头目鲑鱼出现！";
-/// CoopHistoryClear,Clear!!
-"28" = "CoopHistoryClear,Clear!!";
-/// CoopHistoryDangerRatio,危险度
-"29" = "CoopHistoryDangerRatio,危险度";
-/// CoopHistoryDefeatBoss,击倒头目鲑鱼！
-"30" = "CoopHistoryDefeatBoss,击倒头目鲑鱼！";
-/// CoopHistoryDefeatBossCount,已击倒的头目鲑鱼
-"31" = "CoopHistoryDefeatBossCount,已击倒的头目鲑鱼";
-/// CoopHistoryDefeated,成功击倒！
-"32" = "CoopHistoryDefeated,成功击倒！";
-/// CoopHistoryDefeatedEnemies,已击倒的巨大鲑鱼
-"33" = "CoopHistoryDefeatedEnemies,已击倒的巨大鲑鱼";
-/// CoopHistoryDefeatedEnemiesGuide,※括号内的数字为自己击倒的数量
-"34" = "CoopHistoryDefeatedEnemiesGuide,※括号内的数字为自己击倒的数量";
-/// CoopHistoryDeliverCount,已收集的鲑鱼卵
-"35" = "CoopHistoryDeliverCount,已收集的鲑鱼卵";
-/// CoopHistoryEnemy,巨大鲑鱼
-"36" = "CoopHistoryEnemy,巨大鲑鱼";
-/// CoopHistoryExWave,EX-WAVE
-"37" = "CoopHistoryExWave,EX-WAVE";
-/// CoopHistoryFailure,Failure
-"38" = "CoopHistoryFailure,Failure";
-/// CoopHistoryGj,GJ!
-"39" = "CoopHistoryGj,GJ!";
-/// CoopHistoryGoToStats,返回打工历史一览
-"40" = "CoopHistoryGoToStats,返回打工历史一览";
-/// CoopHistoryGoldenDeliverCount,已收集的金鲑鱼卵
-"41" = "CoopHistoryGoldenDeliverCount,已收集的金鲑鱼卵";
-/// CoopHistoryHighestScore,最高分数
-"42" = "CoopHistoryHighestScore,最高分数";
-/// CoopHistoryHistory,打工历史
-"43" = "CoopHistoryHistory,打工历史";
-/// CoopHistoryJobPoint,获得点数
-"44" = "CoopHistoryJobPoint,获得点数";
-/// CoopHistoryJobRatio,评价倍率
-"45" = "CoopHistoryJobRatio,评价倍率";
-/// CoopHistoryKumaPointCard,熊先生点数卡
-"46" = "CoopHistoryKumaPointCard,熊先生点数卡";
-/// CoopHistoryLatest,前往最新的打工
-"47" = "CoopHistoryLatest,前往最新的打工";
-/// CoopHistoryLimitedPoint,目前的期间限定点数
-"48" = "CoopHistoryLimitedPoint,目前的期间限定点数";
-/// CoopHistoryMonthlyReward,本月的装备
-"49" = "CoopHistoryMonthlyReward,本月的装备";
-/// CoopHistoryNext,下一个打工
-"50" = "CoopHistoryNext,下一个打工";
-/// CoopHistoryNg,NG
-"51" = "CoopHistoryNg,NG";
-/// CoopHistoryNoData,没有打工历史
-"52" = "CoopHistoryNoData,没有打工历史";
-/// CoopHistoryNotAvailable,无法显示打工历史
-"53" = "CoopHistoryNotAvailable,无法显示打工历史";
-/// CoopHistoryNotAvailableDescription,可阅览的打工历史仅限最新的50场
-"54" = "CoopHistoryNotAvailableDescription,可阅览的打工历史仅限最新的50场";
-/// CoopHistoryNotDefeated,未能击倒……
-"55" = "CoopHistoryNotDefeated,未能击倒……";
-/// CoopHistoryPlayCount,打工次数
-"56" = "CoopHistoryPlayCount,打工次数";
-/// CoopHistoryPrevious,上一个打工
-"57" = "CoopHistoryPrevious,上一个打工";
-/// CoopHistoryPrivate,私人
-"58" = "CoopHistoryPrivate,私人";
-/// CoopHistoryRecruit,募集员工！
-"59" = "CoopHistoryRecruit,募集员工！";
-/// CoopHistoryRecruitTag1,简单
-"60" = "CoopHistoryRecruitTag1,简单";
-/// CoopHistoryRecruitTag2,收集鲑鱼卵
-"61" = "CoopHistoryRecruitTag2,收集鲑鱼卵";
-/// CoopHistoryRecruitTitle,～穿上超鱿型的制服收集鲑鱼卵～
-"62" = "CoopHistoryRecruitTitle,～穿上超鱿型的制服收集鲑鱼卵～";
-/// CoopHistoryRegular,平时的打工
-"63" = "CoopHistoryRegular,平时的打工";
-/// CoopHistoryRegularPoint,现有点数
-"64" = "CoopHistoryRegularPoint,现有点数";
-/// CoopHistoryRescueCount,救援次数
-"65" = "CoopHistoryRescueCount,救援次数";
-/// CoopHistoryRescuedCount,被救助的次数
-"66" = "CoopHistoryRescuedCount,被救助的次数";
-/// CoopHistoryScale,鳞片
-"67" = "CoopHistoryScale,鳞片";
-/// CoopHistoryScaleBronze,铜鳞片
-"68" = "CoopHistoryScaleBronze,铜鳞片";
-/// CoopHistoryScaleGold,金鳞片
-"69" = "CoopHistoryScaleGold,金鳞片";
-/// CoopHistoryScaleSilver,银鳞片
-"70" = "CoopHistoryScaleSilver,银鳞片";
-/// CoopHistoryScore,打工分数
-"71" = "CoopHistoryScore,打工分数";
-/// CoopHistorySeeSchedule,查看日程
-"72" = "CoopHistorySeeSchedule,查看日程";
-/// CoopHistorySmellMeter,头目槽
-"73" = "CoopHistorySmellMeter,头目槽";
-/// CoopHistorySupplyWeapon,发放武器
-"74" = "CoopHistorySupplyWeapon,发放武器";
-/// CoopHistoryTeamContest,团队打工竞赛
-"75" = "CoopHistoryTeamContest,团队打工竞赛";
-/// CoopHistoryTitle,鲑鱼跑
-"76" = "CoopHistoryTitle,鲑鱼跑";
-/// CoopHistoryTotalPoint,累计点数
-"77" = "CoopHistoryTotalPoint,累计点数";
-/// CoopHistoryWave,WAVE
-"78" = "CoopHistoryWave,WAVE";
-/// CoopHistoryWaveLevel0,干潮
-"79" = "CoopHistoryWaveLevel0,干潮";
-/// CoopHistoryWaveLevel1,普通
-"80" = "CoopHistoryWaveLevel1,普通";
-/// CoopHistoryWaveLevel2,满潮
-"81" = "CoopHistoryWaveLevel2,满潮";
-/// ErrorBackToHome,返回主页
-"82" = "ErrorBackToHome,返回主页";
-/// ErrorCurrentlyNotAvailable,目前无法使用，请稍候。
-"83" = "ErrorCurrentlyNotAvailable,目前无法使用，请稍候。";
-/// ErrorError,错误
-"84" = "ErrorError,错误";
-/// ErrorErrorOccurred,发生错误。
-"85" = "ErrorErrorOccurred,发生错误。";
-/// ErrorErrorReopen,读取失败。
-"86" = "ErrorErrorReopen,读取失败。";
-/// ErrorMaintenanceDescription,目前服务器正在维护，请稍后再重新连接。
-"87" = "ErrorMaintenanceDescription,目前服务器正在维护，请稍后再重新连接。";
-/// ErrorMaintenanceTitle,请稍候。
-"88" = "ErrorMaintenanceTitle,请稍候。";
-/// ErrorNetworkNotAvailable,读取失败，请在互联网环境良好的地方再次尝试。
-"89" = "ErrorNetworkNotAvailable,读取失败，请在互联网环境良好的地方再次尝试。";
-/// ErrorReload,再次读取
-"90" = "ErrorReload,再次读取";
-/// RecordLatestPlayed,最后游玩时间
-"91" = "RecordLatestPlayed,最后游玩时间";
-/// RecordLatestUsed,常用武器
-"92" = "RecordLatestUsed,常用武器";
-/// RecordMain,主要武器
-"93" = "RecordMain,主要武器";
-/// RecordNextSkillLevel,距熟练度提升还剩
-"94" = "RecordNextSkillLevel,距熟练度提升还剩";
-/// RecordSkillLevel,熟练度
-"95" = "RecordSkillLevel,熟练度";
-/// RecordSort,更改排序
-"96" = "RecordSort,更改排序";
-/// RecordSpecial,特殊武器
-"97" = "RecordSpecial,特殊武器";
-/// RecordStageRecord,场地记录
-"98" = "RecordStageRecord,场地记录";
-/// RecordStageRecordAppName,场地
-"99" = "RecordStageRecordAppName,场地";
-/// RecordSub,次要武器
-"100" = "RecordSub,次要武器";
-/// RecordTitle,记录
-"101" = "RecordTitle,记录";
-/// RecordTurfPoint,涂墨点数
-"102" = "RecordTurfPoint,涂墨点数";
-/// RecordUnplayedStages,未游玩的场地
-"103" = "RecordUnplayedStages,未游玩的场地";
-/// RecordUnusedWeapons,未持有的武器
-"104" = "RecordUnusedWeapons,未持有的武器";
-/// RecordVibes,状态值
-"105" = "RecordVibes,状态值";
-/// RecordWeaponRecord,武器记录
-"106" = "RecordWeaponRecord,武器记录";
-/// RecordWeaponRecordAppName,武器
-"107" = "RecordWeaponRecordAppName,武器";
-/// RecordWinCount,胜利数
-"108" = "RecordWinCount,胜利数";
-/// SettingsAcknowledgements,权利标识
-"109" = "SettingsAcknowledgements,权利标识";
-/// SettingsAppName,设置
-"110" = "SettingsAppName,设置";
-/// SettingsCredits,制作人员
-"111" = "SettingsCredits,制作人员";
-/// SettingsExpansionPass,前往扩展票的购买网站
-"112" = "SettingsExpansionPass,前往扩展票的购买网站";
-/// SettingsTitle,设置
-"113" = "SettingsTitle,设置";
-/// StageScheduleBankara,蛮颓比赛
-"114" = "StageScheduleBankara,蛮颓比赛";
-/// StageScheduleBankaraOpen,开放
-"115" = "StageScheduleBankaraOpen,开放";
-/// StageScheduleBankaraOpenChallenge,挑战
-"116" = "StageScheduleBankaraOpenChallenge,挑战";
-/// StageScheduleCoop,鲑鱼跑
-"117" = "StageScheduleCoop,鲑鱼跑";
-/// StageScheduleCoopCurrentPeriodStart,NOW OPEN！
-"118" = "StageScheduleCoopCurrentPeriodStart,NOW OPEN！";
-/// StageScheduleEvent,活动比赛
-"119" = "StageScheduleEvent,活动比赛";
-/// StageScheduleEventCurrentSchedule,现在
-"120" = "StageScheduleEventCurrentSchedule,现在";
-/// StageScheduleEventFuture,下下次
-"121" = "StageScheduleEventFuture,下下次";
-/// StageScheduleEventHolding,举行中！
-"122" = "StageScheduleEventHolding,举行中！";
-/// StageScheduleEventNext,下次
-"123" = "StageScheduleEventNext,下次";
-/// StageScheduleEventNextSchedule,下一场
-"124" = "StageScheduleEventNextSchedule,下一场";
-/// StageScheduleEventNoData,日程未定
-"125" = "StageScheduleEventNoData,日程未定";
-/// StageScheduleEventUnknownData,？？？？？
-"126" = "StageScheduleEventUnknownData,？？？？？";
-/// StageScheduleEventmatch,活动举行！
-"127" = "StageScheduleEventmatch,活动举行！";
-/// StageScheduleFuture,下下次
-"128" = "StageScheduleFuture,下下次";
-/// StageScheduleGuideOpenBrowser,将打开Web浏览器
-"129" = "StageScheduleGuideOpenBrowser,将打开Web浏览器";
-/// StageScheduleNext,下次
-"130" = "StageScheduleNext,下次";
-/// StageScheduleNoticeBigrun,大型跑正在接近！
-"131" = "StageScheduleNoticeBigrun,大型跑正在接近！";
-/// StageScheduleNoticeLimited,团队打工竞赛举行预告！
-"132" = "StageScheduleNoticeLimited,团队打工竞赛举行预告！";
-/// StageScheduleNowClosed,祭典比赛举行中！
-"133" = "StageScheduleNowClosed,祭典比赛举行中！";
-/// StageScheduleOpen,开放！
-"134" = "StageScheduleOpen,开放！";
-/// StageScheduleOpenBigrun,大型跑正在发生！
-"135" = "StageScheduleOpenBigrun,大型跑正在发生！";
-/// StageScheduleOpenLimited,团队打工竞赛举行中！
-"136" = "StageScheduleOpenLimited,团队打工竞赛举行中！";
-/// StageSchedulePrivate,私人比赛
-"137" = "StageSchedulePrivate,私人比赛";
-/// StageScheduleRecruit,大型跑即将到来！！大量募集打工人员！
-"138" = "StageScheduleRecruit,大型跑即将到来！！大量募集打工人员！";
-/// StageScheduleRecruitTeamContest,团队打工竞赛！组成队伍参加吧！
-"139" = "StageScheduleRecruitTeamContest,团队打工竞赛！组成队伍参加吧！";
-/// StageScheduleRegular,一般比赛
-"140" = "StageScheduleRegular,一般比赛";
-/// StageScheduleRules,查看规则
-"141" = "StageScheduleRules,查看规则";
-/// StageScheduleSeeAllRules,可在此处查看详细规则
-"142" = "StageScheduleSeeAllRules,可在此处查看详细规则";
-/// StageScheduleSuppliedWeaponRandom,随机
-"143" = "StageScheduleSuppliedWeaponRandom,随机";
-/// StageScheduleSuppliedWeapons,发放武器
-"144" = "StageScheduleSuppliedWeapons,发放武器";
-/// StageScheduleTitle,日程
-"145" = "StageScheduleTitle,日程";
-/// StageScheduleWinRateByRules,各规则的胜率
-"146" = "StageScheduleWinRateByRules,各规则的胜率";
-/// StageScheduleXmatch,X比赛
-"147" = "StageScheduleXmatch,X比赛";
-/// CommonAbout,关于
-"148" = "CommonAbout,关于";
-/// RecordActualValue,实际情况
-"149" = "RecordActualValue,实际情况";
-/// CommonAppearances,出场
-"150" = "CommonAppearances,出场";
-/// CommonApplication,应用
-"151" = "CommonApplication,应用";
-/// RecordAverageScore,平均值
-"152" = "RecordAverageScore,平均值";
-/// CommonBackupResults,备份
-"153" = "CommonBackupResults,备份";
-/// CommonBackupCompress,压缩(ZIP)
-"154" = "CommonBackupCompress,压缩(ZIP)";
-/// CommonBackupMessage,备份数据库
-"155" = "CommonBackupMessage,备份数据库";
-/// CommonBackupPlain,Plain(JSON)
-"156" = "CommonBackupPlain,Plain(JSON)";
-/// CommonAppCredit,信用
-"157" = "CommonAppCredit,信用";
-/// CommonDarkMode,黑暗模式
-"158" = "CommonDarkMode,黑暗模式";
-/// CommonDataManagement,数据管理
-"159" = "CommonDataManagement,数据管理";
-/// CoopHistoryDeathCount,获救人数
-"160" = "CoopHistoryDeathCount,获救人数";
-/// CoopHistoryDefeatedCount,被打败的次数
-"161" = "CoopHistoryDefeatedCount,被打败的次数";
-/// CoopHistoryEstimatedValue,估计的
-"162" = "CoopHistoryEstimatedValue,估计的";
-/// CoopHistoryEventClearRatio,清除率
-"163" = "CoopHistoryEventClearRatio,清除率";
-/// CoopHistoryEventFrequency,事件频率
-"164" = "CoopHistoryEventFrequency,事件频率";
-/// CommonFAQ,常见问题
-"165" = "CommonFAQ,常见问题";
-/// CommonGamingMode,游戏模式
-"166" = "CommonGamingMode,游戏模式";
-/// CoopHistoryGradeId,等级
-"167" = "CoopHistoryGradeId,等级";
-/// CoopHistoryGradePoint,成绩点
-"168" = "CoopHistoryGradePoint,成绩点";
-/// CoopHistoryHighestRecord,最高的
-"169" = "CoopHistoryHighestRecord,最高的";
-/// CommonIkaring2,SplatNet2
-"170" = "CommonIkaring2,SplatNet2";
-/// CommonInvalid,无效
-"171" = "CommonInvalid,无效";
-/// CommonLanguages,语言
-"172" = "CommonLanguages,语言";
-/// CommonShareLogMessage,发送日志给开发人员。当出现错误时发送日志文件将有助于开发人员识别和纠正错误的原因。日志文件不包含任何个人身份识别信息。
-"173" = "CommonShareLogMessage,发送日志给开发人员。当出现错误时发送日志文件将有助于开发人员识别和纠正错误的原因。日志文件不包含任何个人身份识别信息。";
-/// CommonShareLog,分享日志
-"174" = "CommonShareLog,分享日志";
-/// CommonLogSize,日志文件
-"175" = "CommonLogSize,日志文件";
-/// CommonMyPage,我的页面
-"176" = "CommonMyPage,我的页面";
-/// CoopHistoryPlayerCrew,职员
-"177" = "CoopHistoryPlayerCrew,职员";
-/// CoopHistoryPlayerYou,你
-"178" = "CoopHistoryPlayerYou,你";
-/// CommonPrivacyPolicy,隐私政策
-"179" = "CommonPrivacyPolicy,隐私政策";
-/// CommonRequestForm,形状
-"180" = "CommonRequestForm,形状";
-/// CommonRequestFormBug,错误
-"181" = "CommonRequestFormBug,错误";
-/// CommonRequestFormContent,内容
-"182" = "CommonRequestFormContent,内容";
-/// CommonRequestFormEnhancement,增强功能
-"183" = "CommonRequestFormEnhancement,增强功能";
-/// CommonRequestFormFeature,特点
-"184" = "CommonRequestFormFeature,特点";
-/// CommonRequestFormTitle,标题
-"185" = "CommonRequestFormTitle,标题";
-/// CommonRequestFormType,类型
-"186" = "CommonRequestFormType,类型";
-/// CommonRequsetFormSubmit,提交
-"187" = "CommonRequsetFormSubmit,提交";
-/// CommonRestore,恢复
-"188" = "CommonRestore,恢复";
-/// CommonRestoreMessage,在文件应用程序中选择要恢复的文件。
-"189" = "CommonRestoreMessage,在文件应用程序中选择要恢复的文件。";
-/// CoopHistoryResultsCount,结果计数
-"190" = "CoopHistoryResultsCount,结果计数";
-/// CommonRoleDebuger,调试
-"191" = "CommonRoleDebuger,调试";
-/// CommonRoleDeveloper,开发商
-"192" = "CommonRoleDeveloper,开发商";
-/// CommonRoleTester,检验员
-"193" = "CommonRoleTester,检验员";
-/// CommonRoleTranslator,翻译人员
-"194" = "CommonRoleTranslator,翻译人员";
-/// CommonSaveToPhotoLibrary,已成功保存
-"195" = "CommonSaveToPhotoLibrary,已成功保存";
-/// CommonScheduleSync,同步时间表
-"196" = "CommonScheduleSync,同步时间表";
-/// CommonScheduleSyncMessage,从服务器检索时间表。
-"197" = "CommonScheduleSyncMessage,从服务器检索时间表。";
-/// CommonSignIn,登录
-"198" = "CommonSignIn,登录";
-/// CommonSignOut,签出
-"199" = "CommonSignOut,签出";
-/// CommonSignOutSuccessfully,登出成功
-"200" = "CommonSignOutSuccessfully,登出成功";
-/// CommonSignOutMessage,解除对Nintendo Switch账户的链接。
-"201" = "CommonSignOutMessage,解除对Nintendo Switch账户的链接。";
-/// CommonSourceCode,源代码
-"202" = "CommonSourceCode,源代码";
-/// CoopHistorySuppliedRatio,提供的比率
-"203" = "CoopHistorySuppliedRatio,提供的比率";
-/// CommonUpdateRequired,需要更新应用程序
-"204" = "CommonUpdateRequired,需要更新应用程序";
-/// CommonUserData,用户数据
-"205" = "CommonUserData,用户数据";
-/// CommonValid,有效
-"206" = "CommonValid,有效";
-/// CommonAppVersion,版本
-"207" = "CommonAppVersion,版本";
-/// CommonWipeLog,擦拭日志
-"208" = "CommonWipeLog,擦拭日志";
-/// CommonWipeLogMessage,擦拭所有的日志。
-"209" = "CommonWipeLogMessage,擦拭所有的日志。";
-/// CommonWipeResults,擦拭结果
-"210" = "CommonWipeResults,擦拭结果";
-/// CommonWipeResultsMessage,擦除所有数据。
-"211" = "CommonWipeResultsMessage,擦除所有数据。";
-/// CommonWriteReview,撰写评论
-"212" = "CommonWriteReview,撰写评论";
-/// CoopHistoryOverallRecord,总的来说
-"213" = "CoopHistoryOverallRecord,总的来说";
-/// CommonGoldenEggs,金蛋
-"214" = "CommonGoldenEggs,金蛋";
-/// CommonPowerEggs,动力蛋
-"215" = "CommonPowerEggs,动力蛋";
-/// CommonOverview,概述
-"216" = "CommonOverview,概述";
-/// CommonLocale,zh-CN
-"217" = "CommonLocale,zh-CN";
-/// CommonLanguageCode,1
-"218" = "CommonLanguageCode,1";
-/// CommonDatabase,数据库
-"219" = "CommonDatabase,数据库";
-/// CommonXProductVersion,X-ProductVersion
-"220" = "CommonXProductVersion,X-ProductVersion";
-/// CommonXWebViewVer,X-WebViewVer
-"221" = "CommonXWebViewVer,X-WebViewVer";
-/// CommonUpload,上传
-"222" = "CommonUpload,上传";
-/// CommonCreditDevelop,开发商
-"223" = "CommonCreditDevelop,开发商";
-/// CommonCreditTest,测试员
-"224" = "CommonCreditTest,测试员";
-/// CommonCreditDesign,UI/UX设计
-"225" = "CommonCreditDesign,UI/UX设计";
-/// CoopHistoryTeamPointCard,团队积分卡
-"226" = "CoopHistoryTeamPointCard,团队积分卡";
-/// CoopHistoryUseEstimatedValue,使用估计值
-"227" = "CoopHistoryUseEstimatedValue,使用估计值";
-/// CommonUseSecureSession,使用 Safari 的身份验证
-"228" = "CommonUseSecureSession,使用 Safari 的身份验证";
-/// CommonCheckInReward,奖励
-"229" = "CommonCheckInReward,奖励";
-/// CommonGetCheckInReward,获得二维码的所有奖励。
-"230" = "CommonGetCheckInReward,获得二维码的所有奖励。";
-/// CoopHistoryTeamResult,团队
-"231" = "CoopHistoryTeamResult,团队";
-/// CoopHistoryPlayerResult,你
-"232" = "CoopHistoryPlayerResult,你";
-/// CoopHistoryCrewAvgResult,船员的平均数
-"233" = "CoopHistoryCrewAvgResult,船员的平均数";
-/// CoopHistoryCrewResult,船员
-"234" = "CoopHistoryCrewResult,船员";
-/// CoopHistoryWaveResult,波浪
-"235" = "CoopHistoryWaveResult,波浪";
-/// CoopHistoryHighestScore,最大
-"236" = "CoopHistoryHighestScore,最大";
-/// CoopHistoryAverageScore,平均
-"237" = "CoopHistoryAverageScore,平均";
-/// CommonRequirediOS16,你必须更新到iOS16或更高版本才能使用这一功能
-"238" = "CommonRequirediOS16,你必须更新到iOS16或更高版本才能使用这一功能";
-/// CommonRequiredSignIn,登录 Nintendo 帐户才能使用此应用程序
-"239" = "CommonRequiredSignIn,登录 Nintendo 帐户才能使用此应用程序";
-/// CommonRestoreSuccessMessage,成功恢复结果
-"240" = "CommonRestoreSuccessMessage,成功恢复结果";
-/// CommonRestoreFailureMessage,恢复结果失败。由于文件被篡改，不支持的格式或签名不匹配。
-"241" = "CommonRestoreFailureMessage,恢复结果失败。由于文件被篡改，不支持的格式或签名不匹配。";
-/// CommonResultsCount,结果
-"242" = "CommonResultsCount,结果";
-/// CommonDeveloperAnswer,开发者的回应
-"243" = "CommonDeveloperAnswer,开发者的回应";
-/// CommonMinimumVersion,无法恢复以不支持的版本备份的结果
-"244" = "CommonMinimumVersion,无法恢复以不支持的版本备份的结果";
-/// ErrorInvalidSignature,由于备份签名不匹配，无法恢复。结果可能已被篡改
-"245" = "ErrorInvalidSignature,由于备份签名不匹配，无法恢复。结果可能已被篡改";
-/// CommonUseSystemTheme,根据设备设置而定
-"246" = "CommonUseSystemTheme,根据设备设置而定";
-/// CommonLicense,许可证
-"247" = "CommonLicense,许可证";
+/// 取消
+"CommonCancel" = "取消";
+/// 真格蛤蜊
+"CommonClamBlitz" = "真格蛤蜊";
+/// 关闭
+"CommonClose" = "关闭";
+/// 大型跑
+"CommonCoopBigRun" = "大型跑";
+/// 团队打工竞赛
+"CommonCoopTeamContest" = "团队打工竞赛";
+/// QR Code为DENSO WAVE INCORPORATED在日本及外国的注册商标
+"CommonCopyrightQrCode" = "QR Code为DENSO WAVE INCORPORATED在日本及外国的注册商标";
+/// 确定
+"CommonDecide" = "确定";
+/// 下载
+"CommonDownload" = "下载";
+/// 结束
+"CommonEnd" = "结束";
+/// 问号
+"CommonGearPowerBlank" = "问号";
+/// 主页
+"CommonHome" = "主页";
+/// 鱿鱼圈 3
+"CommonIkaring3" = "鱿鱼圈 3";
+/// 加载中
+"CommonNowLoading" = "加载中";
+/// 下拉更新
+"CommonPullToRefresh" = "下拉更新";
+/// 真格鱼虎对战
+"CommonRainmaker" = "真格鱼虎对战";
+/// 分享
+"CommonShare" = "分享";
+/// 真格区域
+"CommonSplatZones" = "真格区域";
+/// 真格塔楼
+"CommonTowerControl" = "真格塔楼";
+/// 三色夺宝攻击
+"CommonTricolor" = "三色夺宝攻击";
+/// 三色夺宝比赛
+"CommonTricolorMatch" = "三色夺宝比赛";
+/// 占地对战
+"CommonTurfWar" = "占地对战";
+/// 问号
+"CommonWpnNotfound" = "问号";
+/// 出现数量
+"CoopHistoryAvailable" = "出现数量";
+/// 已出现的头目鲑鱼
+"CoopHistoryAvailableBoss" = "已出现的头目鲑鱼";
+/// 平均通关的WAVE数
+"CoopHistoryAverageClearWaves" = "平均通关的WAVE数";
+/// 大型跑
+"CoopHistoryBigrun" = "大型跑";
+/// 通关奖励
+"CoopHistoryBonus" = "通关奖励";
+/// 头目鲑鱼出现！
+"CoopHistoryBossAvailable" = "头目鲑鱼出现！";
+/// Clear!!
+"CoopHistoryClear" = "Clear!!";
+/// 危险度
+"CoopHistoryDangerRatio" = "危险度";
+/// 击倒头目鲑鱼！
+"CoopHistoryDefeatBoss" = "击倒头目鲑鱼！";
+/// 已击倒的头目鲑鱼
+"CoopHistoryDefeatBossCount" = "已击倒的头目鲑鱼";
+/// 成功击倒！
+"CoopHistoryDefeated" = "成功击倒！";
+/// 已击倒的巨大鲑鱼
+"CoopHistoryDefeatedEnemies" = "已击倒的巨大鲑鱼";
+/// ※括号内的数字为自己击倒的数量
+"CoopHistoryDefeatedEnemiesGuide" = "※括号内的数字为自己击倒的数量";
+/// 已收集的鲑鱼卵
+"CoopHistoryDeliverCount" = "已收集的鲑鱼卵";
+/// 巨大鲑鱼
+"CoopHistoryEnemy" = "巨大鲑鱼";
+/// EX-WAVE
+"CoopHistoryExWave" = "EX-WAVE";
+/// Failure
+"CoopHistoryFailure" = "Failure";
+/// GJ!
+"CoopHistoryGj" = "GJ!";
+/// 返回打工历史一览
+"CoopHistoryGoToStats" = "返回打工历史一览";
+/// 已收集的金鲑鱼卵
+"CoopHistoryGoldenDeliverCount" = "已收集的金鲑鱼卵";
+/// 最高分数
+"CoopHistoryHighestScore" = "最高分数";
+/// 打工历史
+"CoopHistoryHistory" = "打工历史";
+/// 获得点数
+"CoopHistoryJobPoint" = "获得点数";
+/// 评价倍率
+"CoopHistoryJobRatio" = "评价倍率";
+/// 熊先生点数卡
+"CoopHistoryKumaPointCard" = "熊先生点数卡";
+/// 前往最新的打工
+"CoopHistoryLatest" = "前往最新的打工";
+/// 目前的期间限定点数
+"CoopHistoryLimitedPoint" = "目前的期间限定点数";
+/// 本月的装备
+"CoopHistoryMonthlyReward" = "本月的装备";
+/// 下一个打工
+"CoopHistoryNext" = "下一个打工";
+/// NG
+"CoopHistoryNg" = "NG";
+/// 没有打工历史
+"CoopHistoryNoData" = "没有打工历史";
+/// 无法显示打工历史
+"CoopHistoryNotAvailable" = "无法显示打工历史";
+/// 可阅览的打工历史仅限最新的50场
+"CoopHistoryNotAvailableDescription" = "可阅览的打工历史仅限最新的50场";
+/// 未能击倒……
+"CoopHistoryNotDefeated" = "未能击倒……";
+/// 打工次数
+"CoopHistoryPlayCount" = "打工次数";
+/// 上一个打工
+"CoopHistoryPrevious" = "上一个打工";
+/// 私人
+"CoopHistoryPrivate" = "私人";
+/// 募集员工！
+"CoopHistoryRecruit" = "募集员工！";
+/// 简单
+"CoopHistoryRecruitTag1" = "简单";
+/// 收集鲑鱼卵
+"CoopHistoryRecruitTag2" = "收集鲑鱼卵";
+/// ～穿上超鱿型的制服收集鲑鱼卵～
+"CoopHistoryRecruitTitle" = "～穿上超鱿型的制服收集鲑鱼卵～";
+/// 平时的打工
+"CoopHistoryRegular" = "平时的打工";
+/// 现有点数
+"CoopHistoryRegularPoint" = "现有点数";
+/// 救援次数
+"CoopHistoryRescueCount" = "救援次数";
+/// 被救助的次数
+"CoopHistoryRescuedCount" = "被救助的次数";
+/// 鳞片
+"CoopHistoryScale" = "鳞片";
+/// 铜鳞片
+"CoopHistoryScaleBronze" = "铜鳞片";
+/// 金鳞片
+"CoopHistoryScaleGold" = "金鳞片";
+/// 银鳞片
+"CoopHistoryScaleSilver" = "银鳞片";
+/// 打工分数
+"CoopHistoryScore" = "打工分数";
+/// 查看日程
+"CoopHistorySeeSchedule" = "查看日程";
+/// 头目槽
+"CoopHistorySmellMeter" = "头目槽";
+/// 发放武器
+"CoopHistorySupplyWeapon" = "发放武器";
+/// 团队打工竞赛
+"CoopHistoryTeamContest" = "团队打工竞赛";
+/// 鲑鱼跑
+"CoopHistoryTitle" = "鲑鱼跑";
+/// 累计点数
+"CoopHistoryTotalPoint" = "累计点数";
+/// WAVE
+"CoopHistoryWave" = "WAVE";
+/// 干潮
+"CoopHistoryWaveLevel0" = "干潮";
+/// 普通
+"CoopHistoryWaveLevel1" = "普通";
+/// 满潮
+"CoopHistoryWaveLevel2" = "满潮";
+/// 返回主页
+"ErrorBackToHome" = "返回主页";
+/// 目前无法使用，请稍候。
+"ErrorCurrentlyNotAvailable" = "目前无法使用，请稍候。";
+/// 错误
+"ErrorError" = "错误";
+/// 发生错误。
+"ErrorErrorOccurred" = "发生错误。";
+/// 读取失败。
+"ErrorErrorReopen" = "读取失败。";
+/// 目前服务器正在维护，请稍后再重新连接。
+"ErrorMaintenanceDescription" = "目前服务器正在维护，请稍后再重新连接。";
+/// 请稍候。
+"ErrorMaintenanceTitle" = "请稍候。";
+/// 读取失败，请在互联网环境良好的地方再次尝试。
+"ErrorNetworkNotAvailable" = "读取失败，请在互联网环境良好的地方再次尝试。";
+/// 再次读取
+"ErrorReload" = "再次读取";
+/// 最后游玩时间
+"RecordLatestPlayed" = "最后游玩时间";
+/// 常用武器
+"RecordLatestUsed" = "常用武器";
+/// 主要武器
+"RecordMain" = "主要武器";
+/// 距熟练度提升还剩
+"RecordNextSkillLevel" = "距熟练度提升还剩";
+/// 熟练度
+"RecordSkillLevel" = "熟练度";
+/// 更改排序
+"RecordSort" = "更改排序";
+/// 特殊武器
+"RecordSpecial" = "特殊武器";
+/// 场地记录
+"RecordStageRecord" = "场地记录";
+/// 场地
+"RecordStageRecordAppName" = "场地";
+/// 次要武器
+"RecordSub" = "次要武器";
+/// 记录
+"RecordTitle" = "记录";
+/// 涂墨点数
+"RecordTurfPoint" = "涂墨点数";
+/// 未游玩的场地
+"RecordUnplayedStages" = "未游玩的场地";
+/// 未持有的武器
+"RecordUnusedWeapons" = "未持有的武器";
+/// 状态值
+"RecordVibes" = "状态值";
+/// 武器记录
+"RecordWeaponRecord" = "武器记录";
+/// 武器
+"RecordWeaponRecordAppName" = "武器";
+/// 胜利数
+"RecordWinCount" = "胜利数";
+/// 权利标识
+"SettingsAcknowledgements" = "权利标识";
+/// 设置
+"SettingsAppName" = "设置";
+/// 制作人员
+"SettingsCredits" = "制作人员";
+/// 前往扩展票的购买网站
+"SettingsExpansionPass" = "前往扩展票的购买网站";
+/// 设置
+"SettingsTitle" = "设置";
+/// 蛮颓比赛
+"StageScheduleBankara" = "蛮颓比赛";
+/// 开放
+"StageScheduleBankaraOpen" = "开放";
+/// 挑战
+"StageScheduleBankaraOpenChallenge" = "挑战";
+/// 鲑鱼跑
+"StageScheduleCoop" = "鲑鱼跑";
+/// NOW OPEN！
+"StageScheduleCoopCurrentPeriodStart" = "NOW OPEN！";
+/// 活动比赛
+"StageScheduleEvent" = "活动比赛";
+/// 现在
+"StageScheduleEventCurrentSchedule" = "现在";
+/// 下下次
+"StageScheduleEventFuture" = "下下次";
+/// 举行中！
+"StageScheduleEventHolding" = "举行中！";
+/// 下次
+"StageScheduleEventNext" = "下次";
+/// 下一场
+"StageScheduleEventNextSchedule" = "下一场";
+/// 日程未定
+"StageScheduleEventNoData" = "日程未定";
+/// ？？？？？
+"StageScheduleEventUnknownData" = "？？？？？";
+/// 活动举行！
+"StageScheduleEventmatch" = "活动举行！";
+/// 下下次
+"StageScheduleFuture" = "下下次";
+/// 将打开Web浏览器
+"StageScheduleGuideOpenBrowser" = "将打开Web浏览器";
+/// 下次
+"StageScheduleNext" = "下次";
+/// 大型跑正在接近！
+"StageScheduleNoticeBigrun" = "大型跑正在接近！";
+/// 团队打工竞赛举行预告！
+"StageScheduleNoticeLimited" = "团队打工竞赛举行预告！";
+/// 祭典比赛举行中！
+"StageScheduleNowClosed" = "祭典比赛举行中！";
+/// 开放！
+"StageScheduleOpen" = "开放！";
+/// 大型跑正在发生！
+"StageScheduleOpenBigrun" = "大型跑正在发生！";
+/// 团队打工竞赛举行中！
+"StageScheduleOpenLimited" = "团队打工竞赛举行中！";
+/// 私人比赛
+"StageSchedulePrivate" = "私人比赛";
+/// 大型跑即将到来！！大量募集打工人员！
+"StageScheduleRecruit" = "大型跑即将到来！！大量募集打工人员！";
+/// 团队打工竞赛！组成队伍参加吧！
+"StageScheduleRecruitTeamContest" = "团队打工竞赛！组成队伍参加吧！";
+/// 一般比赛
+"StageScheduleRegular" = "一般比赛";
+/// 查看规则
+"StageScheduleRules" = "查看规则";
+/// 可在此处查看详细规则
+"StageScheduleSeeAllRules" = "可在此处查看详细规则";
+/// 随机
+"StageScheduleSuppliedWeaponRandom" = "随机";
+/// 发放武器
+"StageScheduleSuppliedWeapons" = "发放武器";
+/// 日程
+"StageScheduleTitle" = "日程";
+/// 各规则的胜率
+"StageScheduleWinRateByRules" = "各规则的胜率";
+/// X比赛
+"StageScheduleXmatch" = "X比赛";
+/// 关于
+"CommonAbout" = "关于";
+/// 实际情况
+"RecordActualValue" = "实际情况";
+/// 出场
+"CommonAppearances" = "出场";
+/// 应用
+"CommonApplication" = "应用";
+/// 平均值
+"RecordAverageScore" = "平均值";
+/// 备份
+"CommonBackupResults" = "备份";
+/// 压缩(ZIP)
+"CommonBackupCompress" = "压缩(ZIP)";
+/// 备份数据库
+"CommonBackupMessage" = "备份数据库";
+/// Plain(JSON)
+"CommonBackupPlain" = "Plain(JSON)";
+/// 信用
+"CommonAppCredit" = "信用";
+/// 黑暗模式
+"CommonDarkMode" = "黑暗模式";
+/// 数据管理
+"CommonDataManagement" = "数据管理";
+/// 获救人数
+"CoopHistoryDeathCount" = "获救人数";
+/// 被打败的次数
+"CoopHistoryDefeatedCount" = "被打败的次数";
+/// 估计的
+"CoopHistoryEstimatedValue" = "估计的";
+/// 清除率
+"CoopHistoryEventClearRatio" = "清除率";
+/// 事件频率
+"CoopHistoryEventFrequency" = "事件频率";
+/// 常见问题
+"CommonFAQ" = "常见问题";
+/// 游戏模式
+"CommonGamingMode" = "游戏模式";
+/// 等级
+"CoopHistoryGradeId" = "等级";
+/// 成绩点
+"CoopHistoryGradePoint" = "成绩点";
+/// 最高的
+"CoopHistoryHighestRecord" = "最高的";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// 无效
+"CommonInvalid" = "无效";
+/// 语言
+"CommonLanguages" = "语言";
+/// 发送日志给开发人员。当出现错误时发送日志文件将有助于开发人员识别和纠正错误的原因。日志文件不包含任何个人身份识别信息。
+"CommonShareLogMessage" = "发送日志给开发人员。当出现错误时发送日志文件将有助于开发人员识别和纠正错误的原因。日志文件不包含任何个人身份识别信息。";
+/// 分享日志
+"CommonShareLog" = "分享日志";
+/// 日志文件
+"CommonLogSize" = "日志文件";
+/// 我的页面
+"CommonMyPage" = "我的页面";
+/// 职员
+"CoopHistoryPlayerCrew" = "职员";
+/// 你
+"CoopHistoryPlayerYou" = "你";
+/// 隐私政策
+"CommonPrivacyPolicy" = "隐私政策";
+/// 形状
+"CommonRequestForm" = "形状";
+/// 错误
+"CommonRequestFormBug" = "错误";
+/// 内容
+"CommonRequestFormContent" = "内容";
+/// 增强功能
+"CommonRequestFormEnhancement" = "增强功能";
+/// 特点
+"CommonRequestFormFeature" = "特点";
+/// 标题
+"CommonRequestFormTitle" = "标题";
+/// 类型
+"CommonRequestFormType" = "类型";
+/// 提交
+"CommonRequsetFormSubmit" = "提交";
+/// 恢复
+"CommonRestore" = "恢复";
+/// 在文件应用程序中选择要恢复的文件。
+"CommonRestoreMessage" = "在文件应用程序中选择要恢复的文件。";
+/// 结果计数
+"CoopHistoryResultsCount" = "结果计数";
+/// 调试
+"CommonRoleDebuger" = "调试";
+/// 开发商
+"CommonRoleDeveloper" = "开发商";
+/// 检验员
+"CommonRoleTester" = "检验员";
+/// 翻译人员
+"CommonRoleTranslator" = "翻译人员";
+/// 已成功保存
+"CommonSaveToPhotoLibrary" = "已成功保存";
+/// 同步时间表
+"CommonScheduleSync" = "同步时间表";
+/// 从服务器检索时间表。
+"CommonScheduleSyncMessage" = "从服务器检索时间表。";
+/// 登录
+"CommonSignIn" = "登录";
+/// 签出
+"CommonSignOut" = "签出";
+/// 登出成功
+"CommonSignOutSuccessfully" = "登出成功";
+/// 解除对Nintendo Switch账户的链接。
+"CommonSignOutMessage" = "解除对Nintendo Switch账户的链接。";
+/// 源代码
+"CommonSourceCode" = "源代码";
+/// 提供的比率
+"CoopHistorySuppliedRatio" = "提供的比率";
+/// 需要更新应用程序
+"CommonUpdateRequired" = "需要更新应用程序";
+/// 用户数据
+"CommonUserData" = "用户数据";
+/// 有效
+"CommonValid" = "有效";
+/// 版本
+"CommonAppVersion" = "版本";
+/// 擦拭日志
+"CommonWipeLog" = "擦拭日志";
+/// 擦拭所有的日志。
+"CommonWipeLogMessage" = "擦拭所有的日志。";
+/// 擦拭结果
+"CommonWipeResults" = "擦拭结果";
+/// 擦除所有数据。
+"CommonWipeResultsMessage" = "擦除所有数据。";
+/// 撰写评论
+"CommonWriteReview" = "撰写评论";
+/// 总的来说
+"CoopHistoryOverallRecord" = "总的来说";
+/// 金蛋
+"CommonGoldenEggs" = "金蛋";
+/// 动力蛋
+"CommonPowerEggs" = "动力蛋";
+/// 概述
+"CommonOverview" = "概述";
+/// zh-CN
+"CommonLocale" = "zh-CN";
+/// 1
+"CommonLanguageCode" = "1";
+/// 数据库
+"CommonDatabase" = "数据库";
+/// X-ProductVersion
+"CommonXProductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXWebViewVer" = "X-WebViewVer";
+/// 上传
+"CommonUpload" = "上传";
+/// 开发商
+"CommonCreditDevelop" = "开发商";
+/// 测试员
+"CommonCreditTest" = "测试员";
+/// UI/UX设计
+"CommonCreditDesign" = "UI/UX设计";
+/// 团队积分卡
+"CoopHistoryTeamPointCard" = "团队积分卡";
+/// 使用估计值
+"CoopHistoryUseEstimatedValue" = "使用估计值";
+/// 使用 Safari 的身份验证
+"CommonUseSecureSession" = "使用 Safari 的身份验证";
+/// 奖励
+"CommonCheckInReward" = "奖励";
+/// 获得二维码的所有奖励。
+"CommonGetCheckInReward" = "获得二维码的所有奖励。";
+/// 团队
+"CoopHistoryTeamResult" = "团队";
+/// 你
+"CoopHistoryPlayerResult" = "你";
+/// 船员的平均数
+"CoopHistoryCrewAvgResult" = "船员的平均数";
+/// 船员
+"CoopHistoryCrewResult" = "船员";
+/// 波浪
+"CoopHistoryWaveResult" = "波浪";
+/// 最大
+"CoopHistoryHighestScore" = "最大";
+/// 平均
+"CoopHistoryAverageScore" = "平均";
+/// 你必须更新到iOS16或更高版本才能使用这一功能
+"CommonRequirediOS16" = "你必须更新到iOS16或更高版本才能使用这一功能";
+/// 登录 Nintendo 帐户才能使用此应用程序
+"CommonRequiredSignIn" = "登录 Nintendo 帐户才能使用此应用程序";
+/// 成功恢复结果
+"CommonRestoreSuccessMessage" = "成功恢复结果";
+/// 恢复结果失败。由于文件被篡改，不支持的格式或签名不匹配。
+"CommonRestoreFailureMessage" = "恢复结果失败。由于文件被篡改，不支持的格式或签名不匹配。";
+/// 结果
+"CommonResultsCount" = "结果";
+/// 开发者的回应
+"CommonDeveloperAnswer" = "开发者的回应";
+/// 无法恢复以不支持的版本备份的结果
+"CommonMinimumVersion" = "无法恢复以不支持的版本备份的结果";
+/// 由于备份签名不匹配，无法恢复。结果可能已被篡改
+"ErrorInvalidSignature" = "由于备份签名不匹配，无法恢复。结果可能已被篡改";
+/// 根据设备设置而定
+"CommonUseSystemTheme" = "根据设备设置而定";
+/// 许可证
+"CommonLicense" = "许可证";

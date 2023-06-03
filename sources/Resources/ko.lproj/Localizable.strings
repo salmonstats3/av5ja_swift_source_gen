@@ -120,499 +120,499 @@
 "Unknown" = "???";
 /// 해녀 미술 대학
 "Upland" = "해녀 미술 대학";
-/// CommonCancel,취소
-"0" = "CommonCancel,취소";
-/// CommonClamBlitz,랭크 바지락
-"1" = "CommonClamBlitz,랭크 바지락";
-/// CommonClose,닫기
-"2" = "CommonClose,닫기";
-/// CommonCoopBigRun,빅 런
-"3" = "CommonCoopBigRun,빅 런";
-/// CommonCoopTeamContest,아르바이트 팀 콘테스트
-"4" = "CommonCoopTeamContest,아르바이트 팀 콘테스트";
-/// CommonCopyrightQrCode,QR Code는 일본 및 여러 나라에서 DENSO WAVE INCORPORATED의 등록상표입니다
-"5" = "CommonCopyrightQrCode,QR Code는 일본 및 여러 나라에서 DENSO WAVE INCORPORATED의 등록상표입니다";
-/// CommonDecide,결정
-"6" = "CommonDecide,결정";
-/// CommonDownload,다운로드
-"7" = "CommonDownload,다운로드";
-/// CommonEnd,끝내기
-"8" = "CommonEnd,끝내기";
-/// CommonGearPowerBlank,물음표
-"9" = "CommonGearPowerBlank,물음표";
-/// CommonIkaring3,오징어넷 3
-"10" = "CommonIkaring3,오징어넷 3";
-/// CommonNowLoading,로딩 중
-"11" = "CommonNowLoading,로딩 중";
-/// CommonPullToRefresh,당겨서 새로 고침
-"12" = "CommonPullToRefresh,당겨서 새로 고침";
-/// CommonRainmaker,랭크 피시 배틀
-"13" = "CommonRainmaker,랭크 피시 배틀";
-/// CommonShare,공유
-"14" = "CommonShare,공유";
-/// CommonSplatZones,랭크 에어리어
-"15" = "CommonSplatZones,랭크 에어리어";
-/// CommonTowerControl,랭크 타워
-"16" = "CommonTowerControl,랭크 타워";
-/// CommonTricolor,트리컬러 어택
-"17" = "CommonTricolor,트리컬러 어택";
-/// CommonTricolorMatch,트리컬러 매치
-"18" = "CommonTricolorMatch,트리컬러 매치";
-/// CommonTurfWar,영역 배틀
-"19" = "CommonTurfWar,영역 배틀";
-/// CommonWpnNotfound,물음표
-"20" = "CommonWpnNotfound,물음표";
-/// CoopHistoryAvailable,출현 수
-"21" = "CoopHistoryAvailable,출현 수";
-/// CoopHistoryAvailableBoss,출현한 두목연어
-"22" = "CoopHistoryAvailableBoss,출현한 두목연어";
-/// CoopHistoryAverageClearWaves,평균 클리어 WAVE 수
-"23" = "CoopHistoryAverageClearWaves,평균 클리어 WAVE 수";
-/// CoopHistoryBigrun,빅 런
-"24" = "CoopHistoryBigrun,빅 런";
-/// CoopHistoryBonus,클리어 보너스
-"25" = "CoopHistoryBonus,클리어 보너스";
-/// CoopHistoryBossAvailable,두목연어 출현!
-"26" = "CoopHistoryBossAvailable,두목연어 출현!";
-/// CoopHistoryClear,Clear!!
-"27" = "CoopHistoryClear,Clear!!";
-/// CoopHistoryDangerRatio,위험도
-"28" = "CoopHistoryDangerRatio,위험도";
-/// CoopHistoryDefeatBoss,두목연어 격파!
-"29" = "CoopHistoryDefeatBoss,두목연어 격파!";
-/// CoopHistoryDefeatBossCount,쓰러뜨린 두목연어
-"30" = "CoopHistoryDefeatBossCount,쓰러뜨린 두목연어";
-/// CoopHistoryDefeated,쓰러뜨렸다!
-"31" = "CoopHistoryDefeated,쓰러뜨렸다!";
-/// CoopHistoryDefeatedEnemies,쓰러뜨린 거물연어
-"32" = "CoopHistoryDefeatedEnemies,쓰러뜨린 거물연어";
-/// CoopHistoryDefeatedEnemiesGuide,※괄호 안의 숫자는 직접 쓰러뜨린 숫자입니다
-"33" = "CoopHistoryDefeatedEnemiesGuide,※괄호 안의 숫자는 직접 쓰러뜨린 숫자입니다";
-/// CoopHistoryDeliverCount,모은 연어알
-"34" = "CoopHistoryDeliverCount,모은 연어알";
-/// CoopHistoryEnemy,거물연어
-"35" = "CoopHistoryEnemy,거물연어";
-/// CoopHistoryExWave,EX-WAVE
-"36" = "CoopHistoryExWave,EX-WAVE";
-/// CoopHistoryFailure,Failure
-"37" = "CoopHistoryFailure,Failure";
-/// CoopHistoryGj,GJ!
-"38" = "CoopHistoryGj,GJ!";
-/// CoopHistoryGoToStats,아르바이트 히스토리 목록으로 돌아가기
-"39" = "CoopHistoryGoToStats,아르바이트 히스토리 목록으로 돌아가기";
-/// CoopHistoryGoldenDeliverCount,모은 황금 연어알
-"40" = "CoopHistoryGoldenDeliverCount,모은 황금 연어알";
-/// CoopHistoryHighestScore,하이 스코어
-"41" = "CoopHistoryHighestScore,하이 스코어";
-/// CoopHistoryHistory,아르바이트 히스토리
-"42" = "CoopHistoryHistory,아르바이트 히스토리";
-/// CoopHistoryJobPoint,획득 포인트
-"43" = "CoopHistoryJobPoint,획득 포인트";
-/// CoopHistoryJobRatio,평가 비율
-"44" = "CoopHistoryJobRatio,평가 비율";
-/// CoopHistoryKumaPointCard,Mr. 베어 포인트 카드
-"45" = "CoopHistoryKumaPointCard,Mr. 베어 포인트 카드";
-/// CoopHistoryLatest,최근 히스토리
-"46" = "CoopHistoryLatest,최근 히스토리";
-/// CoopHistoryLimitedPoint,현재 기간 한정 포인트
-"47" = "CoopHistoryLimitedPoint,현재 기간 한정 포인트";
-/// CoopHistoryMonthlyReward,이달의 기어
-"48" = "CoopHistoryMonthlyReward,이달의 기어";
-/// CoopHistoryNext,다음 히스토리
-"49" = "CoopHistoryNext,다음 히스토리";
-/// CoopHistoryNg,NG
-"50" = "CoopHistoryNg,NG";
-/// CoopHistoryNoData,아르바이트 히스토리가 없습니다
-"51" = "CoopHistoryNoData,아르바이트 히스토리가 없습니다";
-/// CoopHistoryNotAvailable,아르바이트 히스토리를 표시할 수 없습니다
-"52" = "CoopHistoryNotAvailable,아르바이트 히스토리를 표시할 수 없습니다";
-/// CoopHistoryNotAvailableDescription,최신 아르바이트 히스토리는 50전까지 열람할 수 있습니다.
-"53" = "CoopHistoryNotAvailableDescription,최신 아르바이트 히스토리는 50전까지 열람할 수 있습니다.";
-/// CoopHistoryNotDefeated,쓰러뜨리지 못했다…
-"54" = "CoopHistoryNotDefeated,쓰러뜨리지 못했다…";
-/// CoopHistoryPlayCount,아르바이트 횟수
-"55" = "CoopHistoryPlayCount,아르바이트 횟수";
-/// CoopHistoryPrevious,이전 히스토리
-"56" = "CoopHistoryPrevious,이전 히스토리";
-/// CoopHistoryPrivate,프라이빗
-"57" = "CoopHistoryPrivate,프라이빗";
-/// CoopHistoryRecruit,스태프 모집!
-"58" = "CoopHistoryRecruit,스태프 모집!";
-/// CoopHistoryRecruitDescription,경력이 없어도 OK! 밝고 기운찬 분 환영! 가족 같은 분위기의 직장에서 아르바이트해 보지 않으시겠습니까?
-"59" = "CoopHistoryRecruitDescription,경력이 없어도 OK! 밝고 기운찬 분 환영! 가족 같은 분위기의 직장에서 아르바이트해 보지 않으시겠습니까?";
-/// CoopHistoryRecruitTag1,간단
-"60" = "CoopHistoryRecruitTag1,간단";
-/// CoopHistoryRecruitTag2,연어알 모으기
-"61" = "CoopHistoryRecruitTag2,연어알 모으기";
-/// CoopHistoryRecruitTitle,～어메이징한 작업복을 입고 연어알 모으기～
-"62" = "CoopHistoryRecruitTitle,～어메이징한 작업복을 입고 연어알 모으기～";
-/// CoopHistoryRegular,일반 아르바이트
-"63" = "CoopHistoryRegular,일반 아르바이트";
-/// CoopHistoryRegularPoint,현재 포인트
-"64" = "CoopHistoryRegularPoint,현재 포인트";
-/// CoopHistoryRescueCount,도와준 횟수
-"65" = "CoopHistoryRescueCount,도와준 횟수";
-/// CoopHistoryRescuedCount,도움받은 횟수
-"66" = "CoopHistoryRescuedCount,도움받은 횟수";
-/// CoopHistoryScale,비늘
-"67" = "CoopHistoryScale,비늘";
-/// CoopHistoryScaleBronze,동 비늘
-"68" = "CoopHistoryScaleBronze,동 비늘";
-/// CoopHistoryScaleGold,황금 비늘
-"69" = "CoopHistoryScaleGold,황금 비늘";
-/// CoopHistoryScaleSilver,은 비늘
-"70" = "CoopHistoryScaleSilver,은 비늘";
-/// CoopHistoryScore,아르바이트 스코어
-"71" = "CoopHistoryScore,아르바이트 스코어";
-/// CoopHistorySeeSchedule,스케줄 보기
-"72" = "CoopHistorySeeSchedule,스케줄 보기";
-/// CoopHistorySmellMeter,두목 게이지
-"73" = "CoopHistorySmellMeter,두목 게이지";
-/// CoopHistorySupplyWeapon,지급 무기
-"74" = "CoopHistorySupplyWeapon,지급 무기";
-/// CoopHistoryTeamContest,아르바이트 팀 콘테스트
-"75" = "CoopHistoryTeamContest,아르바이트 팀 콘테스트";
-/// CoopHistoryTitle,새먼 런
-"76" = "CoopHistoryTitle,새먼 런";
-/// CoopHistoryTotalPoint,누적 포인트
-"77" = "CoopHistoryTotalPoint,누적 포인트";
-/// CoopHistoryWave,WAVE
-"78" = "CoopHistoryWave,WAVE";
-/// CoopHistoryWaveLevel0,간조
-"79" = "CoopHistoryWaveLevel0,간조";
-/// CoopHistoryWaveLevel1,보통
-"80" = "CoopHistoryWaveLevel1,보통";
-/// CoopHistoryWaveLevel2,만조
-"81" = "CoopHistoryWaveLevel2,만조";
-/// ErrorBackToHome,홈으로 돌아가기
-"82" = "ErrorBackToHome,홈으로 돌아가기";
-/// ErrorCurrentlyNotAvailable,현재 이용할 수 없습니다. 잠시 기다려 주십시오.
-"83" = "ErrorCurrentlyNotAvailable,현재 이용할 수 없습니다. 잠시 기다려 주십시오.";
-/// ErrorError,에러
-"84" = "ErrorError,에러";
-/// ErrorErrorOccurred,에러가 발생했습니다
-"85" = "ErrorErrorOccurred,에러가 발생했습니다";
-/// ErrorErrorReopen,로딩에 실패했습니다
-"86" = "ErrorErrorReopen,로딩에 실패했습니다";
-/// ErrorMaintenanceDescription,현재 서버 점검 중입니다. 잠시 후에 다시 접속해 주십시오.
-"87" = "ErrorMaintenanceDescription,현재 서버 점검 중입니다. 잠시 후에 다시 접속해 주십시오.";
-/// ErrorMaintenanceTitle,잠시 기다려 주십시오
-"88" = "ErrorMaintenanceTitle,잠시 기다려 주십시오";
-/// ErrorNetworkNotAvailable,로딩에 실패했습니다. 통신 환경이 좋은 곳에서 다시 시도해 주십시오.
-"89" = "ErrorNetworkNotAvailable,로딩에 실패했습니다. 통신 환경이 좋은 곳에서 다시 시도해 주십시오.";
-/// ErrorReload,새로 고침
-"90" = "ErrorReload,새로 고침";
-/// RecordLatestPlayed,마지막 플레이
-"91" = "RecordLatestPlayed,마지막 플레이";
-/// RecordLatestUsed,사용 빈도
-"92" = "RecordLatestUsed,사용 빈도";
-/// RecordMain,메인
-"93" = "RecordMain,메인";
-/// RecordNextSkillLevel,다음 숙련도까지
-"94" = "RecordNextSkillLevel,다음 숙련도까지";
-/// RecordSkillLevel,숙련도
-"95" = "RecordSkillLevel,숙련도";
-/// RecordSort,정렬
-"96" = "RecordSort,정렬";
-/// RecordSpecial,스페셜
-"97" = "RecordSpecial,스페셜";
-/// RecordStageRecord,스테이지 기록
-"98" = "RecordStageRecord,스테이지 기록";
-/// RecordStageRecordAppName,스테이지
-"99" = "RecordStageRecordAppName,스테이지";
-/// RecordSub,서브
-"100" = "RecordSub,서브";
-/// RecordTitle,기록
-"101" = "RecordTitle,기록";
-/// RecordTurfPoint,색칠 포인트
-"102" = "RecordTurfPoint,색칠 포인트";
-/// RecordUnplayedStages,미플레이 스테이지
-"103" = "RecordUnplayedStages,미플레이 스테이지";
-/// RecordUnusedWeapons,미소지 무기
-"104" = "RecordUnusedWeapons,미소지 무기";
-/// RecordVibes,컨디션
-"105" = "RecordVibes,컨디션";
-/// RecordWeaponRecord,무기 기록
-"106" = "RecordWeaponRecord,무기 기록";
-/// RecordWeaponRecordAppName,무기
-"107" = "RecordWeaponRecordAppName,무기";
-/// RecordWinCount,승리 수
-"108" = "RecordWinCount,승리 수";
-/// SettingsAcknowledgements,권리 표기
-"109" = "SettingsAcknowledgements,권리 표기";
-/// SettingsAppName,설정
-"110" = "SettingsAppName,설정";
-/// SettingsCredits,크레디트
-"111" = "SettingsCredits,크레디트";
-/// SettingsExpansionPass,익스팬션 패스 구입 사이트로
-"112" = "SettingsExpansionPass,익스팬션 패스 구입 사이트로";
-/// SettingsTitle,설정
-"113" = "SettingsTitle,설정";
-/// StageScheduleBankara,카오폴리스 매치
-"114" = "StageScheduleBankara,카오폴리스 매치";
-/// StageScheduleBankaraOpen,오픈
-"115" = "StageScheduleBankaraOpen,오픈";
-/// StageScheduleBankaraOpenChallenge,챌린지
-"116" = "StageScheduleBankaraOpenChallenge,챌린지";
-/// StageScheduleCoop,새먼 런
-"117" = "StageScheduleCoop,새먼 런";
-/// StageScheduleCoopCurrentPeriodStart,NOW OPEN!
-"118" = "StageScheduleCoopCurrentPeriodStart,NOW OPEN!";
-/// StageScheduleEvent,이벤트 매치
-"119" = "StageScheduleEvent,이벤트 매치";
-/// StageScheduleEventCurrentSchedule,지금
-"120" = "StageScheduleEventCurrentSchedule,지금";
-/// StageScheduleEventFuture,그다음
-"121" = "StageScheduleEventFuture,그다음";
-/// StageScheduleEventHolding,개최 중!
-"122" = "StageScheduleEventHolding,개최 중!";
-/// StageScheduleEventNext,예고
-"123" = "StageScheduleEventNext,예고";
-/// StageScheduleEventNextSchedule,다음
-"124" = "StageScheduleEventNextSchedule,다음";
-/// StageScheduleEventNoData,스케줄이 미정입니다
-"125" = "StageScheduleEventNoData,스케줄이 미정입니다";
-/// StageScheduleEventUnknownData,?????
-"126" = "StageScheduleEventUnknownData,?????";
-/// StageScheduleEventmatch,이벤트 개최!
-"127" = "StageScheduleEventmatch,이벤트 개최!";
-/// StageScheduleFuture,그다음
-"128" = "StageScheduleFuture,그다음";
-/// StageScheduleGuideOpenBrowser,웹 브라우저가 열립니다
-"129" = "StageScheduleGuideOpenBrowser,웹 브라우저가 열립니다";
-/// StageScheduleNext,다음
-"130" = "StageScheduleNext,다음";
-/// StageScheduleNoticeBigrun,빅 런 접근 중!
-"131" = "StageScheduleNoticeBigrun,빅 런 접근 중!";
-/// StageScheduleNoticeLimited,아르바이트 팀 콘테스트 개최 예고!
-"132" = "StageScheduleNoticeLimited,아르바이트 팀 콘테스트 개최 예고!";
-/// StageScheduleNowClosed,페스티벌 매치 개최 중!
-"133" = "StageScheduleNowClosed,페스티벌 매치 개최 중!";
-/// StageScheduleOpen,오픈!
-"134" = "StageScheduleOpen,오픈!";
-/// StageScheduleOpenBigrun,빅 런 발생 중!
-"135" = "StageScheduleOpenBigrun,빅 런 발생 중!";
-/// StageScheduleOpenLimited,아르바이트 팀 콘테스트 개최 중!
-"136" = "StageScheduleOpenLimited,아르바이트 팀 콘테스트 개최 중!";
-/// StageSchedulePrivate,프라이빗 매치
-"137" = "StageSchedulePrivate,프라이빗 매치";
-/// StageScheduleRecruit,빅 런이 온다! 아르바이트 대모집
-"138" = "StageScheduleRecruit,빅 런이 온다! 아르바이트 대모집";
-/// StageScheduleRecruitTeamContest,아르바이트 팀 콘테스트! 팀을 만들어 참가하자!
-"139" = "StageScheduleRecruitTeamContest,아르바이트 팀 콘테스트! 팀을 만들어 참가하자!";
-/// StageScheduleRegular,레귤러 매치
-"140" = "StageScheduleRegular,레귤러 매치";
-/// StageScheduleRules,룰 보기
-"141" = "StageScheduleRules,룰 보기";
-/// StageScheduleSeeAllRules,자세한 룰 보기
-"142" = "StageScheduleSeeAllRules,자세한 룰 보기";
-/// StageScheduleSuppliedWeaponRandom,랜덤
-"143" = "StageScheduleSuppliedWeaponRandom,랜덤";
-/// StageScheduleSuppliedWeapons,지급 무기
-"144" = "StageScheduleSuppliedWeapons,지급 무기";
-/// StageScheduleTitle,스케줄
-"145" = "StageScheduleTitle,스케줄";
-/// StageScheduleWinRateByRules,룰별 승률
-"146" = "StageScheduleWinRateByRules,룰별 승률";
-/// StageScheduleXmatch,X 매치
-"147" = "StageScheduleXmatch,X 매치";
-/// CommonAbout,소개
-"148" = "CommonAbout,소개";
-/// RecordActualValue,실제의
-"149" = "RecordActualValue,실제의";
-/// CommonAppearances,외모
-"150" = "CommonAppearances,외모";
-/// CommonApplication,응용 프로그램
-"151" = "CommonApplication,응용 프로그램";
-/// RecordAverageScore,평균
-"152" = "RecordAverageScore,평균";
-/// CommonBackupResults,백업
-"153" = "CommonBackupResults,백업";
-/// CommonBackupCompress,압축 (ZIP)
-"154" = "CommonBackupCompress,압축 (ZIP)";
-/// CommonBackupMessage,데이터베이스 백업
-"155" = "CommonBackupMessage,데이터베이스 백업";
-/// CommonBackupPlain,일반 (JSON)
-"156" = "CommonBackupPlain,일반 (JSON)";
-/// CommonAppCredit,신용
-"157" = "CommonAppCredit,신용";
-/// CommonDarkMode,다크 모드
-"158" = "CommonDarkMode,다크 모드";
-/// CommonDataManagement,데이터 관리
-"159" = "CommonDataManagement,데이터 관리";
-/// CoopHistoryDeathCount,구조된 수
-"160" = "CoopHistoryDeathCount,구조된 수";
-/// CoopHistoryDefeatedCount,패배한 횟수
-"161" = "CoopHistoryDefeatedCount,패배한 횟수";
-/// CoopHistoryEstimatedValue,예상
-"162" = "CoopHistoryEstimatedValue,예상";
-/// CoopHistoryEventClearRatio,클리어 비율
-"163" = "CoopHistoryEventClearRatio,클리어 비율";
-/// CoopHistoryEventFrequency,이벤트 빈도
-"164" = "CoopHistoryEventFrequency,이벤트 빈도";
-/// CommonFAQ,자주 묻는 질문
-"165" = "CommonFAQ,자주 묻는 질문";
-/// CommonGamingMode,게임 모드
-"166" = "CommonGamingMode,게임 모드";
-/// CoopHistoryGradeId,학년
-"167" = "CoopHistoryGradeId,학년";
-/// CoopHistoryGradePoint,학점
-"168" = "CoopHistoryGradePoint,학점";
-/// CoopHistoryHighestRecord,최고
-"169" = "CoopHistoryHighestRecord,최고";
-/// CommonIkaring2,SplatNet2
-"170" = "CommonIkaring2,SplatNet2";
-/// CommonInvalid,잘못된
-"171" = "CommonInvalid,잘못된";
-/// CommonLanguages,언어
-"172" = "CommonLanguages,언어";
-/// CommonShareLogMessage,개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.
-"173" = "CommonShareLogMessage,개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.";
-/// CommonShareLog,로그 공유하기
-"174" = "CommonShareLog,로그 공유하기";
-/// CommonLogSize,로그 파일
-"175" = "CommonLogSize,로그 파일";
-/// CommonMyPage,내 페이지
-"176" = "CommonMyPage,내 페이지";
-/// CoopHistoryPlayerCrew,크루
-"177" = "CoopHistoryPlayerCrew,크루";
-/// CoopHistoryPlayerYou,당신
-"178" = "CoopHistoryPlayerYou,당신";
-/// CommonPrivacyPolicy,개인 정보 정책
-"179" = "CommonPrivacyPolicy,개인 정보 정책";
-/// CommonRequestForm,양식
-"180" = "CommonRequestForm,양식";
-/// CommonRequestFormBug,버그
-"181" = "CommonRequestFormBug,버그";
-/// CommonRequestFormContent,컨텐츠
-"182" = "CommonRequestFormContent,컨텐츠";
-/// CommonRequestFormEnhancement,기능 향상
-"183" = "CommonRequestFormEnhancement,기능 향상";
-/// CommonRequestFormFeature,특징
-"184" = "CommonRequestFormFeature,특징";
-/// CommonRequestFormTitle,제목
-"185" = "CommonRequestFormTitle,제목";
-/// CommonRequestFormType,유형
-"186" = "CommonRequestFormType,유형";
-/// CommonRequsetFormSubmit,제출
-"187" = "CommonRequsetFormSubmit,제출";
-/// CommonRestore,복원
-"188" = "CommonRestore,복원";
-/// CommonRestoreMessage,파일 앱에서 복원할 파일 선택.
-"189" = "CommonRestoreMessage,파일 앱에서 복원할 파일 선택.";
-/// CoopHistoryResultsCount,결과 수
-"190" = "CoopHistoryResultsCount,결과 수";
-/// CommonRoleDebuger,디버그
-"191" = "CommonRoleDebuger,디버그";
-/// CommonRoleDeveloper,개발자
-"192" = "CommonRoleDeveloper,개발자";
-/// CommonRoleTester,테스터
-"193" = "CommonRoleTester,테스터";
-/// CommonRoleTranslator,번역자
-"194" = "CommonRoleTranslator,번역자";
-/// CommonSaveToPhotoLibrary,성공적으로 저장되었습니다.
-"195" = "CommonSaveToPhotoLibrary,성공적으로 저장되었습니다.";
-/// CommonScheduleSync,동기화 일정
-"196" = "CommonScheduleSync,동기화 일정";
-/// CommonScheduleSyncMessage,서버에서 일정 검색.
-"197" = "CommonScheduleSyncMessage,서버에서 일정 검색.";
-/// CommonSignIn,로그인
-"198" = "CommonSignIn,로그인";
-/// CommonSignOut,로그아웃
-"199" = "CommonSignOut,로그아웃";
-/// CommonSignOutSuccessfully,로그아웃 성공적으로 완료되었습니다
-"200" = "CommonSignOutSuccessfully,로그아웃 성공적으로 완료되었습니다";
-/// CommonSignOutMessage,닌텐도 스위치 계정 연결 해제.
-"201" = "CommonSignOutMessage,닌텐도 스위치 계정 연결 해제.";
-/// CommonSourceCode,소스 코드
-"202" = "CommonSourceCode,소스 코드";
-/// CoopHistorySuppliedRatio,공급 비율
-"203" = "CoopHistorySuppliedRatio,공급 비율";
-/// CommonUpdateRequired,앱 업데이트가 필요합니다.
-"204" = "CommonUpdateRequired,앱 업데이트가 필요합니다.";
-/// CommonUserData,사용자 데이터
-"205" = "CommonUserData,사용자 데이터";
-/// CommonValid,유효한
-"206" = "CommonValid,유효한";
-/// CommonAppVersion,버전
-"207" = "CommonAppVersion,버전";
-/// CommonWipeLog,로그 제거
-"208" = "CommonWipeLog,로그 제거";
-/// CommonWipeLogMessage,모든 로그 제거.
-"209" = "CommonWipeLogMessage,모든 로그 제거.";
-/// CommonWipeResults,결과 제거
-"210" = "CommonWipeResults,결과 제거";
-/// CommonWipeResultsMessage,모든 데이터 제거.
-"211" = "CommonWipeResultsMessage,모든 데이터 제거.";
-/// CommonWriteReview,리뷰 작성
-"212" = "CommonWriteReview,리뷰 작성";
-/// CoopHistoryOverallRecord,전반적으로
-"213" = "CoopHistoryOverallRecord,전반적으로";
-/// CommonGoldenEggs,황금 알
-"214" = "CommonGoldenEggs,황금 알";
-/// CommonPowerEggs,파워 에그
-"215" = "CommonPowerEggs,파워 에그";
-/// CommonOverview,개요
-"216" = "CommonOverview,개요";
-/// CommonLocale,en-GB
-"217" = "CommonLocale,en-GB";
-/// CommonLanguageCode,0
-"218" = "CommonLanguageCode,0";
-/// CommonDatabase,데이터베이스
-"219" = "CommonDatabase,데이터베이스";
-/// CommonXProductVersion,-ProductVersion
-"220" = "CommonXProductVersion,-ProductVersion";
-/// CommonXWebViewVer,X-WebViewVer
-"221" = "CommonXWebViewVer,X-WebViewVer";
-/// CommonUpload,업로드
-"222" = "CommonUpload,업로드";
-/// CommonCreditDevelop,개발자
-"223" = "CommonCreditDevelop,개발자";
-/// CommonCreditTest,테스터
-"224" = "CommonCreditTest,테스터";
-/// CommonCreditDesign,UI/UX 디자인
-"225" = "CommonCreditDesign,UI/UX 디자인";
-/// CoopHistoryTeamPointCard,팀 포인트 카드
-"226" = "CoopHistoryTeamPointCard,팀 포인트 카드";
-/// CoopHistoryUseEstimatedValue,추정 값을 사용
-"227" = "CoopHistoryUseEstimatedValue,추정 값을 사용";
-/// CommonUseSecureSession,Safari 인증서를 이용
-"228" = "CommonUseSecureSession,Safari 인증서를 이용";
-/// CommonCheckInReward,보상
-"229" = "CommonCheckInReward,보상";
-/// CommonGetCheckInReward,QR 코드에 대한 모든 보상 가져오기.
-"230" = "CommonGetCheckInReward,QR 코드에 대한 모든 보상 가져오기.";
-/// CoopHistoryTeamResult,팀
-"231" = "CoopHistoryTeamResult,팀";
-/// CoopHistoryPlayerResult,당신
-"232" = "CoopHistoryPlayerResult,당신";
-/// CoopHistoryCrewAvgResult,선원의 평균
-"233" = "CoopHistoryCrewAvgResult,선원의 평균";
-/// CoopHistoryCrewResult,크루
-"234" = "CoopHistoryCrewResult,크루";
-/// CoopHistoryWaveResult,파도
-"235" = "CoopHistoryWaveResult,파도";
-/// CoopHistoryHighestScore,최대
-"236" = "CoopHistoryHighestScore,최대";
-/// CoopHistoryAverageScore,평균
-"237" = "CoopHistoryAverageScore,평균";
-/// CommonRequirediOS16,이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.
-"238" = "CommonRequirediOS16,이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.";
-/// CommonRequiredSignIn,이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."
-"239" = "CommonRequiredSignIn,이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."";
-/// CommonRestoreSuccessMessage,결과를 성공적으로 복원했습니다.
-"240" = "CommonRestoreSuccessMessage,결과를 성공적으로 복원했습니다.";
-/// CommonRestoreFailureMessage,결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.
-"241" = "CommonRestoreFailureMessage,결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.";
-/// CommonResultsCount,결과
-"242" = "CommonResultsCount,결과";
-/// CommonDeveloperAnswer,소개
-"243" = "CommonDeveloperAnswer,소개";
-/// CommonMinimumVersion,지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.
-"244" = "CommonMinimumVersion,지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.";
-/// ErrorInvalidSignature,백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.
-"245" = "ErrorInvalidSignature,백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.";
-/// CommonUseSystemTheme,장치 설정에 따라 다릅니다
-"246" = "CommonUseSystemTheme,장치 설정에 따라 다릅니다";
-/// CommonLicense,라이선스
-"247" = "CommonLicense,라이선스";
+/// 취소
+"CommonCancel" = "취소";
+/// 랭크 바지락
+"CommonClamBlitz" = "랭크 바지락";
+/// 닫기
+"CommonClose" = "닫기";
+/// 빅 런
+"CommonCoopBigRun" = "빅 런";
+/// 아르바이트 팀 콘테스트
+"CommonCoopTeamContest" = "아르바이트 팀 콘테스트";
+/// QR Code는 일본 및 여러 나라에서 DENSO WAVE INCORPORATED의 등록상표입니다
+"CommonCopyrightQrCode" = "QR Code는 일본 및 여러 나라에서 DENSO WAVE INCORPORATED의 등록상표입니다";
+/// 결정
+"CommonDecide" = "결정";
+/// 다운로드
+"CommonDownload" = "다운로드";
+/// 끝내기
+"CommonEnd" = "끝내기";
+/// 물음표
+"CommonGearPowerBlank" = "물음표";
+/// 오징어넷 3
+"CommonIkaring3" = "오징어넷 3";
+/// 로딩 중
+"CommonNowLoading" = "로딩 중";
+/// 당겨서 새로 고침
+"CommonPullToRefresh" = "당겨서 새로 고침";
+/// 랭크 피시 배틀
+"CommonRainmaker" = "랭크 피시 배틀";
+/// 공유
+"CommonShare" = "공유";
+/// 랭크 에어리어
+"CommonSplatZones" = "랭크 에어리어";
+/// 랭크 타워
+"CommonTowerControl" = "랭크 타워";
+/// 트리컬러 어택
+"CommonTricolor" = "트리컬러 어택";
+/// 트리컬러 매치
+"CommonTricolorMatch" = "트리컬러 매치";
+/// 영역 배틀
+"CommonTurfWar" = "영역 배틀";
+/// 물음표
+"CommonWpnNotfound" = "물음표";
+/// 출현 수
+"CoopHistoryAvailable" = "출현 수";
+/// 출현한 두목연어
+"CoopHistoryAvailableBoss" = "출현한 두목연어";
+/// 평균 클리어 WAVE 수
+"CoopHistoryAverageClearWaves" = "평균 클리어 WAVE 수";
+/// 빅 런
+"CoopHistoryBigrun" = "빅 런";
+/// 클리어 보너스
+"CoopHistoryBonus" = "클리어 보너스";
+/// 두목연어 출현!
+"CoopHistoryBossAvailable" = "두목연어 출현!";
+/// Clear!!
+"CoopHistoryClear" = "Clear!!";
+/// 위험도
+"CoopHistoryDangerRatio" = "위험도";
+/// 두목연어 격파!
+"CoopHistoryDefeatBoss" = "두목연어 격파!";
+/// 쓰러뜨린 두목연어
+"CoopHistoryDefeatBossCount" = "쓰러뜨린 두목연어";
+/// 쓰러뜨렸다!
+"CoopHistoryDefeated" = "쓰러뜨렸다!";
+/// 쓰러뜨린 거물연어
+"CoopHistoryDefeatedEnemies" = "쓰러뜨린 거물연어";
+/// ※괄호 안의 숫자는 직접 쓰러뜨린 숫자입니다
+"CoopHistoryDefeatedEnemiesGuide" = "※괄호 안의 숫자는 직접 쓰러뜨린 숫자입니다";
+/// 모은 연어알
+"CoopHistoryDeliverCount" = "모은 연어알";
+/// 거물연어
+"CoopHistoryEnemy" = "거물연어";
+/// EX-WAVE
+"CoopHistoryExWave" = "EX-WAVE";
+/// Failure
+"CoopHistoryFailure" = "Failure";
+/// GJ!
+"CoopHistoryGj" = "GJ!";
+/// 아르바이트 히스토리 목록으로 돌아가기
+"CoopHistoryGoToStats" = "아르바이트 히스토리 목록으로 돌아가기";
+/// 모은 황금 연어알
+"CoopHistoryGoldenDeliverCount" = "모은 황금 연어알";
+/// 하이 스코어
+"CoopHistoryHighestScore" = "하이 스코어";
+/// 아르바이트 히스토리
+"CoopHistoryHistory" = "아르바이트 히스토리";
+/// 획득 포인트
+"CoopHistoryJobPoint" = "획득 포인트";
+/// 평가 비율
+"CoopHistoryJobRatio" = "평가 비율";
+/// Mr. 베어 포인트 카드
+"CoopHistoryKumaPointCard" = "Mr. 베어 포인트 카드";
+/// 최근 히스토리
+"CoopHistoryLatest" = "최근 히스토리";
+/// 현재 기간 한정 포인트
+"CoopHistoryLimitedPoint" = "현재 기간 한정 포인트";
+/// 이달의 기어
+"CoopHistoryMonthlyReward" = "이달의 기어";
+/// 다음 히스토리
+"CoopHistoryNext" = "다음 히스토리";
+/// NG
+"CoopHistoryNg" = "NG";
+/// 아르바이트 히스토리가 없습니다
+"CoopHistoryNoData" = "아르바이트 히스토리가 없습니다";
+/// 아르바이트 히스토리를 표시할 수 없습니다
+"CoopHistoryNotAvailable" = "아르바이트 히스토리를 표시할 수 없습니다";
+/// 최신 아르바이트 히스토리는 50전까지 열람할 수 있습니다.
+"CoopHistoryNotAvailableDescription" = "최신 아르바이트 히스토리는 50전까지 열람할 수 있습니다.";
+/// 쓰러뜨리지 못했다…
+"CoopHistoryNotDefeated" = "쓰러뜨리지 못했다…";
+/// 아르바이트 횟수
+"CoopHistoryPlayCount" = "아르바이트 횟수";
+/// 이전 히스토리
+"CoopHistoryPrevious" = "이전 히스토리";
+/// 프라이빗
+"CoopHistoryPrivate" = "프라이빗";
+/// 스태프 모집!
+"CoopHistoryRecruit" = "스태프 모집!";
+/// 경력이 없어도 OK! 밝고 기운찬 분 환영! 가족 같은 분위기의 직장에서 아르바이트해 보지 않으시겠습니까?
+"CoopHistoryRecruitDescription" = "경력이 없어도 OK! 밝고 기운찬 분 환영! 가족 같은 분위기의 직장에서 아르바이트해 보지 않으시겠습니까?";
+/// 간단
+"CoopHistoryRecruitTag1" = "간단";
+/// 연어알 모으기
+"CoopHistoryRecruitTag2" = "연어알 모으기";
+/// ～어메이징한 작업복을 입고 연어알 모으기～
+"CoopHistoryRecruitTitle" = "～어메이징한 작업복을 입고 연어알 모으기～";
+/// 일반 아르바이트
+"CoopHistoryRegular" = "일반 아르바이트";
+/// 현재 포인트
+"CoopHistoryRegularPoint" = "현재 포인트";
+/// 도와준 횟수
+"CoopHistoryRescueCount" = "도와준 횟수";
+/// 도움받은 횟수
+"CoopHistoryRescuedCount" = "도움받은 횟수";
+/// 비늘
+"CoopHistoryScale" = "비늘";
+/// 동 비늘
+"CoopHistoryScaleBronze" = "동 비늘";
+/// 황금 비늘
+"CoopHistoryScaleGold" = "황금 비늘";
+/// 은 비늘
+"CoopHistoryScaleSilver" = "은 비늘";
+/// 아르바이트 스코어
+"CoopHistoryScore" = "아르바이트 스코어";
+/// 스케줄 보기
+"CoopHistorySeeSchedule" = "스케줄 보기";
+/// 두목 게이지
+"CoopHistorySmellMeter" = "두목 게이지";
+/// 지급 무기
+"CoopHistorySupplyWeapon" = "지급 무기";
+/// 아르바이트 팀 콘테스트
+"CoopHistoryTeamContest" = "아르바이트 팀 콘테스트";
+/// 새먼 런
+"CoopHistoryTitle" = "새먼 런";
+/// 누적 포인트
+"CoopHistoryTotalPoint" = "누적 포인트";
+/// WAVE
+"CoopHistoryWave" = "WAVE";
+/// 간조
+"CoopHistoryWaveLevel0" = "간조";
+/// 보통
+"CoopHistoryWaveLevel1" = "보통";
+/// 만조
+"CoopHistoryWaveLevel2" = "만조";
+/// 홈으로 돌아가기
+"ErrorBackToHome" = "홈으로 돌아가기";
+/// 현재 이용할 수 없습니다. 잠시 기다려 주십시오.
+"ErrorCurrentlyNotAvailable" = "현재 이용할 수 없습니다. 잠시 기다려 주십시오.";
+/// 에러
+"ErrorError" = "에러";
+/// 에러가 발생했습니다
+"ErrorErrorOccurred" = "에러가 발생했습니다";
+/// 로딩에 실패했습니다
+"ErrorErrorReopen" = "로딩에 실패했습니다";
+/// 현재 서버 점검 중입니다. 잠시 후에 다시 접속해 주십시오.
+"ErrorMaintenanceDescription" = "현재 서버 점검 중입니다. 잠시 후에 다시 접속해 주십시오.";
+/// 잠시 기다려 주십시오
+"ErrorMaintenanceTitle" = "잠시 기다려 주십시오";
+/// 로딩에 실패했습니다. 통신 환경이 좋은 곳에서 다시 시도해 주십시오.
+"ErrorNetworkNotAvailable" = "로딩에 실패했습니다. 통신 환경이 좋은 곳에서 다시 시도해 주십시오.";
+/// 새로 고침
+"ErrorReload" = "새로 고침";
+/// 마지막 플레이
+"RecordLatestPlayed" = "마지막 플레이";
+/// 사용 빈도
+"RecordLatestUsed" = "사용 빈도";
+/// 메인
+"RecordMain" = "메인";
+/// 다음 숙련도까지
+"RecordNextSkillLevel" = "다음 숙련도까지";
+/// 숙련도
+"RecordSkillLevel" = "숙련도";
+/// 정렬
+"RecordSort" = "정렬";
+/// 스페셜
+"RecordSpecial" = "스페셜";
+/// 스테이지 기록
+"RecordStageRecord" = "스테이지 기록";
+/// 스테이지
+"RecordStageRecordAppName" = "스테이지";
+/// 서브
+"RecordSub" = "서브";
+/// 기록
+"RecordTitle" = "기록";
+/// 색칠 포인트
+"RecordTurfPoint" = "색칠 포인트";
+/// 미플레이 스테이지
+"RecordUnplayedStages" = "미플레이 스테이지";
+/// 미소지 무기
+"RecordUnusedWeapons" = "미소지 무기";
+/// 컨디션
+"RecordVibes" = "컨디션";
+/// 무기 기록
+"RecordWeaponRecord" = "무기 기록";
+/// 무기
+"RecordWeaponRecordAppName" = "무기";
+/// 승리 수
+"RecordWinCount" = "승리 수";
+/// 권리 표기
+"SettingsAcknowledgements" = "권리 표기";
+/// 설정
+"SettingsAppName" = "설정";
+/// 크레디트
+"SettingsCredits" = "크레디트";
+/// 익스팬션 패스 구입 사이트로
+"SettingsExpansionPass" = "익스팬션 패스 구입 사이트로";
+/// 설정
+"SettingsTitle" = "설정";
+/// 카오폴리스 매치
+"StageScheduleBankara" = "카오폴리스 매치";
+/// 오픈
+"StageScheduleBankaraOpen" = "오픈";
+/// 챌린지
+"StageScheduleBankaraOpenChallenge" = "챌린지";
+/// 새먼 런
+"StageScheduleCoop" = "새먼 런";
+/// NOW OPEN!
+"StageScheduleCoopCurrentPeriodStart" = "NOW OPEN!";
+/// 이벤트 매치
+"StageScheduleEvent" = "이벤트 매치";
+/// 지금
+"StageScheduleEventCurrentSchedule" = "지금";
+/// 그다음
+"StageScheduleEventFuture" = "그다음";
+/// 개최 중!
+"StageScheduleEventHolding" = "개최 중!";
+/// 예고
+"StageScheduleEventNext" = "예고";
+/// 다음
+"StageScheduleEventNextSchedule" = "다음";
+/// 스케줄이 미정입니다
+"StageScheduleEventNoData" = "스케줄이 미정입니다";
+/// ?????
+"StageScheduleEventUnknownData" = "?????";
+/// 이벤트 개최!
+"StageScheduleEventmatch" = "이벤트 개최!";
+/// 그다음
+"StageScheduleFuture" = "그다음";
+/// 웹 브라우저가 열립니다
+"StageScheduleGuideOpenBrowser" = "웹 브라우저가 열립니다";
+/// 다음
+"StageScheduleNext" = "다음";
+/// 빅 런 접근 중!
+"StageScheduleNoticeBigrun" = "빅 런 접근 중!";
+/// 아르바이트 팀 콘테스트 개최 예고!
+"StageScheduleNoticeLimited" = "아르바이트 팀 콘테스트 개최 예고!";
+/// 페스티벌 매치 개최 중!
+"StageScheduleNowClosed" = "페스티벌 매치 개최 중!";
+/// 오픈!
+"StageScheduleOpen" = "오픈!";
+/// 빅 런 발생 중!
+"StageScheduleOpenBigrun" = "빅 런 발생 중!";
+/// 아르바이트 팀 콘테스트 개최 중!
+"StageScheduleOpenLimited" = "아르바이트 팀 콘테스트 개최 중!";
+/// 프라이빗 매치
+"StageSchedulePrivate" = "프라이빗 매치";
+/// 빅 런이 온다! 아르바이트 대모집
+"StageScheduleRecruit" = "빅 런이 온다! 아르바이트 대모집";
+/// 아르바이트 팀 콘테스트! 팀을 만들어 참가하자!
+"StageScheduleRecruitTeamContest" = "아르바이트 팀 콘테스트! 팀을 만들어 참가하자!";
+/// 레귤러 매치
+"StageScheduleRegular" = "레귤러 매치";
+/// 룰 보기
+"StageScheduleRules" = "룰 보기";
+/// 자세한 룰 보기
+"StageScheduleSeeAllRules" = "자세한 룰 보기";
+/// 랜덤
+"StageScheduleSuppliedWeaponRandom" = "랜덤";
+/// 지급 무기
+"StageScheduleSuppliedWeapons" = "지급 무기";
+/// 스케줄
+"StageScheduleTitle" = "스케줄";
+/// 룰별 승률
+"StageScheduleWinRateByRules" = "룰별 승률";
+/// X 매치
+"StageScheduleXmatch" = "X 매치";
+/// 소개
+"CommonAbout" = "소개";
+/// 실제의
+"RecordActualValue" = "실제의";
+/// 외모
+"CommonAppearances" = "외모";
+/// 응용 프로그램
+"CommonApplication" = "응용 프로그램";
+/// 평균
+"RecordAverageScore" = "평균";
+/// 백업
+"CommonBackupResults" = "백업";
+/// 압축 (ZIP)
+"CommonBackupCompress" = "압축 (ZIP)";
+/// 데이터베이스 백업
+"CommonBackupMessage" = "데이터베이스 백업";
+/// 일반 (JSON)
+"CommonBackupPlain" = "일반 (JSON)";
+/// 신용
+"CommonAppCredit" = "신용";
+/// 다크 모드
+"CommonDarkMode" = "다크 모드";
+/// 데이터 관리
+"CommonDataManagement" = "데이터 관리";
+/// 구조된 수
+"CoopHistoryDeathCount" = "구조된 수";
+/// 패배한 횟수
+"CoopHistoryDefeatedCount" = "패배한 횟수";
+/// 예상
+"CoopHistoryEstimatedValue" = "예상";
+/// 클리어 비율
+"CoopHistoryEventClearRatio" = "클리어 비율";
+/// 이벤트 빈도
+"CoopHistoryEventFrequency" = "이벤트 빈도";
+/// 자주 묻는 질문
+"CommonFAQ" = "자주 묻는 질문";
+/// 게임 모드
+"CommonGamingMode" = "게임 모드";
+/// 학년
+"CoopHistoryGradeId" = "학년";
+/// 학점
+"CoopHistoryGradePoint" = "학점";
+/// 최고
+"CoopHistoryHighestRecord" = "최고";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// 잘못된
+"CommonInvalid" = "잘못된";
+/// 언어
+"CommonLanguages" = "언어";
+/// 개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.
+"CommonShareLogMessage" = "개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.";
+/// 로그 공유하기
+"CommonShareLog" = "로그 공유하기";
+/// 로그 파일
+"CommonLogSize" = "로그 파일";
+/// 내 페이지
+"CommonMyPage" = "내 페이지";
+/// 크루
+"CoopHistoryPlayerCrew" = "크루";
+/// 당신
+"CoopHistoryPlayerYou" = "당신";
+/// 개인 정보 정책
+"CommonPrivacyPolicy" = "개인 정보 정책";
+/// 양식
+"CommonRequestForm" = "양식";
+/// 버그
+"CommonRequestFormBug" = "버그";
+/// 컨텐츠
+"CommonRequestFormContent" = "컨텐츠";
+/// 기능 향상
+"CommonRequestFormEnhancement" = "기능 향상";
+/// 특징
+"CommonRequestFormFeature" = "특징";
+/// 제목
+"CommonRequestFormTitle" = "제목";
+/// 유형
+"CommonRequestFormType" = "유형";
+/// 제출
+"CommonRequsetFormSubmit" = "제출";
+/// 복원
+"CommonRestore" = "복원";
+/// 파일 앱에서 복원할 파일 선택.
+"CommonRestoreMessage" = "파일 앱에서 복원할 파일 선택.";
+/// 결과 수
+"CoopHistoryResultsCount" = "결과 수";
+/// 디버그
+"CommonRoleDebuger" = "디버그";
+/// 개발자
+"CommonRoleDeveloper" = "개발자";
+/// 테스터
+"CommonRoleTester" = "테스터";
+/// 번역자
+"CommonRoleTranslator" = "번역자";
+/// 성공적으로 저장되었습니다.
+"CommonSaveToPhotoLibrary" = "성공적으로 저장되었습니다.";
+/// 동기화 일정
+"CommonScheduleSync" = "동기화 일정";
+/// 서버에서 일정 검색.
+"CommonScheduleSyncMessage" = "서버에서 일정 검색.";
+/// 로그인
+"CommonSignIn" = "로그인";
+/// 로그아웃
+"CommonSignOut" = "로그아웃";
+/// 로그아웃 성공적으로 완료되었습니다
+"CommonSignOutSuccessfully" = "로그아웃 성공적으로 완료되었습니다";
+/// 닌텐도 스위치 계정 연결 해제.
+"CommonSignOutMessage" = "닌텐도 스위치 계정 연결 해제.";
+/// 소스 코드
+"CommonSourceCode" = "소스 코드";
+/// 공급 비율
+"CoopHistorySuppliedRatio" = "공급 비율";
+/// 앱 업데이트가 필요합니다.
+"CommonUpdateRequired" = "앱 업데이트가 필요합니다.";
+/// 사용자 데이터
+"CommonUserData" = "사용자 데이터";
+/// 유효한
+"CommonValid" = "유효한";
+/// 버전
+"CommonAppVersion" = "버전";
+/// 로그 제거
+"CommonWipeLog" = "로그 제거";
+/// 모든 로그 제거.
+"CommonWipeLogMessage" = "모든 로그 제거.";
+/// 결과 제거
+"CommonWipeResults" = "결과 제거";
+/// 모든 데이터 제거.
+"CommonWipeResultsMessage" = "모든 데이터 제거.";
+/// 리뷰 작성
+"CommonWriteReview" = "리뷰 작성";
+/// 전반적으로
+"CoopHistoryOverallRecord" = "전반적으로";
+/// 황금 알
+"CommonGoldenEggs" = "황금 알";
+/// 파워 에그
+"CommonPowerEggs" = "파워 에그";
+/// 개요
+"CommonOverview" = "개요";
+/// en-GB
+"CommonLocale" = "en-GB";
+/// 0
+"CommonLanguageCode" = "0";
+/// 데이터베이스
+"CommonDatabase" = "데이터베이스";
+/// -ProductVersion
+"CommonXProductVersion" = "-ProductVersion";
+/// X-WebViewVer
+"CommonXWebViewVer" = "X-WebViewVer";
+/// 업로드
+"CommonUpload" = "업로드";
+/// 개발자
+"CommonCreditDevelop" = "개발자";
+/// 테스터
+"CommonCreditTest" = "테스터";
+/// UI/UX 디자인
+"CommonCreditDesign" = "UI/UX 디자인";
+/// 팀 포인트 카드
+"CoopHistoryTeamPointCard" = "팀 포인트 카드";
+/// 추정 값을 사용
+"CoopHistoryUseEstimatedValue" = "추정 값을 사용";
+/// Safari 인증서를 이용
+"CommonUseSecureSession" = "Safari 인증서를 이용";
+/// 보상
+"CommonCheckInReward" = "보상";
+/// QR 코드에 대한 모든 보상 가져오기.
+"CommonGetCheckInReward" = "QR 코드에 대한 모든 보상 가져오기.";
+/// 팀
+"CoopHistoryTeamResult" = "팀";
+/// 당신
+"CoopHistoryPlayerResult" = "당신";
+/// 선원의 평균
+"CoopHistoryCrewAvgResult" = "선원의 평균";
+/// 크루
+"CoopHistoryCrewResult" = "크루";
+/// 파도
+"CoopHistoryWaveResult" = "파도";
+/// 최대
+"CoopHistoryHighestScore" = "최대";
+/// 평균
+"CoopHistoryAverageScore" = "평균";
+/// 이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.
+"CommonRequirediOS16" = "이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.";
+/// 이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."
+"CommonRequiredSignIn" = "이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."";
+/// 결과를 성공적으로 복원했습니다.
+"CommonRestoreSuccessMessage" = "결과를 성공적으로 복원했습니다.";
+/// 결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.
+"CommonRestoreFailureMessage" = "결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.";
+/// 결과
+"CommonResultsCount" = "결과";
+/// 소개
+"CommonDeveloperAnswer" = "소개";
+/// 지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.
+"CommonMinimumVersion" = "지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.";
+/// 백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.
+"ErrorInvalidSignature" = "백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.";
+/// 장치 설정에 따라 다릅니다
+"CommonUseSystemTheme" = "장치 설정에 따라 다릅니다";
+/// 라이선스
+"CommonLicense" = "라이선스";

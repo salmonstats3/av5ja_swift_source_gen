@@ -348,8 +348,8 @@
 "SettingsAppName" = "Settings";
 /// Credits
 "SettingsCredits" = "Credits";
-/// Visit Expansion Pass Purchase Site
-"SettingsExpansionPass" = "Visit Expansion Pass Purchase Site";
+/// To Expansion Pass Information
+"SettingsExpansionPass" = "To Expansion Pass Information";
 /// Settings
 "SettingsTitle" = "Settings";
 /// Anarchy Battle
@@ -524,8 +524,8 @@
 "CommonSignIn" = "Sign in";
 /// Sign out
 "CommonSignOut" = "Sign out";
-/// null
-"CommonSignOutSuccessfully" = "null";
+/// Sign out successfully
+"CommonSignOutSuccessfully" = "Sign out successfully";
 /// Unlink the Nintendo Switch account.
 "CommonSignOutMessage" = "Unlink the Nintendo Switch account.";
 /// Source code
@@ -558,8 +558,8 @@
 "CommonPowerEggs" = "Power Eggs";
 /// Overview
 "CommonOverview" = "Overview";
-/// en-US
-"CommonLocale" = "en-US";
+/// en-GB
+"CommonLocale" = "en-GB";
 /// 0
 "CommonLanguageCode" = "0";
 /// Database
@@ -602,8 +602,8 @@
 "CoopHistoryAverageScore" = "Avg";
 /// You must update to iOS16 or higher to use this feature
 "CommonRequirediOS16" = "You must update to iOS16 or higher to use this feature";
-/// Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.
-"CommonRequiredSignIn" = "Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.";
+/// Using this app, you need be sign in with your Nintendo account. Please sign in from on My page.
+"CommonRequiredSignIn" = "Using this app, you need be sign in with your Nintendo account. Please sign in from on My page.";
 /// Restore results successfully
 "CommonRestoreSuccessMessage" = "Restore results successfully";
 /// Restore results failure. Unsupported format or signature does not match due to file has been tampered with.

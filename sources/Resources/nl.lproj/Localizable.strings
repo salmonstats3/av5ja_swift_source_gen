@@ -120,505 +120,505 @@
 "Unknown" = "???";
 /// Koraalcampus
 "Upland" = "Koraalcampus";
-/// CommonCancel,Annuleren
-"0" = "CommonCancel,Annuleren";
-/// CommonClamBlitz,Schelpenstrijd
-"1" = "CommonClamBlitz,Schelpenstrijd";
-/// CommonClose,Sluiten
-"2" = "CommonClose,Sluiten";
-/// CommonCoopBigRun,Big Run
-"3" = "CommonCoopBigRun,Big Run";
-/// CommonCoopTeamContest,Bedrijfseitje
-"4" = "CommonCoopTeamContest,Bedrijfseitje";
-/// CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.
-"5" = "CommonCopyrightQrCode,QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
-/// CommonDecide,Oké
-"6" = "CommonDecide,Oké";
-/// CommonDownload,Downloaden
-"7" = "CommonDownload,Downloaden";
-/// CommonEnd,Sluiten
-"8" = "CommonEnd,Sluiten";
-/// CommonGearPowerBlank,Onbekend
-"9" = "CommonGearPowerBlank,Onbekend";
-/// CommonHome,Beginscherm
-"10" = "CommonHome,Beginscherm";
-/// CommonIkaring3,SplatNet 3
-"11" = "CommonIkaring3,SplatNet 3";
-/// CommonNowLoading,Bezig met laden...
-"12" = "CommonNowLoading,Bezig met laden...";
-/// CommonPullToRefresh,Trekken om bij te werken
-"13" = "CommonPullToRefresh,Trekken om bij te werken";
-/// CommonRainmaker,Bazookarper
-"14" = "CommonRainmaker,Bazookarper";
-/// CommonShare,Delen
-"15" = "CommonShare,Delen";
-/// CommonSplatZones,Spetterzone
-"16" = "CommonSplatZones,Spetterzone";
-/// CommonTowerControl,Torentwist
-"17" = "CommonTowerControl,Torentwist";
-/// CommonTricolor,Driekleurengevecht
-"18" = "CommonTricolor,Driekleurengevecht";
-/// CommonTricolorMatch,Driekleurengevecht
-"19" = "CommonTricolorMatch,Driekleurengevecht";
-/// CommonTurfWar,Grondoorlog
-"20" = "CommonTurfWar,Grondoorlog";
-/// CommonWpnNotfound,Onbekend
-"21" = "CommonWpnNotfound,Onbekend";
-/// CoopHistoryAvailable,Verschenen
-"22" = "CoopHistoryAvailable,Verschenen";
-/// CoopHistoryAvailableBoss,Bestreden Salmonster
-"23" = "CoopHistoryAvailableBoss,Bestreden Salmonster";
-/// CoopHistoryAverageClearWaves,Doorstane golven (gemiddeld)
-"24" = "CoopHistoryAverageClearWaves,Doorstane golven (gemiddeld)";
-/// CoopHistoryBigrun,Big Run
-"25" = "CoopHistoryBigrun,Big Run";
-/// CoopHistoryBigrunBronze,Brons
-"26" = "CoopHistoryBigrunBronze,Brons";
-/// CoopHistoryBigrunGold,Goud
-"27" = "CoopHistoryBigrunGold,Goud";
-/// CoopHistoryBigrunSilver,Zilver
-"28" = "CoopHistoryBigrunSilver,Zilver";
-/// CoopHistoryBonus,Bonus
-"29" = "CoopHistoryBonus,Bonus";
-/// CoopHistoryBossAvailable,Salmonster gesignaleerd!
-"30" = "CoopHistoryBossAvailable,Salmonster gesignaleerd!";
-/// CoopHistoryClear,Gelukt!
-"31" = "CoopHistoryClear,Gelukt!";
-/// CoopHistoryDangerRatio,Risiconiveau
-"32" = "CoopHistoryDangerRatio,Risiconiveau";
-/// CoopHistoryDefeatBoss,Salmonster-aanval!
-"33" = "CoopHistoryDefeatBoss,Salmonster-aanval!";
-/// CoopHistoryDefeatBossCount,Verslagen Salmonsters
-"34" = "CoopHistoryDefeatBossCount,Verslagen Salmonsters";
-/// CoopHistoryDefeated,Overwonnen!
-"35" = "CoopHistoryDefeated,Overwonnen!";
-/// CoopHistoryDefeatedEnemies,Verslagen Salmonietenbazen
-"36" = "CoopHistoryDefeatedEnemies,Verslagen Salmonietenbazen";
-/// CoopHistoryDefeatedEnemiesGuide,Het getal tussen haakjes is het aantal vijanden dat door jou is uitgeschakeld.
-"37" = "CoopHistoryDefeatedEnemiesGuide,Het getal tussen haakjes is het aantal vijanden dat door jou is uitgeschakeld.";
-/// CoopHistoryDeliverCount,Visseneieren
-"38" = "CoopHistoryDeliverCount,Visseneieren";
-/// CoopHistoryEnemy,Salmonietenbazen
-"39" = "CoopHistoryEnemy,Salmonietenbazen";
-/// CoopHistoryExWave,Extra golf
-"40" = "CoopHistoryExWave,Extra golf";
-/// CoopHistoryFailure,Helaas...
-"41" = "CoopHistoryFailure,Helaas...";
-/// CoopHistoryGoToStats,Terug naar werkverledenlijst
-"42" = "CoopHistoryGoToStats,Terug naar werkverledenlijst";
-/// CoopHistoryGoldenDeliverCount,Gouden eieren
-"43" = "CoopHistoryGoldenDeliverCount,Gouden eieren";
-/// CoopHistoryHighestScore,Topscore
-"44" = "CoopHistoryHighestScore,Topscore";
-/// CoopHistoryHistory,Werkverleden
-"45" = "CoopHistoryHistory,Werkverleden";
-/// CoopHistoryJobPoint,Je punten
-"46" = "CoopHistoryJobPoint,Je punten";
-/// CoopHistoryJobRatio,Beoordeling
-"47" = "CoopHistoryJobRatio,Beoordeling";
-/// CoopHistoryKumaPointCard,Beer & Co-spaarkaart
-"48" = "CoopHistoryKumaPointCard,Beer & Co-spaarkaart";
-/// CoopHistoryLatest,Laatste klus
-"49" = "CoopHistoryLatest,Laatste klus";
-/// CoopHistoryLimitedPoint,Speciale bonuspunten
-"50" = "CoopHistoryLimitedPoint,Speciale bonuspunten";
-/// CoopHistoryMonthlyReward,Uitrusting voor deze maand
-"51" = "CoopHistoryMonthlyReward,Uitrusting voor deze maand";
-/// CoopHistoryNext,Volgende klus
-"52" = "CoopHistoryNext,Volgende klus";
-/// CoopHistoryNoData,Er is geen werkverleden.
-"53" = "CoopHistoryNoData,Er is geen werkverleden.";
-/// CoopHistoryNotAvailable,Werkverleden niet beschikbaar
-"54" = "CoopHistoryNotAvailable,Werkverleden niet beschikbaar";
-/// CoopHistoryNotAvailableDescription,Alleen de 50 meest recente klussen zijn beschikbaar.
-"55" = "CoopHistoryNotAvailableDescription,Alleen de 50 meest recente klussen zijn beschikbaar.";
-/// CoopHistoryNotDefeated,Mislukt...
-"56" = "CoopHistoryNotDefeated,Mislukt...";
-/// CoopHistoryPlayCount,Klussen
-"57" = "CoopHistoryPlayCount,Klussen";
-/// CoopHistoryPrevious,Vorige klus
-"58" = "CoopHistoryPrevious,Vorige klus";
-/// CoopHistoryPrivate,Privéklus
-"59" = "CoopHistoryPrivate,Privéklus";
-/// CoopHistoryRecruit,Personeel gezocht!
-"60" = "CoopHistoryRecruit,Personeel gezocht!";
-/// CoopHistoryRecruitDescription,Een klus voor beginners, energieke en positieve personen die bereid zijn alles op alles te zetten. Hard werk, maar goedbetaald!
-"61" = "CoopHistoryRecruitDescription,Een klus voor beginners, energieke en positieve personen die bereid zijn alles op alles te zetten. Hard werk, maar goedbetaald!";
-/// CoopHistoryRecruitTag1,Het is een makkie!
-"62" = "CoopHistoryRecruitTag1,Het is een makkie!";
-/// CoopHistoryRecruitTag2,Verzamel visseneieren: leuk en lucratief!
-"63" = "CoopHistoryRecruitTag2,Verzamel visseneieren: leuk en lucratief!";
-/// CoopHistoryRecruitTitle,Visseneieren verzamelen past bij jou!
-"64" = "CoopHistoryRecruitTitle,Visseneieren verzamelen past bij jou!";
-/// CoopHistoryRegular,Normale klus
-"65" = "CoopHistoryRegular,Normale klus";
-/// CoopHistoryRegularPoint,Huidig aantal punten
-"66" = "CoopHistoryRegularPoint,Huidig aantal punten";
-/// CoopHistoryRescueCount,Geredde teamgenoten
-"67" = "CoopHistoryRescueCount,Geredde teamgenoten";
-/// CoopHistoryRescuedCount,Aantal keer gered
-"68" = "CoopHistoryRescuedCount,Aantal keer gered";
-/// CoopHistoryScale,Visschubben
-"69" = "CoopHistoryScale,Visschubben";
-/// CoopHistoryScaleBronze,Bronzen schub
-"70" = "CoopHistoryScaleBronze,Bronzen schub";
-/// CoopHistoryScaleGold,Gouden schub
-"71" = "CoopHistoryScaleGold,Gouden schub";
-/// CoopHistoryScaleSilver,Zilveren schub
-"72" = "CoopHistoryScaleSilver,Zilveren schub";
-/// CoopHistoryScore,Klusscore
-"73" = "CoopHistoryScore,Klusscore";
-/// CoopHistorySeeSchedule,Periode
-"74" = "CoopHistorySeeSchedule,Periode";
-/// CoopHistorySmellMeter,Salmometer
-"75" = "CoopHistorySmellMeter,Salmometer";
-/// CoopHistorySupplyWeapon,Beschikbare wapens
-"76" = "CoopHistorySupplyWeapon,Beschikbare wapens";
-/// CoopHistoryTeamContest,Bedrijfseitje
-"77" = "CoopHistoryTeamContest,Bedrijfseitje";
-/// CoopHistoryTitle,Salmon Run
-"78" = "CoopHistoryTitle,Salmon Run";
-/// CoopHistoryTotalPoint,Puntentotaal
-"79" = "CoopHistoryTotalPoint,Puntentotaal";
-/// CoopHistoryWave,e golf
-"80" = "CoopHistoryWave,e golf";
-/// CoopHistoryWaveLevel0,Eb
-"81" = "CoopHistoryWaveLevel0,Eb";
-/// CoopHistoryWaveLevel1,Normaal
-"82" = "CoopHistoryWaveLevel1,Normaal";
-/// CoopHistoryWaveLevel2,Vloed
-"83" = "CoopHistoryWaveLevel2,Vloed";
-/// ErrorBackToHome,Naar het beginscherm
-"84" = "ErrorBackToHome,Naar het beginscherm";
-/// ErrorCurrentlyNotAvailable,Momenteel niet beschikbaar. Probeer het later nog eens.
-"85" = "ErrorCurrentlyNotAvailable,Momenteel niet beschikbaar. Probeer het later nog eens.";
-/// ErrorError,Fout
-"86" = "ErrorError,Fout";
-/// ErrorErrorOccurred,Er is een fout opgetreden.
-"87" = "ErrorErrorOccurred,Er is een fout opgetreden.";
-/// ErrorErrorReopen,Het laden is mislukt.
-"88" = "ErrorErrorReopen,Het laden is mislukt.";
-/// ErrorMaintenanceDescription,Er wordt momenteel onderhoud gepleegd aan de server. Probeer het later nog eens.
-"89" = "ErrorMaintenanceDescription,Er wordt momenteel onderhoud gepleegd aan de server. Probeer het later nog eens.";
-/// ErrorMaintenanceTitle,Enige tijd geduld
-"90" = "ErrorMaintenanceTitle,Enige tijd geduld";
-/// ErrorNetworkNotAvailable,Het laden is mislukt. Controleer je internetverbinding en probeer het opnieuw.
-"91" = "ErrorNetworkNotAvailable,Het laden is mislukt. Controleer je internetverbinding en probeer het opnieuw.";
-/// ErrorNotSupported,SplatNet 3 kan niet worden weergegeven. Controleer je internetverbinding en probeer het later opnieuw. Als het probleem niet is verholpen, controleer dan of je de meest recente versie van je internetbrowser gebruikt. Als je dit bericht blijft zien, dan wordt SplatNet 3 mogelijk niet ondersteund door je huidige apparaat of met je huidige instellingen.
-"92" = "ErrorNotSupported,SplatNet 3 kan niet worden weergegeven. Controleer je internetverbinding en probeer het later opnieuw. Als het probleem niet is verholpen, controleer dan of je de meest recente versie van je internetbrowser gebruikt. Als je dit bericht blijft zien, dan wordt SplatNet 3 mogelijk niet ondersteund door je huidige apparaat of met je huidige instellingen.";
-/// ErrorReload,Opnieuw laden
-"93" = "ErrorReload,Opnieuw laden";
-/// RecordLatestPlayed,Als laatste gespeeld
-"94" = "RecordLatestPlayed,Als laatste gespeeld";
-/// RecordLatestUsed,Meest gebruikt
-"95" = "RecordLatestUsed,Meest gebruikt";
-/// RecordMain,Hoofdwapen
-"96" = "RecordMain,Hoofdwapen";
-/// RecordNextSkillLevel,Volgende niveau
-"97" = "RecordNextSkillLevel,Volgende niveau";
-/// RecordSkillLevel,Wapenniveau
-"98" = "RecordSkillLevel,Wapenniveau";
-/// RecordSort,Sorteren
-"99" = "RecordSort,Sorteren";
-/// RecordSpecial,Speciaal wapen
-"100" = "RecordSpecial,Speciaal wapen";
-/// RecordStageRecord,Levels
-"101" = "RecordStageRecord,Levels";
-/// RecordStageRecordAppName,Levels
-"102" = "RecordStageRecordAppName,Levels";
-/// RecordSub,Subwapen
-"103" = "RecordSub,Subwapen";
-/// RecordTitle,Statistieken
-"104" = "RecordTitle,Statistieken";
-/// RecordTurfPoint,Geverfde grond
-"105" = "RecordTurfPoint,Geverfde grond";
-/// RecordUnplayedStages,Niet gespeelde levels
-"106" = "RecordUnplayedStages,Niet gespeelde levels";
-/// RecordUnusedWeapons,Nog niet gekregen
-"107" = "RecordUnusedWeapons,Nog niet gekregen";
-/// RecordVibes,Versheid
-"108" = "RecordVibes,Versheid";
-/// RecordWeaponRecord,Wapens
-"109" = "RecordWeaponRecord,Wapens";
-/// RecordWeaponRecordAppName,Wapens
-"110" = "RecordWeaponRecordAppName,Wapens";
-/// RecordWinCount,Overwinningen
-"111" = "RecordWinCount,Overwinningen";
-/// SettingsAcknowledgements,Copyrights
-"112" = "SettingsAcknowledgements,Copyrights";
-/// SettingsAppName,Instellingen
-"113" = "SettingsAppName,Instellingen";
-/// SettingsCredits,Credits
-"114" = "SettingsCredits,Credits";
-/// SettingsExpansionPass,Informatie over de uitbreidingspas
-"115" = "SettingsExpansionPass,Informatie over de uitbreidingspas";
-/// SettingsTitle,Instellingen
-"116" = "SettingsTitle,Instellingen";
-/// StageScheduleBankara,Chaosgevecht
-"117" = "StageScheduleBankara,Chaosgevecht";
-/// StageScheduleBankaraOpen,Open
-"118" = "StageScheduleBankaraOpen,Open";
-/// StageScheduleBankaraOpenChallenge,Sessie
-"119" = "StageScheduleBankaraOpenChallenge,Sessie";
-/// StageScheduleCoop,Salmon Run
-"120" = "StageScheduleCoop,Salmon Run";
-/// StageScheduleCoopCurrentPeriodStart,NU GEOPEND!
-"121" = "StageScheduleCoopCurrentPeriodStart,NU GEOPEND!";
-/// StageScheduleEvent,Eventgevecht
-"122" = "StageScheduleEvent,Eventgevecht";
-/// StageScheduleEventCurrentSchedule,Nu
-"123" = "StageScheduleEventCurrentSchedule,Nu";
-/// StageScheduleEventFuture,Daarna
-"124" = "StageScheduleEventFuture,Daarna";
-/// StageScheduleEventHolding,Nu bezig!
-"125" = "StageScheduleEventHolding,Nu bezig!";
-/// StageScheduleEventNext,Volgende keer
-"126" = "StageScheduleEventNext,Volgende keer";
-/// StageScheduleEventNextSchedule,Volgende
-"127" = "StageScheduleEventNextSchedule,Volgende";
-/// StageScheduleEventNoData,Er zijn momenteel geen eventgevechten gepland.
-"128" = "StageScheduleEventNoData,Er zijn momenteel geen eventgevechten gepland.";
-/// StageScheduleEventUnknownData,???
-"129" = "StageScheduleEventUnknownData,???";
-/// StageScheduleEventmatch,Event nu bezig!
-"130" = "StageScheduleEventmatch,Event nu bezig!";
-/// StageScheduleFuture,Daarna
-"131" = "StageScheduleFuture,Daarna";
-/// StageScheduleGuideOpenBrowser,Hierdoor opent zich een nieuw browservenster.
-"132" = "StageScheduleGuideOpenBrowser,Hierdoor opent zich een nieuw browservenster.";
-/// StageScheduleNext,Volgende
-"133" = "StageScheduleNext,Volgende";
-/// StageScheduleNoticeBigrun,Er komt een Big Run aan!
-"134" = "StageScheduleNoticeBigrun,Er komt een Big Run aan!";
-/// StageScheduleNoticeLimited,Bedrijfseitje aangekondigd!
-"135" = "StageScheduleNoticeLimited,Bedrijfseitje aangekondigd!";
-/// StageScheduleNowClosed,Splatfest!
-"136" = "StageScheduleNowClosed,Splatfest!";
-/// StageScheduleOpen,Nu
-"137" = "StageScheduleOpen,Nu";
-/// StageScheduleOpenBigrun,Big Run aan de gang!
-"138" = "StageScheduleOpenBigrun,Big Run aan de gang!";
-/// StageScheduleOpenLimited,Bedrijfseitje direct beschikbaar!
-"139" = "StageScheduleOpenLimited,Bedrijfseitje direct beschikbaar!";
-/// StageSchedulePrivate,Privégevecht
-"140" = "StageSchedulePrivate,Privégevecht";
-/// StageScheduleRecruit,Big Run aan de gang! Beer & Co zoekt werknemers! ()
-"141" = "StageScheduleRecruit,Big Run aan de gang! Beer & Co zoekt werknemers! ()";
-/// StageScheduleRecruitTeamContest,Je kunt nu op een bedrijfseitje. Verzamel een paar collega's en eh... veel plezier?
-"142" = "StageScheduleRecruitTeamContest,Je kunt nu op een bedrijfseitje. Verzamel een paar collega's en eh... veel plezier?";
-/// StageScheduleRegular,Standaardgevecht
-"143" = "StageScheduleRegular,Standaardgevecht";
-/// StageScheduleRules,Regels bekijken
-"144" = "StageScheduleRules,Regels bekijken";
-/// StageScheduleSeeAllRules,Uitgebreide regels bekijken
-"145" = "StageScheduleSeeAllRules,Uitgebreide regels bekijken";
-/// StageScheduleSuppliedWeaponRandom,Willekeurig
-"146" = "StageScheduleSuppliedWeaponRandom,Willekeurig";
-/// StageScheduleSuppliedWeapons,Beschikbare wapens
-"147" = "StageScheduleSuppliedWeapons,Beschikbare wapens";
-/// StageScheduleTitle,Levelschema
-"148" = "StageScheduleTitle,Levelschema";
-/// StageScheduleWinRateByRules,Winpercentage per vechtstijl
-"149" = "StageScheduleWinRateByRules,Winpercentage per vechtstijl";
-/// StageScheduleXmatch,X-gevecht
-"150" = "StageScheduleXmatch,X-gevecht";
-/// CommonAbout,Over
-"151" = "CommonAbout,Over";
-/// RecordActualValue,Werkelijk
-"152" = "RecordActualValue,Werkelijk";
-/// CommonAppearances,Verschijningen
-"153" = "CommonAppearances,Verschijningen";
-/// CommonApplication,Toepassing
-"154" = "CommonApplication,Toepassing";
-/// RecordAverageScore,Gemiddeld
-"155" = "RecordAverageScore,Gemiddeld";
-/// CommonBackupResults,Back-up
-"156" = "CommonBackupResults,Back-up";
-/// CommonBackupCompress,Comprimeren (ZIP)
-"157" = "CommonBackupCompress,Comprimeren (ZIP)";
-/// CommonBackupMessage,Back-up database
-"158" = "CommonBackupMessage,Back-up database";
-/// CommonBackupPlain,Gewoon (JSON)
-"159" = "CommonBackupPlain,Gewoon (JSON)";
-/// CommonAppCredit,Krediet
-"160" = "CommonAppCredit,Krediet";
-/// CommonDarkMode,Donkere modus
-"161" = "CommonDarkMode,Donkere modus";
-/// CommonDataManagement,Gegevensbeheer
-"162" = "CommonDataManagement,Gegevensbeheer";
-/// CoopHistoryDeathCount,Geredde telling
-"163" = "CoopHistoryDeathCount,Geredde telling";
-/// CoopHistoryDefeatedCount,Verslagen telling
-"164" = "CoopHistoryDefeatedCount,Verslagen telling";
-/// CoopHistoryEstimatedValue,Geschat
-"165" = "CoopHistoryEstimatedValue,Geschat";
-/// CoopHistoryEventClearRatio,Duidelijke verhouding
-"166" = "CoopHistoryEventClearRatio,Duidelijke verhouding";
-/// CoopHistoryEventFrequency,Gebeurtenis frequentie
-"167" = "CoopHistoryEventFrequency,Gebeurtenis frequentie";
-/// CommonFAQ,FAQ
-"168" = "CommonFAQ,FAQ";
-/// CommonGamingMode,Gaming modus
-"169" = "CommonGamingMode,Gaming modus";
-/// CoopHistoryGradeId,Rang
-"170" = "CoopHistoryGradeId,Rang";
-/// CoopHistoryGradePoint,Grade point
-"171" = "CoopHistoryGradePoint,Grade point";
-/// CoopHistoryHighestRecord,Hoogste
-"172" = "CoopHistoryHighestRecord,Hoogste";
-/// CommonIkaring2,SplatNet2
-"173" = "CommonIkaring2,SplatNet2";
-/// CommonInvalid,Ongeldig
-"174" = "CommonInvalid,Ongeldig";
-/// CommonLanguages,Talen
-"175" = "CommonLanguages,Talen";
-/// CommonShareLogMessage,Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.
-"176" = "CommonShareLogMessage,Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.";
-/// CommonShareLog,Logboeken delen
-"177" = "CommonShareLog,Logboeken delen";
-/// CommonLogSize,Logbestanden
-"178" = "CommonLogSize,Logbestanden";
-/// CommonMyPage,Mijn pagina
-"179" = "CommonMyPage,Mijn pagina";
-/// CoopHistoryPlayerCrew,Bemanning
-"180" = "CoopHistoryPlayerCrew,Bemanning";
-/// CoopHistoryPlayerYou,Jij
-"181" = "CoopHistoryPlayerYou,Jij";
-/// CommonPrivacyPolicy,Privacybeleid
-"182" = "CommonPrivacyPolicy,Privacybeleid";
-/// CommonRequestForm,Formulier
-"183" = "CommonRequestForm,Formulier";
-/// CommonRequestFormBug,Bug
-"184" = "CommonRequestFormBug,Bug";
-/// CommonRequestFormContent,Inhoud
-"185" = "CommonRequestFormContent,Inhoud";
-/// CommonRequestFormEnhancement,Verbetering
-"186" = "CommonRequestFormEnhancement,Verbetering";
-/// CommonRequestFormFeature,Functie
-"187" = "CommonRequestFormFeature,Functie";
-/// CommonRequestFormTitle,Titel
-"188" = "CommonRequestFormTitle,Titel";
-/// CommonRequestFormType,Type
-"189" = "CommonRequestFormType,Type";
-/// CommonRequsetFormSubmit,Dien  in
-"190" = "CommonRequsetFormSubmit,Dien  in";
-/// CommonRestore,Herstel
-"191" = "CommonRestore,Herstel";
-/// CommonRestoreMessage,Selecteer bestand om te herstellen in Bestanden app.
-"192" = "CommonRestoreMessage,Selecteer bestand om te herstellen in Bestanden app.";
-/// CoopHistoryResultsCount,Resultaten tellen
-"193" = "CoopHistoryResultsCount,Resultaten tellen";
-/// CommonRoleDebuger,Debug
-"194" = "CommonRoleDebuger,Debug";
-/// CommonRoleDeveloper,Ontwikkelaar
-"195" = "CommonRoleDeveloper,Ontwikkelaar";
-/// CommonRoleTester,Testor
-"196" = "CommonRoleTester,Testor";
-/// CommonRoleTranslator,Vertaler
-"197" = "CommonRoleTranslator,Vertaler";
-/// CommonSaveToPhotoLibrary,Met succes opgeslagen
-"198" = "CommonSaveToPhotoLibrary,Met succes opgeslagen";
-/// CommonScheduleSync,Synchronisatie schema
-"199" = "CommonScheduleSync,Synchronisatie schema";
-/// CommonScheduleSyncMessage,Agenda ophalen van de server.
-"200" = "CommonScheduleSyncMessage,Agenda ophalen van de server.";
-/// CommonSignIn,Aanmelden
-"201" = "CommonSignIn,Aanmelden";
-/// CommonSignOut,Afmelden
-"202" = "CommonSignOut,Afmelden";
-/// CommonSignOutSuccessfully,Succesvol afmelden
-"203" = "CommonSignOutSuccessfully,Succesvol afmelden";
-/// CommonSignOutMessage,Ontkoppel het Nintendo Switch-account.
-"204" = "CommonSignOutMessage,Ontkoppel het Nintendo Switch-account.";
-/// CommonSourceCode,Broncode
-"205" = "CommonSourceCode,Broncode";
-/// CoopHistorySuppliedRatio,Geleverde verhouding
-"206" = "CoopHistorySuppliedRatio,Geleverde verhouding";
-/// CommonUpdateRequired,App update is vereist
-"207" = "CommonUpdateRequired,App update is vereist";
-/// CommonUserData,Gebruikersgegevens
-"208" = "CommonUserData,Gebruikersgegevens";
-/// CommonValid,Geldig
-"209" = "CommonValid,Geldig";
-/// CommonAppVersion,Versie
-"210" = "CommonAppVersion,Versie";
-/// CommonWipeLog,Logboeken wissen
-"211" = "CommonWipeLog,Logboeken wissen";
-/// CommonWipeLogMessage,Veeg alle logboeken weg.
-"212" = "CommonWipeLogMessage,Veeg alle logboeken weg.";
-/// CommonWipeResults,Veegresultaten
-"213" = "CommonWipeResults,Veegresultaten";
-/// CommonWipeResultsMessage,Wis alle gegevens.
-"214" = "CommonWipeResultsMessage,Wis alle gegevens.";
-/// CommonWriteReview,Schrijf een review
-"215" = "CommonWriteReview,Schrijf een review";
-/// CoopHistoryOverallRecord,Algemeen
-"216" = "CoopHistoryOverallRecord,Algemeen";
-/// CommonGoldenEggs,Gouden eieren
-"217" = "CommonGoldenEggs,Gouden eieren";
-/// CommonPowerEggs,Power Eggs
-"218" = "CommonPowerEggs,Power Eggs";
-/// CommonOverview,Overzicht
-"219" = "CommonOverview,Overzicht";
-/// CommonLocale,nl-NL
-"220" = "CommonLocale,nl-NL";
-/// CommonLanguageCode,0
-"221" = "CommonLanguageCode,0";
-/// CommonDatabase,Database
-"222" = "CommonDatabase,Database";
-/// CommonXProductVersion,X-ProductVersion
-"223" = "CommonXProductVersion,X-ProductVersion";
-/// CommonXWebViewVer,X-WebViewVer
-"224" = "CommonXWebViewVer,X-WebViewVer";
-/// CommonUpload,uploaden
-"225" = "CommonUpload,uploaden";
-/// CommonCreditDevelop,Ontwikkelaar
-"226" = "CommonCreditDevelop,Ontwikkelaar";
-/// CommonCreditTest,Tester
-"227" = "CommonCreditTest,Tester";
-/// CommonCreditDesign,UI/UX ontwerp
-"228" = "CommonCreditDesign,UI/UX ontwerp";
-/// CoopHistoryTeamPointCard,Teampuntenkaart
-"229" = "CoopHistoryTeamPointCard,Teampuntenkaart";
-/// CoopHistoryUseEstimatedValue,Gebruik geschatte waarden
-"230" = "CoopHistoryUseEstimatedValue,Gebruik geschatte waarden";
-/// CommonUseSecureSession,Gebruik empirische sessie
-"231" = "CommonUseSecureSession,Gebruik empirische sessie";
-/// CommonCheckInReward,Beloningen
-"232" = "CommonCheckInReward,Beloningen";
-/// CommonGetCheckInReward,Krijg alle beloningen voor QR-codes.
-"233" = "CommonGetCheckInReward,Krijg alle beloningen voor QR-codes.";
-/// CoopHistoryTeamResult,Team
-"234" = "CoopHistoryTeamResult,Team";
-/// CoopHistoryPlayerResult,Jij
-"235" = "CoopHistoryPlayerResult,Jij";
-/// CoopHistoryCrewAvgResult,Avg van de bemanning
-"236" = "CoopHistoryCrewAvgResult,Avg van de bemanning";
-/// CoopHistoryCrewResult,Bemanning
-"237" = "CoopHistoryCrewResult,Bemanning";
-/// CoopHistoryWaveResult,Golven
-"238" = "CoopHistoryWaveResult,Golven";
-/// CoopHistoryHighestScore,Max
-"239" = "CoopHistoryHighestScore,Max";
-/// CoopHistoryAverageScore,Gemiddeld
-"240" = "CoopHistoryAverageScore,Gemiddeld";
-/// CommonRequirediOS16,Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.
-"241" = "CommonRequirediOS16,Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.";
-/// CommonRequiredSignIn,Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.
-"242" = "CommonRequiredSignIn,Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.";
-/// CommonRestoreSuccessMessage,Succesvolle resultaten herstellen
-"243" = "CommonRestoreSuccessMessage,Succesvolle resultaten herstellen";
-/// CommonRestoreFailureMessage,Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.
-"244" = "CommonRestoreFailureMessage,Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.";
-/// CommonResultsCount,Resultaten
-"245" = "CommonResultsCount,Resultaten";
-/// CommonDeveloperAnswer,Antwoord van de ontwikkelaar
-"246" = "CommonDeveloperAnswer,Antwoord van de ontwikkelaar";
-/// CommonMinimumVersion,Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.
-"247" = "CommonMinimumVersion,Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.";
-/// ErrorInvalidSignature,Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.
-"248" = "ErrorInvalidSignature,Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.";
-/// CommonUseSystemTheme,Apparaatinstellingen gebruiken
-"249" = "CommonUseSystemTheme,Apparaatinstellingen gebruiken";
-/// CommonLicense,Licentie
-"250" = "CommonLicense,Licentie";
+/// Annuleren
+"CommonCancel" = "Annuleren";
+/// Schelpenstrijd
+"CommonClamBlitz" = "Schelpenstrijd";
+/// Sluiten
+"CommonClose" = "Sluiten";
+/// Big Run
+"CommonCoopBigRun" = "Big Run";
+/// Bedrijfseitje
+"CommonCoopTeamContest" = "Bedrijfseitje";
+/// QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"CommonCopyrightQrCode" = "QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// Oké
+"CommonDecide" = "Oké";
+/// Downloaden
+"CommonDownload" = "Downloaden";
+/// Sluiten
+"CommonEnd" = "Sluiten";
+/// Onbekend
+"CommonGearPowerBlank" = "Onbekend";
+/// Beginscherm
+"CommonHome" = "Beginscherm";
+/// SplatNet 3
+"CommonIkaring3" = "SplatNet 3";
+/// Bezig met laden...
+"CommonNowLoading" = "Bezig met laden...";
+/// Trekken om bij te werken
+"CommonPullToRefresh" = "Trekken om bij te werken";
+/// Bazookarper
+"CommonRainmaker" = "Bazookarper";
+/// Delen
+"CommonShare" = "Delen";
+/// Spetterzone
+"CommonSplatZones" = "Spetterzone";
+/// Torentwist
+"CommonTowerControl" = "Torentwist";
+/// Driekleurengevecht
+"CommonTricolor" = "Driekleurengevecht";
+/// Driekleurengevecht
+"CommonTricolorMatch" = "Driekleurengevecht";
+/// Grondoorlog
+"CommonTurfWar" = "Grondoorlog";
+/// Onbekend
+"CommonWpnNotfound" = "Onbekend";
+/// Verschenen
+"CoopHistoryAvailable" = "Verschenen";
+/// Bestreden Salmonster
+"CoopHistoryAvailableBoss" = "Bestreden Salmonster";
+/// Doorstane golven (gemiddeld)
+"CoopHistoryAverageClearWaves" = "Doorstane golven (gemiddeld)";
+/// Big Run
+"CoopHistoryBigrun" = "Big Run";
+/// Brons
+"CoopHistoryBigrunBronze" = "Brons";
+/// Goud
+"CoopHistoryBigrunGold" = "Goud";
+/// Zilver
+"CoopHistoryBigrunSilver" = "Zilver";
+/// Bonus
+"CoopHistoryBonus" = "Bonus";
+/// Salmonster gesignaleerd!
+"CoopHistoryBossAvailable" = "Salmonster gesignaleerd!";
+/// Gelukt!
+"CoopHistoryClear" = "Gelukt!";
+/// Risiconiveau
+"CoopHistoryDangerRatio" = "Risiconiveau";
+/// Salmonster-aanval!
+"CoopHistoryDefeatBoss" = "Salmonster-aanval!";
+/// Verslagen Salmonsters
+"CoopHistoryDefeatBossCount" = "Verslagen Salmonsters";
+/// Overwonnen!
+"CoopHistoryDefeated" = "Overwonnen!";
+/// Verslagen Salmonietenbazen
+"CoopHistoryDefeatedEnemies" = "Verslagen Salmonietenbazen";
+/// Het getal tussen haakjes is het aantal vijanden dat door jou is uitgeschakeld.
+"CoopHistoryDefeatedEnemiesGuide" = "Het getal tussen haakjes is het aantal vijanden dat door jou is uitgeschakeld.";
+/// Visseneieren
+"CoopHistoryDeliverCount" = "Visseneieren";
+/// Salmonietenbazen
+"CoopHistoryEnemy" = "Salmonietenbazen";
+/// Extra golf
+"CoopHistoryExWave" = "Extra golf";
+/// Helaas...
+"CoopHistoryFailure" = "Helaas...";
+/// Terug naar werkverledenlijst
+"CoopHistoryGoToStats" = "Terug naar werkverledenlijst";
+/// Gouden eieren
+"CoopHistoryGoldenDeliverCount" = "Gouden eieren";
+/// Topscore
+"CoopHistoryHighestScore" = "Topscore";
+/// Werkverleden
+"CoopHistoryHistory" = "Werkverleden";
+/// Je punten
+"CoopHistoryJobPoint" = "Je punten";
+/// Beoordeling
+"CoopHistoryJobRatio" = "Beoordeling";
+/// Beer & Co-spaarkaart
+"CoopHistoryKumaPointCard" = "Beer & Co-spaarkaart";
+/// Laatste klus
+"CoopHistoryLatest" = "Laatste klus";
+/// Speciale bonuspunten
+"CoopHistoryLimitedPoint" = "Speciale bonuspunten";
+/// Uitrusting voor deze maand
+"CoopHistoryMonthlyReward" = "Uitrusting voor deze maand";
+/// Volgende klus
+"CoopHistoryNext" = "Volgende klus";
+/// Er is geen werkverleden.
+"CoopHistoryNoData" = "Er is geen werkverleden.";
+/// Werkverleden niet beschikbaar
+"CoopHistoryNotAvailable" = "Werkverleden niet beschikbaar";
+/// Alleen de 50 meest recente klussen zijn beschikbaar.
+"CoopHistoryNotAvailableDescription" = "Alleen de 50 meest recente klussen zijn beschikbaar.";
+/// Mislukt...
+"CoopHistoryNotDefeated" = "Mislukt...";
+/// Klussen
+"CoopHistoryPlayCount" = "Klussen";
+/// Vorige klus
+"CoopHistoryPrevious" = "Vorige klus";
+/// Privéklus
+"CoopHistoryPrivate" = "Privéklus";
+/// Personeel gezocht!
+"CoopHistoryRecruit" = "Personeel gezocht!";
+/// Een klus voor beginners, energieke en positieve personen die bereid zijn alles op alles te zetten. Hard werk, maar goedbetaald!
+"CoopHistoryRecruitDescription" = "Een klus voor beginners, energieke en positieve personen die bereid zijn alles op alles te zetten. Hard werk, maar goedbetaald!";
+/// Het is een makkie!
+"CoopHistoryRecruitTag1" = "Het is een makkie!";
+/// Verzamel visseneieren: leuk en lucratief!
+"CoopHistoryRecruitTag2" = "Verzamel visseneieren: leuk en lucratief!";
+/// Visseneieren verzamelen past bij jou!
+"CoopHistoryRecruitTitle" = "Visseneieren verzamelen past bij jou!";
+/// Normale klus
+"CoopHistoryRegular" = "Normale klus";
+/// Huidig aantal punten
+"CoopHistoryRegularPoint" = "Huidig aantal punten";
+/// Geredde teamgenoten
+"CoopHistoryRescueCount" = "Geredde teamgenoten";
+/// Aantal keer gered
+"CoopHistoryRescuedCount" = "Aantal keer gered";
+/// Visschubben
+"CoopHistoryScale" = "Visschubben";
+/// Bronzen schub
+"CoopHistoryScaleBronze" = "Bronzen schub";
+/// Gouden schub
+"CoopHistoryScaleGold" = "Gouden schub";
+/// Zilveren schub
+"CoopHistoryScaleSilver" = "Zilveren schub";
+/// Klusscore
+"CoopHistoryScore" = "Klusscore";
+/// Periode
+"CoopHistorySeeSchedule" = "Periode";
+/// Salmometer
+"CoopHistorySmellMeter" = "Salmometer";
+/// Beschikbare wapens
+"CoopHistorySupplyWeapon" = "Beschikbare wapens";
+/// Bedrijfseitje
+"CoopHistoryTeamContest" = "Bedrijfseitje";
+/// Salmon Run
+"CoopHistoryTitle" = "Salmon Run";
+/// Puntentotaal
+"CoopHistoryTotalPoint" = "Puntentotaal";
+/// e golf
+"CoopHistoryWave" = "e golf";
+/// Eb
+"CoopHistoryWaveLevel0" = "Eb";
+/// Normaal
+"CoopHistoryWaveLevel1" = "Normaal";
+/// Vloed
+"CoopHistoryWaveLevel2" = "Vloed";
+/// Naar het beginscherm
+"ErrorBackToHome" = "Naar het beginscherm";
+/// Momenteel niet beschikbaar. Probeer het later nog eens.
+"ErrorCurrentlyNotAvailable" = "Momenteel niet beschikbaar. Probeer het later nog eens.";
+/// Fout
+"ErrorError" = "Fout";
+/// Er is een fout opgetreden.
+"ErrorErrorOccurred" = "Er is een fout opgetreden.";
+/// Het laden is mislukt.
+"ErrorErrorReopen" = "Het laden is mislukt.";
+/// Er wordt momenteel onderhoud gepleegd aan de server. Probeer het later nog eens.
+"ErrorMaintenanceDescription" = "Er wordt momenteel onderhoud gepleegd aan de server. Probeer het later nog eens.";
+/// Enige tijd geduld
+"ErrorMaintenanceTitle" = "Enige tijd geduld";
+/// Het laden is mislukt. Controleer je internetverbinding en probeer het opnieuw.
+"ErrorNetworkNotAvailable" = "Het laden is mislukt. Controleer je internetverbinding en probeer het opnieuw.";
+/// SplatNet 3 kan niet worden weergegeven. Controleer je internetverbinding en probeer het later opnieuw. Als het probleem niet is verholpen, controleer dan of je de meest recente versie van je internetbrowser gebruikt. Als je dit bericht blijft zien, dan wordt SplatNet 3 mogelijk niet ondersteund door je huidige apparaat of met je huidige instellingen.
+"ErrorNotSupported" = "SplatNet 3 kan niet worden weergegeven. Controleer je internetverbinding en probeer het later opnieuw. Als het probleem niet is verholpen, controleer dan of je de meest recente versie van je internetbrowser gebruikt. Als je dit bericht blijft zien, dan wordt SplatNet 3 mogelijk niet ondersteund door je huidige apparaat of met je huidige instellingen.";
+/// Opnieuw laden
+"ErrorReload" = "Opnieuw laden";
+/// Als laatste gespeeld
+"RecordLatestPlayed" = "Als laatste gespeeld";
+/// Meest gebruikt
+"RecordLatestUsed" = "Meest gebruikt";
+/// Hoofdwapen
+"RecordMain" = "Hoofdwapen";
+/// Volgende niveau
+"RecordNextSkillLevel" = "Volgende niveau";
+/// Wapenniveau
+"RecordSkillLevel" = "Wapenniveau";
+/// Sorteren
+"RecordSort" = "Sorteren";
+/// Speciaal wapen
+"RecordSpecial" = "Speciaal wapen";
+/// Levels
+"RecordStageRecord" = "Levels";
+/// Levels
+"RecordStageRecordAppName" = "Levels";
+/// Subwapen
+"RecordSub" = "Subwapen";
+/// Statistieken
+"RecordTitle" = "Statistieken";
+/// Geverfde grond
+"RecordTurfPoint" = "Geverfde grond";
+/// Niet gespeelde levels
+"RecordUnplayedStages" = "Niet gespeelde levels";
+/// Nog niet gekregen
+"RecordUnusedWeapons" = "Nog niet gekregen";
+/// Versheid
+"RecordVibes" = "Versheid";
+/// Wapens
+"RecordWeaponRecord" = "Wapens";
+/// Wapens
+"RecordWeaponRecordAppName" = "Wapens";
+/// Overwinningen
+"RecordWinCount" = "Overwinningen";
+/// Copyrights
+"SettingsAcknowledgements" = "Copyrights";
+/// Instellingen
+"SettingsAppName" = "Instellingen";
+/// Credits
+"SettingsCredits" = "Credits";
+/// Informatie over de uitbreidingspas
+"SettingsExpansionPass" = "Informatie over de uitbreidingspas";
+/// Instellingen
+"SettingsTitle" = "Instellingen";
+/// Chaosgevecht
+"StageScheduleBankara" = "Chaosgevecht";
+/// Open
+"StageScheduleBankaraOpen" = "Open";
+/// Sessie
+"StageScheduleBankaraOpenChallenge" = "Sessie";
+/// Salmon Run
+"StageScheduleCoop" = "Salmon Run";
+/// NU GEOPEND!
+"StageScheduleCoopCurrentPeriodStart" = "NU GEOPEND!";
+/// Eventgevecht
+"StageScheduleEvent" = "Eventgevecht";
+/// Nu
+"StageScheduleEventCurrentSchedule" = "Nu";
+/// Daarna
+"StageScheduleEventFuture" = "Daarna";
+/// Nu bezig!
+"StageScheduleEventHolding" = "Nu bezig!";
+/// Volgende keer
+"StageScheduleEventNext" = "Volgende keer";
+/// Volgende
+"StageScheduleEventNextSchedule" = "Volgende";
+/// Er zijn momenteel geen eventgevechten gepland.
+"StageScheduleEventNoData" = "Er zijn momenteel geen eventgevechten gepland.";
+/// ???
+"StageScheduleEventUnknownData" = "???";
+/// Event nu bezig!
+"StageScheduleEventmatch" = "Event nu bezig!";
+/// Daarna
+"StageScheduleFuture" = "Daarna";
+/// Hierdoor opent zich een nieuw browservenster.
+"StageScheduleGuideOpenBrowser" = "Hierdoor opent zich een nieuw browservenster.";
+/// Volgende
+"StageScheduleNext" = "Volgende";
+/// Er komt een Big Run aan!
+"StageScheduleNoticeBigrun" = "Er komt een Big Run aan!";
+/// Bedrijfseitje aangekondigd!
+"StageScheduleNoticeLimited" = "Bedrijfseitje aangekondigd!";
+/// Splatfest!
+"StageScheduleNowClosed" = "Splatfest!";
+/// Nu
+"StageScheduleOpen" = "Nu";
+/// Big Run aan de gang!
+"StageScheduleOpenBigrun" = "Big Run aan de gang!";
+/// Bedrijfseitje direct beschikbaar!
+"StageScheduleOpenLimited" = "Bedrijfseitje direct beschikbaar!";
+/// Privégevecht
+"StageSchedulePrivate" = "Privégevecht";
+/// Big Run aan de gang! Beer & Co zoekt werknemers! ()
+"StageScheduleRecruit" = "Big Run aan de gang! Beer & Co zoekt werknemers! ()";
+/// Je kunt nu op een bedrijfseitje. Verzamel een paar collega's en eh... veel plezier?
+"StageScheduleRecruitTeamContest" = "Je kunt nu op een bedrijfseitje. Verzamel een paar collega's en eh... veel plezier?";
+/// Standaardgevecht
+"StageScheduleRegular" = "Standaardgevecht";
+/// Regels bekijken
+"StageScheduleRules" = "Regels bekijken";
+/// Uitgebreide regels bekijken
+"StageScheduleSeeAllRules" = "Uitgebreide regels bekijken";
+/// Willekeurig
+"StageScheduleSuppliedWeaponRandom" = "Willekeurig";
+/// Beschikbare wapens
+"StageScheduleSuppliedWeapons" = "Beschikbare wapens";
+/// Levelschema
+"StageScheduleTitle" = "Levelschema";
+/// Winpercentage per vechtstijl
+"StageScheduleWinRateByRules" = "Winpercentage per vechtstijl";
+/// X-gevecht
+"StageScheduleXmatch" = "X-gevecht";
+/// Over
+"CommonAbout" = "Over";
+/// Werkelijk
+"RecordActualValue" = "Werkelijk";
+/// Verschijningen
+"CommonAppearances" = "Verschijningen";
+/// Toepassing
+"CommonApplication" = "Toepassing";
+/// Gemiddeld
+"RecordAverageScore" = "Gemiddeld";
+/// Back-up
+"CommonBackupResults" = "Back-up";
+/// Comprimeren (ZIP)
+"CommonBackupCompress" = "Comprimeren (ZIP)";
+/// Back-up database
+"CommonBackupMessage" = "Back-up database";
+/// Gewoon (JSON)
+"CommonBackupPlain" = "Gewoon (JSON)";
+/// Krediet
+"CommonAppCredit" = "Krediet";
+/// Donkere modus
+"CommonDarkMode" = "Donkere modus";
+/// Gegevensbeheer
+"CommonDataManagement" = "Gegevensbeheer";
+/// Geredde telling
+"CoopHistoryDeathCount" = "Geredde telling";
+/// Verslagen telling
+"CoopHistoryDefeatedCount" = "Verslagen telling";
+/// Geschat
+"CoopHistoryEstimatedValue" = "Geschat";
+/// Duidelijke verhouding
+"CoopHistoryEventClearRatio" = "Duidelijke verhouding";
+/// Gebeurtenis frequentie
+"CoopHistoryEventFrequency" = "Gebeurtenis frequentie";
+/// FAQ
+"CommonFAQ" = "FAQ";
+/// Gaming modus
+"CommonGamingMode" = "Gaming modus";
+/// Rang
+"CoopHistoryGradeId" = "Rang";
+/// Grade point
+"CoopHistoryGradePoint" = "Grade point";
+/// Hoogste
+"CoopHistoryHighestRecord" = "Hoogste";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// Ongeldig
+"CommonInvalid" = "Ongeldig";
+/// Talen
+"CommonLanguages" = "Talen";
+/// Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.
+"CommonShareLogMessage" = "Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.";
+/// Logboeken delen
+"CommonShareLog" = "Logboeken delen";
+/// Logbestanden
+"CommonLogSize" = "Logbestanden";
+/// Mijn pagina
+"CommonMyPage" = "Mijn pagina";
+/// Bemanning
+"CoopHistoryPlayerCrew" = "Bemanning";
+/// Jij
+"CoopHistoryPlayerYou" = "Jij";
+/// Privacybeleid
+"CommonPrivacyPolicy" = "Privacybeleid";
+/// Formulier
+"CommonRequestForm" = "Formulier";
+/// Bug
+"CommonRequestFormBug" = "Bug";
+/// Inhoud
+"CommonRequestFormContent" = "Inhoud";
+/// Verbetering
+"CommonRequestFormEnhancement" = "Verbetering";
+/// Functie
+"CommonRequestFormFeature" = "Functie";
+/// Titel
+"CommonRequestFormTitle" = "Titel";
+/// Type
+"CommonRequestFormType" = "Type";
+/// Dien  in
+"CommonRequsetFormSubmit" = "Dien  in";
+/// Herstel
+"CommonRestore" = "Herstel";
+/// Selecteer bestand om te herstellen in Bestanden app.
+"CommonRestoreMessage" = "Selecteer bestand om te herstellen in Bestanden app.";
+/// Resultaten tellen
+"CoopHistoryResultsCount" = "Resultaten tellen";
+/// Debug
+"CommonRoleDebuger" = "Debug";
+/// Ontwikkelaar
+"CommonRoleDeveloper" = "Ontwikkelaar";
+/// Testor
+"CommonRoleTester" = "Testor";
+/// Vertaler
+"CommonRoleTranslator" = "Vertaler";
+/// Met succes opgeslagen
+"CommonSaveToPhotoLibrary" = "Met succes opgeslagen";
+/// Synchronisatie schema
+"CommonScheduleSync" = "Synchronisatie schema";
+/// Agenda ophalen van de server.
+"CommonScheduleSyncMessage" = "Agenda ophalen van de server.";
+/// Aanmelden
+"CommonSignIn" = "Aanmelden";
+/// Afmelden
+"CommonSignOut" = "Afmelden";
+/// Succesvol afmelden
+"CommonSignOutSuccessfully" = "Succesvol afmelden";
+/// Ontkoppel het Nintendo Switch-account.
+"CommonSignOutMessage" = "Ontkoppel het Nintendo Switch-account.";
+/// Broncode
+"CommonSourceCode" = "Broncode";
+/// Geleverde verhouding
+"CoopHistorySuppliedRatio" = "Geleverde verhouding";
+/// App update is vereist
+"CommonUpdateRequired" = "App update is vereist";
+/// Gebruikersgegevens
+"CommonUserData" = "Gebruikersgegevens";
+/// Geldig
+"CommonValid" = "Geldig";
+/// Versie
+"CommonAppVersion" = "Versie";
+/// Logboeken wissen
+"CommonWipeLog" = "Logboeken wissen";
+/// Veeg alle logboeken weg.
+"CommonWipeLogMessage" = "Veeg alle logboeken weg.";
+/// Veegresultaten
+"CommonWipeResults" = "Veegresultaten";
+/// Wis alle gegevens.
+"CommonWipeResultsMessage" = "Wis alle gegevens.";
+/// Schrijf een review
+"CommonWriteReview" = "Schrijf een review";
+/// Algemeen
+"CoopHistoryOverallRecord" = "Algemeen";
+/// Gouden eieren
+"CommonGoldenEggs" = "Gouden eieren";
+/// Power Eggs
+"CommonPowerEggs" = "Power Eggs";
+/// Overzicht
+"CommonOverview" = "Overzicht";
+/// nl-NL
+"CommonLocale" = "nl-NL";
+/// 0
+"CommonLanguageCode" = "0";
+/// Database
+"CommonDatabase" = "Database";
+/// X-ProductVersion
+"CommonXProductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXWebViewVer" = "X-WebViewVer";
+/// uploaden
+"CommonUpload" = "uploaden";
+/// Ontwikkelaar
+"CommonCreditDevelop" = "Ontwikkelaar";
+/// Tester
+"CommonCreditTest" = "Tester";
+/// UI/UX ontwerp
+"CommonCreditDesign" = "UI/UX ontwerp";
+/// Teampuntenkaart
+"CoopHistoryTeamPointCard" = "Teampuntenkaart";
+/// Gebruik geschatte waarden
+"CoopHistoryUseEstimatedValue" = "Gebruik geschatte waarden";
+/// Gebruik empirische sessie
+"CommonUseSecureSession" = "Gebruik empirische sessie";
+/// Beloningen
+"CommonCheckInReward" = "Beloningen";
+/// Krijg alle beloningen voor QR-codes.
+"CommonGetCheckInReward" = "Krijg alle beloningen voor QR-codes.";
+/// Team
+"CoopHistoryTeamResult" = "Team";
+/// Jij
+"CoopHistoryPlayerResult" = "Jij";
+/// Avg van de bemanning
+"CoopHistoryCrewAvgResult" = "Avg van de bemanning";
+/// Bemanning
+"CoopHistoryCrewResult" = "Bemanning";
+/// Golven
+"CoopHistoryWaveResult" = "Golven";
+/// Max
+"CoopHistoryHighestScore" = "Max";
+/// Gemiddeld
+"CoopHistoryAverageScore" = "Gemiddeld";
+/// Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.
+"CommonRequirediOS16" = "Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.";
+/// Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.
+"CommonRequiredSignIn" = "Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.";
+/// Succesvolle resultaten herstellen
+"CommonRestoreSuccessMessage" = "Succesvolle resultaten herstellen";
+/// Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.
+"CommonRestoreFailureMessage" = "Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.";
+/// Resultaten
+"CommonResultsCount" = "Resultaten";
+/// Antwoord van de ontwikkelaar
+"CommonDeveloperAnswer" = "Antwoord van de ontwikkelaar";
+/// Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.
+"CommonMinimumVersion" = "Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.";
+/// Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.
+"ErrorInvalidSignature" = "Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.";
+/// Apparaatinstellingen gebruiken
+"CommonUseSystemTheme" = "Apparaatinstellingen gebruiken";
+/// Licentie
+"CommonLicense" = "Licentie";

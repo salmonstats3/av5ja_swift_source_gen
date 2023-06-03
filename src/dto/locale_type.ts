@@ -46,9 +46,9 @@ export const prefix_xcode = (locale: LocaleId): string => {
     case LocaleId.EUde:
       return "de";
     case LocaleId.EUen:
-      return "en";
+      return "en-GB";
     case LocaleId.USen:
-      return "en-US";
+      return "en";
     case LocaleId.EUes:
       return "es";
     case LocaleId.USes:
