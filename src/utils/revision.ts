@@ -61,7 +61,6 @@ export async function get_locale_bundles(): Promise<void> {
       const match: RegExpMatchArray | null = context.match(re);
 
       if (match !== null && match.length !== 0) {
-<<<<<<< HEAD
         const txt = match[1]
           .replace(/\\x([0-9A-Fa-f]{2})/g, (_, p1) => String.fromCharCode(parseInt('0x00' + p1, 16)))
           .replace(/\\u([0-9A-Fa-f]{4})/g, (_, p1) => String.fromCharCode(parseInt('0x' + p1, 16)))
@@ -70,7 +69,7 @@ export async function get_locale_bundles(): Promise<void> {
         const context: string = JSON.stringify(JSON.parse(txt), null, 2);
         // Save JSON and YAML
         createFile(context, `src/locales/${hash}/${locale.locale}.json`);
-        const objects: any = Object.fromEntries(
+        const objects = Object.fromEntries(
           Object.entries(camelcaseKeys(JSON.parse(context), { pascalCase: true }))
             .filter(
               ([key, value]) =>

@@ -23,8 +23,13 @@ export interface InternalType {
   label?: string;
 }
 
+<<<<<<< HEAD
 function calc_hash(key: string): string {
   const hash = createHash('sha256');
+=======
+export function calc_hash(key: string): string {
+  const hash = createHash("sha256");
+>>>>>>> 3fdc445 (rebase from master)
   hash.update(key);
   return hash.digest("hex");
 }
@@ -81,10 +86,17 @@ export class CoopEnemyInfo implements InternalType {
 }
 
 export class CoopSkinInfo implements InternalType {
+<<<<<<< HEAD
   @Expose({ name: 'Id' })
   id: number;
 
   @Expose({ name: '__RowId' })
+=======
+  @Expose({ name: "Id" })
+  id: number;
+
+  @Expose({ name: "__RowId" })
+>>>>>>> 3fdc445 (rebase from master)
   row_id: string;
 
   @Expose()
@@ -92,11 +104,19 @@ export class CoopSkinInfo implements InternalType {
   hash: string;
 }
 
+<<<<<<< HEAD
 export class WeaponInfo implements InternalType {
   @Expose({ name: 'Id' })
   id: number;
 
   @Expose({ name: 'Label' })
+=======
+export class WeaponInfoMain implements InternalType {
+  @Expose({ name: "Id" })
+  id: number;
+
+  @Expose({ name: "Label" })
+>>>>>>> 3fdc445 (rebase from master)
   label: string;
 
   @Expose({ name: "__RowId" })
@@ -137,14 +157,63 @@ export class WeaponInfo implements InternalType {
     if (!this.row_id.includes("_Coop")) {
       return false;
     }
+<<<<<<< HEAD
     const row_id: string = this.row_id.replace('_Coop', '_00');
     this.hash = calc_hash(row_id);
     this.id = this.id - 20000;
+=======
+    const row_id: string = this.row_id.replace("_Coop", "_00");
+    this.row_id = this.row_id.replace("_Coop", "");
+    this.label = this.label.replace("Coop", "");
+    this.hash = calc_hash(row_id);
+    if (!this.row_id.includes("Bear")) {
+      this.id = this.id - 20000;
+    }
+    return true;
+  }
+}
+
+export class WeaponInfoSpecial implements InternalType {
+  @Expose({ name: "Id" })
+  id: number;
+
+  @Expose({ name: "Label" })
+  label: string;
+
+  @Expose({ name: "__RowId" })
+  row_id: string;
+
+  @Expose()
+  @Transform((param) => calc_hash(param.obj.__RowId))
+  hash: string;
+
+  static get Random_Green(): InternalType {
+    return {
+      id: -1,
+      label: "緑ランダム",
+      row_id: "Random_Green",
+      hash: "473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1",
+    } as InternalType;
+  }
+
+  get for_coop(): boolean {
+    if (!this.row_id.includes("_Coop")) {
+      return false;
+    }
+    const row_id: string = this.row_id.replace("_Coop", "");
+    this.row_id = row_id;
+    this.label = this.label.replace("Coop", "");
+    this.hash = calc_hash(row_id);
+    if (this.id === 20001) {
+      this.id = 1;
+    }
+>>>>>>> 3fdc445 (rebase from master)
     return true;
   }
 }
 
 export class GearInfo implements InternalType {
+<<<<<<< HEAD
   @Expose({ name: 'Id' })
   id: number;
 
@@ -152,6 +221,15 @@ export class GearInfo implements InternalType {
   label: string;
 
   @Expose({ name: '__RowId' })
+=======
+  @Expose({ name: "Id" })
+  id: number;
+
+  @Expose({ name: "Label" })
+  label: string;
+
+  @Expose({ name: "__RowId" })
+>>>>>>> 3fdc445 (rebase from master)
   row_id: string;
 
   @Expose()
@@ -160,10 +238,17 @@ export class GearInfo implements InternalType {
 }
 
 export class NamePlateBgInfo implements InternalType {
+<<<<<<< HEAD
   @Expose({ name: 'Id' })
   id: number;
 
   @Expose({ name: '__RowId' })
+=======
+  @Expose({ name: "Id" })
+  id: number;
+
+  @Expose({ name: "__RowId" })
+>>>>>>> 3fdc445 (rebase from master)
   row_id: string;
 
   @Expose()
@@ -172,10 +257,17 @@ export class NamePlateBgInfo implements InternalType {
 }
 
 export class BadgeInfo implements InternalType {
+<<<<<<< HEAD
   @Expose({ name: 'Id' })
   id: number;
 
   @Expose({ name: 'Name' })
+=======
+  @Expose({ name: "Id" })
+  id: number;
+
+  @Expose({ name: "Name" })
+>>>>>>> 3fdc445 (rebase from master)
   row_id: string;
 
   @Expose()

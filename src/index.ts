@@ -14,9 +14,24 @@ console.log(response);
 await get_locale_bundles();
 
 Object.values(URLType).forEach(async (url) => {
+<<<<<<< HEAD
     const data: EnumURLType = await EnumURLType.from(url, Version.V400)
     const writer = new SwiftEnumWriter(data)
     Object.values(OutputType).forEach((type) => {
         writer.write(type)
     })
 })
+=======
+  const data: EnumURLType = await EnumURLType.from(url, Version.V400);
+  const writer = new SwiftEnumWriter(data);
+  Object.values(OutputType).forEach((type) => {
+    writer.write(type);
+  });
+});
+
+Object.keys(LocaleId).forEach(async (locale: string) => {
+    const url: string = `https://leanny.github.io/splat3/data/language/${locale}.json`
+    const translation: Translation = plainToInstance(Translation, await (await fetch(url)).json(), { excludeExtraneousValues: true })
+    translation.write(Object.values(LocaleId)[Object.keys(LocaleId).indexOf(locale)])
+})
+>>>>>>> 3fdc445 (rebase from master)
