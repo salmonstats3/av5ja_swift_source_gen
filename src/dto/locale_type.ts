@@ -18,21 +18,21 @@ export const LocaleKey = {
 } as const;
 
 export const LocaleId = {
-    EUde: 139,
-    EUen: 495,
-    USen: 0,
-    EUes: 888,
-    USes: 835,
-    USfr: 479,
-    EUfr: 277,
-    EUit: 448,
-    JPja: 31,
-    KRko: 401,
-    EUnl: 286,
-    EUru: 303,
-    CNzh: 153,
-    TWzh: 56,
-} as const
+  CNzh: 153,
+  EUde: 139,
+  EUen: 495,
+  EUes: 888,
+  EUfr: 277,
+  EUit: 448,
+  EUnl: 286,
+  EUru: 303,
+  JPja: 31,
+  KRko: 401,
+  TWzh: 56,
+  USen: 0,
+  USes: 835,
+  USfr: 479,
+} as const;
 
 /**
  * Xcode用の翻訳Localeのprefixを返す
@@ -78,25 +78,25 @@ export type LocaleId = (typeof LocaleId)[keyof typeof LocaleId];
 export type LocaleKey = (typeof LocaleKey)[keyof typeof LocaleKey];
 
 export class LocaleType {
-    @Expose({ name: "id" })
-    @Transform((param) => Object.values(LocaleId)[(Object.values(LocaleId) as number[]).indexOf(parseInt(param.value, 10))])
-    readonly id: LocaleId 
+  @Expose({ name: 'id' })
+  @Transform((param) => Object.values(LocaleId)[(Object.values(LocaleId) as number[]).indexOf(parseInt(param.value, 10))])
+  readonly id: LocaleId;
 
-    @Expose({ name: "hash" })
-    readonly hash: string
+  @Expose({ name: 'hash' })
+  readonly hash: string;
 
-    @Expose({ name: "locale" })
-    get locale(): LocaleKey {
-        return Object.values(LocaleKey)[(Object.values(LocaleId) as number[]).indexOf(this.id)]
-    }
+  @Expose({ name: 'locale' })
+  get locale(): LocaleKey {
+    return Object.values(LocaleKey)[(Object.values(LocaleId) as number[]).indexOf(this.id)];
+  }
 
-    get xcode(): string {
-        return prefix_xcode(this.id)
-    }
+  get xcode(): string {
+    return prefix_xcode(this.id);
+  }
 
-    get url(): string {
-        return this.id === LocaleId.USen
-        ? `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${this.hash}.js`
-        : `https://api.lp1.av5ja.srv.nintendo.net/static/js/${this.locale}.${this.hash}.chunk.js`
-    }
+  get url(): string {
+    return this.id === LocaleId.USen
+      ? `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${this.hash}.js`
+      : `https://api.lp1.av5ja.srv.nintendo.net/static/js/${this.locale}.${this.hash}.chunk.js`;
+  }
 }
