@@ -1,122 +1,424 @@
-// Bombarie
+/// Bombarie
 "SakeArtillery" = "Bombarie";
-// Moddermuil
+/// Moddermuil
 "SakeBigMouth" = "Moddermuil";
-// Moddermuil
+/// Moddermuil
 "SakeBigMouthGold" = "Moddermuil";
-// Salmokopter
+/// Salmokopter
 "SakeCopter" = "Salmokopter";
-// Dompelaar
+/// Dompelaar
 "SakeDolphin" = "Dompelaar";
-// Zammel
+/// Zammel
 "SakeFlyBagman" = "Zammel";
-// Salmonoliet
+/// Salmonoliet
 "SakePillar" = "Salmonoliet";
-// Horroboros
+/// Horroboros
 "SakeRope" = "Horroboros";
-// Dreksel
+/// Dreksel
 "SakeSaucer" = "Dreksel";
-// Snaai
+/// Snaai
 "Sakediver" = "Snaai";
-// Griller
+/// Griller
 "Sakedozer" = "Griller";
-// Staalkop
+/// Staalkop
 "SakelienBomber" = "Staalkop";
-// Salmodrone
+/// Salmodrone
 "SakelienCupTwins" = "Salmodrone";
-// Sumosalmo
+/// Sumosalmo
 "SakelienGiant" = "Sumosalmo";
-// Goldie
+/// Goldie
 "SakelienGolden" = "Goldie";
-// Sallog
+/// Sallog
 "SakelienLarge" = "Sallog";
-// Jutter
+/// Jutter
 "SakelienShield" = "Jutter";
-// Salmini
+/// Salmini
 "SakelienSmall" = "Salmini";
-// Staal
+/// Staal
 "SakelienSnake" = "Staal";
-// Salmo
+/// Salmo
 "SakelienStandard" = "Salmo";
-// Staaplo
+/// Staaplo
 "SakelienTower" = "Staaplo";
-// Miezer
+/// Miezer
 "Sakerocket" = "Miezer";
-// Uitzendkracht
+/// Uitzendkracht
 "Grade00" = "Uitzendkracht";
-// Parttimer
+/// Parttimer
 "Grade01" = "Parttimer";
-// Vaste kracht
+/// Vaste kracht
 "Grade02" = "Vaste kracht";
-// Leidinggevende
+/// Leidinggevende
 "Grade03" = "Leidinggevende";
-// Baas
+/// Baas
 "Grade04" = "Baas";
-// Baas +1
+/// Baas +1
 "Grade05" = "Baas +1";
-// Baas +2
+/// Baas +2
 "Grade06" = "Baas +2";
-// Baas +3
+/// Baas +3
 "Grade07" = "Baas +3";
-// Legende
+/// Legende
 "Grade08" = "Legende";
-// Uitzendkracht
+/// Uitzendkracht
 "GradeArbeiter00" = "Uitzendkracht";
-// Parttimer
+/// Parttimer
 "GradeArbeiter01" = "Parttimer";
-// Vaste kracht
+/// Vaste kracht
 "GradeArbeiter02" = "Vaste kracht";
-// Leidinggevende
+/// Leidinggevende
 "GradeArbeiter03" = "Leidinggevende";
-// Baas
+/// Baas
 "GradeArbeiter04" = "Baas";
-// Baas +1
+/// Baas +1
 "GradeArbeiter05" = "Baas +1";
-// Baas +2
+/// Baas +2
 "GradeArbeiter06" = "Baas +2";
-// Baas +3
+/// Baas +3
 "GradeArbeiter07" = "Baas +3";
-// Legende
+/// Legende
 "GradeArbeiter08" = "Legende";
-// Oranje werkkloffie
+/// Oranje werkkloffie
 "COP001" = "Oranje werkkloffie";
-// Groen werkkloffie
+/// Groen werkkloffie
 "COP002" = "Groen werkkloffie";
-// Geel werkkloffie
+/// Geel werkkloffie
 "COP003" = "Geel werkkloffie";
-// Roze werkkloffie
+/// Roze werkkloffie
 "COP004" = "Roze werkkloffie";
-// Blauw werkkloffie
+/// Blauw werkkloffie
 "COP005" = "Blauw werkkloffie";
-// Zwart werkkloffie
+/// Zwart werkkloffie
 "COP006" = "Zwart werkkloffie";
-// Wit werkkloffie
+/// Wit werkkloffie
 "COP007" = "Wit werkkloffie";
-// Oranje ploeterkloffie
+/// Oranje ploeterkloffie
 "COP008" = "Oranje ploeterkloffie";
-// Zwart ploeterkloffie
+/// Zwart ploeterkloffie
 "COP009" = "Zwart ploeterkloffie";
-// Geel ploeterkloffie
+/// Geel ploeterkloffie
 "COP010" = "Geel ploeterkloffie";
-// Bruin ploeterkloffie
+/// Bruin ploeterkloffie
 "COP011" = "Bruin ploeterkloffie";
-// Waterwonderland
+/// Waterwonderland
 "Carousel" = "Waterwonderland";
-// Kwikwi-krachtcentrale
+/// Kwikwi-krachtcentrale
 "Shakedent" = "Kwikwi-krachtcentrale";
-// Graattraject
+/// Graattraject
 "Shakehighway" = "Graattraject";
-// Wrak van de ms Grondel
+/// Wrak van de ms Grondel
 "Shakeship" = "Wrak van de ms Grondel";
-// Fort Ammoniet
+/// Fort Ammoniet
 "Shakespiral" = "Fort Ammoniet";
-// Salmonietendam
+/// Salmonietendam
 "Shakeup" = "Salmonietendam";
-// Baarsreservoir
+/// Baarsreservoir
 "Temple" = "Baarsreservoir";
-// Fort Ammoniet
+/// Fort Ammoniet
 "Tutorial" = "Fort Ammoniet";
-// ???
+/// ???
 "Unknown" = "???";
-// Koraalcampus
+/// Koraalcampus
 "Upland" = "Koraalcampus";
+/// Annuleren
+"CommonCancel" = "Annuleren";
+/// Schelpenstrijd
+"CommonClamBlitz" = "Schelpenstrijd";
+/// Sluiten
+"CommonClose" = "Sluiten";
+/// Big Run
+"CommonCoopBigRun" = "Big Run";
+/// Bedrijfseitje
+"CommonCoopTeamContest" = "Bedrijfseitje";
+/// QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"CommonCopyrightQrCode" = "QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// Oké
+"CommonDecide" = "Oké";
+/// Downloaden
+"CommonDownload" = "Downloaden";
+/// Sluiten
+"CommonEnd" = "Sluiten";
+/// Onbekend
+"CommonGearPowerBlank" = "Onbekend";
+/// Beginscherm
+"CommonHome" = "Beginscherm";
+/// SplatNet 3
+"CommonIkaring3" = "SplatNet 3";
+/// Bezig met laden...
+"CommonNowLoading" = "Bezig met laden...";
+/// Trekken om bij te werken
+"CommonPullToRefresh" = "Trekken om bij te werken";
+/// Bazookarper
+"CommonRainmaker" = "Bazookarper";
+/// Delen
+"CommonShare" = "Delen";
+/// Spetterzone
+"CommonSplatZones" = "Spetterzone";
+/// Torentwist
+"CommonTowerControl" = "Torentwist";
+/// Driekleurengevecht
+"CommonTricolor" = "Driekleurengevecht";
+/// Driekleurengevecht
+"CommonTricolorMatch" = "Driekleurengevecht";
+/// Grondoorlog
+"CommonTurfWar" = "Grondoorlog";
+/// Onbekend
+"CommonWpnNotfound" = "Onbekend";
+/// Verschenen
+"CoopHistoryAvailable" = "Verschenen";
+/// Bestreden Salmonster
+"CoopHistoryAvailableBoss" = "Bestreden Salmonster";
+/// Doorstane golven (gemiddeld)
+"CoopHistoryAverageClearWaves" = "Doorstane golven (gemiddeld)";
+/// Big Run
+"CoopHistoryBigrun" = "Big Run";
+/// Brons
+"CoopHistoryBigrunBronze" = "Brons";
+/// Goud
+"CoopHistoryBigrunGold" = "Goud";
+/// Zilver
+"CoopHistoryBigrunSilver" = "Zilver";
+/// Bonus
+"CoopHistoryBonus" = "Bonus";
+/// Salmonster gesignaleerd!
+"CoopHistoryBossAvailable" = "Salmonster gesignaleerd!";
+/// Gelukt!
+"CoopHistoryClear" = "Gelukt!";
+/// Risiconiveau
+"CoopHistoryDangerRatio" = "Risiconiveau";
+/// Salmonster-aanval!
+"CoopHistoryDefeatBoss" = "Salmonster-aanval!";
+/// Verslagen Salmonsters
+"CoopHistoryDefeatBossCount" = "Verslagen Salmonsters";
+/// Overwonnen!
+"CoopHistoryDefeated" = "Overwonnen!";
+/// Verslagen Salmonietenbazen
+"CoopHistoryDefeatedEnemies" = "Verslagen Salmonietenbazen";
+/// Het getal tussen haakjes is het aantal vijanden dat door jou is uitgeschakeld.
+"CoopHistoryDefeatedEnemiesGuide" = "Het getal tussen haakjes is het aantal vijanden dat door jou is uitgeschakeld.";
+/// Visseneieren
+"CoopHistoryDeliverCount" = "Visseneieren";
+/// Salmonietenbazen
+"CoopHistoryEnemy" = "Salmonietenbazen";
+/// Extra golf
+"CoopHistoryExWave" = "Extra golf";
+/// Helaas...
+"CoopHistoryFailure" = "Helaas...";
+/// Terug naar werkverledenlijst
+"CoopHistoryGoToStats" = "Terug naar werkverledenlijst";
+/// Gouden eieren
+"CoopHistoryGoldenDeliverCount" = "Gouden eieren";
+/// Topscore
+"CoopHistoryHighestScore" = "Topscore";
+/// Werkverleden
+"CoopHistoryHistory" = "Werkverleden";
+/// Je punten
+"CoopHistoryJobPoint" = "Je punten";
+/// Beoordeling
+"CoopHistoryJobRatio" = "Beoordeling";
+/// Beer & Co-spaarkaart
+"CoopHistoryKumaPointCard" = "Beer & Co-spaarkaart";
+/// Laatste klus
+"CoopHistoryLatest" = "Laatste klus";
+/// Speciale bonuspunten
+"CoopHistoryLimitedPoint" = "Speciale bonuspunten";
+/// Uitrusting voor deze maand
+"CoopHistoryMonthlyReward" = "Uitrusting voor deze maand";
+/// Volgende klus
+"CoopHistoryNext" = "Volgende klus";
+/// Er is geen werkverleden.
+"CoopHistoryNoData" = "Er is geen werkverleden.";
+/// Werkverleden niet beschikbaar
+"CoopHistoryNotAvailable" = "Werkverleden niet beschikbaar";
+/// Alleen de 50 meest recente klussen zijn beschikbaar.
+"CoopHistoryNotAvailableDescription" = "Alleen de 50 meest recente klussen zijn beschikbaar.";
+/// Mislukt...
+"CoopHistoryNotDefeated" = "Mislukt...";
+/// Klussen
+"CoopHistoryPlayCount" = "Klussen";
+/// Vorige klus
+"CoopHistoryPrevious" = "Vorige klus";
+/// Privéklus
+"CoopHistoryPrivate" = "Privéklus";
+/// Personeel gezocht!
+"CoopHistoryRecruit" = "Personeel gezocht!";
+/// Een klus voor beginners, energieke en positieve personen die bereid zijn alles op alles te zetten. Hard werk, maar goedbetaald!
+"CoopHistoryRecruitDescription" = "Een klus voor beginners, energieke en positieve personen die bereid zijn alles op alles te zetten. Hard werk, maar goedbetaald!";
+/// Het is een makkie!
+"CoopHistoryRecruitTag1" = "Het is een makkie!";
+/// Verzamel visseneieren: leuk en lucratief!
+"CoopHistoryRecruitTag2" = "Verzamel visseneieren: leuk en lucratief!";
+/// Visseneieren verzamelen past bij jou!
+"CoopHistoryRecruitTitle" = "Visseneieren verzamelen past bij jou!";
+/// Normale klus
+"CoopHistoryRegular" = "Normale klus";
+/// Huidig aantal punten
+"CoopHistoryRegularPoint" = "Huidig aantal punten";
+/// Geredde teamgenoten
+"CoopHistoryRescueCount" = "Geredde teamgenoten";
+/// Aantal keer gered
+"CoopHistoryRescuedCount" = "Aantal keer gered";
+/// Visschubben
+"CoopHistoryScale" = "Visschubben";
+/// Bronzen schub
+"CoopHistoryScaleBronze" = "Bronzen schub";
+/// Gouden schub
+"CoopHistoryScaleGold" = "Gouden schub";
+/// Zilveren schub
+"CoopHistoryScaleSilver" = "Zilveren schub";
+/// Klusscore
+"CoopHistoryScore" = "Klusscore";
+/// Periode
+"CoopHistorySeeSchedule" = "Periode";
+/// Salmometer
+"CoopHistorySmellMeter" = "Salmometer";
+/// Beschikbare wapens
+"CoopHistorySupplyWeapon" = "Beschikbare wapens";
+/// Bedrijfseitje
+"CoopHistoryTeamContest" = "Bedrijfseitje";
+/// Salmon Run
+"CoopHistoryTitle" = "Salmon Run";
+/// Puntentotaal
+"CoopHistoryTotalPoint" = "Puntentotaal";
+/// e golf
+"CoopHistoryWave" = "e golf";
+/// Eb
+"CoopHistoryWaveLevel0" = "Eb";
+/// Normaal
+"CoopHistoryWaveLevel1" = "Normaal";
+/// Vloed
+"CoopHistoryWaveLevel2" = "Vloed";
+/// Naar het beginscherm
+"ErrorBackToHome" = "Naar het beginscherm";
+/// Momenteel niet beschikbaar. Probeer het later nog eens.
+"ErrorCurrentlyNotAvailable" = "Momenteel niet beschikbaar. Probeer het later nog eens.";
+/// Fout
+"ErrorError" = "Fout";
+/// Er is een fout opgetreden.
+"ErrorErrorOccurred" = "Er is een fout opgetreden.";
+/// Het laden is mislukt.
+"ErrorErrorReopen" = "Het laden is mislukt.";
+/// Er wordt momenteel onderhoud gepleegd aan de server. Probeer het later nog eens.
+"ErrorMaintenanceDescription" = "Er wordt momenteel onderhoud gepleegd aan de server. Probeer het later nog eens.";
+/// Enige tijd geduld
+"ErrorMaintenanceTitle" = "Enige tijd geduld";
+/// Het laden is mislukt. Controleer je internetverbinding en probeer het opnieuw.
+"ErrorNetworkNotAvailable" = "Het laden is mislukt. Controleer je internetverbinding en probeer het opnieuw.";
+/// SplatNet 3 kan niet worden weergegeven. Controleer je internetverbinding en probeer het later opnieuw. Als het probleem niet is verholpen, controleer dan of je de meest recente versie van je internetbrowser gebruikt. Als je dit bericht blijft zien, dan wordt SplatNet 3 mogelijk niet ondersteund door je huidige apparaat of met je huidige instellingen.
+"ErrorNotSupported" = "SplatNet 3 kan niet worden weergegeven. Controleer je internetverbinding en probeer het later opnieuw. Als het probleem niet is verholpen, controleer dan of je de meest recente versie van je internetbrowser gebruikt. Als je dit bericht blijft zien, dan wordt SplatNet 3 mogelijk niet ondersteund door je huidige apparaat of met je huidige instellingen.";
+/// Opnieuw laden
+"ErrorReload" = "Opnieuw laden";
+/// Als laatste gespeeld
+"RecordLatestPlayed" = "Als laatste gespeeld";
+/// Meest gebruikt
+"RecordLatestUsed" = "Meest gebruikt";
+/// Hoofdwapen
+"RecordMain" = "Hoofdwapen";
+/// Volgende niveau
+"RecordNextSkillLevel" = "Volgende niveau";
+/// Wapenniveau
+"RecordSkillLevel" = "Wapenniveau";
+/// Sorteren
+"RecordSort" = "Sorteren";
+/// Speciaal wapen
+"RecordSpecial" = "Speciaal wapen";
+/// Levels
+"RecordStageRecord" = "Levels";
+/// Levels
+"RecordStageRecordAppName" = "Levels";
+/// Subwapen
+"RecordSub" = "Subwapen";
+/// Statistieken
+"RecordTitle" = "Statistieken";
+/// Geverfde grond
+"RecordTurfPoint" = "Geverfde grond";
+/// Niet gespeelde levels
+"RecordUnplayedStages" = "Niet gespeelde levels";
+/// Nog niet gekregen
+"RecordUnusedWeapons" = "Nog niet gekregen";
+/// Versheid
+"RecordVibes" = "Versheid";
+/// Wapens
+"RecordWeaponRecord" = "Wapens";
+/// Wapens
+"RecordWeaponRecordAppName" = "Wapens";
+/// Overwinningen
+"RecordWinCount" = "Overwinningen";
+/// Copyrights
+"SettingsAcknowledgements" = "Copyrights";
+/// Instellingen
+"SettingsAppName" = "Instellingen";
+/// Credits
+"SettingsCredits" = "Credits";
+/// Informatie over de uitbreidingspas
+"SettingsExpansionPass" = "Informatie over de uitbreidingspas";
+/// Instellingen
+"SettingsTitle" = "Instellingen";
+/// Chaosgevecht
+"StageScheduleBankara" = "Chaosgevecht";
+/// Open
+"StageScheduleBankaraOpen" = "Open";
+/// Sessie
+"StageScheduleBankaraOpenChallenge" = "Sessie";
+/// Salmon Run
+"StageScheduleCoop" = "Salmon Run";
+/// NU GEOPEND!
+"StageScheduleCoopCurrentPeriodStart" = "NU GEOPEND!";
+/// Eventgevecht
+"StageScheduleEvent" = "Eventgevecht";
+/// Nu
+"StageScheduleEventCurrentSchedule" = "Nu";
+/// Daarna
+"StageScheduleEventFuture" = "Daarna";
+/// Nu bezig!
+"StageScheduleEventHolding" = "Nu bezig!";
+/// Volgende keer
+"StageScheduleEventNext" = "Volgende keer";
+/// Volgende
+"StageScheduleEventNextSchedule" = "Volgende";
+/// Er zijn momenteel geen eventgevechten gepland.
+"StageScheduleEventNoData" = "Er zijn momenteel geen eventgevechten gepland.";
+/// ???
+"StageScheduleEventUnknownData" = "???";
+/// Event nu bezig!
+"StageScheduleEventmatch" = "Event nu bezig!";
+/// Daarna
+"StageScheduleFuture" = "Daarna";
+/// Hierdoor opent zich een nieuw browservenster.
+"StageScheduleGuideOpenBrowser" = "Hierdoor opent zich een nieuw browservenster.";
+/// Volgende
+"StageScheduleNext" = "Volgende";
+/// Er komt een Big Run aan!
+"StageScheduleNoticeBigrun" = "Er komt een Big Run aan!";
+/// Bedrijfseitje aangekondigd!
+"StageScheduleNoticeLimited" = "Bedrijfseitje aangekondigd!";
+/// Splatfest!
+"StageScheduleNowClosed" = "Splatfest!";
+/// Nu
+"StageScheduleOpen" = "Nu";
+/// Big Run aan de gang!
+"StageScheduleOpenBigrun" = "Big Run aan de gang!";
+/// Bedrijfseitje direct beschikbaar!
+"StageScheduleOpenLimited" = "Bedrijfseitje direct beschikbaar!";
+/// Privégevecht
+"StageSchedulePrivate" = "Privégevecht";
+/// Big Run aan de gang! Beer & Co zoekt werknemers! ()
+"StageScheduleRecruit" = "Big Run aan de gang! Beer & Co zoekt werknemers! ()";
+/// Je kunt nu op een bedrijfseitje. Verzamel een paar collega's en eh... veel plezier?
+"StageScheduleRecruitTeamContest" = "Je kunt nu op een bedrijfseitje. Verzamel een paar collega's en eh... veel plezier?";
+/// Standaardgevecht
+"StageScheduleRegular" = "Standaardgevecht";
+/// Regels bekijken
+"StageScheduleRules" = "Regels bekijken";
+/// Uitgebreide regels bekijken
+"StageScheduleSeeAllRules" = "Uitgebreide regels bekijken";
+/// Willekeurig
+"StageScheduleSuppliedWeaponRandom" = "Willekeurig";
+/// Beschikbare wapens
+"StageScheduleSuppliedWeapons" = "Beschikbare wapens";
+/// Levelschema
+"StageScheduleTitle" = "Levelschema";
+/// Winpercentage per vechtstijl
+"StageScheduleWinRateByRules" = "Winpercentage per vechtstijl";
+/// X-gevecht
+"StageScheduleXmatch" = "X-gevecht";

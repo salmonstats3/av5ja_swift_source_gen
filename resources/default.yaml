@@ -1498,3 +1498,33 @@ CommonLicense:
     ru: Лицензия
     zh-Hant: 許可證
     zh-Hans: 许可证
+DateTimeYearFormat:
+    ja: yyyy M/d HH:mm 
+    en-GB: dd/MM/yyyy HH:mm
+    en: M/d/yyyy h:mm a 
+    de: dd.MM/yyyy HH:mm
+    es: dd-MM-yyyy (HH:mm) 
+    es-MX: dd/MM/yyyy (HH:mm)  
+    fr-CA: dd-MM-yyyy HH:mm 
+    fr: dd/MM/yyyy HH:mm  
+    it: dd/MM/yyyy HH:mm 
+    ko: yyyy M/d HH:mm 
+    nl: dd-MM-yyyy HH:mm 
+    ru: dd.MM.yyyy, HH:mm 
+    zh-Hant: yyyy M/d HH:mm 
+    zh-Hans: yyyy M/d HH:mm 
+DateTimeFormat:
+    ja: M/d HH:mm 
+    en-GB: dd/MM HH:mm
+    en: MM/dd h:mm a
+    de: dd.MM HH:mm
+    es: dd-MM HH:mm 
+    es-MX: dd/MM HH:mm
+    fr-CA: dd-MM HH:mm 
+    fr: dd/MM HH:mm
+    it: dd/MM HH:mm
+    ko: M/d HH:mm 
+    nl: dd-MM HH:mm
+    ru: dd.MM, HH:mm
+    zh-Hant: M/d HH:mm 
+    zh-Hans: M/d HH:mm 

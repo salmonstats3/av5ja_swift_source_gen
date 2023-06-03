@@ -1,122 +1,424 @@
-// Artilleroide
+/// Artilleroide
 "SakeArtillery" = "Artilleroide";
-// Morrolodo
+/// Morrolodo
 "SakeBigMouth" = "Morrolodo";
-// Morrolodo
+/// Morrolodo
 "SakeBigMouthGold" = "Morrolodo";
-// Salmocóptero
+/// Salmocóptero
 "SakeCopter" = "Salmocóptero";
-// Chapotero
+/// Chapotero
 "SakeDolphin" = "Chapotero";
-// Rastrerón
+/// Rastrerón
 "SakeFlyBagman" = "Rastrerón";
-// Viga
+/// Viga
 "SakePillar" = "Viga";
-// Dragón
+/// Dragón
 "SakeRope" = "Dragón";
-// Tapaollas
+/// Tapaollas
 "SakeSaucer" = "Tapaollas";
-// Fáucex
+/// Fáucex
 "Sakediver" = "Fáucex";
-// Chaparrilla
+/// Chaparrilla
 "Sakedozer" = "Chaparrilla";
-// Ferroz
+/// Ferroz
 "SakelienBomber" = "Ferroz";
-// Drónido
+/// Drónido
 "SakelienCupTwins" = "Drónido";
-// Salmonote
+/// Salmonote
 "SakelienGiant" = "Salmonote";
-// Salmóreo
+/// Salmóreo
 "SakelienGolden" = "Salmóreo";
-// Escamacarra
+/// Escamacarra
 "SakelienLarge" = "Escamacarra";
-// Chatarrónido
+/// Chatarrónido
 "SakelienShield" = "Chatarrónido";
-// Cenutrín
+/// Cenutrín
 "SakelienSmall" = "Cenutrín";
-// Raspoide
+/// Raspoide
 "SakelienSnake" = "Raspoide";
-// Salmoche
+/// Salmoche
 "SakelienStandard" = "Salmoche";
-// Pilónido
+/// Pilónido
 "SakelienTower" = "Pilónido";
-// Barreno
+/// Barreno
 "Sakerocket" = "Barreno";
-// Aprendiz
+/// Aprendiz
 "Grade00" = "Aprendiz";
-// Subordinado
+/// Subordinado
 "Grade01" = "Subordinado";
-// Capataz
+/// Capataz
 "Grade02" = "Capataz";
-// Gerente
+/// Gerente
 "Grade03" = "Gerente";
-// Jefe
+/// Jefe
 "Grade04" = "Jefe";
-// Jefe +1
+/// Jefe +1
 "Grade05" = "Jefe +1";
-// Jefe +2
+/// Jefe +2
 "Grade06" = "Jefe +2";
-// Jefe +3
+/// Jefe +3
 "Grade07" = "Jefe +3";
-// Director
+/// Director
 "Grade08" = "Director";
-// Aprendiz eventual
+/// Aprendiz eventual
 "GradeArbeiter00" = "Aprendiz eventual";
-// Subordinado eventual
+/// Subordinado eventual
 "GradeArbeiter01" = "Subordinado eventual";
-// Capataz eventual
+/// Capataz eventual
 "GradeArbeiter02" = "Capataz eventual";
-// Gerente eventual
+/// Gerente eventual
 "GradeArbeiter03" = "Gerente eventual";
-// Jefe eventual
+/// Jefe eventual
 "GradeArbeiter04" = "Jefe eventual";
-// Jefe +1 eventual
+/// Jefe +1 eventual
 "GradeArbeiter05" = "Jefe +1 eventual";
-// Jefe +2 eventual
+/// Jefe +2 eventual
 "GradeArbeiter06" = "Jefe +2 eventual";
-// Jefe +3 eventual
+/// Jefe +3 eventual
 "GradeArbeiter07" = "Jefe +3 eventual";
-// Director eventual
+/// Director eventual
 "GradeArbeiter08" = "Director eventual";
-// Mono de trabajo naranja
+/// Mono de trabajo naranja
 "COP001" = "Mono de trabajo naranja";
-// Mono de trabajo verde
+/// Mono de trabajo verde
 "COP002" = "Mono de trabajo verde";
-// Mono de trabajo amarillo
+/// Mono de trabajo amarillo
 "COP003" = "Mono de trabajo amarillo";
-// Mono de trabajo rosa
+/// Mono de trabajo rosa
 "COP004" = "Mono de trabajo rosa";
-// Mono de trabajo azul
+/// Mono de trabajo azul
 "COP005" = "Mono de trabajo azul";
-// Mono de trabajo negro
+/// Mono de trabajo negro
 "COP006" = "Mono de trabajo negro";
-// Mono de trabajo blanco
+/// Mono de trabajo blanco
 "COP007" = "Mono de trabajo blanco";
-// Vadeador naranja
+/// Vadeador naranja
 "COP008" = "Vadeador naranja";
-// Vadeador negro
+/// Vadeador negro
 "COP009" = "Vadeador negro";
-// Vadeador amarillo
+/// Vadeador amarillo
 "COP010" = "Vadeador amarillo";
-// Vadeador marrón
+/// Vadeador marrón
 "COP011" = "Vadeador marrón";
-// Pirañalandia
+/// Pirañalandia
 "Carousel" = "Pirañalandia";
-// Hidrocentral Pilpil
+/// Hidrocentral Pilpil
 "Shakedent" = "Hidrocentral Pilpil";
-// Salmopista
+/// Salmopista
 "Shakehighway" = "Salmopista";
-// Bahía Deriva
+/// Bahía Deriva
 "Shakeship" = "Bahía Deriva";
-// Fuerte Espiral
+/// Fuerte Espiral
 "Shakespiral" = "Fuerte Espiral";
-// Presa salmónida
+/// Presa salmónida
 "Shakeup" = "Presa salmónida";
-// Cisterna Navajuela
+/// Cisterna Navajuela
 "Temple" = "Cisterna Navajuela";
-// Fuerte Espiral
+/// Fuerte Espiral
 "Tutorial" = "Fuerte Espiral";
-// (?)
+/// (?)
 "Unknown" = "(?)";
-// Instituto Coralino
+/// Instituto Coralino
 "Upland" = "Instituto Coralino";
+/// Cancelar
+"CommonCancel" = "Cancelar";
+/// Asalto almeja
+"CommonClamBlitz" = "Asalto almeja";
+/// Cerrar
+"CommonClose" = "Cerrar";
+/// Big Run
+"CommonCoopBigRun" = "Big Run";
+/// Alianza alevínica
+"CommonCoopTeamContest" = "Alianza alevínica";
+/// QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"CommonCopyrightQrCode" = "QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// Aceptar
+"CommonDecide" = "Aceptar";
+/// Descargar
+"CommonDownload" = "Descargar";
+/// Cerrar
+"CommonEnd" = "Cerrar";
+/// Desconocido
+"CommonGearPowerBlank" = "Desconocido";
+/// Inicio
+"CommonHome" = "Inicio";
+/// SplatNet 3
+"CommonIkaring3" = "SplatNet 3";
+/// Cargando...
+"CommonNowLoading" = "Cargando...";
+/// Arrastra para actualizar
+"CommonPullToRefresh" = "Arrastra para actualizar";
+/// Pez dorado
+"CommonRainmaker" = "Pez dorado";
+/// Compartir
+"CommonShare" = "Compartir";
+/// Pintazonas
+"CommonSplatZones" = "Pintazonas";
+/// Torre
+"CommonTowerControl" = "Torre";
+/// Combate tricolor
+"CommonTricolor" = "Combate tricolor";
+/// Pugna tricolor
+"CommonTricolorMatch" = "Pugna tricolor";
+/// Territorial
+"CommonTurfWar" = "Territorial";
+/// Desconocido
+"CommonWpnNotfound" = "Desconocido";
+/// Apariciones
+"CoopHistoryAvailable" = "Apariciones";
+/// Encuentro con el gran jefe
+"CoopHistoryAvailableBoss" = "Encuentro con el gran jefe";
+/// Media de ofensivas superadas
+"CoopHistoryAverageClearWaves" = "Media de ofensivas superadas";
+/// Big Run
+"CoopHistoryBigrun" = "Big Run";
+/// Bronce
+"CoopHistoryBigrunBronze" = "Bronce";
+/// Oro
+"CoopHistoryBigrunGold" = "Oro";
+/// Plata
+"CoopHistoryBigrunSilver" = "Plata";
+/// Recomp.
+"CoopHistoryBonus" = "Recomp.";
+/// ¡Gran jefe a la vista!
+"CoopHistoryBossAvailable" = "¡Gran jefe a la vista!";
+/// ¡Bravo!
+"CoopHistoryClear" = "¡Bravo!";
+/// Nivel de riesgo
+"CoopHistoryDangerRatio" = "Nivel de riesgo";
+/// ¡Gran jefe al ataque!
+"CoopHistoryDefeatBoss" = "¡Gran jefe al ataque!";
+/// Grandes jefes eliminados
+"CoopHistoryDefeatBossCount" = "Grandes jefes eliminados";
+/// ¡Victoria!
+"CoopHistoryDefeated" = "¡Victoria!";
+/// Grandes salmónidos eliminados
+"CoopHistoryDefeatedEnemies" = "Grandes salmónidos eliminados";
+/// * Entre paréntesis se indican los que tú has eliminado.
+"CoopHistoryDefeatedEnemiesGuide" = "* Entre paréntesis se indican los que tú has eliminado.";
+/// Caviar rojo
+"CoopHistoryDeliverCount" = "Caviar rojo";
+/// Gran salmónido
+"CoopHistoryEnemy" = "Gran salmónido";
+/// Ofensiva extra
+"CoopHistoryExWave" = "Ofensiva extra";
+/// Lástima...
+"CoopHistoryFailure" = "Lástima...";
+/// Volver a los resultados de tareas
+"CoopHistoryGoToStats" = "Volver a los resultados de tareas";
+/// Alevines
+"CoopHistoryGoldenDeliverCount" = "Alevines";
+/// Récord
+"CoopHistoryHighestScore" = "Récord";
+/// Resultados de tareas
+"CoopHistoryHistory" = "Resultados de tareas";
+/// Puntos
+"CoopHistoryJobPoint" = "Puntos";
+/// Tasa de valoración
+"CoopHistoryJobRatio" = "Tasa de valoración";
+/// Puntos de Don Oso
+"CoopHistoryKumaPointCard" = "Puntos de Don Oso";
+/// Más reciente
+"CoopHistoryLatest" = "Más reciente";
+/// Puntos eventuales actuales
+"CoopHistoryLimitedPoint" = "Puntos eventuales actuales";
+/// Objeto del mes
+"CoopHistoryMonthlyReward" = "Objeto del mes";
+/// Siguiente
+"CoopHistoryNext" = "Siguiente";
+/// No hay resultados de tareas.
+"CoopHistoryNoData" = "No hay resultados de tareas.";
+/// Resultados de tareas no disponibles
+"CoopHistoryNotAvailable" = "Resultados de tareas no disponibles";
+/// Solo los 50 registros más recientes están disponibles.
+"CoopHistoryNotAvailableDescription" = "Solo los 50 registros más recientes están disponibles.";
+/// No pudo ser...
+"CoopHistoryNotDefeated" = "No pudo ser...";
+/// Encargos completados
+"CoopHistoryPlayCount" = "Encargos completados";
+/// Anterior
+"CoopHistoryPrevious" = "Anterior";
+/// Trabajo privado
+"CoopHistoryPrivate" = "Trabajo privado";
+/// ¡Se busca personal!
+"CoopHistoryRecruit" = "¡Se busca personal!";
+/// Una labor apta incluso para gente sin experiencia. ¡Basta con tener energía y actitud positiva para ganar escamas de forma cómoda!
+"CoopHistoryRecruitDescription" = "Una labor apta incluso para gente sin experiencia. ¡Basta con tener energía y actitud positiva para ganar escamas de forma cómoda!";
+/// ¡Es fácil!
+"CoopHistoryRecruitTag1" = "¡Es fácil!";
+/// Recolección de caviar rojo
+"CoopHistoryRecruitTag2" = "Recolección de caviar rojo";
+/// ¡Reunir caviar es lo tuyo!
+"CoopHistoryRecruitTitle" = "¡Reunir caviar es lo tuyo!";
+/// Encargo normal
+"CoopHistoryRegular" = "Encargo normal";
+/// Saldo actual
+"CoopHistoryRegularPoint" = "Saldo actual";
+/// Compañeros rescatados
+"CoopHistoryRescueCount" = "Compañeros rescatados";
+/// Número de rescates
+"CoopHistoryRescuedCount" = "Número de rescates";
+/// Escamas
+"CoopHistoryScale" = "Escamas";
+/// Escama de bronce
+"CoopHistoryScaleBronze" = "Escama de bronce";
+/// Escama de oro
+"CoopHistoryScaleGold" = "Escama de oro";
+/// Escama de plata
+"CoopHistoryScaleSilver" = "Escama de plata";
+/// Rendim.
+"CoopHistoryScore" = "Rendim.";
+/// Ver calendario
+"CoopHistorySeeSchedule" = "Ver calendario";
+/// salmómetro
+"CoopHistorySmellMeter" = "salmómetro";
+/// Armas asignadas
+"CoopHistorySupplyWeapon" = "Armas asignadas";
+/// Alianza alevínica
+"CoopHistoryTeamContest" = "Alianza alevínica";
+/// Salmon Run
+"CoopHistoryTitle" = "Salmon Run";
+/// Puntos totales
+"CoopHistoryTotalPoint" = "Puntos totales";
+/// Ofensiva
+"CoopHistoryWave" = "Ofensiva";
+/// Marea baja
+"CoopHistoryWaveLevel0" = "Marea baja";
+/// Normal
+"CoopHistoryWaveLevel1" = "Normal";
+/// Marea alta
+"CoopHistoryWaveLevel2" = "Marea alta";
+/// Volver al inicio
+"ErrorBackToHome" = "Volver al inicio";
+/// No disponible actualmente. Inténtalo de nuevo más tarde.
+"ErrorCurrentlyNotAvailable" = "No disponible actualmente. Inténtalo de nuevo más tarde.";
+/// Error
+"ErrorError" = "Error";
+/// Se ha producido un error.
+"ErrorErrorOccurred" = "Se ha producido un error.";
+/// No se han podido cargar los datos.
+"ErrorErrorReopen" = "No se han podido cargar los datos.";
+/// Se están efectuando labores de mantenimiento en el servidor. Inténtalo de nuevo más tarde.
+"ErrorMaintenanceDescription" = "Se están efectuando labores de mantenimiento en el servidor. Inténtalo de nuevo más tarde.";
+/// Espera unos instantes...
+"ErrorMaintenanceTitle" = "Espera unos instantes...";
+/// No se han podido cargar los datos. Comprueba tu conexión a internet y vuelve a intentarlo.
+"ErrorNetworkNotAvailable" = "No se han podido cargar los datos. Comprueba tu conexión a internet y vuelve a intentarlo.";
+/// No se puede mostrar SplatNet 3. Comprueba tu conexión a internet y vuelve a intentarlo más tarde. Si el problema no se soluciona, comprueba que tu navegador de internet esté actualizado a la versión más reciente. Si sigue mostrándose este mensaje, es posible que SplatNet 3 no sea compatible con tu dispositivo o con los ajustes actuales.
+"ErrorNotSupported" = "No se puede mostrar SplatNet 3. Comprueba tu conexión a internet y vuelve a intentarlo más tarde. Si el problema no se soluciona, comprueba que tu navegador de internet esté actualizado a la versión más reciente. Si sigue mostrándose este mensaje, es posible que SplatNet 3 no sea compatible con tu dispositivo o con los ajustes actuales.";
+/// Actualizar
+"ErrorReload" = "Actualizar";
+/// Más reciente
+"RecordLatestPlayed" = "Más reciente";
+/// Frecuentes
+"RecordLatestUsed" = "Frecuentes";
+/// Principal
+"RecordMain" = "Principal";
+/// Siguiente nivel
+"RecordNextSkillLevel" = "Siguiente nivel";
+/// Destreza
+"RecordSkillLevel" = "Destreza";
+/// Ordenar
+"RecordSort" = "Ordenar";
+/// Especial
+"RecordSpecial" = "Especial";
+/// Escenarios
+"RecordStageRecord" = "Escenarios";
+/// Escenarios
+"RecordStageRecordAppName" = "Escenarios";
+/// Secundaria
+"RecordSub" = "Secundaria";
+/// Estadísticas
+"RecordTitle" = "Estadísticas";
+/// Sup. entintada
+"RecordTurfPoint" = "Sup. entintada";
+/// Sin estrenar
+"RecordUnplayedStages" = "Sin estrenar";
+/// No obtenidas aún
+"RecordUnusedWeapons" = "No obtenidas aún";
+/// Evaluación
+"RecordVibes" = "Evaluación";
+/// Historial de armas
+"RecordWeaponRecord" = "Historial de armas";
+/// Armas
+"RecordWeaponRecordAppName" = "Armas";
+/// Victorias
+"RecordWinCount" = "Victorias";
+/// Derechos de autor
+"SettingsAcknowledgements" = "Derechos de autor";
+/// Ajustes
+"SettingsAppName" = "Ajustes";
+/// Créditos
+"SettingsCredits" = "Créditos";
+/// Ir a la información del pase de expansión
+"SettingsExpansionPass" = "Ir a la información del pase de expansión";
+/// Ajustes
+"SettingsTitle" = "Ajustes";
+/// Combate caótico
+"StageScheduleBankara" = "Combate caótico";
+/// Informal
+"StageScheduleBankaraOpen" = "Informal";
+/// Formal
+"StageScheduleBankaraOpenChallenge" = "Formal";
+/// Salmon Run
+"StageScheduleCoop" = "Salmon Run";
+/// ¡En curso!
+"StageScheduleCoopCurrentPeriodStart" = "¡En curso!";
+/// Combate evento
+"StageScheduleEvent" = "Combate evento";
+/// Actualmente
+"StageScheduleEventCurrentSchedule" = "Actualmente";
+/// Más adelante
+"StageScheduleEventFuture" = "Más adelante";
+/// ¡En curso!
+"StageScheduleEventHolding" = "¡En curso!";
+/// A continuación
+"StageScheduleEventNext" = "A continuación";
+/// Próximamente
+"StageScheduleEventNextSchedule" = "Próximamente";
+/// Calendario sin determinar
+"StageScheduleEventNoData" = "Calendario sin determinar";
+/// (?)
+"StageScheduleEventUnknownData" = "(?)";
+/// ¡Evento en curso!
+"StageScheduleEventmatch" = "¡Evento en curso!";
+/// Posteriores
+"StageScheduleFuture" = "Posteriores";
+/// Se abrirá una nueva ventana del navegador.
+"StageScheduleGuideOpenBrowser" = "Se abrirá una nueva ventana del navegador.";
+/// Próximo
+"StageScheduleNext" = "Próximo";
+/// ¡Big Run a la vista!
+"StageScheduleNoticeBigrun" = "¡Big Run a la vista!";
+/// ¡Anuncio de alianza alevínica!
+"StageScheduleNoticeLimited" = "¡Anuncio de alianza alevínica!";
+/// ¡Festival en curso!
+"StageScheduleNowClosed" = "¡Festival en curso!";
+/// Actual
+"StageScheduleOpen" = "Actual";
+/// ¡Big Run en marcha!
+"StageScheduleOpenBigrun" = "¡Big Run en marcha!";
+/// ¡Alianza alevínica disponible!
+"StageScheduleOpenLimited" = "¡Alianza alevínica disponible!";
+/// Combate privado
+"StageSchedulePrivate" = "Combate privado";
+/// ¡Tenemos Big Run! ¡Don Oso, S. A. busca trabajadores! ()
+"StageScheduleRecruit" = "¡Tenemos Big Run! ¡Don Oso, S. A. busca trabajadores! ()";
+/// ¡Forma una cuadrilla y participa en alianza alevínica!
+"StageScheduleRecruitTeamContest" = "¡Forma una cuadrilla y participa en alianza alevínica!";
+/// Combate amistoso
+"StageScheduleRegular" = "Combate amistoso";
+/// Ver las reglas
+"StageScheduleRules" = "Ver las reglas";
+/// Reglas detalladas
+"StageScheduleSeeAllRules" = "Reglas detalladas";
+/// Al azar
+"StageScheduleSuppliedWeaponRandom" = "Al azar";
+/// Armas asignadas
+"StageScheduleSuppliedWeapons" = "Armas asignadas";
+/// Calendarios
+"StageScheduleTitle" = "Calendarios";
+/// Tasa de victorias por modo
+"StageScheduleWinRateByRules" = "Tasa de victorias por modo";
+/// Combate X
+"StageScheduleXmatch" = "Combate X";

@@ -58,7 +58,7 @@ class TranslationType extends Map<string, string> {
   get translations(): string {
     let translations: string[] = [];
     this.forEach((value, key) => {
-      translations.push(`// ${value}`);
+      translations.push(`/// ${value}`);
       translations.push(`"${key.replace(/_/g, '')}" = "${value}";`);
     });
     return translations.join('\n');
@@ -146,10 +146,11 @@ export class Translation {
       throw new Error('This response does not contain any JSON format strings.')
     }
   }
+
   /**
    * イカリング3からJSONを取得する
    */
-  private async get_bundle(): Promise<object> {
+  private async get_bundle(): Promise<string> {
     // PascalCaseに変換
     const context = camelcaseKeys(JSON.parse(await this.get_context()), { pascalCase: true })
     // JSONを保存
@@ -178,7 +179,12 @@ export class Translation {
       .filter(([_, value]) => value.length >= 2))
     // YAMLを保存
     createFile(yaml.dump(objects), `src/locales/${this.hash}/${this.key}.yaml`)
-    return objects
+    return Object.entries(objects)
+      .flatMap(([key, value]) => [
+        `/// ${value}`,
+        `"${key}" = "${value}";`
+      ])
+      .join('\n')
   }
 
   /**
@@ -193,11 +199,13 @@ export class Translation {
     }
 
     // イカリング3から翻訳ファイルを取得
-    await this.get_bundle();
+    const objects = await this.get_bundle();
+    console.log(objects)
 
     // 翻訳ファイルの作成
     const translation: string = [this.CoopEnemy, this.CoopGrade, this.CoopSkinName, this.CoopStageName]
       .map((translation: TranslationType) => translation.translations)
+      .concat(objects)
       .join('\n');
     createFile(translation, `sources/Resources/${this.xcode}.lproj/Internal.strings`);
   }
