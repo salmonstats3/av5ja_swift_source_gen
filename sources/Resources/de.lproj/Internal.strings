@@ -1,0 +1,122 @@
+// Kanonya
+"SakeArtillery" = "Kanonya";
+// Schlämmermaul
+"SakeBigMouth" = "Schlämmermaul";
+// Schlämmermaul
+"SakeBigMouthGold" = "Schlämmermaul";
+// Kopta
+"SakeCopter" = "Kopta";
+// Sturmreifer
+"SakeDolphin" = "Sturmreifer";
+// Samko
+"SakeFlyBagman" = "Samko";
+// Mobelisk
+"SakePillar" = "Mobelisk";
+// Horroboros
+"SakeRope" = "Horroboros";
+// Deckler
+"SakeSaucer" = "Deckler";
+// Grablax
+"Sakediver" = "Grablax";
+// Killgrill
+"Sakedozer" = "Killgrill";
+// Bäm
+"SakelienBomber" = "Bäm";
+// Rakzak
+"SakelienCupTwins" = "Rakzak";
+// Malmsalm
+"SakelienGiant" = "Malmsalm";
+// Goldie
+"SakelienGolden" = "Goldie";
+// Brocken
+"SakelienLarge" = "Brocken";
+// Pfanndit
+"SakelienShield" = "Pfanndit";
+// Salmini
+"SakelienSmall" = "Salmini";
+// Staal
+"SakelienSnake" = "Staal";
+// Salmo
+"SakelienStandard" = "Salmo";
+// Stapla
+"SakelienTower" = "Stapla";
+// Regnar
+"Sakerocket" = "Regnar";
+// Azubi
+"Grade00" = "Azubi";
+// Teilzeitkraft
+"Grade01" = "Teilzeitkraft";
+// Fachpersonal
+"Grade02" = "Fachpersonal";
+// Führungskraft
+"Grade03" = "Führungskraft";
+// Boss
+"Grade04" = "Boss";
+// Boss +1
+"Grade05" = "Boss +1";
+// Boss +2
+"Grade06" = "Boss +2";
+// Boss +3
+"Grade07" = "Boss +3";
+// Legende
+"Grade08" = "Legende";
+// Azubi
+"GradeArbeiter00" = "Azubi";
+// Teilzeitkraft
+"GradeArbeiter01" = "Teilzeitkraft";
+// Fachpersonal
+"GradeArbeiter02" = "Fachpersonal";
+// Führungskraft
+"GradeArbeiter03" = "Führungskraft";
+// Boss
+"GradeArbeiter04" = "Boss";
+// Boss +1
+"GradeArbeiter05" = "Boss +1";
+// Boss +2
+"GradeArbeiter06" = "Boss +2";
+// Boss +3
+"GradeArbeiter07" = "Boss +3";
+// Legende
+"GradeArbeiter08" = "Legende";
+// Orange Arbeitsklamotten
+"COP001" = "Orange Arbeitsklamotten";
+// Grüne Arbeitsklamotten
+"COP002" = "Grüne Arbeitsklamotten";
+// Gelbe Arbeitsklamotten
+"COP003" = "Gelbe Arbeitsklamotten";
+// Rosa Arbeitsklamotten
+"COP004" = "Rosa Arbeitsklamotten";
+// Blaue Arbeitsklamotten
+"COP005" = "Blaue Arbeitsklamotten";
+// Schwarze Arbeitsklamotten
+"COP006" = "Schwarze Arbeitsklamotten";
+// Weiße Arbeitsklamotten
+"COP007" = "Weiße Arbeitsklamotten";
+// Orange Wattwater
+"COP008" = "Orange Wattwater";
+// Schwarze Wattwater
+"COP009" = "Schwarze Wattwater";
+// Gelbe Wattwater
+"COP010" = "Gelbe Wattwater";
+// Braune Wattwater
+"COP011" = "Braune Wattwater";
+// Flunder-Funpark
+"Carousel" = "Flunder-Funpark";
+// Wasserkraftwerk Stromschnell
+"Shakedent" = "Wasserkraftwerk Stromschnell";
+// Hakenzahn-Highway
+"Shakehighway" = "Hakenzahn-Highway";
+// Schiffswrack-Insel
+"Shakeship" = "Schiffswrack-Insel";
+// Fort Nautilax
+"Shakespiral" = "Fort Nautilax";
+// Salmoniden-Damm
+"Shakeup" = "Salmoniden-Damm";
+// Schwertmuschel-Reservoir
+"Temple" = "Schwertmuschel-Reservoir";
+// Fort Nautilax
+"Tutorial" = "Fort Nautilax";
+// ???
+"Unknown" = "???";
+// Perlmutt-Akademie
+"Upland" = "Perlmutt-Akademie";

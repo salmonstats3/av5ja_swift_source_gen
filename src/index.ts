@@ -7,7 +7,7 @@ console.log(locales)
 
 locales.forEach(async (locale: LocaleType) => {
   const translation: Translation = await locale.get_translation()
-  console.log(translation)
+  translation.write()
 })
 
 // // 内部データからEnumを生成する

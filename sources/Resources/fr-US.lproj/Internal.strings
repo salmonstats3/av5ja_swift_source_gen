@@ -1,0 +1,122 @@
+// Gros boulet
+"SakeArtillery" = "Gros boulet";
+// Salmonoïde de boue
+"SakeBigMouth" = "Salmonoïde de boue";
+// Salmonoïde de boue
+"SakeBigMouthGold" = "Salmonoïde de boue";
+// Salmocoptère
+"SakeCopter" = "Salmocoptère";
+// Ploufion
+"SakeDolphin" = "Ploufion";
+// Barboteur
+"SakeFlyBagman" = "Barboteur";
+// Pylônoïde
+"SakePillar" = "Pylônoïde";
+// Salmophide
+"SakeRope" = "Salmophide";
+// Couverclard
+"SakeSaucer" = "Couverclard";
+// Gobb
+"Sakediver" = "Gobb";
+// Barbeurk
+"Sakedozer" = "Barbeurk";
+// Tête-de-pneu
+"SakelienBomber" = "Tête-de-pneu";
+// Dronoïde
+"SakelienCupTwins" = "Dronoïde";
+// Salmotori
+"SakelienGiant" = "Salmotori";
+// Dorax
+"SakelienGolden" = "Dorax";
+// Sumoche
+"SakelienLarge" = "Sumoche";
+// Bricabrute
+"SakelienShield" = "Bricabrute";
+// Salmioche
+"SakelienSmall" = "Salmioche";
+// Carnacier
+"SakelienSnake" = "Carnacier";
+// Salmoche
+"SakelienStandard" = "Salmoche";
+// Marmirador
+"SakelienTower" = "Marmirador";
+// Crachin
+"Sakerocket" = "Crachin";
+// Néophyte
+"Grade00" = "Néophyte";
+// Stagiaire
+"Grade01" = "Stagiaire";
+// Semi-pro
+"Grade02" = "Semi-pro";
+// Pro
+"Grade03" = "Pro";
+// Prodige
+"Grade04" = "Prodige";
+// Prodige +1
+"Grade05" = "Prodige +1";
+// Prodige +2
+"Grade06" = "Prodige +2";
+// Prodige +3
+"Grade07" = "Prodige +3";
+// Légende
+"Grade08" = "Légende";
+// Néophyte
+"GradeArbeiter00" = "Néophyte";
+// Stagiaire
+"GradeArbeiter01" = "Stagiaire";
+// Semi-pro
+"GradeArbeiter02" = "Semi-pro";
+// Pro
+"GradeArbeiter03" = "Pro";
+// Prodige
+"GradeArbeiter04" = "Prodige";
+// Prodige +1
+"GradeArbeiter05" = "Prodige +1";
+// Prodige +2
+"GradeArbeiter06" = "Prodige +2";
+// Prodige +3
+"GradeArbeiter07" = "Prodige +3";
+// Légende
+"GradeArbeiter08" = "Légende";
+// Salopette orange
+"COP001" = "Salopette orange";
+// Salopette verte
+"COP002" = "Salopette verte";
+// Salopette jaune
+"COP003" = "Salopette jaune";
+// Salopette rose
+"COP004" = "Salopette rose";
+// Salopette bleue
+"COP005" = "Salopette bleue";
+// Salopette noire
+"COP006" = "Salopette noire";
+// Salopette blanche
+"COP007" = "Salopette blanche";
+// Combi caoutchouc orange
+"COP008" = "Combi caoutchouc orange";
+// Combi caoutchouc noire
+"COP009" = "Combi caoutchouc noire";
+// Combi caoutchouc jaune
+"COP010" = "Combi caoutchouc jaune";
+// Combi caoutchouc brune
+"COP011" = "Combi caoutchouc brune";
+// Parc Carapince
+"Carousel" = "Parc Carapince";
+// Centrale Anguilla
+"Shakedent" = "Centrale Anguilla";
+// Rocade Rémora
+"Shakehighway" = "Rocade Rémora";
+// Épave des braves
+"Shakeship" = "Épave des braves";
+// Bastion colimaçon
+"Shakespiral" = "Bastion colimaçon";
+// Barrage salmonoïde
+"Shakeup" = "Barrage salmonoïde";
+// Réservoir Rigadelle
+"Temple" = "Réservoir Rigadelle";
+// Bastion colimaçon
+"Tutorial" = "Bastion colimaçon";
+// ???
+"Unknown" = "???";
+// Institut Calm'arts
+"Upland" = "Institut Calm'arts";

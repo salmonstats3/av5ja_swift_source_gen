@@ -3,7 +3,7 @@ import "reflect-metadata";
 import { createFile } from "../utils/revision";
 import { calc_hash } from "./internal_type";
 import dayjs from "dayjs";
-import { LocaleId, LocaleKey, prefix_xcode } from "./locale_type";
+import { LocaleId, LocaleKey } from "./locale_type";
 
 /**
  * 翻訳, ソースコードを出力するクラス
@@ -96,20 +96,34 @@ export class Translation {
    * Locale
    */
   @Expose({ name: 'locale' })
-  readonly locale: string 
-  
+  readonly locale: string;
+
   /**
    * Locale
    */
   @Expose({ name: 'xcode' })
-  readonly xcode: string 
+  readonly xcode: string;
+
+  /**
+   * Hash
+   */
+  @Expose({ name: 'hash' })
+  hash: string;
+
+  /**
+   * イカリング3のURL
+   */
+  get url(): string {
+    return this.id === LocaleId.USen
+      ? `https://api.lp1.av5ja.srv.nintendo.net/static/js/main.${this.hash}.js`
+      : `https://api.lp1.av5ja.srv.nintendo.net/static/js/${this.locale}.${this.hash}.chunk.js`;
+  }
 
   /**
    * ソースコードと翻訳ファイルを出力する
-   * @param locale
    */
-  async write(locale: LocaleId): Promise<void> {
-    if (locale === LocaleId.JPja) {
+  async write(): Promise<void> {
+    if (this.id === LocaleId.JPja) {
       // キーファイルの作成
       [this.CoopStageName, this.CoopGrade].forEach((translation: TranslationType) => {
         createFile(translation.source, `sources/Keys/${translation.name}.swift`);
@@ -122,6 +136,6 @@ export class Translation {
     const translation: string = [this.CoopEnemy, this.CoopGrade, this.CoopSkinName, this.CoopStageName]
       .map((translation: TranslationType) => translation.translations)
       .join('\n');
-    createFile(translation, `sources/Resources/${prefix_xcode(locale)}.lproj/Internal.strings`);
+    createFile(translation, `sources/Resources/${this.xcode}.lproj/Internal.strings`);
   }
 }

@@ -121,7 +121,7 @@ export class LocaleType {
   async get_translation(): Promise<Translation> {
     const locale: string = Object.keys(LocaleId)[Object.values(LocaleId).indexOf(this.id)]
     const url = `https://leanny.github.io/splat3/data/language/${locale}.json`
-    const objects = { ...JSON.parse(await (await fetch(url)).text()), ...{ id: this.id, key: this.key, locale: this.locale, xcode: this.xcode } }
+    const objects = { ...JSON.parse(await (await fetch(url)).text()), ...{ id: this.id, key: this.key, locale: this.locale, xcode: this.xcode, hash: this.hash } }
     return plainToInstance(Translation, objects, { excludeExtraneousValues: true })
   }
 
