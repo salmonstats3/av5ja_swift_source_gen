@@ -330,6 +330,24 @@
 "DateTimeFormat" = "dd/MM HH:mm";
 /// COMPLETE!
 "CoopHistoryRandomComplete" = "COMPLETE!";
+/// -
+"WaterLevels" = "-";
+/// Rush
+"Rush" = "Rush";
+/// Goldie Seeking
+"GoldieSeeking" = "Goldie Seeking";
+/// Griller
+"Griller" = "Griller";
+/// The Mothership
+"TheMothership" = "The Mothership";
+/// Fog
+"Fog" = "Fog";
+/// Cohock Charge
+"CohockCharge" = "Cohock Charge";
+/// Giant Tornado
+"GiantTornado" = "Giant Tornado";
+/// Mudmouth Eruptions
+"MudmouthEruptions" = "Mudmouth Eruptions";
 /// Cancel
 "CommonCancel" = "Cancel";
 /// Clam Blitz

@@ -330,6 +330,24 @@
 "DateTimeFormat" = "M/d HH:mm";
 /// 컴플리트!
 "CoopHistoryRandomComplete" = "컴플리트!";
+/// undefined
+"WaterLevels" = "undefined";
+/// 러시
+"Rush" = "러시";
+/// 황금연어 찾기
+"GoldieSeeking" = "황금연어 찾기";
+/// 그릴 발진
+"Griller" = "그릴 발진";
+/// 운반함 급습
+"TheMothership" = "운반함 급습";
+/// 안개
+"Fog" = "안개";
+/// 덩치연어 대량 발생
+"CohockCharge" = "덩치연어 대량 발생";
+/// 거대 회오리
+"GiantTornado" = "거대 회오리";
+/// 진흙연어 분출
+"MudmouthEruptions" = "진흙연어 분출";
 /// 취소
 "CommonCancel" = "취소";
 /// 랭크 바지락

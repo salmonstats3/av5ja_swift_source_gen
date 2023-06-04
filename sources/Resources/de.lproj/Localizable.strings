@@ -330,6 +330,24 @@
 "DateTimeFormat" = "dd.MM. HH:mm";
 /// ABGESCHLOSSEN!
 "CoopHistoryRandomComplete" = "ABGESCHLOSSEN!";
+/// -
+"WaterLevels" = "-";
+/// Ansturm
+"Rush" = "Ansturm";
+/// Goldie-Suche
+"GoldieSeeking" = "Goldie-Suche";
+/// Killgrills
+"Griller" = "Killgrills";
+/// Das Mutterschiff
+"TheMothership" = "Das Mutterschiff";
+/// Nebel
+"Fog" = "Nebel";
+/// Brocken-Sturmangriff
+"CohockCharge" = "Brocken-Sturmangriff";
+/// Riesentornados
+"GiantTornado" = "Riesentornados";
+/// Schlämmermaul-Eruptionen
+"MudmouthEruptions" = "Schlämmermaul-Eruptionen";
 /// Abbrechen
 "CommonCancel" = "Abbrechen";
 /// Muschelchaos

@@ -342,6 +342,24 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case DateTimeFormat
     /// コンプリート！
     case CoopHistoryRandomComplete
+    /// -
+    case WaterLevels
+    /// ラッシュ
+    case Rush
+    /// キンシャケ探し
+    case GoldieSeeking
+    /// グリル発進
+    case Griller
+    /// ハコビヤ襲来
+    case TheMothership
+    /// 霧
+    case Fog
+    /// ドスコイ大量発生
+    case CohockCharge
+    /// 巨大タツマキ
+    case GiantTornado
+    /// ドロシャケ噴出
+    case MudmouthEruptions
     /// キャンセル
     case CommonCancel
     /// ガチアサリ

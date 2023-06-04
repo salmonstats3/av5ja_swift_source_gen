@@ -330,6 +330,24 @@
 "DateTimeFormat" = "dd-MM HH:mm";
 /// VOLTOOID!
 "CoopHistoryRandomComplete" = "VOLTOOID!";
+/// -
+"WaterLevels" = "-";
+/// Stormloop
+"Rush" = "Stormloop";
+/// Het zoeken van Goldies
+"GoldieSeeking" = "Het zoeken van Goldies";
+/// Grillers
+"Griller" = "Grillers";
+/// Het moederschip
+"TheMothership" = "Het moederschip";
+/// Mist
+"Fog" = "Mist";
+/// Storm van Sallogs
+"CohockCharge" = "Storm van Sallogs";
+/// Reuzentornado
+"GiantTornado" = "Reuzentornado";
+/// Uitbarstingen van Moddermuilen
+"MudmouthEruptions" = "Uitbarstingen van Moddermuilen";
 /// Annuleren
 "CommonCancel" = "Annuleren";
 /// Schelpenstrijd

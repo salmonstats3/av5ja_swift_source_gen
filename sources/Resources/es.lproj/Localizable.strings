@@ -330,6 +330,24 @@
 "DateTimeFormat" = "dd-MM HH:mm";
 /// ¡Completo!
 "CoopHistoryRandomComplete" = "¡Completo!";
+/// -
+"WaterLevels" = "-";
+/// Avalanchas
+"Rush" = "Avalanchas";
+/// Detección de salmóreos
+"GoldieSeeking" = "Detección de salmóreos";
+/// Chaparrillas
+"Griller" = "Chaparrillas";
+/// Aerocriaderos
+"TheMothership" = "Aerocriaderos";
+/// Niebla
+"Fog" = "Niebla";
+/// Ataques de escamacarras
+"CohockCharge" = "Ataques de escamacarras";
+/// Tornados gigantes
+"GiantTornado" = "Tornados gigantes";
+/// Erupciones de morrolodos
+"MudmouthEruptions" = "Erupciones de morrolodos";
 /// Cancelar
 "CommonCancel" = "Cancelar";
 /// Asalto almeja

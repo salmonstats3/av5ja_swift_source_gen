@@ -330,6 +330,24 @@
 "DateTimeFormat" = "M/d HH:mm";
 /// コンプリート！
 "CoopHistoryRandomComplete" = "コンプリート！";
+/// -
+"WaterLevels" = "-";
+/// ラッシュ
+"Rush" = "ラッシュ";
+/// キンシャケ探し
+"GoldieSeeking" = "キンシャケ探し";
+/// グリル発進
+"Griller" = "グリル発進";
+/// ハコビヤ襲来
+"TheMothership" = "ハコビヤ襲来";
+/// 霧
+"Fog" = "霧";
+/// ドスコイ大量発生
+"CohockCharge" = "ドスコイ大量発生";
+/// 巨大タツマキ
+"GiantTornado" = "巨大タツマキ";
+/// ドロシャケ噴出
+"MudmouthEruptions" = "ドロシャケ噴出";
 /// キャンセル
 "CommonCancel" = "キャンセル";
 /// ガチアサリ

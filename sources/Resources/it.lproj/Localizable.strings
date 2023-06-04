@@ -330,6 +330,24 @@
 "DateTimeFormat" = "dd/MM HH:mm";
 /// COMPLETATO!
 "CoopHistoryRandomComplete" = "COMPLETATO!";
+/// -
+"WaterLevels" = "-";
+/// Orde
+"Rush" = "Orde";
+/// Scovare i Pinne d'oro
+"GoldieSeeking" = "Scovare i Pinne d'oro";
+/// Grill
+"Griller" = "Grill";
+/// Astronave madre
+"TheMothership" = "Astronave madre";
+/// Nebbia
+"Fog" = "Nebbia";
+/// Orde di Pinne Pingui
+"CohockCharge" = "Orde di Pinne Pingui";
+/// Tornado gigante
+"GiantTornado" = "Tornado gigante";
+/// Eruzioni di Fangonoidi
+"MudmouthEruptions" = "Eruzioni di Fangonoidi";
 /// Annulla
 "CommonCancel" = "Annulla";
 /// Vongol gol

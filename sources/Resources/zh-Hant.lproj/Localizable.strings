@@ -330,6 +330,24 @@
 "DateTimeFormat" = "M/d HH:mm";
 /// COMPLETE!
 "CoopHistoryRandomComplete" = "COMPLETE!";
+/// -
+"WaterLevels" = "-";
+/// 狂潮
+"Rush" = "狂潮";
+/// 寻找金鲑鱼
+"GoldieSeeking" = "寻找金鲑鱼";
+/// 烤架鱼进发
+"Griller" = "烤架鱼进发";
+/// 走私鱼来袭
+"TheMothership" = "走私鱼来袭";
+/// 雾
+"Fog" = "雾";
+/// 大胖鱼大量出现
+"CohockCharge" = "大胖鱼大量出现";
+/// 巨型龙卷风
+"GiantTornado" = "巨型龙卷风";
+/// 泥鲑鱼喷发
+"MudmouthEruptions" = "泥鲑鱼喷发";
 /// 取消
 "CommonCancel" = "取消";
 /// 真格蛤蜊

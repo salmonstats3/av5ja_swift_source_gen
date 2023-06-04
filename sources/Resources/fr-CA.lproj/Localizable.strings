@@ -330,6 +330,24 @@
 "DateTimeFormat" = "dd/MM HH:mm";
 /// TERMINÉ!
 "CoopHistoryRandomComplete" = "TERMINÉ!";
+/// -
+"WaterLevels" = "-";
+/// Ruées
+"Rush" = "Ruées";
+/// Chasse aux dorax
+"GoldieSeeking" = "Chasse aux dorax";
+/// Barbeurks
+"Griller" = "Barbeurks";
+/// Vaisseau mère
+"TheMothership" = "Vaisseau mère";
+/// Brouillard
+"Fog" = "Brouillard";
+/// Charges de sumoches
+"CohockCharge" = "Charges de sumoches";
+/// Tornade géante
+"GiantTornado" = "Tornade géante";
+/// Émergence de salmonoïdes de boue
+"MudmouthEruptions" = "Émergence de salmonoïdes de boue";
 /// Annuler
 "CommonCancel" = "Annuler";
 /// Pluie de palourdes
