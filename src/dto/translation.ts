@@ -48,6 +48,14 @@ class TranslationType extends Map<string, string> {
           translations.push(`    /// ${value}`);
           translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
         }
+        
+        if (this.name === 'CoopStageKey') {
+          if (key === 'Unknown') {
+            translations.push(`    case ${key.replace(/_/g, '')} = "ffa84f05a6437395a0a128cad1a99e8dd0f303ce4fd687fa648617a0075d7ad9"`);
+          }
+          translations.push(`    /// ${value}`);
+          translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Cop_${key}`)}"`);
+        }
 
         if (this.name !== 'CoopGlossaryKey') {
           translations.push(`    /// ${value}`);
