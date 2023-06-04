@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "Use device settings";
 /// License
 "CommonLicense" = "License";
+/// dd/MM/yyyy HH:mm
+"DateTimeYearFormat" = "dd/MM/yyyy HH:mm";
+/// dd/MM HH:mm
+"DateTimeFormat" = "dd/MM HH:mm";
+/// COMPLETE!
+"CoopHistoryRandomComplete" = "COMPLETE!";
 /// Cancel
 "CommonCancel" = "Cancel";
 /// Clam Blitz

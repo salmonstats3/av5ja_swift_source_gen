@@ -336,6 +336,12 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CommonUseSystemTheme
     /// ライセンス
     case CommonLicense
+    /// yyyy M/d HH:mm
+    case DateTimeYearFormat
+    /// M/d HH:mm
+    case DateTimeFormat
+    /// コンプリート！
+    case CoopHistoryRandomComplete
     /// キャンセル
     case CommonCancel
     /// ガチアサリ

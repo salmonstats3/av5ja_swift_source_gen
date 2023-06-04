@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "장치 설정에 따라 다릅니다";
 /// 라이선스
 "CommonLicense" = "라이선스";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// 컴플리트!
+"CoopHistoryRandomComplete" = "컴플리트!";
 /// 취소
 "CommonCancel" = "취소";
 /// 랭크 바지락

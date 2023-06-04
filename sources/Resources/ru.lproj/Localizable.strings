@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "Использовать настройки устройства";
 /// Лицензия
 "CommonLicense" = "Лицензия";
+/// dd.MM.yyyy, HH:mm
+"DateTimeYearFormat" = "dd.MM.yyyy, HH:mm";
+/// dd.MM, HH:mm
+"DateTimeFormat" = "dd.MM, HH:mm";
+/// Выполнено!
+"CoopHistoryRandomComplete" = "Выполнено!";
 /// Отмена
 "CommonCancel" = "Отмена";
 /// Устробол
