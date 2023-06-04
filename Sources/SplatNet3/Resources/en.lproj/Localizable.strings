@@ -60,46 +60,28 @@
 "Grade07" = "Profreshional +3";
 /// Eggsecutive VP
 "Grade08" = "Eggsecutive VP";
-/// Apprentice
-"GradeArbeiter00" = "Apprentice";
-/// Part-Timer
-"GradeArbeiter01" = "Part-Timer";
-/// Go-Getter
-"GradeArbeiter02" = "Go-Getter";
-/// Overachiever
-"GradeArbeiter03" = "Overachiever";
-/// Profreshional
-"GradeArbeiter04" = "Profreshional";
-/// Profreshional +1
-"GradeArbeiter05" = "Profreshional +1";
-/// Profreshional +2
-"GradeArbeiter06" = "Profreshional +2";
-/// Profreshional +3
-"GradeArbeiter07" = "Profreshional +3";
-/// Eggsecutive VP
-"GradeArbeiter08" = "Eggsecutive VP";
 /// Orange Slopsuit
-"COP001" = "Orange Slopsuit";
+"Cop001" = "Orange Slopsuit";
 /// Green Slopsuit
-"COP002" = "Green Slopsuit";
+"Cop002" = "Green Slopsuit";
 /// Yellow Slopsuit
-"COP003" = "Yellow Slopsuit";
+"Cop003" = "Yellow Slopsuit";
 /// Pink Slopsuit
-"COP004" = "Pink Slopsuit";
+"Cop004" = "Pink Slopsuit";
 /// Blue Slopsuit
-"COP005" = "Blue Slopsuit";
+"Cop005" = "Blue Slopsuit";
 /// Black Slopsuit
-"COP006" = "Black Slopsuit";
+"Cop006" = "Black Slopsuit";
 /// White Slopsuit
-"COP007" = "White Slopsuit";
+"Cop007" = "White Slopsuit";
 /// Orange Gloopsuit
-"COP008" = "Orange Gloopsuit";
+"Cop008" = "Orange Gloopsuit";
 /// Black Gloopsuit
-"COP009" = "Black Gloopsuit";
+"Cop009" = "Black Gloopsuit";
 /// Yellow Gloopsuit
-"COP010" = "Yellow Gloopsuit";
+"Cop010" = "Yellow Gloopsuit";
 /// Brown Gloopsuit
-"COP011" = "Brown Gloopsuit";
+"Cop011" = "Brown Gloopsuit";
 /// Wahoo World
 "Carousel" = "Wahoo World";
 /// Gone Fission Hydroplant
@@ -120,6 +102,228 @@
 "Unknown" = "???";
 /// Inkblot Art Academy
 "Upland" = "Inkblot Art Academy";
+/// The Griller
+"CoopEventDozer" = "The Griller";
+/// Fog
+"CoopEventFog" = "Fog";
+/// Goldie Seeking
+"CoopEventGeyser" = "Goldie Seeking";
+/// The Mothership
+"CoopEventHakobiya" = "The Mothership";
+/// Cohock Charge
+"CoopEventMissile" = "Cohock Charge";
+/// Giant Tornado
+"CoopEventRelay" = "Giant Tornado";
+/// Rush
+"CoopEventRush" = "Rush";
+/// Mudmouth Eruptions
+"CoopEventTamaire" = "Mudmouth Eruptions";
+/// job scenario
+"CoopScenario" = "job scenario";
+/// King Salmonid
+"SakeBigBoss" = "King Salmonid";
+/// Salmometer
+"SakeBigBossGauge" = "Salmometer";
+/// About
+"CommonAbout" = "About";
+/// Actual
+"RecordActualValue" = "Actual";
+/// Appearances
+"CommonAppearances" = "Appearances";
+/// Application
+"CommonApplication" = "Application";
+/// Average
+"RecordAverageScore" = "Average";
+/// Backup
+"CommonBackupResults" = "Backup";
+/// Compress(ZIP)
+"CommonBackupCompress" = "Compress(ZIP)";
+/// Backup database
+"CommonBackupMessage" = "Backup database";
+/// Plain(JSON)
+"CommonBackupPlain" = "Plain(JSON)";
+/// Credit
+"CommonAppCredit" = "Credit";
+/// Dark mode
+"CommonDarkMode" = "Dark mode";
+/// Data Management
+"CommonDataManagement" = "Data Management";
+/// Rescued count
+"CoopHistoryDeathCount" = "Rescued count";
+/// Defeated count
+"CoopHistoryDefeatedCount" = "Defeated count";
+/// Estimated
+"CoopHistoryEstimatedValue" = "Estimated";
+/// Clear ratio
+"CoopHistoryEventClearRatio" = "Clear ratio";
+/// Event frequency
+"CoopHistoryEventFrequency" = "Event frequency";
+/// FAQ
+"CommonFaq" = "FAQ";
+/// Gaming mode
+"CommonGamingMode" = "Gaming mode";
+/// Grade
+"CoopHistoryGradeId" = "Grade";
+/// Grade point
+"CoopHistoryGradePoint" = "Grade point";
+/// Highest
+"CoopHistoryHighestRecord" = "Highest";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// Invalid
+"CommonInvalid" = "Invalid";
+/// Languages
+"CommonLanguages" = "Languages";
+/// Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.
+"CommonShareLogMessage" = "Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.";
+/// Share logs
+"CommonShareLog" = "Share logs";
+/// Log files
+"CommonLogSize" = "Log files";
+/// My page
+"CommonMyPage" = "My page";
+/// Crew
+"CoopHistoryPlayerCrew" = "Crew";
+/// You
+"CoopHistoryPlayerYou" = "You";
+/// Privacy Policy
+"CommonPrivacyPolicy" = "Privacy Policy";
+/// Form
+"CommonRequestForm" = "Form";
+/// Bug
+"CommonRequestFormBug" = "Bug";
+/// Content
+"CommonRequestFormContent" = "Content";
+/// Enhancement
+"CommonRequestFormEnhancement" = "Enhancement";
+/// Feature
+"CommonRequestFormFeature" = "Feature";
+/// Title
+"CommonRequestFormTitle" = "Title";
+/// Type
+"CommonRequestFormType" = "Type";
+/// Submit
+"CommonRequsetFormSubmit" = "Submit";
+/// Restore
+"CommonRestore" = "Restore";
+/// Select file to restore in Files app.
+"CommonRestoreMessage" = "Select file to restore in Files app.";
+/// Results count
+"CoopHistoryResultsCount" = "Results count";
+/// Debug
+"CommonRoleDebuger" = "Debug";
+/// Developer
+"CommonRoleDeveloper" = "Developer";
+/// Testor
+"CommonRoleTester" = "Testor";
+/// Translator
+"CommonRoleTranslator" = "Translator";
+/// Saved successfully
+"CommonSaveToPhotoLibrary" = "Saved successfully";
+/// Sync Schedule
+"CommonScheduleSync" = "Sync Schedule";
+/// Retrieve schedule from the server.
+"CommonScheduleSyncMessage" = "Retrieve schedule from the server.";
+/// Sign in
+"CommonSignIn" = "Sign in";
+/// Sign out
+"CommonSignOut" = "Sign out";
+/// null
+"CommonSignOutSuccessfully" = "null";
+/// Unlink the Nintendo Switch account.
+"CommonSignOutMessage" = "Unlink the Nintendo Switch account.";
+/// Source code
+"CommonSourceCode" = "Source code";
+/// Supplied ratio
+"CoopHistorySuppliedRatio" = "Supplied ratio";
+/// App update is required
+"CommonUpdateRequired" = "App update is required";
+/// User data
+"CommonUserData" = "User data";
+/// Valid
+"CommonValid" = "Valid";
+/// Version
+"CommonAppVersion" = "Version";
+/// Wipe logs
+"CommonWipeLog" = "Wipe logs";
+/// Wipe all of logs.
+"CommonWipeLogMessage" = "Wipe all of logs.";
+/// Wipe results
+"CommonWipeResults" = "Wipe results";
+/// Wipe all of data.
+"CommonWipeResultsMessage" = "Wipe all of data.";
+/// Write a review
+"CommonWriteReview" = "Write a review";
+/// Overall
+"CoopHistoryOverallRecord" = "Overall";
+/// Golden Eggs
+"CommonGoldenEggs" = "Golden Eggs";
+/// Power Eggs
+"CommonPowerEggs" = "Power Eggs";
+/// Overview
+"CommonOverview" = "Overview";
+/// en-US
+"CommonLocale" = "en-US";
+/// 0
+"CommonLanguageCode" = "0";
+/// Database
+"CommonDatabase" = "Database";
+/// X-ProductVersion
+"CommonXproductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// Upload
+"CommonUpload" = "Upload";
+/// Developer
+"CommonCreditDevelop" = "Developer";
+/// Tester
+"CommonCreditTest" = "Tester";
+/// UI/UX Design
+"CommonCreditDesign" = "UI/UX Design";
+/// Team Point Card
+"CoopHistoryTeamPointCard" = "Team Point Card";
+/// Use estimated values
+"CoopHistoryUseEstimatedValue" = "Use estimated values";
+/// Use empheral session
+"CommonUseSecureSession" = "Use empheral session";
+/// Rewards
+"CommonCheckInReward" = "Rewards";
+/// Get all of rewards for QR codes.
+"CommonGetCheckInReward" = "Get all of rewards for QR codes.";
+/// Team
+"CoopHistoryTeamResult" = "Team";
+/// You
+"CoopHistoryPlayerResult" = "You";
+/// Avg of the crew
+"CoopHistoryCrewAvgResult" = "Avg of the crew";
+/// Crew
+"CoopHistoryCrewResult" = "Crew";
+/// Waves
+"CoopHistoryWaveResult" = "Waves";
+/// Max
+"CoopRecordHighestScore" = "Max";
+/// Avg
+"CoopRecordAverageScore" = "Avg";
+/// You must update to iOS16 or higher to use this feature
+"CommonRequirediOs16" = "You must update to iOS16 or higher to use this feature";
+/// Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.
+"CommonRequiredSignIn" = "Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.";
+/// Restore results successfully
+"CommonRestoreSuccessMessage" = "Restore results successfully";
+/// Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
+"CommonRestoreFailureMessage" = "Restore results failure. Unsupported format or signature does not match due to file has been tampered with.";
+/// Results
+"CommonResultsCount" = "Results";
+/// Developer's response
+"CommonDeveloperAnswer" = "Developer's response";
+/// Due to the data backuped by unsupported version, could not restore.
+"CommonMinimumVersion" = "Due to the data backuped by unsupported version, could not restore.";
+/// Due to the unmatch the signature of data, could not restore.
+"ErrorInvalidSignature" = "Due to the unmatch the signature of data, could not restore.";
+/// Use device settings
+"CommonUseSystemTheme" = "Use device settings";
+/// License
+"CommonLicense" = "License";
 /// Cancel
 "CommonCancel" = "Cancel";
 /// Clam Blitz
@@ -420,203 +624,3 @@
 "StageScheduleWinRateByRules" = "Win Rate by Mode";
 /// X Battle
 "StageScheduleXmatch" = "X Battle";
-/// About
-"CommonAbout" = "About";
-/// Actual
-"RecordActualValue" = "Actual";
-/// Appearances
-"CommonAppearances" = "Appearances";
-/// Application
-"CommonApplication" = "Application";
-/// Average
-"RecordAverageScore" = "Average";
-/// Backup
-"CommonBackupResults" = "Backup";
-/// Compress(ZIP)
-"CommonBackupCompress" = "Compress(ZIP)";
-/// Backup database
-"CommonBackupMessage" = "Backup database";
-/// Plain(JSON)
-"CommonBackupPlain" = "Plain(JSON)";
-/// Credit
-"CommonAppCredit" = "Credit";
-/// Dark mode
-"CommonDarkMode" = "Dark mode";
-/// Data Management
-"CommonDataManagement" = "Data Management";
-/// Rescued count
-"CoopHistoryDeathCount" = "Rescued count";
-/// Defeated count
-"CoopHistoryDefeatedCount" = "Defeated count";
-/// Estimated
-"CoopHistoryEstimatedValue" = "Estimated";
-/// Clear ratio
-"CoopHistoryEventClearRatio" = "Clear ratio";
-/// Event frequency
-"CoopHistoryEventFrequency" = "Event frequency";
-/// FAQ
-"CommonFAQ" = "FAQ";
-/// Gaming mode
-"CommonGamingMode" = "Gaming mode";
-/// Grade
-"CoopHistoryGradeId" = "Grade";
-/// Grade point
-"CoopHistoryGradePoint" = "Grade point";
-/// Highest
-"CoopHistoryHighestRecord" = "Highest";
-/// SplatNet2
-"CommonIkaring2" = "SplatNet2";
-/// Invalid
-"CommonInvalid" = "Invalid";
-/// Languages
-"CommonLanguages" = "Languages";
-/// Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.
-"CommonShareLogMessage" = "Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.";
-/// Share logs
-"CommonShareLog" = "Share logs";
-/// Log files
-"CommonLogSize" = "Log files";
-/// My page
-"CommonMyPage" = "My page";
-/// Crew
-"CoopHistoryPlayerCrew" = "Crew";
-/// You
-"CoopHistoryPlayerYou" = "You";
-/// Privacy Policy
-"CommonPrivacyPolicy" = "Privacy Policy";
-/// Form
-"CommonRequestForm" = "Form";
-/// Bug
-"CommonRequestFormBug" = "Bug";
-/// Content
-"CommonRequestFormContent" = "Content";
-/// Enhancement
-"CommonRequestFormEnhancement" = "Enhancement";
-/// Feature
-"CommonRequestFormFeature" = "Feature";
-/// Title
-"CommonRequestFormTitle" = "Title";
-/// Type
-"CommonRequestFormType" = "Type";
-/// Submit
-"CommonRequsetFormSubmit" = "Submit";
-/// Restore
-"CommonRestore" = "Restore";
-/// Select file to restore in Files app.
-"CommonRestoreMessage" = "Select file to restore in Files app.";
-/// Results count
-"CoopHistoryResultsCount" = "Results count";
-/// Debug
-"CommonRoleDebuger" = "Debug";
-/// Developer
-"CommonRoleDeveloper" = "Developer";
-/// Testor
-"CommonRoleTester" = "Testor";
-/// Translator
-"CommonRoleTranslator" = "Translator";
-/// Saved successfully
-"CommonSaveToPhotoLibrary" = "Saved successfully";
-/// Sync Schedule
-"CommonScheduleSync" = "Sync Schedule";
-/// Retrieve schedule from the server.
-"CommonScheduleSyncMessage" = "Retrieve schedule from the server.";
-/// Sign in
-"CommonSignIn" = "Sign in";
-/// Sign out
-"CommonSignOut" = "Sign out";
-/// null
-"CommonSignOutSuccessfully" = "null";
-/// Unlink the Nintendo Switch account.
-"CommonSignOutMessage" = "Unlink the Nintendo Switch account.";
-/// Source code
-"CommonSourceCode" = "Source code";
-/// Supplied ratio
-"CoopHistorySuppliedRatio" = "Supplied ratio";
-/// App update is required
-"CommonUpdateRequired" = "App update is required";
-/// User data
-"CommonUserData" = "User data";
-/// Valid
-"CommonValid" = "Valid";
-/// Version
-"CommonAppVersion" = "Version";
-/// Wipe logs
-"CommonWipeLog" = "Wipe logs";
-/// Wipe all of logs.
-"CommonWipeLogMessage" = "Wipe all of logs.";
-/// Wipe results
-"CommonWipeResults" = "Wipe results";
-/// Wipe all of data.
-"CommonWipeResultsMessage" = "Wipe all of data.";
-/// Write a review
-"CommonWriteReview" = "Write a review";
-/// Overall
-"CoopHistoryOverallRecord" = "Overall";
-/// Golden Eggs
-"CommonGoldenEggs" = "Golden Eggs";
-/// Power Eggs
-"CommonPowerEggs" = "Power Eggs";
-/// Overview
-"CommonOverview" = "Overview";
-/// en-US
-"CommonLocale" = "en-US";
-/// 0
-"CommonLanguageCode" = "0";
-/// Database
-"CommonDatabase" = "Database";
-/// X-ProductVersion
-"CommonXProductVersion" = "X-ProductVersion";
-/// X-WebViewVer
-"CommonXWebViewVer" = "X-WebViewVer";
-/// Upload
-"CommonUpload" = "Upload";
-/// Developer
-"CommonCreditDevelop" = "Developer";
-/// Tester
-"CommonCreditTest" = "Tester";
-/// UI/UX Design
-"CommonCreditDesign" = "UI/UX Design";
-/// Team Point Card
-"CoopHistoryTeamPointCard" = "Team Point Card";
-/// Use estimated values
-"CoopHistoryUseEstimatedValue" = "Use estimated values";
-/// Use empheral session
-"CommonUseSecureSession" = "Use empheral session";
-/// Rewards
-"CommonCheckInReward" = "Rewards";
-/// Get all of rewards for QR codes.
-"CommonGetCheckInReward" = "Get all of rewards for QR codes.";
-/// Team
-"CoopHistoryTeamResult" = "Team";
-/// You
-"CoopHistoryPlayerResult" = "You";
-/// Avg of the crew
-"CoopHistoryCrewAvgResult" = "Avg of the crew";
-/// Crew
-"CoopHistoryCrewResult" = "Crew";
-/// Waves
-"CoopHistoryWaveResult" = "Waves";
-/// Max
-"CoopRecordHighestScore" = "Max";
-/// Avg
-"CoopRecordAverageScore" = "Avg";
-/// You must update to iOS16 or higher to use this feature
-"CommonRequirediOS16" = "You must update to iOS16 or higher to use this feature";
-/// Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.
-"CommonRequiredSignIn" = "Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.";
-/// Restore results successfully
-"CommonRestoreSuccessMessage" = "Restore results successfully";
-/// Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
-"CommonRestoreFailureMessage" = "Restore results failure. Unsupported format or signature does not match due to file has been tampered with.";
-/// Results
-"CommonResultsCount" = "Results";
-/// Developer's response
-"CommonDeveloperAnswer" = "Developer's response";
-/// Due to the data backuped by unsupported version, could not restore.
-"CommonMinimumVersion" = "Due to the data backuped by unsupported version, could not restore.";
-/// Due to the unmatch the signature of data, could not restore.
-"ErrorInvalidSignature" = "Due to the unmatch the signature of data, could not restore.";
-/// Use device settings
-"CommonUseSystemTheme" = "Use device settings";
-/// License
-"CommonLicense" = "License";

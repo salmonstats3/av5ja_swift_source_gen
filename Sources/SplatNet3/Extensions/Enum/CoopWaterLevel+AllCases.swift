@@ -16,7 +16,7 @@ public extension CoopWaterLevelId {
     public static var allCases: [CoopWaterLevelId] = [
         .HighTide,
         .NormalTide,
-        .LowTide
+        .LowTide,
     ]
 
     public static func allTides(_ eventId: CoopEventId, isBigRun: Bool = false) -> [CoopWaterLevelId] {

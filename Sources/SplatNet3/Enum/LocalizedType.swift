@@ -10,102 +10,196 @@ import Foundation
 public enum LocalizedType: String, CaseIterable, Identifiable {
     public var id: String { rawValue }
 
+    /// テッキュウ
+    case SakeArtillery
+    /// ドロシャケ
+    case SakeBigMouth
+    /// ドロシャケ
+    case SakeBigMouthGold
+    /// シャケコプター
+    case SakeCopter
+    /// ダイバー
+    case SakeDolphin
+    /// タマヒロイ
+    case SakeFlyBagman
+    /// ハシラ
+    case SakePillar
+    /// タツ
+    case SakeRope
+    /// ナベブタ
+    case SakeSaucer
+    /// モグラ
+    case Sakediver
+    /// グリル
+    case Sakedozer
+    /// バクダン
+    case SakelienBomber
+    /// カタパッド
+    case SakelienCupTwins
+    /// ヨコヅナ
+    case SakelienGiant
+    /// キンシャケ
+    case SakelienGolden
+    /// ドスコイ
+    case SakelienLarge
+    /// テッパン
+    case SakelienShield
+    /// コジャケ
+    case SakelienSmall
+    /// ヘビ
+    case SakelienSnake
+    /// シャケ
+    case SakelienStandard
+    /// タワー
+    case SakelienTower
+    /// コウモリ
+    case Sakerocket
+    /// かけだし
+    case Grade00
+    /// はんにんまえ
+    case Grade01
+    /// いちにんまえ
+    case Grade02
+    /// じゅくれん
+    case Grade03
+    /// たつじん
+    case Grade04
+    /// たつじん＋１
+    case Grade05
+    /// たつじん＋２
+    case Grade06
+    /// たつじん＋３
+    case Grade07
+    /// でんせつ
+    case Grade08
+    /// バイトツナギ オレンジ
+    case Cop001
+    /// バイトツナギ グリーン
+    case Cop002
+    /// バイトツナギ イエロー
+    case Cop003
+    /// バイトツナギ ピンク
+    case Cop004
+    /// バイトツナギ ブルー
+    case Cop005
+    /// バイトツナギ ブラック
+    case Cop006
+    /// バイトツナギ ホワイト
+    case Cop007
+    /// バイトウェーダー オレンジ
+    case Cop008
+    /// バイトウェーダー ブラック
+    case Cop009
+    /// バイトウェーダー イエロー
+    case Cop010
+    /// バイトウェーダー ブラウン
+    case Cop011
+    /// スメーシーワールド
+    case Carousel
+    /// ムニ・エール海洋発電所
+    case Shakedent
+    /// すじこジャンクション跡
+    case Shakehighway
+    /// 難破船ドン・ブラコ
+    case Shakeship
+    /// アラマキ砦
+    case Shakespiral
+    /// シェケナダム
+    case Shakeup
+    /// マテガイ放水路
+    case Temple
+    /// アラマキ砦
+    case Tutorial
+    /// ？？？
+    case Unknown
+    /// 海女美術大学
+    case Upland
+    /// グリル発進
+    case CoopEventDozer
+    /// 霧
+    case CoopEventFog
+    /// キンシャケ探し
+    case CoopEventGeyser
+    /// ハコビヤ襲来
+    case CoopEventHakobiya
+    /// ドスコイ大量発生
+    case CoopEventMissile
+    /// 巨大タツマキ
+    case CoopEventRelay
+    /// ラッシュ
+    case CoopEventRush
+    /// ドロシャケ噴出
+    case CoopEventTamaire
+    /// バイトシナリオ
+    case CoopScenario
+    /// オカシラシャケ
+    case SakeBigBoss
+    /// オカシラゲージ
+    case SakeBigBossGauge
     /// About
     case CommonAbout
-    /// クレジット
-    case CommonAppCredit
-    /// バージョン
-    case CommonAppVersion
+    /// 実測値
+    case RecordActualValue
     /// 外観
     case CommonAppearances
     /// アプリ
     case CommonApplication
+    /// 平均きろく
+    case RecordAverageScore
+    /// バックアップ
+    case CommonBackupResults
     /// 圧縮(ZIP)
     case CommonBackupCompress
     /// データベースのバックアップを出力します。
     case CommonBackupMessage
     /// 非圧縮(JSON)
     case CommonBackupPlain
-    /// バックアップ
-    case CommonBackupResults
-    /// キャンセル
-    case CommonCancel
-    /// 報酬
-    case CommonCheckInReward
-    /// ガチアサリ
-    case CommonClamBlitz
-    /// 閉じる
-    case CommonClose
-    /// ビッグラン
-    case CommonCoopBigRun
-    /// バイトチームコンテスト
-    case CommonCoopTeamContest
-    /// QRコードは、株式会社デンソーウェーブの登録商標です。
-    case CommonCopyrightQrCode
-    /// UI/UXデザイン
-    case CommonCreditDesign
-    /// 開発
-    case CommonCreditDevelop
-    /// テスト
-    case CommonCreditTest
+    /// クレジット
+    case CommonAppCredit
     /// ダークモード
     case CommonDarkMode
     /// データ管理
     case CommonDataManagement
-    /// データベース
-    case CommonDatabase
-    /// 決定
-    case CommonDecide
-    /// デベロッパの回答
-    case CommonDeveloperAnswer
-    /// ダウンロード
-    case CommonDownload
-    /// おわる
-    case CommonEnd
+    /// 助けられた回数
+    case CoopHistoryDeathCount
+    /// オオモノシャケをたおした数
+    case CoopHistoryDefeatedCount
+    /// 推定値
+    case CoopHistoryEstimatedValue
+    /// イベントクリア率
+    case CoopHistoryEventClearRatio
+    /// イベント発生率
+    case CoopHistoryEventFrequency
     /// よくあるご質問
-    case CommonFAQ
+    case CommonFaq
     /// ゲーミングモード
     case CommonGamingMode
-    /// はてな
-    case CommonGearPowerBlank
-    /// 過去に配布されていたQRコードの報酬を取得します。
-    case CommonGetCheckInReward
-    /// 金イクラ
-    case CommonGoldenEggs
-    /// ホーム
-    case CommonHome
+    /// 称号
+    case CoopHistoryGradeId
+    /// 評価ポイント
+    case CoopHistoryGradePoint
+    /// 最高きろく
+    case CoopHistoryHighestRecord
     /// イカリング2
     case CommonIkaring2
-    /// イカリング３
-    case CommonIkaring3
     /// 無効
     case CommonInvalid
-    /// 0
-    case CommonLanguageCode
     /// 言語
     case CommonLanguages
-    /// ライセンス
-    case CommonLicense
-    /// ja-JP
-    case CommonLocale
+    /// 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
+    case CommonShareLogMessage
+    /// ログ送信
+    case CommonShareLog
     /// ログファイル
     case CommonLogSize
-    /// サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
-    case CommonMinimumVersion
     /// マイページ
     case CommonMyPage
-    /// ロード中
-    case CommonNowLoading
-    /// 概要
-    case CommonOverview
-    /// イクラ
-    case CommonPowerEggs
+    /// なかま
+    case CoopHistoryPlayerCrew
+    /// あなた
+    case CoopHistoryPlayerYou
     /// プライバシーポリシー
     case CommonPrivacyPolicy
-    /// ひっぱって更新
-    case CommonPullToRefresh
-    /// ガチホコバトル
-    case CommonRainmaker
     /// フォーム
     case CommonRequestForm
     /// バグ修正
@@ -120,22 +214,14 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CommonRequestFormTitle
     /// 種類
     case CommonRequestFormType
-    /// このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
-    case CommonRequiredSignIn
-    /// この機能を利用するにはiOS16以上にアップデートする必要があります。
-    case CommonRequirediOS16
     /// 送信
     case CommonRequsetFormSubmit
     /// リストア
     case CommonRestore
-    /// リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
-    case CommonRestoreFailureMessage
     /// ファイルアプリからリストアするファイルを選択してください。
     case CommonRestoreMessage
-    /// リザルト復元に成功しました。
-    case CommonRestoreSuccessMessage
     /// リザルト件数
-    case CommonResultsCount
+    case CoopHistoryResultsCount
     /// デバッグ
     case CommonRoleDebuger
     /// 開発
@@ -150,22 +236,138 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CommonScheduleSync
     /// スケジュールサーバーから過去のスケジュールを取得します
     case CommonScheduleSyncMessage
-    /// シェア
-    case CommonShare
-    /// ログ送信
-    case CommonShareLog
-    /// 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
-    case CommonShareLogMessage
     /// ログイン
     case CommonSignIn
     /// ログアウト
     case CommonSignOut
-    /// ニンテンドーアカウントとの連携を解除します
-    case CommonSignOutMessage
     /// ログアウト成功しました
     case CommonSignOutSuccessfully
+    /// ニンテンドーアカウントとの連携を解除します
+    case CommonSignOutMessage
     /// ソースコード
     case CommonSourceCode
+    /// 支給率
+    case CoopHistorySuppliedRatio
+    /// アプリをアップデートしてください
+    case CommonUpdateRequired
+    /// ユーザーデータ
+    case CommonUserData
+    /// 有効
+    case CommonValid
+    /// バージョン
+    case CommonAppVersion
+    /// ログ消去
+    case CommonWipeLog
+    /// 保存されている全てのログを消去します。
+    case CommonWipeLogMessage
+    /// リザルト消去
+    case CommonWipeResults
+    /// 保存されている全てのリザルトを消去します。
+    case CommonWipeResultsMessage
+    /// レビューを書く
+    case CommonWriteReview
+    /// 総合きろく
+    case CoopHistoryOverallRecord
+    /// 金イクラ
+    case CommonGoldenEggs
+    /// イクラ
+    case CommonPowerEggs
+    /// 概要
+    case CommonOverview
+    /// ja-JP
+    case CommonLocale
+    /// 0
+    case CommonLanguageCode
+    /// データベース
+    case CommonDatabase
+    /// X-ProductVersion
+    case CommonXproductVersion
+    /// X-WebViewVer
+    case CommonXwebViewVer
+    /// アップロード
+    case CommonUpload
+    /// 開発
+    case CommonCreditDevelop
+    /// テスト
+    case CommonCreditTest
+    /// UI/UXデザイン
+    case CommonCreditDesign
+    /// チームポイントカード
+    case CoopHistoryTeamPointCard
+    /// 推定値を表示
+    case CoopHistoryUseEstimatedValue
+    /// Safariの認証を利用する
+    case CommonUseSecureSession
+    /// 報酬
+    case CommonCheckInReward
+    /// 過去に配布されていたQRコードの報酬を取得します。
+    case CommonGetCheckInReward
+    /// チーム
+    case CoopHistoryTeamResult
+    /// あなた
+    case CoopHistoryPlayerResult
+    /// なかまの平均
+    case CoopHistoryCrewAvgResult
+    /// なかま
+    case CoopHistoryCrewResult
+    /// Waves
+    case CoopHistoryWaveResult
+    /// 最高
+    case CoopRecordHighestScore
+    /// 平均
+    case CoopRecordAverageScore
+    /// この機能を利用するにはiOS16以上にアップデートする必要があります。
+    case CommonRequirediOs16
+    /// このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
+    case CommonRequiredSignIn
+    /// リザルト復元に成功しました。
+    case CommonRestoreSuccessMessage
+    /// リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
+    case CommonRestoreFailureMessage
+    /// リザルト件数
+    case CommonResultsCount
+    /// デベロッパの回答
+    case CommonDeveloperAnswer
+    /// サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
+    case CommonMinimumVersion
+    /// バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
+    case ErrorInvalidSignature
+    /// 端末の設定を利用する
+    case CommonUseSystemTheme
+    /// ライセンス
+    case CommonLicense
+    /// キャンセル
+    case CommonCancel
+    /// ガチアサリ
+    case CommonClamBlitz
+    /// 閉じる
+    case CommonClose
+    /// ビッグラン
+    case CommonCoopBigRun
+    /// バイトチームコンテスト
+    case CommonCoopTeamContest
+    /// QRコードは、株式会社デンソーウェーブの登録商標です。
+    case CommonCopyrightQrCode
+    /// 決定
+    case CommonDecide
+    /// ダウンロード
+    case CommonDownload
+    /// おわる
+    case CommonEnd
+    /// はてな
+    case CommonGearPowerBlank
+    /// ホーム
+    case CommonHome
+    /// イカリング３
+    case CommonIkaring3
+    /// ロード中
+    case CommonNowLoading
+    /// ひっぱって更新
+    case CommonPullToRefresh
+    /// ガチホコバトル
+    case CommonRainmaker
+    /// シェア
+    case CommonShare
     /// ガチエリア
     case CommonSplatZones
     /// ガチヤグラ
@@ -176,34 +378,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CommonTricolorMatch
     /// ナワバリバトル
     case CommonTurfWar
-    /// アプリをアップデートしてください
-    case CommonUpdateRequired
-    /// アップロード
-    case CommonUpload
-    /// Safariの認証を利用する
-    case CommonUseSecureSession
-    /// 端末の設定を利用する
-    case CommonUseSystemTheme
-    /// ユーザーデータ
-    case CommonUserData
-    /// 有効
-    case CommonValid
-    /// ログ消去
-    case CommonWipeLog
-    /// 保存されている全てのログを消去します。
-    case CommonWipeLogMessage
-    /// リザルト消去
-    case CommonWipeResults
-    /// 保存されている全てのリザルトを消去します。
-    case CommonWipeResultsMessage
     /// はてな
     case CommonWpnNotfound
-    /// レビューを書く
-    case CommonWriteReview
-    /// X-ProductVersion
-    case CommonXProductVersion
-    /// X-WebViewVer
-    case CommonXWebViewVer
     /// 出現数
     case CoopHistoryAvailable
     /// 出現したオカシラシャケ
@@ -218,22 +394,14 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryBossAvailable
     /// Clear!!
     case CoopHistoryClear
-    /// なかまの平均
-    case CoopHistoryCrewAvgResult
-    /// なかま
-    case CoopHistoryCrewResult
     /// キケン度
     case CoopHistoryDangerRatio
-    /// 助けられた回数
-    case CoopHistoryDeathCount
     /// オカシラシャケ撃破！
     case CoopHistoryDefeatBoss
     /// 倒したオカシラシャケ
     case CoopHistoryDefeatBossCount
     /// 倒した！
     case CoopHistoryDefeated
-    /// オオモノシャケをたおした数
-    case CoopHistoryDefeatedCount
     /// 倒したオオモノシャケ
     case CoopHistoryDefeatedEnemies
     /// ※カッコ内の数字は自分で倒した数です
@@ -242,12 +410,6 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryDeliverCount
     /// オオモノシャケ
     case CoopHistoryEnemy
-    /// 推定値
-    case CoopHistoryEstimatedValue
-    /// イベントクリア率
-    case CoopHistoryEventClearRatio
-    /// イベント発生率
-    case CoopHistoryEventFrequency
     /// EX-WAVE
     case CoopHistoryExWave
     /// Failure
@@ -258,12 +420,6 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryGoToStats
     /// 集めた金イクラ
     case CoopHistoryGoldenDeliverCount
-    /// 称号
-    case CoopHistoryGradeId
-    /// 評価ポイント
-    case CoopHistoryGradePoint
-    /// 最高きろく
-    case CoopHistoryHighestRecord
     /// ハイスコア
     case CoopHistoryHighestScore
     /// バイトヒストリー
@@ -292,16 +448,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryNotAvailableDescription
     /// 倒せなかった...
     case CoopHistoryNotDefeated
-    /// 総合きろく
-    case CoopHistoryOverallRecord
     /// バイト回数
     case CoopHistoryPlayCount
-    /// なかま
-    case CoopHistoryPlayerCrew
-    /// あなた
-    case CoopHistoryPlayerResult
-    /// あなた
-    case CoopHistoryPlayerYou
     /// 前のバイト
     case CoopHistoryPrevious
     /// プライベート
@@ -322,8 +470,6 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryRescueCount
     /// たすけてもらったかいすう
     case CoopHistoryRescuedCount
-    /// リザルト件数
-    case CoopHistoryResultsCount
     /// ウロコ
     case CoopHistoryScale
     /// ドウウロコ
@@ -338,22 +484,14 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistorySeeSchedule
     /// オカシラゲージ
     case CoopHistorySmellMeter
-    /// 支給率
-    case CoopHistorySuppliedRatio
     /// 支給ブキ
     case CoopHistorySupplyWeapon
     /// バイトチームコンテスト
     case CoopHistoryTeamContest
-    /// チームポイントカード
-    case CoopHistoryTeamPointCard
-    /// チーム
-    case CoopHistoryTeamResult
     /// サーモンラン
     case CoopHistoryTitle
     /// るいけいポイント
     case CoopHistoryTotalPoint
-    /// 推定値を表示
-    case CoopHistoryUseEstimatedValue
     /// WAVE
     case CoopHistoryWave
     /// 干潮
@@ -362,12 +500,6 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryWaveLevel1
     /// 満潮
     case CoopHistoryWaveLevel2
-    /// Waves
-    case CoopHistoryWaveResult
-    /// 平均
-    case CoopRecordAverageScore
-    /// 最高
-    case CoopRecordHighestScore
     /// ホームに戻る
     case ErrorBackToHome
     /// 現在利用できません。しばらくお待ちください
@@ -378,18 +510,12 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case ErrorErrorOccurred
     /// 読みこみに失敗しました
     case ErrorErrorReopen
-    /// バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
-    case ErrorInvalidSignature
     /// ただいまサーバーのメンテナンス中です。時間をおいて再度アクセスしてください。
     case ErrorMaintenanceDescription
     /// しばらくお待ちください
     case ErrorMaintenanceTitle
     /// 再読みこみ
     case ErrorReload
-    /// 実測値
-    case RecordActualValue
-    /// 平均きろく
-    case RecordAverageScore
     /// 最後に遊んだ
     case RecordLatestPlayed
     /// よく使う

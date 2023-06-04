@@ -60,46 +60,28 @@
 "Grade07" = "達人+3";
 /// 傳說
 "Grade08" = "傳說";
-/// 新手 打工仔
-"GradeArbeiter00" = "新手 打工仔";
-/// 半吊子 打工仔
-"GradeArbeiter01" = "半吊子 打工仔";
-/// 獨當一面 打工仔
-"GradeArbeiter02" = "獨當一面 打工仔";
-/// 熟練 打工仔
-"GradeArbeiter03" = "熟練 打工仔";
-/// 達人 打工仔
-"GradeArbeiter04" = "達人 打工仔";
-/// 達人+1 打工仔
-"GradeArbeiter05" = "達人+1 打工仔";
-/// 達人+2 打工仔
-"GradeArbeiter06" = "達人+2 打工仔";
-/// 達人+3 打工仔
-"GradeArbeiter07" = "達人+3 打工仔";
-/// 傳說 打工仔
-"GradeArbeiter08" = "傳說 打工仔";
 /// 打工連身工作服 橘色
-"COP001" = "打工連身工作服 橘色";
+"Cop001" = "打工連身工作服 橘色";
 /// 打工連身工作服 綠色
-"COP002" = "打工連身工作服 綠色";
+"Cop002" = "打工連身工作服 綠色";
 /// 打工連身工作服 黃色
-"COP003" = "打工連身工作服 黃色";
+"Cop003" = "打工連身工作服 黃色";
 /// 打工連身工作服 粉紅色
-"COP004" = "打工連身工作服 粉紅色";
+"Cop004" = "打工連身工作服 粉紅色";
 /// 打工連身工作服 藍色
-"COP005" = "打工連身工作服 藍色";
+"Cop005" = "打工連身工作服 藍色";
 /// 打工連身工作服 黑色
-"COP006" = "打工連身工作服 黑色";
+"Cop006" = "打工連身工作服 黑色";
 /// 打工連身工作服 白色
-"COP007" = "打工連身工作服 白色";
+"Cop007" = "打工連身工作服 白色";
 /// 打工防水衣 橘色
-"COP008" = "打工防水衣 橘色";
+"Cop008" = "打工防水衣 橘色";
 /// 打工防水衣 黑色
-"COP009" = "打工防水衣 黑色";
+"Cop009" = "打工防水衣 黑色";
 /// 打工防水衣 黃色
-"COP010" = "打工防水衣 黃色";
+"Cop010" = "打工防水衣 黃色";
 /// 打工防水衣 棕色
-"COP011" = "打工防水衣 棕色";
+"Cop011" = "打工防水衣 棕色";
 /// 醋飯海洋世界
 "Carousel" = "醋飯海洋世界";
 /// 麥年海洋發電所
@@ -120,6 +102,228 @@
 "Unknown" = "？？？";
 /// 海女美術大學
 "Upland" = "海女美術大學";
+/// 烤架魚出動
+"CoopEventDozer" = "烤架魚出動";
+/// 霧
+"CoopEventFog" = "霧";
+/// 尋找金鮭魚
+"CoopEventGeyser" = "尋找金鮭魚";
+/// 走私魚來襲
+"CoopEventHakobiya" = "走私魚來襲";
+/// 大胖魚大量出現
+"CoopEventMissile" = "大胖魚大量出現";
+/// 巨型龍捲風
+"CoopEventRelay" = "巨型龍捲風";
+/// 狂潮
+"CoopEventRush" = "狂潮";
+/// 泥鮭魚噴發
+"CoopEventTamaire" = "泥鮭魚噴發";
+/// 打工劇本
+"CoopScenario" = "打工劇本";
+/// 頭目鮭魚
+"SakeBigBoss" = "頭目鮭魚";
+/// 頭目槽
+"SakeBigBossGauge" = "頭目槽";
+/// 關於
+"CommonAbout" = "關於";
+/// 實際的
+"RecordActualValue" = "實際的";
+/// 外觀
+"CommonAppearances" = "外觀";
+/// 應用程式
+"CommonApplication" = "應用程式";
+/// 平均
+"RecordAverageScore" = "平均";
+/// 備份
+"CommonBackupResults" = "備份";
+/// 壓縮（ZIP）
+"CommonBackupCompress" = "壓縮（ZIP）";
+/// 備份資料庫
+"CommonBackupMessage" = "備份資料庫";
+/// 純文字（JSON）
+"CommonBackupPlain" = "純文字（JSON）";
+/// 信用
+"CommonAppCredit" = "信用";
+/// 暗色模式
+"CommonDarkMode" = "暗色模式";
+/// 資料管理
+"CommonDataManagement" = "資料管理";
+/// 救援計數
+"CoopHistoryDeathCount" = "救援計數";
+/// 擊敗計數
+"CoopHistoryDefeatedCount" = "擊敗計數";
+/// 預估
+"CoopHistoryEstimatedValue" = "預估";
+/// 清除比率
+"CoopHistoryEventClearRatio" = "清除比率";
+/// 事件頻率
+"CoopHistoryEventFrequency" = "事件頻率";
+/// 常見問題
+"CommonFaq" = "常見問題";
+/// 遊戲模式
+"CommonGamingMode" = "遊戲模式";
+/// 成績
+"CoopHistoryGradeId" = "成績";
+/// 成績點數
+"CoopHistoryGradePoint" = "成績點數";
+/// 最高的
+"CoopHistoryHighestRecord" = "最高的";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// 無效的
+"CommonInvalid" = "無效的";
+/// 語言
+"CommonLanguages" = "語言";
+/// 傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。
+"CommonShareLogMessage" = "傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。";
+/// 分享日誌
+"CommonShareLog" = "分享日誌";
+/// 日誌文件
+"CommonLogSize" = "日誌文件";
+/// 我的頁面
+"CommonMyPage" = "我的頁面";
+/// 組
+"CoopHistoryPlayerCrew" = "組";
+/// 您
+"CoopHistoryPlayerYou" = "您";
+/// 隱私政策
+"CommonPrivacyPolicy" = "隱私政策";
+/// 表格
+"CommonRequestForm" = "表格";
+/// 錯誤
+"CommonRequestFormBug" = "錯誤";
+/// 內容
+"CommonRequestFormContent" = "內容";
+/// 增強
+"CommonRequestFormEnhancement" = "增強";
+/// 功能
+"CommonRequestFormFeature" = "功能";
+/// 標題
+"CommonRequestFormTitle" = "標題";
+/// 類型
+"CommonRequestFormType" = "類型";
+/// 提交
+"CommonRequsetFormSubmit" = "提交";
+/// 還原
+"CommonRestore" = "還原";
+/// 在「檔案」應用程式中選擇要還原的檔案。
+"CommonRestoreMessage" = "在「檔案」應用程式中選擇要還原的檔案。";
+/// 結果計數
+"CoopHistoryResultsCount" = "結果計數";
+/// 除錯
+"CommonRoleDebuger" = "除錯";
+/// 開發者
+"CommonRoleDeveloper" = "開發者";
+/// 測試者
+"CommonRoleTester" = "測試者";
+/// 翻譯者
+"CommonRoleTranslator" = "翻譯者";
+/// 儲存成功
+"CommonSaveToPhotoLibrary" = "儲存成功";
+/// 同步排程
+"CommonScheduleSync" = "同步排程";
+/// 從伺服器檢索排程。
+"CommonScheduleSyncMessage" = "從伺服器檢索排程。";
+/// 登入
+"CommonSignIn" = "登入";
+/// 登出
+"CommonSignOut" = "登出";
+/// 登出成功
+"CommonSignOutSuccessfully" = "登出成功";
+/// 取消連結任天堂Switch帳戶。
+"CommonSignOutMessage" = "取消連結任天堂Switch帳戶。";
+/// 原始碼
+"CommonSourceCode" = "原始碼";
+/// 供應比率
+"CoopHistorySuppliedRatio" = "供應比率";
+/// 需要應用程式更新
+"CommonUpdateRequired" = "需要應用程式更新";
+/// 使用者資料
+"CommonUserData" = "使用者資料";
+/// 有效的
+"CommonValid" = "有效的";
+/// 版本
+"CommonAppVersion" = "版本";
+/// 清除日誌
+"CommonWipeLog" = "清除日誌";
+/// 清除所有日誌。
+"CommonWipeLogMessage" = "清除所有日誌。";
+/// 清除結果
+"CommonWipeResults" = "清除結果";
+/// 清除所有資料。
+"CommonWipeResultsMessage" = "清除所有資料。";
+/// 撰寫評論
+"CommonWriteReview" = "撰寫評論";
+/// 整體
+"CoopHistoryOverallRecord" = "整體";
+/// 金蛋
+"CommonGoldenEggs" = "金蛋";
+/// 能量蛋
+"CommonPowerEggs" = "能量蛋";
+/// 概述
+"CommonOverview" = "概述";
+/// zh-TW
+"CommonLocale" = "zh-TW";
+/// 2
+"CommonLanguageCode" = "2";
+/// 資料庫
+"CommonDatabase" = "資料庫";
+/// X-ProductVersion
+"CommonXproductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// 上傳
+"CommonUpload" = "上傳";
+/// 開發者
+"CommonCreditDevelop" = "開發者";
+/// 測試者
+"CommonCreditTest" = "測試者";
+/// UI/UX設計
+"CommonCreditDesign" = "UI/UX設計";
+/// 團隊點數卡
+"CoopHistoryTeamPointCard" = "團隊點數卡";
+/// 使用預估值
+"CoopHistoryUseEstimatedValue" = "使用預估值";
+/// 使用 Safari 的身份驗證
+"CommonUseSecureSession" = "使用 Safari 的身份驗證";
+/// 獎勵
+"CommonCheckInReward" = "獎勵";
+/// 掃描QR碼獲取所有獎勵。
+"CommonGetCheckInReward" = "掃描QR碼獲取所有獎勵。";
+/// 團隊
+"CoopHistoryTeamResult" = "團隊";
+/// 您
+"CoopHistoryPlayerResult" = "您";
+/// 船員的平均數
+"CoopHistoryCrewAvgResult" = "船員的平均數";
+/// 船員
+"CoopHistoryCrewResult" = "船員";
+/// 海浪
+"CoopHistoryWaveResult" = "海浪";
+/// 最高
+"CoopRecordHighestScore" = "最高";
+/// 平均
+"CoopRecordAverageScore" = "平均";
+/// 您必須更新到iOS 16或更高版本才能使用此功能
+"CommonRequirediOs16" = "您必須更新到iOS 16或更高版本才能使用此功能";
+/// 登錄 Nintendo 帳戶才能使用此應用程式
+"CommonRequiredSignIn" = "登錄 Nintendo 帳戶才能使用此應用程式";
+/// 成功還原結果
+"CommonRestoreSuccessMessage" = "成功還原結果";
+/// 還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。
+"CommonRestoreFailureMessage" = "還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。";
+/// 結果
+"CommonResultsCount" = "結果";
+/// 開發者的回應
+"CommonDeveloperAnswer" = "開發者的回應";
+/// 無法恢復以不支援的版本備份的結果
+"CommonMinimumVersion" = "無法恢復以不支援的版本備份的結果";
+/// 由於備份簽名不匹配，無法恢復。結果可能已被篡改
+"ErrorInvalidSignature" = "由於備份簽名不匹配，無法恢復。結果可能已被篡改";
+/// 取決於設備設置
+"CommonUseSystemTheme" = "取決於設備設置";
+/// 許可證
+"CommonLicense" = "許可證";
 /// 取消
 "CommonCancel" = "取消";
 /// 真格蛤蜊
@@ -416,203 +620,3 @@
 "StageScheduleWinRateByRules" = "個別規則勝率";
 /// X比賽
 "StageScheduleXmatch" = "X比賽";
-/// 關於
-"CommonAbout" = "關於";
-/// 實際的
-"RecordActualValue" = "實際的";
-/// 外觀
-"CommonAppearances" = "外觀";
-/// 應用程式
-"CommonApplication" = "應用程式";
-/// 平均
-"RecordAverageScore" = "平均";
-/// 備份
-"CommonBackupResults" = "備份";
-/// 壓縮（ZIP）
-"CommonBackupCompress" = "壓縮（ZIP）";
-/// 備份資料庫
-"CommonBackupMessage" = "備份資料庫";
-/// 純文字（JSON）
-"CommonBackupPlain" = "純文字（JSON）";
-/// 信用
-"CommonAppCredit" = "信用";
-/// 暗色模式
-"CommonDarkMode" = "暗色模式";
-/// 資料管理
-"CommonDataManagement" = "資料管理";
-/// 救援計數
-"CoopHistoryDeathCount" = "救援計數";
-/// 擊敗計數
-"CoopHistoryDefeatedCount" = "擊敗計數";
-/// 預估
-"CoopHistoryEstimatedValue" = "預估";
-/// 清除比率
-"CoopHistoryEventClearRatio" = "清除比率";
-/// 事件頻率
-"CoopHistoryEventFrequency" = "事件頻率";
-/// 常見問題
-"CommonFAQ" = "常見問題";
-/// 遊戲模式
-"CommonGamingMode" = "遊戲模式";
-/// 成績
-"CoopHistoryGradeId" = "成績";
-/// 成績點數
-"CoopHistoryGradePoint" = "成績點數";
-/// 最高的
-"CoopHistoryHighestRecord" = "最高的";
-/// SplatNet2
-"CommonIkaring2" = "SplatNet2";
-/// 無效的
-"CommonInvalid" = "無效的";
-/// 語言
-"CommonLanguages" = "語言";
-/// 傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。
-"CommonShareLogMessage" = "傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。";
-/// 分享日誌
-"CommonShareLog" = "分享日誌";
-/// 日誌文件
-"CommonLogSize" = "日誌文件";
-/// 我的頁面
-"CommonMyPage" = "我的頁面";
-/// 組
-"CoopHistoryPlayerCrew" = "組";
-/// 您
-"CoopHistoryPlayerYou" = "您";
-/// 隱私政策
-"CommonPrivacyPolicy" = "隱私政策";
-/// 表格
-"CommonRequestForm" = "表格";
-/// 錯誤
-"CommonRequestFormBug" = "錯誤";
-/// 內容
-"CommonRequestFormContent" = "內容";
-/// 增強
-"CommonRequestFormEnhancement" = "增強";
-/// 功能
-"CommonRequestFormFeature" = "功能";
-/// 標題
-"CommonRequestFormTitle" = "標題";
-/// 類型
-"CommonRequestFormType" = "類型";
-/// 提交
-"CommonRequsetFormSubmit" = "提交";
-/// 還原
-"CommonRestore" = "還原";
-/// 在「檔案」應用程式中選擇要還原的檔案。
-"CommonRestoreMessage" = "在「檔案」應用程式中選擇要還原的檔案。";
-/// 結果計數
-"CoopHistoryResultsCount" = "結果計數";
-/// 除錯
-"CommonRoleDebuger" = "除錯";
-/// 開發者
-"CommonRoleDeveloper" = "開發者";
-/// 測試者
-"CommonRoleTester" = "測試者";
-/// 翻譯者
-"CommonRoleTranslator" = "翻譯者";
-/// 儲存成功
-"CommonSaveToPhotoLibrary" = "儲存成功";
-/// 同步排程
-"CommonScheduleSync" = "同步排程";
-/// 從伺服器檢索排程。
-"CommonScheduleSyncMessage" = "從伺服器檢索排程。";
-/// 登入
-"CommonSignIn" = "登入";
-/// 登出
-"CommonSignOut" = "登出";
-/// 登出成功
-"CommonSignOutSuccessfully" = "登出成功";
-/// 取消連結任天堂Switch帳戶。
-"CommonSignOutMessage" = "取消連結任天堂Switch帳戶。";
-/// 原始碼
-"CommonSourceCode" = "原始碼";
-/// 供應比率
-"CoopHistorySuppliedRatio" = "供應比率";
-/// 需要應用程式更新
-"CommonUpdateRequired" = "需要應用程式更新";
-/// 使用者資料
-"CommonUserData" = "使用者資料";
-/// 有效的
-"CommonValid" = "有效的";
-/// 版本
-"CommonAppVersion" = "版本";
-/// 清除日誌
-"CommonWipeLog" = "清除日誌";
-/// 清除所有日誌。
-"CommonWipeLogMessage" = "清除所有日誌。";
-/// 清除結果
-"CommonWipeResults" = "清除結果";
-/// 清除所有資料。
-"CommonWipeResultsMessage" = "清除所有資料。";
-/// 撰寫評論
-"CommonWriteReview" = "撰寫評論";
-/// 整體
-"CoopHistoryOverallRecord" = "整體";
-/// 金蛋
-"CommonGoldenEggs" = "金蛋";
-/// 能量蛋
-"CommonPowerEggs" = "能量蛋";
-/// 概述
-"CommonOverview" = "概述";
-/// zh-TW
-"CommonLocale" = "zh-TW";
-/// 2
-"CommonLanguageCode" = "2";
-/// 資料庫
-"CommonDatabase" = "資料庫";
-/// X-ProductVersion
-"CommonXProductVersion" = "X-ProductVersion";
-/// X-WebViewVer
-"CommonXWebViewVer" = "X-WebViewVer";
-/// 上傳
-"CommonUpload" = "上傳";
-/// 開發者
-"CommonCreditDevelop" = "開發者";
-/// 測試者
-"CommonCreditTest" = "測試者";
-/// UI/UX設計
-"CommonCreditDesign" = "UI/UX設計";
-/// 團隊點數卡
-"CoopHistoryTeamPointCard" = "團隊點數卡";
-/// 使用預估值
-"CoopHistoryUseEstimatedValue" = "使用預估值";
-/// 使用 Safari 的身份驗證
-"CommonUseSecureSession" = "使用 Safari 的身份驗證";
-/// 獎勵
-"CommonCheckInReward" = "獎勵";
-/// 掃描QR碼獲取所有獎勵。
-"CommonGetCheckInReward" = "掃描QR碼獲取所有獎勵。";
-/// 團隊
-"CoopHistoryTeamResult" = "團隊";
-/// 您
-"CoopHistoryPlayerResult" = "您";
-/// 船員的平均數
-"CoopHistoryCrewAvgResult" = "船員的平均數";
-/// 船員
-"CoopHistoryCrewResult" = "船員";
-/// 海浪
-"CoopHistoryWaveResult" = "海浪";
-/// 最高
-"CoopRecordHighestScore" = "最高";
-/// 平均
-"CoopRecordAverageScore" = "平均";
-/// 您必須更新到iOS 16或更高版本才能使用此功能
-"CommonRequirediOS16" = "您必須更新到iOS 16或更高版本才能使用此功能";
-/// 登錄 Nintendo 帳戶才能使用此應用程式
-"CommonRequiredSignIn" = "登錄 Nintendo 帳戶才能使用此應用程式";
-/// 成功還原結果
-"CommonRestoreSuccessMessage" = "成功還原結果";
-/// 還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。
-"CommonRestoreFailureMessage" = "還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。";
-/// 結果
-"CommonResultsCount" = "結果";
-/// 開發者的回應
-"CommonDeveloperAnswer" = "開發者的回應";
-/// 無法恢復以不支援的版本備份的結果
-"CommonMinimumVersion" = "無法恢復以不支援的版本備份的結果";
-/// 由於備份簽名不匹配，無法恢復。結果可能已被篡改
-"ErrorInvalidSignature" = "由於備份簽名不匹配，無法恢復。結果可能已被篡改";
-/// 取決於設備設置
-"CommonUseSystemTheme" = "取決於設備設置";
-/// 許可證
-"CommonLicense" = "許可證";

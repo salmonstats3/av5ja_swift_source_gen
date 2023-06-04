@@ -60,46 +60,28 @@
 "Grade07" = "たつじん＋３";
 /// でんせつ
 "Grade08" = "でんせつ";
-/// かけだし アルバイター
-"GradeArbeiter00" = "かけだし アルバイター";
-/// はんにんまえ アルバイター
-"GradeArbeiter01" = "はんにんまえ アルバイター";
-/// いちにんまえ アルバイター
-"GradeArbeiter02" = "いちにんまえ アルバイター";
-/// じゅくれん アルバイター
-"GradeArbeiter03" = "じゅくれん アルバイター";
-/// たつじん アルバイター
-"GradeArbeiter04" = "たつじん アルバイター";
-/// たつじん＋１ アルバイター
-"GradeArbeiter05" = "たつじん＋１ アルバイター";
-/// たつじん＋２ アルバイター
-"GradeArbeiter06" = "たつじん＋２ アルバイター";
-/// たつじん＋３ アルバイター
-"GradeArbeiter07" = "たつじん＋３ アルバイター";
-/// でんせつ アルバイター
-"GradeArbeiter08" = "でんせつ アルバイター";
 /// バイトツナギ オレンジ
-"COP001" = "バイトツナギ オレンジ";
+"Cop001" = "バイトツナギ オレンジ";
 /// バイトツナギ グリーン
-"COP002" = "バイトツナギ グリーン";
+"Cop002" = "バイトツナギ グリーン";
 /// バイトツナギ イエロー
-"COP003" = "バイトツナギ イエロー";
+"Cop003" = "バイトツナギ イエロー";
 /// バイトツナギ ピンク
-"COP004" = "バイトツナギ ピンク";
+"Cop004" = "バイトツナギ ピンク";
 /// バイトツナギ ブルー
-"COP005" = "バイトツナギ ブルー";
+"Cop005" = "バイトツナギ ブルー";
 /// バイトツナギ ブラック
-"COP006" = "バイトツナギ ブラック";
+"Cop006" = "バイトツナギ ブラック";
 /// バイトツナギ ホワイト
-"COP007" = "バイトツナギ ホワイト";
+"Cop007" = "バイトツナギ ホワイト";
 /// バイトウェーダー オレンジ
-"COP008" = "バイトウェーダー オレンジ";
+"Cop008" = "バイトウェーダー オレンジ";
 /// バイトウェーダー ブラック
-"COP009" = "バイトウェーダー ブラック";
+"Cop009" = "バイトウェーダー ブラック";
 /// バイトウェーダー イエロー
-"COP010" = "バイトウェーダー イエロー";
+"Cop010" = "バイトウェーダー イエロー";
 /// バイトウェーダー ブラウン
-"COP011" = "バイトウェーダー ブラウン";
+"Cop011" = "バイトウェーダー ブラウン";
 /// スメーシーワールド
 "Carousel" = "スメーシーワールド";
 /// ムニ・エール海洋発電所
@@ -120,6 +102,228 @@
 "Unknown" = "？？？";
 /// 海女美術大学
 "Upland" = "海女美術大学";
+/// グリル発進
+"CoopEventDozer" = "グリル発進";
+/// 霧
+"CoopEventFog" = "霧";
+/// キンシャケ探し
+"CoopEventGeyser" = "キンシャケ探し";
+/// ハコビヤ襲来
+"CoopEventHakobiya" = "ハコビヤ襲来";
+/// ドスコイ大量発生
+"CoopEventMissile" = "ドスコイ大量発生";
+/// 巨大タツマキ
+"CoopEventRelay" = "巨大タツマキ";
+/// ラッシュ
+"CoopEventRush" = "ラッシュ";
+/// ドロシャケ噴出
+"CoopEventTamaire" = "ドロシャケ噴出";
+/// バイトシナリオ
+"CoopScenario" = "バイトシナリオ";
+/// オカシラシャケ
+"SakeBigBoss" = "オカシラシャケ";
+/// オカシラゲージ
+"SakeBigBossGauge" = "オカシラゲージ";
+/// About
+"CommonAbout" = "About";
+/// 実測値
+"RecordActualValue" = "実測値";
+/// 外観
+"CommonAppearances" = "外観";
+/// アプリ
+"CommonApplication" = "アプリ";
+/// 平均きろく
+"RecordAverageScore" = "平均きろく";
+/// バックアップ
+"CommonBackupResults" = "バックアップ";
+/// 圧縮(ZIP)
+"CommonBackupCompress" = "圧縮(ZIP)";
+/// データベースのバックアップを出力します。
+"CommonBackupMessage" = "データベースのバックアップを出力します。";
+/// 非圧縮(JSON)
+"CommonBackupPlain" = "非圧縮(JSON)";
+/// クレジット
+"CommonAppCredit" = "クレジット";
+/// ダークモード
+"CommonDarkMode" = "ダークモード";
+/// データ管理
+"CommonDataManagement" = "データ管理";
+/// 助けられた回数
+"CoopHistoryDeathCount" = "助けられた回数";
+/// オオモノシャケをたおした数
+"CoopHistoryDefeatedCount" = "オオモノシャケをたおした数";
+/// 推定値
+"CoopHistoryEstimatedValue" = "推定値";
+/// イベントクリア率
+"CoopHistoryEventClearRatio" = "イベントクリア率";
+/// イベント発生率
+"CoopHistoryEventFrequency" = "イベント発生率";
+/// よくあるご質問
+"CommonFaq" = "よくあるご質問";
+/// ゲーミングモード
+"CommonGamingMode" = "ゲーミングモード";
+/// 称号
+"CoopHistoryGradeId" = "称号";
+/// 評価ポイント
+"CoopHistoryGradePoint" = "評価ポイント";
+/// 最高きろく
+"CoopHistoryHighestRecord" = "最高きろく";
+/// イカリング2
+"CommonIkaring2" = "イカリング2";
+/// 無効
+"CommonInvalid" = "無効";
+/// 言語
+"CommonLanguages" = "言語";
+/// 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
+"CommonShareLogMessage" = "開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。";
+/// ログ送信
+"CommonShareLog" = "ログ送信";
+/// ログファイル
+"CommonLogSize" = "ログファイル";
+/// マイページ
+"CommonMyPage" = "マイページ";
+/// なかま
+"CoopHistoryPlayerCrew" = "なかま";
+/// あなた
+"CoopHistoryPlayerYou" = "あなた";
+/// プライバシーポリシー
+"CommonPrivacyPolicy" = "プライバシーポリシー";
+/// フォーム
+"CommonRequestForm" = "フォーム";
+/// バグ修正
+"CommonRequestFormBug" = "バグ修正";
+/// 内容
+"CommonRequestFormContent" = "内容";
+/// 改善案
+"CommonRequestFormEnhancement" = "改善案";
+/// 機能追加
+"CommonRequestFormFeature" = "機能追加";
+/// タイトル
+"CommonRequestFormTitle" = "タイトル";
+/// 種類
+"CommonRequestFormType" = "種類";
+/// 送信
+"CommonRequsetFormSubmit" = "送信";
+/// リストア
+"CommonRestore" = "リストア";
+/// ファイルアプリからリストアするファイルを選択してください。
+"CommonRestoreMessage" = "ファイルアプリからリストアするファイルを選択してください。";
+/// リザルト件数
+"CoopHistoryResultsCount" = "リザルト件数";
+/// デバッグ
+"CommonRoleDebuger" = "デバッグ";
+/// 開発
+"CommonRoleDeveloper" = "開発";
+/// テスト
+"CommonRoleTester" = "テスト";
+/// 翻訳
+"CommonRoleTranslator" = "翻訳";
+/// 保存しました
+"CommonSaveToPhotoLibrary" = "保存しました";
+/// スケジュール同期
+"CommonScheduleSync" = "スケジュール同期";
+/// スケジュールサーバーから過去のスケジュールを取得します
+"CommonScheduleSyncMessage" = "スケジュールサーバーから過去のスケジュールを取得します";
+/// ログイン
+"CommonSignIn" = "ログイン";
+/// ログアウト
+"CommonSignOut" = "ログアウト";
+/// ログアウト成功しました
+"CommonSignOutSuccessfully" = "ログアウト成功しました";
+/// ニンテンドーアカウントとの連携を解除します
+"CommonSignOutMessage" = "ニンテンドーアカウントとの連携を解除します";
+/// ソースコード
+"CommonSourceCode" = "ソースコード";
+/// 支給率
+"CoopHistorySuppliedRatio" = "支給率";
+/// アプリをアップデートしてください
+"CommonUpdateRequired" = "アプリをアップデートしてください";
+/// ユーザーデータ
+"CommonUserData" = "ユーザーデータ";
+/// 有効
+"CommonValid" = "有効";
+/// バージョン
+"CommonAppVersion" = "バージョン";
+/// ログ消去
+"CommonWipeLog" = "ログ消去";
+/// 保存されている全てのログを消去します。
+"CommonWipeLogMessage" = "保存されている全てのログを消去します。";
+/// リザルト消去
+"CommonWipeResults" = "リザルト消去";
+/// 保存されている全てのリザルトを消去します。
+"CommonWipeResultsMessage" = "保存されている全てのリザルトを消去します。";
+/// レビューを書く
+"CommonWriteReview" = "レビューを書く";
+/// 総合きろく
+"CoopHistoryOverallRecord" = "総合きろく";
+/// 金イクラ
+"CommonGoldenEggs" = "金イクラ";
+/// イクラ
+"CommonPowerEggs" = "イクラ";
+/// 概要
+"CommonOverview" = "概要";
+/// ja-JP
+"CommonLocale" = "ja-JP";
+/// 0
+"CommonLanguageCode" = "0";
+/// データベース
+"CommonDatabase" = "データベース";
+/// X-ProductVersion
+"CommonXproductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// アップロード
+"CommonUpload" = "アップロード";
+/// 開発
+"CommonCreditDevelop" = "開発";
+/// テスト
+"CommonCreditTest" = "テスト";
+/// UI/UXデザイン
+"CommonCreditDesign" = "UI/UXデザイン";
+/// チームポイントカード
+"CoopHistoryTeamPointCard" = "チームポイントカード";
+/// 推定値を表示
+"CoopHistoryUseEstimatedValue" = "推定値を表示";
+/// Safariの認証を利用する
+"CommonUseSecureSession" = "Safariの認証を利用する";
+/// 報酬
+"CommonCheckInReward" = "報酬";
+/// 過去に配布されていたQRコードの報酬を取得します。
+"CommonGetCheckInReward" = "過去に配布されていたQRコードの報酬を取得します。";
+/// チーム
+"CoopHistoryTeamResult" = "チーム";
+/// あなた
+"CoopHistoryPlayerResult" = "あなた";
+/// なかまの平均
+"CoopHistoryCrewAvgResult" = "なかまの平均";
+/// なかま
+"CoopHistoryCrewResult" = "なかま";
+/// Waves
+"CoopHistoryWaveResult" = "Waves";
+/// 最高
+"CoopRecordHighestScore" = "最高";
+/// 平均
+"CoopRecordAverageScore" = "平均";
+/// この機能を利用するにはiOS16以上にアップデートする必要があります。
+"CommonRequirediOs16" = "この機能を利用するにはiOS16以上にアップデートする必要があります。";
+/// このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
+"CommonRequiredSignIn" = "このアプリを利用するにはニンテンドーアカウントでログインする必要があります。";
+/// リザルト復元に成功しました。
+"CommonRestoreSuccessMessage" = "リザルト復元に成功しました。";
+/// リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
+"CommonRestoreFailureMessage" = "リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。";
+/// リザルト件数
+"CommonResultsCount" = "リザルト件数";
+/// デベロッパの回答
+"CommonDeveloperAnswer" = "デベロッパの回答";
+/// サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
+"CommonMinimumVersion" = "サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。";
+/// バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
+"ErrorInvalidSignature" = "バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。";
+/// 端末の設定を利用する
+"CommonUseSystemTheme" = "端末の設定を利用する";
+/// ライセンス
+"CommonLicense" = "ライセンス";
 /// キャンセル
 "CommonCancel" = "キャンセル";
 /// ガチアサリ
@@ -414,203 +618,3 @@
 "StageScheduleWinRateByRules" = "ルールごとの勝率";
 /// Xマッチ
 "StageScheduleXmatch" = "Xマッチ";
-/// About
-"CommonAbout" = "About";
-/// 実測値
-"RecordActualValue" = "実測値";
-/// 外観
-"CommonAppearances" = "外観";
-/// アプリ
-"CommonApplication" = "アプリ";
-/// 平均きろく
-"RecordAverageScore" = "平均きろく";
-/// バックアップ
-"CommonBackupResults" = "バックアップ";
-/// 圧縮(ZIP)
-"CommonBackupCompress" = "圧縮(ZIP)";
-/// データベースのバックアップを出力します。
-"CommonBackupMessage" = "データベースのバックアップを出力します。";
-/// 非圧縮(JSON)
-"CommonBackupPlain" = "非圧縮(JSON)";
-/// クレジット
-"CommonAppCredit" = "クレジット";
-/// ダークモード
-"CommonDarkMode" = "ダークモード";
-/// データ管理
-"CommonDataManagement" = "データ管理";
-/// 助けられた回数
-"CoopHistoryDeathCount" = "助けられた回数";
-/// オオモノシャケをたおした数
-"CoopHistoryDefeatedCount" = "オオモノシャケをたおした数";
-/// 推定値
-"CoopHistoryEstimatedValue" = "推定値";
-/// イベントクリア率
-"CoopHistoryEventClearRatio" = "イベントクリア率";
-/// イベント発生率
-"CoopHistoryEventFrequency" = "イベント発生率";
-/// よくあるご質問
-"CommonFAQ" = "よくあるご質問";
-/// ゲーミングモード
-"CommonGamingMode" = "ゲーミングモード";
-/// 称号
-"CoopHistoryGradeId" = "称号";
-/// 評価ポイント
-"CoopHistoryGradePoint" = "評価ポイント";
-/// 最高きろく
-"CoopHistoryHighestRecord" = "最高きろく";
-/// イカリング2
-"CommonIkaring2" = "イカリング2";
-/// 無効
-"CommonInvalid" = "無効";
-/// 言語
-"CommonLanguages" = "言語";
-/// 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
-"CommonShareLogMessage" = "開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。";
-/// ログ送信
-"CommonShareLog" = "ログ送信";
-/// ログファイル
-"CommonLogSize" = "ログファイル";
-/// マイページ
-"CommonMyPage" = "マイページ";
-/// なかま
-"CoopHistoryPlayerCrew" = "なかま";
-/// あなた
-"CoopHistoryPlayerYou" = "あなた";
-/// プライバシーポリシー
-"CommonPrivacyPolicy" = "プライバシーポリシー";
-/// フォーム
-"CommonRequestForm" = "フォーム";
-/// バグ修正
-"CommonRequestFormBug" = "バグ修正";
-/// 内容
-"CommonRequestFormContent" = "内容";
-/// 改善案
-"CommonRequestFormEnhancement" = "改善案";
-/// 機能追加
-"CommonRequestFormFeature" = "機能追加";
-/// タイトル
-"CommonRequestFormTitle" = "タイトル";
-/// 種類
-"CommonRequestFormType" = "種類";
-/// 送信
-"CommonRequsetFormSubmit" = "送信";
-/// リストア
-"CommonRestore" = "リストア";
-/// ファイルアプリからリストアするファイルを選択してください。
-"CommonRestoreMessage" = "ファイルアプリからリストアするファイルを選択してください。";
-/// リザルト件数
-"CoopHistoryResultsCount" = "リザルト件数";
-/// デバッグ
-"CommonRoleDebuger" = "デバッグ";
-/// 開発
-"CommonRoleDeveloper" = "開発";
-/// テスト
-"CommonRoleTester" = "テスト";
-/// 翻訳
-"CommonRoleTranslator" = "翻訳";
-/// 保存しました
-"CommonSaveToPhotoLibrary" = "保存しました";
-/// スケジュール同期
-"CommonScheduleSync" = "スケジュール同期";
-/// スケジュールサーバーから過去のスケジュールを取得します
-"CommonScheduleSyncMessage" = "スケジュールサーバーから過去のスケジュールを取得します";
-/// ログイン
-"CommonSignIn" = "ログイン";
-/// ログアウト
-"CommonSignOut" = "ログアウト";
-/// ログアウト成功しました
-"CommonSignOutSuccessfully" = "ログアウト成功しました";
-/// ニンテンドーアカウントとの連携を解除します
-"CommonSignOutMessage" = "ニンテンドーアカウントとの連携を解除します";
-/// ソースコード
-"CommonSourceCode" = "ソースコード";
-/// 支給率
-"CoopHistorySuppliedRatio" = "支給率";
-/// アプリをアップデートしてください
-"CommonUpdateRequired" = "アプリをアップデートしてください";
-/// ユーザーデータ
-"CommonUserData" = "ユーザーデータ";
-/// 有効
-"CommonValid" = "有効";
-/// バージョン
-"CommonAppVersion" = "バージョン";
-/// ログ消去
-"CommonWipeLog" = "ログ消去";
-/// 保存されている全てのログを消去します。
-"CommonWipeLogMessage" = "保存されている全てのログを消去します。";
-/// リザルト消去
-"CommonWipeResults" = "リザルト消去";
-/// 保存されている全てのリザルトを消去します。
-"CommonWipeResultsMessage" = "保存されている全てのリザルトを消去します。";
-/// レビューを書く
-"CommonWriteReview" = "レビューを書く";
-/// 総合きろく
-"CoopHistoryOverallRecord" = "総合きろく";
-/// 金イクラ
-"CommonGoldenEggs" = "金イクラ";
-/// イクラ
-"CommonPowerEggs" = "イクラ";
-/// 概要
-"CommonOverview" = "概要";
-/// ja-JP
-"CommonLocale" = "ja-JP";
-/// 0
-"CommonLanguageCode" = "0";
-/// データベース
-"CommonDatabase" = "データベース";
-/// X-ProductVersion
-"CommonXProductVersion" = "X-ProductVersion";
-/// X-WebViewVer
-"CommonXWebViewVer" = "X-WebViewVer";
-/// アップロード
-"CommonUpload" = "アップロード";
-/// 開発
-"CommonCreditDevelop" = "開発";
-/// テスト
-"CommonCreditTest" = "テスト";
-/// UI/UXデザイン
-"CommonCreditDesign" = "UI/UXデザイン";
-/// チームポイントカード
-"CoopHistoryTeamPointCard" = "チームポイントカード";
-/// 推定値を表示
-"CoopHistoryUseEstimatedValue" = "推定値を表示";
-/// Safariの認証を利用する
-"CommonUseSecureSession" = "Safariの認証を利用する";
-/// 報酬
-"CommonCheckInReward" = "報酬";
-/// 過去に配布されていたQRコードの報酬を取得します。
-"CommonGetCheckInReward" = "過去に配布されていたQRコードの報酬を取得します。";
-/// チーム
-"CoopHistoryTeamResult" = "チーム";
-/// あなた
-"CoopHistoryPlayerResult" = "あなた";
-/// なかまの平均
-"CoopHistoryCrewAvgResult" = "なかまの平均";
-/// なかま
-"CoopHistoryCrewResult" = "なかま";
-/// Waves
-"CoopHistoryWaveResult" = "Waves";
-/// 最高
-"CoopRecordHighestScore" = "最高";
-/// 平均
-"CoopRecordAverageScore" = "平均";
-/// この機能を利用するにはiOS16以上にアップデートする必要があります。
-"CommonRequirediOS16" = "この機能を利用するにはiOS16以上にアップデートする必要があります。";
-/// このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
-"CommonRequiredSignIn" = "このアプリを利用するにはニンテンドーアカウントでログインする必要があります。";
-/// リザルト復元に成功しました。
-"CommonRestoreSuccessMessage" = "リザルト復元に成功しました。";
-/// リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
-"CommonRestoreFailureMessage" = "リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。";
-/// リザルト件数
-"CommonResultsCount" = "リザルト件数";
-/// デベロッパの回答
-"CommonDeveloperAnswer" = "デベロッパの回答";
-/// サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
-"CommonMinimumVersion" = "サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。";
-/// バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
-"ErrorInvalidSignature" = "バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。";
-/// 端末の設定を利用する
-"CommonUseSystemTheme" = "端末の設定を利用する";
-/// ライセンス
-"CommonLicense" = "ライセンス";
