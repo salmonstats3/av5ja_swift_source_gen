@@ -1,7 +1,16 @@
 import { plainToInstance } from 'class-transformer';
 import fetch from 'node-fetch';
 
-import { BadgeInfo, CoopEnemyInfo, CoopSkinInfo, GearInfo, InternalType, NamePlateBgInfo, WeaponInfoMain, WeaponInfoSpecial } from './internal_type';
+import {
+  BadgeInfo,
+  CoopEnemyInfo,
+  CoopSkinInfo,
+  GearInfo,
+  InternalType,
+  NamePlateBgInfo,
+  WeaponInfoMain,
+  WeaponInfoSpecial,
+} from './internal_type';
 
 const base_url = (version: Version): string => {
   return `https://leanny.github.io/splat3/data/mush/${version}/`;
@@ -21,16 +30,16 @@ export const Version = {
 } as const;
 
 export const URLType = {
-  WeaponInfoMain: "WeaponInfoMain.json",
+  WeaponInfoMain: 'WeaponInfoMain.json',
   // WeaponInfoSub: "WeaponInfoSub.json",
-  WeaponInfoSpecial: "WeaponInfoSpecial.json",
-  GearInfoHead: "GearInfoHead.json",
-  GearInfoClothes: "GearInfoClothes.json",
-  GearInfoShoes: "GearInfoShoes.json",
-  NamePlateBgInfo: "NamePlateBgInfo.json",
-  BadgeInfo: "BadgeInfo.json",
-  CoopSkinInfo: "CoopSkinInfo.json",
-  CoopEnemyInfo: "CoopEnemyInfo.json",
+  WeaponInfoSpecial: 'WeaponInfoSpecial.json',
+  GearInfoHead: 'GearInfoHead.json',
+  GearInfoClothes: 'GearInfoClothes.json',
+  GearInfoShoes: 'GearInfoShoes.json',
+  NamePlateBgInfo: 'NamePlateBgInfo.json',
+  BadgeInfo: 'BadgeInfo.json',
+  CoopSkinInfo: 'CoopSkinInfo.json',
+  CoopEnemyInfo: 'CoopEnemyInfo.json',
 } as const;
 
 export async function request(url: URLType, version: Version): Promise<InternalType[]> {

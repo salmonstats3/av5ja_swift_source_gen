@@ -1,6 +1,6 @@
-import { Expose, Transform } from "class-transformer";
-import { createHash } from "crypto";
-import { URLType, Version, request } from "./urls";
+import { Expose, Transform } from 'class-transformer';
+import { createHash } from 'crypto';
+import { URLType, Version, request } from './urls';
 
 export class EnumURLType {
   key: URLType;
@@ -24,46 +24,46 @@ export interface InternalType {
 }
 
 export function calc_hash(key: string): string {
-  const hash = createHash("sha256");
+  const hash = createHash('sha256');
   hash.update(key);
-  return hash.digest("hex");
+  return hash.digest('hex');
 }
 
 export class CoopEnemyInfo implements InternalType {
   @Expose()
   @Transform((param) => {
     switch (param.obj.Type) {
-      case "SakelienBomber":
+      case 'SakelienBomber':
         return 4;
-      case "SakelienCupTwins":
+      case 'SakelienCupTwins':
         return 5;
-      case "SakelienShield":
+      case 'SakelienShield':
         return 6;
-      case "SakelienSnake":
+      case 'SakelienSnake':
         return 7;
-      case "SakelienTower":
+      case 'SakelienTower':
         return 8;
-      case "Sakediver":
+      case 'Sakediver':
         return 9;
-      case "Sakerocket":
+      case 'Sakerocket':
         return 10;
-      case "SakePillar":
+      case 'SakePillar':
         return 11;
-      case "SakeDolphin":
+      case 'SakeDolphin':
         return 12;
-      case "SakeArtillery":
+      case 'SakeArtillery':
         return 13;
-      case "SakeSaucer":
+      case 'SakeSaucer':
         return 14;
-      case "SakelienGolden":
+      case 'SakelienGolden':
         return 15;
-      case "Sakedozer":
+      case 'Sakedozer':
         return 17;
-      case "SakeBigMouth":
+      case 'SakeBigMouth':
         return 20;
-      case "SakelienGiant":
+      case 'SakelienGiant':
         return 23;
-      case "SakeRope":
+      case 'SakeRope':
         return 24;
       default:
         return -1;
@@ -71,7 +71,7 @@ export class CoopEnemyInfo implements InternalType {
   })
   id: number;
 
-  @Expose({ name: "Type" })
+  @Expose({ name: 'Type' })
   @Transform((param) => param.value)
   row_id: string;
 
@@ -81,10 +81,10 @@ export class CoopEnemyInfo implements InternalType {
 }
 
 export class CoopSkinInfo implements InternalType {
-  @Expose({ name: "Id" })
+  @Expose({ name: 'Id' })
   id: number;
 
-  @Expose({ name: "__RowId" })
+  @Expose({ name: '__RowId' })
   row_id: string;
 
   @Expose()
@@ -93,13 +93,13 @@ export class CoopSkinInfo implements InternalType {
 }
 
 export class WeaponInfoMain implements InternalType {
-  @Expose({ name: "Id" })
+  @Expose({ name: 'Id' })
   id: number;
 
-  @Expose({ name: "Label" })
+  @Expose({ name: 'Label' })
   label: string;
 
-  @Expose({ name: "__RowId" })
+  @Expose({ name: '__RowId' })
   row_id: string;
 
   @Expose()
@@ -109,39 +109,39 @@ export class WeaponInfoMain implements InternalType {
   static get Random_Green(): InternalType {
     return {
       id: -1,
-      label: "緑ランダム",
-      row_id: "Random_Green",
-      hash: "473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1",
+      label: '緑ランダム',
+      row_id: 'Random_Green',
+      hash: '473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1',
     } as InternalType;
   }
 
   static get Random_Gold(): InternalType {
     return {
       id: -2,
-      label: "金ランダム",
-      row_id: "Random_Gold",
-      hash: "9d7272733ae2f2282938da17d69f13419a935eef42239132a02fcf37d8678f10",
+      label: '金ランダム',
+      row_id: 'Random_Gold',
+      hash: '9d7272733ae2f2282938da17d69f13419a935eef42239132a02fcf37d8678f10',
     } as InternalType;
   }
 
   static get Dummy(): InternalType {
     return {
       id: -999,
-      label: "はてな",
-      row_id: "Dummy",
-      hash: "a23d035e2f37c502e85b6065ba777d93f42d6ca7017ed029baac6db512e3e17f",
+      label: 'はてな',
+      row_id: 'Dummy',
+      hash: 'a23d035e2f37c502e85b6065ba777d93f42d6ca7017ed029baac6db512e3e17f',
     } as InternalType;
   }
 
   get for_coop(): boolean {
-    if (!this.row_id.includes("_Coop")) {
+    if (!this.row_id.includes('_Coop')) {
       return false;
     }
-    const row_id: string = this.row_id.replace("_Coop", "_00");
-    this.row_id = this.row_id.replace("_Coop", "");
-    this.label = this.label.replace("Coop", "");
+    const row_id: string = this.row_id.replace('_Coop', '_00');
+    this.row_id = this.row_id.replace('_Coop', '');
+    this.label = this.label.replace('Coop', '');
     this.hash = calc_hash(row_id);
-    if (!this.row_id.includes("Bear")) {
+    if (!this.row_id.includes('Bear')) {
       this.id = this.id - 20000;
     }
     return true;
@@ -149,13 +149,13 @@ export class WeaponInfoMain implements InternalType {
 }
 
 export class WeaponInfoSpecial implements InternalType {
-  @Expose({ name: "Id" })
+  @Expose({ name: 'Id' })
   id: number;
 
-  @Expose({ name: "Label" })
+  @Expose({ name: 'Label' })
   label: string;
 
-  @Expose({ name: "__RowId" })
+  @Expose({ name: '__RowId' })
   row_id: string;
 
   @Expose()
@@ -165,19 +165,19 @@ export class WeaponInfoSpecial implements InternalType {
   static get Random_Green(): InternalType {
     return {
       id: -1,
-      label: "緑ランダム",
-      row_id: "Random_Green",
-      hash: "473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1",
+      label: '緑ランダム',
+      row_id: 'Random_Green',
+      hash: '473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1',
     } as InternalType;
   }
 
   get for_coop(): boolean {
-    if (!this.row_id.includes("_Coop")) {
+    if (!this.row_id.includes('_Coop')) {
       return false;
     }
-    const row_id: string = this.row_id.replace("_Coop", "");
+    const row_id: string = this.row_id.replace('_Coop', '');
     this.row_id = row_id;
-    this.label = this.label.replace("Coop", "");
+    this.label = this.label.replace('Coop', '');
     this.hash = calc_hash(row_id);
     if (this.id === 20001) {
       this.id = 1;
@@ -187,13 +187,13 @@ export class WeaponInfoSpecial implements InternalType {
 }
 
 export class GearInfo implements InternalType {
-  @Expose({ name: "Id" })
+  @Expose({ name: 'Id' })
   id: number;
 
-  @Expose({ name: "Label" })
+  @Expose({ name: 'Label' })
   label: string;
 
-  @Expose({ name: "__RowId" })
+  @Expose({ name: '__RowId' })
   row_id: string;
 
   @Expose()
@@ -202,10 +202,10 @@ export class GearInfo implements InternalType {
 }
 
 export class NamePlateBgInfo implements InternalType {
-  @Expose({ name: "Id" })
+  @Expose({ name: 'Id' })
   id: number;
 
-  @Expose({ name: "__RowId" })
+  @Expose({ name: '__RowId' })
   row_id: string;
 
   @Expose()
@@ -214,10 +214,10 @@ export class NamePlateBgInfo implements InternalType {
 }
 
 export class BadgeInfo implements InternalType {
-  @Expose({ name: "Id" })
+  @Expose({ name: 'Id' })
   id: number;
 
-  @Expose({ name: "Name" })
+  @Expose({ name: 'Name' })
   row_id: string;
 
   @Expose()

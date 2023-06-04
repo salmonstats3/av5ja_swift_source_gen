@@ -1,22 +1,22 @@
-import { Expose, Transform, plainToInstance } from "class-transformer";
-import fetch from "node-fetch";
-import { Translation } from "./translation";
+import { Expose, Transform, plainToInstance } from 'class-transformer';
+import fetch from 'node-fetch';
+import { Translation } from './translation';
 
 export const LocaleKey = {
-  EUde: "locale0",
-  EUen: "locale1",
-  USen: "locale2",
-  EUes: "locale3",
-  USes: "locale4",
-  USfr: "locale5",
-  EUfr: "locale6",
-  EUit: "locale7",
-  JPja: "locale8",
-  KRko: "locale9",
-  EUnl: "locale10",
-  EUru: "locale11",
-  CNzh: "locale12",
-  TWzh: "locale13",
+  EUde: 'locale0',
+  EUen: 'locale1',
+  USen: 'locale2',
+  EUes: 'locale3',
+  USes: 'locale4',
+  USfr: 'locale5',
+  EUfr: 'locale6',
+  EUit: 'locale7',
+  JPja: 'locale8',
+  KRko: 'locale9',
+  EUnl: 'locale10',
+  EUru: 'locale11',
+  CNzh: 'locale12',
+  TWzh: 'locale13',
 } as const;
 
 export const LocaleId = {
@@ -44,35 +44,35 @@ export const LocaleId = {
 export const prefix_xcode = (locale: LocaleId): string => {
   switch (locale) {
     case LocaleId.EUde:
-      return "de";
+      return 'de';
     case LocaleId.EUen:
-      return "en-GB";
+      return 'en-GB';
     case LocaleId.USen:
-      return "en";
+      return 'en';
     case LocaleId.EUes:
-      return "es";
+      return 'es';
     case LocaleId.USes:
-      return "es-US";
+      return 'es-MX';
     case LocaleId.USfr:
-      return "fr-US";
+      return 'fr-CA';
     case LocaleId.EUfr:
-      return "fr";
+      return 'fr';
     case LocaleId.EUit:
-      return "it";
+      return 'it';
     case LocaleId.JPja:
-      return "ja";
+      return 'ja';
     case LocaleId.KRko:
-      return "ko";
+      return 'ko';
     case LocaleId.EUnl:
-      return "nl";
+      return 'nl';
     case LocaleId.EUru:
-      return "ru";
+      return 'ru';
     case LocaleId.CNzh:
-      return "zh-Hans";
+      return 'zh-Hans';
     case LocaleId.TWzh:
-      return "zh-Hant";
+      return 'zh-Hant';
     default:
-      throw new Error("Invalid Locale");
+      throw new Error('Invalid Locale');
   }
 };
 
@@ -110,56 +110,59 @@ export class LocaleType {
    * @returns
    */
   static async all_cases(): Promise<LocaleType[]> {
-    const hash: string = await get_game_web_version_hash()
-    return await get_locales(hash)
+    const hash: string = await get_game_web_version_hash();
+    return await get_locales(hash);
   }
 
   /**
    * 翻訳クラスの取得
-   * @returns 
+   * @returns
    */
   async get_translation(): Promise<Translation> {
-    const locale: string = Object.keys(LocaleId)[Object.values(LocaleId).indexOf(this.id)]
-    const url = `https://leanny.github.io/splat3/data/language/${locale}.json`
-    const objects = { ...JSON.parse(await (await fetch(url)).text()), ...{ id: this.id, key: this.key, locale: this.locale, xcode: this.xcode, hash: this.hash } }
-    return plainToInstance(Translation, objects, { excludeExtraneousValues: true })
+    const locale: string = Object.keys(LocaleId)[Object.values(LocaleId).indexOf(this.id)];
+    const url = `https://leanny.github.io/splat3/data/language/${locale}.json`;
+    const objects = {
+      ...JSON.parse(await (await fetch(url)).text()),
+      ...{ id: this.id, key: this.key, locale: this.locale, xcode: this.xcode, hash: this.hash },
+    };
+    return plainToInstance(Translation, objects, { excludeExtraneousValues: true });
   }
 
   /**
    * LocaleId
    */
-  @Expose({ name: "id" })
+  @Expose({ name: 'id' })
   @Transform((param) => Object.values(LocaleId)[(Object.values(LocaleId) as number[]).indexOf(parseInt(param.value, 10))])
   readonly id: LocaleId;
 
   /**
-   * Hash 
+   * Hash
    */
-  @Expose({ name: "hash" })
+  @Expose({ name: 'hash' })
   hash: string;
 
   /**
-   * Key 
+   * Key
    */
   get key(): LocaleKey {
     return Object.values(LocaleKey)[(Object.values(LocaleId) as number[]).indexOf(this.id)];
   }
-  
+
   /**
-   * 内部LocaleCode 
+   * 内部LocaleCode
    */
   get locale(): string {
-    return Object.keys(LocaleId)[Object.values(LocaleId).indexOf(this.id)]
+    return Object.keys(LocaleId)[Object.values(LocaleId).indexOf(this.id)];
   }
 
   /**
-   * Xcode用のLocaleCode 
+   * Xcode用のLocaleCode
    */
   private get xcode(): string {
     return prefix_xcode(this.id);
   }
 
-  /** 
+  /**
    * イカリング3のURL
    */
   get url(): string {

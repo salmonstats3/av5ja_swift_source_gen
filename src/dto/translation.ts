@@ -15,8 +15,8 @@ import fs from 'fs';
 class TranslationType extends Map<string, string> {
   name: string;
 
-  constructor(values: Map<string, string>, name: string) {
-    super(Object.entries(values));
+  constructor(values: Map<string, string> | object, name: string) {
+    super(Object.entries(camelcaseKeys(values, { pascalCase: true })));
     this.name = name;
   }
 
@@ -42,11 +42,17 @@ class TranslationType extends Map<string, string> {
       `    public var id: Int { ${this.name.slice(0, -3)}Id.allCases[${this.name}.allCases.firstIndex(of: self) ?? 0].rawValue }`,
       '',
     ];
-    this
-    .forEach((value, key) => {
+    this.forEach((value, key) => {
       if (!/Arbeiter/.test(key)) {
-        translations.push(`    /// ${value}`);
-        translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
+        if (this.name === 'CoopGlossaryKey' && (key.match(/^Coop/) || key.match(/BigBoss/))) {
+          translations.push(`    /// ${value}`);
+          translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
+        }
+
+        if (this.name !== 'CoopGlossaryKey') {
+          translations.push(`    /// ${value}`);
+          translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
+        }
       }
     });
     translations.push('}');
@@ -56,13 +62,10 @@ class TranslationType extends Map<string, string> {
   /**
    * 翻訳データ
    */
-  get translations(): string {
-    let translations: string[] = [];
-    this.forEach((value, key) => {
-      translations.push(`/// ${value}`);
-      translations.push(`"${key.replace(/_/g, '')}" = "${value}";`);
+  get translations(): string[] {
+    return Object.values(Object.fromEntries(this)).flatMap(([key, value]) => {
+      return [`/// ${value}`, `"${key.replace(/_/g, '')}" = "${value}";`];
     });
-    return translations.join('\n');
   }
 }
 
@@ -75,7 +78,13 @@ export class Translation {
   readonly CoopEnemy: TranslationType;
 
   @Expose({ name: 'CommonMsg/Coop/CoopGrade' })
-  @Transform((param) => new TranslationType(param.value, 'CoopGradeKey'))
+  @Transform((param) => {
+    const objects: Map<string, string> = new Map(Object.entries(param.value).filter(([key, _]) => !key.match(/Arbeiter/))) as Map<
+      string,
+      string
+    >;
+    return new TranslationType(Object.fromEntries(objects), 'CoopGradeKey');
+  })
   readonly CoopGrade: TranslationType;
 
   @Expose({ name: 'CommonMsg/Coop/CoopSkinName' })
@@ -85,6 +94,15 @@ export class Translation {
   @Expose({ name: 'CommonMsg/Coop/CoopStageName' })
   @Transform((param) => new TranslationType(param.value, 'CoopStageKey'))
   readonly CoopStageName: TranslationType;
+
+  @Expose({ name: 'CommonMsg/Glossary' })
+  @Transform((param) => {
+    const objects: Map<string, string> = new Map(
+      Object.entries(param.value).filter(([key, _]) => key.match(/^Coop/) || key.match(/BigBoss/)),
+    ) as Map<string, string>;
+    return new TranslationType(Object.fromEntries(objects), 'CoopGlossaryKey');
+  })
+  readonly CoopGlossary: TranslationType;
 
   /**
    * ID
@@ -144,45 +162,9 @@ export class Translation {
         .replace(/\\"/g, "'")
         .replace(/\\'/g, "'");
     } else {
-      throw new Error('This response does not contain any JSON format strings.')
+      throw new Error('This response does not contain any JSON format strings.');
     }
   }
-
-  /**
-   * イカリング3からJSONを取得する
-   */
-  private async get_bundle(): Promise<[string, unknown][]> {
-    // PascalCaseに変換
-    const context = camelcaseKeys(JSON.parse(await this.get_context()), { pascalCase: true })
-    // JSONを保存
-    createFile(JSON.stringify(context, null, 2), `src/locales/${this.hash}/${this.key}.json`)
-    const objects = Object.fromEntries(Object.entries(context)
-      .filter(
-        ([key, value]) =>
-          (key.match(/^Common/) ||
-            key.match(/^CoopHistory/) ||
-            key.match(/^Error/) ||
-            key.match(/^Record/) ||
-            key.match(/^Settings/) ||
-            key.match(/^StageSchedule/)) &&
-          !key.includes('%') &&
-          !(value as string).match(/<|>/) &&
-          !key.match(/Fes/),
-      )
-      .map(([key, value]) => [
-        key,
-        (value as string)
-          .trim()
-          .replace(/{.*}|^'|'$/g, '')
-          .trim()
-          .replace(/：|:^/g, ''),
-      ])
-      .filter(([_, value]) => value.length >= 2))
-    // YAMLを保存
-    createFile(yaml.dump(objects), `src/locales/${this.hash}/${this.key}.yaml`)
-    return Object.entries(objects)
-  }
-
   /**
    * ソースコードと翻訳ファイルを出力する
    */
@@ -194,36 +176,85 @@ export class Translation {
       });
     }
 
-    const objects: [string, unknown][] = (await this.get_bundle()).concat(this.get_yaml());
+    const translation: TranslationType = new TranslationType(
+      [
+        ...this.CoopEnemy,
+        ...this.CoopGrade,
+        ...this.CoopSkinName,
+        ...this.CoopStageName,
+        ...this.CoopGlossary,
+        ...this.get_yaml(),
+        ...(await this.get_bundle()),
+      ],
+      'Merged',
+    );
     // 翻訳ファイルの作成
-    const translation: string = [this.CoopEnemy, this.CoopGrade, this.CoopSkinName, this.CoopStageName]
-      .map((translation: TranslationType) => translation.translations)
-      .concat(objects.map(([key, value]) => [
-        `/// ${value}`,
-        `"${key}" = "${value}";`,
-      ].join('\n')))
-      .join('\n');
-    createFile(translation, `sources/Resources/${this.xcode}.lproj/Localizable.strings`);
+    createFile(translation.translations.join('\n'), `sources/Resources/${this.xcode}.lproj/Localizable.strings`);
 
     if (this.id === LocaleId.JPja) {
-      const source: string = this.get_source(objects);
+      const source: string = this.get_source(translation);
       createFile(source, 'sources/LocalizedType.swift');
     }
   }
 
-  /**
-   * YAMLから翻訳データを読み込む
-   * @returns 
-   */
-  private get_yaml(): [string, unknown][] {
-    const data = JSON.parse(JSON.stringify(yaml.load(fs.readFileSync(`resources/default.yaml`, 'utf8'))))
-    return Object.entries(data).map(([key, values]) => {
-      const value: string | undefined = Object.entries(values as object).find(([key, _]) => key === this.xcode)?.[1] as string | undefined
-      return [key, value] 
-    })
+  private convert(array: [string, any][]): Map<string, string> {
+    return new Map(array.map(([key, value]) => [key, value[this.xcode] as string]));
   }
 
-  private get_source(objects: object): string {
+  /**
+   * YAMLから翻訳データを読み込む
+   * @returns
+   */
+  private get_yaml(): TranslationType {
+    // YAML -> JSON
+    const array: [string, any][] = Object.entries(JSON.parse(JSON.stringify(yaml.load(fs.readFileSync(`resources/default.yaml`, 'utf8')))));
+    const object: Map<string, string> = this.convert(array);
+    return new TranslationType(Object.fromEntries(object), 'Custom');
+  }
+
+  /**
+   * イカリング3からJSONを取得する
+   */
+  private async get_bundle(): Promise<TranslationType> {
+    // PascalCaseに変換
+    const context = camelcaseKeys(JSON.parse(await this.get_context()), { pascalCase: true });
+    // JSONを保存
+    createFile(JSON.stringify(context, null, 2), `src/locales/${this.hash}/${this.key}.json`);
+    const objects: object = Object.fromEntries(
+      Object.entries(context)
+        .filter(
+          ([key, value]) =>
+            (key.match(/^Common/) ||
+              key.match(/^CoopHistory/) ||
+              key.match(/^Error/) ||
+              key.match(/^Record/) ||
+              key.match(/^Settings/) ||
+              key.match(/^StageSchedule/)) &&
+            !key.includes('%') &&
+            !(value as string).match(/<|>/) &&
+            !key.match(/Fes/),
+        )
+        .map(([key, value]) => [
+          key,
+          (value as string)
+            .trim()
+            .replace(/{.*}|^'|'$/g, '')
+            .trim()
+            .replace(/：|:^/g, ''),
+        ])
+        .filter(([_, value]) => value.length >= 2),
+    );
+    // YAMLを保存
+    createFile(yaml.dump(objects), `src/locales/${this.hash}/${this.key}.yaml`);
+    return new TranslationType(objects, 'SplatNet3');
+  }
+
+  /**
+   * LocalizedType.swiftの作成に必要な文字列を返す
+   * @param object
+   * @returns
+   */
+  private get_source(object: TranslationType): string {
     const created_at: string = dayjs().format('YYYY/MM/DD');
     const created_year: string = dayjs().format('YYYY');
     let translations: string[] = [
@@ -237,11 +268,11 @@ export class Translation {
       'import Foundation',
       '',
       `public enum LocalizedType: String, CaseIterable, Identifiable {`,
-      `    public var id: String { rawValue }`, 
+      `    public var id: String { rawValue }`,
       '',
     ];
 
-    Object.values(objects).sort().forEach(([key, value]) => {
+    object.forEach(([key, value]) => {
       translations.push(`    /// ${value}`);
       translations.push(`    case ${key}`);
     });

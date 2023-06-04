@@ -12,21 +12,21 @@ public enum CoopGradeKey: String, UnsafeRawRepresentable {
     public var id: Int { CoopGradeId.allCases[CoopGradeKey.allCases.firstIndex(of: self) ?? 0].rawValue }
 
     /// かけだし
-    case Grade00 = "b4f1e5a491aa8f1952352fb4831a4e6a82817bc1179b51739928c6c5a1deb484"
+    case Grade00 = "07374aaf4d8cab4c9e122820ebf0d4316429fa300ba027420f0cd1167769ed3c"
     /// はんにんまえ
-    case Grade01 = "a7d6f7f0e87585179ae1e746afef2b67af4eddabd90cb06e1fe9761aef1cce07"
+    case Grade01 = "81ba00a5dd568487a3c6538a7d3bbc45e669712e78c6060f380e2d5cff75e69a"
     /// いちにんまえ
-    case Grade02 = "8ced40cefb44e796793d62be1647ee6dd8b16ff92dec956aaebc96efdae9f112"
+    case Grade02 = "7c6cbac10750b6358c7ccb7596cc157c34ae278834809d541f03895a3bc62cf4"
     /// じゅくれん
-    case Grade03 = "8de95a5c09c429d4a508124c1792240b1559224e21f5450fa6c0776939b85287"
+    case Grade03 = "61b9febece9115cedaa7e9596bf41bdda346600234bf1e87de048924d76b5e68"
     /// たつじん
-    case Grade04 = "ac6997f9bc8f0852d0df6f70137d09f3154dc271c1b9f670dbd1570d69dc8e3a"
+    case Grade04 = "fe55976d62c78d94d6930d0f1584909d8fb3a0d1ceb02ce01e99319d3eb17962"
     /// たつじん＋１
-    case Grade05 = "533d5cce4a7efad282acfbbf2188e92653cc91232dfd55d1b0053d9c1aaa51da"
+    case Grade05 = "db37cedb5c4841cddc85656c27172ee28f162aafc16bcda2ed4fa21f8b321569"
     /// たつじん＋２
-    case Grade06 = "97aef457a99b051b0ec454e0e44f038d4acce212f82fd6a968f4206e949bbed2"
+    case Grade06 = "6982753e7664f9c8f188eeda40fd79a4535ec667b9ee196adb68c2ca0d972df5"
     /// たつじん＋３
-    case Grade07 = "ee9651050a08fe058782eea37b988dfe7466760ca4dbb84acb45b19bc1c8476e"
+    case Grade07 = "ba73831f2277704e1a67dac8fdd31caf8cb1c99d6a69809feb8e6b3c80a47212"
     /// でんせつ
-    case Grade08 = "0c80649527617f716da3ce8142a0924c37cfe598b43da69c2721b7899487b5fc"
+    case Grade08 = "95a7255b939bd4d6e9094bf0f13d762729f7ef9773eeaa0bc77e3f1201ffe8f4"
 }

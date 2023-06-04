@@ -1318,7 +1318,7 @@ CoopHistoryWaveResult:
     ru: Волны
     zh-Hant: 海浪
     zh-Hans: 波浪
-CoopHistoryHighestScore:
+CoopRecordHighestScore:
     ja: 最高
     en-GB: Max
     en: Max
@@ -1333,7 +1333,7 @@ CoopHistoryHighestScore:
     ru: Макс
     zh-Hant: 最高
     zh-Hans: 最大
-CoopHistoryAverageScore:
+CoopRecordAverageScore:
     ja: 平均
     en-GB: Avg
     en: Avg

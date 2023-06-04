@@ -60,46 +60,28 @@
 "Grade07" = "Jefe +3";
 /// Director
 "Grade08" = "Director";
-/// Aprendiz
-"GradeArbeiter00" = "Aprendiz";
-/// Subordinado
-"GradeArbeiter01" = "Subordinado";
-/// Supervisor
-"GradeArbeiter02" = "Supervisor";
-/// Gerente
-"GradeArbeiter03" = "Gerente";
-/// Jefe
-"GradeArbeiter04" = "Jefe";
-/// Jefe +1
-"GradeArbeiter05" = "Jefe +1";
-/// Jefe +2
-"GradeArbeiter06" = "Jefe +2";
-/// Jefe +3
-"GradeArbeiter07" = "Jefe +3";
-/// Director
-"GradeArbeiter08" = "Director";
 /// Uniforme de trabajo naranja
-"COP001" = "Uniforme de trabajo naranja";
+"Cop001" = "Uniforme de trabajo naranja";
 /// Uniforme de trabajo verde
-"COP002" = "Uniforme de trabajo verde";
+"Cop002" = "Uniforme de trabajo verde";
 /// Uniforme de trabajo amarillo
-"COP003" = "Uniforme de trabajo amarillo";
+"Cop003" = "Uniforme de trabajo amarillo";
 /// Uniforme de trabajo rosa
-"COP004" = "Uniforme de trabajo rosa";
+"Cop004" = "Uniforme de trabajo rosa";
 /// Uniforme de trabajo azul
-"COP005" = "Uniforme de trabajo azul";
+"Cop005" = "Uniforme de trabajo azul";
 /// Uniforme de trabajo negro
-"COP006" = "Uniforme de trabajo negro";
+"Cop006" = "Uniforme de trabajo negro";
 /// Uniforme de trabajo blanco
-"COP007" = "Uniforme de trabajo blanco";
+"Cop007" = "Uniforme de trabajo blanco";
 /// Overol de trabajo naranja
-"COP008" = "Overol de trabajo naranja";
+"Cop008" = "Overol de trabajo naranja";
 /// Overol de trabajo negro
-"COP009" = "Overol de trabajo negro";
+"Cop009" = "Overol de trabajo negro";
 /// Overol de trabajo amarillo
-"COP010" = "Overol de trabajo amarillo";
+"Cop010" = "Overol de trabajo amarillo";
 /// Overol de trabajo marrón
-"COP011" = "Overol de trabajo marrón";
+"Cop011" = "Overol de trabajo marrón";
 /// Pirañalandia
 "Carousel" = "Pirañalandia";
 /// Hidrocentral Rebosante
@@ -120,6 +102,228 @@
 "Unknown" = "(?)";
 /// Instituto Coralino
 "Upland" = "Instituto Coralino";
+/// Brasaletas
+"CoopEventDozer" = "Brasaletas";
+/// Niebla
+"CoopEventFog" = "Niebla";
+/// Detección de orónidos
+"CoopEventGeyser" = "Detección de orónidos";
+/// Salmonodrizas
+"CoopEventHakobiya" = "Salmonodrizas";
+/// Ataques de agallones
+"CoopEventMissile" = "Ataques de agallones";
+/// Tornados gigantes
+"CoopEventRelay" = "Tornados gigantes";
+/// Frenesíes
+"CoopEventRush" = "Frenesíes";
+/// Erupciones de bocalodos
+"CoopEventTamaire" = "Erupciones de bocalodos";
+/// modelo de tarea
+"CoopScenario" = "modelo de tarea";
+/// gran jefe salmónido
+"SakeBigBoss" = "gran jefe salmónido";
+/// salmómetro
+"SakeBigBossGauge" = "salmómetro";
+/// Acerca de
+"CommonAbout" = "Acerca de";
+/// Actual
+"RecordActualValue" = "Actual";
+/// Comparecencias
+"CommonAppearances" = "Comparecencias";
+/// Aplicación
+"CommonApplication" = "Aplicación";
+/// Media
+"RecordAverageScore" = "Media";
+/// Copia de seguridad
+"CommonBackupResults" = "Copia de seguridad";
+/// Comprimir(ZIP)
+"CommonBackupCompress" = "Comprimir(ZIP)";
+/// Copia de seguridad de la base de datos
+"CommonBackupMessage" = "Copia de seguridad de la base de datos";
+/// Simple(JSON)
+"CommonBackupPlain" = "Simple(JSON)";
+/// Crédito
+"CommonAppCredit" = "Crédito";
+/// Modo oscuro
+"CommonDarkMode" = "Modo oscuro";
+/// Gestión de datos
+"CommonDataManagement" = "Gestión de datos";
+/// Recuento rescatado
+"CoopHistoryDeathCount" = "Recuento rescatado";
+/// Recuento derrotado
+"CoopHistoryDefeatedCount" = "Recuento derrotado";
+/// Estimación
+"CoopHistoryEstimatedValue" = "Estimación";
+/// Relación clara
+"CoopHistoryEventClearRatio" = "Relación clara";
+/// Frecuencia de los eventos
+"CoopHistoryEventFrequency" = "Frecuencia de los eventos";
+/// PREGUNTAS FRECUENTES
+"CommonFaq" = "PREGUNTAS FRECUENTES";
+/// Modo de juego
+"CommonGamingMode" = "Modo de juego";
+/// Grado
+"CoopHistoryGradeId" = "Grado";
+/// Calificación
+"CoopHistoryGradePoint" = "Calificación";
+/// Más alto
+"CoopHistoryHighestRecord" = "Más alto";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// No válido
+"CommonInvalid" = "No válido";
+/// Idiomas
+"CommonLanguages" = "Idiomas";
+/// Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.
+"CommonShareLogMessage" = "Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.";
+/// Compartir registros
+"CommonShareLog" = "Compartir registros";
+/// Archivos de registro
+"CommonLogSize" = "Archivos de registro";
+/// Mi página
+"CommonMyPage" = "Mi página";
+/// Tripulación
+"CoopHistoryPlayerCrew" = "Tripulación";
+/// Usted
+"CoopHistoryPlayerYou" = "Usted";
+/// Política de privacidad
+"CommonPrivacyPolicy" = "Política de privacidad";
+/// Formulario
+"CommonRequestForm" = "Formulario";
+/// Error
+"CommonRequestFormBug" = "Error";
+/// Contenido
+"CommonRequestFormContent" = "Contenido";
+/// Mejora
+"CommonRequestFormEnhancement" = "Mejora";
+/// Característica
+"CommonRequestFormFeature" = "Característica";
+/// Título
+"CommonRequestFormTitle" = "Título";
+/// Tipo
+"CommonRequestFormType" = "Tipo";
+/// Enviar
+"CommonRequsetFormSubmit" = "Enviar";
+/// Restaurar
+"CommonRestore" = "Restaurar";
+/// Seleccione el archivo que desea restaurar en la aplicación Archivos.
+"CommonRestoreMessage" = "Seleccione el archivo que desea restaurar en la aplicación Archivos.";
+/// Recuento de resultados
+"CoopHistoryResultsCount" = "Recuento de resultados";
+/// Depurar
+"CommonRoleDebuger" = "Depurar";
+/// Desarrollador
+"CommonRoleDeveloper" = "Desarrollador";
+/// Testor
+"CommonRoleTester" = "Testor";
+/// Traductor
+"CommonRoleTranslator" = "Traductor";
+/// Guardado correctamente
+"CommonSaveToPhotoLibrary" = "Guardado correctamente";
+/// Sincronizar horario
+"CommonScheduleSync" = "Sincronizar horario";
+/// Recupera la programación del servidor.
+"CommonScheduleSyncMessage" = "Recupera la programación del servidor.";
+/// Iniciar sesión
+"CommonSignIn" = "Iniciar sesión";
+/// Cerrar sesión
+"CommonSignOut" = "Cerrar sesión";
+/// Cerrar sesión correctamente
+"CommonSignOutSuccessfully" = "Cerrar sesión correctamente";
+/// Desvincula la cuenta de Nintendo Switch.
+"CommonSignOutMessage" = "Desvincula la cuenta de Nintendo Switch.";
+/// Código fuente
+"CommonSourceCode" = "Código fuente";
+/// Proporción suministrada
+"CoopHistorySuppliedRatio" = "Proporción suministrada";
+/// Es necesario actualizar la aplicación
+"CommonUpdateRequired" = "Es necesario actualizar la aplicación";
+/// Datos del usuario
+"CommonUserData" = "Datos del usuario";
+/// Válido
+"CommonValid" = "Válido";
+/// Versión
+"CommonAppVersion" = "Versión";
+/// Limpiar registros
+"CommonWipeLog" = "Limpiar registros";
+/// Limpia todos los registros.
+"CommonWipeLogMessage" = "Limpia todos los registros.";
+/// Resultados de la limpieza
+"CommonWipeResults" = "Resultados de la limpieza";
+/// Borra todos los datos.
+"CommonWipeResultsMessage" = "Borra todos los datos.";
+/// Escriba un comentario
+"CommonWriteReview" = "Escriba un comentario";
+/// En general
+"CoopHistoryOverallRecord" = "En general";
+/// Huevos de oro
+"CommonGoldenEggs" = "Huevos de oro";
+/// Huevos de energía
+"CommonPowerEggs" = "Huevos de energía";
+/// Visión general
+"CommonOverview" = "Visión general";
+/// es-MX
+"CommonLocale" = "es-MX";
+/// 0
+"CommonLanguageCode" = "0";
+/// Base de datos
+"CommonDatabase" = "Base de datos";
+/// X-ProductVersion
+"CommonXproductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// Cargar
+"CommonUpload" = "Cargar";
+/// Desarrollador
+"CommonCreditDevelop" = "Desarrollador";
+/// Comprobador
+"CommonCreditTest" = "Comprobador";
+/// Diseño UI/UX
+"CommonCreditDesign" = "Diseño UI/UX";
+/// Tarjeta de puntos del equipo
+"CoopHistoryTeamPointCard" = "Tarjeta de puntos del equipo";
+/// Utilizar valores estimados
+"CoopHistoryUseEstimatedValue" = "Utilizar valores estimados";
+/// Utilizar la sesión de empheral
+"CommonUseSecureSession" = "Utilizar la sesión de empheral";
+/// Recompensas
+"CommonCheckInReward" = "Recompensas";
+/// Consigue todas las recompensas por códigos QR.
+"CommonGetCheckInReward" = "Consigue todas las recompensas por códigos QR.";
+/// Equipo
+"CoopHistoryTeamResult" = "Equipo";
+/// Usted
+"CoopHistoryPlayerResult" = "Usted";
+/// Avg de la tripulación
+"CoopHistoryCrewAvgResult" = "Avg de la tripulación";
+/// Tripulación
+"CoopHistoryCrewResult" = "Tripulación";
+/// Olas
+"CoopHistoryWaveResult" = "Olas";
+/// Max
+"CoopRecordHighestScore" = "Max";
+/// Avg
+"CoopRecordAverageScore" = "Avg";
+/// Debes actualizar a iOS16 o superior para utilizar esta función
+"CommonRequirediOs16" = "Debes actualizar a iOS16 o superior para utilizar esta función";
+/// Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.
+"CommonRequiredSignIn" = "Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.";
+/// Restaurar resultados con éxito
+"CommonRestoreSuccessMessage" = "Restaurar resultados con éxito";
+/// Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.
+"CommonRestoreFailureMessage" = "Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.";
+/// Resultados
+"CommonResultsCount" = "Resultados";
+/// Respuesta del promotor
+"CommonDeveloperAnswer" = "Respuesta del promotor";
+/// Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.
+"CommonMinimumVersion" = "Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.";
+/// Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.
+"ErrorInvalidSignature" = "Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.";
+/// Utilizar la configuración del dispositivo
+"CommonUseSystemTheme" = "Utilizar la configuración del dispositivo";
+/// Licencia
+"CommonLicense" = "Licencia";
 /// Cancelar
 "CommonCancel" = "Cancelar";
 /// Asalto almeja
@@ -424,203 +628,3 @@
 "StageScheduleWinRateByRules" = "Tasa de victorias";
 /// Combate X
 "StageScheduleXmatch" = "Combate X";
-/// undefined
-"CommonAbout" = "undefined";
-/// undefined
-"RecordActualValue" = "undefined";
-/// undefined
-"CommonAppearances" = "undefined";
-/// undefined
-"CommonApplication" = "undefined";
-/// undefined
-"RecordAverageScore" = "undefined";
-/// undefined
-"CommonBackupResults" = "undefined";
-/// undefined
-"CommonBackupCompress" = "undefined";
-/// undefined
-"CommonBackupMessage" = "undefined";
-/// undefined
-"CommonBackupPlain" = "undefined";
-/// undefined
-"CommonAppCredit" = "undefined";
-/// undefined
-"CommonDarkMode" = "undefined";
-/// undefined
-"CommonDataManagement" = "undefined";
-/// undefined
-"CoopHistoryDeathCount" = "undefined";
-/// undefined
-"CoopHistoryDefeatedCount" = "undefined";
-/// undefined
-"CoopHistoryEstimatedValue" = "undefined";
-/// undefined
-"CoopHistoryEventClearRatio" = "undefined";
-/// undefined
-"CoopHistoryEventFrequency" = "undefined";
-/// undefined
-"CommonFAQ" = "undefined";
-/// undefined
-"CommonGamingMode" = "undefined";
-/// undefined
-"CoopHistoryGradeId" = "undefined";
-/// undefined
-"CoopHistoryGradePoint" = "undefined";
-/// undefined
-"CoopHistoryHighestRecord" = "undefined";
-/// undefined
-"CommonIkaring2" = "undefined";
-/// undefined
-"CommonInvalid" = "undefined";
-/// undefined
-"CommonLanguages" = "undefined";
-/// undefined
-"CommonShareLogMessage" = "undefined";
-/// undefined
-"CommonShareLog" = "undefined";
-/// undefined
-"CommonLogSize" = "undefined";
-/// undefined
-"CommonMyPage" = "undefined";
-/// undefined
-"CoopHistoryPlayerCrew" = "undefined";
-/// undefined
-"CoopHistoryPlayerYou" = "undefined";
-/// undefined
-"CommonPrivacyPolicy" = "undefined";
-/// undefined
-"CommonRequestForm" = "undefined";
-/// undefined
-"CommonRequestFormBug" = "undefined";
-/// undefined
-"CommonRequestFormContent" = "undefined";
-/// undefined
-"CommonRequestFormEnhancement" = "undefined";
-/// undefined
-"CommonRequestFormFeature" = "undefined";
-/// undefined
-"CommonRequestFormTitle" = "undefined";
-/// undefined
-"CommonRequestFormType" = "undefined";
-/// undefined
-"CommonRequsetFormSubmit" = "undefined";
-/// undefined
-"CommonRestore" = "undefined";
-/// undefined
-"CommonRestoreMessage" = "undefined";
-/// undefined
-"CoopHistoryResultsCount" = "undefined";
-/// undefined
-"CommonRoleDebuger" = "undefined";
-/// undefined
-"CommonRoleDeveloper" = "undefined";
-/// undefined
-"CommonRoleTester" = "undefined";
-/// undefined
-"CommonRoleTranslator" = "undefined";
-/// undefined
-"CommonSaveToPhotoLibrary" = "undefined";
-/// undefined
-"CommonScheduleSync" = "undefined";
-/// undefined
-"CommonScheduleSyncMessage" = "undefined";
-/// undefined
-"CommonSignIn" = "undefined";
-/// undefined
-"CommonSignOut" = "undefined";
-/// undefined
-"CommonSignOutSuccessfully" = "undefined";
-/// undefined
-"CommonSignOutMessage" = "undefined";
-/// undefined
-"CommonSourceCode" = "undefined";
-/// undefined
-"CoopHistorySuppliedRatio" = "undefined";
-/// undefined
-"CommonUpdateRequired" = "undefined";
-/// undefined
-"CommonUserData" = "undefined";
-/// undefined
-"CommonValid" = "undefined";
-/// undefined
-"CommonAppVersion" = "undefined";
-/// undefined
-"CommonWipeLog" = "undefined";
-/// undefined
-"CommonWipeLogMessage" = "undefined";
-/// undefined
-"CommonWipeResults" = "undefined";
-/// undefined
-"CommonWipeResultsMessage" = "undefined";
-/// undefined
-"CommonWriteReview" = "undefined";
-/// undefined
-"CoopHistoryOverallRecord" = "undefined";
-/// undefined
-"CommonGoldenEggs" = "undefined";
-/// undefined
-"CommonPowerEggs" = "undefined";
-/// undefined
-"CommonOverview" = "undefined";
-/// undefined
-"CommonLocale" = "undefined";
-/// undefined
-"CommonLanguageCode" = "undefined";
-/// undefined
-"CommonDatabase" = "undefined";
-/// undefined
-"CommonXProductVersion" = "undefined";
-/// undefined
-"CommonXWebViewVer" = "undefined";
-/// undefined
-"CommonUpload" = "undefined";
-/// undefined
-"CommonCreditDevelop" = "undefined";
-/// undefined
-"CommonCreditTest" = "undefined";
-/// undefined
-"CommonCreditDesign" = "undefined";
-/// undefined
-"CoopHistoryTeamPointCard" = "undefined";
-/// undefined
-"CoopHistoryUseEstimatedValue" = "undefined";
-/// undefined
-"CommonUseSecureSession" = "undefined";
-/// undefined
-"CommonCheckInReward" = "undefined";
-/// undefined
-"CommonGetCheckInReward" = "undefined";
-/// undefined
-"CoopHistoryTeamResult" = "undefined";
-/// undefined
-"CoopHistoryPlayerResult" = "undefined";
-/// undefined
-"CoopHistoryCrewAvgResult" = "undefined";
-/// undefined
-"CoopHistoryCrewResult" = "undefined";
-/// undefined
-"CoopHistoryWaveResult" = "undefined";
-/// undefined
-"CoopHistoryHighestScore" = "undefined";
-/// undefined
-"CoopHistoryAverageScore" = "undefined";
-/// undefined
-"CommonRequirediOS16" = "undefined";
-/// undefined
-"CommonRequiredSignIn" = "undefined";
-/// undefined
-"CommonRestoreSuccessMessage" = "undefined";
-/// undefined
-"CommonRestoreFailureMessage" = "undefined";
-/// undefined
-"CommonResultsCount" = "undefined";
-/// undefined
-"CommonDeveloperAnswer" = "undefined";
-/// undefined
-"CommonMinimumVersion" = "undefined";
-/// undefined
-"ErrorInvalidSignature" = "undefined";
-/// undefined
-"CommonUseSystemTheme" = "undefined";
-/// undefined
-"CommonLicense" = "undefined";
