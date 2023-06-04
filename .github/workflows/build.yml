@@ -12,12 +12,12 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     # Select Xcode version
     - name: Show Xcode version
       run: xcodebuild -version
     - name: Cache Swift Packages
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: SourcePackages
         key: ${{ runner.os }}-spm-${{ hashFiles('*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
@@ -54,7 +54,7 @@ jobs:
         uses: actions/checkout@master
       - name: Create
         id: create_release
-        uses: actions/create-release@v2
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
