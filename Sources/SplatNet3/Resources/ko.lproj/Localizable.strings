@@ -60,46 +60,28 @@
 "Grade07" = "달인 +3";
 /// 전설
 "Grade08" = "전설";
-/// 초보 아르바이트생
-"GradeArbeiter00" = "초보 아르바이트생";
-/// 견습 아르바이트생
-"GradeArbeiter01" = "견습 아르바이트생";
-/// 일반 아르바이트생
-"GradeArbeiter02" = "일반 아르바이트생";
-/// 전문 아르바이트생
-"GradeArbeiter03" = "전문 아르바이트생";
-/// 달인 아르바이트생
-"GradeArbeiter04" = "달인 아르바이트생";
-/// 달인 아르바이트생 +1
-"GradeArbeiter05" = "달인 아르바이트생 +1";
-/// 달인 아르바이트생 +2
-"GradeArbeiter06" = "달인 아르바이트생 +2";
-/// 달인 아르바이트생 +3
-"GradeArbeiter07" = "달인 아르바이트생 +3";
-/// 전설의 아르바이트생
-"GradeArbeiter08" = "전설의 아르바이트생";
 /// 오렌지 작업복
-"COP001" = "오렌지 작업복";
+"Cop001" = "오렌지 작업복";
 /// 그린 작업복
-"COP002" = "그린 작업복";
+"Cop002" = "그린 작업복";
 /// 옐로 작업복
-"COP003" = "옐로 작업복";
+"Cop003" = "옐로 작업복";
 /// 핑크 작업복
-"COP004" = "핑크 작업복";
+"Cop004" = "핑크 작업복";
 /// 블루 작업복
-"COP005" = "블루 작업복";
+"Cop005" = "블루 작업복";
 /// 블랙 작업복
-"COP006" = "블랙 작업복";
+"Cop006" = "블랙 작업복";
 /// 화이트 작업복
-"COP007" = "화이트 작업복";
+"Cop007" = "화이트 작업복";
 /// 오렌지 아르바이트 웨이더
-"COP008" = "오렌지 아르바이트 웨이더";
+"Cop008" = "오렌지 아르바이트 웨이더";
 /// 블랙 아르바이트 웨이더
-"COP009" = "블랙 아르바이트 웨이더";
+"Cop009" = "블랙 아르바이트 웨이더";
 /// 옐로 아르바이트 웨이더
-"COP010" = "옐로 아르바이트 웨이더";
+"Cop010" = "옐로 아르바이트 웨이더";
 /// 브라운 아르바이트 웨이더
-"COP011" = "브라운 아르바이트 웨이더";
+"Cop011" = "브라운 아르바이트 웨이더";
 /// 초밥 월드
 "Carousel" = "초밥 월드";
 /// 뫼니 엘 해양 발전소
@@ -120,6 +102,228 @@
 "Unknown" = "???";
 /// 해녀 미술 대학
 "Upland" = "해녀 미술 대학";
+/// 그릴 발진
+"CoopEventDozer" = "그릴 발진";
+/// 안개
+"CoopEventFog" = "안개";
+/// 황금연어 찾기
+"CoopEventGeyser" = "황금연어 찾기";
+/// 운반함 급습
+"CoopEventHakobiya" = "운반함 급습";
+/// 덩치연어 대량 발생
+"CoopEventMissile" = "덩치연어 대량 발생";
+/// 거대 회오리
+"CoopEventRelay" = "거대 회오리";
+/// 러시
+"CoopEventRush" = "러시";
+/// 진흙연어 분출
+"CoopEventTamaire" = "진흙연어 분출";
+/// 아르바이트 시나리오
+"CoopScenario" = "아르바이트 시나리오";
+/// 두목연어
+"SakeBigBoss" = "두목연어";
+/// 두목 게이지
+"SakeBigBossGauge" = "두목 게이지";
+/// 소개
+"CommonAbout" = "소개";
+/// 실제의
+"RecordActualValue" = "실제의";
+/// 외모
+"CommonAppearances" = "외모";
+/// 응용 프로그램
+"CommonApplication" = "응용 프로그램";
+/// 평균
+"RecordAverageScore" = "평균";
+/// 백업
+"CommonBackupResults" = "백업";
+/// 압축 (ZIP)
+"CommonBackupCompress" = "압축 (ZIP)";
+/// 데이터베이스 백업
+"CommonBackupMessage" = "데이터베이스 백업";
+/// 일반 (JSON)
+"CommonBackupPlain" = "일반 (JSON)";
+/// 신용
+"CommonAppCredit" = "신용";
+/// 다크 모드
+"CommonDarkMode" = "다크 모드";
+/// 데이터 관리
+"CommonDataManagement" = "데이터 관리";
+/// 구조된 수
+"CoopHistoryDeathCount" = "구조된 수";
+/// 패배한 횟수
+"CoopHistoryDefeatedCount" = "패배한 횟수";
+/// 예상
+"CoopHistoryEstimatedValue" = "예상";
+/// 클리어 비율
+"CoopHistoryEventClearRatio" = "클리어 비율";
+/// 이벤트 빈도
+"CoopHistoryEventFrequency" = "이벤트 빈도";
+/// 자주 묻는 질문
+"CommonFaq" = "자주 묻는 질문";
+/// 게임 모드
+"CommonGamingMode" = "게임 모드";
+/// 학년
+"CoopHistoryGradeId" = "학년";
+/// 학점
+"CoopHistoryGradePoint" = "학점";
+/// 최고
+"CoopHistoryHighestRecord" = "최고";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// 잘못된
+"CommonInvalid" = "잘못된";
+/// 언어
+"CommonLanguages" = "언어";
+/// 개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.
+"CommonShareLogMessage" = "개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.";
+/// 로그 공유하기
+"CommonShareLog" = "로그 공유하기";
+/// 로그 파일
+"CommonLogSize" = "로그 파일";
+/// 내 페이지
+"CommonMyPage" = "내 페이지";
+/// 크루
+"CoopHistoryPlayerCrew" = "크루";
+/// 당신
+"CoopHistoryPlayerYou" = "당신";
+/// 개인 정보 정책
+"CommonPrivacyPolicy" = "개인 정보 정책";
+/// 양식
+"CommonRequestForm" = "양식";
+/// 버그
+"CommonRequestFormBug" = "버그";
+/// 컨텐츠
+"CommonRequestFormContent" = "컨텐츠";
+/// 기능 향상
+"CommonRequestFormEnhancement" = "기능 향상";
+/// 특징
+"CommonRequestFormFeature" = "특징";
+/// 제목
+"CommonRequestFormTitle" = "제목";
+/// 유형
+"CommonRequestFormType" = "유형";
+/// 제출
+"CommonRequsetFormSubmit" = "제출";
+/// 복원
+"CommonRestore" = "복원";
+/// 파일 앱에서 복원할 파일 선택.
+"CommonRestoreMessage" = "파일 앱에서 복원할 파일 선택.";
+/// 결과 수
+"CoopHistoryResultsCount" = "결과 수";
+/// 디버그
+"CommonRoleDebuger" = "디버그";
+/// 개발자
+"CommonRoleDeveloper" = "개발자";
+/// 테스터
+"CommonRoleTester" = "테스터";
+/// 번역자
+"CommonRoleTranslator" = "번역자";
+/// 성공적으로 저장되었습니다.
+"CommonSaveToPhotoLibrary" = "성공적으로 저장되었습니다.";
+/// 동기화 일정
+"CommonScheduleSync" = "동기화 일정";
+/// 서버에서 일정 검색.
+"CommonScheduleSyncMessage" = "서버에서 일정 검색.";
+/// 로그인
+"CommonSignIn" = "로그인";
+/// 로그아웃
+"CommonSignOut" = "로그아웃";
+/// 로그아웃 성공적으로 완료되었습니다
+"CommonSignOutSuccessfully" = "로그아웃 성공적으로 완료되었습니다";
+/// 닌텐도 스위치 계정 연결 해제.
+"CommonSignOutMessage" = "닌텐도 스위치 계정 연결 해제.";
+/// 소스 코드
+"CommonSourceCode" = "소스 코드";
+/// 공급 비율
+"CoopHistorySuppliedRatio" = "공급 비율";
+/// 앱 업데이트가 필요합니다.
+"CommonUpdateRequired" = "앱 업데이트가 필요합니다.";
+/// 사용자 데이터
+"CommonUserData" = "사용자 데이터";
+/// 유효한
+"CommonValid" = "유효한";
+/// 버전
+"CommonAppVersion" = "버전";
+/// 로그 제거
+"CommonWipeLog" = "로그 제거";
+/// 모든 로그 제거.
+"CommonWipeLogMessage" = "모든 로그 제거.";
+/// 결과 제거
+"CommonWipeResults" = "결과 제거";
+/// 모든 데이터 제거.
+"CommonWipeResultsMessage" = "모든 데이터 제거.";
+/// 리뷰 작성
+"CommonWriteReview" = "리뷰 작성";
+/// 전반적으로
+"CoopHistoryOverallRecord" = "전반적으로";
+/// 황금 알
+"CommonGoldenEggs" = "황금 알";
+/// 파워 에그
+"CommonPowerEggs" = "파워 에그";
+/// 개요
+"CommonOverview" = "개요";
+/// en-GB
+"CommonLocale" = "en-GB";
+/// 0
+"CommonLanguageCode" = "0";
+/// 데이터베이스
+"CommonDatabase" = "데이터베이스";
+/// -ProductVersion
+"CommonXproductVersion" = "-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// 업로드
+"CommonUpload" = "업로드";
+/// 개발자
+"CommonCreditDevelop" = "개발자";
+/// 테스터
+"CommonCreditTest" = "테스터";
+/// UI/UX 디자인
+"CommonCreditDesign" = "UI/UX 디자인";
+/// 팀 포인트 카드
+"CoopHistoryTeamPointCard" = "팀 포인트 카드";
+/// 추정 값을 사용
+"CoopHistoryUseEstimatedValue" = "추정 값을 사용";
+/// Safari 인증서를 이용
+"CommonUseSecureSession" = "Safari 인증서를 이용";
+/// 보상
+"CommonCheckInReward" = "보상";
+/// QR 코드에 대한 모든 보상 가져오기.
+"CommonGetCheckInReward" = "QR 코드에 대한 모든 보상 가져오기.";
+/// 팀
+"CoopHistoryTeamResult" = "팀";
+/// 당신
+"CoopHistoryPlayerResult" = "당신";
+/// 선원의 평균
+"CoopHistoryCrewAvgResult" = "선원의 평균";
+/// 크루
+"CoopHistoryCrewResult" = "크루";
+/// 파도
+"CoopHistoryWaveResult" = "파도";
+/// 최대
+"CoopRecordHighestScore" = "최대";
+/// 평균
+"CoopRecordAverageScore" = "평균";
+/// 이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.
+"CommonRequirediOs16" = "이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.";
+/// 이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."
+"CommonRequiredSignIn" = "이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."";
+/// 결과를 성공적으로 복원했습니다.
+"CommonRestoreSuccessMessage" = "결과를 성공적으로 복원했습니다.";
+/// 결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.
+"CommonRestoreFailureMessage" = "결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.";
+/// 결과
+"CommonResultsCount" = "결과";
+/// 소개
+"CommonDeveloperAnswer" = "소개";
+/// 지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.
+"CommonMinimumVersion" = "지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.";
+/// 백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.
+"ErrorInvalidSignature" = "백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.";
+/// 장치 설정에 따라 다릅니다
+"CommonUseSystemTheme" = "장치 설정에 따라 다릅니다";
+/// 라이선스
+"CommonLicense" = "라이선스";
 /// 취소
 "CommonCancel" = "취소";
 /// 랭크 바지락
@@ -416,203 +620,3 @@
 "StageScheduleWinRateByRules" = "룰별 승률";
 /// X 매치
 "StageScheduleXmatch" = "X 매치";
-/// 소개
-"CommonAbout" = "소개";
-/// 실제의
-"RecordActualValue" = "실제의";
-/// 외모
-"CommonAppearances" = "외모";
-/// 응용 프로그램
-"CommonApplication" = "응용 프로그램";
-/// 평균
-"RecordAverageScore" = "평균";
-/// 백업
-"CommonBackupResults" = "백업";
-/// 압축 (ZIP)
-"CommonBackupCompress" = "압축 (ZIP)";
-/// 데이터베이스 백업
-"CommonBackupMessage" = "데이터베이스 백업";
-/// 일반 (JSON)
-"CommonBackupPlain" = "일반 (JSON)";
-/// 신용
-"CommonAppCredit" = "신용";
-/// 다크 모드
-"CommonDarkMode" = "다크 모드";
-/// 데이터 관리
-"CommonDataManagement" = "데이터 관리";
-/// 구조된 수
-"CoopHistoryDeathCount" = "구조된 수";
-/// 패배한 횟수
-"CoopHistoryDefeatedCount" = "패배한 횟수";
-/// 예상
-"CoopHistoryEstimatedValue" = "예상";
-/// 클리어 비율
-"CoopHistoryEventClearRatio" = "클리어 비율";
-/// 이벤트 빈도
-"CoopHistoryEventFrequency" = "이벤트 빈도";
-/// 자주 묻는 질문
-"CommonFAQ" = "자주 묻는 질문";
-/// 게임 모드
-"CommonGamingMode" = "게임 모드";
-/// 학년
-"CoopHistoryGradeId" = "학년";
-/// 학점
-"CoopHistoryGradePoint" = "학점";
-/// 최고
-"CoopHistoryHighestRecord" = "최고";
-/// SplatNet2
-"CommonIkaring2" = "SplatNet2";
-/// 잘못된
-"CommonInvalid" = "잘못된";
-/// 언어
-"CommonLanguages" = "언어";
-/// 개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.
-"CommonShareLogMessage" = "개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.";
-/// 로그 공유하기
-"CommonShareLog" = "로그 공유하기";
-/// 로그 파일
-"CommonLogSize" = "로그 파일";
-/// 내 페이지
-"CommonMyPage" = "내 페이지";
-/// 크루
-"CoopHistoryPlayerCrew" = "크루";
-/// 당신
-"CoopHistoryPlayerYou" = "당신";
-/// 개인 정보 정책
-"CommonPrivacyPolicy" = "개인 정보 정책";
-/// 양식
-"CommonRequestForm" = "양식";
-/// 버그
-"CommonRequestFormBug" = "버그";
-/// 컨텐츠
-"CommonRequestFormContent" = "컨텐츠";
-/// 기능 향상
-"CommonRequestFormEnhancement" = "기능 향상";
-/// 특징
-"CommonRequestFormFeature" = "특징";
-/// 제목
-"CommonRequestFormTitle" = "제목";
-/// 유형
-"CommonRequestFormType" = "유형";
-/// 제출
-"CommonRequsetFormSubmit" = "제출";
-/// 복원
-"CommonRestore" = "복원";
-/// 파일 앱에서 복원할 파일 선택.
-"CommonRestoreMessage" = "파일 앱에서 복원할 파일 선택.";
-/// 결과 수
-"CoopHistoryResultsCount" = "결과 수";
-/// 디버그
-"CommonRoleDebuger" = "디버그";
-/// 개발자
-"CommonRoleDeveloper" = "개발자";
-/// 테스터
-"CommonRoleTester" = "테스터";
-/// 번역자
-"CommonRoleTranslator" = "번역자";
-/// 성공적으로 저장되었습니다.
-"CommonSaveToPhotoLibrary" = "성공적으로 저장되었습니다.";
-/// 동기화 일정
-"CommonScheduleSync" = "동기화 일정";
-/// 서버에서 일정 검색.
-"CommonScheduleSyncMessage" = "서버에서 일정 검색.";
-/// 로그인
-"CommonSignIn" = "로그인";
-/// 로그아웃
-"CommonSignOut" = "로그아웃";
-/// 로그아웃 성공적으로 완료되었습니다
-"CommonSignOutSuccessfully" = "로그아웃 성공적으로 완료되었습니다";
-/// 닌텐도 스위치 계정 연결 해제.
-"CommonSignOutMessage" = "닌텐도 스위치 계정 연결 해제.";
-/// 소스 코드
-"CommonSourceCode" = "소스 코드";
-/// 공급 비율
-"CoopHistorySuppliedRatio" = "공급 비율";
-/// 앱 업데이트가 필요합니다.
-"CommonUpdateRequired" = "앱 업데이트가 필요합니다.";
-/// 사용자 데이터
-"CommonUserData" = "사용자 데이터";
-/// 유효한
-"CommonValid" = "유효한";
-/// 버전
-"CommonAppVersion" = "버전";
-/// 로그 제거
-"CommonWipeLog" = "로그 제거";
-/// 모든 로그 제거.
-"CommonWipeLogMessage" = "모든 로그 제거.";
-/// 결과 제거
-"CommonWipeResults" = "결과 제거";
-/// 모든 데이터 제거.
-"CommonWipeResultsMessage" = "모든 데이터 제거.";
-/// 리뷰 작성
-"CommonWriteReview" = "리뷰 작성";
-/// 전반적으로
-"CoopHistoryOverallRecord" = "전반적으로";
-/// 황금 알
-"CommonGoldenEggs" = "황금 알";
-/// 파워 에그
-"CommonPowerEggs" = "파워 에그";
-/// 개요
-"CommonOverview" = "개요";
-/// en-GB
-"CommonLocale" = "en-GB";
-/// 0
-"CommonLanguageCode" = "0";
-/// 데이터베이스
-"CommonDatabase" = "데이터베이스";
-/// -ProductVersion
-"CommonXProductVersion" = "-ProductVersion";
-/// X-WebViewVer
-"CommonXWebViewVer" = "X-WebViewVer";
-/// 업로드
-"CommonUpload" = "업로드";
-/// 개발자
-"CommonCreditDevelop" = "개발자";
-/// 테스터
-"CommonCreditTest" = "테스터";
-/// UI/UX 디자인
-"CommonCreditDesign" = "UI/UX 디자인";
-/// 팀 포인트 카드
-"CoopHistoryTeamPointCard" = "팀 포인트 카드";
-/// 추정 값을 사용
-"CoopHistoryUseEstimatedValue" = "추정 값을 사용";
-/// Safari 인증서를 이용
-"CommonUseSecureSession" = "Safari 인증서를 이용";
-/// 보상
-"CommonCheckInReward" = "보상";
-/// QR 코드에 대한 모든 보상 가져오기.
-"CommonGetCheckInReward" = "QR 코드에 대한 모든 보상 가져오기.";
-/// 팀
-"CoopHistoryTeamResult" = "팀";
-/// 당신
-"CoopHistoryPlayerResult" = "당신";
-/// 선원의 평균
-"CoopHistoryCrewAvgResult" = "선원의 평균";
-/// 크루
-"CoopHistoryCrewResult" = "크루";
-/// 파도
-"CoopHistoryWaveResult" = "파도";
-/// 최대
-"CoopRecordHighestScore" = "최대";
-/// 평균
-"CoopRecordAverageScore" = "평균";
-/// 이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.
-"CommonRequirediOS16" = "이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.";
-/// 이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."
-"CommonRequiredSignIn" = "이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."";
-/// 결과를 성공적으로 복원했습니다.
-"CommonRestoreSuccessMessage" = "결과를 성공적으로 복원했습니다.";
-/// 결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.
-"CommonRestoreFailureMessage" = "결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.";
-/// 결과
-"CommonResultsCount" = "결과";
-/// 소개
-"CommonDeveloperAnswer" = "소개";
-/// 지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.
-"CommonMinimumVersion" = "지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.";
-/// 백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.
-"ErrorInvalidSignature" = "백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.";
-/// 장치 설정에 따라 다릅니다
-"CommonUseSystemTheme" = "장치 설정에 따라 다릅니다";
-/// 라이선스
-"CommonLicense" = "라이선스";

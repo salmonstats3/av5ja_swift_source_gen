@@ -8,10 +8,10 @@
 import Foundation
 
 public enum CoopWaterLevelId: Int, UnsafeRawRepresentable {
-    public static var defaultValue: Self = .NORMAL_TIDE
+    public static var defaultValue: Self = .NormalTide
     public var id: Int { rawValue }
 
-    case LOW_TIDE       = 0
-    case NORMAL_TIDE    = 1
-    case HIGH_TIDE      = 2
+    case LowTide       = 0
+    case NormalTide    = 1
+    case HighTide      = 2
 }

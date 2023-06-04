@@ -60,46 +60,28 @@
 "Grade07" = "Jefe +3";
 /// Director
 "Grade08" = "Director";
-/// Aprendiz eventual
-"GradeArbeiter00" = "Aprendiz eventual";
-/// Subordinado eventual
-"GradeArbeiter01" = "Subordinado eventual";
-/// Capataz eventual
-"GradeArbeiter02" = "Capataz eventual";
-/// Gerente eventual
-"GradeArbeiter03" = "Gerente eventual";
-/// Jefe eventual
-"GradeArbeiter04" = "Jefe eventual";
-/// Jefe +1 eventual
-"GradeArbeiter05" = "Jefe +1 eventual";
-/// Jefe +2 eventual
-"GradeArbeiter06" = "Jefe +2 eventual";
-/// Jefe +3 eventual
-"GradeArbeiter07" = "Jefe +3 eventual";
-/// Director eventual
-"GradeArbeiter08" = "Director eventual";
 /// Mono de trabajo naranja
-"COP001" = "Mono de trabajo naranja";
+"Cop001" = "Mono de trabajo naranja";
 /// Mono de trabajo verde
-"COP002" = "Mono de trabajo verde";
+"Cop002" = "Mono de trabajo verde";
 /// Mono de trabajo amarillo
-"COP003" = "Mono de trabajo amarillo";
+"Cop003" = "Mono de trabajo amarillo";
 /// Mono de trabajo rosa
-"COP004" = "Mono de trabajo rosa";
+"Cop004" = "Mono de trabajo rosa";
 /// Mono de trabajo azul
-"COP005" = "Mono de trabajo azul";
+"Cop005" = "Mono de trabajo azul";
 /// Mono de trabajo negro
-"COP006" = "Mono de trabajo negro";
+"Cop006" = "Mono de trabajo negro";
 /// Mono de trabajo blanco
-"COP007" = "Mono de trabajo blanco";
+"Cop007" = "Mono de trabajo blanco";
 /// Vadeador naranja
-"COP008" = "Vadeador naranja";
+"Cop008" = "Vadeador naranja";
 /// Vadeador negro
-"COP009" = "Vadeador negro";
+"Cop009" = "Vadeador negro";
 /// Vadeador amarillo
-"COP010" = "Vadeador amarillo";
+"Cop010" = "Vadeador amarillo";
 /// Vadeador marrón
-"COP011" = "Vadeador marrón";
+"Cop011" = "Vadeador marrón";
 /// Pirañalandia
 "Carousel" = "Pirañalandia";
 /// Hidrocentral Pilpil
@@ -120,6 +102,228 @@
 "Unknown" = "(?)";
 /// Instituto Coralino
 "Upland" = "Instituto Coralino";
+/// Chaparrillas
+"CoopEventDozer" = "Chaparrillas";
+/// Niebla
+"CoopEventFog" = "Niebla";
+/// Detección de salmóreos
+"CoopEventGeyser" = "Detección de salmóreos";
+/// Aerocriaderos
+"CoopEventHakobiya" = "Aerocriaderos";
+/// Ataques de escamacarras
+"CoopEventMissile" = "Ataques de escamacarras";
+/// Tornados gigantes
+"CoopEventRelay" = "Tornados gigantes";
+/// Avalanchas
+"CoopEventRush" = "Avalanchas";
+/// Erupciones de morrolodos
+"CoopEventTamaire" = "Erupciones de morrolodos";
+/// modelo de tarea
+"CoopScenario" = "modelo de tarea";
+/// gran jefe salmónido
+"SakeBigBoss" = "gran jefe salmónido";
+/// salmómetro
+"SakeBigBossGauge" = "salmómetro";
+/// Acerca de
+"CommonAbout" = "Acerca de";
+/// Actual
+"RecordActualValue" = "Actual";
+/// Comparecencias
+"CommonAppearances" = "Comparecencias";
+/// Aplicación
+"CommonApplication" = "Aplicación";
+/// Media
+"RecordAverageScore" = "Media";
+/// Copia de seguridad
+"CommonBackupResults" = "Copia de seguridad";
+/// Comprimir(ZIP)
+"CommonBackupCompress" = "Comprimir(ZIP)";
+/// Copia de seguridad de la base de datos
+"CommonBackupMessage" = "Copia de seguridad de la base de datos";
+/// Simple(JSON)
+"CommonBackupPlain" = "Simple(JSON)";
+/// Crédito
+"CommonAppCredit" = "Crédito";
+/// Modo oscuro
+"CommonDarkMode" = "Modo oscuro";
+/// Gestión de datos
+"CommonDataManagement" = "Gestión de datos";
+/// Recuento rescatado
+"CoopHistoryDeathCount" = "Recuento rescatado";
+/// Recuento derrotado
+"CoopHistoryDefeatedCount" = "Recuento derrotado";
+/// Estimación
+"CoopHistoryEstimatedValue" = "Estimación";
+/// Relación clara
+"CoopHistoryEventClearRatio" = "Relación clara";
+/// Frecuencia de los eventos
+"CoopHistoryEventFrequency" = "Frecuencia de los eventos";
+/// PREGUNTAS FRECUENTES
+"CommonFaq" = "PREGUNTAS FRECUENTES";
+/// Modo de juego
+"CommonGamingMode" = "Modo de juego";
+/// Grado
+"CoopHistoryGradeId" = "Grado";
+/// Calificación
+"CoopHistoryGradePoint" = "Calificación";
+/// Más alto
+"CoopHistoryHighestRecord" = "Más alto";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// No válido
+"CommonInvalid" = "No válido";
+/// Idiomas
+"CommonLanguages" = "Idiomas";
+/// Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.
+"CommonShareLogMessage" = "Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.";
+/// Compartir registros
+"CommonShareLog" = "Compartir registros";
+/// Archivos de registro
+"CommonLogSize" = "Archivos de registro";
+/// Mi página
+"CommonMyPage" = "Mi página";
+/// Tripulación
+"CoopHistoryPlayerCrew" = "Tripulación";
+/// Usted
+"CoopHistoryPlayerYou" = "Usted";
+/// Política de privacidad
+"CommonPrivacyPolicy" = "Política de privacidad";
+/// Formulario
+"CommonRequestForm" = "Formulario";
+/// Error
+"CommonRequestFormBug" = "Error";
+/// Contenido
+"CommonRequestFormContent" = "Contenido";
+/// Mejora
+"CommonRequestFormEnhancement" = "Mejora";
+/// Característica
+"CommonRequestFormFeature" = "Característica";
+/// Título
+"CommonRequestFormTitle" = "Título";
+/// Tipo
+"CommonRequestFormType" = "Tipo";
+/// Enviar
+"CommonRequsetFormSubmit" = "Enviar";
+/// Restaurar
+"CommonRestore" = "Restaurar";
+/// Seleccione el archivo que desea restaurar en la aplicación Archivos.
+"CommonRestoreMessage" = "Seleccione el archivo que desea restaurar en la aplicación Archivos.";
+/// Recuento de resultados
+"CoopHistoryResultsCount" = "Recuento de resultados";
+/// Depurar
+"CommonRoleDebuger" = "Depurar";
+/// Desarrollador
+"CommonRoleDeveloper" = "Desarrollador";
+/// Testor
+"CommonRoleTester" = "Testor";
+/// Traductor
+"CommonRoleTranslator" = "Traductor";
+/// Guardado correctamente
+"CommonSaveToPhotoLibrary" = "Guardado correctamente";
+/// Sincronizar horario
+"CommonScheduleSync" = "Sincronizar horario";
+/// Recupera la programación del servidor.
+"CommonScheduleSyncMessage" = "Recupera la programación del servidor.";
+/// Iniciar sesión
+"CommonSignIn" = "Iniciar sesión";
+/// Cerrar sesión
+"CommonSignOut" = "Cerrar sesión";
+/// Cerrar sesión correctamente
+"CommonSignOutSuccessfully" = "Cerrar sesión correctamente";
+/// Desvincula la cuenta de Nintendo Switch.
+"CommonSignOutMessage" = "Desvincula la cuenta de Nintendo Switch.";
+/// Código fuente
+"CommonSourceCode" = "Código fuente";
+/// Proporción suministrada
+"CoopHistorySuppliedRatio" = "Proporción suministrada";
+/// Es necesario actualizar la aplicación
+"CommonUpdateRequired" = "Es necesario actualizar la aplicación";
+/// Datos del usuario
+"CommonUserData" = "Datos del usuario";
+/// Válido
+"CommonValid" = "Válido";
+/// Versión
+"CommonAppVersion" = "Versión";
+/// Limpiar registros
+"CommonWipeLog" = "Limpiar registros";
+/// Limpia todos los registros.
+"CommonWipeLogMessage" = "Limpia todos los registros.";
+/// Resultados de la limpieza
+"CommonWipeResults" = "Resultados de la limpieza";
+/// Borra todos los datos.
+"CommonWipeResultsMessage" = "Borra todos los datos.";
+/// Escriba un comentario
+"CommonWriteReview" = "Escriba un comentario";
+/// En general
+"CoopHistoryOverallRecord" = "En general";
+/// Huevos de oro
+"CommonGoldenEggs" = "Huevos de oro";
+/// Huevos de energía
+"CommonPowerEggs" = "Huevos de energía";
+/// Visión general
+"CommonOverview" = "Visión general";
+/// es-ES
+"CommonLocale" = "es-ES";
+/// 0
+"CommonLanguageCode" = "0";
+/// Base de datos
+"CommonDatabase" = "Base de datos";
+/// X-ProductVersion
+"CommonXproductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// Cargar
+"CommonUpload" = "Cargar";
+/// Desarrollador
+"CommonCreditDevelop" = "Desarrollador";
+/// Comprobador
+"CommonCreditTest" = "Comprobador";
+/// Diseño UI/UX
+"CommonCreditDesign" = "Diseño UI/UX";
+/// Tarjeta de puntos del equipo
+"CoopHistoryTeamPointCard" = "Tarjeta de puntos del equipo";
+/// Utilizar valores estimados
+"CoopHistoryUseEstimatedValue" = "Utilizar valores estimados";
+/// Utilizar la sesión de empheral
+"CommonUseSecureSession" = "Utilizar la sesión de empheral";
+/// Recompensas
+"CommonCheckInReward" = "Recompensas";
+/// Consigue todas las recompensas por códigos QR.
+"CommonGetCheckInReward" = "Consigue todas las recompensas por códigos QR.";
+/// Equipo
+"CoopHistoryTeamResult" = "Equipo";
+/// Usted
+"CoopHistoryPlayerResult" = "Usted";
+/// Avg de la tripulación
+"CoopHistoryCrewAvgResult" = "Avg de la tripulación";
+/// Tripulación
+"CoopHistoryCrewResult" = "Tripulación";
+/// Olas
+"CoopHistoryWaveResult" = "Olas";
+/// Max
+"CoopRecordHighestScore" = "Max";
+/// Avg
+"CoopRecordAverageScore" = "Avg";
+/// Debes actualizar a iOS16 o superior para utilizar esta función
+"CommonRequirediOs16" = "Debes actualizar a iOS16 o superior para utilizar esta función";
+/// Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.
+"CommonRequiredSignIn" = "Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.";
+/// Restaurar resultados con éxito
+"CommonRestoreSuccessMessage" = "Restaurar resultados con éxito";
+/// Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.
+"CommonRestoreFailureMessage" = "Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.";
+/// Resultados
+"CommonResultsCount" = "Resultados";
+/// Respuesta del promotor
+"CommonDeveloperAnswer" = "Respuesta del promotor";
+/// Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.
+"CommonMinimumVersion" = "Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.";
+/// Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.
+"ErrorInvalidSignature" = "Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.";
+/// Utilizar la configuración del dispositivo
+"CommonUseSystemTheme" = "Utilizar la configuración del dispositivo";
+/// Licencia
+"CommonLicense" = "Licencia";
 /// Cancelar
 "CommonCancel" = "Cancelar";
 /// Asalto almeja
@@ -422,203 +626,3 @@
 "StageScheduleWinRateByRules" = "Tasa de victorias por modo";
 /// Combate X
 "StageScheduleXmatch" = "Combate X";
-/// Acerca de
-"CommonAbout" = "Acerca de";
-/// Actual
-"RecordActualValue" = "Actual";
-/// Comparecencias
-"CommonAppearances" = "Comparecencias";
-/// Aplicación
-"CommonApplication" = "Aplicación";
-/// Media
-"RecordAverageScore" = "Media";
-/// Copia de seguridad
-"CommonBackupResults" = "Copia de seguridad";
-/// Comprimir(ZIP)
-"CommonBackupCompress" = "Comprimir(ZIP)";
-/// Copia de seguridad de la base de datos
-"CommonBackupMessage" = "Copia de seguridad de la base de datos";
-/// Simple(JSON)
-"CommonBackupPlain" = "Simple(JSON)";
-/// Crédito
-"CommonAppCredit" = "Crédito";
-/// Modo oscuro
-"CommonDarkMode" = "Modo oscuro";
-/// Gestión de datos
-"CommonDataManagement" = "Gestión de datos";
-/// Recuento rescatado
-"CoopHistoryDeathCount" = "Recuento rescatado";
-/// Recuento derrotado
-"CoopHistoryDefeatedCount" = "Recuento derrotado";
-/// Estimación
-"CoopHistoryEstimatedValue" = "Estimación";
-/// Relación clara
-"CoopHistoryEventClearRatio" = "Relación clara";
-/// Frecuencia de los eventos
-"CoopHistoryEventFrequency" = "Frecuencia de los eventos";
-/// PREGUNTAS FRECUENTES
-"CommonFAQ" = "PREGUNTAS FRECUENTES";
-/// Modo de juego
-"CommonGamingMode" = "Modo de juego";
-/// Grado
-"CoopHistoryGradeId" = "Grado";
-/// Calificación
-"CoopHistoryGradePoint" = "Calificación";
-/// Más alto
-"CoopHistoryHighestRecord" = "Más alto";
-/// SplatNet2
-"CommonIkaring2" = "SplatNet2";
-/// No válido
-"CommonInvalid" = "No válido";
-/// Idiomas
-"CommonLanguages" = "Idiomas";
-/// Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.
-"CommonShareLogMessage" = "Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.";
-/// Compartir registros
-"CommonShareLog" = "Compartir registros";
-/// Archivos de registro
-"CommonLogSize" = "Archivos de registro";
-/// Mi página
-"CommonMyPage" = "Mi página";
-/// Tripulación
-"CoopHistoryPlayerCrew" = "Tripulación";
-/// Usted
-"CoopHistoryPlayerYou" = "Usted";
-/// Política de privacidad
-"CommonPrivacyPolicy" = "Política de privacidad";
-/// Formulario
-"CommonRequestForm" = "Formulario";
-/// Error
-"CommonRequestFormBug" = "Error";
-/// Contenido
-"CommonRequestFormContent" = "Contenido";
-/// Mejora
-"CommonRequestFormEnhancement" = "Mejora";
-/// Característica
-"CommonRequestFormFeature" = "Característica";
-/// Título
-"CommonRequestFormTitle" = "Título";
-/// Tipo
-"CommonRequestFormType" = "Tipo";
-/// Enviar
-"CommonRequsetFormSubmit" = "Enviar";
-/// Restaurar
-"CommonRestore" = "Restaurar";
-/// Seleccione el archivo que desea restaurar en la aplicación Archivos.
-"CommonRestoreMessage" = "Seleccione el archivo que desea restaurar en la aplicación Archivos.";
-/// Recuento de resultados
-"CoopHistoryResultsCount" = "Recuento de resultados";
-/// Depurar
-"CommonRoleDebuger" = "Depurar";
-/// Desarrollador
-"CommonRoleDeveloper" = "Desarrollador";
-/// Testor
-"CommonRoleTester" = "Testor";
-/// Traductor
-"CommonRoleTranslator" = "Traductor";
-/// Guardado correctamente
-"CommonSaveToPhotoLibrary" = "Guardado correctamente";
-/// Sincronizar horario
-"CommonScheduleSync" = "Sincronizar horario";
-/// Recupera la programación del servidor.
-"CommonScheduleSyncMessage" = "Recupera la programación del servidor.";
-/// Iniciar sesión
-"CommonSignIn" = "Iniciar sesión";
-/// Cerrar sesión
-"CommonSignOut" = "Cerrar sesión";
-/// Cerrar sesión correctamente
-"CommonSignOutSuccessfully" = "Cerrar sesión correctamente";
-/// Desvincula la cuenta de Nintendo Switch.
-"CommonSignOutMessage" = "Desvincula la cuenta de Nintendo Switch.";
-/// Código fuente
-"CommonSourceCode" = "Código fuente";
-/// Proporción suministrada
-"CoopHistorySuppliedRatio" = "Proporción suministrada";
-/// Es necesario actualizar la aplicación
-"CommonUpdateRequired" = "Es necesario actualizar la aplicación";
-/// Datos del usuario
-"CommonUserData" = "Datos del usuario";
-/// Válido
-"CommonValid" = "Válido";
-/// Versión
-"CommonAppVersion" = "Versión";
-/// Limpiar registros
-"CommonWipeLog" = "Limpiar registros";
-/// Limpia todos los registros.
-"CommonWipeLogMessage" = "Limpia todos los registros.";
-/// Resultados de la limpieza
-"CommonWipeResults" = "Resultados de la limpieza";
-/// Borra todos los datos.
-"CommonWipeResultsMessage" = "Borra todos los datos.";
-/// Escriba un comentario
-"CommonWriteReview" = "Escriba un comentario";
-/// En general
-"CoopHistoryOverallRecord" = "En general";
-/// Huevos de oro
-"CommonGoldenEggs" = "Huevos de oro";
-/// Huevos de energía
-"CommonPowerEggs" = "Huevos de energía";
-/// Visión general
-"CommonOverview" = "Visión general";
-/// es-ES
-"CommonLocale" = "es-ES";
-/// 0
-"CommonLanguageCode" = "0";
-/// Base de datos
-"CommonDatabase" = "Base de datos";
-/// X-ProductVersion
-"CommonXProductVersion" = "X-ProductVersion";
-/// X-WebViewVer
-"CommonXWebViewVer" = "X-WebViewVer";
-/// Cargar
-"CommonUpload" = "Cargar";
-/// Desarrollador
-"CommonCreditDevelop" = "Desarrollador";
-/// Comprobador
-"CommonCreditTest" = "Comprobador";
-/// Diseño UI/UX
-"CommonCreditDesign" = "Diseño UI/UX";
-/// Tarjeta de puntos del equipo
-"CoopHistoryTeamPointCard" = "Tarjeta de puntos del equipo";
-/// Utilizar valores estimados
-"CoopHistoryUseEstimatedValue" = "Utilizar valores estimados";
-/// Utilizar la sesión de empheral
-"CommonUseSecureSession" = "Utilizar la sesión de empheral";
-/// Recompensas
-"CommonCheckInReward" = "Recompensas";
-/// Consigue todas las recompensas por códigos QR.
-"CommonGetCheckInReward" = "Consigue todas las recompensas por códigos QR.";
-/// Equipo
-"CoopHistoryTeamResult" = "Equipo";
-/// Usted
-"CoopHistoryPlayerResult" = "Usted";
-/// Avg de la tripulación
-"CoopHistoryCrewAvgResult" = "Avg de la tripulación";
-/// Tripulación
-"CoopHistoryCrewResult" = "Tripulación";
-/// Olas
-"CoopHistoryWaveResult" = "Olas";
-/// Max
-"CoopRecordHighestScore" = "Max";
-/// Avg
-"CoopRecordAverageScore" = "Avg";
-/// Debes actualizar a iOS16 o superior para utilizar esta función
-"CommonRequirediOS16" = "Debes actualizar a iOS16 o superior para utilizar esta función";
-/// Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.
-"CommonRequiredSignIn" = "Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.";
-/// Restaurar resultados con éxito
-"CommonRestoreSuccessMessage" = "Restaurar resultados con éxito";
-/// Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.
-"CommonRestoreFailureMessage" = "Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.";
-/// Resultados
-"CommonResultsCount" = "Resultados";
-/// Respuesta del promotor
-"CommonDeveloperAnswer" = "Respuesta del promotor";
-/// Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.
-"CommonMinimumVersion" = "Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.";
-/// Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.
-"ErrorInvalidSignature" = "Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.";
-/// Utilizar la configuración del dispositivo
-"CommonUseSystemTheme" = "Utilizar la configuración del dispositivo";
-/// Licencia
-"CommonLicense" = "Licencia";

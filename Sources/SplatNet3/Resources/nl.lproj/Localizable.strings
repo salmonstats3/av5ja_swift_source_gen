@@ -60,46 +60,28 @@
 "Grade07" = "Baas +3";
 /// Legende
 "Grade08" = "Legende";
-/// Uitzendkracht
-"GradeArbeiter00" = "Uitzendkracht";
-/// Parttimer
-"GradeArbeiter01" = "Parttimer";
-/// Vaste kracht
-"GradeArbeiter02" = "Vaste kracht";
-/// Leidinggevende
-"GradeArbeiter03" = "Leidinggevende";
-/// Baas
-"GradeArbeiter04" = "Baas";
-/// Baas +1
-"GradeArbeiter05" = "Baas +1";
-/// Baas +2
-"GradeArbeiter06" = "Baas +2";
-/// Baas +3
-"GradeArbeiter07" = "Baas +3";
-/// Legende
-"GradeArbeiter08" = "Legende";
 /// Oranje werkkloffie
-"COP001" = "Oranje werkkloffie";
+"Cop001" = "Oranje werkkloffie";
 /// Groen werkkloffie
-"COP002" = "Groen werkkloffie";
+"Cop002" = "Groen werkkloffie";
 /// Geel werkkloffie
-"COP003" = "Geel werkkloffie";
+"Cop003" = "Geel werkkloffie";
 /// Roze werkkloffie
-"COP004" = "Roze werkkloffie";
+"Cop004" = "Roze werkkloffie";
 /// Blauw werkkloffie
-"COP005" = "Blauw werkkloffie";
+"Cop005" = "Blauw werkkloffie";
 /// Zwart werkkloffie
-"COP006" = "Zwart werkkloffie";
+"Cop006" = "Zwart werkkloffie";
 /// Wit werkkloffie
-"COP007" = "Wit werkkloffie";
+"Cop007" = "Wit werkkloffie";
 /// Oranje ploeterkloffie
-"COP008" = "Oranje ploeterkloffie";
+"Cop008" = "Oranje ploeterkloffie";
 /// Zwart ploeterkloffie
-"COP009" = "Zwart ploeterkloffie";
+"Cop009" = "Zwart ploeterkloffie";
 /// Geel ploeterkloffie
-"COP010" = "Geel ploeterkloffie";
+"Cop010" = "Geel ploeterkloffie";
 /// Bruin ploeterkloffie
-"COP011" = "Bruin ploeterkloffie";
+"Cop011" = "Bruin ploeterkloffie";
 /// Waterwonderland
 "Carousel" = "Waterwonderland";
 /// Kwikwi-krachtcentrale
@@ -120,6 +102,228 @@
 "Unknown" = "???";
 /// Koraalcampus
 "Upland" = "Koraalcampus";
+/// Grillers
+"CoopEventDozer" = "Grillers";
+/// Mist
+"CoopEventFog" = "Mist";
+/// Het zoeken van Goldies
+"CoopEventGeyser" = "Het zoeken van Goldies";
+/// Het moederschip
+"CoopEventHakobiya" = "Het moederschip";
+/// Storm van Sallogs
+"CoopEventMissile" = "Storm van Sallogs";
+/// Enorme tornado
+"CoopEventRelay" = "Enorme tornado";
+/// Stormloop
+"CoopEventRush" = "Stormloop";
+/// Moddermuil-uitbarstingen
+"CoopEventTamaire" = "Moddermuil-uitbarstingen";
+/// bewaarde klus
+"CoopScenario" = "bewaarde klus";
+/// Salmonster
+"SakeBigBoss" = "Salmonster";
+/// Salmometer
+"SakeBigBossGauge" = "Salmometer";
+/// Over
+"CommonAbout" = "Over";
+/// Werkelijk
+"RecordActualValue" = "Werkelijk";
+/// Verschijningen
+"CommonAppearances" = "Verschijningen";
+/// Toepassing
+"CommonApplication" = "Toepassing";
+/// Gemiddeld
+"RecordAverageScore" = "Gemiddeld";
+/// Back-up
+"CommonBackupResults" = "Back-up";
+/// Comprimeren (ZIP)
+"CommonBackupCompress" = "Comprimeren (ZIP)";
+/// Back-up database
+"CommonBackupMessage" = "Back-up database";
+/// Gewoon (JSON)
+"CommonBackupPlain" = "Gewoon (JSON)";
+/// Krediet
+"CommonAppCredit" = "Krediet";
+/// Donkere modus
+"CommonDarkMode" = "Donkere modus";
+/// Gegevensbeheer
+"CommonDataManagement" = "Gegevensbeheer";
+/// Geredde telling
+"CoopHistoryDeathCount" = "Geredde telling";
+/// Verslagen telling
+"CoopHistoryDefeatedCount" = "Verslagen telling";
+/// Geschat
+"CoopHistoryEstimatedValue" = "Geschat";
+/// Duidelijke verhouding
+"CoopHistoryEventClearRatio" = "Duidelijke verhouding";
+/// Gebeurtenis frequentie
+"CoopHistoryEventFrequency" = "Gebeurtenis frequentie";
+/// FAQ
+"CommonFaq" = "FAQ";
+/// Gaming modus
+"CommonGamingMode" = "Gaming modus";
+/// Rang
+"CoopHistoryGradeId" = "Rang";
+/// Grade point
+"CoopHistoryGradePoint" = "Grade point";
+/// Hoogste
+"CoopHistoryHighestRecord" = "Hoogste";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// Ongeldig
+"CommonInvalid" = "Ongeldig";
+/// Talen
+"CommonLanguages" = "Talen";
+/// Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.
+"CommonShareLogMessage" = "Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.";
+/// Logboeken delen
+"CommonShareLog" = "Logboeken delen";
+/// Logbestanden
+"CommonLogSize" = "Logbestanden";
+/// Mijn pagina
+"CommonMyPage" = "Mijn pagina";
+/// Bemanning
+"CoopHistoryPlayerCrew" = "Bemanning";
+/// Jij
+"CoopHistoryPlayerYou" = "Jij";
+/// Privacybeleid
+"CommonPrivacyPolicy" = "Privacybeleid";
+/// Formulier
+"CommonRequestForm" = "Formulier";
+/// Bug
+"CommonRequestFormBug" = "Bug";
+/// Inhoud
+"CommonRequestFormContent" = "Inhoud";
+/// Verbetering
+"CommonRequestFormEnhancement" = "Verbetering";
+/// Functie
+"CommonRequestFormFeature" = "Functie";
+/// Titel
+"CommonRequestFormTitle" = "Titel";
+/// Type
+"CommonRequestFormType" = "Type";
+/// Dien  in
+"CommonRequsetFormSubmit" = "Dien  in";
+/// Herstel
+"CommonRestore" = "Herstel";
+/// Selecteer bestand om te herstellen in Bestanden app.
+"CommonRestoreMessage" = "Selecteer bestand om te herstellen in Bestanden app.";
+/// Resultaten tellen
+"CoopHistoryResultsCount" = "Resultaten tellen";
+/// Debug
+"CommonRoleDebuger" = "Debug";
+/// Ontwikkelaar
+"CommonRoleDeveloper" = "Ontwikkelaar";
+/// Testor
+"CommonRoleTester" = "Testor";
+/// Vertaler
+"CommonRoleTranslator" = "Vertaler";
+/// Met succes opgeslagen
+"CommonSaveToPhotoLibrary" = "Met succes opgeslagen";
+/// Synchronisatie schema
+"CommonScheduleSync" = "Synchronisatie schema";
+/// Agenda ophalen van de server.
+"CommonScheduleSyncMessage" = "Agenda ophalen van de server.";
+/// Aanmelden
+"CommonSignIn" = "Aanmelden";
+/// Afmelden
+"CommonSignOut" = "Afmelden";
+/// Succesvol afmelden
+"CommonSignOutSuccessfully" = "Succesvol afmelden";
+/// Ontkoppel het Nintendo Switch-account.
+"CommonSignOutMessage" = "Ontkoppel het Nintendo Switch-account.";
+/// Broncode
+"CommonSourceCode" = "Broncode";
+/// Geleverde verhouding
+"CoopHistorySuppliedRatio" = "Geleverde verhouding";
+/// App update is vereist
+"CommonUpdateRequired" = "App update is vereist";
+/// Gebruikersgegevens
+"CommonUserData" = "Gebruikersgegevens";
+/// Geldig
+"CommonValid" = "Geldig";
+/// Versie
+"CommonAppVersion" = "Versie";
+/// Logboeken wissen
+"CommonWipeLog" = "Logboeken wissen";
+/// Veeg alle logboeken weg.
+"CommonWipeLogMessage" = "Veeg alle logboeken weg.";
+/// Veegresultaten
+"CommonWipeResults" = "Veegresultaten";
+/// Wis alle gegevens.
+"CommonWipeResultsMessage" = "Wis alle gegevens.";
+/// Schrijf een review
+"CommonWriteReview" = "Schrijf een review";
+/// Algemeen
+"CoopHistoryOverallRecord" = "Algemeen";
+/// Gouden eieren
+"CommonGoldenEggs" = "Gouden eieren";
+/// Power Eggs
+"CommonPowerEggs" = "Power Eggs";
+/// Overzicht
+"CommonOverview" = "Overzicht";
+/// nl-NL
+"CommonLocale" = "nl-NL";
+/// 0
+"CommonLanguageCode" = "0";
+/// Database
+"CommonDatabase" = "Database";
+/// X-ProductVersion
+"CommonXproductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// uploaden
+"CommonUpload" = "uploaden";
+/// Ontwikkelaar
+"CommonCreditDevelop" = "Ontwikkelaar";
+/// Tester
+"CommonCreditTest" = "Tester";
+/// UI/UX ontwerp
+"CommonCreditDesign" = "UI/UX ontwerp";
+/// Teampuntenkaart
+"CoopHistoryTeamPointCard" = "Teampuntenkaart";
+/// Gebruik geschatte waarden
+"CoopHistoryUseEstimatedValue" = "Gebruik geschatte waarden";
+/// Gebruik empirische sessie
+"CommonUseSecureSession" = "Gebruik empirische sessie";
+/// Beloningen
+"CommonCheckInReward" = "Beloningen";
+/// Krijg alle beloningen voor QR-codes.
+"CommonGetCheckInReward" = "Krijg alle beloningen voor QR-codes.";
+/// Team
+"CoopHistoryTeamResult" = "Team";
+/// Jij
+"CoopHistoryPlayerResult" = "Jij";
+/// Avg van de bemanning
+"CoopHistoryCrewAvgResult" = "Avg van de bemanning";
+/// Bemanning
+"CoopHistoryCrewResult" = "Bemanning";
+/// Golven
+"CoopHistoryWaveResult" = "Golven";
+/// Max
+"CoopRecordHighestScore" = "Max";
+/// Gemiddeld
+"CoopRecordAverageScore" = "Gemiddeld";
+/// Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.
+"CommonRequirediOs16" = "Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.";
+/// Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.
+"CommonRequiredSignIn" = "Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.";
+/// Succesvolle resultaten herstellen
+"CommonRestoreSuccessMessage" = "Succesvolle resultaten herstellen";
+/// Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.
+"CommonRestoreFailureMessage" = "Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.";
+/// Resultaten
+"CommonResultsCount" = "Resultaten";
+/// Antwoord van de ontwikkelaar
+"CommonDeveloperAnswer" = "Antwoord van de ontwikkelaar";
+/// Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.
+"CommonMinimumVersion" = "Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.";
+/// Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.
+"ErrorInvalidSignature" = "Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.";
+/// Apparaatinstellingen gebruiken
+"CommonUseSystemTheme" = "Apparaatinstellingen gebruiken";
+/// Licentie
+"CommonLicense" = "Licentie";
 /// Annuleren
 "CommonCancel" = "Annuleren";
 /// Schelpenstrijd
@@ -422,203 +626,3 @@
 "StageScheduleWinRateByRules" = "Winpercentage per vechtstijl";
 /// X-gevecht
 "StageScheduleXmatch" = "X-gevecht";
-/// Over
-"CommonAbout" = "Over";
-/// Werkelijk
-"RecordActualValue" = "Werkelijk";
-/// Verschijningen
-"CommonAppearances" = "Verschijningen";
-/// Toepassing
-"CommonApplication" = "Toepassing";
-/// Gemiddeld
-"RecordAverageScore" = "Gemiddeld";
-/// Back-up
-"CommonBackupResults" = "Back-up";
-/// Comprimeren (ZIP)
-"CommonBackupCompress" = "Comprimeren (ZIP)";
-/// Back-up database
-"CommonBackupMessage" = "Back-up database";
-/// Gewoon (JSON)
-"CommonBackupPlain" = "Gewoon (JSON)";
-/// Krediet
-"CommonAppCredit" = "Krediet";
-/// Donkere modus
-"CommonDarkMode" = "Donkere modus";
-/// Gegevensbeheer
-"CommonDataManagement" = "Gegevensbeheer";
-/// Geredde telling
-"CoopHistoryDeathCount" = "Geredde telling";
-/// Verslagen telling
-"CoopHistoryDefeatedCount" = "Verslagen telling";
-/// Geschat
-"CoopHistoryEstimatedValue" = "Geschat";
-/// Duidelijke verhouding
-"CoopHistoryEventClearRatio" = "Duidelijke verhouding";
-/// Gebeurtenis frequentie
-"CoopHistoryEventFrequency" = "Gebeurtenis frequentie";
-/// FAQ
-"CommonFAQ" = "FAQ";
-/// Gaming modus
-"CommonGamingMode" = "Gaming modus";
-/// Rang
-"CoopHistoryGradeId" = "Rang";
-/// Grade point
-"CoopHistoryGradePoint" = "Grade point";
-/// Hoogste
-"CoopHistoryHighestRecord" = "Hoogste";
-/// SplatNet2
-"CommonIkaring2" = "SplatNet2";
-/// Ongeldig
-"CommonInvalid" = "Ongeldig";
-/// Talen
-"CommonLanguages" = "Talen";
-/// Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.
-"CommonShareLogMessage" = "Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.";
-/// Logboeken delen
-"CommonShareLog" = "Logboeken delen";
-/// Logbestanden
-"CommonLogSize" = "Logbestanden";
-/// Mijn pagina
-"CommonMyPage" = "Mijn pagina";
-/// Bemanning
-"CoopHistoryPlayerCrew" = "Bemanning";
-/// Jij
-"CoopHistoryPlayerYou" = "Jij";
-/// Privacybeleid
-"CommonPrivacyPolicy" = "Privacybeleid";
-/// Formulier
-"CommonRequestForm" = "Formulier";
-/// Bug
-"CommonRequestFormBug" = "Bug";
-/// Inhoud
-"CommonRequestFormContent" = "Inhoud";
-/// Verbetering
-"CommonRequestFormEnhancement" = "Verbetering";
-/// Functie
-"CommonRequestFormFeature" = "Functie";
-/// Titel
-"CommonRequestFormTitle" = "Titel";
-/// Type
-"CommonRequestFormType" = "Type";
-/// Dien  in
-"CommonRequsetFormSubmit" = "Dien  in";
-/// Herstel
-"CommonRestore" = "Herstel";
-/// Selecteer bestand om te herstellen in Bestanden app.
-"CommonRestoreMessage" = "Selecteer bestand om te herstellen in Bestanden app.";
-/// Resultaten tellen
-"CoopHistoryResultsCount" = "Resultaten tellen";
-/// Debug
-"CommonRoleDebuger" = "Debug";
-/// Ontwikkelaar
-"CommonRoleDeveloper" = "Ontwikkelaar";
-/// Testor
-"CommonRoleTester" = "Testor";
-/// Vertaler
-"CommonRoleTranslator" = "Vertaler";
-/// Met succes opgeslagen
-"CommonSaveToPhotoLibrary" = "Met succes opgeslagen";
-/// Synchronisatie schema
-"CommonScheduleSync" = "Synchronisatie schema";
-/// Agenda ophalen van de server.
-"CommonScheduleSyncMessage" = "Agenda ophalen van de server.";
-/// Aanmelden
-"CommonSignIn" = "Aanmelden";
-/// Afmelden
-"CommonSignOut" = "Afmelden";
-/// Succesvol afmelden
-"CommonSignOutSuccessfully" = "Succesvol afmelden";
-/// Ontkoppel het Nintendo Switch-account.
-"CommonSignOutMessage" = "Ontkoppel het Nintendo Switch-account.";
-/// Broncode
-"CommonSourceCode" = "Broncode";
-/// Geleverde verhouding
-"CoopHistorySuppliedRatio" = "Geleverde verhouding";
-/// App update is vereist
-"CommonUpdateRequired" = "App update is vereist";
-/// Gebruikersgegevens
-"CommonUserData" = "Gebruikersgegevens";
-/// Geldig
-"CommonValid" = "Geldig";
-/// Versie
-"CommonAppVersion" = "Versie";
-/// Logboeken wissen
-"CommonWipeLog" = "Logboeken wissen";
-/// Veeg alle logboeken weg.
-"CommonWipeLogMessage" = "Veeg alle logboeken weg.";
-/// Veegresultaten
-"CommonWipeResults" = "Veegresultaten";
-/// Wis alle gegevens.
-"CommonWipeResultsMessage" = "Wis alle gegevens.";
-/// Schrijf een review
-"CommonWriteReview" = "Schrijf een review";
-/// Algemeen
-"CoopHistoryOverallRecord" = "Algemeen";
-/// Gouden eieren
-"CommonGoldenEggs" = "Gouden eieren";
-/// Power Eggs
-"CommonPowerEggs" = "Power Eggs";
-/// Overzicht
-"CommonOverview" = "Overzicht";
-/// nl-NL
-"CommonLocale" = "nl-NL";
-/// 0
-"CommonLanguageCode" = "0";
-/// Database
-"CommonDatabase" = "Database";
-/// X-ProductVersion
-"CommonXProductVersion" = "X-ProductVersion";
-/// X-WebViewVer
-"CommonXWebViewVer" = "X-WebViewVer";
-/// uploaden
-"CommonUpload" = "uploaden";
-/// Ontwikkelaar
-"CommonCreditDevelop" = "Ontwikkelaar";
-/// Tester
-"CommonCreditTest" = "Tester";
-/// UI/UX ontwerp
-"CommonCreditDesign" = "UI/UX ontwerp";
-/// Teampuntenkaart
-"CoopHistoryTeamPointCard" = "Teampuntenkaart";
-/// Gebruik geschatte waarden
-"CoopHistoryUseEstimatedValue" = "Gebruik geschatte waarden";
-/// Gebruik empirische sessie
-"CommonUseSecureSession" = "Gebruik empirische sessie";
-/// Beloningen
-"CommonCheckInReward" = "Beloningen";
-/// Krijg alle beloningen voor QR-codes.
-"CommonGetCheckInReward" = "Krijg alle beloningen voor QR-codes.";
-/// Team
-"CoopHistoryTeamResult" = "Team";
-/// Jij
-"CoopHistoryPlayerResult" = "Jij";
-/// Avg van de bemanning
-"CoopHistoryCrewAvgResult" = "Avg van de bemanning";
-/// Bemanning
-"CoopHistoryCrewResult" = "Bemanning";
-/// Golven
-"CoopHistoryWaveResult" = "Golven";
-/// Max
-"CoopRecordHighestScore" = "Max";
-/// Gemiddeld
-"CoopRecordAverageScore" = "Gemiddeld";
-/// Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.
-"CommonRequirediOS16" = "Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.";
-/// Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.
-"CommonRequiredSignIn" = "Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.";
-/// Succesvolle resultaten herstellen
-"CommonRestoreSuccessMessage" = "Succesvolle resultaten herstellen";
-/// Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.
-"CommonRestoreFailureMessage" = "Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.";
-/// Resultaten
-"CommonResultsCount" = "Resultaten";
-/// Antwoord van de ontwikkelaar
-"CommonDeveloperAnswer" = "Antwoord van de ontwikkelaar";
-/// Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.
-"CommonMinimumVersion" = "Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.";
-/// Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.
-"ErrorInvalidSignature" = "Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.";
-/// Apparaatinstellingen gebruiken
-"CommonUseSystemTheme" = "Apparaatinstellingen gebruiken";
-/// Licentie
-"CommonLicense" = "Licentie";
