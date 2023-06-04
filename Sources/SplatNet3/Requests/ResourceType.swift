@@ -14,6 +14,7 @@ public struct ResourceType: Codable {
     let staticMedia: [URL]
     let specialImg: [URL]
     let coopEnemyImg: [URL]
+    let fonts: [URL]
 
     struct StageImage: Codable {
         let banner: [URL]
@@ -21,7 +22,7 @@ public struct ResourceType: Codable {
     }
 
     var urls: [URL] {
-        stageImg.banner + stageImg.icon + uiImg + weaponIllust + staticMedia + specialImg + coopEnemyImg
+        stageImg.banner + stageImg.icon + uiImg + weaponIllust + staticMedia + specialImg + coopEnemyImg + fonts
     }
 
     struct Response: Codable {
@@ -95,14 +96,14 @@ public struct ResourceType: Codable {
 }
 
 public enum ResourceURLType: String, CaseIterable, Codable {
-    case StageImgBanner     = "stage_img/banner"
-    case StageImgIcon       = "stage_img/icon"
-    case UIImg              = "ui_img"
-    case WeaponInfoMainIdllust = "weapon_illust"
-    case CoopEnemyImg       = "coop_enemy_img"
-    case SpecialImg         = "special_img"
-    case StaticMedia        = "static/media"
-    case Bundled            = "bundled"
+    case StageImgBanner         = "stage_img/banner"
+    case StageImgIcon           = "stage_img/icon"
+    case UIImg                  = "ui_img"
+    case WeaponInfoMainIdllust  = "weapon_illust"
+    case CoopEnemyImg           = "coop_enemy_img"
+    case SpecialImg             = "special_img"
+    case StaticMedia            = "static/media"
+    case Bundled                = "bundled"
 
     init?(url: URL) {
         if url.absoluteString.contains(ResourceURLType.StageImgBanner.rawValue) {

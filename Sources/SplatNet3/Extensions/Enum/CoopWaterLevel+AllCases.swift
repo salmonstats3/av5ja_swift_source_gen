@@ -10,16 +10,16 @@ import Foundation
 
 public extension CoopWaterLevelId {
     var description: String {
-        NSLocalizedString("CoopEvent_\(String(describing: self))", bundle: .module, comment: "")
+        NSLocalizedString("CoopHistoryWaveLevel\(rawValue)", bundle: .module, comment: "")
     }
 
-    public static var allCases: [CoopWaterLevelId] = [
+    static var allCases: [CoopWaterLevelId] = [
         .HighTide,
         .NormalTide,
         .LowTide,
     ]
 
-    public static func allTides(_ eventId: CoopEventId, isBigRun: Bool = false) -> [CoopWaterLevelId] {
+    static func allTides(_ eventId: CoopEventId, isBigRun: Bool = false) -> [CoopWaterLevelId] {
         switch eventId {
         case .WaterLevels:
             return [.HighTide, .NormalTide, .LowTide]

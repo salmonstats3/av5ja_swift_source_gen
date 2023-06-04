@@ -10,7 +10,7 @@ import Foundation
 
 extension CoopGradeId {
     public var description: String {
-        NSLocalizedString("CoopGrade_Grade_0\(rawValue)", bundle: .module, comment: "")
+        NSLocalizedString(String(describing: self), bundle: .module, comment: "")
     }
 }
 

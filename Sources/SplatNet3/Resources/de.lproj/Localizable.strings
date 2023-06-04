@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "Geräteeinstellungen verwenden";
 /// Lizenz
 "CommonLicense" = "Lizenz";
+/// dd.MM.yyyy HH:mm
+"DateTimeYearFormat" = "dd.MM.yyyy HH:mm";
+/// dd.MM. HH:mm
+"DateTimeFormat" = "dd.MM. HH:mm";
+/// ABGESCHLOSSEN!
+"CoopHistoryRandomComplete" = "ABGESCHLOSSEN!";
 /// Abbrechen
 "CommonCancel" = "Abbrechen";
 /// Muschelchaos

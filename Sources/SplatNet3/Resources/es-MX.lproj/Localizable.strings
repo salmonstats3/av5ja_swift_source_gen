@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "Utilizar la configuración del dispositivo";
 /// Licencia
 "CommonLicense" = "Licencia";
+/// dd/MM-yyyy (HH:mm)
+"DateTimeYearFormat" = "dd/MM-yyyy (HH:mm)";
+/// dd/MM HH:mm
+"DateTimeFormat" = "dd/MM HH:mm";
+/// ¡Completo!
+"CoopHistoryRandomComplete" = "¡Completo!";
 /// Cancelar
 "CommonCancel" = "Cancelar";
 /// Asalto almeja

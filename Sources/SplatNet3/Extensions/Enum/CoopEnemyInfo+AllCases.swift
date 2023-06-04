@@ -10,7 +10,7 @@ import Foundation
 
 public extension CoopEnemyInfoId {
     var description: String {
-        NSLocalizedString("CoopEnemy_\(String(describing: self))", bundle: .module, comment: "")
+        NSLocalizedString(String(describing: self), bundle: .module, comment: "")
     }
 
     static let regular: [CoopEnemyInfoId] = [
@@ -38,7 +38,7 @@ public extension CoopEnemyInfoId {
 
 public extension CoopEnemyInfoKey {
     var localized: String {
-        NSLocalizedString("CoopEnemy_\(String(describing: self))", bundle: .module, comment: "")
+        NSLocalizedString(String(describing: self), bundle: .module, comment: "")
     }
 }
 

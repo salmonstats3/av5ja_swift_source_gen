@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "根据设备设置而定";
 /// 许可证
 "CommonLicense" = "许可证";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// COMPLETE!
+"CoopHistoryRandomComplete" = "COMPLETE!";
 /// 取消
 "CommonCancel" = "取消";
 /// 真格蛤蜊

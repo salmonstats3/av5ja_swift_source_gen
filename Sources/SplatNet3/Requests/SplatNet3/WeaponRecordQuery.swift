@@ -30,7 +30,7 @@ final class WeaponRecordQuery: GraphQL {
                     return SPAssetType(key: weaponId, url: node.image2d.url)
                 }),
                 specials: Array(Set(data.weaponRecords.nodes.compactMap({ node in
-                    guard let specialId = WeaponInfoSpecialId(rawValue: node.specialWeapon.specialWeaponInfoMainId + 20_000)
+                    guard let specialId = WeaponInfoSpecialId(rawValue: node.specialWeapon.specialWeaponId + 20_000)
                     else {
                         return nil
                     }
@@ -66,7 +66,7 @@ final class WeaponRecordQuery: GraphQL {
     }
 
     public struct SpecialWeapon: Codable {
-        public let specialWeaponInfoMainId: Int
+        public let specialWeaponId: Int
         public let image: URLComponent
     }
 }

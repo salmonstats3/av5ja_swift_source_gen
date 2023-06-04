@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "端末の設定を利用する";
 /// ライセンス
 "CommonLicense" = "ライセンス";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// コンプリート！
+"CoopHistoryRandomComplete" = "コンプリート！";
 /// キャンセル
 "CommonCancel" = "キャンセル";
 /// ガチアサリ

@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "取決於設備設置";
 /// 許可證
 "CommonLicense" = "許可證";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// COMPLETE!
+"CoopHistoryRandomComplete" = "COMPLETE!";
 /// 取消
 "CommonCancel" = "取消";
 /// 真格蛤蜊

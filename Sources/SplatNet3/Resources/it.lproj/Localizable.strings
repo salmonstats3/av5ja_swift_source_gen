@@ -324,6 +324,12 @@
 "CommonUseSystemTheme" = "Utilizzare le impostazioni del dispositivo";
 /// Licenza
 "CommonLicense" = "Licenza";
+/// dd/MM/yyyy HH:mm
+"DateTimeYearFormat" = "dd/MM/yyyy HH:mm";
+/// dd/MM HH:mm
+"DateTimeFormat" = "dd/MM HH:mm";
+/// COMPLETATO!
+"CoopHistoryRandomComplete" = "COMPLETATO!";
 /// Annulla
 "CommonCancel" = "Annulla";
 /// Vongol gol

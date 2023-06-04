@@ -27,6 +27,8 @@ final class SPImageService: ObservableObject {
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgBanner.rawValue)/\(rawValue)", conformingTo: .png)
         case is CoopEnemyInfoId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.CoopEnemyImg.rawValue)/\(rawValue)", conformingTo: .png)
+        case is WeaponInfoSpecialId.Type:
+            self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.SpecialImg.rawValue)/\(rawValue)", conformingTo: .png)
         default:
             self.documentPath = documentURL
         }

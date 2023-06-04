@@ -10,7 +10,26 @@ import Foundation
 
 public extension CoopEventId {
     var description: String {
-        NSLocalizedString("CoopEvent_\(String(describing: self))", bundle: .module, comment: "")
+        switch self {
+        case .WaterLevels:
+            return "-"
+        case .Rush:
+            return NSLocalizedString("CoopEventRush", bundle: .module, comment: "")
+        case .GoldieSeeking:
+            return NSLocalizedString("CoopEventGeyser", bundle: .module, comment: "")
+        case .Griller:
+            return NSLocalizedString("CoopEventDozer", bundle: .module, comment: "")
+        case .TheMothership:
+            return NSLocalizedString("CoopEventHakobiya", bundle: .module, comment: "")
+        case .Fog:
+            return NSLocalizedString("CoopEventFog", bundle: .module, comment: "")
+        case .CohockCharge:
+            return NSLocalizedString("CoopEventMissile", bundle: .module, comment: "")
+        case .Giant:
+            return NSLocalizedString("CoopEventRelay", bundle: .module, comment: "")
+        case .Mudmouth:
+            return NSLocalizedString("CoopEventTamaire", bundle: .module, comment: "")
+        }
     }
 
     static func allEvents(isBigRun: Bool = false) -> [Self] {

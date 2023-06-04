@@ -166,6 +166,7 @@ open class SP3Session: Session {
         else {
             return
         }
+        SwiftyLogger.info("HashServer: \(url)")
         let resource: ResourceType = try await session.download(url)
             .serializingDecodable(ResourceType.self, decoder: decoder)
             .value
@@ -353,7 +354,7 @@ extension SP3Session: Authenticator {
     }
 
     private func getAssetURLs() async throws -> [URL] {
-        (try await request(WeaponRecordQuery()).data.weaponRecords.nodes.map({ $0.specialWeapon.image.url }))
+        return (try await request(WeaponRecordQuery()).data.weaponRecords.nodes.map({ $0.specialWeapon.image.url }))
         + (try await request(CoopRecordQuery()).data.coopRecord.bigRunRecord.records.edges.map({ $0.node.coopStage.image.url }))
     }
 
