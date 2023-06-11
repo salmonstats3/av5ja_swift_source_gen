@@ -11,21 +11,27 @@ public enum FontType: RawRepresentable, CaseIterable {
     public typealias RawValue = String
 
     public var rawValue: String {
-        let langCode: LocaleType = Locale.languageSP3Code
-        switch (self, langCode) {
-        case (.Splatfont, .JP):
-            return _FontType.Splatfont1JP.rawValue
-        case (.Splatfont, .CN):
-            return _FontType.Splatfont1CN.rawValue
-        case (.Splatfont, .TW):
-            return _FontType.Splatfont1TW.rawValue
-        case (.Splatfont2, .JP):
-            return _FontType.Splatfont2JP.rawValue
-        case (.Splatfont2, .CN):
-            return _FontType.Splatfont2CN.rawValue
-        case (.Splatfont2, .TW):
-            return _FontType.Splatfont2TW.rawValue
+        switch self {
+        case .Splatfont:
+            return "Splatfont1"
+        case .Splatfont2:
+            return "Splatfont2"
         }
+//        let langCode: LocaleType = Locale.languageSP3Code
+//        switch (self, langCode) {
+//        case (.Splatfont, .JP):
+//            return _FontType.Splatfont1JP.rawValue
+//        case (.Splatfont, .CN):
+//            return _FontType.Splatfont1CN.rawValue
+//        case (.Splatfont, .TW):
+//            return _FontType.Splatfont1TW.rawValue
+//        case (.Splatfont2, .JP):
+//            return _FontType.Splatfont2JP.rawValue
+//        case (.Splatfont2, .CN):
+//            return _FontType.Splatfont2CN.rawValue
+//        case (.Splatfont2, .TW):
+//            return _FontType.Splatfont2TW.rawValue
+//        }
     }
 
     public init?(rawValue: String) {
