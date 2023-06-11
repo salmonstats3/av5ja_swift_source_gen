@@ -330,12 +330,32 @@
 "DateTimeFormat" = "dd/MM HH:mm";
 /// COMPLETE!
 "CoopHistoryRandomComplete" = "COMPLETE!";
+/// -
+"WaterLevels" = "-";
+/// Rush
+"Rush" = "Rush";
+/// Goldie Seeking
+"GoldieSeeking" = "Goldie Seeking";
+/// Griller
+"Griller" = "Griller";
+/// The Mothership
+"TheMothership" = "The Mothership";
+/// Fog
+"Fog" = "Fog";
+/// Cohock Charge
+"CohockCharge" = "Cohock Charge";
+/// Giant Tornado
+"GiantTornado" = "Giant Tornado";
+/// Mudmouth Eruptions
+"MudmouthEruptions" = "Mudmouth Eruptions";
 /// Cancel
 "CommonCancel" = "Cancel";
 /// Clam Blitz
 "CommonClamBlitz" = "Clam Blitz";
 /// Close
 "CommonClose" = "Close";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Eggstra Work
@@ -414,6 +434,8 @@
 "CoopHistoryExWave" = "XTRAWAVE";
 /// Defeat
 "CoopHistoryFailure" = "Defeat";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Back to Job Logs
 "CoopHistoryGoToStats" = "Back to Job Logs";
 /// Golden Eggs collected
@@ -436,6 +458,8 @@
 "CoopHistoryMonthlyReward" = "This Month's Gear";
 /// Next Job
 "CoopHistoryNext" = "Next Job";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// No job logs to display.
 "CoopHistoryNoData" = "No job logs to display.";
 /// Job Logs Unavailable
@@ -444,6 +468,8 @@
 "CoopHistoryNotAvailableDescription" = "Only the 50 most recent entries are available.";
 /// Failed...
 "CoopHistoryNotDefeated" = "Failed...";
+/// p
+"CoopHistoryP" = "p";
 /// Shifts worked
 "CoopHistoryPlayCount" = "Shifts worked";
 /// Previous Job
@@ -538,6 +564,8 @@
 "RecordSub" = "Sub";
 /// Stats
 "RecordTitle" = "Stats";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// Turf Inked
 "RecordTurfPoint" = "Turf Inked";
 /// Unplayed Stages
@@ -552,6 +580,8 @@
 "RecordWeaponRecordAppName" = "Weapons";
 /// Wins
 "RecordWinCount" = "Wins";
+/// %
+"RecordWinRatio" = "%";
 /// Copyrights
 "SettingsAcknowledgements" = "Copyrights";
 /// Settings

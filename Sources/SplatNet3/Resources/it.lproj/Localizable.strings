@@ -330,12 +330,32 @@
 "DateTimeFormat" = "dd/MM HH:mm";
 /// COMPLETATO!
 "CoopHistoryRandomComplete" = "COMPLETATO!";
+/// -
+"WaterLevels" = "-";
+/// Orde
+"Rush" = "Orde";
+/// Scovare i Pinne d'oro
+"GoldieSeeking" = "Scovare i Pinne d'oro";
+/// Grill
+"Griller" = "Grill";
+/// Astronave madre
+"TheMothership" = "Astronave madre";
+/// Nebbia
+"Fog" = "Nebbia";
+/// Orde di Pinne Pingui
+"CohockCharge" = "Orde di Pinne Pingui";
+/// Tornado gigante
+"GiantTornado" = "Tornado gigante";
+/// Eruzioni di Fangonoidi
+"MudmouthEruptions" = "Eruzioni di Fangonoidi";
 /// Annulla
 "CommonCancel" = "Annulla";
 /// Vongol gol
 "CommonClamBlitz" = "Vongol gol";
 /// Chiudi
 "CommonClose" = "Chiudi";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Sfida tra colleghi
@@ -414,6 +434,8 @@
 "CoopHistoryExWave" = "Ondata extra";
 /// Peccato...
 "CoopHistoryFailure" = "Peccato...";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Torna alla cronologia dei lavori
 "CoopHistoryGoToStats" = "Torna alla cronologia dei lavori";
 /// Uova d'oro raccolte
@@ -436,6 +458,8 @@
 "CoopHistoryMonthlyReward" = "Oggetto del mese";
 /// Seguente
 "CoopHistoryNext" = "Seguente";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// Non è presente alcuna cronologia dei lavori.
 "CoopHistoryNoData" = "Non è presente alcuna cronologia dei lavori.";
 /// Cronologia dei lavori non disponibile
@@ -444,6 +468,8 @@
 "CoopHistoryNotAvailableDescription" = "Vengono visualizzati solo i 50 lavori più recenti.";
 /// Missione fallita...
 "CoopHistoryNotDefeated" = "Missione fallita...";
+/// p
+"CoopHistoryP" = "p";
 /// Lavori completati
 "CoopHistoryPlayCount" = "Lavori completati";
 /// Precedente
@@ -540,6 +566,8 @@
 "RecordSub" = "Secondaria";
 /// Statistiche
 "RecordTitle" = "Statistiche";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// Sup. colorata
 "RecordTurfPoint" = "Sup. colorata";
 /// Scenari non affrontati
@@ -554,6 +582,8 @@
 "RecordWeaponRecordAppName" = "Armi";
 /// Vittorie
 "RecordWinCount" = "Vittorie";
+/// %
+"RecordWinRatio" = "%";
 /// Copyright
 "SettingsAcknowledgements" = "Copyright";
 /// Impostazioni

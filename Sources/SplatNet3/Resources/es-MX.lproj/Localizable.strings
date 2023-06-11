@@ -330,12 +330,32 @@
 "DateTimeFormat" = "dd/MM HH:mm";
 /// ¡Completo!
 "CoopHistoryRandomComplete" = "¡Completo!";
+/// -
+"WaterLevels" = "-";
+/// Frenesíes
+"Rush" = "Frenesíes";
+/// Detección de orónidos
+"GoldieSeeking" = "Detección de orónidos";
+/// Brasaletas
+"Griller" = "Brasaletas";
+/// La salmonodriza
+"TheMothership" = "La salmonodriza";
+/// Niebla
+"Fog" = "Niebla";
+/// Ataques de agallones
+"CohockCharge" = "Ataques de agallones";
+/// Tornados gigantes
+"GiantTornado" = "Tornados gigantes";
+/// Erupciones de bocalodos
+"MudmouthEruptions" = "Erupciones de bocalodos";
 /// Cancelar
 "CommonCancel" = "Cancelar";
 /// Asalto almeja
 "CommonClamBlitz" = "Asalto almeja";
 /// Cerrar
 "CommonClose" = "Cerrar";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Recolección extra
@@ -414,6 +434,8 @@
 "CoopHistoryExWave" = "Oleada extra";
 /// Derrota...
 "CoopHistoryFailure" = "Derrota...";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Volver a los resultados de tareas
 "CoopHistoryGoToStats" = "Volver a los resultados de tareas";
 /// Huevecillos dorados
@@ -436,6 +458,8 @@
 "CoopHistoryMonthlyReward" = "Objeto del mes";
 /// Siguiente
 "CoopHistoryNext" = "Siguiente";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// No hay resultados de tareas.
 "CoopHistoryNoData" = "No hay resultados de tareas.";
 /// Resultados de tareas no disponibles
@@ -556,6 +580,8 @@
 "RecordWeaponRecordAppName" = "Armas";
 /// Victorias
 "RecordWinCount" = "Victorias";
+/// %
+"RecordWinRatio" = "%";
 /// Derechos de autor
 "SettingsAcknowledgements" = "Derechos de autor";
 /// Ajustes

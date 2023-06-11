@@ -330,12 +330,32 @@
 "DateTimeFormat" = "dd/MM HH:mm";
 /// TERMINÉ!
 "CoopHistoryRandomComplete" = "TERMINÉ!";
+/// -
+"WaterLevels" = "-";
+/// Ruées
+"Rush" = "Ruées";
+/// Chasse aux dorax
+"GoldieSeeking" = "Chasse aux dorax";
+/// Barbeurks
+"Griller" = "Barbeurks";
+/// Vaisseau mère
+"TheMothership" = "Vaisseau mère";
+/// Brouillard
+"Fog" = "Brouillard";
+/// Charges de sumoches
+"CohockCharge" = "Charges de sumoches";
+/// Tornade géante
+"GiantTornado" = "Tornade géante";
+/// Émergence de salmonoïdes de boue
+"MudmouthEruptions" = "Émergence de salmonoïdes de boue";
 /// Annuler
 "CommonCancel" = "Annuler";
 /// Pluie de palourdes
 "CommonClamBlitz" = "Pluie de palourdes";
 /// Fermer
 "CommonClose" = "Fermer";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Défi œuf sup
@@ -414,6 +434,8 @@
 "CoopHistoryExWave" = "Vague +";
 /// Échec...
 "CoopHistoryFailure" = "Échec...";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Retour aux stats de missions
 "CoopHistoryGoToStats" = "Retour aux stats de missions";
 /// Œufs dorés collectés
@@ -436,6 +458,8 @@
 "CoopHistoryMonthlyReward" = "Pièce d'équipement du mois";
 /// Suivant
 "CoopHistoryNext" = "Suivant";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// Aucune stat de mission disponible.
 "CoopHistoryNoData" = "Aucune stat de mission disponible.";
 /// Les stats de missions ne sont pas disponibles.
@@ -558,6 +582,8 @@
 "RecordWeaponRecordAppName" = "Armes";
 /// Victoires :
 "RecordWinCount" = "Victoires :";
+/// %
+"RecordWinRatio" = "%";
 /// Droits d'auteur
 "SettingsAcknowledgements" = "Droits d'auteur";
 /// Paramètres

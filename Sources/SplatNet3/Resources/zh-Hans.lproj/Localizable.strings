@@ -330,12 +330,32 @@
 "DateTimeFormat" = "M/d HH:mm";
 /// COMPLETE!
 "CoopHistoryRandomComplete" = "COMPLETE!";
+/// -
+"WaterLevels" = "-";
+/// 狂潮
+"Rush" = "狂潮";
+/// 尋找金鮭魚
+"GoldieSeeking" = "尋找金鮭魚";
+/// 烤架魚出動
+"Griller" = "烤架魚出動";
+/// 走私魚來襲
+"TheMothership" = "走私魚來襲";
+/// 霧
+"Fog" = "霧";
+/// 大胖魚大量出現
+"CohockCharge" = "大胖魚大量出現";
+/// 巨型龍捲風
+"GiantTornado" = "巨型龍捲風";
+/// 泥鮭魚噴發
+"MudmouthEruptions" = "泥鮭魚噴發";
 /// 取消
 "CommonCancel" = "取消";
 /// 真格蛤蜊
 "CommonClamBlitz" = "真格蛤蜊";
 /// 关闭
 "CommonClose" = "关闭";
+/// 
+"CommonColonRule" = "";
 /// 大型跑
 "CommonCoopBigRun" = "大型跑";
 /// 团队打工竞赛
@@ -382,6 +402,12 @@
 "CoopHistoryAverageClearWaves" = "平均通关的WAVE数";
 /// 大型跑
 "CoopHistoryBigrun" = "大型跑";
+/// 铜
+"CoopHistoryBigrunBronze" = "铜";
+/// 金
+"CoopHistoryBigrunGold" = "金";
+/// 银
+"CoopHistoryBigrunSilver" = "银";
 /// 通关奖励
 "CoopHistoryBonus" = "通关奖励";
 /// 头目鲑鱼出现！
@@ -442,6 +468,8 @@
 "CoopHistoryNotAvailableDescription" = "可阅览的打工历史仅限最新的50场";
 /// 未能击倒……
 "CoopHistoryNotDefeated" = "未能击倒……";
+/// p
+"CoopHistoryP" = "p";
 /// 打工次数
 "CoopHistoryPlayCount" = "打工次数";
 /// 上一个打工
@@ -534,6 +562,8 @@
 "RecordSub" = "次要武器";
 /// 记录
 "RecordTitle" = "记录";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// 涂墨点数
 "RecordTurfPoint" = "涂墨点数";
 /// 未游玩的场地
@@ -548,6 +578,8 @@
 "RecordWeaponRecordAppName" = "武器";
 /// 胜利数
 "RecordWinCount" = "胜利数";
+/// %
+"RecordWinRatio" = "%";
 /// 权利标识
 "SettingsAcknowledgements" = "权利标识";
 /// 设置

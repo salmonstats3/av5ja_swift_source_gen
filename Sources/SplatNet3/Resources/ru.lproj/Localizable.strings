@@ -330,12 +330,32 @@
 "DateTimeFormat" = "dd.MM, HH:mm";
 /// Выполнено!
 "CoopHistoryRandomComplete" = "Выполнено!";
+/// -
+"WaterLevels" = "-";
+/// Озверевшие самониды
+"Rush" = "Озверевшие самониды";
+/// Поиски Великого Сам О’Нида
+"GoldieSeeking" = "Поиски Великого Сам О’Нида";
+/// Жаровнер
+"Griller" = "Жаровнер";
+/// Нерестилище
+"TheMothership" = "Нерестилище";
+/// Туман
+"Fog" = "Туман";
+/// Штурм сковорейдеров
+"CohockCharge" = "Штурм сковорейдеров";
+/// Гигантский торнадо
+"GiantTornado" = "Гигантский торнадо";
+/// Появление илистого ревуна
+"MudmouthEruptions" = "Появление илистого ревуна";
 /// Отмена
 "CommonCancel" = "Отмена";
 /// Устробол
 "CommonClamBlitz" = "Устробол";
 /// Закрыть
 "CommonClose" = "Закрыть";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Икорный овертайм
@@ -414,6 +434,8 @@
 "CoopHistoryExWave" = "Волна +";
 /// Провал
 "CoopHistoryFailure" = "Провал";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Назад к рабочим показателям
 "CoopHistoryGoToStats" = "Назад к рабочим показателям";
 /// Золотых икринок:
@@ -436,6 +458,8 @@
 "CoopHistoryMonthlyReward" = "Снаряжение месяца";
 /// След. смена
 "CoopHistoryNext" = "След. смена";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// Нет рабочих показателей.
 "CoopHistoryNoData" = "Нет рабочих показателей.";
 /// Рабочие показатели недоступны
@@ -558,6 +582,8 @@
 "RecordWeaponRecordAppName" = "Оружие";
 /// Побед:
 "RecordWinCount" = "Побед:";
+/// %
+"RecordWinRatio" = "%";
 /// Авторские права
 "SettingsAcknowledgements" = "Авторские права";
 /// Настройки

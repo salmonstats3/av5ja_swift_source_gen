@@ -330,12 +330,32 @@
 "DateTimeFormat" = "dd.MM. HH:mm";
 /// ABGESCHLOSSEN!
 "CoopHistoryRandomComplete" = "ABGESCHLOSSEN!";
+/// -
+"WaterLevels" = "-";
+/// Ansturm
+"Rush" = "Ansturm";
+/// Goldie-Suche
+"GoldieSeeking" = "Goldie-Suche";
+/// Killgrills
+"Griller" = "Killgrills";
+/// Das Mutterschiff
+"TheMothership" = "Das Mutterschiff";
+/// Nebel
+"Fog" = "Nebel";
+/// Brocken-Sturmangriff
+"CohockCharge" = "Brocken-Sturmangriff";
+/// Riesentornados
+"GiantTornado" = "Riesentornados";
+/// Schlämmermaul-Eruptionen
+"MudmouthEruptions" = "Schlämmermaul-Eruptionen";
 /// Abbrechen
 "CommonCancel" = "Abbrechen";
 /// Muschelchaos
 "CommonClamBlitz" = "Muschelchaos";
 /// Schließen
 "CommonClose" = "Schließen";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Team-Wettkampf
@@ -414,6 +434,8 @@
 "CoopHistoryExWave" = "Extra-Welle";
 /// Schade...
 "CoopHistoryFailure" = "Schade...";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Zurück zu den Schicht-Daten
 "CoopHistoryGoToStats" = "Zurück zu den Schicht-Daten";
 /// Gesammelte Gold-Fischeier
@@ -436,6 +458,8 @@
 "CoopHistoryMonthlyReward" = "Monatsangebot";
 /// Vor
 "CoopHistoryNext" = "Vor";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// Keine Schicht-Daten vorhanden.
 "CoopHistoryNoData" = "Keine Schicht-Daten vorhanden.";
 /// Schicht-Daten nicht verfügbar
@@ -444,6 +468,8 @@
 "CoopHistoryNotAvailableDescription" = "Nur die letzten 50 Einträge sind verfügbar.";
 /// Gescheitert...
 "CoopHistoryNotDefeated" = "Gescheitert...";
+/// P
+"CoopHistoryP" = "P";
 /// Angetretene Schichten
 "CoopHistoryPlayCount" = "Angetretene Schichten";
 /// Zurück
@@ -540,6 +566,8 @@
 "RecordSub" = "Sekundärwaffe";
 /// Statistiken
 "RecordTitle" = "Statistiken";
+/// P
+"RecordTotalTurfPoint" = "P";
 /// Gefärbte Fläche
 "RecordTurfPoint" = "Gefärbte Fläche";
 /// Ungespielt
@@ -554,6 +582,8 @@
 "RecordWeaponRecordAppName" = "Waffen";
 /// Siege
 "RecordWinCount" = "Siege";
+/// %
+"RecordWinRatio" = "%";
 /// Copyrights
 "SettingsAcknowledgements" = "Copyrights";
 /// Einstellungen
