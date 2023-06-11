@@ -16,7 +16,7 @@ final class SPImageService: ObservableObject {
         switch type {
         case is WeaponInfoMainId.Type:
             if let weaponId = WeaponInfoMainId(rawValue: rawValue),
-               WeaponInfoMainId.regular.contains(weaponId) {
+               (WeaponInfoMainId.regular + WeaponInfoMainId.rare).contains(weaponId) {
                 self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
             } else {
                 self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.UIImg.rawValue)/\(rawValue)", conformingTo: .png)
