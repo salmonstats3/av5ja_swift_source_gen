@@ -127,3 +127,27 @@ public final class CoopHistoryDetailQuery: GraphQL {
         public let specialWeapons: [SpecialTypes]
     }
 }
+
+fileprivate extension CoopHistoryDetailQuery.Response {
+    /// 1. WeaponInfoMainId
+    /// 2. CoopStageId
+    /// 3. CoopInfoEnemyId
+    var assetURLs: Set<URL> {
+        let members: [CoopHistoryDetailQuery.MemberResult] = data.coopHistoryDetail.memberResults + [data.coopHistoryDetail.myResult]
+        let weaponURLs: Set<URL> = Set(data.coopHistoryDetail.weapons.map({ $0.image.url }) + members.flatMap({ $0.weapons.map({ $0.image.url })}))
+        let stageURLs: Set<URL> = Set([data.coopHistoryDetail.coopStage.image.url])
+        let enemyURLs: Set<URL> = Set(data.coopHistoryDetail.enemyResults.map({ $0.enemy.image.url }))
+        let bossURLs: Set<URL> = Set([data.coopHistoryDetail.bossResult?.boss.image.url].compactMap({ $0 }))
+        
+        return weaponURLs.union(stageURLs).union(enemyURLs).union(bossURLs)
+    }
+}
+
+extension Array where Element == CoopHistoryDetailQuery.Response {
+    /// 1. WeaponInfoMainId
+    /// 2. CoopStageId
+    /// 3. CoopInfoEnemyId
+    var assetURLs: Set<URL> {
+        Set(flatMap({ $0.assetURLs }))
+    }
+}

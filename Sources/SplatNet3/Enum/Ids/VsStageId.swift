@@ -11,22 +11,23 @@ public enum VsStageId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .Dummy
     public var id: Int { rawValue }
 
-    case Stage00 = 0
-    case Stage01 = 1
-    case Stage02 = 2
-    case Stage03 = 3
-    case Stage04 = 4
-    case Stage05 = 5
-    case Stage06 = 6
-    case Stage07 = 7
-    case Stage08 = 8
-    case Stage09 = 9
-    case Stage10 = 10
-    case Stage11 = 11
-    case Stage12 = 12
-    case Stage13 = 13
-    case Stage14 = 14
-    case Stage15 = 15
-    case Stage16 = 16
-    case Dummy = -999
+    case Yunohana   = 1
+    case Distinct   = 2
+    case Yagara     = 3
+    case Temple     = 4
+    case Factory    = 5
+    case Scrap      = 6
+    case BigSlope   = 7
+    case Section    = 8
+    case Jyoheki    = 9
+    case Kaisou     = 10
+    case Pivot      = 11
+    case Hiagari    = 12
+    case Upland     = 13
+    case Nagasaki   = 14
+    case Line       = 15
+    case Carousel   = 16
+    case Wave       = 17
+    case Piller     = 18
+    case Dummy      = -999
 }

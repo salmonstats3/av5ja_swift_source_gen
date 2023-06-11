@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UniformTypeIdentifiers
 
 public struct ResourceType: Codable {
     let stageImg: StageImage
@@ -15,14 +16,22 @@ public struct ResourceType: Codable {
     let specialImg: [URL]
     let coopEnemyImg: [URL]
     let fonts: [URL]
-
+    
+    public enum ExtType: String, CaseIterable, Codable {
+        case GIF    = "gif"
+        case SVG    = "svg"
+        case PNG    = "png"
+        case WOFF   = "woff"
+        case WOFF2  = "woff2"
+    }
+    
     struct StageImage: Codable {
         let banner: [URL]
         let icon: [URL]
     }
 
-    var urls: [URL] {
-        stageImg.banner + stageImg.icon + uiImg + weaponIllust + staticMedia + specialImg + coopEnemyImg + fonts
+    var urls: Set<URL> {
+        Set(stageImg.banner + stageImg.icon + uiImg + weaponIllust + staticMedia + specialImg + coopEnemyImg + fonts)
     }
 
     struct Response: Codable {
@@ -30,12 +39,16 @@ public struct ResourceType: Codable {
         let hash: String
         let rawValue: String
         let data: Data
+        let ext: ExtType
 
         static func getHash(url: URL) -> String? {
-            if let hash: String = url.lastPathComponent.capture(pattern: #"^([\w\d]{64})_0"#, group: 1) {
+            if let hash: String = url.lastPathComponent.capture(pattern: #"^([\w\d]{64})_\d"#, group: 1) {
                 return hash
             }
             if let hash: String = url.lastPathComponent.capture(pattern: #"^([\w\d]{32})"#, group: 1) {
+                return hash
+            }
+            if let hash: String = url.lastPathComponent.capture(pattern: #"([\w\d]{20})\.(woff2|woff)$"#, group: 1) {
                 return hash
             }
             return nil
@@ -44,18 +57,25 @@ public struct ResourceType: Codable {
         init?(url: URL, data: Data?) {
             guard let data: Data,
                   let type = ResourceURLType(url: url),
-                  let hash: String = ResourceType.Response.getHash(url: url)
+                  let hash: String = ResourceType.Response.getHash(url: url),
+                  let ext: ExtType = ExtType(rawValue: url.pathExtension)
             else {
-                print(url, data == nil)
                 return nil
             }
 
             self.type = type
             self.data = data
             self.hash = hash
+            self.ext = ext
 
             /// WeaponInfoMainKey
             if let rawValue: String = WeaponInfoMainKey(rawValue: hash)?.id.description {
+                self.rawValue = rawValue
+                return
+            }
+            
+            /// VsStageKey
+            if let rawValue: String = VsStageKey(rawValue: hash)?.coopStageId?.description {
                 self.rawValue = rawValue
                 return
             }
@@ -89,7 +109,18 @@ public struct ResourceType: Codable {
                 self.rawValue = rawValue
                 return
             }
-            print(url, hash)
+            
+            /// SP3WOFFKey
+            if let rawValue: String = SP3WOFFKey(rawValue: hash)?.id.description {
+                self.rawValue = rawValue
+                return
+            }
+            
+            /// SP3WOFF2Key
+            if let rawValue: String = SP3WOFF2Key(rawValue: hash)?.id.description {
+                self.rawValue = rawValue
+                return
+            }
             return nil
         }
     }

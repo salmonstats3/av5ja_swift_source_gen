@@ -20,10 +20,6 @@ final class CoopRecordQuery: GraphQL {
     // MARK: - Response
     public struct Response: Codable {
         public let data: DataClass
-
-        var assets: [SPAssetType<CoopStageId>] {
-            data.coopRecord.bigRunRecord.records.edges.map({ SPAssetType(key: $0.node.coopStage.id, url: $0.node.coopStage.image.url) })
-        }
     }
 
     // MARK: - DataClass
@@ -88,5 +84,12 @@ final class CoopRecordQuery: GraphQL {
     public struct PageInfo: Codable {
         public let endCursor: String
         public let hasNextPage: Bool
+    }
+}
+
+extension CoopRecordQuery.Response {
+    /// 1. CoopStageId
+    var assets: Set<URL> {
+        Set(data.coopRecord.bigRunRecord.records.edges.map({ $0.node.coopStage.image.url }))
     }
 }
