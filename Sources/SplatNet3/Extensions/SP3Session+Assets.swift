@@ -60,6 +60,7 @@ extension SP3Session {
                 return try await getAssetURLsFromSplatNet3()
             }
         }()
+        print(assetURLs)
         try await getAssets(assetURLs: Array(assetURLs))
     }
        
