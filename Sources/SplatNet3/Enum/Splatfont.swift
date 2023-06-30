@@ -41,8 +41,8 @@ extension Splatfont {
 }
 
 public enum FontType: String, CaseIterable {
-    case Splatfont1 = "Splatoon1"
-    case Splatfont2 = "Splatoon2"
+    case Splatfont1 = "Splatfont1"
+    case Splatfont2 = "Splatfont2"
 }
 
 public enum LocaleType: String, CaseIterable {
