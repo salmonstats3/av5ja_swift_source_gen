@@ -21,12 +21,6 @@ final class WeaponRecordQuery: GraphQL {
         public let data: DataClass
     }
 
-    public struct Asset: Codable {
-        var weapons: [SPAssetType<WeaponInfoMainId>]
-
-        var specials: [SPAssetType<WeaponInfoSpecialId>]
-    }
-
     public struct DataClass: Codable {
         public let weaponRecords: Common.Node<WeaponStats>
     }
