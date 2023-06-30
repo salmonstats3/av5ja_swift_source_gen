@@ -1,6 +1,7 @@
 CommonCancel: Cancel
 CommonClamBlitz: Clam Blitz
 CommonClose: Close
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Eggstra Work
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -40,6 +41,7 @@ CoopHistoryDeliverCount: Power Eggs collected
 CoopHistoryEnemy: Boss Salmonids
 CoopHistoryExWave: XTRAWAVE
 CoopHistoryFailure: Defeat
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Back to Job Logs
 CoopHistoryGoldenDeliverCount: Golden Eggs collected
 CoopHistoryHighestScore: High Score
@@ -51,10 +53,12 @@ CoopHistoryLatest: Last Job
 CoopHistoryLimitedPoint: Current special bonus points
 CoopHistoryMonthlyReward: This Month's Gear
 CoopHistoryNext: Next Job
+CoopHistoryNg: ✘
 CoopHistoryNoData: No job logs to display.
 CoopHistoryNotAvailable: Job Logs Unavailable
 CoopHistoryNotAvailableDescription: Only the 50 most recent entries are available.
 CoopHistoryNotDefeated: Failed...
+CoopHistoryP: p
 CoopHistoryPlayCount: Shifts worked
 CoopHistoryPrevious: Previous Job
 CoopHistoryPrivate: Private Job
@@ -111,6 +115,7 @@ RecordStageRecord: Stage Stats
 RecordStageRecordAppName: Stages
 RecordSub: Sub
 RecordTitle: Stats
+RecordTotalTurfPoint: p
 RecordTurfPoint: Turf Inked
 RecordUnplayedStages: Unplayed Stages
 RecordUnusedWeapons: Not Yet Obtained
@@ -118,6 +123,7 @@ RecordVibes: Fresh Meter
 RecordWeaponRecord: Weapon Stats
 RecordWeaponRecordAppName: Weapons
 RecordWinCount: Wins
+RecordWinRatio: '%'
 SettingsAcknowledgements: Copyrights
 SettingsAppName: Settings
 SettingsCredits: Credits

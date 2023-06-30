@@ -1,6 +1,7 @@
 CommonCancel: Annuleren
 CommonClamBlitz: Schelpenstrijd
 CommonClose: Sluiten
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Bedrijfseitje
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -40,6 +41,7 @@ CoopHistoryDeliverCount: Visseneieren
 CoopHistoryEnemy: Salmonietenbazen
 CoopHistoryExWave: Extra golf
 CoopHistoryFailure: Helaas...
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Terug naar werkverledenlijst
 CoopHistoryGoldenDeliverCount: Gouden eieren
 CoopHistoryHighestScore: Topscore
@@ -51,10 +53,12 @@ CoopHistoryLatest: Laatste klus
 CoopHistoryLimitedPoint: Speciale bonuspunten
 CoopHistoryMonthlyReward: Uitrusting voor deze maand
 CoopHistoryNext: Volgende klus
+CoopHistoryNg: ✘
 CoopHistoryNoData: Er is geen werkverleden.
 CoopHistoryNotAvailable: Werkverleden niet beschikbaar
 CoopHistoryNotAvailableDescription: Alleen de 50 meest recente klussen zijn beschikbaar.
 CoopHistoryNotDefeated: Mislukt...
+CoopHistoryP: p
 CoopHistoryPlayCount: Klussen
 CoopHistoryPrevious: Vorige klus
 CoopHistoryPrivate: Privéklus
@@ -112,6 +116,7 @@ RecordStageRecord: Levels
 RecordStageRecordAppName: Levels
 RecordSub: Subwapen
 RecordTitle: Statistieken
+RecordTotalTurfPoint: p
 RecordTurfPoint: Geverfde grond
 RecordUnplayedStages: Niet gespeelde levels
 RecordUnusedWeapons: Nog niet gekregen
@@ -119,6 +124,7 @@ RecordVibes: Versheid
 RecordWeaponRecord: Wapens
 RecordWeaponRecordAppName: Wapens
 RecordWinCount: Overwinningen
+RecordWinRatio: '%'
 SettingsAcknowledgements: Copyrights
 SettingsAppName: Instellingen
 SettingsCredits: Credits

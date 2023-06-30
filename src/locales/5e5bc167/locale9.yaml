@@ -1,6 +1,7 @@
 CommonCancel: 취소
 CommonClamBlitz: 랭크 바지락
 CommonClose: 닫기
+CommonColonRule: ':'
 CommonCoopBigRun: 빅 런
 CommonCoopTeamContest: 아르바이트 팀 콘테스트
 CommonCopyrightQrCode: QR Code는 일본 및 여러 나라에서 DENSO WAVE INCORPORATED의 등록상표입니다
@@ -8,6 +9,7 @@ CommonDecide: 결정
 CommonDownload: 다운로드
 CommonEnd: 끝내기
 CommonGearPowerBlank: 물음표
+CommonHome: 홈
 CommonIkaring3: 오징어넷 3
 CommonNowLoading: 로딩 중
 CommonPullToRefresh: 당겨서 새로 고침
@@ -23,6 +25,9 @@ CoopHistoryAvailable: 출현 수
 CoopHistoryAvailableBoss: 출현한 두목연어
 CoopHistoryAverageClearWaves: 평균 클리어 WAVE 수
 CoopHistoryBigrun: 빅 런
+CoopHistoryBigrunBronze: 동
+CoopHistoryBigrunGold: 금
+CoopHistoryBigrunSilver: 은
 CoopHistoryBonus: 클리어 보너스
 CoopHistoryBossAvailable: 두목연어 출현!
 CoopHistoryClear: Clear!!
@@ -53,6 +58,7 @@ CoopHistoryNoData: 아르바이트 히스토리가 없습니다
 CoopHistoryNotAvailable: 아르바이트 히스토리를 표시할 수 없습니다
 CoopHistoryNotAvailableDescription: 최신 아르바이트 히스토리는 50전까지 열람할 수 있습니다.
 CoopHistoryNotDefeated: 쓰러뜨리지 못했다…
+CoopHistoryP: p
 CoopHistoryPlayCount: 아르바이트 횟수
 CoopHistoryPrevious: 이전 히스토리
 CoopHistoryPrivate: 프라이빗
@@ -100,6 +106,7 @@ RecordStageRecord: 스테이지 기록
 RecordStageRecordAppName: 스테이지
 RecordSub: 서브
 RecordTitle: 기록
+RecordTotalTurfPoint: p
 RecordTurfPoint: 색칠 포인트
 RecordUnplayedStages: 미플레이 스테이지
 RecordUnusedWeapons: 미소지 무기
@@ -107,6 +114,7 @@ RecordVibes: 컨디션
 RecordWeaponRecord: 무기 기록
 RecordWeaponRecordAppName: 무기
 RecordWinCount: 승리 수
+RecordWinRatio: '%'
 SettingsAcknowledgements: 권리 표기
 SettingsAppName: 설정
 SettingsCredits: 크레디트

@@ -1,6 +1,7 @@
 CommonCancel: 取消
 CommonClamBlitz: 真格蛤蜊
 CommonClose: 關閉
+CommonColonRule: ''
 CommonCoopBigRun: 大型跑
 CommonCoopTeamContest: 團隊打工競賽
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -24,6 +25,9 @@ CoopHistoryAvailable: 出現數
 CoopHistoryAvailableBoss: 已出現的頭目鮭魚
 CoopHistoryAverageClearWaves: 平均完成WAVE數
 CoopHistoryBigrun: 大型跑
+CoopHistoryBigrunBronze: 銅
+CoopHistoryBigrunGold: 金
+CoopHistoryBigrunSilver: 銀
 CoopHistoryBonus: 完成獎勵
 CoopHistoryBossAvailable: 頭目鮭魚出現！
 CoopHistoryClear: Clear!!
@@ -54,6 +58,7 @@ CoopHistoryNoData: 沒有打工記錄
 CoopHistoryNotAvailable: 無法顯示打工記錄
 CoopHistoryNotAvailableDescription: 可瀏覽的打工記錄僅限最新的50戰
 CoopHistoryNotDefeated: 擊倒失敗……
+CoopHistoryP: p
 CoopHistoryPlayCount: 打工次數
 CoopHistoryPrevious: 上一場打工
 CoopHistoryPrivate: 私人
@@ -100,6 +105,7 @@ RecordStageRecord: 場地記錄
 RecordStageRecordAppName: 場地
 RecordSub: 次要武器
 RecordTitle: 記錄
+RecordTotalTurfPoint: p
 RecordTurfPoint: 塗墨點數
 RecordUnplayedStages: 未遊玩的場地
 RecordUnusedWeapons: 未持有的武器
@@ -107,6 +113,7 @@ RecordVibes: 狀態值
 RecordWeaponRecord: 武器記錄
 RecordWeaponRecordAppName: 武器
 RecordWinCount: 獲勝數
+RecordWinRatio: '%'
 SettingsAcknowledgements: 著作權聲明
 SettingsAppName: 設定
 SettingsCredits: 工作人員

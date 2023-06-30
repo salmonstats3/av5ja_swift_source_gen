@@ -1,6 +1,7 @@
 CommonCancel: Cancelar
 CommonClamBlitz: Asalto almeja
 CommonClose: Cerrar
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Alianza alevínica
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -40,6 +41,7 @@ CoopHistoryDeliverCount: Caviar rojo
 CoopHistoryEnemy: Gran salmónido
 CoopHistoryExWave: Ofensiva extra
 CoopHistoryFailure: Lástima...
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Volver a los resultados de tareas
 CoopHistoryGoldenDeliverCount: Alevines
 CoopHistoryHighestScore: Récord
@@ -51,10 +53,12 @@ CoopHistoryLatest: Más reciente
 CoopHistoryLimitedPoint: Puntos eventuales actuales
 CoopHistoryMonthlyReward: Objeto del mes
 CoopHistoryNext: Siguiente
+CoopHistoryNg: ✘
 CoopHistoryNoData: No hay resultados de tareas.
 CoopHistoryNotAvailable: Resultados de tareas no disponibles
 CoopHistoryNotAvailableDescription: Solo los 50 registros más recientes están disponibles.
 CoopHistoryNotDefeated: No pudo ser...
+CoopHistoryP: p
 CoopHistoryPlayCount: Encargos completados
 CoopHistoryPrevious: Anterior
 CoopHistoryPrivate: Trabajo privado
@@ -114,6 +118,7 @@ RecordStageRecord: Escenarios
 RecordStageRecordAppName: Escenarios
 RecordSub: Secundaria
 RecordTitle: Estadísticas
+RecordTotalTurfPoint: p
 RecordTurfPoint: Sup. entintada
 RecordUnplayedStages: Sin estrenar
 RecordUnusedWeapons: No obtenidas aún
@@ -121,6 +126,7 @@ RecordVibes: Evaluación
 RecordWeaponRecord: Historial de armas
 RecordWeaponRecordAppName: Armas
 RecordWinCount: Victorias
+RecordWinRatio: '%'
 SettingsAcknowledgements: Derechos de autor
 SettingsAppName: Ajustes
 SettingsCredits: Créditos

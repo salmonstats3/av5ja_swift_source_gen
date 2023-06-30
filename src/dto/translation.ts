@@ -57,6 +57,9 @@ class TranslationType extends Map<string, string> {
             translations.push(`    /// ${value}`);
             translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Cop_${key}`)}"`);
           } 
+        } else if (this.name === 'VSStageKey') {
+          translations.push(`    /// ${value}`);
+          translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Vss_${key}`)}"`);
         } else {
           translations.push(`    /// ${value}`);
           translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
@@ -102,6 +105,10 @@ export class Translation {
   @Expose({ name: 'CommonMsg/Coop/CoopStageName' })
   @Transform((param) => new TranslationType(param.value, 'CoopStageKey'))
   readonly CoopStageName: TranslationType;
+  
+  @Expose({ name: 'CommonMsg/VS/VSStageName' })
+  @Transform((param) => new TranslationType(param.value, 'VSStageKey'))
+  readonly VSStageName: TranslationType;
 
   @Expose({ name: 'CommonMsg/Glossary' })
   @Transform((param) => {
@@ -179,7 +186,7 @@ export class Translation {
   async write(): Promise<void> {
     if (this.id === LocaleId.JPja) {
       // キーファイルの作成
-      [this.CoopStageName, this.CoopGrade].forEach((translation: TranslationType) => {
+      [this.CoopStageName, this.CoopGrade, this.VSStageName].forEach((translation: TranslationType) => {
         createFile(translation.source, `sources/Keys/${translation.name}.swift`);
       });
     }
@@ -250,7 +257,6 @@ export class Translation {
             .trim()
             .replace(/：|:^/g, ''),
         ])
-        .filter(([_, value]) => value.length >= 2),
     );
     // YAMLを保存
     createFile(yaml.dump(objects), `src/locales/${this.hash}/${this.key}.yaml`);

@@ -1,6 +1,7 @@
 CommonCancel: キャンセル
 CommonClamBlitz: ガチアサリ
 CommonClose: 閉じる
+CommonColonRule: ':'
 CommonCoopBigRun: ビッグラン
 CommonCoopTeamContest: バイトチームコンテスト
 CommonCopyrightQrCode: QRコードは、株式会社デンソーウェーブの登録商標です。
@@ -24,6 +25,9 @@ CoopHistoryAvailable: 出現数
 CoopHistoryAvailableBoss: 出現したオカシラシャケ
 CoopHistoryAverageClearWaves: 平均クリアWAVE数
 CoopHistoryBigrun: ビッグラン
+CoopHistoryBigrunBronze: 銅
+CoopHistoryBigrunGold: 金
+CoopHistoryBigrunSilver: 銀
 CoopHistoryBonus: クリアボーナス
 CoopHistoryBossAvailable: オカシラシャケ出現！
 CoopHistoryClear: Clear!!
@@ -54,6 +58,7 @@ CoopHistoryNoData: バイトヒストリーがありません
 CoopHistoryNotAvailable: バイトヒストリーを表示できません
 CoopHistoryNotAvailableDescription: 閲覧できるバイトヒストリーは、最新の50戦までです。
 CoopHistoryNotDefeated: 倒せなかった...
+CoopHistoryP: p
 CoopHistoryPlayCount: バイト回数
 CoopHistoryPrevious: 前のバイト
 CoopHistoryPrivate: プライベート
@@ -99,6 +104,7 @@ RecordStageRecord: ステージのきろく
 RecordStageRecordAppName: ステージ
 RecordSub: サブ
 RecordTitle: きろく
+RecordTotalTurfPoint: p
 RecordTurfPoint: 塗りポイント
 RecordUnplayedStages: 遊んでないステージ
 RecordUnusedWeapons: 未所持のブキ
@@ -106,6 +112,7 @@ RecordVibes: チョーシ
 RecordWeaponRecord: ブキのきろく
 RecordWeaponRecordAppName: ブキ
 RecordWinCount: 勝利数
+RecordWinRatio: '%'
 SettingsAcknowledgements: 権利表記
 SettingsAppName: 設定
 SettingsCredits: クレジット

@@ -1,6 +1,7 @@
 CommonCancel: Annuler
 CommonClamBlitz: Pluie de palourdes
 CommonClose: Fermer
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Défi œuf sup
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -42,6 +43,7 @@ CoopHistoryDeliverCount: Œufs de poi. collectés
 CoopHistoryEnemy: Salmonoboss
 CoopHistoryExWave: Vague +
 CoopHistoryFailure: Échec...
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Retour aux stats de missions
 CoopHistoryGoldenDeliverCount: Œufs dorés collectés
 CoopHistoryHighestScore: Record
@@ -53,6 +55,7 @@ CoopHistoryLatest: Dernière mission
 CoopHistoryLimitedPoint: Points de prix spéciaux actuels
 CoopHistoryMonthlyReward: Pièce d'équipement du mois
 CoopHistoryNext: Suivant
+CoopHistoryNg: ✘
 CoopHistoryNoData: Aucune stat de mission disponible.
 CoopHistoryNotAvailable: Les stats de missions ne sont pas disponibles.
 CoopHistoryNotAvailableDescription: Seules les 50 entrées les plus récentes sont disponibles.
@@ -122,6 +125,7 @@ RecordVibes: Jauge d'appréciation
 RecordWeaponRecord: Stats - armes
 RecordWeaponRecordAppName: Armes
 RecordWinCount: 'Victoires :'
+RecordWinRatio: '%'
 SettingsAcknowledgements: Droits d'auteur
 SettingsAppName: Paramètres
 SettingsCredits: Crédits

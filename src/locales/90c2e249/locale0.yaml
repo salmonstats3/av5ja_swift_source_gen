@@ -1,6 +1,7 @@
 CommonCancel: Abbrechen
 CommonClamBlitz: Muschelchaos
 CommonClose: Schließen
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Team-Wettkampf
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -40,6 +41,7 @@ CoopHistoryDeliverCount: Gesammelte Fischeier
 CoopHistoryEnemy: Boss-Salmoniden
 CoopHistoryExWave: Extra-Welle
 CoopHistoryFailure: Schade...
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Zurück zu den Schicht-Daten
 CoopHistoryGoldenDeliverCount: Gesammelte Gold-Fischeier
 CoopHistoryHighestScore: Highscore
@@ -51,10 +53,12 @@ CoopHistoryLatest: Letzte Schicht
 CoopHistoryLimitedPoint: Spezial-Bonuspunktestand
 CoopHistoryMonthlyReward: Monatsangebot
 CoopHistoryNext: Vor
+CoopHistoryNg: ✘
 CoopHistoryNoData: Keine Schicht-Daten vorhanden.
 CoopHistoryNotAvailable: Schicht-Daten nicht verfügbar
 CoopHistoryNotAvailableDescription: Nur die letzten 50 Einträge sind verfügbar.
 CoopHistoryNotDefeated: Gescheitert...
+CoopHistoryP: P
 CoopHistoryPlayCount: Angetretene Schichten
 CoopHistoryPrevious: Zurück
 CoopHistoryPrivate: Private Schicht
@@ -115,6 +119,7 @@ RecordStageRecord: Arenen
 RecordStageRecordAppName: Arenen
 RecordSub: Sekundärwaffe
 RecordTitle: Statistiken
+RecordTotalTurfPoint: P
 RecordTurfPoint: Gefärbte Fläche
 RecordUnplayedStages: Ungespielt
 RecordUnusedWeapons: Noch freizuschaltende Waffen
@@ -122,6 +127,7 @@ RecordVibes: Miezrichter-Skala
 RecordWeaponRecord: Waffen
 RecordWeaponRecordAppName: Waffen
 RecordWinCount: Siege
+RecordWinRatio: '%'
 SettingsAcknowledgements: Copyrights
 SettingsAppName: Einstellungen
 SettingsCredits: Credits

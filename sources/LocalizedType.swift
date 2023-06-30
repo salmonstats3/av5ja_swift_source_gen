@@ -1,7 +1,7 @@
 //
 //  LocalizedType.swift
 //
-//  Created by tkgstrator on 2023/06/04
+//  Created by tkgstrator on 2023/06/11
 //  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 
@@ -366,6 +366,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CommonClamBlitz
     /// 閉じる
     case CommonClose
+    /// :
+    case CommonColonRule
     /// ビッグラン
     case CommonCoopBigRun
     /// バイトチームコンテスト
@@ -412,6 +414,12 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryAverageClearWaves
     /// ビッグラン
     case CoopHistoryBigrun
+    /// 銅
+    case CoopHistoryBigrunBronze
+    /// 金
+    case CoopHistoryBigrunGold
+    /// 銀
+    case CoopHistoryBigrunSilver
     /// クリアボーナス
     case CoopHistoryBonus
     /// オカシラシャケ出現！
@@ -472,6 +480,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryNotAvailableDescription
     /// 倒せなかった...
     case CoopHistoryNotDefeated
+    /// p
+    case CoopHistoryP
     /// バイト回数
     case CoopHistoryPlayCount
     /// 前のバイト
@@ -562,6 +572,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case RecordSub
     /// きろく
     case RecordTitle
+    /// p
+    case RecordTotalTurfPoint
     /// 塗りポイント
     case RecordTurfPoint
     /// 遊んでないステージ
@@ -576,6 +588,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case RecordWeaponRecordAppName
     /// 勝利数
     case RecordWinCount
+    /// %
+    case RecordWinRatio
     /// 権利表記
     case SettingsAcknowledgements
     /// 設定

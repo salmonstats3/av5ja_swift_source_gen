@@ -1,6 +1,7 @@
 CommonCancel: Annulla
 CommonClamBlitz: Vongol gol
 CommonClose: Chiudi
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Sfida tra colleghi
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -40,6 +41,7 @@ CoopHistoryDeliverCount: Uova raccolte
 CoopHistoryEnemy: Gran Salmonoidi
 CoopHistoryExWave: Ondata extra
 CoopHistoryFailure: Peccato...
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Torna alla cronologia dei lavori
 CoopHistoryGoldenDeliverCount: Uova d'oro raccolte
 CoopHistoryHighestScore: Record
@@ -51,10 +53,12 @@ CoopHistoryLatest: Ultimo
 CoopHistoryLimitedPoint: Punti attuali (bonus speciale)
 CoopHistoryMonthlyReward: Oggetto del mese
 CoopHistoryNext: Seguente
+CoopHistoryNg: ✘
 CoopHistoryNoData: Non è presente alcuna cronologia dei lavori.
 CoopHistoryNotAvailable: Cronologia dei lavori non disponibile
 CoopHistoryNotAvailableDescription: Vengono visualizzati solo i 50 lavori più recenti.
 CoopHistoryNotDefeated: Missione fallita...
+CoopHistoryP: p
 CoopHistoryPlayCount: Lavori completati
 CoopHistoryPrevious: Precedente
 CoopHistoryPrivate: Lavoro privato
@@ -110,6 +114,7 @@ RecordStageRecord: Statistiche scenari
 RecordStageRecordAppName: Scenari
 RecordSub: Secondaria
 RecordTitle: Statistiche
+RecordTotalTurfPoint: p
 RecordTurfPoint: Sup. colorata
 RecordUnplayedStages: Scenari non affrontati
 RecordUnusedWeapons: Non ancora ottenute
@@ -117,6 +122,7 @@ RecordVibes: Valutometro
 RecordWeaponRecord: Statistiche armi
 RecordWeaponRecordAppName: Armi
 RecordWinCount: Vittorie
+RecordWinRatio: '%'
 SettingsAcknowledgements: Copyright
 SettingsAppName: Impostazioni
 SettingsCredits: Riconoscimenti

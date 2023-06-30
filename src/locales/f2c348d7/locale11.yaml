@@ -1,6 +1,7 @@
 CommonCancel: Отмена
 CommonClamBlitz: Устробол
 CommonClose: Закрыть
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Икорный овертайм
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -40,6 +41,7 @@ CoopHistoryDeliverCount: 'Икринок:'
 CoopHistoryEnemy: 'Самонидских боссов:'
 CoopHistoryExWave: Волна +
 CoopHistoryFailure: Провал
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Назад к рабочим показателям
 CoopHistoryGoldenDeliverCount: 'Золотых икринок:'
 CoopHistoryHighestScore: Рекорд
@@ -51,6 +53,7 @@ CoopHistoryLatest: Послед. смена
 CoopHistoryLimitedPoint: 'Сейчас спецочков:'
 CoopHistoryMonthlyReward: Снаряжение месяца
 CoopHistoryNext: След. смена
+CoopHistoryNg: ✘
 CoopHistoryNoData: Нет рабочих показателей.
 CoopHistoryNotAvailable: Рабочие показатели недоступны
 CoopHistoryNotAvailableDescription: Доступно только 50 последних смен.
@@ -119,6 +122,7 @@ RecordVibes: Шкала свежести
 RecordWeaponRecord: Оружие
 RecordWeaponRecordAppName: Оружие
 RecordWinCount: 'Побед:'
+RecordWinRatio: '%'
 SettingsAcknowledgements: Авторские права
 SettingsAppName: Настройки
 SettingsCredits: Над игрой работали

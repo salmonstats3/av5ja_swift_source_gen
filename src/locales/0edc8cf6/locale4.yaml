@@ -1,6 +1,7 @@
 CommonCancel: Cancelar
 CommonClamBlitz: Asalto almeja
 CommonClose: Cerrar
+CommonColonRule: ':'
 CommonCoopBigRun: Big Run
 CommonCoopTeamContest: Recolección extra
 CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
@@ -40,6 +41,7 @@ CoopHistoryDeliverCount: Huevecillos de poder
 CoopHistoryEnemy: Gran salmónido
 CoopHistoryExWave: Oleada extra
 CoopHistoryFailure: Derrota...
+CoopHistoryGj: ✓
 CoopHistoryGoToStats: Volver a los resultados de tareas
 CoopHistoryGoldenDeliverCount: Huevecillos dorados
 CoopHistoryHighestScore: Récord
@@ -51,6 +53,7 @@ CoopHistoryLatest: Más reciente
 CoopHistoryLimitedPoint: Puntos especiales actuales
 CoopHistoryMonthlyReward: Objeto del mes
 CoopHistoryNext: Siguiente
+CoopHistoryNg: ✘
 CoopHistoryNoData: No hay resultados de tareas.
 CoopHistoryNotAvailable: Resultados de tareas no disponibles
 CoopHistoryNotAvailableDescription: Solo los 50 registros más recientes están disponibles.
@@ -122,6 +125,7 @@ RecordVibes: Valoración
 RecordWeaponRecord: Armas
 RecordWeaponRecordAppName: Armas
 RecordWinCount: Victorias
+RecordWinRatio: '%'
 SettingsAcknowledgements: Derechos de autor
 SettingsAppName: Ajustes
 SettingsCredits: Créditos

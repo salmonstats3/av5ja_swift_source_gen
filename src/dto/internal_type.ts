@@ -137,12 +137,15 @@ export class WeaponInfoMain implements InternalType {
     if (!this.row_id.includes('_Coop')) {
       return false;
     }
-    const row_id: string = this.row_id.replace('_Coop', '_00');
-    this.row_id = this.row_id.replace('_Coop', '');
-    this.label = this.label.replace('Coop', '');
-    this.hash = calc_hash(row_id);
     if (!this.row_id.includes('Bear')) {
       this.id = this.id - 20000;
+      const row_id: string = this.row_id.replace('_Coop', '_00');
+      this.row_id = this.row_id.replace('_Coop', '');
+      this.label = this.label.replace('Coop', '');
+      this.hash = calc_hash(row_id);
+    } else {
+      this.hash = calc_hash(this.row_id);
+      this.row_id = this.row_id.replace('_Coop', '');
     }
     return true;
   }
