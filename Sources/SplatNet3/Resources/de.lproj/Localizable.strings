@@ -124,6 +124,8 @@
 "SakeBigBoss" = "Ober-Salmonide";
 /// Salmometer
 "SakeBigBossGauge" = "Salmometer";
+/// Einrichtung im Gange
+"InitialSetup" = "Einrichtung im Gange";
 /// Über
 "CommonAbout" = "Über";
 /// Aktuell

@@ -8,6 +8,62 @@
 import Foundation
 import Alamofire
 
+internal final class HashClient: Alamofire.Session, ObservableObject {
+    @Published var assetURLs: Set<URL> = Set() {
+        willSet {
+            self.total = newValue.count
+        }
+    }
+    @Published var total: Int = 0
+    @Published var value: Int = 0
+    
+    private func getAssetURLs() async throws -> Set<URL> {
+        #if DEBUG
+        let url: URL = URL(unsafeString: "http://localhost:3000/v3/authorize/resources")
+        #else
+        let url: URL = URL(unsafeString: "https://api.splatnet3.com/v3/authorize/resources")
+        #endif
+        return try await download(url)
+            .serializingDecodable(ResourceType.self, decoder: SPDecoder.default)
+            .value
+            .urls
+    }
+    
+    private func download(_ url: URL) async throws -> Data {
+        try await download(url)
+            .validate()
+            .serializingData()
+            .value
+    }
+    
+    func getAssets() async throws {
+        guard let document: URL = FileManager.default.document
+        else {
+            return
+        }
+        self.assetURLs = try await getAssetURLs()
+        let assets: [ResourceType.Response] = try await withThrowingTaskGroup(of: ResourceType.Response?.self, body: { task in
+            self.assetURLs.forEach({ url in
+                task.addTask(operation: { [self] in
+                    ResourceType.Response(url: url, data: try? await download(url))
+                })
+            })
+            return try await task.reduce(into: [ResourceType.Response]()) { results, result in
+                if let result = result {
+                    results.append(result)
+                }
+                self.value += 1
+            }
+        }).compactMap({ $0 })
+        try assets.forEach({ asset in
+            let documentPath: URL = document.appendingPathComponent(asset.type.rawValue)
+            try FileManager.default.createDirectory(atPath: documentPath.path, withIntermediateDirectories: true, attributes: nil)
+            let destination: URL = documentPath.appendingPathComponent(asset.rawValue).appendingPathExtension(asset.ext.rawValue)
+            try asset.data.write(to: destination, options: .noFileProtection)
+        })
+    }
+}
+
 extension SP3Session {
     /// リザルトIDを取得する
     private func getCoopHistoryQueryResultIds(from playTime: Date? = nil) async throws -> [Common.ResultId] {
@@ -52,7 +108,7 @@ extension SP3Session {
     /// アセットを保存する
     /// ハッシュサーバーが指定されていればそのURLから、なければイカリング3から取得する
     /// - Parameter url: ハッシュサーバー
-    public func getAssetsFromServer(url: URL? = nil) async throws {
+    public func getAssetsFromServer(url: URL? = nil, completion: (() -> Void) = {}) async throws {
         let assetURLs: Set<URL> = try await {
             if let url: URL = url {
                 return try await getAssetURLsFromHashServer(url: url)
@@ -60,11 +116,10 @@ extension SP3Session {
                 return try await getAssetURLsFromSplatNet3()
             }
         }()
-        print(assetURLs)
-        try await getAssets(assetURLs: Array(assetURLs))
+        try await getAssets(assetURLs: Array(assetURLs), completion: completion)
     }
        
-    private func getAssets(assetURLs: [URL]) async throws {
+    private func getAssets(assetURLs: [URL], completion: (() -> Void) = {}) async throws {
         guard let document: URL = FileManager.default.document
         else {
             return
@@ -76,9 +131,13 @@ extension SP3Session {
                 })
             })
             return try await task.reduce(into: [ResourceType.Response]()) { results, result in
-                results.append(result)
+                if let result = result {
+                    results.append(result)
+                }
+                completion()
             }
         }).compactMap({ $0 })
+        print("Assets", assetURLs.count, assets.count)
         try assets.forEach({ asset in
             let documentPath: URL = document.appendingPathComponent(asset.type.rawValue)
             try FileManager.default.createDirectory(atPath: documentPath.path, withIntermediateDirectories: true, attributes: nil)

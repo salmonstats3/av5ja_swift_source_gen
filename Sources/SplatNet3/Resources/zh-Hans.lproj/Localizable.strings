@@ -124,6 +124,8 @@
 "SakeBigBoss" = "头目鲑鱼";
 /// 头目槽
 "SakeBigBossGauge" = "头目槽";
+/// 设置正在进行中
+"InitialSetup" = "设置正在进行中";
 /// 关于
 "CommonAbout" = "关于";
 /// 实际情况

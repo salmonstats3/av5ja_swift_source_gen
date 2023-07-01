@@ -124,6 +124,8 @@
 "SakeBigBoss" = "gran jefe salmónido";
 /// salmómetro
 "SakeBigBossGauge" = "salmómetro";
+/// Instalación en curso
+"InitialSetup" = "Instalación en curso";
 /// Acerca de
 "CommonAbout" = "Acerca de";
 /// Actual

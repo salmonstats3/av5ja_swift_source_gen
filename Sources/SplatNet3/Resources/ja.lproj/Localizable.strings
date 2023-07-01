@@ -124,6 +124,8 @@
 "SakeBigBoss" = "オカシラシャケ";
 /// オカシラゲージ
 "SakeBigBossGauge" = "オカシラゲージ";
+/// セットアップ中です
+"InitialSetup" = "セットアップ中です";
 /// About
 "CommonAbout" = "About";
 /// 実測値

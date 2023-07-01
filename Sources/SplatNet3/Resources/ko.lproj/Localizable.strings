@@ -124,6 +124,8 @@
 "SakeBigBoss" = "두목연어";
 /// 두목 게이지
 "SakeBigBossGauge" = "두목 게이지";
+/// 설정 진행 중
+"InitialSetup" = "설정 진행 중";
 /// 소개
 "CommonAbout" = "소개";
 /// 실제의

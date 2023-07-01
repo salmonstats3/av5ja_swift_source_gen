@@ -15,6 +15,7 @@ public struct ResourceType: Codable {
     let staticMedia: [URL]
     let specialImg: [URL]
     let coopEnemyImg: [URL]
+    let scaleImg: [URL]
     let fonts: [URL]
     
     public enum ExtType: String, CaseIterable, Codable {
@@ -31,7 +32,7 @@ public struct ResourceType: Codable {
     }
 
     var urls: Set<URL> {
-        Set(stageImg.banner + stageImg.icon + uiImg + weaponIllust + staticMedia + specialImg + coopEnemyImg + fonts)
+        Set(stageImg.banner + stageImg.icon + uiImg + weaponIllust + staticMedia + specialImg + coopEnemyImg + fonts + scaleImg)
     }
 
     struct Response: Codable {
@@ -51,6 +52,12 @@ public struct ResourceType: Codable {
             if let hash: String = url.lastPathComponent.capture(pattern: #"([\w\d]{20})\.(woff2|woff)$"#, group: 1) {
                 return hash
             }
+            if let host: String = url.host,
+               let rowId: String  = url.lastPathComponent.capture(pattern: #"([\w\d_].*).png"#, group: 1),
+               host == "leanny.github.io"
+            {
+                return rowId.contains("_Bear") ? "\(rowId.replacingOccurrences(of: "Path_Wst_", with: ""))_Coop".sha256Hash : rowId.sha256Hash
+            }
             return nil
         }
 
@@ -60,6 +67,7 @@ public struct ResourceType: Codable {
                   let hash: String = ResourceType.Response.getHash(url: url),
                   let ext: ExtType = ExtType(rawValue: url.pathExtension)
             else {
+                SwiftyLogger.error("Invalid hash value. \(url)")
                 return nil
             }
 
@@ -121,6 +129,14 @@ public struct ResourceType: Codable {
                 self.rawValue = rawValue
                 return
             }
+            
+            /// Scale
+            if let rawValue: String = ScaleKey(rawValue: hash)?.id.description {
+                self.rawValue = rawValue
+                return
+            }
+            
+            SwiftyLogger.error("Could not recognized hash value. \(url)")
             return nil
         }
     }
@@ -130,12 +146,18 @@ public enum ResourceURLType: String, CaseIterable, Codable {
     case StageImgBanner         = "stage_img/banner"
     case StageImgIcon           = "stage_img/icon"
     case UIImg                  = "ui_img"
-    case WeaponInfoMainIdllust  = "weapon_illust"
+    case ScaleImg               = "scale_img"
     case CoopEnemyImg           = "coop_enemy_img"
     case SpecialImg             = "special_img"
+    case WeaponInfoMainIdllust  = "weapon_illust"
     case StaticMedia            = "static/media"
     case Bundled                = "bundled"
-
+    case StageL                 = "stageL"
+    case StageBanner            = "stageBanner"
+    case CoopEnemy              = "coopEnemy"
+    case WeaponInfoMainFlat     = "weapon_flat"
+    case Scale                  = "images/coop/"
+    
     init?(url: URL) {
         if url.absoluteString.contains(ResourceURLType.StageImgBanner.rawValue) {
             self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)
@@ -169,6 +191,28 @@ public enum ResourceURLType: String, CaseIterable, Codable {
             self.init(rawValue: ResourceURLType.Bundled.rawValue)
             return
         }
+        // Leanny
+        if url.absoluteString.contains(ResourceURLType.StageL.rawValue) {
+            self.init(rawValue: ResourceURLType.StageImgIcon.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.WeaponInfoMainFlat.rawValue) {
+            self.init(rawValue: ResourceURLType.WeaponInfoMainIdllust.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.StageBanner.rawValue) {
+            self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.CoopEnemy.rawValue) {
+            self.init(rawValue: ResourceURLType.CoopEnemyImg.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.Scale.rawValue) {
+            self.init(rawValue: ResourceURLType.ScaleImg.rawValue)
+            return
+        }
+        SwiftyLogger.error("Invalid url. \(url)")
         return nil
     }
 }

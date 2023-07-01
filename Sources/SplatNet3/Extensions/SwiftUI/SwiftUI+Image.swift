@@ -10,6 +10,7 @@ import SwiftUI
 final class SPImageService: ObservableObject {
     @Published var documentPath: URL?
 
+    /// 絶対重いよなあと思いながら使っている
     init<T: UnsafeRawRepresentable>(type: T.Type, rawValue: Int) {
         let documentURL: URL? = FileManager.default.document
 
@@ -29,6 +30,8 @@ final class SPImageService: ObservableObject {
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.CoopEnemyImg.rawValue)/\(rawValue)", conformingTo: .png)
         case is WeaponInfoSpecialId.Type:
             self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.SpecialImg.rawValue)/\(rawValue)", conformingTo: .png)
+        case is ScaleId.Type:
+            self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.ScaleImg.rawValue)/\(rawValue)", conformingTo: .png)
         default:
             self.documentPath = documentURL
         }

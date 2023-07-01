@@ -124,6 +124,8 @@
 "SakeBigBoss" = "Salmonarque";
 /// Salmomètre
 "SakeBigBossGauge" = "Salmomètre";
+/// Mise en place en cours
+"InitialSetup" = "Mise en place en cours";
 /// À propos de
 "CommonAbout" = "À propos de";
 /// Réel

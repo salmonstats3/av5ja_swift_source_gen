@@ -124,6 +124,8 @@
 "SakeBigBoss" = "Salmonarca";
 /// salmometro
 "SakeBigBossGauge" = "salmometro";
+/// Allestimento in corso
+"InitialSetup" = "Allestimento in corso";
 /// Circa
 "CommonAbout" = "Circa";
 /// Effettivo

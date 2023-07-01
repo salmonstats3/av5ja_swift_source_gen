@@ -180,7 +180,7 @@ extension Font {
 }
 
 extension View {
-    /// スプラトゥーンフォントを読み込むj
+    /// スプラトゥーンフォントを読み込む
     /// - Parameters:
     ///   - fontName: 1/2
     ///   - size: フォントサイズ

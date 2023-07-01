@@ -124,6 +124,8 @@
 "SakeBigBoss" = "頭目鮭魚";
 /// 頭目槽
 "SakeBigBossGauge" = "頭目槽";
+/// 設置正在進行中
+"InitialSetup" = "設置正在進行中";
 /// 關於
 "CommonAbout" = "關於";
 /// 實際的

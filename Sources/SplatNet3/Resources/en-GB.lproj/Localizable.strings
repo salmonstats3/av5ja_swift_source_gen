@@ -124,6 +124,8 @@
 "SakeBigBoss" = "King Salmonid";
 /// Salmometer
 "SakeBigBossGauge" = "Salmometer";
+/// Setup in progress
+"InitialSetup" = "Setup in progress";
 /// About
 "CommonAbout" = "About";
 /// Actual

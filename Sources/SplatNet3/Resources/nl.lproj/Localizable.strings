@@ -124,6 +124,8 @@
 "SakeBigBoss" = "Salmonster";
 /// Salmometer
 "SakeBigBossGauge" = "Salmometer";
+/// Opstelling bezig
+"InitialSetup" = "Opstelling bezig";
 /// Over
 "CommonAbout" = "Over";
 /// Werkelijk
