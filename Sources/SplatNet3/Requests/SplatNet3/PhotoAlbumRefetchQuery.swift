@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class PhotoAlbumRefetchQuery: GraphQL {
+internal final class PhotoAlbumRefetchQuery: GraphQL {
 	typealias ResponseType = PhotoAlbumRefetchQuery.Response
 	var hash: SHA256Hash = .PhotoAlbumRefetchQuery
 	var variables: [String: String] = [:]

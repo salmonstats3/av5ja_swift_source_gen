@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class FriendListQuery: GraphQL {
+internal final class FriendListQuery: GraphQL {
 	typealias ResponseType = FriendListQuery.Response
 	var hash: SHA256Hash = .FriendListQuery
 	var variables: [String: String] = [:]

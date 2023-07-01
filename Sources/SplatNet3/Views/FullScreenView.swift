@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CoopResultDownloadView: View {
+internal struct CoopResultDownloadView: View {
     @EnvironmentObject var session: SP3Session
     @Environment(\.dismiss) var dismiss
     @State private var value: Float = .zero

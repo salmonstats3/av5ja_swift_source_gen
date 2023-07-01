@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class DownloadSearchReplayQuery: GraphQL {
+internal final class DownloadSearchReplayQuery: GraphQL {
 	typealias ResponseType = DownloadSearchReplayQuery.Response
 	var hash: SHA256Hash = .DownloadSearchReplayQuery
 	var variables: [String: String] = [:]

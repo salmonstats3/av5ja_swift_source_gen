@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class BankaraBattleHistoriesQuery: GraphQL {
+internal final class BankaraBattleHistoriesQuery: GraphQL {
 	typealias ResponseType = BankaraBattleHistoriesQuery.Response
 	var hash: SHA256Hash = .BankaraBattleHistoriesQuery
 	var variables: [String: String] = [:]

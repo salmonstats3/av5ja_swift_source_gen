@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class MyOutfitCommonDataFilteringConditionQuery: GraphQL {
+internal final class MyOutfitCommonDataFilteringConditionQuery: GraphQL {
 	typealias ResponseType = MyOutfitCommonDataFilteringConditionQuery.Response
 	var hash: SHA256Hash = .MyOutfitCommonDataFilteringConditionQuery
 	var variables: [String: String] = [:]

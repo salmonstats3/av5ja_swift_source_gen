@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import WebKit
 
-class SPWebView: WKWebView, WKNavigationDelegate {
+internal class SPWebView: WKWebView, WKNavigationDelegate {
     let indicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
         indicator.hidesWhenStopped = true

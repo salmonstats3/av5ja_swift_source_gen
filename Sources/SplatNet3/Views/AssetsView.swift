@@ -46,7 +46,7 @@ public struct AssetsView: View {
     }
 }
 
-struct AssetsView_Previews: PreviewProvider {
+internal struct AssetsView_Previews: PreviewProvider {
     static var previews: some View {
         AssetsView()
             .environmentObject(SP3Session())

@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class HeroHistoryRefetchQuery: GraphQL {
+internal final class HeroHistoryRefetchQuery: GraphQL {
 	typealias ResponseType = HeroHistoryRefetchQuery.Response
 	var hash: SHA256Hash = .HeroHistoryRefetchQuery
 	var variables: [String: String] = [:]

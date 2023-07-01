@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class CheckinQuery: GraphQL {
+internal final class CheckinQuery: GraphQL {
 	typealias ResponseType = CheckinQuery.Response
 	var hash: SHA256Hash = .CheckinQuery
 	var variables: [String: String] = [:]

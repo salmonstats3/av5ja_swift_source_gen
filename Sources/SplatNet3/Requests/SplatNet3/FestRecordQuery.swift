@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class FestRecordQuery: GraphQL {
+internal final class FestRecordQuery: GraphQL {
 	typealias ResponseType = FestRecordQuery.Response
 	var hash: SHA256Hash = .FestRecordQuery
 	var variables: [String: String] = [:]

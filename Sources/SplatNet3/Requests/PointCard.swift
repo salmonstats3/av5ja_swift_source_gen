@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PointCard: Codable {
+internal protocol PointCard: Codable {
     /// バイト回数
     var shiftsWorked: Int { get set }
     /// イクラ獲得数

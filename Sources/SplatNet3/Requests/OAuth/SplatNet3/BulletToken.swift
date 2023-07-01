@@ -10,7 +10,7 @@ import Alamofire
 import Foundation
 
 /// BulletToken
-class BulletToken: RequestType {
+internal class BulletToken: RequestType {
     typealias ResponseType = BulletToken.Response
 
     var method: HTTPMethod = .post

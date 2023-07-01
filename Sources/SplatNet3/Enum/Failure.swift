@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Failure {
+internal enum Failure {
     struct NSO: Codable, Error, LocalizedError {
         let errorMessage: NXErrorDescription
         let error: NXError

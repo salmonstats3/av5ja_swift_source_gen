@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class CatalogRefetchQuery: GraphQL {
+internal final class CatalogRefetchQuery: GraphQL {
 	typealias ResponseType = CatalogRefetchQuery.Response
 	var hash: SHA256Hash = .CatalogRefetchQuery
 	var variables: [String: String] = [:]

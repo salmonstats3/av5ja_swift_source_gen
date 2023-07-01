@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class DetailTabViewWeaponTopsClRefetchQuery: GraphQL {
+internal final class DetailTabViewWeaponTopsClRefetchQuery: GraphQL {
 	typealias ResponseType = DetailTabViewWeaponTopsClRefetchQuery.Response
 	var hash: SHA256Hash = .DetailTabViewWeaponTopsClRefetchQuery
 	var variables: [String: String] = [:]

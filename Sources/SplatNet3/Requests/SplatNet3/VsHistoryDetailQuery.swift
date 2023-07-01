@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class VsHistoryDetailQuery: GraphQL {
+internal final class VsHistoryDetailQuery: GraphQL {
 	typealias ResponseType = VsHistoryDetailQuery.Response
 	var hash: SHA256Hash = .VsHistoryDetailQuery
 	var variables: [String: String] = [:]

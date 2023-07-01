@@ -9,7 +9,7 @@
 import Foundation
 
 /// JSONWebToken
-struct JSONWebToken: Codable {
+internal struct JSONWebToken: Codable {
     /// Base64でエンコードされたトークンから生成
     init(gameWebToken: String) throws {
         let rawTexts: [String] = gameWebToken.components(separatedBy: ".").compactMap({ $0.base64DecodedString })

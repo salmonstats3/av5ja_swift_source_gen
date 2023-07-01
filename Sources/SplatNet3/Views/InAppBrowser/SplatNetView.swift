@@ -13,7 +13,7 @@ import SwiftUI
 import UIKit
 import WebKit
 
-struct SplatNetView: UIViewControllerRepresentable {
+internal struct SplatNetView: UIViewControllerRepresentable {
     let contentId: ContentId
 
     init(contentId: ContentId) {
@@ -217,7 +217,7 @@ struct SplatNetView: UIViewControllerRepresentable {
     }
 }
 
-struct SplatNetView_Previews: PreviewProvider {
+internal struct SplatNetView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView(content: {
             SplatNetView(contentId: .SP3)

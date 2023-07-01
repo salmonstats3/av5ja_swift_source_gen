@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class ConfigureAnalyticsQuery: GraphQL {
+internal final class ConfigureAnalyticsQuery: GraphQL {
 	typealias ResponseType = ConfigureAnalyticsQuery.Response
 	var hash: SHA256Hash = .ConfigureAnalyticsQuery
 	var variables: [String: String] = [:]

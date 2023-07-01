@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class RegularBattleHistoriesRefetchQuery: GraphQL {
+internal final class RegularBattleHistoriesRefetchQuery: GraphQL {
 	typealias ResponseType = RegularBattleHistoriesRefetchQuery.Response
 	var hash: SHA256Hash = .RegularBattleHistoriesRefetchQuery
 	var variables: [String: String] = [:]

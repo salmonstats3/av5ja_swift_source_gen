@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class PagerLatestVsDetailQuery: GraphQL {
+internal final class PagerLatestVsDetailQuery: GraphQL {
 	typealias ResponseType = PagerLatestVsDetailQuery.Response
 	var hash: SHA256Hash = .PagerLatestVsDetailQuery
 	var variables: [String: String] = [:]

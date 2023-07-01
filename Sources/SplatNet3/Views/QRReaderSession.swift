@@ -9,7 +9,7 @@ import AVFoundation
 import Foundation
 import UIKit
 
-class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate {
+internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate {
     /// 処理を実行するキュー
     private let queue = DispatchQueue(label: "QRCaptureSessioin")
     /// QRコードを読み取ったときに呼ばれる
@@ -91,7 +91,7 @@ class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate
     }
 }
 
-class _QRReaderView: UIView {
+internal class _QRReaderView: UIView {
     private let session: QRCaptureSession
     private let previewLayer = AVCaptureVideoPreviewLayer()
 

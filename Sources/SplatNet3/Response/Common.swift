@@ -8,7 +8,7 @@
 import Foundation
 
 /// SplatNet3のBase64化されたIdに対応するプロトコル
-protocol SP3IdType: Codable, CustomStringConvertible, Equatable, Identifiable {
+internal protocol SP3IdType: Codable, CustomStringConvertible, Equatable, Identifiable {
     /// Base64エンコードした文字列
     var id: String { get }
     /// APIのエンドポイント

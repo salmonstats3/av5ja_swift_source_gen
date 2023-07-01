@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class PagerUpdateBattleHistoriesByVsModeQuery: GraphQL {
+internal final class PagerUpdateBattleHistoriesByVsModeQuery: GraphQL {
 	typealias ResponseType = PagerUpdateBattleHistoriesByVsModeQuery.Response
 	var hash: SHA256Hash = .PagerUpdateBattleHistoriesByVsModeQuery
 	var variables: [String: String] = [:]

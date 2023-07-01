@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class ReplayUploadedReplayListRefetchQuery: GraphQL {
+internal final class ReplayUploadedReplayListRefetchQuery: GraphQL {
 	typealias ResponseType = ReplayUploadedReplayListRefetchQuery.Response
 	var hash: SHA256Hash = .ReplayUploadedReplayListRefetchQuery
 	var variables: [String: String] = [:]

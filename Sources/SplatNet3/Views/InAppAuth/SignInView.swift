@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct SignInView: View {
+internal struct SignInView: View {
     @EnvironmentObject var session: SP3Session
     @Environment(\.dismiss) var dismiss
 
@@ -84,7 +84,7 @@ struct SignInView: View {
     }
 }
 
-struct _SignInView: View {
+internal struct _SignInView: View {
     @StateObject var session = SP3Session()
     @Environment(\.dismiss) var dismiss
     let sessionToken: String

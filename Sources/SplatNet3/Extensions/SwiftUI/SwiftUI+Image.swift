@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class SPImageService: ObservableObject {
+internal final class SPImageService: ObservableObject {
     @Published var documentPath: URL?
 
     /// 絶対重いよなあと思いながら使っている

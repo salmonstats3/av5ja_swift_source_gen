@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class CatalogQuery: GraphQL {
+internal final class CatalogQuery: GraphQL {
 	typealias ResponseType = CatalogQuery.Response
 	var hash: SHA256Hash = .CatalogQuery
 	var variables: [String: String] = [:]

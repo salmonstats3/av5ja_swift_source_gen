@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class DetailFestVotingStatusRefethQuery: GraphQL {
+internal final class DetailFestVotingStatusRefethQuery: GraphQL {
 	typealias ResponseType = DetailFestVotingStatusRefethQuery.Response
 	var hash: SHA256Hash = .DetailFestVotingStatusRefethQuery
 	var variables: [String: String] = [:]

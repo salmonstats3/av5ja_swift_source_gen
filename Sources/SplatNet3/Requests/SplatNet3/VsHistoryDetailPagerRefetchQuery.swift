@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class VsHistoryDetailPagerRefetchQuery: GraphQL {
+internal final class VsHistoryDetailPagerRefetchQuery: GraphQL {
 	typealias ResponseType = VsHistoryDetailPagerRefetchQuery.Response
 	var hash: SHA256Hash = .VsHistoryDetailPagerRefetchQuery
 	var variables: [String: String] = [:]

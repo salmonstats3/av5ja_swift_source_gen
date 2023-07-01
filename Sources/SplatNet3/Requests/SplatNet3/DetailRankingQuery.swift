@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class DetailRankingQuery: GraphQL {
+internal final class DetailRankingQuery: GraphQL {
 	typealias ResponseType = DetailRankingQuery.Response
 	var hash: SHA256Hash = .DetailRankingQuery
 	var variables: [String: String] = [:]

@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class LatestBattleHistoriesQuery: GraphQL {
+internal final class LatestBattleHistoriesQuery: GraphQL {
 	typealias ResponseType = LatestBattleHistoriesQuery.Response
 	var hash: SHA256Hash = .LatestBattleHistoriesQuery
 	var variables: [String: String] = [:]

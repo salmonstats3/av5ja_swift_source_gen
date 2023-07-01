@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class CoopPagerLatestCoopQuery: GraphQL {
+internal final class CoopPagerLatestCoopQuery: GraphQL {
 	typealias ResponseType = CoopPagerLatestCoopQuery.Response
 	var hash: SHA256Hash = .CoopPagerLatestCoopQuery
 	var variables: [String: String] = [:]

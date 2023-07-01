@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class HomeQuery: GraphQL {
+internal final class HomeQuery: GraphQL {
 	typealias ResponseType = HomeQuery.Response
 	var hash: SHA256Hash = .HomeQuery
 	var variables: [String: String] = [:]

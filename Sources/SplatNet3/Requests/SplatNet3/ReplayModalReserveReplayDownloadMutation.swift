@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class ReplayModalReserveReplayDownloadMutation: GraphQL {
+internal final class ReplayModalReserveReplayDownloadMutation: GraphQL {
 	typealias ResponseType = ReplayModalReserveReplayDownloadMutation.Response
 	var hash: SHA256Hash = .ReplayModalReserveReplayDownloadMutation
 	var variables: [String: String] = [:]

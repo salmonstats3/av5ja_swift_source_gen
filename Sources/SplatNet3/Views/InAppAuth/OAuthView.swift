@@ -26,7 +26,7 @@ public struct OAuthView: UIViewControllerRepresentable {
     }
 }
 
-struct SPAuthorizeView_Previews: PreviewProvider {
+internal struct SPAuthorizeView_Previews: PreviewProvider {
     static var previews: some View {
         OAuthView(contentId: .SP3)
     }

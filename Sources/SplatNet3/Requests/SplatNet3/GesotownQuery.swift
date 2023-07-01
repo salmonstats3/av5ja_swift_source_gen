@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class GesotownQuery: GraphQL {
+internal final class GesotownQuery: GraphQL {
 	typealias ResponseType = GesotownQuery.Response
 	var hash: SHA256Hash = .GesotownQuery
 	var variables: [String: String] = [:]

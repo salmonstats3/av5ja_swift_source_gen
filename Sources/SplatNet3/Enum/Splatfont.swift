@@ -157,7 +157,7 @@ public enum Splatfont2: String, SPFont {
     }
 }
 
-extension UIFontDescriptor {
+internal extension UIFontDescriptor {
     static func from<T: SPFont>(fonts: [T]) -> UIFontDescriptor {
         guard let font: UIFontDescriptor = fonts.first?.fontDescriptor
         else {
@@ -172,7 +172,7 @@ extension UIFontDescriptor {
     }
 }
 
-struct SplatfontModifier: ViewModifier {
+internal struct SplatfontModifier: ViewModifier {
     let fontName: String
     let size: CGFloat
     let locale = LocaleType(rawValue: LocalizedType.CommonLanguageCode.rawValue) ?? .JP

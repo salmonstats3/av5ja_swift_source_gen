@@ -26,7 +26,7 @@ import SwiftUI
 //    }
 // }
 
-struct FullScreen<Content: View>: UIViewControllerRepresentable {
+internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
     @Binding var isPresented: Bool
     let content: () -> Content
     let transitionStyle: UIModalTransitionStyle

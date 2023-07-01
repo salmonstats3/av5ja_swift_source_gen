@@ -10,7 +10,7 @@ import Alamofire
 import Foundation
 
 /// AccessToken
-class AccessToken: RequestType {
+internal class AccessToken: RequestType {
     typealias ResponseType = AccessToken.Response
 
     var method: HTTPMethod = .post

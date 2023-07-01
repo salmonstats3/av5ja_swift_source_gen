@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class FriendListRefetchQuery: GraphQL {
+internal final class FriendListRefetchQuery: GraphQL {
 	typealias ResponseType = FriendListRefetchQuery.Response
 	var hash: SHA256Hash = .FriendListRefetchQuery
 	var variables: [String: String] = [:]

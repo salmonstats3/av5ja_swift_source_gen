@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-protocol SPCredential: AuthenticationCredential, Codable {
+internal protocol SPCredential: AuthenticationCredential, Codable {
     /// ユーザーID
     var nsaid: String { get set }
     /// スプラトゥーン2で使われる認証トークン

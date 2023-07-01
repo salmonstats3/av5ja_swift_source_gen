@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-enum RequestHeader: CustomStringConvertible {
+internal enum RequestHeader: CustomStringConvertible {
     case AUTHORIZATION(String)
     case X_GAME_WEB_TOKEN(String)
     case DEFAULT(String, String)
@@ -44,7 +44,7 @@ enum RequestHeader: CustomStringConvertible {
     }
 }
 
-enum RequestHeaderKey: String, CaseIterable {
+internal enum RequestHeaderKey: String, CaseIterable {
     case AUTHORIZATION      = "Authorization"
     case X_GAME_WEB_TOKEN   = "X-GameWebToken"
 }

@@ -9,7 +9,7 @@
 import Foundation
 import WebKit
 
-enum NSScriptMessage {
+internal enum NSScriptMessage {
     /// ウィンドウを閉じる
     case closeWebView
     /// リロード
@@ -93,7 +93,7 @@ enum NSScriptMessage {
     }
 }
 
-struct ShareURL: Codable {
+internal struct ShareURL: Codable {
     let text: String
     let imageUrl: URL
     let hashtags: [String]
@@ -106,7 +106,7 @@ struct ShareURL: Codable {
     }
 }
 
-struct ShareImg: Codable {
+internal struct ShareImg: Codable {
     let text: String
     let url: URL
 
@@ -117,7 +117,7 @@ struct ShareImg: Codable {
     }
 }
 
-enum NSScriptMessageName: String, CaseIterable {
+internal enum NSScriptMessageName: String, CaseIterable {
     case closeWebView
     case reloadExtension
     case completeLoading

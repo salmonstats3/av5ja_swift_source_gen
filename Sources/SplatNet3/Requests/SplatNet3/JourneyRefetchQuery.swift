@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class JourneyRefetchQuery: GraphQL {
+internal final class JourneyRefetchQuery: GraphQL {
 	typealias ResponseType = JourneyRefetchQuery.Response
 	var hash: SHA256Hash = .JourneyRefetchQuery
 	var variables: [String: String] = [:]

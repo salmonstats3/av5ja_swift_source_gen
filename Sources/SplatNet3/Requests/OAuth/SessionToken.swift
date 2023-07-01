@@ -10,7 +10,7 @@ import Alamofire
 import Foundation
 
 /// SessionToken
-class SessionToken: RequestType {
+internal class SessionToken: RequestType {
     typealias ResponseType = SessionToken.Response
 
     var method: HTTPMethod = .post

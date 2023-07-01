@@ -10,7 +10,7 @@ import Alamofire
 import Foundation
 
 /// Version(X-Product-Version)
-class XVersion: RequestType {
+internal class XVersion: RequestType {
     typealias ResponseType = XVersion.Response
 
     var baseURL = URL(unsafeString: "https://apps.apple.com/")

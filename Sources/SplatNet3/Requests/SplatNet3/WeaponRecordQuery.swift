@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class WeaponRecordQuery: GraphQL {
+internal final class WeaponRecordQuery: GraphQL {
 	typealias ResponseType = WeaponRecordQuery.Response
 	var hash: SHA256Hash = .WeaponRecordQuery
 	var variables: [String: String] = [:]

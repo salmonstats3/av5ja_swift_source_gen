@@ -10,7 +10,7 @@ import Alamofire
 import Foundation
 
 /// GameServiceToken
-class GameServiceToken: RequestType {
+internal class GameServiceToken: RequestType {
     typealias ResponseType = GameServiceToken.Response
 
     var method: HTTPMethod = .post

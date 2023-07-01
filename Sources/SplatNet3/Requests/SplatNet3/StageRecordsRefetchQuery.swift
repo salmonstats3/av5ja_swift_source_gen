@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class StageRecordsRefetchQuery: GraphQL {
+internal final class StageRecordsRefetchQuery: GraphQL {
 	typealias ResponseType = StageRecordsRefetchQuery.Response
 	var hash: SHA256Hash = .StageRecordsRefetchQuery
 	var variables: [String: String] = [:]

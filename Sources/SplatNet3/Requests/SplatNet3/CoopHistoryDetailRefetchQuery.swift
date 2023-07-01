@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class CoopHistoryDetailRefetchQuery: GraphQL {
+internal final class CoopHistoryDetailRefetchQuery: GraphQL {
 	typealias ResponseType = CoopHistoryDetailRefetchQuery.Response
 	var hash: SHA256Hash = .CoopHistoryDetailRefetchQuery
 	var variables: [String: String] = [:]

@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class VotesUpdateFestVoteMutation: GraphQL {
+internal final class VotesUpdateFestVoteMutation: GraphQL {
 	typealias ResponseType = VotesUpdateFestVoteMutation.Response
 	var hash: SHA256Hash = .VotesUpdateFestVoteMutation
 	var variables: [String: String] = [:]

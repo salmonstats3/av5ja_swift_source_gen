@@ -47,7 +47,7 @@ public struct QRReaderView: UIViewControllerRepresentable {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+internal struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         QRReaderView()
     }

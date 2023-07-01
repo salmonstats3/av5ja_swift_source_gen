@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class ChallengeQuery: GraphQL {
+internal final class ChallengeQuery: GraphQL {
 	typealias ResponseType = ChallengeQuery.Response
 	var hash: SHA256Hash = .ChallengeQuery
 	var variables: [String: String] = [:]

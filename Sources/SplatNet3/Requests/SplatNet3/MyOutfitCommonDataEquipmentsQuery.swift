@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class MyOutfitCommonDataEquipmentsQuery: GraphQL {
+internal final class MyOutfitCommonDataEquipmentsQuery: GraphQL {
 	typealias ResponseType = MyOutfitCommonDataEquipmentsQuery.Response
 	var hash: SHA256Hash = .MyOutfitCommonDataEquipmentsQuery
 	var variables: [String: String] = [:]

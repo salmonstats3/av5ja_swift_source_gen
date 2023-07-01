@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class DetailTabViewXRankingGlRefetchQuery: GraphQL {
+internal final class DetailTabViewXRankingGlRefetchQuery: GraphQL {
 	typealias ResponseType = DetailTabViewXRankingGlRefetchQuery.Response
 	var hash: SHA256Hash = .DetailTabViewXRankingGlRefetchQuery
 	var variables: [String: String] = [:]

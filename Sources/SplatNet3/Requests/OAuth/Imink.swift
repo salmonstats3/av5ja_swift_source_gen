@@ -10,7 +10,7 @@ import Alamofire
 import Foundation
 
 /// Imink
-class Imink: RequestType {
+internal class Imink: RequestType {
     typealias ResponseType = Imink.ServerResponse
 
     var method: HTTPMethod = .post

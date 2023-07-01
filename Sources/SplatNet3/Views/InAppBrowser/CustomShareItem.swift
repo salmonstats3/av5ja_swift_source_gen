@@ -8,7 +8,7 @@
 import Foundation
 import LinkPresentation
 
-class CustomShareItem: NSObject, UIActivityItemSource {
+internal class CustomShareItem: NSObject, UIActivityItemSource {
     private let metadata = LPLinkMetadata()
 
     init(content: ShareURL) {

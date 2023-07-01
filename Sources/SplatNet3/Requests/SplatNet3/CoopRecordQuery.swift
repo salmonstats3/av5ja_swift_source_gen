@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-final class CoopRecordQuery: GraphQL {
+internal final class CoopRecordQuery: GraphQL {
     typealias ResponseType = CoopRecordQuery.Response
     var hash: SHA256Hash = .CoopRecordQuery
     var variables: [String: String] = [:]

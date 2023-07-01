@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum NXError: String, CaseIterable, Codable {
+internal enum NXError: String, CaseIterable, Codable {
     /// リクエストの内容が誤っている
     case INVALID_REQUEST    = "invalid_request"
     /// 権限が誤っている
@@ -17,7 +17,7 @@ enum NXError: String, CaseIterable, Codable {
     case INVALID_CLIENT     = "invalid_client"
 }
 
-enum NXErrorDescription: String, CaseIterable, Codable {
+internal enum NXErrorDescription: String, CaseIterable, Codable {
     /// リクエストの内容が誤っている
     case BAD_REQUEST    = "The request does not satisfy the schema"
     /// トークンコードが有効期限切れ
@@ -30,7 +30,7 @@ enum NXErrorDescription: String, CaseIterable, Codable {
     case OAUTH_FAILED   = "Client authentication failed"
 }
 
-enum NXErrorMessage: String, CaseIterable, Codable {
+internal enum NXErrorMessage: String, CaseIterable, Codable {
     /// リクエストが誤っている
     case BAD_REQUEST        = "Bad request."
     /// 要求されているバージョンよりも低い
