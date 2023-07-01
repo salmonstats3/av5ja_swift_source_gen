@@ -17,7 +17,7 @@ public struct ResourceType: Codable {
     let coopEnemyImg: [URL]
     let scaleImg: [URL]
     let fonts: [URL]
-    
+
     public enum ExtType: String, CaseIterable, Codable {
         case GIF    = "gif"
         case SVG    = "svg"
@@ -25,7 +25,7 @@ public struct ResourceType: Codable {
         case WOFF   = "woff"
         case WOFF2  = "woff2"
     }
-    
+
     struct StageImage: Codable {
         let banner: [URL]
         let icon: [URL]
@@ -53,9 +53,8 @@ public struct ResourceType: Codable {
                 return hash
             }
             if let host: String = url.host,
-               let rowId: String  = url.lastPathComponent.capture(pattern: #"([\w\d_].*).png"#, group: 1),
-               host == "leanny.github.io"
-            {
+               let rowId: String = url.lastPathComponent.capture(pattern: #"([\w\d_].*).png"#, group: 1),
+               host == "leanny.github.io" {
                 return rowId.contains("_Bear") ? "\(rowId.replacingOccurrences(of: "Path_Wst_", with: ""))_Coop".sha256Hash : rowId.sha256Hash
             }
             return nil
@@ -65,7 +64,7 @@ public struct ResourceType: Codable {
             guard let data: Data,
                   let type = ResourceURLType(url: url),
                   let hash: String = ResourceType.Response.getHash(url: url),
-                  let ext: ExtType = ExtType(rawValue: url.pathExtension)
+                  let ext = ExtType(rawValue: url.pathExtension)
             else {
                 SwiftyLogger.error("Invalid hash value. \(url)")
                 return nil
@@ -81,7 +80,7 @@ public struct ResourceType: Codable {
                 self.rawValue = rawValue
                 return
             }
-            
+
             /// VsStageKey
             if let rawValue: String = VsStageKey(rawValue: hash)?.coopStageId?.description {
                 self.rawValue = rawValue
@@ -117,25 +116,25 @@ public struct ResourceType: Codable {
                 self.rawValue = rawValue
                 return
             }
-            
+
             /// SP3WOFFKey
             if let rawValue: String = SP3WOFFKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
-            
+
             /// SP3WOFF2Key
             if let rawValue: String = SP3WOFF2Key(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
-            
+
             /// Scale
             if let rawValue: String = ScaleKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
-            
+
             SwiftyLogger.error("Could not recognized hash value. \(url)")
             return nil
         }
@@ -157,7 +156,7 @@ public enum ResourceURLType: String, CaseIterable, Codable {
     case CoopEnemy              = "coopEnemy"
     case WeaponInfoMainFlat     = "weapon_flat"
     case Scale                  = "images/coop/"
-    
+
     init?(url: URL) {
         if url.absoluteString.contains(ResourceURLType.StageImgBanner.rawValue) {
             self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)

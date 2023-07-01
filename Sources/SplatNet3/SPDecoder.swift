@@ -14,7 +14,7 @@ public class SPDecoder: JSONDecoder {
         self.dateDecodingStrategy = .iso8601
         self.keyDecodingStrategy = .convertFromSnakeCase
     }
-    
+
     static let `default`: SPDecoder = SPDecoder()
 }
 

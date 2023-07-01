@@ -1,5 +1,6 @@
 //
-//  BadgeInfo.swift
+//  BadgeInfoKey.swift
+//　SplatNet3
 //
 //  Created by tkgstrator on 2023/06/02
 //  Copyright @2023 Magi, Corporation. All rights reserved.
@@ -7,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable:next type_body_length
 public enum BadgeInfoKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .WeaponLevelShooterShort00Lv00
     public var id: Int { BadgeInfoId.allCases[BadgeInfoKey.allCases.firstIndex(of: self) ?? 0].rawValue }

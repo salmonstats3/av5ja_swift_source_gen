@@ -7,6 +7,7 @@
 
 import Foundation
 
+// swiftlint:disable:next type_body_length
 public enum LocalizedType: String, CaseIterable, Identifiable {
     public var id: String { rawValue }
 

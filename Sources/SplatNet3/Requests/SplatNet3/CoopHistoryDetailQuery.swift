@@ -134,11 +134,11 @@ fileprivate extension CoopHistoryDetailQuery.Response {
     /// 3. CoopInfoEnemyId
     var assetURLs: Set<URL> {
         let members: [CoopHistoryDetailQuery.MemberResult] = data.coopHistoryDetail.memberResults + [data.coopHistoryDetail.myResult]
-        let weaponURLs: Set<URL> = Set(data.coopHistoryDetail.weapons.map({ $0.image.url }) + members.flatMap({ $0.weapons.map({ $0.image.url })}))
+        let weaponURLs: Set<URL> = Set(data.coopHistoryDetail.weapons.map({ $0.image.url }) + members.flatMap({ $0.weapons.map({ $0.image.url }) }))
         let stageURLs: Set<URL> = Set([data.coopHistoryDetail.coopStage.image.url])
         let enemyURLs: Set<URL> = Set(data.coopHistoryDetail.enemyResults.map({ $0.enemy.image.url }))
         let bossURLs: Set<URL> = Set([data.coopHistoryDetail.bossResult?.boss.image.url].compactMap({ $0 }))
-        
+
         return weaponURLs.union(stageURLs).union(enemyURLs).union(bossURLs)
     }
 }

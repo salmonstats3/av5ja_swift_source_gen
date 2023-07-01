@@ -5,8 +5,8 @@
 //  Created by devonly on 2023/06/11.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 extension SP3Session {
     /// GraphQLを利用したリクエスト
@@ -49,7 +49,7 @@ extension SP3Session {
     internal func getCheckInHistory() async throws -> [CheckinWithQRCodeMutation.CheckInEventId] {
         try await request(CheckinQuery()).data.checkinHistories.map({ $0.id })
     }
-    
+
     /// 利用していないQRコードをリクエストする
     @discardableResult
     public func getCheckInWithQRCode() async throws -> [CheckinWithQRCodeMutation.CreateCheckinHistory] {

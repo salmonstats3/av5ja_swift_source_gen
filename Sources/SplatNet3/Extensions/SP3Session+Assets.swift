@@ -5,8 +5,8 @@
 //  Created by devonly on 2023/06/11.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 internal final class HashClient: Alamofire.Session, ObservableObject {
     @Published var assetURLs: Set<URL> = Set() {
@@ -16,26 +16,26 @@ internal final class HashClient: Alamofire.Session, ObservableObject {
     }
     @Published var total: Int = 0
     @Published var value: Int = 0
-    
+
     private func getAssetURLs() async throws -> Set<URL> {
         #if DEBUG
-        let url: URL = URL(unsafeString: "http://localhost:3000/v3/authorize/resources")
+        let url = URL(unsafeString: "http://localhost:3000/v3/authorize/resources")
         #else
-        let url: URL = URL(unsafeString: "https://api.splatnet3.com/v3/authorize/resources")
+        let url = URL(unsafeString: "https://api.splatnet3.com/v3/authorize/resources")
         #endif
         return try await download(url)
             .serializingDecodable(ResourceType.self, decoder: SPDecoder.default)
             .value
             .urls
     }
-    
+
     private func download(_ url: URL) async throws -> Data {
         try await download(url)
             .validate()
             .serializingData()
             .value
     }
-    
+
     func getAssets() async throws {
         guard let document: URL = FileManager.default.document
         else {
@@ -69,7 +69,7 @@ extension SP3Session {
     private func getCoopHistoryQueryResultIds(from playTime: Date? = nil) async throws -> [Common.ResultId] {
         try await request(CoopHistoryQuery()).getResultIds(from: playTime)
     }
-    
+
     /// リザルトを取得する
     private func getAllCoopHistoryDetailQuery(from playTime: Date? = nil) async throws -> [CoopHistoryDetailQuery.Response] {
         let resultIds: [Common.ResultId] = try await getCoopHistoryQueryResultIds()
@@ -84,7 +84,7 @@ extension SP3Session {
             }
         })
     }
-    
+
     /// アセットのURLを取得する
     /// - Returns: アセットのURL配列
     private func getAssetURLsFromSplatNet3() async throws -> Set<URL> {
@@ -93,7 +93,7 @@ extension SP3Session {
             .union(request(StageScheduleQuery()).assetURLs)
             .union(request(WeaponRecordQuery()).assetURLs)
     }
-    
+
     /// アセットのURLを取得する
     /// - Parameter url: ハッシュサーバーのURL
     /// - Returns: アセットのURL配列
@@ -104,7 +104,7 @@ extension SP3Session {
             .value
             .urls
     }
-    
+
     /// アセットを保存する
     /// ハッシュサーバーが指定されていればそのURLから、なければイカリング3から取得する
     /// - Parameter url: ハッシュサーバー
@@ -118,7 +118,7 @@ extension SP3Session {
         }()
         try await getAssets(assetURLs: Array(assetURLs), completion: completion)
     }
-       
+
     private func getAssets(assetURLs: [URL], completion: (() -> Void) = {}) async throws {
         guard let document: URL = FileManager.default.document
         else {

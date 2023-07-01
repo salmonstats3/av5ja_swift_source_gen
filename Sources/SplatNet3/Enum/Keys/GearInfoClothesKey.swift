@@ -7,6 +7,7 @@
 
 import Foundation
 
+// swiftlint:disable:next type_body_length
 public enum GearInfoClothesKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .CltFST001
     public var id: Int { GearInfoClothesId.allCases[GearInfoClothesKey.allCases.firstIndex(of: self) ?? 0].rawValue }

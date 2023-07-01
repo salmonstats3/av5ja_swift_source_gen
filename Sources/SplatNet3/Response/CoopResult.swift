@@ -7,6 +7,7 @@
 
 import Foundation
 
+// swiftlint:disable:next type_body_length
 public struct CoopResult: Codable {
     public let id: Common.ResultId
     public let scale: [Int?]

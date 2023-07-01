@@ -1,12 +1,14 @@
 //
 //  BadgeInfoId.swift
+//  SplatNet3
 //
-//  Created by tkgstrator on 2023/06/02
-//  Copyright @2023 Magi, Corporation. All rights reserved.
+//  Created by tkgstrator on 2023/06/02.
+//  Copyright 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
 
+// swiftlint:disable:next type_body_length
 public enum BadgeInfoId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .WeaponLevelShooterShort00Lv00
     public var id: Int { rawValue }

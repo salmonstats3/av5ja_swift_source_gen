@@ -18,18 +18,18 @@ public protocol SPFont: RawRepresentable, CaseIterable, Identifiable where RawVa
 
 extension SPFont {
     public var id: String { rawValue }
-    
+
     public var baseURL: URL {
         URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/static/media")
     }
-   
+
     public var fontURL: CFURL {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
             .appendingPathComponent(ResourceURLType.StaticMedia.rawValue, conformingTo: .url)
             .appendingPathComponent(rawValue, conformingTo: .url)
             .appendingPathExtension("woff2") as CFURL
     }
-    
+
     public var fontDescriptor: UIFontDescriptor? {
         guard let array: CFArray = CTFontManagerCreateFontDescriptorsFromURL(self.fontURL),
               let fonts: [CTFontDescriptor] = array as? [CTFontDescriptor],
@@ -40,7 +40,7 @@ extension SPFont {
         return (font as UIFontDescriptor)
     }
 
-    static public var fontName: String {
+    public static var fontName: String {
         String(describing: Self.self)
     }
 }
@@ -59,14 +59,14 @@ public enum LocaleType: String, CaseIterable {
 public class Splatfont {
     var splatfont1: UIFontDescriptor
     var splatfont2: UIFontDescriptor
-    
-    public static let shared: Splatfont = Splatfont(locale: LocaleType(rawValue: LocalizedType.CommonLanguageCode.description) ?? .JP)
-    
+
+    public static let shared = Splatfont(locale: LocaleType(rawValue: LocalizedType.CommonLanguageCode.description) ?? .JP)
+
     private init(locale: LocaleType) {
         self.splatfont1 = Splatfont1.locale(locale)
         self.splatfont2 = Splatfont2.locale(locale)
     }
-    
+
     public func configure(locale: LocaleType) {
         self.splatfont1 = Splatfont1.locale(locale)
         self.splatfont2 = Splatfont2.locale(locale)
@@ -86,14 +86,14 @@ public enum Splatfont1: String, SPFont {
     case Splatoon1CHzhLevel2            = "a24ca5d538d0b6a0d086"
     case Splatoon1TWzhLevel1            = "e991c1b3c2084df56d18"
     case Splatoon1TWzhLevel2            = "054b111fb7118a083ff7"
-    
+
     static let Common: [Self] = [
         Splatfont1.Splatoon1Common,
         Splatfont1.Splatoon1SymbolCommon,
         Splatfont1.Splatoon1CJKCommon,
-        Splatfont1.Splatoon1JPHiraganaKatakana
+        Splatfont1.Splatoon1JPHiraganaKatakana,
     ]
-    
+
     public static func locale(_ locale: LocaleType) -> UIFontDescriptor {
         switch locale {
         case .JP:
@@ -128,14 +128,14 @@ public enum Splatfont2: String, SPFont {
     case Splatoon2CHzhLevel2            = "f1fae9e976006ec600e1"
     case Splatoon2TWzhLevel1            = "e7cd7449c1194b2e74fc"
     case Splatoon2TWzhLevel2            = "c6e3984575483b178a4f"
-    
+
     static let Common: [Self] = [
         Splatfont2.Splatoon2SymbolCommon,
         Splatfont2.Splatoon2CJKCommon,
         Splatfont2.Splatoon2JPHiraganaKatakana,
         Splatfont2.Splatoon2Common,
     ]
-    
+
     public static func locale(_ locale: LocaleType) -> UIFontDescriptor {
         switch locale {
         case .JP:
@@ -175,13 +175,13 @@ extension UIFontDescriptor {
 struct SplatfontModifier: ViewModifier {
     let fontName: String
     let size: CGFloat
-    let locale: LocaleType = LocaleType(rawValue: LocalizedType.CommonLanguageCode.rawValue) ?? .JP
-    
+    let locale = LocaleType(rawValue: LocalizedType.CommonLanguageCode.rawValue) ?? .JP
+
     init(fontName: FontType, size: CGFloat) {
         self.fontName = fontName.rawValue
         self.size = size
     }
-    
+
     func body(content: Content) -> some View {
         content
             .font(.custom(fontName, size: size))

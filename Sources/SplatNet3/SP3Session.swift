@@ -88,7 +88,7 @@ open class SP3Session: Session {
     open func getCoopHistoryQuery() async throws -> CoopHistoryQuery.CoopResult {
         try await request(CoopHistoryQuery()).data.coopResult
     }
-    
+
     @discardableResult
     open func getAllCoopHistoryDetailQuery(playTime: Date? = nil, upload: Bool = false, completion: Completion) async throws -> [CoopResult] {
         completion(0, 1)

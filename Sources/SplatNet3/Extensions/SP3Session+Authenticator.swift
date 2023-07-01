@@ -5,8 +5,8 @@
 //  Created by devonly on 2023/06/11.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 extension SP3Session: Authenticator {
     public func refresh(_ credential: UserInfo, for session: Alamofire.Session, completion: @escaping (Result<UserInfo, Error>) -> Void) {

@@ -53,7 +53,7 @@ extension WeaponRecordQuery.Response {
         Set(data.weaponRecords.nodes.flatMap({ node -> [URL] in
             [
                 node.image2d.url,
-                node.specialWeapon.image.url
+                node.specialWeapon.image.url,
             ]
         }))
     }

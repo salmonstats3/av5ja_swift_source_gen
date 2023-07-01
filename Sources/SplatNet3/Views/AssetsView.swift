@@ -8,11 +8,11 @@
 import SwiftUI
 
 public struct AssetsView: View {
-    @StateObject private var session: HashClient = HashClient()
+    @StateObject private var session = HashClient()
     @Environment(\.dismiss) var dismiss
-    
+
     public init() {}
-    
+
     public var body: some View {
         GroupBox(content: {
             VStack(content: {

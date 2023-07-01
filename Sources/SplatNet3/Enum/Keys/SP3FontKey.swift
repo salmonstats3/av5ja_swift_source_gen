@@ -10,7 +10,7 @@ import Foundation
 public enum SP3WOFFKey: String, UnsafeRawRepresentable {
     public var id: String { rawValue }
     public static var defaultValue: SP3WOFFKey = .Splatoon1Common
-    
+
     case Splatoon1CHzhLevel1            = "022989c06c63abe87bc3"
     case Splatoon1CHzhLevel2            = "de4ed433f3a563a77d39"
     case Splatoon1CjkCommon             = "5cc9a80c28465394d4c0"
@@ -40,7 +40,7 @@ public enum SP3WOFFKey: String, UnsafeRawRepresentable {
 public enum SP3WOFF2Key: String, UnsafeRawRepresentable {
     public var id: String { rawValue }
     public static var defaultValue: SP3WOFF2Key = .Splatoon1Common
-    
+
     case Splatoon1CHzhLevel1            = "6b6af277c3dc45a8cf10"
     case Splatoon1CHzhLevel2            = "a24ca5d538d0b6a0d086"
     case Splatoon1CjkCommon             = "62441e2d3263b7141ca0"
