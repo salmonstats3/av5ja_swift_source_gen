@@ -12,6 +12,7 @@ import WebKit
 
 public struct OAuthView: UIViewControllerRepresentable {
     typealias UIViewType = WKWebView
+
     let contentId: ContentId
 
     public init(contentId: ContentId) {
@@ -34,6 +35,7 @@ internal struct SPAuthorizeView_Previews: PreviewProvider {
 
 public enum AuthType: Int, CaseIterable, Identifiable {
     public var id: Int { rawValue }
+
     case safari
     case webkit
 }

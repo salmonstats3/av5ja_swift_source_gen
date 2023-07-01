@@ -11,7 +11,8 @@ import Foundation
 
 internal final class CatalogRefetchQuery: GraphQL {
 	typealias ResponseType = CatalogRefetchQuery.Response
-	var hash: SHA256Hash = .CatalogRefetchQuery
+
+    var hash: SHA256Hash = .CatalogRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

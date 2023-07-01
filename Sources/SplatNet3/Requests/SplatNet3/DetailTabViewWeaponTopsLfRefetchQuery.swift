@@ -11,6 +11,7 @@ import Foundation
 
 internal final class DetailTabViewWeaponTopsLfRefetchQuery: GraphQL {
 	typealias ResponseType = DetailTabViewWeaponTopsLfRefetchQuery.Response
+
 	var hash: SHA256Hash = .DetailTabViewWeaponTopsLfRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

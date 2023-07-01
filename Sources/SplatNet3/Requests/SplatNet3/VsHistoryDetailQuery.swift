@@ -11,7 +11,8 @@ import Foundation
 
 internal final class VsHistoryDetailQuery: GraphQL {
 	typealias ResponseType = VsHistoryDetailQuery.Response
-	var hash: SHA256Hash = .VsHistoryDetailQuery
+
+    var hash: SHA256Hash = .VsHistoryDetailQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

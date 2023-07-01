@@ -11,7 +11,8 @@ import Foundation
 
 internal final class CheckinQuery: GraphQL {
 	typealias ResponseType = CheckinQuery.Response
-	var hash: SHA256Hash = .CheckinQuery
+
+    var hash: SHA256Hash = .CheckinQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

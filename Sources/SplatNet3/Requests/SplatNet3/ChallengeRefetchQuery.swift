@@ -11,6 +11,7 @@ import Foundation
 
 internal final class ChallengeRefetchQuery: GraphQL {
 	typealias ResponseType = ChallengeRefetchQuery.Response
+
 	var hash: SHA256Hash = .ChallengeRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

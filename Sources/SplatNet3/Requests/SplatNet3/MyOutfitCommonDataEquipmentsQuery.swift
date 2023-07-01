@@ -11,7 +11,8 @@ import Foundation
 
 internal final class MyOutfitCommonDataEquipmentsQuery: GraphQL {
 	typealias ResponseType = MyOutfitCommonDataEquipmentsQuery.Response
-	var hash: SHA256Hash = .MyOutfitCommonDataEquipmentsQuery
+
+    var hash: SHA256Hash = .MyOutfitCommonDataEquipmentsQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

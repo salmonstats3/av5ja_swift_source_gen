@@ -11,6 +11,7 @@ import Foundation
 
 internal final class GesotownRefetchQuery: GraphQL {
 	typealias ResponseType = GesotownRefetchQuery.Response
+
 	var hash: SHA256Hash = .GesotownRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -11,7 +11,8 @@ import Foundation
 
 internal final class ReplayModalReserveReplayDownloadMutation: GraphQL {
 	typealias ResponseType = ReplayModalReserveReplayDownloadMutation.Response
-	var hash: SHA256Hash = .ReplayModalReserveReplayDownloadMutation
+
+    var hash: SHA256Hash = .ReplayModalReserveReplayDownloadMutation
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

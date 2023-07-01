@@ -11,7 +11,8 @@ import Foundation
 
 internal final class ChallengeQuery: GraphQL {
 	typealias ResponseType = ChallengeQuery.Response
-	var hash: SHA256Hash = .ChallengeQuery
+
+    var hash: SHA256Hash = .ChallengeQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

@@ -11,7 +11,8 @@ import Foundation
 
 internal final class StageRecordsRefetchQuery: GraphQL {
 	typealias ResponseType = StageRecordsRefetchQuery.Response
-	var hash: SHA256Hash = .StageRecordsRefetchQuery
+
+    var hash: SHA256Hash = .StageRecordsRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

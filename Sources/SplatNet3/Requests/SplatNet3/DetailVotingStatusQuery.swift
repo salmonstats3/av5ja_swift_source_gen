@@ -11,6 +11,7 @@ import Foundation
 
 internal final class DetailVotingStatusQuery: GraphQL {
 	typealias ResponseType = DetailVotingStatusQuery.Response
+
 	var hash: SHA256Hash = .DetailVotingStatusQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

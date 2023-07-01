@@ -11,7 +11,8 @@ import Foundation
 
 internal final class SettingQuery: GraphQL {
 	typealias ResponseType = SettingQuery.Response
-	var hash: SHA256Hash = .SettingQuery
+
+    var hash: SHA256Hash = .SettingQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

@@ -11,6 +11,7 @@ import Foundation
 
 internal final class DetailFestRecordDetailQuery: GraphQL {
 	typealias ResponseType = DetailFestRecordDetailQuery.Response
+
 	var hash: SHA256Hash = .DetailFestRecordDetailQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

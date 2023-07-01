@@ -11,7 +11,8 @@ import Foundation
 
 internal final class ConfigureAnalyticsQuery: GraphQL {
 	typealias ResponseType = ConfigureAnalyticsQuery.Response
-	var hash: SHA256Hash = .ConfigureAnalyticsQuery
+
+    var hash: SHA256Hash = .ConfigureAnalyticsQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

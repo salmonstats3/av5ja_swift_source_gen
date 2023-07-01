@@ -11,6 +11,7 @@ import Foundation
 
 internal final class HeroHistoryRefetchQuery: GraphQL {
 	typealias ResponseType = HeroHistoryRefetchQuery.Response
+
 	var hash: SHA256Hash = .HeroHistoryRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

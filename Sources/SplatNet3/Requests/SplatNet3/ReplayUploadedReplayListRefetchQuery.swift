@@ -11,7 +11,8 @@ import Foundation
 
 internal final class ReplayUploadedReplayListRefetchQuery: GraphQL {
 	typealias ResponseType = ReplayUploadedReplayListRefetchQuery.Response
-	var hash: SHA256Hash = .ReplayUploadedReplayListRefetchQuery
+
+    var hash: SHA256Hash = .ReplayUploadedReplayListRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

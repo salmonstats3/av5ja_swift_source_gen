@@ -11,7 +11,8 @@ import Foundation
 
 internal final class StageRecordQuery: GraphQL {
 	typealias ResponseType = StageRecordQuery.Response
-	var hash: SHA256Hash = .StageRecordQuery
+
+    var hash: SHA256Hash = .StageRecordQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

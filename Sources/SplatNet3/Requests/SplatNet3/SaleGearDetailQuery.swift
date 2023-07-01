@@ -11,7 +11,8 @@ import Foundation
 
 internal final class SaleGearDetailQuery: GraphQL {
 	typealias ResponseType = SaleGearDetailQuery.Response
-	var hash: SHA256Hash = .SaleGearDetailQuery
+
+    var hash: SHA256Hash = .SaleGearDetailQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

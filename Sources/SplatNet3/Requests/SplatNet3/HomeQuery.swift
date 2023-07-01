@@ -11,7 +11,8 @@ import Foundation
 
 internal final class HomeQuery: GraphQL {
 	typealias ResponseType = HomeQuery.Response
-	var hash: SHA256Hash = .HomeQuery
+
+    var hash: SHA256Hash = .HomeQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

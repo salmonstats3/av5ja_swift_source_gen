@@ -11,7 +11,8 @@ import Foundation
 
 internal final class PhotoAlbumRefetchQuery: GraphQL {
 	typealias ResponseType = PhotoAlbumRefetchQuery.Response
-	var hash: SHA256Hash = .PhotoAlbumRefetchQuery
+
+    var hash: SHA256Hash = .PhotoAlbumRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

@@ -7,8 +7,9 @@
 
 import Foundation
 
-internal public enum ServerType: String, CaseIterable, Identifiable, Codable {
-    public var id: String { rawValue }
+internal enum ServerType: String, CaseIterable, Identifiable, Codable {
+    var id: String { rawValue }
+
     case Imink  = "https://api.imink.app"
     case Nxapi  = "https://nxapi-znca-api.fancy.org.uk"
 

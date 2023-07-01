@@ -11,6 +11,7 @@ import Foundation
 
 internal final class CoopRecordQuery: GraphQL {
     typealias ResponseType = CoopRecordQuery.Response
+
     var hash: SHA256Hash = .CoopRecordQuery
     var variables: [String: String] = [:]
     var parameters: Parameters?

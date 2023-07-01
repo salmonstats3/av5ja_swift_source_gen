@@ -11,6 +11,7 @@ import Foundation
 
 internal final class FestRecordQuery: GraphQL {
 	typealias ResponseType = FestRecordQuery.Response
+
 	var hash: SHA256Hash = .FestRecordQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

@@ -11,7 +11,8 @@ import Foundation
 
 internal final class CoopHistoryDetailRefetchQuery: GraphQL {
 	typealias ResponseType = CoopHistoryDetailRefetchQuery.Response
-	var hash: SHA256Hash = .CoopHistoryDetailRefetchQuery
+
+    var hash: SHA256Hash = .CoopHistoryDetailRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

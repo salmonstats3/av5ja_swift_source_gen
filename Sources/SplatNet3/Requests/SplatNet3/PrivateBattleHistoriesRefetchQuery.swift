@@ -11,7 +11,8 @@ import Foundation
 
 internal final class PrivateBattleHistoriesRefetchQuery: GraphQL {
 	typealias ResponseType = PrivateBattleHistoriesRefetchQuery.Response
-	var hash: SHA256Hash = .PrivateBattleHistoriesRefetchQuery
+
+    var hash: SHA256Hash = .PrivateBattleHistoriesRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

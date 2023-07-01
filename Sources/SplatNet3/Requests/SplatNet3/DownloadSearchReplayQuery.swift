@@ -11,6 +11,7 @@ import Foundation
 
 internal final class DownloadSearchReplayQuery: GraphQL {
 	typealias ResponseType = DownloadSearchReplayQuery.Response
+
 	var hash: SHA256Hash = .DownloadSearchReplayQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

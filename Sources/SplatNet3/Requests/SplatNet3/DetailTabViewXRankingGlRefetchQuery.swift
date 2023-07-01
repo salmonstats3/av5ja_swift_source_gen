@@ -11,6 +11,7 @@ import Foundation
 
 internal final class DetailTabViewXRankingGlRefetchQuery: GraphQL {
 	typealias ResponseType = DetailTabViewXRankingGlRefetchQuery.Response
+
 	var hash: SHA256Hash = .DetailTabViewXRankingGlRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

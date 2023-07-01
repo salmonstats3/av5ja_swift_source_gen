@@ -11,7 +11,8 @@ import Foundation
 
 internal final class PhotoAlbumQuery: GraphQL {
 	typealias ResponseType = PhotoAlbumQuery.Response
-	var hash: SHA256Hash = .PhotoAlbumQuery
+
+    var hash: SHA256Hash = .PhotoAlbumQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

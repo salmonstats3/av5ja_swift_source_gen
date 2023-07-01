@@ -11,7 +11,8 @@ import Foundation
 
 internal final class WeaponRecordQuery: GraphQL {
 	typealias ResponseType = WeaponRecordQuery.Response
-	var hash: SHA256Hash = .WeaponRecordQuery
+
+    var hash: SHA256Hash = .WeaponRecordQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

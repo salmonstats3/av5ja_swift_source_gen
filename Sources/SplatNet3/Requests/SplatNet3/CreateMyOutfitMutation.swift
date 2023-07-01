@@ -11,6 +11,7 @@ import Foundation
 
 internal final class CreateMyOutfitMutation: GraphQL {
 	typealias ResponseType = CreateMyOutfitMutation.Response
+
 	var hash: SHA256Hash = .CreateMyOutfitMutation
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

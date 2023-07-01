@@ -11,7 +11,8 @@ import Foundation
 
 internal final class XRankingQuery: GraphQL {
 	typealias ResponseType = XRankingQuery.Response
-	var hash: SHA256Hash = .XRankingQuery
+
+    var hash: SHA256Hash = .XRankingQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

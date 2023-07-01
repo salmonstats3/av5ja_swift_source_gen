@@ -11,7 +11,8 @@ import Foundation
 
 internal final class MyOutfitCommonDataFilteringConditionQuery: GraphQL {
 	typealias ResponseType = MyOutfitCommonDataFilteringConditionQuery.Response
-	var hash: SHA256Hash = .MyOutfitCommonDataFilteringConditionQuery
+
+    var hash: SHA256Hash = .MyOutfitCommonDataFilteringConditionQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

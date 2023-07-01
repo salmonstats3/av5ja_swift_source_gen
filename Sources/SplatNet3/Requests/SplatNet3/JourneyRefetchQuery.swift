@@ -11,7 +11,8 @@ import Foundation
 
 internal final class JourneyRefetchQuery: GraphQL {
 	typealias ResponseType = JourneyRefetchQuery.Response
-	var hash: SHA256Hash = .JourneyRefetchQuery
+
+    var hash: SHA256Hash = .JourneyRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

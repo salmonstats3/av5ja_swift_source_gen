@@ -9,11 +9,13 @@ import Foundation
 import SwiftUI
 
 public protocol SPFont: RawRepresentable, CaseIterable, Identifiable where RawValue == String {
+    static func locale(_ locale: LocaleType) -> UIFontDescriptor
+
+    static var fontName: String { get }
+
     var baseURL: URL { get }
     var fontURL: CFURL { get }
     var fontDescriptor: UIFontDescriptor? { get }
-    static func locale(_ locale: LocaleType) -> UIFontDescriptor
-    static var fontName: String { get }
 }
 
 public extension SPFont {

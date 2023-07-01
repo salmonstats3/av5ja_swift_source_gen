@@ -11,6 +11,7 @@ import Foundation
 
 internal final class FriendListQuery: GraphQL {
 	typealias ResponseType = FriendListQuery.Response
+
 	var hash: SHA256Hash = .FriendListQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

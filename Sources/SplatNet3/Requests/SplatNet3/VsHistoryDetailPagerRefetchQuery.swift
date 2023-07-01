@@ -11,7 +11,8 @@ import Foundation
 
 internal final class VsHistoryDetailPagerRefetchQuery: GraphQL {
 	typealias ResponseType = VsHistoryDetailPagerRefetchQuery.Response
-	var hash: SHA256Hash = .VsHistoryDetailPagerRefetchQuery
+
+    var hash: SHA256Hash = .VsHistoryDetailPagerRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

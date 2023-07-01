@@ -11,6 +11,7 @@ import Foundation
 
 internal final class FriendListRefetchQuery: GraphQL {
 	typealias ResponseType = FriendListRefetchQuery.Response
+
 	var hash: SHA256Hash = .FriendListRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

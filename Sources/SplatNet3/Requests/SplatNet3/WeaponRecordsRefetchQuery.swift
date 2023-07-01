@@ -11,7 +11,8 @@ import Foundation
 
 internal final class WeaponRecordsRefetchQuery: GraphQL {
 	typealias ResponseType = WeaponRecordsRefetchQuery.Response
-	var hash: SHA256Hash = .WeaponRecordsRefetchQuery
+
+    var hash: SHA256Hash = .WeaponRecordsRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

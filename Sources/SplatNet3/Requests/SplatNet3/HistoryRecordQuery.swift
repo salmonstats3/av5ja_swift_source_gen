@@ -11,6 +11,7 @@ import Foundation
 
 internal final class HistoryRecordQuery: GraphQL {
 	typealias ResponseType = HistoryRecordQuery.Response
+
 	var hash: SHA256Hash = .HistoryRecordQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?

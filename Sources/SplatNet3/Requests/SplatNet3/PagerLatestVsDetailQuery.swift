@@ -11,7 +11,8 @@ import Foundation
 
 internal final class PagerLatestVsDetailQuery: GraphQL {
 	typealias ResponseType = PagerLatestVsDetailQuery.Response
-	var hash: SHA256Hash = .PagerLatestVsDetailQuery
+
+    var hash: SHA256Hash = .PagerLatestVsDetailQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

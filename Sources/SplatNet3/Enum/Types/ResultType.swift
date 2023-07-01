@@ -9,6 +9,7 @@ import Foundation
 
 public enum IdType: String, CaseIterable, Codable, Identifiable {
     public var id: String { rawValue }
+
     case CoopHistoryDetail
     case CoopPlayer
 }

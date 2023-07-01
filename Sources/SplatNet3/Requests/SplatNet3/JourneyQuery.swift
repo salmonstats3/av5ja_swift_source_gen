@@ -11,7 +11,8 @@ import Foundation
 
 internal final class JourneyQuery: GraphQL {
 	typealias ResponseType = JourneyQuery.Response
-	var hash: SHA256Hash = .JourneyQuery
+
+    var hash: SHA256Hash = .JourneyQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

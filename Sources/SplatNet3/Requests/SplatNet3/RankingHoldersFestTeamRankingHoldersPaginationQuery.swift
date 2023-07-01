@@ -11,7 +11,8 @@ import Foundation
 
 internal final class RankingHoldersFestTeamRankingHoldersPaginationQuery: GraphQL {
 	typealias ResponseType = RankingHoldersFestTeamRankingHoldersPaginationQuery.Response
-	var hash: SHA256Hash = .RankingHoldersFestTeamRankingHoldersPaginationQuery
+
+    var hash: SHA256Hash = .RankingHoldersFestTeamRankingHoldersPaginationQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

@@ -11,7 +11,8 @@ import Foundation
 
 internal final class BankaraBattleHistoriesRefetchQuery: GraphQL {
 	typealias ResponseType = BankaraBattleHistoriesRefetchQuery.Response
-	var hash: SHA256Hash = .BankaraBattleHistoriesRefetchQuery
+
+    var hash: SHA256Hash = .BankaraBattleHistoriesRefetchQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

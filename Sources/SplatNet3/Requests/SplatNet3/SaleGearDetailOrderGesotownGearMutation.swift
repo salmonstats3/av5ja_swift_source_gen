@@ -11,7 +11,8 @@ import Foundation
 
 internal final class SaleGearDetailOrderGesotownGearMutation: GraphQL {
 	typealias ResponseType = SaleGearDetailOrderGesotownGearMutation.Response
-	var hash: SHA256Hash = .SaleGearDetailOrderGesotownGearMutation
+
+    var hash: SHA256Hash = .SaleGearDetailOrderGesotownGearMutation
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 

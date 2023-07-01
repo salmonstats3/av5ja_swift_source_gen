@@ -11,7 +11,8 @@ import Foundation
 
 internal final class XBattleHistoriesQuery: GraphQL {
 	typealias ResponseType = XBattleHistoriesQuery.Response
-	var hash: SHA256Hash = .XBattleHistoriesQuery
+
+    var hash: SHA256Hash = .XBattleHistoriesQuery
 	var variables: [String: String] = [:]
 	var parameters: Parameters?
 
