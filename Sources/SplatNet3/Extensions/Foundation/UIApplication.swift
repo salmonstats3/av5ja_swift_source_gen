@@ -9,59 +9,34 @@ import Foundation
 import SwiftUI
 import UIKit
 
-extension UIApplication {
-//    /// UIKitのコンポーネントをSwiftUIに変換して表示する
-//    public func present<Content: View>(
-//        isPresented: Binding<Bool>,
-//        isModalInPresentation: Bool = false,
-//        modalTransitionStyle: UIModalTransitionStyle = .coverVertical,
-//        modalPresentationStyle: UIModalPresentationStyle = .overFullScreen,
-//        @ViewBuilder content: @escaping () -> Content
-//    ) -> Void {
-//        guard let window: UIWindow = lastWindow
-//        else {
-//            return
-//        }
-//
-//        if isPresented.wrappedValue {
-//            window.isHidden = true
-//            let hosting: UIHostingController = UIHostingController(rootView: content())
-//            hosting.modalPresentationStyle = .overFullScreen
-//            hosting.isModalInPresentation = isModalInPresentation
-//            hosting.modalPresentationStyle = modalPresentationStyle
-//            hosting.modalTransitionStyle = modalTransitionStyle
-//            hosting.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
-//            UIApplication.shared.presentedViewController?.present(hosting, animated: true, completion: nil)
-//        }
-//    }
-
+public extension UIApplication {
     /// UIWindow
-    public var window: UIWindow? {
+    var window: UIWindow? {
         UIApplication.shared.connectedScenes.compactMap({ $0 as? UIWindowScene }).first?.windows.first
     }
 
     /// UIWindow
-    public var firstWindow: UIWindow? {
+    var firstWindow: UIWindow? {
         UIApplication.shared.foregroundScene?.windows.first
     }
 
     /// UIWindow
-    public var lastWindow: UIWindow? {
+    var lastWindow: UIWindow? {
         UIApplication.shared.foregroundScene?.windows.last
     }
 
     /// UIWindowScene
-    public var foregroundScene: UIWindowScene? {
+    var foregroundScene: UIWindowScene? {
         UIApplication.shared.connectedScenes.compactMap({ $0 as? UIWindowScene }).first(where: { $0.activationState == .foregroundActive })
     }
 
     /// 現在表示されているViewの親View
-    public var rootViewController: UIViewController? {
+    var rootViewController: UIViewController? {
         firstWindow?.rootViewController
     }
 
     /// 現在表示されている最も上位のView
-    public var presentedViewController: UIViewController? {
+    var presentedViewController: UIViewController? {
         guard let window: UIWindow = firstWindow
         else {
             return nil
@@ -82,7 +57,7 @@ extension UIApplication {
     }
 
     /// ロード画面を表示して処理を実行する
-    public func startAnimating(completion: @escaping () -> Void) {
+    func startAnimating(completion: @escaping () -> Void) {
         let controller = UIViewController(nibName: nil, bundle: nil)
 
         let progress = UIActivityIndicatorView(style: .medium)
@@ -99,7 +74,7 @@ extension UIApplication {
         UIApplication.shared.presentedViewController?.dismiss(animated: true)
     }
 
-    public func startAnimatingWithAsync(completion: @escaping @Sendable () async throws -> Void) async throws {
+    func startAnimatingWithAsync(completion: @escaping @Sendable () async throws -> Void) async throws {
         let controller = UIViewController(nibName: nil, bundle: nil)
 
         let progress = UIActivityIndicatorView(style: .medium)
@@ -122,7 +97,7 @@ extension UIApplication {
         }
     }
 
-    public func authorize(sessionToken: String, contentId: ContentId) {
+    func authorize(sessionToken: String, contentId: ContentId) {
         let hosting = UIHostingController(rootView: _SignInView(sessionToken: sessionToken))
         hosting.modalPresentationStyle = .overFullScreen
         hosting.modalTransitionStyle = .coverVertical
@@ -134,7 +109,7 @@ extension UIApplication {
     }
 
     /// 一番上にジャンプする
-    public func popToRootView() {
+    func popToRootView() {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let rootViewController = windowScene.windows.first(where: { $0.isKeyWindow })?.rootViewController,
            let navigationController = findNavigationController(rootViewController) {
@@ -142,7 +117,7 @@ extension UIApplication {
         }
     }
 
-    private func findNavigationController(_ viewController: UIViewController?) -> UINavigationController? {
+    func findNavigationController(_ viewController: UIViewController?) -> UINavigationController? {
         guard let viewController else {
             return nil
         }
@@ -159,8 +134,8 @@ extension UIApplication {
     }
 }
 
-extension UIViewController {
-    public func popover(_ viewControllerToPresent: UIActivityViewController, animated: Bool, completion: (() -> Void)? = nil) {
+public extension UIViewController {
+    func popover(_ viewControllerToPresent: UIActivityViewController, animated: Bool, completion: (() -> Void)? = nil) {
         if UIDevice.current.userInterfaceIdiom == .pad {
             if let popover = viewControllerToPresent.popoverPresentationController {
                 popover.sourceView = viewControllerToPresent.view

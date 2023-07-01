@@ -9,11 +9,11 @@
 import Alamofire
 import Foundation
 
-protocol SalmonStats: RequestType {}
+public protocol SalmonStats: RequestType {}
 
-extension SalmonStats {
+public extension SalmonStats {
     #if DEBUG
-    public var baseURL: URL {
+    var baseURL: URL {
         #if targetEnvironment(simulator)
         URL(unsafeString: "https://api.splatnet3.com")
         #else
@@ -21,7 +21,7 @@ extension SalmonStats {
         #endif
     }
     #else
-    public var baseURL: URL {
+    var baseURL: URL {
         URL(unsafeString: "https://api.splatnet3.com")
     }
     #endif

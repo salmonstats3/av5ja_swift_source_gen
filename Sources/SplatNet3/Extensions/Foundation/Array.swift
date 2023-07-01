@@ -7,26 +7,26 @@
 
 import Foundation
 
-extension Array {
-    public func chunked(by chunkSize: Int) -> [[Element]] {
+public extension Array {
+    func chunked(by chunkSize: Int) -> [[Element]] {
         stride(from: 0, to: self.count, by: chunkSize).map {
             Array(self[$0..<Swift.min($0 + chunkSize, self.count)])
         }
     }
 
-    public func add<T: Numeric>(_ input: [T]) -> [T] {
+    func add<T: Numeric>(_ input: [T]) -> [T] {
         zip(self as! [T], input).map({ $0.0 + $0.1 })
     }
 }
 
-extension Array where Element: Numeric {
-    public mutating func add(_ input: [Element]) {
+public extension Array where Element: Numeric {
+    mutating func add(_ input: [Element]) {
         self = Array(zip(self, input).map({ $0.0 + $0.1 }))
     }
 }
 
-extension Array where Element == [Int] {
-    public func sum() -> [Int] {
+public extension Array where Element == [Int] {
+    func sum() -> [Int] {
         if let first = self.first {
             var sum: [Int] = Element(repeating: 0, count: first.count)
             _ = self.map({ sum = sum.add($0) })

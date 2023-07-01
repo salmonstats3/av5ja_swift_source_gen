@@ -87,8 +87,8 @@ public class CoopStatsResultsQuery: RequestType {
     }
 }
 
-extension Encodable {
-    public func asJSON() -> [String: Any] {
+public extension Encodable {
+    func asJSON() -> [String: Any] {
         let encoder: JSONEncoder = {
             let encoder = JSONEncoder()
             encoder.outputFormatting = .withoutEscapingSlashes

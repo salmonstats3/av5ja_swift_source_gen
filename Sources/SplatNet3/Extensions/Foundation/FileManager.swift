@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension FileManager {
-    public var document: URL? {
+public extension FileManager {
+    var document: URL? {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
     }
 }

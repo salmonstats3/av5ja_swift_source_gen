@@ -10,9 +10,9 @@ import Alamofire
 import Foundation
 import SwiftyBeaver
 
-extension DataRequest {
+public extension DataRequest {
     @discardableResult
-    public func validationWithNXError() -> Self {
+    func validationWithNXError() -> Self {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return cURLDescription(calling: { requestURL in

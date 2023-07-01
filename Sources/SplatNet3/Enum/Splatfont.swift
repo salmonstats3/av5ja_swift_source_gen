@@ -16,21 +16,21 @@ public protocol SPFont: RawRepresentable, CaseIterable, Identifiable where RawVa
     static var fontName: String { get }
 }
 
-extension SPFont {
-    public var id: String { rawValue }
+public extension SPFont {
+    var id: String { rawValue }
 
-    public var baseURL: URL {
+    var baseURL: URL {
         URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/static/media")
     }
 
-    public var fontURL: CFURL {
+    var fontURL: CFURL {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
             .appendingPathComponent(ResourceURLType.StaticMedia.rawValue, conformingTo: .url)
             .appendingPathComponent(rawValue, conformingTo: .url)
             .appendingPathExtension("woff2") as CFURL
     }
 
-    public var fontDescriptor: UIFontDescriptor? {
+    var fontDescriptor: UIFontDescriptor? {
         guard let array: CFArray = CTFontManagerCreateFontDescriptorsFromURL(self.fontURL),
               let fonts: [CTFontDescriptor] = array as? [CTFontDescriptor],
               let font: CTFontDescriptor = fonts.first
@@ -40,7 +40,7 @@ extension SPFont {
         return (font as UIFontDescriptor)
     }
 
-    public static var fontName: String {
+    static var fontName: String {
         String(describing: Self.self)
     }
 }
@@ -205,13 +205,13 @@ extension Font {
     }
 }
 
-extension Text {
+public extension Text {
     /// スプラトゥーンフォントを読み込む
     /// - Parameters:
     ///   - fontName: 1/2
     ///   - size: フォントサイズ
     /// - Returns: View
-    public func font(systemName: FontType, size: CGFloat = UIFont.systemFontSize) -> some View {
+    func font(systemName: FontType, size: CGFloat = UIFont.systemFontSize) -> some View {
         switch systemName {
         case .Splatfont1:
             return self.font(Font(UIFont(descriptor: Splatfont.shared.splatfont1, size: size))).frame(height: size)

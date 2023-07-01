@@ -182,8 +182,8 @@ public enum Common {
     }
 }
 
-extension KeyedDecodingContainer {
-    public func decode(_ type: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal {
+public extension KeyedDecodingContainer {
+    func decode(_ type: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal {
         let doubleValue: Double = try decode(Double.self, forKey: key)
         guard let decimalValue = Decimal(string: doubleValue.description)
         else {
@@ -192,7 +192,7 @@ extension KeyedDecodingContainer {
         return decimalValue
     }
 
-    public func decodeIfPresent(_ type: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal? {
+    func decodeIfPresent(_ type: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal? {
         guard let doubleValue: Double = try decodeIfPresent(Double.self, forKey: key)
         else {
             return nil

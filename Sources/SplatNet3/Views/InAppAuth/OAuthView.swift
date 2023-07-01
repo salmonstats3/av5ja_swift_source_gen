@@ -38,9 +38,9 @@ public enum AuthType: Int, CaseIterable, Identifiable {
     case webkit
 }
 
-extension View {
+public extension View {
     @ViewBuilder
-    public func authorize(isPresented: Binding<Bool>, contentId: ContentId, session: SP3Session, using: AuthType = .webkit) -> some View {
+    func authorize(isPresented: Binding<Bool>, contentId: ContentId, session: SP3Session, using: AuthType = .webkit) -> some View {
         switch using {
         case .safari:
             self.sheet(isPresented: isPresented, content: {

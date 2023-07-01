@@ -8,8 +8,8 @@
 import Charts
 import Foundation
 
-extension CoopGradeId {
-    public var description: String {
+public extension CoopGradeId {
+    var description: String {
         NSLocalizedString(String(describing: self), bundle: .module, comment: "")
     }
 }
