@@ -12,7 +12,7 @@ import UIKit
 public class CoopStatsResultsQuery: RequestType {
     public typealias ResponseType = [Response]
     #if targetEnvironment(simulator)
-    public var baseURL = URL(unsafeString: "http://localhost:8080/")
+    public var baseURL = URL(unsafeString: "http://localhost:3000/")
     #else
     public var baseURL = URL(unsafeString: "https://api.splatnet3.com/")
     #endif

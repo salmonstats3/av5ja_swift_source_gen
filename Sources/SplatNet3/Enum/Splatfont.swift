@@ -8,14 +8,15 @@
 import Foundation
 import SwiftUI
 
-public protocol Splatfont: RawRepresentable, CaseIterable, Identifiable where RawValue == String {
+public protocol SPFont: RawRepresentable, CaseIterable, Identifiable where RawValue == String {
     var baseURL: URL { get }
     var fontURL: CFURL { get }
     var fontDescriptor: UIFontDescriptor? { get }
     static func locale(_ locale: LocaleType) -> UIFontDescriptor
+    static var fontName: String { get }
 }
 
-extension Splatfont {
+extension SPFont {
     public var id: String { rawValue }
     
     public var baseURL: URL {
@@ -38,6 +39,10 @@ extension Splatfont {
         }
         return (font as UIFontDescriptor)
     }
+
+    static public var fontName: String {
+        String(describing: Self.self)
+    }
 }
 
 public enum FontType: String, CaseIterable {
@@ -51,7 +56,24 @@ public enum LocaleType: String, CaseIterable {
     case TW = "2"
 }
 
-public enum Splatfont1: String, Splatfont {
+public class Splatfont {
+    var splatfont1: UIFontDescriptor
+    var splatfont2: UIFontDescriptor
+    
+    public static let shared: Splatfont = Splatfont(locale: LocaleType(rawValue: LocalizedType.CommonLanguageCode.description) ?? .JP)
+    
+    private init(locale: LocaleType) {
+        self.splatfont1 = Splatfont1.locale(locale)
+        self.splatfont2 = Splatfont2.locale(locale)
+    }
+    
+    public func configure(locale: LocaleType) {
+        self.splatfont1 = Splatfont1.locale(locale)
+        self.splatfont2 = Splatfont2.locale(locale)
+    }
+}
+
+public enum Splatfont1: String, SPFont {
     case Splatoon1Common                = "3b7ce8b3c19f74921f51"
     case Splatoon1SymbolCommon          = "38ddb9a11cb1f225e092"
     case Splatoon1CJKCommon             = "62441e2d3263b7141ca0"
@@ -75,25 +97,25 @@ public enum Splatfont1: String, Splatfont {
     public static func locale(_ locale: LocaleType) -> UIFontDescriptor {
         switch locale {
         case .JP:
-            return UIFontDescriptor.from(fonts: [
+            return UIFontDescriptor.from(fonts: Splatfont1.Common + [
                 Splatfont1.Splatoon1JPLevel1,
                 Splatfont1.Splatoon1JPLevel2,
-            ] + Splatfont1.Common)
+            ])
         case .CN:
-            return UIFontDescriptor.from(fonts: [
+            return UIFontDescriptor.from(fonts: Splatfont1.Common + [
                 Splatfont1.Splatoon1CHzhLevel1,
                 Splatfont1.Splatoon1CHzhLevel2,
-            ] + Splatfont1.Common)
+            ])
         case .TW:
-            return UIFontDescriptor.from(fonts: [
+            return UIFontDescriptor.from(fonts: Splatfont1.Common + [
                 Splatfont1.Splatoon1TWzhLevel1,
                 Splatfont1.Splatoon1TWzhLevel2,
-            ] + Splatfont1.Common)
+            ])
         }
     }
 }
 
-public enum Splatfont2: String, Splatfont {
+public enum Splatfont2: String, SPFont {
     case Splatoon2Common                = "4e7b2cad208fa2fc42ca"
     case Splatoon2SymbolCommon          = "93fd6ce98e21ffcf60bb"
     case Splatoon2CJKCommon             = "7dc791c403ed7f33d73e"
@@ -108,10 +130,10 @@ public enum Splatfont2: String, Splatfont {
     case Splatoon2TWzhLevel2            = "c6e3984575483b178a4f"
     
     static let Common: [Self] = [
-        Splatfont2.Splatoon2Common,
         Splatfont2.Splatoon2SymbolCommon,
         Splatfont2.Splatoon2CJKCommon,
         Splatfont2.Splatoon2JPHiraganaKatakana,
+        Splatfont2.Splatoon2Common,
     ]
     
     public static func locale(_ locale: LocaleType) -> UIFontDescriptor {
@@ -122,27 +144,31 @@ public enum Splatfont2: String, Splatfont {
                 Splatfont2.Splatoon2JPLevel2,
             ])
         case .CN:
-            return UIFontDescriptor.from(fonts: [
+            return UIFontDescriptor.from(fonts: Splatfont2.Common + [
                 Splatfont2.Splatoon2CHzhLevel1,
                 Splatfont2.Splatoon2CHzhLevel2,
-            ] + Splatfont2.Common)
+            ])
         case .TW:
-            return UIFontDescriptor.from(fonts: [
+            return UIFontDescriptor.from(fonts: Splatfont2.Common + [
                 Splatfont2.Splatoon2TWzhLevel1,
                 Splatfont2.Splatoon2TWzhLevel2,
-            ] + Splatfont2.Common)
+            ])
         }
     }
 }
 
 extension UIFontDescriptor {
-    static func from<T: Splatfont>(fonts: [T]) -> UIFontDescriptor {
-        let descriptor: UIFontDescriptor = UIFontDescriptor(name: "Splatoon2", size: UIFont.systemFontSize)
-        print("Init", descriptor.fontAttributes)
-        let font: UIFontDescriptor = descriptor
-            .addingAttributes([UIFontDescriptor.AttributeName.family: "Splatfont2"])
-        print("Init", font.fontAttributes)
-        return font
+    static func from<T: SPFont>(fonts: [T]) -> UIFontDescriptor {
+        guard let font: UIFontDescriptor = fonts.first?.fontDescriptor
+        else {
+            return UIFontDescriptor()
+        }
+        let descriptor = font
+            .addingAttributes([UIFontDescriptor.AttributeName.cascadeList: fonts.map({ $0.fontDescriptor })])
+            .addingAttributes([UIFontDescriptor.AttributeName.family: T.fontName])
+            .addingAttributes([UIFontDescriptor.AttributeName.matrix: CGAffineTransform(scaleX: 1.0, y: 1.0)])
+        print(descriptor.fontAttributes)
+        return descriptor
     }
 }
 
@@ -179,13 +205,18 @@ extension Font {
     }
 }
 
-extension View {
+extension Text {
     /// スプラトゥーンフォントを読み込む
     /// - Parameters:
     ///   - fontName: 1/2
     ///   - size: フォントサイズ
     /// - Returns: View
-    public func font(systemName: FontType, size: CGFloat) -> some View {
-        self.font(.custom(systemName.rawValue, size: size))
+    public func font(systemName: FontType, size: CGFloat = UIFont.systemFontSize) -> some View {
+        switch systemName {
+        case .Splatfont1:
+            return self.font(Font(UIFont(descriptor: Splatfont.shared.splatfont1, size: size))).frame(height: size)
+        case .Splatfont2:
+            return self.font(Font(UIFont(descriptor: Splatfont.shared.splatfont2, size: size))).frame(height: size)
+        }
     }
 }
