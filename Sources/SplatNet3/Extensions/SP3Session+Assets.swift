@@ -138,7 +138,6 @@ extension SP3Session {
                 completion()
             }
         }).compactMap { $0 }
-        print("Assets", assetURLs.count, assets.count)
         try assets.forEach { asset in
             let documentPath: URL = document.appendingPathComponent(asset.type.rawValue)
             try FileManager.default.createDirectory(atPath: documentPath.path, withIntermediateDirectories: true, attributes: nil)

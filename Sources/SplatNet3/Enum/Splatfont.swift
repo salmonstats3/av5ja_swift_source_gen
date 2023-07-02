@@ -169,7 +169,6 @@ internal extension UIFontDescriptor {
             .addingAttributes([UIFontDescriptor.AttributeName.cascadeList: fonts.map(\.fontDescriptor)])
             .addingAttributes([UIFontDescriptor.AttributeName.family: T.fontName])
             .addingAttributes([UIFontDescriptor.AttributeName.matrix: CGAffineTransform(scaleX: 1.0, y: 1.0)])
-        print(descriptor.fontAttributes)
         return descriptor
     }
 }

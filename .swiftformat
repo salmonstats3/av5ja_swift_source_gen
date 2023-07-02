@@ -1,0 +1,7 @@
+--swiftversion 5.7.1
+--exclude .build
+--exclude .github
+--exclude .swiftpm
+
+--commas inline
+--ranges no-space
