@@ -45,7 +45,7 @@ public extension CoopEnemyInfoKey {
 @available(iOS 16.0, *)
 extension CoopEnemyInfoId: Plottable {
     public var primitivePlottable: String {
-        String(self.rawValue)
+        String(rawValue)
     }
 
     public init?(primitivePlottable: String) {

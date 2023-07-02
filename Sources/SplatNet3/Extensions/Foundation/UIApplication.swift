@@ -1,6 +1,6 @@
 //
 //  UIApplication.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/23.
 //
@@ -12,7 +12,7 @@ import UIKit
 public extension UIApplication {
     /// UIWindow
     var window: UIWindow? {
-        UIApplication.shared.connectedScenes.compactMap({ $0 as? UIWindowScene }).first?.windows.first
+        UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first?.windows.first
     }
 
     /// UIWindow
@@ -27,7 +27,7 @@ public extension UIApplication {
 
     /// UIWindowScene
     var foregroundScene: UIWindowScene? {
-        UIApplication.shared.connectedScenes.compactMap({ $0 as? UIWindowScene }).first(where: { $0.activationState == .foregroundActive })
+        UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first(where: { $0.activationState == .foregroundActive })
     }
 
     /// 現在表示されているViewの親View
@@ -97,15 +97,15 @@ public extension UIApplication {
         }
     }
 
-    func authorize(sessionToken: String, contentId: ContentId) {
+    func authorize(sessionToken: String, contentId _: ContentId) {
         let hosting = UIHostingController(rootView: _SignInView(sessionToken: sessionToken))
         hosting.modalPresentationStyle = .overFullScreen
         hosting.modalTransitionStyle = .coverVertical
         hosting.overrideUserInterfaceStyle = .dark
         hosting.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.presentedViewController?.present(hosting, animated: true)
-        })
+        }
     }
 
     /// 一番上にジャンプする

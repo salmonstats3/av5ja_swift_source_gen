@@ -22,9 +22,9 @@ internal class Imink: RequestType {
 
     init(accessToken: AccessToken.Response, server: ServerType = .Imink, requestId: String, timestamp: UInt64) throws {
         let token: JSONWebToken = try JSONWebToken(gameWebToken: accessToken.idToken)
-        self.baseURL = URL(unsafeString: server.rawValue)
-        self.path = server.path
-        self.parameters = [
+        baseURL = URL(unsafeString: server.rawValue)
+        path = server.path
+        parameters = [
             "token": accessToken.idToken,
             "hash_method": String(IminkType.nso.rawValue),
             "timestamp": timestamp,
@@ -35,9 +35,9 @@ internal class Imink: RequestType {
 
     init(accessToken: GameServiceToken.Response, server: ServerType = .Imink, requestId: String, timestamp: UInt64) throws {
         let token: JSONWebToken = try JSONWebToken(gameWebToken: accessToken.result.webApiServerCredential.accessToken)
-        self.baseURL = URL(unsafeString: server.rawValue)
-        self.path = server.path
-        self.parameters = [
+        baseURL = URL(unsafeString: server.rawValue)
+        path = server.path
+        parameters = [
             "token": accessToken.result.webApiServerCredential.accessToken,
             "hash_method": String(IminkType.app.rawValue),
             "timestamp": timestamp,
@@ -48,11 +48,11 @@ internal class Imink: RequestType {
     }
 
     init(accessToken: AccessToken.Response, server: ServerType = .Imink) {
-        self.baseURL = URL(unsafeString: server.rawValue)
-        self.path = server.path
+        baseURL = URL(unsafeString: server.rawValue)
+        path = server.path
 
         if let na_id: String = try? JSONWebToken(gameWebToken: accessToken.idToken).payload.sub.description {
-            self.parameters = [
+            parameters = [
                 "token": accessToken.accessToken,
                 "hash_method": String(IminkType.nso.rawValue),
                 "timestamp": Date().timeIntervalSince1970,
@@ -60,7 +60,7 @@ internal class Imink: RequestType {
                 "na_id": na_id,
             ]
         } else {
-            self.parameters = [
+            parameters = [
                 "token": accessToken.accessToken,
                 "hash_method": String(IminkType.nso.rawValue),
             ]
@@ -68,10 +68,10 @@ internal class Imink: RequestType {
     }
 
     init(accessToken: GameServiceToken.Response, server: ServerType = .Imink) {
-        self.baseURL = URL(unsafeString: server.rawValue)
-        self.path = server.path
+        baseURL = URL(unsafeString: server.rawValue)
+        path = server.path
         if let na_id: String = try? JSONWebToken(gameWebToken: accessToken.result.webApiServerCredential.accessToken).payload.sub.description {
-            self.parameters = [
+            parameters = [
                 "token": accessToken.result.webApiServerCredential.accessToken,
                 "hash_method": String(IminkType.nso.rawValue),
                 "timestamp": Date().timeIntervalSince1970,
@@ -80,7 +80,7 @@ internal class Imink: RequestType {
                 "coral_user_id": accessToken.result.user.id.description,
             ]
         } else {
-            self.parameters = [
+            parameters = [
                 "token": accessToken.result.webApiServerCredential.accessToken,
                 "hash_method": String(IminkType.nso.rawValue),
             ]
@@ -94,7 +94,7 @@ internal class Imink: RequestType {
 
         init(f: String, requsetId: String, timestamp: UInt64) {
             self.f = f
-            self.requestId = requsetId
+            requestId = requsetId
             self.timestamp = timestamp
         }
     }

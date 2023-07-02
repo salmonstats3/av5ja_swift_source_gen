@@ -1,6 +1,6 @@
 //
 //  SwiftUIView.swift
-//  
+//
 //
 //  Created by devonly on 2023/03/16.
 //
@@ -15,10 +15,10 @@ public struct QRReaderView: UIViewControllerRepresentable {
     let view: UIView
 
     public init() {
-        self.reader = QRCaptureSession()
-        self.view = _QRReaderView(session: reader)
-        self.reader.onDidFinish = { _ in
-            DispatchQueue.main.async(execute: {
+        reader = QRCaptureSession()
+        view = _QRReaderView(session: reader)
+        reader.onDidFinish = { _ in
+            DispatchQueue.main.async {
                 UIApplication.shared.startAnimating(completion: {
 //                    Task(priority: .utility, operation: {
 //                        do {
@@ -29,22 +29,20 @@ public struct QRReaderView: UIViewControllerRepresentable {
 //                        UIApplication.shared.presentedViewController?.dismiss(animated: true)
 //                    })
                 })
-            })
+            }
         }
     }
 
-    public func makeCoordinator() -> Coordinator {
-    }
+    public func makeCoordinator() -> Coordinator {}
 
-    public func makeUIViewController(context: Context) -> UIViewController {
+    public func makeUIViewController(context _: Context) -> UIViewController {
         let controller = UIViewController()
-        controller.view = self.view
-        self.reader.startRunning()
+        controller.view = view
+        reader.startRunning()
         return controller
     }
 
-    public func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-    }
+    public func updateUIViewController(_: UIViewController, context _: Context) {}
 }
 
 internal struct SwiftUIView_Previews: PreviewProvider {

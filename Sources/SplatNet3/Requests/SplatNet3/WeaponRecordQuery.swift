@@ -10,13 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class WeaponRecordQuery: GraphQL {
-	typealias ResponseType = WeaponRecordQuery.Response
+    typealias ResponseType = WeaponRecordQuery.Response
 
     var hash: SHA256Hash = .WeaponRecordQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
     public struct Response: Codable {
         public let data: DataClass
@@ -51,11 +51,11 @@ extension WeaponRecordQuery.Response {
     /// 1. WeaponInfoMainId
     /// 2. WeaponInfoSpecialId
     var assetURLs: Set<URL> {
-        Set(data.weaponRecords.nodes.flatMap({ node -> [URL] in
+        Set(data.weaponRecords.nodes.flatMap { node -> [URL] in
             [
                 node.image2d.url,
                 node.specialWeapon.image.url,
             ]
-        }))
+        })
     }
 }

@@ -27,14 +27,15 @@ public class SPWebViewController: UIViewController, WKURLSchemeHandler {
         configuration.applicationNameForUserAgent = "SplatNet/@tkgling"
         let webView = SPWebView(frame: .zero, configuration: configuration)
         webView.load(URLRequest(url: URL(state: state, verifier: verifier)))
-        self.view = webView
+        view = webView
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask) {
+    public func webView(_: WKWebView, start urlSchemeTask: WKURLSchemeTask) {
         guard let oauthURL: String = urlSchemeTask.request.url?.absoluteString,
               let code: String = oauthURL.capture(pattern: "de=(.*)&", group: 1)
         else {
@@ -51,6 +52,5 @@ public class SPWebViewController: UIViewController, WKURLSchemeHandler {
         }
     }
 
-    public func webView(_ webView: WKWebView, stop urlSchemeTask: WKURLSchemeTask) {
-    }
+    public func webView(_: WKWebView, stop _: WKURLSchemeTask) {}
 }

@@ -1,6 +1,6 @@
 //
 //  SP3Session+Authenticator.swift
-//  
+//
 //
 //  Created by devonly on 2023/06/11.
 //
@@ -9,7 +9,7 @@ import Alamofire
 import Foundation
 
 extension SP3Session: Authenticator {
-    public func refresh(_ credential: UserInfo, for session: Alamofire.Session, completion: @escaping (Result<UserInfo, Error>) -> Void) {
+    public func refresh(_: UserInfo, for _: Alamofire.Session, completion: @escaping (Result<UserInfo, Error>) -> Void) {
         Task {
             let session = SP3Session()
             do {
@@ -24,19 +24,19 @@ extension SP3Session: Authenticator {
     public func apply(_ credential: UserInfo, to urlRequest: inout URLRequest) {
         if let bulletToken: String = credential.bulletToken {
             #if DEBUG
-            urlRequest.headers.add(.authorization(bearerToken: bulletToken))
+                urlRequest.headers.add(.authorization(bearerToken: bulletToken))
             #else
-            urlRequest.headers.add(.authorization(bearerToken: bulletToken))
+                urlRequest.headers.add(.authorization(bearerToken: bulletToken))
             #endif
             urlRequest.headers.add(name: "X-Web-View-Ver", value: version)
         }
     }
 
-    public func didRequest(_ urlRequest: URLRequest, with response: HTTPURLResponse, failDueToAuthenticationError error: Error) -> Bool {
+    public func didRequest(_: URLRequest, with response: HTTPURLResponse, failDueToAuthenticationError _: Error) -> Bool {
         response.statusCode == 401
     }
 
-    public func isRequest(_ urlRequest: URLRequest, authenticatedWith credential: UserInfo) -> Bool {
+    public func isRequest(_: URLRequest, authenticatedWith _: UserInfo) -> Bool {
         false
     }
 }

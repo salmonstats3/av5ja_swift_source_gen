@@ -21,7 +21,7 @@ internal class BulletToken: RequestType {
     var headers: [String: String]?
 
     init(accessToken: String, version: String) {
-        self.headers = [
+        headers = [
             "X-Web-View-Ver": version,
             "X-NaCountry": "US",
             "X-GameWebToken": accessToken,
@@ -39,9 +39,9 @@ internal class BulletToken: RequestType {
 
         init(from decoder: Decoder) throws {
             let container: KeyedDecodingContainer<BulletToken.Response.CodingKeys> = try decoder.container(keyedBy: BulletToken.Response.CodingKeys.self)
-            self.bulletToken = try container.decode(String.self, forKey: BulletToken.Response.CodingKeys.bulletToken)
-            self.lang = try container.decode(String.self, forKey: BulletToken.Response.CodingKeys.lang)
-            self.isNoeCountry = Bool(try container.decode(String.self, forKey: BulletToken.Response.CodingKeys.isNoeCountry)) ?? false
+            bulletToken = try container.decode(String.self, forKey: BulletToken.Response.CodingKeys.bulletToken)
+            lang = try container.decode(String.self, forKey: BulletToken.Response.CodingKeys.lang)
+            isNoeCountry = try Bool(container.decode(String.self, forKey: BulletToken.Response.CodingKeys.isNoeCountry)) ?? false
         }
     }
 }

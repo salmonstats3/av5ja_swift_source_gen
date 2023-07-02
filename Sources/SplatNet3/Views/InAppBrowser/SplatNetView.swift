@@ -1,9 +1,9 @@
 //
 //  SwiftUIView.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/28.
-//  
+//
 //
 
 import Alamofire
@@ -20,12 +20,11 @@ internal struct SplatNetView: UIViewControllerRepresentable {
         self.contentId = contentId
     }
 
-    func makeUIViewController(context: Context) -> WebViewController {
+    func makeUIViewController(context _: Context) -> WebViewController {
         WebViewController(contentId: contentId)
     }
 
-    func updateUIViewController(_ uiViewController: WebViewController, context: Context) {
-    }
+    func updateUIViewController(_: WebViewController, context _: Context) {}
 
     final class WebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         private var bridge: WebViewJavascriptBridge
@@ -46,9 +45,9 @@ internal struct SplatNetView: UIViewControllerRepresentable {
             super.viewWillAppear(animated)
             let button = UIBarButtonItem(title: "Close", style: .done, target: self, action: #selector(close))
             /// イカリング3の場合はナビゲーションバーを表示しない
-            self.parent?.navigationController?.setNavigationBarHidden(contentId == .SP3, animated: true)
-            self.parent?.navigationItem.rightBarButtonItem = button
-            self.parent?.navigationItem.rightBarButtonItem?.tintColor = .white
+            parent?.navigationController?.setNavigationBarHidden(contentId == .SP3, animated: true)
+            parent?.navigationItem.rightBarButtonItem = button
+            parent?.navigationItem.rightBarButtonItem?.tintColor = .white
         }
 
         @objc func close() {
@@ -66,11 +65,11 @@ internal struct SplatNetView: UIViewControllerRepresentable {
             let indicator = UIActivityIndicatorView()
             indicator.hidesWhenStopped = true
             indicator.translatesAutoresizingMaskIntoConstraints = false
-            self.bridge = WebViewJavascriptBridge(webView: webView)
+            bridge = WebViewJavascriptBridge(webView: webView)
 
             super.init(nibName: nil, bundle: nil)
             /// コンソールでデータを受け取ったらJavaScriptを実行する
-            self.bridge.consolePipeClosure = { content in
+            bridge.consolePipeClosure = { content in
                 self.evaluateJavaScript(content)
             }
 
@@ -100,7 +99,8 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                                 HTTPCookiePropertyKey.name: "_gtoken",
                                 HTTPCookiePropertyKey.value: account.gameWebToken,
                                 HTTPCookiePropertyKey.domain: contentId.requestURL.host!,
-                                HTTPCookiePropertyKey.path: "/", ])!
+                                HTTPCookiePropertyKey.path: "/",
+                            ])!
                             await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
                             indicator.stopAnimating()
                             webView.load(request)
@@ -112,15 +112,16 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                     webView.load(request)
                 }
             })
-            self.view = webView
+            view = webView
         }
 
-        required init?(coder: NSCoder) {
+        @available(*, unavailable)
+        required init?(coder _: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
 
         /// リクエスト前に呼ばれる
-        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        func webView(_: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             guard let url: URL = navigationAction.request.url
             else {
                 decisionHandler(.cancel)
@@ -137,20 +138,15 @@ internal struct SplatNetView: UIViewControllerRepresentable {
         }
 
         /// 読み込み準備開始
-        func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        }
+        func webView(_: WKWebView, didStartProvisionalNavigation _: WKNavigation!) {}
 
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        }
+        func webView(_: WKWebView, didFinish _: WKNavigation!) {}
 
-        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError: Error) {
-        }
+        func webView(_: WKWebView, didFailProvisionalNavigation _: WKNavigation!, withError _: Error) {}
 
-        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError: Error) {
-        }
+        func webView(_: WKWebView, didFail _: WKNavigation!, withError _: Error) {}
 
-        func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation: WKNavigation!) {
-        }
+        func webView(_: WKWebView, didReceiveServerRedirectForProvisionalNavigation _: WKNavigation!) {}
 
         /// JavaScriptを実行する
         private func evaluateJavaScript(_ content: Any?) {
@@ -165,39 +161,40 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                 break
             case .completeLoading:
                 break
-            case .invokeNativeShare(let content):
-                let session: Alamofire.Session = Alamofire.Session()
+            case let .invokeNativeShare(content):
+                let session = Alamofire.Session()
                 Task(priority: .utility, operation: {
                     guard let data: Data = try? await session.download(content.imageUrl).serializingData().value,
                           let image = UIImage(data: data)
                     else {
                         return
                     }
-                    let hashTag: String = (["Salmonia3"] + content.hashtags).map({ "#\($0)" }).joined(separator: " ")
+                    let hashTag: String = (["Salmonia3"] + content.hashtags).map { "#\($0)" }.joined(separator: " ")
                     let controller = UIActivityViewController(activityItems: [CustomShareItem(content: content), image, hashTag], applicationActivities: nil)
                     self.popover(controller, animated: true)
                 })
-            case .invokeNativeShareUrl(let content):
-                let hashTag: String = ["Salmonia3"].map({ "#\($0)" }).joined(separator: " ")
+            case let .invokeNativeShareUrl(content):
+                let hashTag: String = ["Salmonia3"].map { "#\($0)" }.joined(separator: " ")
                 let controller = UIActivityViewController(activityItems: [CustomShareItem(content: content), content.url, hashTag], applicationActivities: nil)
-                    self.popover(controller, animated: true)
-            case .copyToClipboard(let content):
+                popover(controller, animated: true)
+            case let .copyToClipboard(content):
                 UIPasteboard.general.string = content
-            case .downloadImages(let content):
+            case let .downloadImages(content):
                 Task(priority: .utility, operation: {
-                    _ = await content.asyncMap({ imageURL in
-                        let session: Alamofire.Session = Alamofire.Session()
+                    _ = await content.asyncMap { imageURL in
+                        let session: Alamofire.Session = .init()
                         guard let data: Data = try? await session.download(imageURL).serializingData().value,
                               let image = UIImage(data: data)
                         else {
                             return
                         }
                         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                    })
+                    }
                     let alert = UIAlertController(
                         title: LocalizedType.CommonDownload.description,
                         message: LocalizedType.CommonSaveToPhotoLibrary.description,
-                        preferredStyle: .alert)
+                        preferredStyle: .alert
+                    )
                     let action = UIAlertAction(title: LocalizedType.CommonClose.description, style: .default)
                     alert.addAction(action)
                     present(alert, animated: true)
@@ -212,8 +209,7 @@ internal struct SplatNetView: UIViewControllerRepresentable {
         }
 
         /// ビューが切り替わったときにトークンを再生成するかどうかをチェックする
-        override func viewDidLayoutSubviews() {
-        }
+        override func viewDidLayoutSubviews() {}
     }
 }
 
@@ -229,7 +225,7 @@ internal struct SplatNetView_Previews: PreviewProvider {
 extension View {
     /// イカリング2, イカリング3を開く
     public func openInAppBrowser(isPresented: Binding<Bool>, contentId: ContentId) -> some View {
-        self.fullScreenCover(isPresented: isPresented, content: {
+        fullScreenCover(isPresented: isPresented, content: {
             NavigationView(content: {
                 SplatNetView(contentId: contentId)
                     .preferredColorScheme(.dark)

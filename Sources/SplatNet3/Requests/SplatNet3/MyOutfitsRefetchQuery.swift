@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class MyOutfitsRefetchQuery: GraphQL {
-	typealias ResponseType = MyOutfitsRefetchQuery.Response
+    typealias ResponseType = MyOutfitsRefetchQuery.Response
 
     var hash: SHA256Hash = .MyOutfitsRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

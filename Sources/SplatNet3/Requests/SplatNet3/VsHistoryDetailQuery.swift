@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class VsHistoryDetailQuery: GraphQL {
-	typealias ResponseType = VsHistoryDetailQuery.Response
+    typealias ResponseType = VsHistoryDetailQuery.Response
 
     var hash: SHA256Hash = .VsHistoryDetailQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

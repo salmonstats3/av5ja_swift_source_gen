@@ -12,9 +12,9 @@ import UIKit
 public class CoopStatsResultsQuery: RequestType {
     public typealias ResponseType = [Response]
     #if targetEnvironment(simulator)
-    public var baseURL = URL(unsafeString: "http://localhost:3000/")
+        public var baseURL = URL(unsafeString: "http://localhost:3000/")
     #else
-    public var baseURL = URL(unsafeString: "https://api.splatnet3.com/")
+        public var baseURL = URL(unsafeString: "https://api.splatnet3.com/")
     #endif
     public var path: String = "v1/results"
     public var parameters: Parameters?
@@ -22,37 +22,37 @@ public class CoopStatsResultsQuery: RequestType {
     public var method: HTTPMethod = .post
 
     init(results: [[String: Any]]) {
-        self.parameters = [
+        parameters = [
             "results": results
         ]
     }
 
     init(result: CoopResult) {
-        self.parameters = [
-            "results": [result].map({ $0.asJSON() })
+        parameters = [
+            "results": [result].map { $0.asJSON() }
         ]
     }
 
     init(results: [CoopResult]) {
-        self.headers = [
+        headers = [
             "ClientVersion": UIDevice.current.version
         ]
         #if targetEnvironment(simulator)
-        if let result: CoopResult = results.last {
-            let encoder = JSONEncoder()
-            encoder.dateEncodingStrategy = .iso8601
-            self.parameters = [
-                "results": [result].map({ $0.asJSON() })
-            ]
-        } else {
-            self.parameters = [
-                "results": results.map({ $0.asJSON() })
-            ]
-        }
+            if let result: CoopResult = results.last {
+                let encoder = JSONEncoder()
+                encoder.dateEncodingStrategy = .iso8601
+                parameters = [
+                    "results": [result].map { $0.asJSON() }
+                ]
+            } else {
+                parameters = [
+                    "results": results.map { $0.asJSON() }
+                ]
+            }
         #else
-        self.parameters = [
-            "results": results.map({ $0.asJSON() })
-        ]
+            parameters = [
+                "results": results.map { $0.asJSON() }
+            ]
         #endif
     }
 
@@ -75,8 +75,8 @@ public class CoopStatsResultsQuery: RequestType {
             let dateFormatter = ISO8601DateFormatter()
             dateFormatter.formatOptions.insert(.withFractionalSeconds)
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            self.salmonId = try container.decode(Int.self, forKey: .salmonId)
-            self.uuid = try container.decode(UUID.self, forKey: .uuid)
+            salmonId = try container.decode(Int.self, forKey: .salmonId)
+            uuid = try container.decode(UUID.self, forKey: .uuid)
             guard let playTime: String = try? container.decode(String.self, forKey: .playTime),
                   let playTime: Date = dateFormatter.date(from: playTime)
             else {
@@ -102,13 +102,13 @@ public extension Encodable {
             return [:]
         }
 
-        dictionary.forEach({ key, value -> Void in
-            if value is Double && !(value is Int) {
+        dictionary.forEach { key, value in
+            if value is Double, !(value is Int) {
                 if let value = value as? Decimal {
                     dictionary[key] = value
                 }
             }
-        })
+        }
 
         return dictionary
     }

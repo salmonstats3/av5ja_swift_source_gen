@@ -12,7 +12,7 @@ import Foundation
 internal struct JSONWebToken: Codable {
     /// Base64でエンコードされたトークンから生成
     init(gameWebToken: String) throws {
-        let rawTexts: [String] = gameWebToken.components(separatedBy: ".").compactMap({ $0.base64DecodedString })
+        let rawTexts: [String] = gameWebToken.components(separatedBy: ".").compactMap(\.base64DecodedString)
 
         // 二つに分割できなければ不正なJWTとみなす
         // 署名の部分はBase64で復号しても文字列ではないのでデコード不可
@@ -21,7 +21,7 @@ internal struct JSONWebToken: Codable {
         }
 
         // データ型に変換
-        let data: [Data] = rawTexts.compactMap({ $0.data(using: .utf8) })
+        let data: [Data] = rawTexts.compactMap { $0.data(using: .utf8) }
 
         // 二つに分割できなければ不正なJWTとみなす
         if data.count != 2 {
@@ -29,8 +29,8 @@ internal struct JSONWebToken: Codable {
         }
 
         let decoder = SPDecoder()
-        self.header = try decoder.decode(Header.self, from: data[0])
-        self.payload = try decoder.decode(Payload.self, from: data[1])
+        header = try decoder.decode(Header.self, from: data[0])
+        payload = try decoder.decode(Payload.self, from: data[1])
     }
 
     let header: Header
@@ -67,18 +67,17 @@ internal struct JSONWebToken: Codable {
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
 //            self.aud = try container.decode(String.self, forKey: .aud)
-            self.exp = try container.decode(Int.self, forKey: .exp)
+            exp = try container.decode(Int.self, forKey: .exp)
 //            self.iat = try container.decode(Int.self, forKey: .iat)
 //            self.iss = try container.decode(String.self, forKey: .iss)
 //            self.jti = try container.decode(String.self, forKey: .jti)
-            self.sub = try {
+            sub = try {
                 if let rawValue: Int64 = try? container.decode(Int64.self, forKey: .sub) {
                     return rawValue.description
                 }
                 return try container.decode(String.self, forKey: .sub)
             }()
 //            self.typ = try container.decode(String.self, forKey: .typ)
-
         }
     }
 

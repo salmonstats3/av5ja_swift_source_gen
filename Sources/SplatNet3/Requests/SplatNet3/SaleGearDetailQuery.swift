@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class SaleGearDetailQuery: GraphQL {
-	typealias ResponseType = SaleGearDetailQuery.Response
+    typealias ResponseType = SaleGearDetailQuery.Response
 
     var hash: SHA256Hash = .SaleGearDetailQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

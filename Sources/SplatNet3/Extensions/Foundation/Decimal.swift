@@ -1,6 +1,6 @@
 //
 //  Decimal.swift
-//  
+//
 //
 //  Created by devonly on 2023/04/18.
 //

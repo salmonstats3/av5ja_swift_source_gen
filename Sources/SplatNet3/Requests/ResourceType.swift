@@ -1,6 +1,6 @@
 //
 //  ResourceType.swift
-//  
+//
 //
 //  Created by devonly on 2023/05/28.
 //
@@ -19,11 +19,11 @@ public struct ResourceType: Codable {
     let fonts: [URL]
 
     public enum ExtType: String, CaseIterable, Codable {
-        case GIF    = "gif"
-        case SVG    = "svg"
-        case PNG    = "png"
-        case WOFF   = "woff"
-        case WOFF2  = "woff2"
+        case GIF = "gif"
+        case SVG = "svg"
+        case PNG = "png"
+        case WOFF = "woff"
+        case WOFF2 = "woff2"
     }
 
     struct StageImage: Codable {
@@ -142,20 +142,20 @@ public struct ResourceType: Codable {
 }
 
 public enum ResourceURLType: String, CaseIterable, Codable {
-    case StageImgBanner         = "stage_img/banner"
-    case StageImgIcon           = "stage_img/icon"
-    case UIImg                  = "ui_img"
-    case ScaleImg               = "scale_img"
-    case CoopEnemyImg           = "coop_enemy_img"
-    case SpecialImg             = "special_img"
-    case WeaponInfoMainIdllust  = "weapon_illust"
-    case StaticMedia            = "static/media"
-    case Bundled                = "bundled"
-    case StageL                 = "stageL"
-    case StageBanner            = "stageBanner"
-    case CoopEnemy              = "coopEnemy"
-    case WeaponInfoMainFlat     = "weapon_flat"
-    case Scale                  = "images/coop/"
+    case StageImgBanner = "stage_img/banner"
+    case StageImgIcon = "stage_img/icon"
+    case UIImg = "ui_img"
+    case ScaleImg = "scale_img"
+    case CoopEnemyImg = "coop_enemy_img"
+    case SpecialImg = "special_img"
+    case WeaponInfoMainIdllust = "weapon_illust"
+    case StaticMedia = "static/media"
+    case Bundled = "bundled"
+    case StageL = "stageL"
+    case StageBanner = "stageBanner"
+    case CoopEnemy = "coopEnemy"
+    case WeaponInfoMainFlat = "weapon_flat"
+    case Scale = "images/coop/"
 
     init?(url: URL) {
         if url.absoluteString.contains(ResourceURLType.StageImgBanner.rawValue) {

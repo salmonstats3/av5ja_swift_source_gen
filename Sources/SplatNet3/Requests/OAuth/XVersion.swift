@@ -20,15 +20,16 @@ internal class XVersion: RequestType {
     var headers: [String: String]?
 
     init(id: String = "1234806557") {
-        self.path = "app/id\(id)"
+        path = "app/id\(id)"
     }
 
     // MARK: - Response
+
     struct Response: Codable {
         let version: String
 
         init(context: String) {
-            self.version = context.capture(pattern: #"whats-new__latest__version">Version (.*)</p>"#, group: 1) ?? "2.3.1"
+            version = context.capture(pattern: #"whats-new__latest__version">Version (.*)</p>"#, group: 1) ?? "2.3.1"
         }
     }
 }

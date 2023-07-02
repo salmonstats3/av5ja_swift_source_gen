@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class MyOutfitDetailQuery: GraphQL {
-	typealias ResponseType = MyOutfitDetailQuery.Response
+    typealias ResponseType = MyOutfitDetailQuery.Response
 
-	var hash: SHA256Hash = .MyOutfitDetailQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .MyOutfitDetailQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

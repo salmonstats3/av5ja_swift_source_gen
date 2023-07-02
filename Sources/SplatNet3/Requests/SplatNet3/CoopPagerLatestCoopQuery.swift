@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class CoopPagerLatestCoopQuery: GraphQL {
-	typealias ResponseType = CoopPagerLatestCoopQuery.Response
+    typealias ResponseType = CoopPagerLatestCoopQuery.Response
 
     var hash: SHA256Hash = .CoopPagerLatestCoopQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

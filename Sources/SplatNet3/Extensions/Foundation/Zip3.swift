@@ -24,12 +24,13 @@ public struct Zip3Sequence<A: Sequence, B: Sequence, C: Sequence>: Sequence, Ite
     private var b: B.Iterator
     private var c: C.Iterator
 
-    init (_ sequence1: A, _ sequence2: B, _ sequence3: C) {
-        self.a = sequence1.makeIterator()
-        self.b = sequence2.makeIterator()
-        self.c = sequence3.makeIterator()
+    init(_ sequence1: A, _ sequence2: B, _ sequence3: C) {
+        a = sequence1.makeIterator()
+        b = sequence2.makeIterator()
+        c = sequence3.makeIterator()
     }
 
+    // swiftlint:disable:next large_tuple
     public mutating func next() -> (A.Element, B.Element, C.Element)? {
         guard let a = a.next(), let b = b.next(), let c = c.next() else { return nil }
         return (a, b, c)
@@ -42,13 +43,14 @@ public struct Zip4Sequence<A: Sequence, B: Sequence, C: Sequence, D: Sequence>: 
     private var c: C.Iterator
     private var d: D.Iterator
 
-    init (_ sequence1: A, _ sequence2: B, _ sequence3: C, _ sequence4: D) {
-        self.a = sequence1.makeIterator()
-        self.b = sequence2.makeIterator()
-        self.c = sequence3.makeIterator()
-        self.d = sequence4.makeIterator()
+    init(_ sequence1: A, _ sequence2: B, _ sequence3: C, _ sequence4: D) {
+        a = sequence1.makeIterator()
+        b = sequence2.makeIterator()
+        c = sequence3.makeIterator()
+        d = sequence4.makeIterator()
     }
 
+    // swiftlint:disable:next large_tuple
     public mutating func next() -> (A.Element, B.Element, C.Element, D.Element)? {
         guard let a = a.next(), let b = b.next(), let c = c.next(), let d = d.next() else { return nil }
         return (a, b, c, d)
@@ -62,14 +64,15 @@ public struct Zip5Sequence<A: Sequence, B: Sequence, C: Sequence, D: Sequence, E
     private var d: D.Iterator
     private var e: E.Iterator
 
-    init (_ sequence1: A, _ sequence2: B, _ sequence3: C, _ sequence4: D, _ sequence5: E) {
-        self.a = sequence1.makeIterator()
-        self.b = sequence2.makeIterator()
-        self.c = sequence3.makeIterator()
-        self.d = sequence4.makeIterator()
-        self.e = sequence5.makeIterator()
+    init(_ sequence1: A, _ sequence2: B, _ sequence3: C, _ sequence4: D, _ sequence5: E) {
+        a = sequence1.makeIterator()
+        b = sequence2.makeIterator()
+        c = sequence3.makeIterator()
+        d = sequence4.makeIterator()
+        e = sequence5.makeIterator()
     }
 
+    // swiftlint:disable:next large_tuple
     public mutating func next() -> (A.Element, B.Element, C.Element, D.Element, E.Element)? {
         guard let a = a.next(), let b = b.next(), let c = c.next(), let d = d.next(), let e = e.next() else { return nil }
         return (a, b, c, d, e)

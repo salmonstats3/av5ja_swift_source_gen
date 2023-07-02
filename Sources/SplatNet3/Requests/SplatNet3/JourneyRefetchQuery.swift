@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class JourneyRefetchQuery: GraphQL {
-	typealias ResponseType = JourneyRefetchQuery.Response
+    typealias ResponseType = JourneyRefetchQuery.Response
 
     var hash: SHA256Hash = .JourneyRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class GesotownRefetchQuery: GraphQL {
-	typealias ResponseType = GesotownRefetchQuery.Response
+    typealias ResponseType = GesotownRefetchQuery.Response
 
-	var hash: SHA256Hash = .GesotownRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .GesotownRefetchQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

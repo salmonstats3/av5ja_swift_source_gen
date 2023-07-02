@@ -74,7 +74,7 @@ internal enum NSScriptMessage {
             return
         case .downloadImages:
             /// downloadImages
-            let imageURLs: [URL] = rawValue.capture(pattern: #"(https://[^,^\]]*)"#).compactMap({ URL(string: $0) })
+            let imageURLs: [URL] = rawValue.capture(pattern: #"(https://[^,^\]]*)"#).compactMap { URL(string: $0) }
             if imageURLs.isEmpty {
                 return nil
             }
@@ -100,9 +100,9 @@ internal struct ShareURL: Codable {
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.text = try container.decode(String.self, forKey: .text)
-        self.imageUrl = try container.decode(URL.self, forKey: .imageUrl)
-        self.hashtags = try container.decode([String].self, forKey: .hashtags)
+        text = try container.decode(String.self, forKey: .text)
+        imageUrl = try container.decode(URL.self, forKey: .imageUrl)
+        hashtags = try container.decode([String].self, forKey: .hashtags)
     }
 }
 
@@ -112,8 +112,8 @@ internal struct ShareImg: Codable {
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.text = try container.decode(String.self, forKey: .text)
-        self.url = try container.decode(URL.self, forKey: .url)
+        text = try container.decode(String.self, forKey: .text)
+        url = try container.decode(URL.self, forKey: .url)
     }
 }
 

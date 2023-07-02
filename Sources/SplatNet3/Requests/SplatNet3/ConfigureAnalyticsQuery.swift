@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class ConfigureAnalyticsQuery: GraphQL {
-	typealias ResponseType = ConfigureAnalyticsQuery.Response
+    typealias ResponseType = ConfigureAnalyticsQuery.Response
 
     var hash: SHA256Hash = .ConfigureAnalyticsQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

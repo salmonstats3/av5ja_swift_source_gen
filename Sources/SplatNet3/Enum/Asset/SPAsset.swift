@@ -1,6 +1,6 @@
 //
 //  SPAsset.swift
-//  
+//
 //
 //  Created by devonly on 2023/05/26.
 //
@@ -40,10 +40,10 @@ public struct AssetData {
     init?(url: URL, data: Data) {
         let ext: String = url.pathExtension
         if let filename: String = url.lastPathComponent.capture(pattern: #"/media/(.*?)\."#, group: 1) {
-            self.key = "\(filename).\(ext)"
+            key = "\(filename).\(ext)"
             self.data = data
         } else {
-            self.key = url.lastPathComponent
+            key = url.lastPathComponent
             self.data = data
         }
     }

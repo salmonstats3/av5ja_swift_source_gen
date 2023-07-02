@@ -13,35 +13,35 @@ import SwiftUI
 public enum SPEndpoint: String, CaseIterable, Identifiable {
     public var id: String { rawValue }
     /// SessionToken
-    case SESSION_TOKEN          = "api/session_token"
+    case SESSION_TOKEN = "api/session_token"
     /// AccessToken
-    case ACCESS_TOKEN           = "api/token"
+    case ACCESS_TOKEN = "api/token"
     /// IMINK
-    case F                      = "f"
+    case F = "f"
     /// FLAPG
-    case FLAPG                  = "ika/api/login-main"
+    case FLAPG = "ika/api/login-main"
     /// Results
-    case NXAPI                  = "api/znca/f"
+    case NXAPI = "api/znca/f"
     /// GameServiceToken
-    case GAME_SERVICE_TOKEN     = "v3/Account/Login"
+    case GAME_SERVICE_TOKEN = "v3/Account/Login"
     /// GameWebToken
-    case GAME_WEB_TOKEN         = "v2/Game/GetWebServiceToken"
+    case GAME_WEB_TOKEN = "v2/Game/GetWebServiceToken"
     /// X-Product-Version
-    case VERSION                = "v3/version"
+    case VERSION = "v3/version"
     /// BulletToken
-    case BULLET_TOKEN           = "api/bullet_tokens"
+    case BULLET_TOKEN = "api/bullet_tokens"
     /// Schedule
-    case COOP_SCHEDULE          = "api/schedules"
+    case COOP_SCHEDULE = "api/schedules"
     /// Summary
-    case COOP_SUMMARY           = "api/summary"
+    case COOP_SUMMARY = "api/summary"
     /// Results
-    case COOP_RESULT            = "api/results"
+    case COOP_RESULT = "api/results"
     /// Unknown
-    case UNKNOWN                = "unknown"
+    case UNKNOWN = "unknown"
     /// Salmon Stats
-    case STATS                  = "api/salmonstats"
+    case STATS = "api/salmonstats"
     /// Salmon Stats
-    case COOP_SCHEDULES         = "v1/schedules"
+    case COOP_SCHEDULES = "v1/schedules"
 
     init<T: RequestType>(request: T) {
         let path: String = request.path.replacingOccurrences(of: "connect/1.0.0/", with: "")

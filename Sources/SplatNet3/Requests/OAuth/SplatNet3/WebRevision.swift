@@ -21,7 +21,7 @@ public class WebRevision: RequestType {
     public var headers: [String: String]?
 
     public init(hash: String) {
-        self.path = "static/js/main.\(hash).js"
+        path = "static/js/main.\(hash).js"
     }
 
     public struct Response: Codable, CustomStringConvertible {
@@ -40,8 +40,8 @@ public class WebRevision: RequestType {
                 self.version = version
                 self.revision = revision
             } else {
-                self.version = "2.0.0"
-                self.revision = "bd36a652"
+                version = "2.0.0"
+                revision = "bd36a652"
             }
         }
     }

@@ -22,7 +22,7 @@ internal class SessionToken: RequestType {
 
     /// トークンコードとベリファイアから初期化
     init(code: String, verifier: String) {
-        self.parameters = [
+        parameters = [
             "client_id": "71b963c1b7b6d119",
             "session_token_code": code,
             "session_token_code_verifier": verifier,

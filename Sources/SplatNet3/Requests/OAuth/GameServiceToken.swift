@@ -21,11 +21,11 @@ internal class GameServiceToken: RequestType {
     var headers: [String: String]?
 
     init(imink: Imink.Response, accessToken: AccessToken.Response, version: AppVersion.Response) {
-        self.headers = [
+        headers = [
             "X-ProductVersion": "\(version.version)",
             "X-Platform": "Android",
         ]
-        self.parameters = [
+        parameters = [
             "parameter": [
                 "f": imink.f,
                 "naIdToken": accessToken.idToken,
@@ -39,6 +39,7 @@ internal class GameServiceToken: RequestType {
     }
 
     // MARK: - Response
+
     struct Response: Codable {
         let status: Int
         let result: Result
@@ -46,6 +47,7 @@ internal class GameServiceToken: RequestType {
     }
 
     // MARK: - Result
+
     struct Result: Codable {
         let user: User
         let webApiServerCredential: Credential
@@ -53,12 +55,14 @@ internal class GameServiceToken: RequestType {
     }
 
     // MARK: - Credential
+
     struct Credential: Codable {
         let accessToken: String
         let expiresIn: Int
     }
 
     // MARK: - User
+
     struct User: Codable {
         let id: Int
         let nsaId: String
@@ -72,12 +76,14 @@ internal class GameServiceToken: RequestType {
     }
 
     // MARK: - Links
+
     struct Links: Codable {
         let nintendoAccount: NintendoAccount
         let friendCode: FriendCode
     }
 
     // MARK: - FriendCode
+
     struct FriendCode: Codable {
         let regenerable: Bool
         let regenerableAt: Int
@@ -85,21 +91,25 @@ internal class GameServiceToken: RequestType {
     }
 
     // MARK: - NintendoAccount
+
     struct NintendoAccount: Codable {
         let membership: Membership
     }
 
     // MARK: - Membership
+
     struct Membership: Codable {
         let active: Bool
     }
 
     // MARK: - Permissions
+
     struct Permissions: Codable {
         let presence: String
     }
 
     // MARK: - Presence
+
     struct Presence: Codable {
         let state: String
         let updatedAt, logoutAt: Int
@@ -107,6 +117,6 @@ internal class GameServiceToken: RequestType {
     }
 
     // MARK: - Game
-    struct Game: Codable {
-    }
+
+    struct Game: Codable {}
 }

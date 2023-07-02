@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class UpdateMyOutfitMutation: GraphQL {
-	typealias ResponseType = UpdateMyOutfitMutation.Response
+    typealias ResponseType = UpdateMyOutfitMutation.Response
 
     var hash: SHA256Hash = .UpdateMyOutfitMutation
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

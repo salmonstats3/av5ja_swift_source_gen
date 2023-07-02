@@ -11,7 +11,7 @@ public enum CoopWaterLevelId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .NormalTide
     public var id: Int { rawValue }
 
-    case LowTide       = 0
-    case NormalTide    = 1
-    case HighTide      = 2
+    case LowTide = 0
+    case NormalTide = 1
+    case HighTide = 2
 }

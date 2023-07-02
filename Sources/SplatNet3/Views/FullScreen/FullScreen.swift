@@ -39,14 +39,13 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
          transitionStyle: UIModalTransitionStyle? = nil,
          isModalInPresentation: Bool = true,
          backgroundColor: Color = Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)),
-         @ViewBuilder content: @escaping () -> Content
-    ) {
+         @ViewBuilder content: @escaping () -> Content) {
         self.content = content
         self.transitionStyle = transitionStyle ?? .coverVertical
         self.presentationStyle = presentationStyle ?? .overFullScreen
         self.isModalInPresentation = isModalInPresentation
         self.backgroundColor = UIColor(backgroundColor)
-        self._isPresented = isPresented
+        _isPresented = isPresented
     }
 
     func makeCoordinator() -> Coordinator {
@@ -76,7 +75,7 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
             uiViewController.present()
         case false:
 //            if !isModalInPresentation {
-                uiViewController.dismiss()
+            uiViewController.dismiss()
 //            }
         }
     }
@@ -89,7 +88,7 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
         }
 
         // 画面外タップでViewをとじたときに呼ばれる
-        func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        func presentationControllerDidDismiss(_: UIPresentationController) {
             if parent.isPresented {
                 parent.isPresented = false
             }
@@ -101,7 +100,8 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
             super.init(rootView: content)
         }
 
-        required init?(coder: NSCoder) {
+        @available(*, unavailable)
+        required init?(coder _: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
     }
@@ -120,8 +120,7 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
              presentationStyle: UIModalPresentationStyle,
              isModalInPresentation: Bool,
              backgroundColor: UIColor,
-             @ViewBuilder content: @escaping () -> Content
-        ) {
+             @ViewBuilder content: @escaping () -> Content) {
             self.coordinator = coordinator
             self.content = content
 //            self.hosting = UIHostingController(rootView: content)
@@ -132,11 +131,12 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
             self.isModalInPresentation = isModalInPresentation
         }
 
-        @objc func tapped(sender: UITapGestureRecognizer) {
+        @objc func tapped(sender _: UITapGestureRecognizer) {
             coordinator.parent.isPresented.toggle()
         }
 
-        required init?(coder: NSCoder) {
+        @available(*, unavailable)
+        required init?(coder _: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
 
@@ -161,7 +161,7 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
             hosting.view.backgroundColor = backgroundColor
             hosting.presentationController?.delegate = coordinator as UIAdaptivePresentationControllerDelegate
 
-            if !self.isModalInPresentation {
+            if !isModalInPresentation {
                 // 個別の設定
                 let gesture = UITapGestureRecognizer(target: self, action: #selector(tapped))
                 gesture.delegate = self

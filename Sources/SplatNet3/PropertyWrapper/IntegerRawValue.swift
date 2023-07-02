@@ -1,6 +1,6 @@
 //
 //  IntegerConvertible.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/24.
 //
@@ -27,12 +27,12 @@ public struct IntegerRawValue<T: RawRepresentable>: Codable where T.RawValue == 
         else {
             throw DecodingError.valueNotFound(T.self, .init(codingPath: container.codingPath, debugDescription: "Given value \(stringValue) is not associated for \(T.self)"))
         }
-        self.wrappedValue = value
+        wrappedValue = value
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        let hash = String(self.wrappedValue.rawValue)
+        let hash = String(wrappedValue.rawValue)
         try container.encode(hash)
     }
 }

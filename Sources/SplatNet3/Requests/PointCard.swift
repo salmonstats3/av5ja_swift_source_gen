@@ -1,6 +1,6 @@
 //
 //  PointCard.swift
-//  
+//
 //
 //  Created by devonly on 2023/01/07.
 //
@@ -37,12 +37,12 @@ public struct SP3PointCard: PointCard {
     public init() {}
 
     public init(pointCard: CoopHistoryQuery.PointCard) {
-        self.shiftsWorked = pointCard.playCount
-        self.ikuraNum = pointCard.deliverCount
-        self.goldenIkuraNum = pointCard.goldenDeliverCount
-        self.helpCount = pointCard.rescueCount
-        self.totalKumaPoint = pointCard.totalPoint
-        self.defeatedBossCount = pointCard.defeatBossCount
+        shiftsWorked = pointCard.playCount
+        ikuraNum = pointCard.deliverCount
+        goldenIkuraNum = pointCard.goldenDeliverCount
+        helpCount = pointCard.rescueCount
+        totalKumaPoint = pointCard.totalPoint
+        defeatedBossCount = pointCard.defeatBossCount
     }
 }
 

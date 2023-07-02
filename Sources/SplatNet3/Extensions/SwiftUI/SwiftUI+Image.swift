@@ -1,6 +1,6 @@
 //
 //  SwiftUI+Image.swift
-//  
+//
 //
 //  Created by devonly on 2023/05/28.
 //
@@ -18,28 +18,28 @@ internal final class SPImageService: ObservableObject {
         case is WeaponInfoMainId.Type:
             if let weaponId = WeaponInfoMainId(rawValue: rawValue),
                (WeaponInfoMainId.regular + WeaponInfoMainId.rare).contains(weaponId) {
-                self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
+                documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
             } else {
-                self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.UIImg.rawValue)/\(rawValue)", conformingTo: .png)
+                documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.UIImg.rawValue)/\(rawValue)", conformingTo: .png)
             }
         case is CoopStageId.Type:
-            self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgIcon.rawValue)/\(rawValue)", conformingTo: .png)
+            documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgIcon.rawValue)/\(rawValue)", conformingTo: .png)
         case is CoopStageBannerId.Type:
-            self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgBanner.rawValue)/\(rawValue)", conformingTo: .png)
+            documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgBanner.rawValue)/\(rawValue)", conformingTo: .png)
         case is CoopEnemyInfoId.Type:
-            self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.CoopEnemyImg.rawValue)/\(rawValue)", conformingTo: .png)
+            documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.CoopEnemyImg.rawValue)/\(rawValue)", conformingTo: .png)
         case is WeaponInfoSpecialId.Type:
-            self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.SpecialImg.rawValue)/\(rawValue)", conformingTo: .png)
+            documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.SpecialImg.rawValue)/\(rawValue)", conformingTo: .png)
         case is ScaleId.Type:
-            self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.ScaleImg.rawValue)/\(rawValue)", conformingTo: .png)
+            documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.ScaleImg.rawValue)/\(rawValue)", conformingTo: .png)
         default:
-            self.documentPath = documentURL
+            documentPath = documentURL
         }
     }
 
     init(id: StaticMediaKey) {
         let documentURL: URL? = FileManager.default.document
-        self.documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.Bundled.rawValue)/\(id.rawValue)", conformingTo: .png)
+        documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.Bundled.rawValue)/\(id.rawValue)", conformingTo: .png)
     }
 }
 
@@ -47,11 +47,11 @@ public struct SPImage: View {
     @ObservedObject private var service: SPImageService
 
     public init<T: UnsafeRawRepresentable>(_ id: T) where T.RawValue == Int {
-        self._service = ObservedObject(wrappedValue: SPImageService(type: T.self, rawValue: id.rawValue))
+        _service = ObservedObject(wrappedValue: SPImageService(type: T.self, rawValue: id.rawValue))
     }
 
     public init(_ id: StaticMediaKey) {
-        self._service = ObservedObject(wrappedValue: SPImageService(id: id))
+        _service = ObservedObject(wrappedValue: SPImageService(id: id))
     }
 
     public var body: some View {

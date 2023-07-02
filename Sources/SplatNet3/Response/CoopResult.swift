@@ -1,6 +1,6 @@
 //
 //  CoopResult.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/26.
 //
@@ -43,12 +43,12 @@ public struct CoopResult: Codable {
         public let stageId: CoopStageId
 
         init(schedule: CoopHistoryQuery.CoopSchedule, content: CoopHistoryDetailQuery.CoopHistoryDetail) {
-            self.startTime = schedule.startTime
-            self.endTime = schedule.endTime
-            self.mode = schedule.mode
-            self.rule = schedule.rule
-            self.weaponList = content.weapons.map({ WeaponInfoMainId(key: $0.image.hash) })
-            self.stageId = content.coopStage.id
+            startTime = schedule.startTime
+            endTime = schedule.endTime
+            mode = schedule.mode
+            rule = schedule.rule
+            weaponList = content.weapons.map { WeaponInfoMainId(key: $0.image.hash) }
+            stageId = content.coopStage.id
         }
 
         public func encode(to encoder: Encoder) throws {
@@ -114,31 +114,31 @@ public struct CoopResult: Codable {
             specialCounts: [[WeaponInfoSpecialId]],
             isMyself: Bool
         ) {
-            self.id = content.player.id.description
-            self.nplnUserId = content.player.id.nplnUserId
+            id = content.player.id.description
+            nplnUserId = content.player.id.nplnUserId
             self.isMyself = isMyself
-            self.byname = content.player.byname
-            self.name = content.player.name
-            self.nameId = content.player.nameId
-            self.nameplate = Nameplate(
-                badges: content.player.nameplate.badges.map({ $0?.id }),
+            byname = content.player.byname
+            name = content.player.name
+            nameId = content.player.nameId
+            nameplate = Nameplate(
+                badges: content.player.nameplate.badges.map { $0?.id },
                 background: Background(
                     textColor: content.player.nameplate.background.textColor,
                     id: content.player.nameplate.background.id
                 )
             )
-            self.goldenIkuraNum = content.goldenDeliverCount
-            self.goldenIkuraAssistNum = content.goldenAssistCount
-            self.ikuraNum = content.deliverCount
-            self.deadCount = content.rescuedCount
-            self.helpCount = content.rescueCount
-            self.weaponList = content.weapons.map({ WeaponInfoMainId(key: $0.image.hash) })
-            self.specialId = content.specialWeapon?.weaponId
-            self.specialCounts = specialCounts.map({ $0.filter({ $0 == content.specialWeapon?.weaponId }).count })
-            self.bossKillCounts = isMyself ? results.bossKillCounts() : Array(repeating: -1, count: 14)
-            self.uniform = content.player.uniform.id
-            self.bossKillCountsTotal = content.defeatEnemyCount
-            self.species = content.player.species
+            goldenIkuraNum = content.goldenDeliverCount
+            goldenIkuraAssistNum = content.goldenAssistCount
+            ikuraNum = content.deliverCount
+            deadCount = content.rescuedCount
+            helpCount = content.rescueCount
+            weaponList = content.weapons.map { WeaponInfoMainId(key: $0.image.hash) }
+            specialId = content.specialWeapon?.weaponId
+            self.specialCounts = specialCounts.map { $0.filter { $0 == content.specialWeapon?.weaponId }.count }
+            bossKillCounts = isMyself ? results.bossKillCounts() : Array(repeating: -1, count: 14)
+            uniform = content.player.uniform.id
+            bossKillCountsTotal = content.defeatEnemyCount
+            species = content.player.species
         }
 
         public init(
@@ -194,8 +194,8 @@ public struct CoopResult: Codable {
         public let goldenIkuraPopNum: Int
 
         init(content: CoopHistoryDetailQuery.WaveResult, resultWave: Int, bossDefeated: Bool?) {
-            self.id = content.waveNumber
-            self.isClear = {
+            id = content.waveNumber
+            isClear = {
                 // EX-WAVEがあれば
                 if let bossDefeated {
                     // ノルマがnullならEX-WAVEはbossDefeated、それ以外はクリア
@@ -204,11 +204,11 @@ public struct CoopResult: Codable {
                 // それ以外は失敗したWAVEかどうか
                 return !(content.waveNumber == resultWave)
             }()
-            self.waterLevel = content.waterLevel
-            self.eventType = content.eventWave?.id ?? .WaterLevels
-            self.goldenIkuraNum = content.teamDeliverCount
-            self.quotaNum = content.deliverNorm
-            self.goldenIkuraPopNum = content.goldenPopCount
+            waterLevel = content.waterLevel
+            eventType = content.eventWave?.id ?? .WaterLevels
+            goldenIkuraNum = content.teamDeliverCount
+            quotaNum = content.deliverNorm
+            goldenIkuraPopNum = content.goldenPopCount
         }
 
         public init(
@@ -237,10 +237,10 @@ public struct CoopResult: Codable {
         @NullCodable public var bossId: CoopEnemyInfoId?
 
         init(content: CoopHistoryDetailQuery.CoopHistoryDetail) {
-            self.isClear = content.resultWave == 0
-            self.failureWave = content.resultWave == 0 ? nil : content.resultWave
-            self.isBossDefeated = content.bossResult?.hasDefeatBoss
-            self.bossId = content.bossResult?.boss.id
+            isClear = content.resultWave == 0
+            failureWave = content.resultWave == 0 ? nil : content.resultWave
+            isBossDefeated = content.bossResult?.hasDefeatBoss
+            bossId = content.bossResult?.boss.id
         }
 
         public init(
@@ -283,37 +283,37 @@ public struct CoopResult: Codable {
     }
 
     public init(history: CoopHistoryQuery.CoopSchedule, content: CoopHistoryDetailQuery.CoopHistoryDetail) {
-        self.id = content.id
-        self.scale = [content.scale?.bronze, content.scale?.silver, content.scale?.gold]
-        self.jobScore = content.jobScore
-        self.kumaPoint = content.jobPoint
-        self.waveDetails = content.waveResults.map({ WaveResult(content: $0, resultWave: content.resultWave, bossDefeated: content.bossResult?.hasDefeatBoss) })
-        self.jobResult = JobResult(content: content)
-        let specialCounts: [[WeaponInfoSpecialId]] = content.waveResults.map({ $0.specialWeapons.map({ $0.id }) })
-        self.myResult = PlayerResult(content: content.myResult, results: content.enemyResults, specialCounts: specialCounts, isMyself: true)
-        self.otherResults = content.memberResults.map({ PlayerResult(content: $0, results: [], specialCounts: specialCounts, isMyself: false) })
-        self.gradeId = content.afterGrade?.id
-        self.gradePoint = content.afterGradePoint
-        self.jobRate = content.jobRate
-        self.playTime = content.playedTime
-        self.bossCounts = content.enemyResults.bossCounts()
-        self.bossKillCounts = content.enemyResults.teamBossKillCounts()
-        self.dangerRate = content.dangerRate
-        self.jobBonus = content.jobBonus
-        self.schedule = Schedule(schedule: history, content: content)
-        self.ikuraNum = ([content.myResult] + content.memberResults).map({ $0.deliverCount }).reduce(0, +)
-        self.goldenIkuraNum = content.waveResults.compactMap({ $0.teamDeliverCount }).reduce(0, +)
-        self.goldenIkuraAssistNum = ([content.myResult] + content.memberResults).map({ $0.goldenAssistCount }).reduce(0, +)
-        self.smellMeter = content.smellMeter
-        self.scenarioCode = content.scenarioCode
+        id = content.id
+        scale = [content.scale?.bronze, content.scale?.silver, content.scale?.gold]
+        jobScore = content.jobScore
+        kumaPoint = content.jobPoint
+        waveDetails = content.waveResults.map { WaveResult(content: $0, resultWave: content.resultWave, bossDefeated: content.bossResult?.hasDefeatBoss) }
+        jobResult = JobResult(content: content)
+        let specialCounts: [[WeaponInfoSpecialId]] = content.waveResults.map { $0.specialWeapons.map(\.id) }
+        myResult = PlayerResult(content: content.myResult, results: content.enemyResults, specialCounts: specialCounts, isMyself: true)
+        otherResults = content.memberResults.map { PlayerResult(content: $0, results: [], specialCounts: specialCounts, isMyself: false) }
+        gradeId = content.afterGrade?.id
+        gradePoint = content.afterGradePoint
+        jobRate = content.jobRate
+        playTime = content.playedTime
+        bossCounts = content.enemyResults.bossCounts()
+        bossKillCounts = content.enemyResults.teamBossKillCounts()
+        dangerRate = content.dangerRate
+        jobBonus = content.jobBonus
+        schedule = Schedule(schedule: history, content: content)
+        ikuraNum = ([content.myResult] + content.memberResults).map(\.deliverCount).reduce(0, +)
+        goldenIkuraNum = content.waveResults.compactMap(\.teamDeliverCount).reduce(0, +)
+        goldenIkuraAssistNum = ([content.myResult] + content.memberResults).map(\.goldenAssistCount).reduce(0, +)
+        smellMeter = content.smellMeter
+        scenarioCode = content.scenarioCode
         if let bossResult = content.bossResult {
-            self.enemyURLs = content.enemyResults.map({ SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) }) + [SPAssetType(key: bossResult.boss.id, url: bossResult.boss.image.url)]
+            enemyURLs = content.enemyResults.map { SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) } + [SPAssetType(key: bossResult.boss.id, url: bossResult.boss.image.url)]
         } else {
-            self.enemyURLs = content.enemyResults.map({ SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) })
+            enemyURLs = content.enemyResults.map { SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) }
         }
-        self.weaponURLs =
-        ([content.myResult] + content.memberResults).flatMap({ $0.weapons.map({ SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) }) })
-        + content.weapons.map({ SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) })
+        weaponURLs =
+            ([content.myResult] + content.memberResults).flatMap { $0.weapons.map { SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) } }
+                + content.weapons.map { SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) }
     }
 
     public init(
@@ -362,27 +362,27 @@ public struct CoopResult: Codable {
         self.ikuraNum = ikuraNum
         self.smellMeter = smellMeter
         self.scenarioCode = scenarioCode
-        self.enemyURLs = []
-        self.weaponURLs = []
+        enemyURLs = []
+        weaponURLs = []
     }
 }
 
 extension Collection where Element == CoopHistoryDetailQuery.EnemyResult {
     func bossKillCounts() -> [Int] {
-        CoopEnemyInfoId.regular.compactMap({ element in
+        CoopEnemyInfoId.regular.compactMap { element in
             self.first(where: { $0.enemy.id == element })?.defeatCount ?? .zero
-        })
+        }
     }
 
     func teamBossKillCounts() -> [Int] {
-        CoopEnemyInfoId.regular.compactMap({ element in
+        CoopEnemyInfoId.regular.compactMap { element in
             self.first(where: { $0.enemy.id == element })?.teamDefeatCount ?? .zero
-        })
+        }
     }
 
     func bossCounts() -> [Int] {
-        CoopEnemyInfoId.regular.compactMap({ element in
+        CoopEnemyInfoId.regular.compactMap { element in
             self.first(where: { $0.enemy.id == element })?.popCount ?? .zero
-        })
+        }
     }
 }

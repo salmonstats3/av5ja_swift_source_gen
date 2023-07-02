@@ -17,7 +17,7 @@ public extension CoopGradeId {
 @available(iOS 16.0, *)
 extension CoopGradeId: Plottable {
     public var primitivePlottable: String {
-        String(self.rawValue)
+        String(rawValue)
     }
 
     public init?(primitivePlottable: String) {

@@ -25,9 +25,9 @@ public extension CoopStageId {
     ]
 
     /// 通常のステージ
-    static let regular: [CoopStageId] = allCases.filter({ $0.rawValue > 0 && $0.rawValue < 100 })
+    static let regular: [CoopStageId] = allCases.filter { $0.rawValue > 0 && $0.rawValue < 100 }
     /// ビッグラン用のステージ
-    static let bigRun: [CoopStageId] = allCases.filter({ $0.rawValue >= 100 })
+    static let bigRun: [CoopStageId] = allCases.filter { $0.rawValue >= 100 }
 }
 
 public extension CoopStageKey {
@@ -49,7 +49,7 @@ extension CoopStageKey: Plottable {}
 @available(iOS 16.0, *)
 extension CoopStageId: Plottable {
     public var primitivePlottable: String {
-        String(self.rawValue)
+        String(rawValue)
     }
 
     public init?(primitivePlottable: String) {

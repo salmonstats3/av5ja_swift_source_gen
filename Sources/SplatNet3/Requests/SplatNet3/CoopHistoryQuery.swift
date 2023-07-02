@@ -17,24 +17,27 @@ public protocol PartialHistoryGroup: Codable {
 }
 
 public final class CoopHistoryQuery: GraphQL {
-	public typealias ResponseType = CoopHistoryQuery.Response
+    public typealias ResponseType = CoopHistoryQuery.Response
     public var hash: SHA256Hash = .CoopHistoryQuery
     public var variables: [String: String] = [:]
     public var parameters: Parameters?
 
-	init() {}
+    init() {}
 
     // MARK: - Response
+
     public struct Response: Codable {
         public let data: DataClass
     }
 
     // MARK: - DataClass
+
     public struct DataClass: Codable {
         public let coopResult: CoopResult
     }
 
     // MARK: - CoopResult
+
     public struct CoopResult: Codable {
         public let historyGroupsOnlyFirst: Common.Node<HistoryGroupsOnlyFirstNode>
         public let regularAverageClearWave: Decimal
@@ -47,6 +50,7 @@ public final class CoopHistoryQuery: GraphQL {
     }
 
     // MARK: - CoopSchedule
+
     public struct CoopSchedule: PartialHistoryGroup {
         public let startTime: Date?
         public let endTime: Date?
@@ -54,14 +58,15 @@ public final class CoopHistoryQuery: GraphQL {
         public let rule: RuleType
 
         init(history: HistoryGroup) {
-            self.startTime = history.startTime
-            self.endTime = history.endTime
-            self.mode = history.mode
-            self.rule = history.rule
+            startTime = history.startTime
+            endTime = history.endTime
+            mode = history.mode
+            rule = history.rule
         }
     }
 
     // MARK: - HistoryGroup
+
     public struct HistoryGroup: PartialHistoryGroup {
         public let startTime: Date?
         public let endTime: Date?
@@ -72,6 +77,7 @@ public final class CoopHistoryQuery: GraphQL {
     }
 
     // MARK: - HighestResult
+
     public struct HighestResult: Codable {
         public let grade: GradeType?
         public let gradePoint: Int?
@@ -80,6 +86,7 @@ public final class CoopHistoryQuery: GraphQL {
     }
 
     // MARK: - HistoryDetail
+
     public struct HistoryDetail: Codable {
         public let id: Common.ResultId
         public let weapons: [WeaponType]
@@ -96,28 +103,32 @@ public final class CoopHistoryQuery: GraphQL {
     }
 
     public enum GradePointDiff: String, Codable {
-        case down   = "DOWN"
-        case keep   = "KEEP"
-        case up     = "UP"
+        case down = "DOWN"
+        case keep = "KEEP"
+        case up = "UP"
     }
 
     // MARK: - Result
+
     public struct Result: Codable {
         public let deliverCount: Int
 //        public let goldenDeliverCount: Int
     }
 
     // MARK: - WaveResult
+
     public struct WaveResult: Codable {
         public let waveNumber: Int
     }
 
     // MARK: - HistoryGroupsOnlyFirstNode
+
     public struct HistoryGroupsOnlyFirstNode: Codable {
         public let historyDetails: Common.Node<CoopHistory.HistoryDetailElement>
     }
 
     // MARK: - PointCard
+
     public struct PointCard: Codable {
         public let defeatBossCount: Int
         public let deliverCount: Int
@@ -137,24 +148,24 @@ extension CoopHistoryQuery.HistoryGroup {
 
 extension CoopHistoryQuery.Response {
     func getResultIds(from playTime: Date? = nil) -> [Common.ResultId] {
-        let resultIds: [Common.ResultId] = data.coopResult.historyGroups.nodes.flatMap({ node in
-            node.historyDetails.nodes.map({ $0.id })
-        })
+        let resultIds: [Common.ResultId] = data.coopResult.historyGroups.nodes.flatMap { node in
+            node.historyDetails.nodes.map(\.id)
+        }
         guard let playTime: Date = playTime
         else {
             return resultIds
         }
-        return resultIds.filter({ $0.playTime > playTime })
+        return resultIds.filter { $0.playTime > playTime }
     }
 }
 
 extension Array where Element == CoopHistoryQuery.HistoryGroup {
     /// 1. WeaponInfoMainId
     var assetURLs: Set<URL> {
-        Set(flatMap({ group in
-            group.historyDetails.nodes.flatMap({ node in
-                node.weapons.map({ $0.image.url })
-            })
-        }))
+        Set(flatMap { group in
+            group.historyDetails.nodes.flatMap { node in
+                node.weapons.map(\.image.url)
+            }
+        })
     }
 }

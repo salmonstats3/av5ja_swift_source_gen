@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class CatalogRefetchQuery: GraphQL {
-	typealias ResponseType = CatalogRefetchQuery.Response
+    typealias ResponseType = CatalogRefetchQuery.Response
 
     var hash: SHA256Hash = .CatalogRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

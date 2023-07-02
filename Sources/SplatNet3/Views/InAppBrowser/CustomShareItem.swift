@@ -1,6 +1,6 @@
 //
 //  CustomShareItem.swift
-//  
+//
 //
 //  Created by devonly on 2023/03/09.
 //
@@ -11,27 +11,28 @@ import LinkPresentation
 internal class CustomShareItem: NSObject, UIActivityItemSource {
     private let metadata = LPLinkMetadata()
 
-    init(content: ShareURL) {
-        self.metadata.title = "Salmonia3+"
+    init(content _: ShareURL) {
+        metadata.title = "Salmonia3+"
     }
 
-    init(content: ShareImg) {
-        self.metadata.title = "Salmonia3+"
+    init(content _: ShareImg) {
+        metadata.title = "Salmonia3+"
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+    func activityViewControllerPlaceholderItem(_: UIActivityViewController) -> Any {
         ""
     }
 
-    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType _: UIActivity.ActivityType?) -> Any? {
         activityViewControllerPlaceholderItem(activityViewController)
     }
 
-    func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
+    func activityViewControllerLinkMetadata(_: UIActivityViewController) -> LPLinkMetadata? {
         metadata
     }
 }

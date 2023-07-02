@@ -19,17 +19,17 @@ public struct NullCodable<T>: Codable where T: Codable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         if !container.decodeNil() {
-            self.wrappedValue = try container.decode(T.self)
+            wrappedValue = try container.decode(T.self)
         }
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         switch wrappedValue {
-            case .some(let value):
-                try container.encode(value)
-            case .none:
-                try container.encodeNil()
+        case let .some(value):
+            try container.encode(value)
+        case .none:
+            try container.encodeNil()
         }
     }
 }

@@ -1,6 +1,6 @@
 //
 //  UnsafeRawRepresentable.swift
-//  
+//
 //
 //  Created by devonly on 2023/02/28.
 //
@@ -24,18 +24,18 @@ public struct UnsafeSHA256Hash<T: UnsafeRawRepresentable>: Codable {
         let stringValue: String = try container.decode(String.self)
 
         guard let capture: String = stringValue.capture(pattern: #"([\w\d]{64})_"#, group: 1),
-              let rawValue: T.RawValue = T.RawValue(capture),
+              let rawValue = T.RawValue(capture),
               let value = T(rawValue: rawValue)
         else {
-            self.wrappedValue = T.defaultValue
+            wrappedValue = T.defaultValue
             return
         }
-        self.wrappedValue = value
+        wrappedValue = value
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        try container.encode(self.wrappedValue)
+        try container.encode(wrappedValue)
     }
 }
 
@@ -54,17 +54,17 @@ public struct UnsafeRawValue<T: UnsafeRawRepresentable>: Codable {
         guard let data = Data(base64Encoded: stringValue),
               let stringValue = String(data: data, encoding: .utf8),
               let capture: String = stringValue.capture(pattern: "-([0-9-]*)$", group: 1),
-              let rawValue: T.RawValue = T.RawValue(capture),
+              let rawValue = T.RawValue(capture),
               let value = T(rawValue: rawValue)
         else {
-            self.wrappedValue = T.defaultValue
+            wrappedValue = T.defaultValue
             return
         }
-        self.wrappedValue = value
+        wrappedValue = value
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        try container.encode(self.wrappedValue)
+        try container.encode(wrappedValue)
     }
 }

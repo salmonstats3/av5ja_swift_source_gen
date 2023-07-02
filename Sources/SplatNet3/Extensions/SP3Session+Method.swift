@@ -19,49 +19,49 @@ extension SP3Session {
         }()
         do {
             /// リザルト取得時はプログレスバーを非表示にする
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 if request.hash != .CoopHistoryDetailQuery {
                     self.requests.append(SPProgress(request))
                 }
-            })
+            }
             let response: T.ResponseType = try await session.request(request, interceptor: interceptor)
                 .validationWithNXError()
                 .serializingDecodable(T.ResponseType.self, decoder: decoder)
                 .value
             /// リザルト取得時はプログレスバーを非表示にする
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 if request.hash != .CoopHistoryDetailQuery {
                     self.requests.success()
                 }
-            })
+            }
             return response
         } catch {
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 if request.hash != .CoopHistoryDetailQuery {
                     self.requests.failure()
                 }
-            })
+            }
             throw error
         }
     }
 
     /// 利用したことがあるQRコードを取得する
     internal func getCheckInHistory() async throws -> [CheckinWithQRCodeMutation.CheckInEventId] {
-        try await request(CheckinQuery()).data.checkinHistories.map({ $0.id })
+        try await request(CheckinQuery()).data.checkinHistories.map(\.id)
     }
 
     /// 利用していないQRコードをリクエストする
     @discardableResult
     public func getCheckInWithQRCode() async throws -> [CheckinWithQRCodeMutation.CreateCheckinHistory] {
-        let eventIdHistories: Set<CheckinWithQRCodeMutation.CheckInEventId> = Set(try await getCheckInHistory())
+        let eventIdHistories: Set<CheckinWithQRCodeMutation.CheckInEventId> = try await Set(getCheckInHistory())
         let eventIds: Set<CheckinWithQRCodeMutation.CheckInEventId> = Set(CheckinWithQRCodeMutation.CheckInEventId.allCases).subtracting(Set(eventIdHistories))
         /// 並列ダウンロード
         return try await withThrowingTaskGroup(of: CheckinWithQRCodeMutation.CreateCheckinHistory.self, body: { task in
-            eventIds.forEach({ eventId in
+            eventIds.forEach { eventId in
                 task.addTask(operation: { [self] in
                     try await getCheckInWithQRCodeMutation(eventId: eventId)
                 })
-            })
+            }
             return try await task.reduce(into: [CheckinWithQRCodeMutation.CreateCheckinHistory]()) { results, result in
                 results.append(result)
             }
@@ -94,9 +94,9 @@ extension SP3Session {
         schedule: CoopHistoryQuery.CoopSchedule,
         result: CoopHistoryQuery.HistoryDetail
     ) async throws -> CoopResult {
-        CoopResult(
+        try await CoopResult(
             history: schedule,
-            content: try await request(CoopHistoryDetailQuery(resultId: result.id)).data.coopHistoryDetail
+            content: request(CoopHistoryDetailQuery(resultId: result.id)).data.coopHistoryDetail
         )
     }
 }

@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class JourneyChallengeDetailQuery: GraphQL {
-	typealias ResponseType = JourneyChallengeDetailQuery.Response
+    typealias ResponseType = JourneyChallengeDetailQuery.Response
 
     var hash: SHA256Hash = .JourneyChallengeDetailQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

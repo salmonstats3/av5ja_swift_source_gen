@@ -12,29 +12,29 @@ public extension View {
     /// モーダルをUIKit風に表示する
     func fullScreen<Content: View>(
         isPresented: Binding<Bool>,
-        presentationStyle: UIModalPresentationStyle = .overFullScreen,
-        transitionStyle: UIModalTransitionStyle = .coverVertical,
-        backgroundColor: UIColor = .systemBackground,
-        isModalInPresentation: Bool = true,
+        presentationStyle _: UIModalPresentationStyle = .overFullScreen,
+        transitionStyle _: UIModalTransitionStyle = .coverVertical,
+        backgroundColor _: UIColor = .systemBackground,
+        isModalInPresentation _: Bool = true,
         @ViewBuilder content: @escaping () -> Content
     ) -> some View {
-            self.fullScreenCover(isPresented: isPresented, onDismiss: nil, content: {
-                content()
-                    .introspectViewController(customize: { controller in
-                        controller.view.backgroundColor = .clear
-                    })
-            })
-        }
+        fullScreenCover(isPresented: isPresented, onDismiss: nil, content: {
+            content()
+                .introspectViewController(customize: { controller in
+                    controller.view.backgroundColor = .clear
+                })
+        })
+    }
 
     func fullScreen(
         isPresented: Binding<Bool>,
         session: SP3Session,
-        presentationStyle: UIModalPresentationStyle = .overFullScreen,
-        transitionStyle: UIModalTransitionStyle = .coverVertical,
+        presentationStyle _: UIModalPresentationStyle = .overFullScreen,
+        transitionStyle _: UIModalTransitionStyle = .coverVertical,
         backgroundColor: UIColor = .systemBackground,
-        isModalInPresentation: Bool = true
+        isModalInPresentation _: Bool = true
     ) -> some View {
-        self.fullScreen(isPresented: isPresented, backgroundColor: backgroundColor, content: {
+        fullScreen(isPresented: isPresented, backgroundColor: backgroundColor, content: {
             CoopResultDownloadView()
                 .environmentObject(session)
         })
@@ -43,17 +43,17 @@ public extension View {
     /// モーダルをUIKit風に表示する
     func sheet<Content: View>(
         isPresented: Binding<Bool>,
-        presentationStyle: UIModalPresentationStyle = .overFullScreen,
-        transitionStyle: UIModalTransitionStyle = .coverVertical,
+        presentationStyle _: UIModalPresentationStyle = .overFullScreen,
+        transitionStyle _: UIModalTransitionStyle = .coverVertical,
         backgroundColor: UIColor = .systemBackground,
-        isModalInPresentation: Bool = true,
+        isModalInPresentation _: Bool = true,
         @ViewBuilder content: @escaping () -> Content
     ) -> some View {
-            self.sheet(isPresented: isPresented, onDismiss: nil, content: {
-                content()
-                    .introspectViewController(customize: { controller in
-                        controller.view.backgroundColor = backgroundColor
-                    })
-            })
-        }
+        sheet(isPresented: isPresented, onDismiss: nil, content: {
+            content()
+                .introspectViewController(customize: { controller in
+                    controller.view.backgroundColor = backgroundColor
+                })
+        })
+    }
 }

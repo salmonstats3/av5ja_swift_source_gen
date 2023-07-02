@@ -1,15 +1,2 @@
-.DS_Store
-/.build
-/Packages
-/*.xcodeproj
-xcuserdata/
-DerivedData/
-.swiftpm/config/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
-.netrc
-__pycache__
-.venv
-.env
-/AssetsGen
-Tests/SplatNet3Tests/**/*.json
-
+.swiftpm
+.build

@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class DetailTabViewWeaponTopsGlRefetchQuery: GraphQL {
-	typealias ResponseType = DetailTabViewWeaponTopsGlRefetchQuery.Response
+    typealias ResponseType = DetailTabViewWeaponTopsGlRefetchQuery.Response
 
-	var hash: SHA256Hash = .DetailTabViewWeaponTopsGlRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .DetailTabViewWeaponTopsGlRefetchQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

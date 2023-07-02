@@ -1,6 +1,6 @@
 //
 //  CoopSetting.swift
-//  
+//
 //
 //  Created by devonly on 2022/12/04.
 //

@@ -20,13 +20,13 @@ public class WebVersion: RequestType {
     //  swiftlint:disable:next discouraged_optional_collection
     public var headers: [String: String]?
 
-    public init() { }
+    public init() {}
 
     public struct Response: Codable {
         let hash: String
 
         init(context: String) {
-            self.hash = context.capture(pattern: #"main\.([a-z0-9]{8})\.js"#, group: 1) ?? "bd36a652"
+            hash = context.capture(pattern: #"main\.([a-z0-9]{8})\.js"#, group: 1) ?? "bd36a652"
         }
     }
 }

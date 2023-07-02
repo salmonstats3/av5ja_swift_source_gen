@@ -66,7 +66,7 @@ open class Session: ObservableObject {
 
     init() {
         // インスタンス生成時にアカウントを読み込み
-        self.account = keychain.get()
+        account = keychain.get()
     }
 
     /// 一般的に使うリクエスト
@@ -163,8 +163,8 @@ open class Session: ObservableObject {
 
     /// 保存されているアカウント全削除
     public func removeAll() {
-        self.account = nil
-        try? self.keychain.removeAll()
+        account = nil
+        try? keychain.removeAll()
     }
 }
 
@@ -181,7 +181,7 @@ extension Session: RequestInterceptor {
     }
 
     /// 通信失敗した場合のリトライ
-    public func retry(_ request: Request, for session: Session, dueTo error: Error, completion: @escaping (RetryResult) -> Void) {
+    public func retry(_ request: Request, for _: Session, dueTo _: Error, completion: @escaping (RetryResult) -> Void) {
         completion(request.retryCount == 0 ? .retryWithDelay(0.5) : .doNotRetry)
     }
 
@@ -200,7 +200,7 @@ extension Session: RequestInterceptor {
         let timestamp = UInt64(Date().timeIntervalSince1970 * 1_000)
         let requestId: String = UUID().uuidString
 
-        let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
+        let response: Imink.ServerResponse = try await request(Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
         return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
     }
 
@@ -209,22 +209,22 @@ extension Session: RequestInterceptor {
         let timestamp = UInt64(Date().timeIntervalSince1970 * 1_000)
         let requestId: String = UUID().uuidString
 
-        let response: Imink.ServerResponse = try await request(try Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
+        let response: Imink.ServerResponse = try await request(Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
         return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
     }
 
     /// AppVersion
     func getAppVersion() async throws -> AppVersion.Response {
         let response: AppVersion.Response = try await request(AppVersion())
-        self.keychain.xVersion = response.version
-        self.keychain.version = response.webVersion
+        keychain.xVersion = response.version
+        keychain.version = response.webVersion
         return response
     }
 
     /// X-ProductVersion取得
     func getXVersion() async throws -> XVersion.Response {
-        let response: XVersion.Response = XVersion.Response(context: try await request(XVersion()))
-        self.keychain.xVersion = response.version
+        let response: XVersion.Response = try await XVersion.Response(context: request(XVersion()))
+        keychain.xVersion = response.version
         return response
     }
 
@@ -235,8 +235,8 @@ extension Session: RequestInterceptor {
     }
 
     func getWebRevision(hash: String) async throws -> WebRevision.Response {
-        let response: WebRevision.Response = WebRevision.Response(context: try await request(WebRevision(hash: hash)))
-        self.keychain.version = response.description
+        let response: WebRevision.Response = try await WebRevision.Response(context: request(WebRevision(hash: hash)))
+        keychain.version = response.description
         return response
     }
 

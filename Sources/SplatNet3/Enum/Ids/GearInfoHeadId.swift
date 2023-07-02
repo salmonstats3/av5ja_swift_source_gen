@@ -269,7 +269,7 @@ public enum GearInfoHeadId: Int, UnsafeRawRepresentable {
     case HedHBD007 = 9_007
     ///  ピンポンバンド
     case HedHBD009 = 9_009
-    ///  イカタコピアス 
+    ///  イカタコピアス
     case HedACC003 = 10_003
     ///  バイトヘルメット オレンジ
     case HedCOP001 = 20_001

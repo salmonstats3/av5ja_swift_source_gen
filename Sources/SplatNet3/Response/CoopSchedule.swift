@@ -1,6 +1,6 @@
 //
 //  CoopSchedule.swift
-//  
+//
 //
 //  Created by devonly on 2022/12/03.
 //
@@ -21,14 +21,14 @@ public struct CoopSchedule: Codable {
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.stageId = try container.decode(CoopStageId.self, forKey: .stageId)
-        self.startTime = try container.decode(Date.self, forKey: .startTime)
-        self.endTime = try container.decode(Date.self, forKey: .endTime)
-        self.weaponList = try container.decode([WeaponInfoMainId].self, forKey: .weaponList)
-        self.rareWeapon = try container.decodeIfPresent(WeaponInfoMainId.self, forKey: .rareWeapon)
+        stageId = try container.decode(CoopStageId.self, forKey: .stageId)
+        startTime = try container.decode(Date.self, forKey: .startTime)
+        endTime = try container.decode(Date.self, forKey: .endTime)
+        weaponList = try container.decode([WeaponInfoMainId].self, forKey: .weaponList)
+        rareWeapon = try container.decodeIfPresent(WeaponInfoMainId.self, forKey: .rareWeapon)
         let setting: CoopSetting = try container.decode(CoopSetting.self, forKey: .setting)
-        self.mode = setting == .CoopTeamContestSetting ? .LIMITED : .REGULAR
-        self.rule = {
+        mode = setting == .CoopTeamContestSetting ? .LIMITED : .REGULAR
+        rule = {
             switch setting {
             case .CoopBigRunSetting:
                 return .BIG_RUN
@@ -39,15 +39,15 @@ public struct CoopSchedule: Codable {
             }
         }()
         self.setting = setting
-        self.estimatedKingSalmonId = try container.decodeIfPresent(CoopEnemyInfoId.self, forKey: .estimatedKingSalmonId)
+        estimatedKingSalmonId = try container.decodeIfPresent(CoopEnemyInfoId.self, forKey: .estimatedKingSalmonId)
     }
 
     init(schedule: StageScheduleQuery.CoopSchedule) {
-        self.stageId = schedule.setting.coopStage.id
-        self.startTime = schedule.startTime
-        self.endTime = schedule.endTime
-        self.mode = schedule.setting.isCoopSetting == .CoopTeamContestSetting ? .LIMITED : .REGULAR
-        self.rule = {
+        stageId = schedule.setting.coopStage.id
+        startTime = schedule.startTime
+        endTime = schedule.endTime
+        mode = schedule.setting.isCoopSetting == .CoopTeamContestSetting ? .LIMITED : .REGULAR
+        rule = {
             switch schedule.setting.isCoopSetting {
             case .CoopBigRunSetting:
                 return .BIG_RUN
@@ -57,9 +57,9 @@ public struct CoopSchedule: Codable {
                 return .TEAM_CONTEST
             }
         }()
-        self.weaponList = schedule.setting.weapons.map({ WeaponInfoMainId(key: $0.image.hash) })
-        self.rareWeapon = nil
-        self.setting = schedule.setting.isCoopSetting
-        self.estimatedKingSalmonId = nil
+        weaponList = schedule.setting.weapons.map { WeaponInfoMainId(key: $0.image.hash) }
+        rareWeapon = nil
+        setting = schedule.setting.isCoopSetting
+        estimatedKingSalmonId = nil
     }
 }

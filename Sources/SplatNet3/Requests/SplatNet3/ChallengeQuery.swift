@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class ChallengeQuery: GraphQL {
-	typealias ResponseType = ChallengeQuery.Response
+    typealias ResponseType = ChallengeQuery.Response
 
     var hash: SHA256Hash = .ChallengeQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

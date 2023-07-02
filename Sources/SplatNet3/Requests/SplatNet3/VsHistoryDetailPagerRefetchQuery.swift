@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class VsHistoryDetailPagerRefetchQuery: GraphQL {
-	typealias ResponseType = VsHistoryDetailPagerRefetchQuery.Response
+    typealias ResponseType = VsHistoryDetailPagerRefetchQuery.Response
 
     var hash: SHA256Hash = .VsHistoryDetailPagerRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

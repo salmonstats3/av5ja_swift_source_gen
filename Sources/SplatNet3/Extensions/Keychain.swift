@@ -117,13 +117,13 @@ extension Keychain {
     /// アカウントアップデート
     @discardableResult
     func update(_ bulletToken: BulletToken.Response) throws -> UserInfo {
-        guard var account: UserInfo = self.get() else {
+        guard var account: UserInfo = get() else {
             throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "Account Not Found"))
         }
         /// アップデートする
         account.bulletToken = bulletToken.bulletToken
         account.expiration = Date(timeIntervalSinceNow: 60 * 60 * 2)
-        self.set(account)
+        set(account)
         return account
     }
 

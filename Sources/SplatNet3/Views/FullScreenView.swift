@@ -1,6 +1,6 @@
 //
 //  FullScreenView.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/26.
 //
@@ -12,10 +12,10 @@ internal struct CoopResultDownloadView: View {
     @Environment(\.dismiss) var dismiss
     @State private var value: Float = .zero
     @State private var total: Float = 1
-    @State private var task: Task<(), Error>?
+    @State private var task: Task<Void, Error>?
 
     func download() {
-        self.task = Task {
+        task = Task {
             do {
                 try await session.getCoopStageScheduleQuery()
                 let results: [CoopResult] = try await session.getAllCoopHistoryDetailQuery(completion: { value, total in
@@ -25,28 +25,28 @@ internal struct CoopResultDownloadView: View {
                     }
                 })
                 if results.isEmpty {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         dismiss()
-                    })
+                    }
                 }
 
                 if session.useSalmonStats {
                     try await session.uploadAllCoopResultDetailQuery(results: results, completion: { _, _ in
                     })
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     dismiss()
-                })
+                }
             } catch {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                     dismiss()
-                })
+                }
             }
         }
     }
 
     func cancel() {
-        self.task?.cancel()
+        task?.cancel()
     }
 
     @ViewBuilder
@@ -98,8 +98,8 @@ internal struct CoopResultDownloadView: View {
         })
         .animation(.default, value: session.requests.count)
         .onDisappear(perform: {
-            self.session.requests.removeAll()
-            self.task?.cancel()
+            session.requests.removeAll()
+            task?.cancel()
         })
         .onAppear(perform: {
             download()
@@ -169,7 +169,7 @@ public struct CoopResultUploadView: View {
         })
         .animation(.default, value: session.requests.count)
         .onDisappear(perform: {
-            self.session.requests.removeAll()
+            session.requests.removeAll()
         })
         .onAppear(perform: {
             Task(priority: .background, operation: {
@@ -180,13 +180,13 @@ public struct CoopResultUploadView: View {
                             self.total = total
                         }
                     })
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         dismiss()
-                    })
+                    }
                 } catch {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                         dismiss()
-                    })
+                    }
                 }
             })
         })

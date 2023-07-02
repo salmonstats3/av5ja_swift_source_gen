@@ -1,17 +1,17 @@
 //
 //  ServerType.swift
-//  
+//
 //
 //  Created by devonly on 2023/05/25.
 //
 
 import Foundation
 
-internal enum ServerType: String, CaseIterable, Identifiable, Codable {
-    var id: String { rawValue }
+public enum ServerType: String, CaseIterable, Identifiable, Codable {
+    public var id: String { rawValue }
 
-    case Imink  = "https://api.imink.app"
-    case Nxapi  = "https://nxapi-znca-api.fancy.org.uk"
+    case Imink = "https://api.imink.app"
+    case Nxapi = "https://nxapi-znca-api.fancy.org.uk"
 
     var path: String {
         switch self {

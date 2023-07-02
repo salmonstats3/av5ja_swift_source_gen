@@ -22,7 +22,7 @@ internal class AccessToken: RequestType {
 
     /// セッショントークンコードから初期化
     init(sessionToken: String) {
-        self.parameters = [
+        parameters = [
             "client_id": "71b963c1b7b6d119",
             "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer-session-token",
             "session_token": sessionToken,

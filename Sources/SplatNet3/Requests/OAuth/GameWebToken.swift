@@ -21,12 +21,12 @@ internal class GameWebToken: RequestType {
     var headers: [String: String]?
 
     init(imink: Imink.Response, accessToken: GameServiceToken.Response, contentId: ContentId, version: AppVersion.Response) {
-        self.headers = [
+        headers = [
             "X-Platform": "Android",
             "X-ProductVersion": "\(version.version)",
             "Authorization": "Bearer \(accessToken.result.webApiServerCredential.accessToken)",
         ]
-        self.parameters = [
+        parameters = [
             "parameter": [
                 "f": imink.f,
                 "id": contentId.rawValue,

@@ -11,17 +11,17 @@ import Foundation
 public class SPDecoder: JSONDecoder {
     override public init() {
         super.init()
-        self.dateDecodingStrategy = .iso8601
-        self.keyDecodingStrategy = .convertFromSnakeCase
+        dateDecodingStrategy = .iso8601
+        keyDecodingStrategy = .convertFromSnakeCase
     }
 
-    static let `default`: SPDecoder = SPDecoder()
+    static let `default`: SPDecoder = .init()
 }
 
 public class SPEncoder: JSONEncoder {
     override public init() {
         super.init()
-        self.dateEncodingStrategy = .iso8601
-        self.keyEncodingStrategy = .convertToSnakeCase
+        dateEncodingStrategy = .iso8601
+        keyEncodingStrategy = .convertToSnakeCase
     }
 }

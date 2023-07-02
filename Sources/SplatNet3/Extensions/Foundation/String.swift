@@ -9,38 +9,38 @@
 import CryptoKit
 import Foundation
 
-extension String {
+public extension String {
     /// 長さ128のランダム文字列を生成する
-    static var randomString: String {
-        let letters: String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    internal static var randomString: String {
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         // swiftlint:disable:next force_unwrapping
-        return String((0 ..< 128).map({ _ in letters.randomElement()! }))
+        return String((0..<128).map { _ in letters.randomElement()! })
     }
 
     /// Base64文字列に変換する
-    var base64EncodedString: String {
+    internal var base64EncodedString: String {
         // swiftlint:disable:next force_unwrapping
-        self.data(using: .utf8)!
+        data(using: .utf8)!
             .base64EncodedString()
             .replacingOccurrences(of: "=", with: "")
             .replacingOccurrences(of: "+", with: "-")
             .replacingOccurrences(of: "/", with: "_")
     }
 
-    var sha256Hash: String {
+    internal var sha256Hash: String {
         NSLocalizedString(
             SHA256
-               .hash(data: self.data(using: .utf8)!)
-               .compactMap({ String(format: "%02x", $0) })
-               .joined(),
+                .hash(data: data(using: .utf8)!)
+                .compactMap { String(format: "%02x", $0) }
+                .joined(),
             bundle: .main,
             comment: ""
         )
     }
 
     /// Base64文字列から復号する
-    public var base64DecodedString: String? {
-        let formatedString: String = self + Array(repeating: "=", count: self.count % 4).joined()
+    var base64DecodedString: String? {
+        let formatedString: String = self + Array(repeating: "=", count: count % 4).joined()
         if let data = Data(base64Encoded: formatedString, options: [.ignoreUnknownCharacters]) {
             return String(data: data, encoding: .utf8)
         }
@@ -48,24 +48,24 @@ extension String {
     }
 
     /// HMAC-SHA256文字列に変換する
-    var codeChallenge: String {
-        Data(SHA256.hash(data: Data(self.utf8))).base64EncodedString()
+    internal var codeChallenge: String {
+        Data(SHA256.hash(data: Data(utf8))).base64EncodedString()
             .replacingOccurrences(of: "=", with: "")
             .replacingOccurrences(of: "+", with: "-")
             .replacingOccurrences(of: "/", with: "_")
     }
 
     /// 正規表現でマッチングする
-    public func capture(pattern: String, group: Int) -> String? {
+    func capture(pattern: String, group: Int) -> String? {
         capture(pattern: pattern, group: [group]).first
     }
 
     /// 正規表現でマッチングする
-    public func capture(pattern: String, group: [Int]) -> [String] {
+    func capture(pattern: String, group: [Int]) -> [String] {
         guard let regex = try? NSRegularExpression(pattern: pattern) else {
             return []
         }
-        guard let matches = regex.firstMatch(in: self, range: NSRange(location: 0, length: self.count)) else {
+        guard let matches = regex.firstMatch(in: self, range: NSRange(location: 0, length: count)) else {
             return []
         }
         return group.map { group -> String in
@@ -74,19 +74,19 @@ extension String {
     }
 
     /// 正規表現でマッチングする
-    public func capture(pattern: String) -> [String] {
+    func capture(pattern: String) -> [String] {
         guard let regex = try? NSRegularExpression(pattern: pattern) else {
             return []
         }
 
-        let matches: [NSTextCheckingResult] = regex.matches(in: self, range: NSRange(location: 0, length: self.count))
+        let matches: [NSTextCheckingResult] = regex.matches(in: self, range: NSRange(location: 0, length: count))
 
-        return matches.map({ match in
+        return matches.map { match in
             (self as NSString).substring(with: match.range)
-        })
+        }
     }
 
-    public init(format: String, _ arguments: CVarArg?) {
+    init(format: String, _ arguments: CVarArg?) {
         if let arguments {
             self.init(format: format, arguments)
         } else {

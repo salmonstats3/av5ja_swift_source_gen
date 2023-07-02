@@ -22,28 +22,29 @@ internal class SPWebView: WKWebView, WKNavigationDelegate {
 
     override init(frame: CGRect, configuration: WKWebViewConfiguration) {
         super.init(frame: frame, configuration: configuration)
-        self.isOpaque = false
-        self.backgroundColor = .clear
-        self.allowsLinkPreview = false
-        self.navigationDelegate = self
-        self.scrollView.alwaysBounceVertical = false
-        self.addSubview(indicator)
+        isOpaque = false
+        backgroundColor = .clear
+        allowsLinkPreview = false
+        navigationDelegate = self
+        scrollView.alwaysBounceVertical = false
+        addSubview(indicator)
     }
 
     func webView(
-        _ webView: WKWebView,
-        decidePolicyFor navigationAction: WKNavigationAction,
+        _: WKWebView,
+        decidePolicyFor _: WKNavigationAction,
         decisionHandler: @escaping (WKNavigationActionPolicy) -> Void
     ) {
-        indicator.center = self.center
+        indicator.center = center
         decisionHandler(.allow)
     }
 
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    func webView(_: WKWebView, didFinish _: WKNavigation!) {
         indicator.stopAnimating()
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

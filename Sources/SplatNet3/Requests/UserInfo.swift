@@ -44,27 +44,27 @@ public struct UserInfo: SPCredential {
     }
 
     init(sessionToken: String, gameServiceToken: GameServiceToken.Response, gameWebToken: String) {
-        self.nickname = gameServiceToken.result.user.name
-        self.membership = gameServiceToken.result.user.links.nintendoAccount.membership.active
-        self.friendCode = gameServiceToken.result.user.links.friendCode.id
-        self.thumbnailURL = URL(unsafeString: gameServiceToken.result.user.imageUri)
-        self.nsaid = gameServiceToken.result.user.nsaId
+        nickname = gameServiceToken.result.user.name
+        membership = gameServiceToken.result.user.links.nintendoAccount.membership.active
+        friendCode = gameServiceToken.result.user.links.friendCode.id
+        thumbnailURL = URL(unsafeString: gameServiceToken.result.user.imageUri)
+        nsaid = gameServiceToken.result.user.nsaId
         self.sessionToken = sessionToken
         self.gameServiceToken = gameServiceToken.result.webApiServerCredential.accessToken
         self.gameWebToken = gameWebToken
-        self.expiration = Date(timeIntervalSinceNow: 60 * 60 * 2)
+        expiration = Date(timeIntervalSinceNow: 60 * 60 * 2)
     }
 
     init(sessionToken: String, gameServiceToken: GameServiceToken.Response, gameWebToken: GameWebToken.Response, iksmSession: IksmSession.Response) {
         self.init(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken.result.accessToken)
         self.iksmSession = iksmSession.iksmSession
-        self.expiration = Date(timeIntervalSinceNow: 60 * 60 * 2)
+        expiration = Date(timeIntervalSinceNow: 60 * 60 * 2)
     }
 
     init(sessionToken: String, gameServiceToken: GameServiceToken.Response, gameWebToken: String, bulletToken: BulletToken.Response) {
         self.init(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken)
         self.bulletToken = bulletToken.bulletToken
-        self.expiration = Date(timeIntervalSinceNow: 60 * 60 * 2)
+        expiration = Date(timeIntervalSinceNow: 60 * 60 * 2)
     }
 }
 

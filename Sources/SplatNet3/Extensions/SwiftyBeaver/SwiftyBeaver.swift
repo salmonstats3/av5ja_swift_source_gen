@@ -1,6 +1,6 @@
 //
 //  SwiftyBeaver.swift
-//  
+//
 //
 //  Created by devonly on 2022/12/05.
 //
@@ -9,7 +9,7 @@ import Foundation
 import SwiftyBeaver
 import UIKit
 
-public class SwiftyLogger {
+public enum SwiftyLogger {
     static let logger: SwiftyBeaver.Type = SwiftyBeaver.self
     static let format: String = "$DHH:mm:ss$d $L: $M"
 
@@ -33,23 +33,23 @@ public class SwiftyLogger {
     }()
 
     public static func info(_ message: Any, context: Any? = nil) {
-        self.logger.info(message, context: context)
+        logger.info(message, context: context)
     }
 
     public static func error(_ message: Any, context: Any? = nil) {
-        self.logger.error(message, context: context)
+        logger.error(message, context: context)
     }
 
     public static func debug(_ message: Any, context: Any? = nil) {
-        self.logger.debug(message, context: context)
+        logger.debug(message, context: context)
     }
 
     public static func warning(_ message: Any, context: Any? = nil) {
-        self.logger.warning(message, context: context)
+        logger.warning(message, context: context)
     }
 
     public static func verbose(_ message: Any, context: Any? = nil) {
-        self.logger.verbose(message, context: context)
+        logger.verbose(message, context: context)
     }
 
     public static func sizeOfFile() -> String {
@@ -82,7 +82,7 @@ extension ConsoleDestination {
     convenience init(format: String) {
         self.init()
         self.format = format
-        self.minLevel = .verbose
+        minLevel = .verbose
     }
 }
 
@@ -91,7 +91,7 @@ extension FileDestination {
     convenience init(format: String) {
         self.init()
         self.format = format
-        self.minLevel = .info
+        minLevel = .info
     }
 }
 
@@ -100,6 +100,6 @@ extension SBPlatformDestination {
     convenience init(format: String, appId: String, appSecret: String, encryptionKey: String) {
         self.init(appID: appId, appSecret: appSecret, encryptionKey: encryptionKey)
         self.format = format
-        self.minLevel = .warning
+        minLevel = .warning
     }
 }

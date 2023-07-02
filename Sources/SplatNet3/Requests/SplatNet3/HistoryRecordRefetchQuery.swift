@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class HistoryRecordRefetchQuery: GraphQL {
-	typealias ResponseType = HistoryRecordRefetchQuery.Response
+    typealias ResponseType = HistoryRecordRefetchQuery.Response
 
-	var hash: SHA256Hash = .HistoryRecordRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .HistoryRecordRefetchQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

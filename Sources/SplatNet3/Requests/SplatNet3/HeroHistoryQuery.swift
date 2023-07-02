@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class HeroHistoryQuery: GraphQL {
-	typealias ResponseType = HeroHistoryQuery.Response
+    typealias ResponseType = HeroHistoryQuery.Response
 
-	var hash: SHA256Hash = .HeroHistoryQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .HeroHistoryQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

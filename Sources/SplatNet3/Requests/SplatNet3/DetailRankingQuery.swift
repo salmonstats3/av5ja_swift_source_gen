@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class DetailRankingQuery: GraphQL {
-	typealias ResponseType = DetailRankingQuery.Response
+    typealias ResponseType = DetailRankingQuery.Response
 
-	var hash: SHA256Hash = .DetailRankingQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .DetailRankingQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

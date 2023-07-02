@@ -269,7 +269,7 @@ public enum GearInfoHeadKey: String, UnsafeRawRepresentable {
     case HedHBD007 = "2760099d2504f3383ec92fd976cc3e78d0223fd7ffa6bece622cbbf440166d1b"
     ///  ピンポンバンド
     case HedHBD009 = "cbf94a703559e438bb602a61dc79b94090f32e3dc7187392d6d6507365d175ce"
-    ///  イカタコピアス 
+    ///  イカタコピアス
     case HedACC003 = "be26811f5124aa5377ba087b9b9530d9288afb3d50923251bcf445ca464a222a"
     ///  バイトヘルメット オレンジ
     case HedCOP001 = "b2643db9a48948811b848d3932cacb3029b230ca8204b1f7eafab1b98d0eb7aa"

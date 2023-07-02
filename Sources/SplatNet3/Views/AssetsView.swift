@@ -1,6 +1,6 @@
 //
 //  SwiftUIView.swift
-//  
+//
 //
 //  Created by devonly on 2023/07/01.
 //
@@ -34,13 +34,13 @@ public struct AssetsView: View {
                 do {
                     try await session.getAssets()
                 } catch {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         dismiss()
-                    })
+                    }
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     dismiss()
-                })
+                }
             })
         })
     }

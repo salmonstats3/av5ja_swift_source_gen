@@ -1,6 +1,6 @@
 //
 //  QRReaderSession.swift
-//  
+//
 //
 //  Created by devonly on 2023/03/16.
 //
@@ -18,7 +18,7 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
     /// イニシャライザ
     override init() {
         super.init()
-        let session: AVCaptureDevice.DiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .back)
+        let session = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .back)
         guard let device: AVCaptureDevice = session.devices.first,
               let deviceInput = try? AVCaptureDeviceInput(device: device)
         else {
@@ -27,10 +27,10 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
 
         let metadataOutput = AVCaptureMetadataOutput()
 
-        if self.canAddInput(deviceInput),
-           self.canAddOutput(metadataOutput) {
-            self.addInput(deviceInput)
-            self.addOutput(metadataOutput)
+        if canAddInput(deviceInput),
+           canAddOutput(metadataOutput) {
+            addInput(deviceInput)
+            addOutput(metadataOutput)
 
             metadataOutput.setMetadataObjectsDelegate(self, queue: queue)
             metadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
@@ -39,47 +39,46 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
 
     private func requestAuthorization() {
         #if !targetEnvironment(simulator)
-        switch AVCaptureDevice.authorizationStatus(for: .video) {
-        case .authorized:
-            break
-        case .notDetermined:
-            AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
-        case .denied:
-            let alert = UIAlertController(title: LocalizedType.CommonHome.description, message: LocalizedType.CommonClose.description, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.description, style: .default))
-            UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
-        case .restricted:
-            break
-        @unknown default:
-            fatalError()
-        }
+            switch AVCaptureDevice.authorizationStatus(for: .video) {
+            case .authorized:
+                break
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
+            case .denied:
+                let alert = UIAlertController(title: LocalizedType.CommonHome.description, message: LocalizedType.CommonClose.description, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.description, style: .default))
+                UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
+            case .restricted:
+                break
+            @unknown default:
+                fatalError()
+            }
         #endif
     }
 
     override func startRunning() {
         #if !targetEnvironment(simulator)
-        self.requestAuthorization()
-        if self.isRunning { return }
-        DispatchQueue.global(qos: .background).async(execute: {
-            super.startRunning()
-        })
+            requestAuthorization()
+            if isRunning { return }
+            DispatchQueue.global(qos: .background).async {
+                super.startRunning()
+            }
         #endif
     }
 
     override func stopRunning() {
         #if !targetEnvironment(simulator)
-        if !self.isRunning { return }
-        DispatchQueue.global(qos: .background).async(execute: {
-            super.stopRunning()
-        })
+            if !isRunning { return }
+            DispatchQueue.global(qos: .background).async {
+                super.stopRunning()
+            }
         #endif
     }
 
-    func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-    }
+    func captureOutput(_: AVCaptureOutput, didDrop _: CMSampleBuffer, from _: AVCaptureConnection) {}
 
     /// バーコードを認識したときに呼ばれる
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    func metadataOutput(_: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from _: AVCaptureConnection) {
         guard let metadata = metadataObjects.first,
               let readable: AVMetadataMachineReadableCodeObject = metadata as? AVMetadataMachineReadableCodeObject,
               let stringValue: String = readable.stringValue
@@ -87,10 +86,11 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
             return
         }
         onDidFinish(stringValue)
-        self.stopRunning()
+        stopRunning()
     }
 }
 
+// swiftlint:disable:next type_name
 internal class _QRReaderView: UIView {
     private let session: QRCaptureSession
     private let previewLayer = AVCaptureVideoPreviewLayer()
@@ -98,60 +98,61 @@ internal class _QRReaderView: UIView {
     /// イニシャライザ
     init(session: QRCaptureSession) {
         self.session = session
-        self.previewLayer.session = session
+        previewLayer.session = session
         super.init(frame: .zero)
     }
 
     /// イニシャライザ
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError()
     }
 
     /// イニシャライザ
     init(frame: CGRect, reader: QRCaptureSession) {
-        self.session = reader
+        session = reader
         super.init(frame: frame)
     }
 
     /// 起動しているかどうか
     var isRunning: Bool {
-        self.session.isRunning
+        session.isRunning
     }
 
     /// カメラを起動
     func startRunning() {
-        self.session.startRunning()
+        session.startRunning()
     }
 
     /// カメラを終了
     func stopRunning() {
-        self.session.stopRunning()
+        session.stopRunning()
     }
 
     /// サブビューを追加したときの処理
     override func layoutSubviews() {
-        previewLayer.frame = self.bounds
+        previewLayer.frame = bounds
         previewLayer.videoGravity = .resizeAspectFill
 
-        self.layer.addSublayer(previewLayer)
+        layer.addSublayer(previewLayer)
     }
 }
 
 extension AVMetadataObject.ObjectType {
     static let full: [Self] =
-    [
-        .upce,
-        .code39,
-        .code39Mod43,
-        .ean13,
-        .ean8,
-        .code93,
-        .code128,
-        .pdf417,
-        .qr,
-        .aztec,
-        .interleaved2of5,
-        .itf14,
-        .dataMatrix,
-    ]
+        [
+            .upce,
+            .code39,
+            .code39Mod43,
+            .ean13,
+            .ean8,
+            .code93,
+            .code128,
+            .pdf417,
+            .qr,
+            .aztec,
+            .interleaved2of5,
+            .itf14,
+            .dataMatrix,
+        ]
 }

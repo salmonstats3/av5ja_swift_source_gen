@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class DetailTabViewXRankingLfRefetchQuery: GraphQL {
-	typealias ResponseType = DetailTabViewXRankingLfRefetchQuery.Response
+    typealias ResponseType = DetailTabViewXRankingLfRefetchQuery.Response
 
-	var hash: SHA256Hash = .DetailTabViewXRankingLfRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .DetailTabViewXRankingLfRefetchQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

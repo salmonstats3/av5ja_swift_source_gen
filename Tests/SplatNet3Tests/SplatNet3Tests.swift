@@ -42,18 +42,18 @@ final class SplatNet3Tests: XCTestCase {
             let paths: [URL] = getListContents(.CoopHistoryDetail).sorted(by: { $0.absoluteString < $1.absoluteString })
             print("Test Case: \(paths.count)")
             for path in paths {
-                try autoreleasepool(invoking: {
+                try autoreleasepool {
                     SwiftyLogger.error("Tested: \(path.lastPathComponent)")
                     let data: Data = try Data(contentsOf: path)
                     let result = try decoder.decode(CoopHistoryDetailQuery.Response.self, from: data)
                     let players = [result.data.coopHistoryDetail.myResult] + result.data.coopHistoryDetail.memberResults
-                    players.forEach({ player in
+                    players.forEach { player in
                         let textColor: Common.TextColor = player.player.nameplate.background.textColor
                         if textColor.a != 1 || textColor.b != 1 || textColor.g != 1 || textColor.r != 1 {
                             print(player.player.nameplate.background.textColor)
                         }
-                    })
-                })
+                    }
+                }
             }
         } catch {
             SwiftyLogger.error(error.localizedDescription)
@@ -66,9 +66,9 @@ final class SplatNet3Tests: XCTestCase {
             let paths: [URL] = getListContents(.SplatNet3).sorted(by: { $0.absoluteString < $1.absoluteString })
 
             for path in paths {
-                try autoreleasepool(invoking: {
+                try autoreleasepool {
                     let data: Data = try Data(contentsOf: path)
-                })
+                }
             }
         } catch {
             print(error)
@@ -77,17 +77,16 @@ final class SplatNet3Tests: XCTestCase {
         }
     }
 
-    func testFriendList() throws {
-    }
+    func testFriendList() throws {}
 
     func testStageSchedule() throws {
         let paths: [URL] = getListContents(.StageSchedule).sorted(by: { $0.absoluteString < $1.absoluteString })
         for path in paths {
             do {
-                try autoreleasepool(invoking: {
+                try autoreleasepool {
                     let data: Data = try Data(contentsOf: path)
                     let response: StageScheduleQuery.Response = try decoder.decode(StageScheduleQuery.Response.self, from: data)
-                })
+                }
             } catch {
                 SwiftyLogger.error(error)
                 throw error
@@ -105,14 +104,14 @@ final class SplatNet3Tests: XCTestCase {
                 else {
                     return
                 }
-                try autoreleasepool(invoking: {
+                try autoreleasepool {
                     let data: Data = try Data(contentsOf: path)
                     let response: EnumType = try decoder.decode(EnumType.self, from: data)
-                    try OutputType.allCases.forEach({ type in
+                    try OutputType.allCases.forEach { type in
                         let destination: URL = url.appendingPathComponent("\(filename)\(type.rawValue).swift")
                         try response.asSourceCode(type: type, filename: String(filename)).data(using: .utf8)?.write(to: destination)
-                    })
-                })
+                    }
+                }
             }
         } catch {
             SwiftyLogger.error(error.localizedDescription)
@@ -162,8 +161,8 @@ struct EnumType: Codable {
 
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            self.id = try container.decode(Int.self, forKey: .id)
-            self.rowId = try {
+            id = try container.decode(Int.self, forKey: .id)
+            rowId = try {
                 let rawValue: String = try container.decode(String.self, forKey: .rowId)
                 return rawValue.capture(pattern: #"_(.+?)\."#, group: 1) ?? rawValue
             }()
@@ -171,14 +170,14 @@ struct EnumType: Codable {
     }
 
     func asSourceCode(type: OutputType, filename: String) -> String {
-        let contents: String = root.sorted(by: { $0.id < $1.id }) .map({ entry in
+        let contents: String = root.sorted(by: { $0.id < $1.id }).map { entry in
             switch type {
             case .Key:
                 return "\tcase \(entry.rowId) = \"\(entry.hash)\""
             case .Id:
                 return "\tcase \(entry.rowId) = \(entry.id)"
             }
-        }).joined(separator: "\n")
+        }.joined(separator: "\n")
 
         return """
         //

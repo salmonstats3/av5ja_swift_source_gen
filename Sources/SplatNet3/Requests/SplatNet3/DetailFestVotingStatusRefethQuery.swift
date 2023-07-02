@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class DetailFestVotingStatusRefethQuery: GraphQL {
-	typealias ResponseType = DetailFestVotingStatusRefethQuery.Response
+    typealias ResponseType = DetailFestVotingStatusRefethQuery.Response
 
-	var hash: SHA256Hash = .DetailFestVotingStatusRefethQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var hash: SHA256Hash = .DetailFestVotingStatusRefethQuery
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class PhotoAlbumQuery: GraphQL {
-	typealias ResponseType = PhotoAlbumQuery.Response
+    typealias ResponseType = PhotoAlbumQuery.Response
 
     var hash: SHA256Hash = .PhotoAlbumQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

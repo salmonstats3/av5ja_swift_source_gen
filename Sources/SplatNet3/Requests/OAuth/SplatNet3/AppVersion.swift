@@ -15,16 +15,16 @@ public class AppVersion: RequestType {
 
     public var method: HTTPMethod = .get
     #if DEBUG
-    public var baseURL = URL(unsafeString: "http://localhost:3000")
+        public var baseURL = URL(unsafeString: "http://localhost:3000")
     #else
-    public var baseURL = URL(unsafeString: "https://api.splatnet3.com")
+        public var baseURL = URL(unsafeString: "https://api.splatnet3.com")
     #endif
     public var path: String = "/v3/authorize/version"
     public var parameters: Parameters?
     //  swiftlint:disable:next discouraged_optional_collection
     public var headers: [String: String]?
 
-    public init() { }
+    public init() {}
 
     public struct Response: Codable {
         let version: String

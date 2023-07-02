@@ -10,25 +10,28 @@ import Alamofire
 import Foundation
 
 internal final class CheckinQuery: GraphQL {
-	typealias ResponseType = CheckinQuery.Response
+    typealias ResponseType = CheckinQuery.Response
 
     var hash: SHA256Hash = .CheckinQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
     // MARK: - Response
+
     public struct Response: Codable {
         public let data: DataClass
     }
 
     // MARK: - DataClass
+
     public struct DataClass: Codable {
         public let checkinHistories: [CheckinHistory]
     }
 
     // MARK: - CheckinHistory
+
     public struct CheckinHistory: Codable {
         public let id: CheckinWithQRCodeMutation.CheckInEventId
         public let title: String
@@ -37,7 +40,7 @@ internal final class CheckinQuery: GraphQL {
 
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            self.id = try {
+            id = try {
                 guard let rawValue: String = try? container.decode(String.self, forKey: .id).base64DecodedString
                 else {
                     throw DecodingError.keyNotFound(CodingKeys.id, .init(codingPath: container.codingPath, debugDescription: "RawValue is not found."))
@@ -48,19 +51,20 @@ internal final class CheckinQuery: GraphQL {
                     throw DecodingError.keyNotFound(CodingKeys.id, .init(codingPath: container.codingPath, debugDescription: "RawValue is not found."))
                 }
 
-                guard let eventId: CheckinWithQRCodeMutation.CheckInEventId = CheckinWithQRCodeMutation.CheckInEventId(rawValue: id)
+                guard let eventId = CheckinWithQRCodeMutation.CheckInEventId(rawValue: id)
                 else {
                     throw DecodingError.keyNotFound(CodingKeys.id, .init(codingPath: container.codingPath, debugDescription: "RawValue is not found."))
                 }
                 return eventId
             }()
-            self.title = try container.decode(String.self, forKey: .title)
-            self.checkinTime = try container.decode(String.self, forKey: .checkinTime)
-            self.reward = try container.decode(CheckinQuery.Reward.self, forKey: .reward)
+            title = try container.decode(String.self, forKey: .title)
+            checkinTime = try container.decode(String.self, forKey: .checkinTime)
+            reward = try container.decode(CheckinQuery.Reward.self, forKey: .reward)
         }
     }
 
     // MARK: - Reward
+
     public struct Reward: Codable {
 //        public let typename: String
         public let nameplateBackground: NameplateBackground?
@@ -71,11 +75,13 @@ internal final class CheckinQuery: GraphQL {
     }
 
     // MARK: - Image
+
     public struct Image: Codable {
         public let url: String
     }
 
     // MARK: - NameplateBackground
+
     public struct NameplateBackground: Codable {
         public let image: Image
         public let id: String

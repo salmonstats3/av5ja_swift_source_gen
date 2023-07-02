@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class StageRecordsRefetchQuery: GraphQL {
-	typealias ResponseType = StageRecordsRefetchQuery.Response
+    typealias ResponseType = StageRecordsRefetchQuery.Response
 
     var hash: SHA256Hash = .StageRecordsRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

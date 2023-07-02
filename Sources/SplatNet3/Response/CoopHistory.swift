@@ -1,6 +1,6 @@
 //
 //  CoopHistory.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/25.
 //
@@ -9,6 +9,7 @@ import Foundation
 
 public enum CoopHistory {
     // MARK: - Scale
+
     public struct Scale: Codable {
         public let gold: Int
         public let silver: Int
@@ -16,6 +17,7 @@ public enum CoopHistory {
     }
 
     // MARK: - SPWeapon
+
     public struct SPWeapon<T: UnsafeRawRepresentable, S: RawRepresentable>: Codable where T.RawValue == String, S.RawValue == Int, S: Codable {
         public let name: String
         public let weaponId: S
@@ -30,8 +32,8 @@ public enum CoopHistory {
 
         public init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            self.name = try container.decode(String.self, forKey: .name)
-            self.weaponId = try {
+            name = try container.decode(String.self, forKey: .name)
+            weaponId = try {
                 if let id: String = try? container.decode(String.self, forKey: .id),
                    let stringValue: String = id.base64DecodedString,
                    let rawValue: String = stringValue.capture(pattern: "([0-9]*)$", group: 1),
@@ -41,7 +43,7 @@ public enum CoopHistory {
                 }
                 return try container.decode(S.self, forKey: .weaponId)
             }()
-            self.image = try container.decode(Common.URL<T>.self, forKey: .image)
+            image = try container.decode(Common.URL<T>.self, forKey: .image)
         }
 
         public func encode(to encoder: Encoder) throws {
@@ -53,6 +55,7 @@ public enum CoopHistory {
     }
 
     // MARK: - Content
+
     public struct Content<T: UnsafeRawRepresentable, S: RawRepresentable>: Codable where T.RawValue == String, S.RawValue == Int {
         public let name: String
         @IntegerRawValue public var id: S
@@ -60,18 +63,21 @@ public enum CoopHistory {
     }
 
     // MARK: - Element
+
     public struct Element<T: RawRepresentable>: Codable where T.RawValue == Int {
         public let name: String
         @IntegerRawValue public var id: T
     }
 
     // MARK: - BossResult
+
     public struct BossResult: Codable {
         public let hasDefeatBoss: Bool
         public let boss: CoopHistory.Element<CoopEnemyInfoId>
     }
 
     // MARK: - HistoryDetailElement
+
     public struct HistoryDetailElement: Codable {
         public let id: Common.ResultId
     }

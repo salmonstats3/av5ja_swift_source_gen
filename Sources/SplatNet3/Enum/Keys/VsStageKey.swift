@@ -1,6 +1,6 @@
 //
 //  VsStageKey.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/25.
 //
@@ -48,6 +48,6 @@ public enum VsStageKey: String, UnsafeRawRepresentable {
     /// マンタマリア号
     case Pillar = "0b7fd997781e03eb9d5bf1875ed070f698afc654f4fe929452c65aa26c0a35fd"
     /// ？？？
-    case Unknown   = "59a42245071d692c58b9825886f89f95e092ae0aa83a46617fdb4cbcb2f5f2b8"
+    case Unknown = "59a42245071d692c58b9825886f89f95e092ae0aa83a46617fdb4cbcb2f5f2b8"
 //    case Unknown = "e5c5889e3e4278352283021adc2b1a8cf07fed973d216c7739804b38f418ba93"
 }

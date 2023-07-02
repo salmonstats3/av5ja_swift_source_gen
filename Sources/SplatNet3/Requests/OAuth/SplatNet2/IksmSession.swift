@@ -21,7 +21,7 @@ internal class IksmSession: RequestType {
     var headers: [String: String]?
 
     init(accessToken: String) {
-        self.headers = [
+        headers = [
             "Cookie": "iksm_session=",
             "X-GameWebToken": accessToken,
         ]

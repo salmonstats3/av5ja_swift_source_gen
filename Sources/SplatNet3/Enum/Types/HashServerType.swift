@@ -1,6 +1,6 @@
 //
 //  HashServerType.swift
-//  
+//
 //
 //  Created by devonly on 2023/06/11.
 //

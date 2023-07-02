@@ -1,6 +1,6 @@
 //
 //  Common.swift
-//  
+//
 //
 //  Created by devonly on 2022/11/25.
 //
@@ -25,6 +25,7 @@ public enum Common {
     static let dateFormatter = SPDateFormatter()
 
     // MARK: - PlayerId
+
     public struct PlayerId: SP3IdType {
         /// Base64デコードした文字列
         public var id: String {
@@ -59,8 +60,8 @@ public enum Common {
 
             self.playTime = playTime
             self.uuid = uuid
-            self.nplnUserId = rawValue[5]
-            self.parentNplnUserId = rawValue[2]
+            nplnUserId = rawValue[5]
+            parentNplnUserId = rawValue[2]
         }
 
         public init(from decoder: Decoder) throws {
@@ -78,12 +79,14 @@ public enum Common {
     }
 
     // MARK: - ResultId
+
     public struct ResultId: SP3IdType {
         /// Base64エンコードした文字列
         public var id: String {
             let playTime: String = Common.dateFormatter.string(from: playTime)
             return "\(type.rawValue)-u-\(nplnUserId):\(playTime)_\(uuid.uuidString.lowercased())"
         }
+
         public let type: IdType
         public let nplnUserId: String
         public let playTime: Date
@@ -95,7 +98,7 @@ public enum Common {
         }
 
         public init(nplnUserId: String, playTime: Date, uuid: UUID) {
-            self.type = .CoopHistoryDetail
+            type = .CoopHistoryDetail
             self.nplnUserId = nplnUserId
             self.playTime = playTime
             self.uuid = uuid
@@ -119,7 +122,7 @@ public enum Common {
             }
 
             self.type = type
-            self.nplnUserId = rawValue[2]
+            nplnUserId = rawValue[2]
             self.playTime = playTime
             self.uuid = uuid
         }
@@ -134,11 +137,13 @@ public enum Common {
     }
 
     // MARK: - Node
+
     public struct Node<T: Codable>: Codable {
         public let nodes: [T]
     }
 
     // MARK: - URL
+
     public struct URL<T: UnsafeRawRepresentable>: Codable where T.RawValue == String {
         let url: Foundation.URL
 
@@ -153,12 +158,14 @@ public enum Common {
     }
 
     // MARK: - Image
+
     public struct Image<T: UnsafeRawRepresentable>: Codable where T.RawValue == String {
         public let name: String
         public let image: Common.URL<T>
     }
 
     // MARK: - TextColor
+
     public struct TextColor: Codable {
         public let a: Decimal
         public let b: Decimal
@@ -167,10 +174,10 @@ public enum Common {
 
         public init(from decoder: Decoder) throws {
             let container: KeyedDecodingContainer<CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
-            self.a = try container.decode(Decimal.self, forKey: .a)
-            self.r = try container.decode(Decimal.self, forKey: .r)
-            self.g = try container.decode(Decimal.self, forKey: .g)
-            self.b = try container.decode(Decimal.self, forKey: .b)
+            a = try container.decode(Decimal.self, forKey: .a)
+            r = try container.decode(Decimal.self, forKey: .r)
+            g = try container.decode(Decimal.self, forKey: .g)
+            b = try container.decode(Decimal.self, forKey: .b)
         }
 
         public init(r: Decimal, g: Decimal, b: Decimal, a: Decimal) {
@@ -183,7 +190,7 @@ public enum Common {
 }
 
 public extension KeyedDecodingContainer {
-    func decode(_ type: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal {
+    func decode(_: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal {
         let doubleValue: Double = try decode(Double.self, forKey: key)
         guard let decimalValue = Decimal(string: doubleValue.description)
         else {
@@ -192,7 +199,7 @@ public extension KeyedDecodingContainer {
         return decimalValue
     }
 
-    func decodeIfPresent(_ type: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal? {
+    func decodeIfPresent(_: Decimal.Type, forKey key: KeyedDecodingContainer<K>.Key) throws -> Decimal? {
         guard let doubleValue: Double = try decodeIfPresent(Double.self, forKey: key)
         else {
             return nil

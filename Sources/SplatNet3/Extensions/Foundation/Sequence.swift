@@ -1,6 +1,6 @@
 //
 //  Sequence.swift
-//  
+//
 //
 //  Created by devonly on 2023/01/01.
 //

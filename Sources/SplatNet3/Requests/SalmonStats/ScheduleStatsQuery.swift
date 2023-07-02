@@ -13,17 +13,17 @@ public protocol SalmonStats: RequestType {}
 
 public extension SalmonStats {
     #if DEBUG
-    var baseURL: URL {
-        #if targetEnvironment(simulator)
-        URL(unsafeString: "https://api.splatnet3.com")
-        #else
-        URL(unsafeString: "https://api.splatnet3.com")
-        #endif
-    }
+        var baseURL: URL {
+            #if targetEnvironment(simulator)
+                URL(unsafeString: "https://api.splatnet3.com")
+            #else
+                URL(unsafeString: "https://api.splatnet3.com")
+            #endif
+        }
     #else
-    var baseURL: URL {
-        URL(unsafeString: "https://api.splatnet3.com")
-    }
+        var baseURL: URL {
+            URL(unsafeString: "https://api.splatnet3.com")
+        }
     #endif
 }
 
@@ -36,7 +36,7 @@ public final class ScheduleStatsQuery: SalmonStats {
     public typealias ResponseType = ScheduleStatsQuery.Response
 
     init(startTime: Date) {
-        self.path = "v1/schedules/\(Int(startTime.timeIntervalSince1970))"
+        path = "v1/schedules/\(Int(startTime.timeIntervalSince1970))"
     }
 
     public struct Response: Codable {

@@ -22,14 +22,14 @@ internal enum Failure {
         }
 
         enum CodingKeys: String, CodingKey {
-            case errorMessage   = "errorDescription"
-            case error          = "error"
+            case errorMessage = "errorDescription"
+            case error
         }
 
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            self.errorMessage = try container.decode(NXErrorDescription.self, forKey: .errorMessage)
-            self.error = try container.decode(NXError.self, forKey: .error)
+            errorMessage = try container.decode(NXErrorDescription.self, forKey: .errorMessage)
+            error = try container.decode(NXError.self, forKey: .error)
         }
     }
 

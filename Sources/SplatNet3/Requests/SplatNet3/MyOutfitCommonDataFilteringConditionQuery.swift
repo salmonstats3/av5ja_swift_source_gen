@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class MyOutfitCommonDataFilteringConditionQuery: GraphQL {
-	typealias ResponseType = MyOutfitCommonDataFilteringConditionQuery.Response
+    typealias ResponseType = MyOutfitCommonDataFilteringConditionQuery.Response
 
     var hash: SHA256Hash = .MyOutfitCommonDataFilteringConditionQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

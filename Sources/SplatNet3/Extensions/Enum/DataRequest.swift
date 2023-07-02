@@ -16,13 +16,13 @@ public extension DataRequest {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return cURLDescription(calling: { requestURL in
-#if DEBUG
-            if !requestURL.contains("api.splatnet3.com") {
-                SwiftyLogger.debug(requestURL)
-            }
-#endif
+            #if DEBUG
+                if !requestURL.contains("api.splatnet3.com") {
+                    SwiftyLogger.debug(requestURL)
+                }
+            #endif
         })
-        .validate({ request, response, data in
+        .validate { request, response, data in
             DataRequest.ValidationResult(catching: {
                 /// リクエストURL
                 if let targetURL: URL = request?.url {
@@ -31,11 +31,11 @@ public extension DataRequest {
 
                 /// リクエストヘッダー
                 if let headers: HTTPHeaders = request?.headers {
-                    headers.forEach({ header in
+                    headers.forEach { header in
                         /// 認証に関するヘッダー以外を出力する
                         let requestHeader = RequestHeader(header: header)
                         SwiftyLogger.info("Request Headers: \(requestHeader.description)")
-                    })
+                    }
                 }
 
                 /// リクエストボディ
@@ -43,9 +43,9 @@ public extension DataRequest {
                    let dictionary: [String: Any] = try? JSONSerialization.jsonObject(with: httpBody) as? [String: Any],
                    let targetURL: URL = request?.url,
                    !["results", "pages", "query"].contains(targetURL.lastPathComponent) {
-                    dictionary.flatten.forEach({ key, value in
+                    dictionary.flatten.forEach { key, value in
                         SwiftyLogger.info("Request Body: \(key): \(value)")
-                    })
+                    }
                 }
 
                 if let data: Data,
@@ -53,9 +53,9 @@ public extension DataRequest {
                    let targetURL: URL = request?.url,
                    !["graphql", "results", "pages", "query"].contains(targetURL.lastPathComponent) {
                     /// レスポンスボディ
-                    dictionary.flatten.forEach({ key, value in
+                    dictionary.flatten.forEach { key, value in
                         SwiftyLogger.info("Response Body: \(key): \(value)")
-                    })
+                    }
                     if let failure = try? decoder.decode(Failure.NSO.self, from: data) {
                         SwiftyLogger.error(failure.errorMessage.rawValue)
                         throw failure
@@ -70,6 +70,6 @@ public extension DataRequest {
                     throw Failure.API(statusCode: response.statusCode)
                 }
             })
-        })
+        }
     }
 }

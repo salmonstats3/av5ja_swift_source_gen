@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class ReplayQuery: GraphQL {
-	typealias ResponseType = ReplayQuery.Response
+    typealias ResponseType = ReplayQuery.Response
 
     var hash: SHA256Hash = .ReplayQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

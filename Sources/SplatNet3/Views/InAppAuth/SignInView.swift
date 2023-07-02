@@ -71,19 +71,20 @@ internal struct SignInView: View {
             Task(priority: .utility, operation: {
                 do {
                     try await session.getCookie(code: code, verifier: verifier, contentId: contentId)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         UIApplication.shared.rootViewController?.dismiss(animated: true)
-                    })
+                    }
                 } catch {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                         UIApplication.shared.rootViewController?.dismiss(animated: true)
-                    })
+                    }
                 }
             })
         })
     }
 }
 
+// swiftlint:disable:next type_name
 internal struct _SignInView: View {
     @StateObject var session = SP3Session()
     @Environment(\.dismiss) var dismiss
@@ -146,15 +147,15 @@ internal struct _SignInView: View {
             Task(priority: .utility, operation: {
                 do {
                     try await session.refresh(sessionToken: sessionToken, contentId: contentId)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         UIApplication.shared.rootViewController?.dismiss(animated: true, completion: {
                             session.objectWillChange.send()
                         })
-                    })
+                    }
                 } catch {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                         UIApplication.shared.rootViewController?.dismiss(animated: true)
-                    })
+                    }
                 }
             })
         })

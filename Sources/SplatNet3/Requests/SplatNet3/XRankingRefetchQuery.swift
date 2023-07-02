@@ -10,14 +10,13 @@ import Alamofire
 import Foundation
 
 internal final class XRankingRefetchQuery: GraphQL {
-	typealias ResponseType = XRankingRefetchQuery.Response
+    typealias ResponseType = XRankingRefetchQuery.Response
 
     var hash: SHA256Hash = .XRankingRefetchQuery
-	var variables: [String: String] = [:]
-	var parameters: Parameters?
+    var variables: [String: String] = [:]
+    var parameters: Parameters?
 
-	init() {}
+    init() {}
 
-	public struct Response: Codable {
-	}
+    public struct Response: Codable {}
 }

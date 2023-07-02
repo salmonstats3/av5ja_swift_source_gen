@@ -12,13 +12,13 @@ public enum CoopEventId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .WaterLevels
     public var id: Int { rawValue }
 
-    case WaterLevels    = 0
-    case Rush           = 1
-    case GoldieSeeking  = 2
-    case Griller        = 3
-    case TheMothership  = 4
-    case Fog            = 5
-    case CohockCharge   = 6
-    case Giant          = 7
-    case Mudmouth       = 8
+    case WaterLevels = 0
+    case Rush = 1
+    case GoldieSeeking = 2
+    case Griller = 3
+    case TheMothership = 4
+    case Fog = 5
+    case CohockCharge = 6
+    case Giant = 7
+    case Mudmouth = 8
 }

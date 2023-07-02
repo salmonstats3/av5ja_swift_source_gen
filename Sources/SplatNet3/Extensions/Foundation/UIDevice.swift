@@ -1,6 +1,6 @@
 //
 //  UIDevice.swift
-//  
+//
 //
 //  Created by devonly on 2023/04/01.
 //
@@ -35,6 +35,6 @@ public extension UIDevice {
 
     /// アプリバージョンをUInt64に変換した数値
     var versionId: UInt64 {
-        UInt64(version.split(separator: ".").compactMap({ Int($0) }).map({ String(format: "%02d", $0) }).joined(), radix: 16) ?? 0
+        UInt64(version.split(separator: ".").compactMap { Int($0) }.map { String(format: "%02d", $0) }.joined(), radix: 16) ?? 0
     }
 }

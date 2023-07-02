@@ -21,56 +21,56 @@ open class SP3Session: Session {
     }
 
     override func request(_ request: IksmSession) async -> [String: String]? {
-        DispatchQueue.main.async(execute: {
+        DispatchQueue.main.async {
             self.requests.append(SPProgress(request))
-        })
+        }
         let response: [String: String]? = await super.request(request)
-        DispatchQueue.main.async(execute: {
+        DispatchQueue.main.async {
             self.requests.success()
-        })
+        }
         return response
     }
 
     /// 通常のリクエスト
-    override open func request<T>(_ request: T, interceptor: RequestInterceptor? = nil) async throws -> T.ResponseType where T: RequestType {
+    override open func request<T>(_ request: T, interceptor _: RequestInterceptor? = nil) async throws -> T.ResponseType where T: RequestType {
         let endpoint = SPEndpoint(request: request)
         do {
-            DispatchQueue.main.async(execute: {
-                if endpoint != .UNKNOWN && endpoint != .STATS {
+            DispatchQueue.main.async {
+                if endpoint != .UNKNOWN, endpoint != .STATS {
                     self.requests.append(SPProgress(request))
                 }
-            })
+            }
             let response: T.ResponseType = try await super.request(request)
-            DispatchQueue.main.async(execute: {
-                if endpoint != .UNKNOWN && endpoint != .STATS {
+            DispatchQueue.main.async {
+                if endpoint != .UNKNOWN, endpoint != .STATS {
                     self.requests.success()
                 }
-            })
+            }
             return response
         } catch {
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 if endpoint != .UNKNOWN {
                     self.requests.failure()
                 }
-            })
+            }
             throw error
         }
     }
 
-    override open func request<T>(_ request: T, interceptor: RequestInterceptor? = nil) async throws -> String where T: RequestType {
+    override open func request<T>(_ request: T, interceptor _: RequestInterceptor? = nil) async throws -> String where T: RequestType {
         do {
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 self.requests.append(SPProgress(request))
-            })
+            }
             let response: String = try await super.request(request)
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 self.requests.success()
-            })
+            }
             return response
         } catch {
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 self.requests.failure()
-            })
+            }
             throw error
         }
     }
@@ -82,7 +82,7 @@ open class SP3Session: Session {
 
     @discardableResult
     open func getCoopStageScheduleQuery() async throws -> [CoopSchedule] {
-        try await request(StageScheduleQuery()).data.coopGroupingSchedule.schedules.map({ CoopSchedule(schedule: $0) })
+        try await request(StageScheduleQuery()).data.coopGroupingSchedule.schedules.map { CoopSchedule(schedule: $0) }
     }
 
     open func getCoopHistoryQuery() async throws -> CoopHistoryQuery.CoopResult {
@@ -98,9 +98,9 @@ open class SP3Session: Session {
         /// 取得すべきリザルトのID
         let resultIds: [Common.ResultId] = {
             if let playTime {
-                return nodes.flatMap({ $0.historyDetails.nodes.map({ $0.id }) }).filter({ $0.playTime > playTime })
+                return nodes.flatMap { $0.historyDetails.nodes.map(\.id) }.filter { $0.playTime > playTime }
             }
-            return nodes.flatMap({ $0.historyDetails.nodes.map({ $0.id }) })
+            return nodes.flatMap { $0.historyDetails.nodes.map(\.id) }
         }()
         /// 取得するIDがないなら何もせずに返す
         if resultIds.isEmpty {
@@ -108,20 +108,20 @@ open class SP3Session: Session {
             return []
         }
         /// 進捗を更新
-        DispatchQueue.main.async(execute: {
+        DispatchQueue.main.async {
             self.requests.append(SPProgress(.COOP_RESULT))
-        })
+        }
         /// 並列ダウンロード
         let response: [CoopResult] = try await withThrowingTaskGroup(of: CoopResult.self, body: { task in
-            nodes.forEach({ node in
-                node.historyDetails.nodes.forEach({ result in
+            nodes.forEach { node in
+                node.historyDetails.nodes.forEach { result in
                     if resultIds.contains(result.id) {
                         task.addTask(operation: { [self] in
                             try await getCoopHistoryDetailQuery(schedule: node.asSchedule(), result: result)
                         })
                     }
-                })
-            })
+                }
+            }
             return try await task.reduce(into: [CoopResult]()) { results, result in
                 results.append(result)
                 completion(Float(results.count), Float(resultIds.count))
@@ -133,30 +133,30 @@ open class SP3Session: Session {
             try await uploadAllCoopHistoryDetailQuery(response)
         }
         /// 進捗を更新
-        DispatchQueue.main.async(execute: {
+        DispatchQueue.main.async {
             self.requests.success()
-        })
+        }
         return response
     }
 
     @discardableResult
     open func uploadAllCoopResultDetailQuery(results: [CoopResult] = [], completion: Completion) async throws -> [CoopStatsResultsQuery.Response] {
-        var count: Int = 0
+        var count = 0
         completion(Float(count), Float(results.count))
 
-        DispatchQueue.main.async(execute: {
+        DispatchQueue.main.async {
             self.requests.append(SPProgress(.STATS))
-        })
+        }
 
-        let response: [CoopStatsResultsQuery.Response] = try await results.chunked(by: 200).asyncFlatMap({ result in
+        let response: [CoopStatsResultsQuery.Response] = try await results.chunked(by: 200).asyncFlatMap { result in
             count += result.count
             completion(Float(count), Float(results.count))
             return try await uploadAllCoopHistoryDetailQuery(result)
-        })
+        }
 
-        DispatchQueue.main.async(execute: {
+        DispatchQueue.main.async {
             self.requests.success()
-        })
+        }
 
         return response
     }

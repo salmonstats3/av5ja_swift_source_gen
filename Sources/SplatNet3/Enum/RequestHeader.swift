@@ -1,9 +1,9 @@
 //
 //  RequestHeader.swift
-//  
+//
 //
 //  Created by tkgstrator on 2023/04/04.
-//  
+//
 //
 
 import Alamofire
@@ -16,11 +16,11 @@ internal enum RequestHeader: CustomStringConvertible {
 
     var description: String {
         switch self {
-        case .AUTHORIZATION(let secret):
+        case let .AUTHORIZATION(secret):
             return "\(RequestHeaderKey.AUTHORIZATION.rawValue): Bearer \(secret)"
-        case .X_GAME_WEB_TOKEN(let secret):
+        case let .X_GAME_WEB_TOKEN(secret):
             return "\(RequestHeaderKey.X_GAME_WEB_TOKEN.rawValue): \(secret)"
-        case .DEFAULT(let name, let value):
+        case let .DEFAULT(name, value):
             return "\(name): \(value)"
         }
     }
@@ -29,7 +29,7 @@ internal enum RequestHeader: CustomStringConvertible {
         let headerKey: RequestHeaderKey? = RequestHeaderKey(rawValue: header.name)
 
         switch headerKey {
-        case .some(let key):
+        case let .some(key):
             switch key {
             case .AUTHORIZATION:
                 let secret: String = Array(repeating: "*", count: header.value.count - 7).joined()
@@ -45,6 +45,6 @@ internal enum RequestHeader: CustomStringConvertible {
 }
 
 internal enum RequestHeaderKey: String, CaseIterable {
-    case AUTHORIZATION      = "Authorization"
-    case X_GAME_WEB_TOKEN   = "X-GameWebToken"
+    case AUTHORIZATION = "Authorization"
+    case X_GAME_WEB_TOKEN = "X-GameWebToken"
 }

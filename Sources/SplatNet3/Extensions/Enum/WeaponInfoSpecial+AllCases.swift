@@ -10,15 +10,15 @@ import Foundation
 
 public extension WeaponInfoSpecialId {
     static let regular: [WeaponInfoSpecialId] =
-    [
-        .SpNiceBall,
-        .SpShockSonar,
-        .SpMicroLaser,
-        .SpJetpack,
-        .SpChariot,
-        .SpSkewer,
-        .SpTripleTornado,
-    ]
+        [
+            .SpNiceBall,
+            .SpShockSonar,
+            .SpMicroLaser,
+            .SpJetpack,
+            .SpChariot,
+            .SpSkewer,
+            .SpTripleTornado,
+        ]
 //    static let allCases: [WeaponInfoSpecialId] =
 //    [
 //        .SpNiceBall,
@@ -33,15 +33,15 @@ public extension WeaponInfoSpecialId {
 
 public extension WeaponInfoSpecialKey {
     static let regular: [WeaponInfoSpecialKey] =
-    [
-        .SpNiceBall,
-        .SpShockSonar,
-        .SpMicroLaser,
-        .SpJetpack,
-        .SpChariot,
-        .SpSkewer,
-        .SpTripleTornado,
-    ]
+        [
+            .SpNiceBall,
+            .SpShockSonar,
+            .SpMicroLaser,
+            .SpJetpack,
+            .SpChariot,
+            .SpSkewer,
+            .SpTripleTornado,
+        ]
 //    static let allCases: [WeaponInfoSpecialKey] =
 //    [
 //        .SpNiceBall,
