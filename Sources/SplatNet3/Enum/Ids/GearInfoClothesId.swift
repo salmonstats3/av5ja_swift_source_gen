@@ -7,7 +7,7 @@
 
 import Foundation
 
-// swiftlint:disable:next type_body_length
+// swiftlint:disable type_body_length file_length
 public enum GearInfoClothesId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .CltFST001
     public var id: Int { rawValue }
@@ -515,3 +515,4 @@ public enum GearInfoClothesId: Int, UnsafeRawRepresentable {
     ///  アゲアゲコロモ
     case CltTRG000 = 28_000
 }
+// swiftlint:enable type_body_length file_length

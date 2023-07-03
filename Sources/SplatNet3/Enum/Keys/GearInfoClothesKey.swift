@@ -7,7 +7,7 @@
 
 import Foundation
 
-// swiftlint:disable:next type_body_length
+// swiftlint:disable type_body_length file_length
 public enum GearInfoClothesKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .CltFST001
     public var id: Int { GearInfoClothesId.allCases[GearInfoClothesKey.allCases.firstIndex(of: self) ?? 0].rawValue }
@@ -515,3 +515,4 @@ public enum GearInfoClothesKey: String, UnsafeRawRepresentable {
     ///  アゲアゲコロモ
     case CltTRG000 = "690ed173b79f8e8ff3d68ca0bdf95cabd6b8f40086616dbc5ef3cea6dc84041c"
 }
+// swiftlint:enable type_body_length file_length

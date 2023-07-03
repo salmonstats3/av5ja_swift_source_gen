@@ -8,7 +8,7 @@
 
 import Foundation
 
-// swiftlint:disable:next type_body_length
+// swiftlint:disable type_body_length file_length
 public enum LocalizedType: String, CaseIterable, Identifiable {
     public var id: String { rawValue }
 
@@ -673,3 +673,4 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     /// Xマッチ
     case StageScheduleXmatch
 }
+// swiftlint:enable type_body_length file_length

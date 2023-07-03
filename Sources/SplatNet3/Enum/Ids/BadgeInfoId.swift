@@ -8,7 +8,7 @@
 
 import Foundation
 
-// swiftlint:disable:next type_body_length
+// swiftlint:disable type_body_length file_length
 public enum BadgeInfoId: Int, UnsafeRawRepresentable {
     public static var defaultValue: Self = .WeaponLevelShooterShort00Lv00
     public var id: Int { rawValue }
@@ -440,3 +440,4 @@ public enum BadgeInfoId: Int, UnsafeRawRepresentable {
     case NawaBattlerCardNumLv02 = 7_000_102
     case NawaBattlerWinAllNpcLevel3 = 7_000_200
 }
+// swiftlint:enable type_body_length file_length
