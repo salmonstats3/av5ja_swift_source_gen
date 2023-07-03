@@ -14,7 +14,7 @@ public protocol SPFont: RawRepresentable, CaseIterable, Identifiable where RawVa
     static var fontName: String { get }
 
     var baseURL: URL { get }
-    var fontURL: CFURL { get }
+    var fontURL: CFURL? { get }
     var fontDescriptor: UIFontDescriptor? { get }
 }
 
@@ -25,15 +25,20 @@ public extension SPFont {
         URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/static/media")
     }
 
-    var fontURL: CFURL {
-        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    var fontURL: CFURL? {
+        guard let url: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        else {
+            return nil
+        }
+        return url
             .appendingPathComponent(ResourceURLType.StaticMedia.rawValue, conformingTo: .url)
             .appendingPathComponent(rawValue, conformingTo: .url)
             .appendingPathExtension("woff2") as CFURL
     }
 
     var fontDescriptor: UIFontDescriptor? {
-        guard let array: CFArray = CTFontManagerCreateFontDescriptorsFromURL(fontURL),
+        guard let fontURL: CFURL = fontURL,
+              let array: CFArray = CTFontManagerCreateFontDescriptorsFromURL(fontURL),
               let fonts: [CTFontDescriptor] = array as? [CTFontDescriptor],
               let font: CTFontDescriptor = fonts.first
         else {

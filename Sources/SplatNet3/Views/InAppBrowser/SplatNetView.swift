@@ -94,14 +94,17 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                             indicator.stopAnimating()
                             webView.load(request)
                         case .SP3:
-                            /// クッキーを設定
-                            let cookie = HTTPCookie(properties: [
+                            if let host: String = contentId.requestURL.host,
+                               /// クッキーを設定
+                               let cookie = HTTPCookie(properties: [
                                 HTTPCookiePropertyKey.name: "_gtoken",
                                 HTTPCookiePropertyKey.value: account.gameWebToken,
-                                HTTPCookiePropertyKey.domain: contentId.requestURL.host!,
+                                HTTPCookiePropertyKey.domain: host,
                                 HTTPCookiePropertyKey.path: "/",
-                            ])!
-                            await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
+                               ])
+                            {
+                                await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
+                            }
                             indicator.stopAnimating()
                             webView.load(request)
                         }

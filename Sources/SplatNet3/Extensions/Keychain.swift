@@ -25,9 +25,13 @@ extension Keychain {
             if let data: Data = newValue.data(using: .utf8) {
                 try? set(data, key: Keychain.xWebVersion)
             } else {
-                try? set("2.0.0-bd36a652".data(using: .utf8)!, key: Keychain.xWebVersion)
+                try? set("2.0.0-bd36a652", key: Keychain.xWebVersion)
             }
         }
+    }
+    
+    private func set(_ value: String, key: String) throws {
+        try set(Data(unsafeString: value), key: key)
     }
 
     /// X-ProductVersion
@@ -36,11 +40,7 @@ extension Keychain {
             (try? get(Keychain.xProductVersion)) ?? "2.5.1"
         }
         set {
-            if let data: Data = newValue.data(using: .utf8) {
-                try? set(data, key: Keychain.xProductVersion)
-            } else {
-                try? set("2.5.1".data(using: .utf8)!, key: Keychain.xProductVersion)
-            }
+            try? set(newValue, key: Keychain.xProductVersion)
         }
     }
 
@@ -55,7 +55,7 @@ extension Keychain {
             return server
         }
         set {
-            try? set(newValue.rawValue.data(using: .utf8)!, key: Keychain.primaryServer)
+            try? set(newValue.rawValue, key: Keychain.primaryServer)
         }
     }
 
@@ -104,20 +104,26 @@ extension Keychain {
     /// アカウント書き込み
     @discardableResult
     func set(_ account: UserInfo?) -> UserInfo? {
-        if let account {
-            try? set(try account.asData(), key: Bundle.main.bundleIdentifier!)
+        if let bundleIdentifier: String = Bundle.main.bundleIdentifier,
+           let account = account {
+            try? set(try account.asData(), key: bundleIdentifier)
         }
         return account
     }
 
     func delete() {
-        try? remove(Bundle.main.bundleIdentifier!)
+        guard let bundleIdentifier: String = Bundle.main.bundleIdentifier
+        else {
+            return
+        }
+        try? remove(bundleIdentifier)
     }
 
     /// アカウントアップデート
     @discardableResult
     func update(_ bulletToken: BulletToken.Response) throws -> UserInfo {
-        guard var account: UserInfo = get() else {
+        guard var account: UserInfo = get()
+        else {
             throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "Account Not Found"))
         }
         /// アップデートする
@@ -131,7 +137,9 @@ extension Keychain {
     func get() -> UserInfo? {
         let decoder = JSONDecoder()
 
-        guard let data: Data = try? getData(Bundle.main.bundleIdentifier!) else {
+        guard let bundleIdentifier: String = Bundle.main.bundleIdentifier,
+              let data: Data = try? getData(bundleIdentifier)
+        else {
             return nil
         }
 

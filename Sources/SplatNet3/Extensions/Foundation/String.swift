@@ -30,7 +30,7 @@ public extension String {
     internal var sha256Hash: String {
         NSLocalizedString(
             SHA256
-                .hash(data: data(using: .utf8)!)
+                .hash(data: Data(unsafeString: self))
                 .compactMap { String(format: "%02x", $0) }
                 .joined(),
             bundle: .main,

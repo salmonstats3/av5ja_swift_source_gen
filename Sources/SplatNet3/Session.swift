@@ -24,7 +24,7 @@ open class Session: ObservableObject {
     }()
 
     /// キーチェイン
-    private let keychain = Keychain(service: Bundle.module.bundleIdentifier!)
+    private let keychain = Keychain(service: Bundle.module.bundleIdentifier ?? "work.tkgstrator.salmonia3plus")
 
     /// X-Web-View-Ver
     public var version: String {
