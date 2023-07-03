@@ -1,0 +1,1500 @@
+CommonAbout:
+  ja: About
+  en-GB: About
+  en: About
+  de: Über
+  es: Acerca de
+  es-MX: Acerca de
+  fr-CA: À propos de
+  fr: À propos de
+  it: Circa
+  ko: 소개
+  nl: Over
+  ru: О сайте
+  zh-Hant: 關於
+  zh-Hans: 关于
+RecordActualValue:
+  ja: 実測値
+  en-GB: Actual
+  en: Actual
+  de: Aktuell
+  es: Actual
+  es-MX: Actual
+  fr-CA: Réel
+  fr: Réel
+  it: Effettivo
+  ko: 실제의
+  nl: Werkelijk
+  ru: Фактический
+  zh-Hant: 實際的
+  zh-Hans: 实际情况
+CommonAppearances:
+    ja: 外観
+    en-GB: Appearances
+    en: Appearances
+    de: Auftritte
+    es: Comparecencias
+    es-MX: Comparecencias
+    fr-CA: Apparitions
+    fr: Apparitions
+    it: Apparizioni
+    ko: 외모
+    nl: Verschijningen
+    ru: Внешний вид
+    zh-Hant: 外觀
+    zh-Hans: 出场
+CommonApplication:
+    ja: アプリ
+    en-GB: Application
+    en: Application
+    de: Anmeldung
+    es: Aplicación
+    es-MX: Aplicación
+    fr-CA: Application
+    fr: Application
+    it: Applicazione
+    ko: 응용 프로그램
+    nl: Toepassing
+    ru: Приложение
+    zh-Hant: 應用程式
+    zh-Hans: 应用
+RecordAverageScore:
+    ja: 平均きろく
+    en-GB: Average
+    en: Average
+    de: Durchschnitt
+    es: Media
+    es-MX: Media
+    fr-CA: Moyenne
+    fr: Moyenne
+    it: Media
+    ko: 평균
+    nl: Gemiddeld
+    ru: Среднее
+    zh-Hant: 平均
+    zh-Hans: 平均值
+CommonBackupResults:
+    ja: バックアップ
+    en-GB: Backup
+    en: Backup
+    de: Sicherung
+    es: Copia de seguridad
+    es-MX: Copia de seguridad
+    fr-CA: Sauvegarde
+    fr: Sauvegarde
+    it: Backup
+    ko: 백업
+    nl: Back-up
+    ru: Резервное копирование
+    zh-Hant: 備份
+    zh-Hans: 备份
+CommonBackupCompress:
+    ja: 圧縮(ZIP)
+    en-GB: Compress(ZIP)
+    en: Compress(ZIP)
+    de: Komprimieren(ZIP)
+    es: Comprimir(ZIP)
+    es-MX: Comprimir(ZIP)
+    fr-CA: Compresser(ZIP)
+    fr: Compresser(ZIP)
+    it: Comprimere (ZIP)
+    ko: 압축 (ZIP)
+    nl: Comprimeren (ZIP)
+    ru: Сжать (ZIP)
+    zh-Hant: 壓縮（ZIP）
+    zh-Hans: 压缩(ZIP)
+CommonBackupMessage:
+    ja: データベースのバックアップを出力します。
+    en-GB: Backup database
+    en: Backup database
+    de: Datenbank sichern
+    es: Copia de seguridad de la base de datos
+    es-MX: Copia de seguridad de la base de datos
+    fr-CA: Sauvegarde de la base de données
+    fr: Sauvegarde de la base de données
+    it: Database di backup
+    ko: 데이터베이스 백업
+    nl: Back-up database
+    ru: Резервное копирование базы данных
+    zh-Hant: 備份資料庫
+    zh-Hans: 备份数据库
+CommonBackupPlain:
+    ja: 非圧縮(JSON)
+    en-GB: Plain(JSON)
+    en: Plain(JSON)
+    de: Klartext(JSON)
+    es: Simple(JSON)
+    es-MX: Simple(JSON)
+    fr-CA: Plain(JSON)
+    fr: Plain(JSON)
+    it: Pianura(JSON)
+    ko: 일반 (JSON)
+    nl: Gewoon (JSON)
+    ru: Plain(JSON)
+    zh-Hant: 純文字（JSON）
+    zh-Hans: Plain(JSON)
+CommonAppCredit:
+    ja: クレジット
+    en-GB: Credit
+    en: Credit
+    de: Kredit
+    es: Crédito
+    es-MX: Crédito
+    fr-CA: Crédit
+    fr: Crédit
+    it: Credito
+    ko: 신용
+    nl: Krediet
+    ru: Кредит
+    zh-Hant: 信用
+    zh-Hans: 信用
+CommonDarkMode:
+    ja: ダークモード
+    en-GB: Dark mode
+    en: Dark mode
+    de: Dunkler Modus
+    es: Modo oscuro
+    es-MX: Modo oscuro
+    fr-CA: Mode sombre
+    fr: Mode sombre
+    it: Modalità scura
+    ko: 다크 모드
+    nl: Donkere modus
+    ru: Темный режим
+    zh-Hant: 暗色模式
+    zh-Hans: 黑暗模式
+CommonDataManagement:
+    ja: データ管理
+    en-GB: Data Management
+    en: Data Management
+    de: Datenverwaltung
+    es: Gestión de datos
+    es-MX: Gestión de datos
+    fr-CA: Gestion des données
+    fr: Gestion des données
+    it: Gestione dei dati
+    ko: 데이터 관리
+    nl: Gegevensbeheer
+    ru: Управление данными
+    zh-Hant: 資料管理
+    zh-Hans: 数据管理
+CoopHistoryDeathCount:
+    ja: 助けられた回数
+    en-GB: Rescued count
+    en: Rescued count
+    de: Gerettete Anzahl
+    es: Recuento rescatado
+    es-MX: Recuento rescatado
+    fr-CA: Compte de sauvetage
+    fr: Compte de sauvetage
+    it: Conteggio dei salvataggi
+    ko: 구조된 수
+    nl: Geredde telling
+    ru: Спасенный граф
+    zh-Hant: 救援計數
+    zh-Hans: 获救人数
+CoopHistoryDefeatedCount:
+    ja: オオモノシャケをたおした数
+    en-GB: Defeated count
+    en: Defeated count
+    de: Geschlagene Zählung
+    es: Recuento derrotado
+    es-MX: Recuento derrotado
+    fr-CA: Comptage défait
+    fr: Compte défait
+    it: Conteggio sconfitto
+    ko: 패배한 횟수
+    nl: Verslagen telling
+    ru: Проигранный счет
+    zh-Hant: 擊敗計數
+    zh-Hans: 被打败的次数
+CoopHistoryEstimatedValue:
+    ja: 推定値
+    en-GB: Estimated
+    en: Estimated
+    de: Geschätzte
+    es: Estimación
+    es-MX: Estimación
+    fr-CA: Estimation de
+    fr: Estimation de
+    it: Stimato
+    ko: 예상
+    nl: Geschat
+    ru: Оценка
+    zh-Hant: 預估
+    zh-Hans: 估计的
+CoopHistoryEventClearRatio:
+    ja: イベントクリア率
+    en-GB: Clear ratio
+    en: Clear ratio
+    de: Klares Verhältnis
+    es: Relación clara
+    es-MX: Relación clara
+    fr-CA: Rapport clair
+    fr: Rapport clair
+    it: Rapporto chiaro
+    ko: 클리어 비율
+    nl: Duidelijke verhouding
+    ru: Четкое соотношение
+    zh-Hant: 清除比率
+    zh-Hans: 清除率
+CoopHistoryEventFrequency:
+    ja: イベント発生率
+    en-GB: Event frequency
+    en: Event frequency
+    de: Häufigkeit der Ereignisse
+    es: Frecuencia de los eventos
+    es-MX: Frecuencia de los eventos
+    fr-CA: Fréquence des événements
+    fr: Fréquence des événements
+    it: 'Frequenza dell''evento'
+    ko: 이벤트 빈도
+    nl: Gebeurtenis frequentie
+    ru: Частота событий
+    zh-Hant: 事件頻率
+    zh-Hans: 事件频率
+CommonFAQ:
+    ja: よくあるご質問
+    en-GB: FAQ
+    en: FAQ
+    de: FAQ
+    es: PREGUNTAS FRECUENTES
+    es-MX: PREGUNTAS FRECUENTES
+    fr-CA: FAQ
+    fr: FAQ
+    it: FAQ
+    ko: 자주 묻는 질문
+    nl: FAQ
+    ru: ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+    zh-Hant: 常見問題
+    zh-Hans: 常见问题
+CommonGamingMode:
+    ja: ゲーミングモード
+    en-GB: Gaming mode
+    en: Gaming mode
+    de: Spiele-Modus
+    es: Modo de juego
+    es-MX: Modo de juego
+    fr-CA: Mode de jeu
+    fr: Mode de jeu
+    it: Modalità di gioco
+    ko: 게임 모드
+    nl: Gaming modus
+    ru: Игровой режим
+    zh-Hant: 遊戲模式
+    zh-Hans: 游戏模式
+CoopHistoryGradeId:
+    ja: 称号
+    en-GB: Grade
+    en: Grade
+    de: Klasse
+    es: Grado
+    es-MX: Grado
+    fr-CA: Grade
+    fr: Grade
+    it: Grado
+    ko: 학년
+    nl: Rang
+    ru: Класс
+    zh-Hant: 成績
+    zh-Hans: 等级
+CoopHistoryGradePoint:
+    ja: 評価ポイント
+    en-GB: Grade point
+    en: Grade point
+    de: Notenpunkt
+    es: Calificación
+    es-MX: Calificación
+    fr-CA: Point de note
+    fr: Point de note
+    it: Punto di valutazione
+    ko: 학점
+    nl: Grade point
+    ru: Балл за оценку
+    zh-Hant: 成績點數
+    zh-Hans: 成绩点
+CoopHistoryHighestRecord:
+    ja: 最高きろく
+    en-GB: Highest
+    en: Highest
+    de: Höchste
+    es: Más alto
+    es-MX: Más alto
+    fr-CA: Le plus haut
+    fr: Le plus haut
+    it: Il più alto
+    ko: 최고
+    nl: Hoogste
+    ru: Самый высокий
+    zh-Hant: 最高的
+    zh-Hans: 最高的
+CommonIkaring2:
+    ja: イカリング2
+    en-GB: SplatNet2
+    en: SplatNet2
+    de: SplatNet2
+    es: SplatNet2
+    es-MX: SplatNet2
+    fr-CA: SplatNet2
+    fr: SplatNet2
+    it: SplatNet2
+    ko: SplatNet2
+    nl: SplatNet2
+    ru: SplatNet2
+    zh-Hant: SplatNet2
+    zh-Hans: SplatNet2
+CommonInvalid:
+    ja: 無効
+    en-GB: Invalid
+    en: Invalid
+    de: Ungültig
+    es: No válido
+    es-MX: No válido
+    fr-CA: Invalide
+    fr: Invalide
+    it: Non valido
+    ko: 잘못된
+    nl: Ongeldig
+    ru: Неверный
+    zh-Hant: 無效的
+    zh-Hans: 无效
+CommonLanguages:
+    ja: 言語
+    en-GB: Languages
+    en: Languages
+    de: Sprachen
+    es: Idiomas
+    es-MX: Idiomas
+    fr-CA: Langues
+    fr: Langues
+    it: Le lingue
+    ko: 언어
+    nl: Talen
+    ru: Языки
+    zh-Hant: 語言
+    zh-Hans: 语言
+CommonShareLogMessage:
+    ja: 開発者にログを送信します。エラー発生時にログファイルを送信していただくことで、開発者が原因特定と修正するのが楽になります。ログファイルには個人を特定する一切の情報は含まれていません。
+    en-GB: Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.
+    en: Send logs to developer. Sending the log file when an error occurs will make it easier for the developer to identify and correct the cause of the error. The log file does not contain any personally identifiable information.
+    de: Protokolle an den Entwickler senden. Das Versenden der Protokolldatei bei Auftreten eines Fehlers erleichtert es dem Entwickler, die Fehlerursache zu ermitteln und zu beheben. Die Protokolldatei enthält keine persönlich identifizierbaren Informationen.
+    es: Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.
+    es-MX: Enviar logs al desarrollador. El envío del archivo de registro cuando se produce un error facilitará al desarrollador la identificación y corrección de la causa del error. El archivo de registro no contiene información personal identificable.
+    fr-CA: 'Envoyer les journaux au développeur. L''envoi du fichier journal lorsqu''une erreur se produit permet au développeur d''identifier et de corriger plus facilement la cause de l''erreur. Le fichier journal ne contient aucune information personnelle identifiable.'
+    fr: 'Envoyer les journaux au développeur. L''envoi du fichier journal lorsqu''une erreur se produit permet au développeur d''identifier et de corriger plus facilement la cause de l''erreur. Le fichier journal ne contient aucune information personnelle identifiable.'
+    it: 'Inviare i log allo sviluppatore. L''invio del file di log quando si verifica un errore renderà più facile per lo sviluppatore identificare e correggere la causa dell''errore. Il file di log non contiene informazioni di identificazione personale.'
+    ko: 개발자에게 로그를 전송합니다. 오류가 발생할 때 로그 파일을 전송하면 개발자가 오류의 원인을 식별하고 수정하기 쉬워집니다. 로그 파일은 개인 식별 정보를 포함하지 않습니다.
+    nl: Logbestanden naar ontwikkelaar sturen. Door het logbestand te versturen wanneer een fout optreedt, kan de ontwikkelaar gemakkelijker de oorzaak van de fout opsporen en corrigeren. Het logbestand bevat geen persoonlijk identificeerbare informatie.
+    ru: Отправляйте журналы разработчику. Отправка файла журнала при возникновении ошибки облегчит разработчику выявление и устранение причины ошибки. Файл журнала не содержит никакой личной информации.
+    zh-Hant: 傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。
+    zh-Hans: 发送日志给开发人员。当出现错误时发送日志文件将有助于开发人员识别和纠正错误的原因。日志文件不包含任何个人身份识别信息。
+CommonShareLog:
+    ja: ログ送信
+    en-GB: Share logs
+    en: Share logs
+    de: Protokolle teilen
+    es: Compartir registros
+    es-MX: Compartir registros
+    fr-CA: Registres des partages
+    fr: Registres des partages
+    it: Condividi i log
+    ko: 로그 공유하기
+    nl: Logboeken delen
+    ru: Делить журналы
+    zh-Hant: 分享日誌
+    zh-Hans: 分享日志
+CommonLogSize:
+    ja: ログファイル
+    en-GB: Log files
+    en: Log files
+    de: Log-Dateien
+    es: Archivos de registro
+    es-MX: Archivos de registro
+    fr-CA: Fichiers journaux
+    fr: Fichiers journaux
+    it: File di log
+    ko: 로그 파일
+    nl: Logbestanden
+    ru: Файлы журналов
+    zh-Hant: 日誌文件
+    zh-Hans: 日志文件
+CommonMyPage:
+    ja: マイページ
+    en-GB: My page
+    en: My page
+    de: Meine Seite
+    es: Mi página
+    es-MX: Mi página
+    fr-CA: Ma page
+    fr: Ma page
+    it: La mia pagina
+    ko: 내 페이지
+    nl: Mijn pagina
+    ru: Моя страница
+    zh-Hant: 我的頁面
+    zh-Hans: 我的页面
+CoopHistoryPlayerCrew:
+    ja: なかま
+    en-GB: Crew
+    en: Crew
+    de: Besatzung
+    es: Tripulación
+    es-MX: Tripulación
+    fr-CA: Equipage
+    fr: Equipage
+    it: Equipaggio
+    ko: 크루
+    nl: Bemanning
+    ru: Экипаж
+    zh-Hant: 組
+    zh-Hans: 职员
+CoopHistoryPlayerYou:
+    ja: あなた
+    en-GB: You
+    en: You
+    de: Sie
+    es: Usted
+    es-MX: Usted
+    fr-CA: Vous
+    fr: Vous
+    it: Tu
+    ko: 당신
+    nl: Jij
+    ru: Вы
+    zh-Hant: 您
+    zh-Hans: 你
+CommonPrivacyPolicy:
+    ja: プライバシーポリシー
+    en-GB: Privacy Policy
+    en: Privacy Policy
+    de: Datenschutzbestimmungen
+    es: Política de privacidad
+    es-MX: Política de privacidad
+    fr-CA: Politique de confidentialité
+    fr: Politique de confidentialité
+    it: Informativa sulla privacy
+    ko: 개인 정보 정책
+    nl: Privacybeleid
+    ru: Политика конфиденциальности
+    zh-Hant: 隱私政策
+    zh-Hans: 隐私政策
+CommonRequestForm:
+    ja: フォーム
+    en-GB: Form
+    en: Form
+    de: Formular
+    es: Formulario
+    es-MX: Formulario
+    fr-CA: Formulaire
+    fr: Formulaire
+    it: Forma
+    ko: 양식
+    nl: Formulier
+    ru: Форма
+    zh-Hant: 表格
+    zh-Hans: 形状
+CommonRequestFormBug:
+    ja: バグ修正
+    en-GB: Bug
+    en: Bug
+    de: Fehler
+    es: Error
+    es-MX: Error
+    fr-CA: Bug
+    fr: Bug
+    it: Bug
+    ko: 버그
+    nl: Bug
+    ru: Ошибка
+    zh-Hant: 錯誤
+    zh-Hans: 错误
+CommonRequestFormContent:
+    ja: 内容
+    en-GB: Content
+    en: Content
+    de: Inhalt
+    es: Contenido
+    es-MX: Contenido
+    fr-CA: Contenu
+    fr: Contenu
+    it: Contenuto
+    ko: 컨텐츠
+    nl: Inhoud
+    ru: Содержание
+    zh-Hant: 內容
+    zh-Hans: 内容
+CommonRequestFormEnhancement:
+    ja: 改善案
+    en-GB: Enhancement
+    en: Enhancement
+    de: Erweiterung
+    es: Mejora
+    es-MX: Mejora
+    fr-CA: Amélioration
+    fr: Amélioration
+    it: Potenziamento
+    ko: 기능 향상
+    nl: Verbetering
+    ru: Усиление
+    zh-Hant: 增強
+    zh-Hans: 增强功能
+CommonRequestFormFeature:
+    ja: 機能追加
+    en-GB: Feature
+    en: Feature
+    de: Merkmal
+    es: Característica
+    es-MX: Característica
+    fr-CA: Fonctionnalité
+    fr: Fonctionnalité
+    it: Caratteristica
+    ko: 특징
+    nl: Functie
+    ru: Характеристика
+    zh-Hant: 功能
+    zh-Hans: 特点
+CommonRequestFormTitle:
+    ja: タイトル
+    en-GB: Title
+    en: Title
+    de: Titel
+    es: Título
+    es-MX: Título
+    fr-CA: Titre
+    fr: Titre
+    it: Titolo
+    ko: 제목
+    nl: Titel
+    ru: Название
+    zh-Hant: 標題
+    zh-Hans: 标题
+CommonRequestFormType:
+    ja: 種類
+    en-GB: Type
+    en: Type
+    de: Typ
+    es: Tipo
+    es-MX: Tipo
+    fr-CA: Type
+    fr: Type
+    it: Tipo
+    ko: 유형
+    nl: Type
+    ru: Тип
+    zh-Hant: 類型
+    zh-Hans: 类型
+CommonRequsetFormSubmit:
+    ja: 送信
+    en-GB: Submit
+    en: Submit
+    de: Einreichen
+    es: Enviar
+    es-MX: Enviar
+    fr-CA: Soumettre
+    fr: Soumettre
+    it: Invia
+    ko: 제출
+    nl: Dien  in
+    ru: Отправить
+    zh-Hant: 提交
+    zh-Hans: 提交
+CommonRestore:
+    ja: リストア
+    en-GB: Restore
+    en: Restore
+    de: Wiederherstellen
+    es: Restaurar
+    es-MX: Restaurar
+    fr-CA: Restaurer
+    fr: Restaurer
+    it: Ripristino
+    ko: 복원
+    nl: Herstel
+    ru: Восстановить
+    zh-Hant: 還原
+    zh-Hans: 恢复
+CommonRestoreMessage:
+    ja: ファイルアプリからリストアするファイルを選択してください。
+    en-GB: Select file to restore in Files app.
+    en: Select file to restore in Files app.
+    de: Wählen Sie die wiederherzustellende Datei in der Dateien-App aus.
+    es: Seleccione el archivo que desea restaurar en la aplicación Archivos.
+    es-MX: Seleccione el archivo que desea restaurar en la aplicación Archivos.
+    fr-CA: 'Sélectionnez le fichier à restaurer dans l''application Fichiers.'
+    fr: 'Sélectionnez le fichier à restaurer dans l''application Fichiers.'
+    it: 'Selezionare il file da ripristinare nell''applicazione File.'
+    ko: 파일 앱에서 복원할 파일 선택.
+    nl: Selecteer bestand om te herstellen in Bestanden app.
+    ru: Выберите файл для восстановления в приложении "Файлы".
+    zh-Hant: 在「檔案」應用程式中選擇要還原的檔案。
+    zh-Hans: 在文件应用程序中选择要恢复的文件。
+CoopHistoryResultsCount:
+    ja: リザルト件数
+    en-GB: Results count
+    en: Results count
+    de: Ergebnisse zählen
+    es: Recuento de resultados
+    es-MX: Recuento de resultados
+    fr-CA: Nombre de résultats
+    fr: Nombre de résultats
+    it: Conteggio dei risultati
+    ko: 결과 수
+    nl: Resultaten tellen
+    ru: Подсчет результатов
+    zh-Hant: 結果計數
+    zh-Hans: 结果计数
+CommonRoleDebuger:
+    ja: デバッグ
+    en-GB: Debug
+    en: Debug
+    de: Debuggen
+    es: Depurar
+    es-MX: Depurar
+    fr-CA: Déboguer
+    fr: Déboguer
+    it: Debug
+    ko: 디버그
+    nl: Debug
+    ru: Отладка
+    zh-Hant: 除錯
+    zh-Hans: 调试
+CommonRoleDeveloper:
+    ja: 開発
+    en-GB: Developer
+    en: Developer
+    de: Entwickler
+    es: Desarrollador
+    es-MX: Desarrollador
+    fr-CA: Développeur
+    fr: Développeur
+    it: Sviluppatore
+    ko: 개발자
+    nl: Ontwikkelaar
+    ru: Разработчик
+    zh-Hant: 開發者
+    zh-Hans: 开发商
+CommonRoleTester:
+    ja: テスト
+    en-GB: Testor
+    en: Testor
+    de: Testor
+    es: Testor
+    es-MX: Testor
+    fr-CA: Testor
+    fr: Testor
+    it: Testor
+    ko: 테스터
+    nl: Testor
+    ru: Testor
+    zh-Hant: 測試者
+    zh-Hans: 检验员
+CommonRoleTranslator:
+    ja: 翻訳
+    en-GB: Translator
+    en: Translator
+    de: Übersetzer
+    es: Traductor
+    es-MX: Traductor
+    fr-CA: Traducteur
+    fr: Traducteur
+    it: Traduttore
+    ko: 번역자
+    nl: Vertaler
+    ru: Переводчик
+    zh-Hant: 翻譯者
+    zh-Hans: 翻译人员
+CommonSaveToPhotoLibrary:
+    ja: 保存しました
+    en-GB: Saved successfully
+    en: Saved successfully
+    de: Erfolgreich gespeichert
+    es: Guardado correctamente
+    es-MX: Guardado correctamente
+    fr-CA: Sauvegardé avec succès
+    fr: Sauvegardé avec succès
+    it: Salvato con successo
+    ko: 성공적으로 저장되었습니다.
+    nl: Met succes opgeslagen
+    ru: Сохранено успешно
+    zh-Hant: 儲存成功
+    zh-Hans: 已成功保存
+CommonScheduleSync:
+    ja: スケジュール同期
+    en-GB: Sync Schedule
+    en: Sync Schedule
+    de: Zeitplan synchronisieren
+    es: Sincronizar horario
+    es-MX: Sincronizar horario
+    fr-CA: Calendrier de synchronisation
+    fr: Calendrier de synchronisation
+    it: Programma di sincronizzazione
+    ko: 동기화 일정
+    nl: Synchronisatie schema
+    ru: Расписание синхронизации
+    zh-Hant: 同步排程
+    zh-Hans: 同步时间表
+CommonScheduleSyncMessage:
+    ja: スケジュールサーバーから過去のスケジュールを取得します
+    en-GB: Retrieve schedule from the server.
+    en: Retrieve schedule from the server.
+    de: Abrufen des Zeitplans vom Server.
+    es: Recupera la programación del servidor.
+    es-MX: Recupera la programación del servidor.
+    fr-CA: Récupérer le calendrier depuis le serveur.
+    fr: Récupérer le calendrier depuis le serveur.
+    it: Recupera la pianificazione dal server.
+    ko: 서버에서 일정 검색.
+    nl: Agenda ophalen van de server.
+    ru: Получение расписания с сервера.
+    zh-Hant: 從伺服器檢索排程。
+    zh-Hans: 从服务器检索时间表。
+CommonSignIn:
+    ja: ログイン
+    en-GB: Sign in
+    en: Sign in
+    de: Eintragen
+    es: Iniciar sesión
+    es-MX: Iniciar sesión
+    fr-CA: Se connecter
+    fr: Se connecter
+    it: Accedi
+    ko: 로그인
+    nl: Aanmelden
+    ru: Войти
+    zh-Hant: 登入
+    zh-Hans: 登录
+CommonSignOut:
+    ja: ログアウト
+    en-GB: Sign out
+    en: Sign out
+    de: Abmelden
+    es: Cerrar sesión
+    es-MX: Cerrar sesión
+    fr-CA: Se déconnecter
+    fr: Se déconnecter
+    it: Esci
+    ko: 로그아웃
+    nl: Afmelden
+    ru: Выписаться
+    zh-Hant: 登出
+    zh-Hans: 签出
+CommonSignOutSuccessfully:
+    ja: ログアウト成功しました
+    en-GB: Sign out successfully
+    en: 
+    de: Erfolgreich abmelden
+    es: Cerrar sesión correctamente
+    es-MX: Cerrar sesión correctamente
+    fr-CA: Déconnexion réussie
+    fr: Déconnexion réussie
+    it: Esci con successo
+    ko: 로그아웃 성공적으로 완료되었습니다
+    nl: Succesvol afmelden
+    ru: Успешно выйти из системы
+    zh-Hant: 登出成功
+    zh-Hans: 登出成功
+CommonSignOutMessage:
+    ja: ニンテンドーアカウントとの連携を解除します
+    en-GB: Unlink the Nintendo Switch account.
+    en: Unlink the Nintendo Switch account.
+    de: Entkoppeln Sie das Nintendo Switch-Konto.
+    es: Desvincula la cuenta de Nintendo Switch.
+    es-MX: Desvincula la cuenta de Nintendo Switch.
+    fr-CA: Détachez le compte Nintendo Switch.
+    fr: Détachez le compte Nintendo Switch.
+    it: 'Disconnettere l''account Nintendo Switch.'
+    ko: 닌텐도 스위치 계정 연결 해제.
+    nl: Ontkoppel het Nintendo Switch-account.
+    ru: Отвяжите учетную запись Nintendo Switch.
+    zh-Hant: 取消連結任天堂Switch帳戶。
+    zh-Hans: 解除对Nintendo Switch账户的链接。
+CommonSourceCode:
+    ja: ソースコード
+    en-GB: Source code
+    en: Source code
+    de: Quellcode
+    es: Código fuente
+    es-MX: Código fuente
+    fr-CA: Code source
+    fr: Code source
+    it: Codice sorgente
+    ko: 소스 코드
+    nl: Broncode
+    ru: Исходный код
+    zh-Hant: 原始碼
+    zh-Hans: 源代码
+CoopHistorySuppliedRatio:
+    ja: 支給率
+    en-GB: Supplied ratio
+    en: Supplied ratio
+    de: Angegebenes Verhältnis
+    es: Proporción suministrada
+    es-MX: Proporción suministrada
+    fr-CA: Rapport fourni
+    fr: Rapport fourni
+    it: Rapporto fornito
+    ko: 공급 비율
+    nl: Geleverde verhouding
+    ru: Коэффициент обеспеченности
+    zh-Hant: 供應比率
+    zh-Hans: 提供的比率
+CommonUpdateRequired:
+    ja: アプリをアップデートしてください
+    en-GB: App update is required
+    en: App update is required
+    de: App-Update ist erforderlich
+    es: Es necesario actualizar la aplicación
+    es-MX: Es necesario actualizar la aplicación
+    fr-CA: 'Une mise à jour de l''application est nécessaire'
+    fr: 'Une mise à jour de l''application est nécessaire'
+    it: 'È necessario un aggiornamento dell''app'
+    ko: 앱 업데이트가 필요합니다.
+    nl: App update is vereist
+    ru: Требуется обновление приложения
+    zh-Hant: 需要應用程式更新
+    zh-Hans: 需要更新应用程序
+CommonUserData:
+    ja: ユーザーデータ
+    en-GB: User data
+    en: User data
+    de: Benutzerdaten
+    es: Datos del usuario
+    es-MX: Datos del usuario
+    fr-CA: 'Données de l''utilisateur'
+    fr: 'Données de l''utilisateur'
+    it: Dati utente
+    ko: 사용자 데이터
+    nl: Gebruikersgegevens
+    ru: Данные пользователя
+    zh-Hant: 使用者資料
+    zh-Hans: 用户数据
+CommonValid:
+    ja: 有効
+    en-GB: Valid
+    en: Valid
+    de: Gültig
+    es: Válido
+    es-MX: Válido
+    fr-CA: Valable
+    fr: Valable
+    it: Valido
+    ko: 유효한
+    nl: Geldig
+    ru: Действителен
+    zh-Hant: 有效的
+    zh-Hans: 有效
+CommonAppVersion:
+    ja: バージョン
+    en-GB: Version
+    en: Version
+    de: Version
+    es: Versión
+    es-MX: Versión
+    fr-CA: Version
+    fr: Version
+    it: Versione
+    ko: 버전
+    nl: Versie
+    ru: Версия
+    zh-Hant: 版本
+    zh-Hans: 版本
+CommonWipeLog:
+    ja: ログ消去
+    en-GB: Wipe logs
+    en: Wipe logs
+    de: Protokolle wischen
+    es: Limpiar registros
+    es-MX: Limpiar registros
+    fr-CA: Essuyer les journaux
+    fr: Essuyer les journaux
+    it: Pulire i registri
+    ko: 로그 제거
+    nl: Logboeken wissen
+    ru: Протирать журналы
+    zh-Hant: 清除日誌
+    zh-Hans: 擦拭日志
+CommonWipeLogMessage:
+    ja: 保存されている全てのログを消去します。
+    en-GB: Wipe all of logs.
+    en: Wipe all of logs.
+    de: Wischen Sie alle Protokolle ab.
+    es: Limpia todos los registros.
+    es-MX: Limpia todos los registros.
+    fr-CA: Effacez tous les journaux.
+    fr: Effacez tous les journaux.
+    it: Pulire tutti i registri.
+    ko: 모든 로그 제거.
+    nl: Veeg alle logboeken weg.
+    ru: Протрите все журналы.
+    zh-Hant: 清除所有日誌。
+    zh-Hans: 擦拭所有的日志。
+CommonWipeResults:
+    ja: リザルト消去
+    en-GB: Wipe results
+    en: Wipe results
+    de: Ergebnisse wischen
+    es: Resultados de la limpieza
+    es-MX: Resultados de la limpieza
+    fr-CA: 'Résultats de l''essuyage'
+    fr: 'Résultats de l''essuyage'
+    it: Risultati della pulizia
+    ko: 결과 제거
+    nl: Veegresultaten
+    ru: Результаты вытирания
+    zh-Hant: 清除結果
+    zh-Hans: 擦拭结果
+CommonWipeResultsMessage:
+    ja: 保存されている全てのリザルトを消去します。
+    en-GB: Wipe all of data.
+    en: Wipe all of data.
+    de: Löschen Sie alle Daten.
+    es: Borra todos los datos.
+    es-MX: Borra todos los datos.
+    fr-CA: Effacer toutes les données.
+    fr: Effacer toutes les données.
+    it: Cancellare tutti i dati.
+    ko: 모든 데이터 제거.
+    nl: Wis alle gegevens.
+    ru: Сотрите все данные.
+    zh-Hant: 清除所有資料。
+    zh-Hans: 擦除所有数据。
+CommonWriteReview:
+    ja: レビューを書く
+    en-GB: Write a review
+    en: Write a review
+    de: Eine Bewertung schreiben
+    es: Escriba un comentario
+    es-MX: Escriba un comentario
+    fr-CA: Écrire un commentaire
+    fr: Écrire un commentaire
+    it: Scrivi una recensione
+    ko: 리뷰 작성
+    nl: Schrijf een review
+    ru: Написать отзыв
+    zh-Hant: 撰寫評論
+    zh-Hans: 撰写评论
+CoopHistoryOverallRecord:
+    ja: 総合きろく
+    en-GB: Overall
+    en: Overall
+    de: Insgesamt
+    es: En general
+    es-MX: En general
+    fr-CA: En général
+    fr: En général
+    it: In generale
+    ko: 전반적으로
+    nl: Algemeen
+    ru: В целом
+    zh-Hant: 整體
+    zh-Hans: 总的来说
+CommonGoldenEggs:
+    ja: 金イクラ
+    en-GB: Golden Eggs
+    en: Golden Eggs
+    de: Goldene Eier
+    es: Huevos de oro
+    es-MX: Huevos de oro
+    fr-CA: 'Œufs d''or'
+    fr: 'Œufs d''or'
+    it: 'Uova d''oro'
+    ko: 황금 알
+    nl: Gouden eieren
+    ru: Золотые яйца
+    zh-Hant: 金蛋
+    zh-Hans: 金蛋
+CommonPowerEggs:
+    ja: イクラ
+    en-GB: Power Eggs
+    en: Power Eggs
+    de: Power-Eier
+    es: Huevos de energía
+    es-MX: Huevos de energía
+    fr-CA: Œufs à la puissance
+    fr: Œufs à la puissance
+    it: Uova di potenza
+    ko: 파워 에그
+    nl: Power Eggs
+    ru: Энергетические яйца
+    zh-Hant: 能量蛋
+    zh-Hans: 动力蛋
+CommonOverview:
+    ja: 概要
+    en-GB: Overview
+    en: Overview
+    de: Übersicht
+    es: Visión general
+    es-MX: Visión general
+    fr-CA: 'Vue d''ensemble'
+    fr: 'Vue d''ensemble'
+    it: Panoramica
+    ko: 개요
+    nl: Overzicht
+    ru: Обзор
+    zh-Hant: 概述
+    zh-Hans: 概述
+CommonLocale:
+    ja: ja-JP
+    en-GB: en-GB
+    en: en-US
+    de: de-DE
+    es: es-ES
+    es-MX: es-MX
+    fr-CA: fr-CA
+    fr: fr-FR
+    it: it-IT
+    ko: en-GB
+    nl: nl-NL
+    ru: ru-RU
+    zh-Hant: zh-TW
+    zh-Hans: zh-CN
+CommonLanguageCode:
+    ja: 0
+    en-GB: 0
+    en: 0
+    de: 0
+    es: 0
+    es-MX: 0
+    fr-CA: 0
+    fr: 0
+    it: 0
+    ko: 0
+    nl: 0
+    ru: 0
+    zh-Hant: 2
+    zh-Hans: 1
+CommonDatabase:
+    ja: データベース
+    en-GB: Database
+    en: Database
+    de: Datenbank
+    es: Base de datos
+    es-MX: Base de datos
+    fr-CA: Base de données
+    fr: Base de données
+    it: Database
+    ko: 데이터베이스
+    nl: Database
+    ru: База данных
+    zh-Hant: 資料庫
+    zh-Hans: 数据库
+CommonXProductVersion:
+    ja: X-ProductVersion
+    en-GB: X-ProductVersion
+    en: X-ProductVersion
+    de: X-ProductVersion
+    es: X-ProductVersion
+    es-MX: X-ProductVersion
+    fr-CA: X-ProductVersion
+    fr: X-ProductVersion
+    it: X-ProductVersion
+    ko: -ProductVersion
+    nl: X-ProductVersion
+    ru: X-ProductVersion
+    zh-Hant: X-ProductVersion
+    zh-Hans: X-ProductVersion
+CommonXWebViewVer:
+    ja: X-WebViewVer
+    en-GB: X-WebViewVer
+    en: X-WebViewVer
+    de: X-WebViewVer
+    es: X-WebViewVer
+    es-MX: X-WebViewVer
+    fr-CA: X-WebViewVer
+    fr: X-WebViewVer
+    it: X-WebViewVer
+    ko: X-WebViewVer
+    nl: X-WebViewVer
+    ru: X-WebViewVer
+    zh-Hant: X-WebViewVer
+    zh-Hans: X-WebViewVer
+CommonUpload:
+    ja: アップロード
+    en-GB: Upload
+    en: Upload
+    de: Hochladen
+    es: Cargar
+    es-MX: Cargar
+    fr-CA: Télécharger
+    fr: Télécharger
+    it: Caricare
+    ko: 업로드
+    nl: uploaden
+    ru: Загрузить
+    zh-Hant: 上傳
+    zh-Hans: 上传
+CommonCreditDevelop:
+    ja: 開発
+    en-GB: Developer
+    en: Developer
+    de: Entwickler
+    es: Desarrollador
+    es-MX: Desarrollador
+    fr-CA: Développeur
+    fr: Développeur
+    it: Sviluppatore
+    ko: 개발자
+    nl: Ontwikkelaar
+    ru: Разработчик
+    zh-Hant: 開發者
+    zh-Hans: 开发商
+CommonCreditTest:
+    ja: テスト
+    en-GB: Tester
+    en: Tester
+    de: Tester
+    es: Comprobador
+    es-MX: Comprobador
+    fr-CA: Testeur
+    fr: Testeur
+    it: Collaudatore
+    ko: 테스터
+    nl: Tester
+    ru: Тестер
+    zh-Hant: 測試者
+    zh-Hans: 测试员
+CommonCreditDesign:
+    ja: UI/UXデザイン
+    en-GB: UI/UX Design
+    en: UI/UX Design
+    de: UI/UX Gestaltung
+    es: Diseño UI/UX
+    es-MX: Diseño UI/UX
+    fr-CA: Design UI/UX
+    fr: Design UI/UX
+    it: Design UI/UX
+    ko: UI/UX 디자인
+    nl: UI/UX ontwerp
+    ru: UI/UX дизайн
+    zh-Hant: UI/UX設計
+    zh-Hans: UI/UX设计
+CoopHistoryTeamPointCard:
+    ja: チームポイントカード
+    en-GB: Team Point Card
+    en: Team Point Card
+    de: Team-Punktekarte
+    es: Tarjeta de puntos del equipo
+    es-MX: Tarjeta de puntos del equipo
+    fr-CA: 'Carte de points d''équipe'
+    fr: 'Carte de points d''équipe'
+    it: Scheda punti squadra
+    ko: 팀 포인트 카드
+    nl: Teampuntenkaart
+    ru: Карточка командных очков
+    zh-Hant: 團隊點數卡
+    zh-Hans: 团队积分卡
+CoopHistoryUseEstimatedValue:
+    ja: 推定値を表示
+    en-GB: Use estimated values
+    en: Use estimated values
+    de: Geschätzte Werte verwenden
+    es: Utilizar valores estimados
+    es-MX: Utilizar valores estimados
+    fr-CA: Utiliser des valeurs estimées
+    fr: Utiliser des valeurs estimées
+    it: Utilizzare valori stimati
+    ko: 추정 값을 사용
+    nl: Gebruik geschatte waarden
+    ru: Использовать оценочные значения
+    zh-Hant: 使用預估值
+    zh-Hans: 使用估计值
+CommonUseSecureSession:
+    ja: Safariの認証を利用する
+    en-GB: Use empheral session
+    en: Use empheral session
+    de: Empherische Sitzung verwenden
+    es: Utilizar la sesión de empheral
+    es-MX: Utilizar la sesión de empheral
+    fr-CA: 'Utiliser la session d''emphase'
+    fr: 'Utiliser la session d''emphase'
+    it: Utilizzare la sessione empheral
+    ko: Safari 인증서를 이용
+    nl: Gebruik empirische sessie
+    ru: Используйте эмфиральную сессию
+    zh-Hant: 使用 Safari 的身份驗證
+    zh-Hans: 使用 Safari 的身份验证
+CommonCheckInReward:
+    ja: 報酬
+    en-GB: Rewards
+    en: Rewards
+    de: Belohnungen
+    es: Recompensas
+    es-MX: Recompensas
+    fr-CA: Récompenses
+    fr: Récompenses
+    it: Premi
+    ko: 보상
+    nl: Beloningen
+    ru: Вознаграждения
+    zh-Hant: 獎勵
+    zh-Hans: 奖励
+CommonGetCheckInReward:
+    ja: 過去に配布されていたQRコードの報酬を取得します。
+    en-GB: Get all of rewards for QR codes.
+    en: Get all of rewards for QR codes.
+    de: Holen Sie sich alle Belohnungen für QR-Codes.
+    es: Consigue todas las recompensas por códigos QR.
+    es-MX: Consigue todas las recompensas por códigos QR.
+    fr-CA: Obtenez toutes les récompenses pour les codes QR.
+    fr: Obtenez toutes les récompenses pour les codes QR.
+    it: Ottenete tutti i premi per i codici QR.
+    ko: QR 코드에 대한 모든 보상 가져오기.
+    nl: Krijg alle beloningen voor QR-codes.
+    ru: Получите все вознаграждения за QR-коды.
+    zh-Hant: 掃描QR碼獲取所有獎勵。
+    zh-Hans: 获得二维码的所有奖励。
+CoopHistoryTeamResult:
+    ja: チーム
+    en-GB: Team
+    en: Team
+    de: Team
+    es: Equipo
+    es-MX: Equipo
+    fr-CA: 'L''équipe'
+    fr: 'L''équipe'
+    it: Squadra
+    ko: 팀
+    nl: Team
+    ru: Команда
+    zh-Hant: 團隊
+    zh-Hans: 团队
+CoopHistoryPlayerResult:
+    ja: あなた
+    en-GB: You
+    en: You
+    de: Sie
+    es: Usted
+    es-MX: Usted
+    fr-CA: Vous
+    fr: Vous
+    it: Tu
+    ko: 당신
+    nl: Jij
+    ru: Вы
+    zh-Hant: 您
+    zh-Hans: 你
+CoopHistoryCrewAvgResult:
+    ja: なかまの平均
+    en-GB: Avg of the crew
+    en: Avg of the crew
+    de: Avg der Besatzung
+    es: Avg de la tripulación
+    es-MX: Avg de la tripulación
+    fr-CA: 'Avg de l''équipage'
+    fr: 'Avg de l''équipage'
+    it: 'Avg dell''equipaggio'
+    ko: 선원의 평균
+    nl: Avg van de bemanning
+    ru: Экипаж
+    zh-Hant: 船員的平均數
+    zh-Hans: 船员的平均数
+CoopHistoryCrewResult:
+    ja: なかま
+    en-GB: Crew
+    en: Crew
+    de: Besatzung
+    es: Tripulación
+    es-MX: Tripulación
+    fr-CA: 'L''équipage'
+    fr: 'L''équipage'
+    it: Equipaggio
+    ko: 크루
+    nl: Bemanning
+    ru: Экипаж
+    zh-Hant: 船員
+    zh-Hans: 船员
+CoopHistoryWaveResult:
+    ja: Waves
+    en-GB: Waves
+    en: Waves
+    de: Wellen
+    es: Olas
+    es-MX: Olas
+    fr-CA: Vagues
+    fr: Vagues
+    it: Onde
+    ko: 파도
+    nl: Golven
+    ru: Волны
+    zh-Hant: 海浪
+    zh-Hans: 波浪
+CoopHistoryHighestScore:
+    ja: 最高
+    en-GB: Max
+    en: Max
+    de: Max
+    es: Max
+    es-MX: Max
+    fr-CA: Max
+    fr: Max
+    it: Massimo
+    ko: 최대
+    nl: Max
+    ru: Макс
+    zh-Hant: 最高
+    zh-Hans: 最大
+CoopHistoryAverageScore:
+    ja: 平均
+    en-GB: Avg
+    en: Avg
+    de: Avg
+    es: Avg
+    es-MX: Avg
+    fr-CA: Moyenne
+    fr: Moyenne
+    it: Avg
+    ko: 평균
+    nl: Gemiddeld
+    ru: Avg
+    zh-Hant: 平均
+    zh-Hans: 平均
+CommonRequirediOS16:
+    ja: この機能を利用するにはiOS16以上にアップデートする必要があります。
+    en-GB: You must update to iOS16 or higher to use this feature
+    en: You must update to iOS16 or higher to use this feature
+    de: Sie müssen auf iOS16 oder höher aktualisieren, um diese Funktion nutzen zu können
+    es: Debes actualizar a iOS16 o superior para utilizar esta función
+    es-MX: Debes actualizar a iOS16 o superior para utilizar esta función
+    fr-CA: Vous devez mettre à jour vers iOS16 ou une version plus récente pour utiliser cette fonctionnalité.
+    fr: Vous devez mettre à jour vers iOS16 ou une version plus récente pour utiliser cette fonctionnalité.
+    it: Per utilizzare questa funzione è necessario aggiornare a iOS16 o versioni successive.
+    ko: 이 기능을 사용하려면 iOS16 이상으로 업데이트해야합니다.
+    nl: Je moet updaten naar iOS16 of hoger om deze functie te gebruiken.
+    ru: Для использования этой функции необходимо обновить iOS до версии 16 или выше
+    zh-Hant: 您必須更新到iOS 16或更高版本才能使用此功能
+    zh-Hans: 你必须更新到iOS16或更高版本才能使用这一功能
+CommonRequiredSignIn:
+    ja: このアプリを利用するにはニンテンドーアカウントでログインする必要があります。
+    en-GB: Using this app, you need be sign in with your Nintendo account. Please sign in from on My page.
+    en: Using this feature, you need be sign in with your Nintendo account. Please sign in from on My page.
+    de: Um diese App zu verwenden, müssen Sie sich mit Ihrem Nintendo-Konto anmelden. Bitte melden Sie sich auf der Seite Meine Seite an.
+    es: Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.
+    es-MX: Para utilizar esta aplicación, debes iniciar sesión con tu cuenta Nintendo. Inicia sesión en Mi página.
+    fr-CA: Pour utiliser cette application, vous devez vous connecter avec votre compte Nintendo. Veuillez vous connecter à partir de Ma page.
+    fr: Pour utiliser cette application, vous devez vous connecter avec votre compte Nintendo. Veuillez vous connecter à partir de Ma page.
+    it: 'Per utilizzare questa applicazione, è necessario effettuare l''accesso con il proprio account Nintendo. Accedere dalla pagina personale.'
+    ko: 이 앱을 사용하려면 닌텐도 계정으로 로그인해야합니다. 내 페이지에서 로그인해주세요."
+    nl: Als je deze app gebruikt, moet je je aanmelden met je Nintendo-account. Meld je aan via Mijn pagina.
+    ru: Для использования этого приложения вам необходимо войти в систему под своей учетной записью Nintendo. Войдите в систему на Моей странице.
+    zh-Hant: 登錄 Nintendo 帳戶才能使用此應用程式
+    zh-Hans: 登录 Nintendo 帐户才能使用此应用程序
+CommonRestoreSuccessMessage:
+    ja: リザルト復元に成功しました。
+    en-GB: Restore results successfully
+    en: Restore results successfully
+    de: Ergebnisse erfolgreich wiederherstellen
+    es: Restaurar resultados con éxito
+    es-MX: Restaurar resultados con éxito
+    fr-CA: Restaurer les résultats avec succès
+    fr: Restaurer les résultats avec succès
+    it: Ripristino dei risultati con successo
+    ko: 결과를 성공적으로 복원했습니다.
+    nl: Succesvolle resultaten herstellen
+    ru: Успешное восстановление результатов
+    zh-Hant: 成功還原結果
+    zh-Hans: 成功恢复结果
+CommonRestoreFailureMessage:
+    ja: リザルト復元に失敗しました。未サポートの形式またはファイルが改ざんされているため署名が一致しません。
+    en-GB: Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
+    en: Restore results failure. Unsupported format or signature does not match due to file has been tampered with.
+    de: Wiederherstellungsergebnisse sind fehlgeschlagen. Nicht unterstütztes Format oder die Signatur stimmt nicht überein, weil die Datei manipuliert wurde.
+    es: Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.
+    es-MX: Fallo en los resultados de la restauración. Formato no compatible o la firma no coincide debido a que el archivo ha sido manipulado.
+    fr-CA: 'Échec de la restauration. Le format n''est pas pris en charge ou la signature ne correspond pas parce que le fichier a été modifié.'
+    fr: 'Échec de la restauration. Le format n''est pas pris en charge ou la signature ne correspond pas parce que le fichier a été modifié.'
+    it: Risultato del ripristino non riuscito. Il formato non è supportato o la firma non corrisponde perché il file è stato manomesso.
+    ko: 결과 복원 실패. 지원하지 않는 형식 또는 파일이 조작되어 서명이 일치하지 않습니다.
+    nl: Herstelresultaten mislukt. Niet ondersteund formaat of handtekening komt niet overeen omdat er met het bestand is geknoeid.
+    ru: Сбой результатов восстановления. Неподдерживаемый формат или подпись не соответствует из-за того, что файл был подделан.
+    zh-Hant: 還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。
+    zh-Hans: 恢复结果失败。由于文件被篡改，不支持的格式或签名不匹配。
+CommonResultsCount:
+    ja: リザルト件数
+    en-GB: Results
+    en: Results
+    de: Ergebnisse
+    es: Resultados
+    es-MX: Resultados
+    fr-CA: Résultats
+    fr: Résultats
+    it: Risultati
+    ko: 결과
+    nl: Resultaten
+    ru: Результаты
+    zh-Hant: 結果
+    zh-Hans: 结果
+CommonDeveloperAnswer:
+    ja: デベロッパの回答
+    en-GB: 'Developer''s response'
+    en: 'Developer''s response'
+    de: Antwort des Entwicklers
+    es: Respuesta del promotor
+    es-MX: Respuesta del promotor
+    fr-CA: Réponse du développeur
+    fr: Réponse du développeur
+    it: Risposta dello sviluppatore
+    ko: 소개
+    nl: Antwoord van de ontwikkelaar
+    ru: Ответ разработчика
+    zh-Hant: 開發者的回應
+    zh-Hans: 开发者的回应
+CommonMinimumVersion:
+    ja: サポートされていないバージョンでバックアップされたリザルトのため復元できませんでした。
+    en-GB: Due to the data backuped by unsupported version, could not restore.
+    en: Due to the data backuped by unsupported version, could not restore.
+    de: Da die Daten von einer nicht unterstützten Version gesichert wurden, konnten sie nicht wiederhergestellt werden.
+    es: Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.
+    es-MX: Debido a que la copia de seguridad de los datos se realizó con una versión no compatible, no se pudo restaurar.
+    fr-CA: 'Les données ayant été sauvegardées dans une version non prise en charge, il n''a pas été possible de les restaurer.'
+    fr: 'Les données ayant été sauvegardées dans une version non prise en charge, il n''a pas été possible de les restaurer.'
+    it: A causa del backup dei dati effettuato con una versione non supportata, non è stato possibile eseguire il ripristino.
+    ko: 지원되지 않는 버전으로 백업된 결과물을 복원할 수 없었습니다.
+    nl: Omdat de gegevens zijn opgeslagen in een niet-ondersteunde versie, konden ze niet worden hersteld.
+    ru: Из-за того, что резервная копия данных была создана в неподдерживаемой версии, восстановить ее не удалось.
+    zh-Hant: 無法恢復以不支援的版本備份的結果
+    zh-Hans: 无法恢复以不支持的版本备份的结果
+ErrorInvalidSignature:
+    ja: バックアップの署名が一致しなかったため復元できませんでした。リザルトが改ざんされている可能性があります。
+    en-GB: Due to the unmatch the signature of data, could not restore.
+    en: Due to the unmatch the signature of data, could not restore.
+    de: Da die Signatur der Daten nicht übereinstimmt, konnte sie nicht wiederhergestellt werden.
+    es: Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.
+    es-MX: Debido a la no coincidencia de la firma de los datos, no se pudo restaurar.
+    fr-CA: 'En raison de la non-concordance de la signature des données, il n''a pas été possible de les restaurer.'
+    fr: 'En raison de la non-concordance de la signature des données, il n''a pas été possible de les restaurer.'
+    it: A causa della mancata corrispondenza della firma dei dati, non è stato possibile eseguire il ripristino.
+    ko: 백업의 서명이 일치하지 않아 복원할 수 없었습니다. 결과물이 수정되었을 가능성이 있습니다.
+    nl: Omdat de handtekening van de gegevens niet overeenkwam, kon hij niet herstellen.
+    ru: Из-за несовпадения сигнатур данных, восстановить их не удалось.
+    zh-Hant: 由於備份簽名不匹配，無法恢復。結果可能已被篡改
+    zh-Hans: 由于备份签名不匹配，无法恢复。结果可能已被篡改
+CommonUseSystemTheme:
+    ja: 端末の設定を利用する
+    en-GB: Use device settings
+    en: Use device settings
+    de: Geräteeinstellungen verwenden
+    es: Utilizar la configuración del dispositivo
+    es-MX: Utilizar la configuración del dispositivo
+    fr-CA: 'Utiliser les paramètres de l''appareil'
+    fr: 'Utiliser les paramètres de l''appareil'
+    it: Utilizzare le impostazioni del dispositivo
+    ko: 장치 설정에 따라 다릅니다
+    nl: Apparaatinstellingen gebruiken
+    ru: Использовать настройки устройства
+    zh-Hant: 取決於設備設置
+    zh-Hans: 根据设备设置而定
+CommonLicense:
+    ja: ライセンス
+    en-GB: License
+    en: License
+    de: Lizenz
+    es: Licencia
+    es-MX: Licencia
+    fr-CA: Licence
+    fr: Licence
+    it: Licenza
+    ko: 라이선스
+    nl: Licentie
+    ru: Лицензия
+    zh-Hant: 許可證
+    zh-Hans: 许可证

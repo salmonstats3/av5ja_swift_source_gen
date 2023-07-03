@@ -1,0 +1,163 @@
+CommonCancel: Annuler
+CommonClamBlitz: Pluie de palourdes
+CommonClose: Fermer
+CommonCoopBigRun: Big Run
+CommonCoopTeamContest: Défi œuf sup
+CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+CommonDecide: OK
+CommonDownload: Télécharger
+CommonEnd: Fermer
+CommonGearPowerBlank: Inconnu
+CommonHome: Accueil
+CommonIkaring3: SplatNet 3
+CommonNowLoading: Chargement...
+CommonPullToRefresh: Tirer pour actualiser
+CommonRainmaker: Mission Bazookarpe
+CommonShare: Partager
+CommonSplatZones: Défense de zone
+CommonTowerControl: Expédition risquée
+CommonTricolor: Match tricolore
+CommonTricolorMatch: Match tricolore
+CommonTurfWar: Guerre de territoire
+CommonWpnNotfound: Inconnu
+CoopHistoryAvailable: Apparus
+CoopHistoryAvailableBoss: Salmonarque combattu
+CoopHistoryAverageClearWaves: "Vagues terminées (moyenne)\_:"
+CoopHistoryBigrun: Big Run
+CoopHistoryBigrunBronze: Bronze
+CoopHistoryBigrunGold: Or
+CoopHistoryBigrunSilver: Argent
+CoopHistoryBonus: Récomp.
+CoopHistoryBossAvailable: "Salmonarque en approche\_!"
+CoopHistoryClear: "Réussite\_!"
+CoopHistoryDangerRatio: "Niveau de danger\_:"
+CoopHistoryDefeatBoss: "Attaque de Salmonarque\_!"
+CoopHistoryDefeatBossCount: Salmonarques vaincus
+CoopHistoryDefeated: "Vaincu\_!"
+CoopHistoryDefeatedEnemies: Salmonoboss vaincus
+CoopHistoryDefeatedEnemiesGuide: "Remarque : entre parenthèses\_est indiqué le nombre d'ennemis que tu as vaincus toi-même."
+CoopHistoryDeliverCount: Œufs de poi. collectés
+CoopHistoryEnemy: Salmonoboss
+CoopHistoryExWave: Vague +
+CoopHistoryFailure: Échec...
+CoopHistoryGoToStats: Retour aux stats de missions
+CoopHistoryGoldenDeliverCount: Œufs dorés collectés
+CoopHistoryHighestScore: Record
+CoopHistoryHistory: Stats de missions
+CoopHistoryJobPoint: Tes points
+CoopHistoryJobRatio: Éval.
+CoopHistoryKumaPointCard: Carton de M. Ours
+CoopHistoryLatest: Dernière mission
+CoopHistoryLimitedPoint: Points de prix spéciaux actuels
+CoopHistoryMonthlyReward: Pièce d'équipement du mois
+CoopHistoryNext: Suivant
+CoopHistoryNoData: Aucune stat de mission disponible.
+CoopHistoryNotAvailable: Les stats de missions ne sont pas disponibles.
+CoopHistoryNotAvailableDescription: Seules les 50 entrées les plus récentes sont disponibles.
+CoopHistoryNotDefeated: Échec...
+CoopHistoryP: p.
+CoopHistoryPlayCount: Sessions de travail
+CoopHistoryPrevious: Précédent
+CoopHistoryPrivate: Mission privée
+CoopHistoryRecruit: "On embauche\_!"
+CoopHistoryRecruitDescription: >-
+  Un travail taillé pour ceux qui ont de l'énergie et de l'optimisme à revendre,
+  et qui sont prêts à bosser dur pour empocher un tas d'écailles. Motivation
+  exigée. Débutants acceptés.
+CoopHistoryRecruitTag1: C'est facile !
+CoopHistoryRecruitTag2: La collecte d'œufs, c'est fun et ça rapporte !
+CoopHistoryRecruitTitle: "La collecte d'œufs, un job de rêve\_!"
+CoopHistoryRegular: Mission normale
+CoopHistoryRegularPoint: Points actuels
+CoopHistoryRescueCount: Collègues secourus
+CoopHistoryRescuedCount: Secours reçus
+CoopHistoryScale: Écailles
+CoopHistoryScaleBronze: Écaille de bronze
+CoopHistoryScaleGold: Écaille d'or
+CoopHistoryScaleSilver: Écaille d'argent
+CoopHistoryScore: Score
+CoopHistorySeeSchedule: Consulter le planning
+CoopHistorySmellMeter: Salmomètre
+CoopHistorySupplyWeapon: Armes fournies
+CoopHistoryTeamContest: Défi œuf sup
+CoopHistoryTitle: Salmon Run
+CoopHistoryTotalPoint: Total des points
+CoopHistoryWave: Vague
+CoopHistoryWaveLevel0: Marée basse
+CoopHistoryWaveLevel1: Normal
+CoopHistoryWaveLevel2: Marée haute
+ErrorBackToHome: Retour à l'accueil
+ErrorCurrentlyNotAvailable: Actuellement indisponible. Réessaie plus tard.
+ErrorError: Erreur
+ErrorErrorOccurred: Une erreur est survenue.
+ErrorErrorReopen: Échec du chargement.
+ErrorMaintenanceDescription: Le serveur est en cours de maintenance. Réessaie plus tard.
+ErrorMaintenanceTitle: Patiente quelques instants...
+ErrorNetworkNotAvailable: Échec du chargement. Vérifie ta connexion à Internet, puis réessaie.
+ErrorNotSupported: >-
+  SplatNet 3 ne peut pas s'afficher. Vérifie ta connexion Internet et attends un
+  peu, puis réessaie. Si le problème persiste, assure-toi que ton navigateur
+  Internet a accueilli sa mise à jour la plus récente. Si ce message continue à
+  apparaître, il se peut que SplatNet 3 ne soit pas compatible avec tes
+  paramètres ou ton appareil actuels.
+ErrorReload: Actualiser
+RecordLatestPlayed: Derniers stages parcourus
+RecordLatestUsed: Favoris
+RecordMain: Principale
+RecordNextSkillLevel: Prochaine amél.
+RecordSkillLevel: Score de classe
+RecordSort: Trier
+RecordSpecial: Spéciale
+RecordStageRecord: Stats - stages
+RecordStageRecordAppName: Stages
+RecordSub: Secondaire
+RecordTitle: Stats
+RecordTotalTurfPoint: p.
+RecordTurfPoint: Surf. encrée
+RecordUnplayedStages: Stages non parcourus
+RecordUnusedWeapons: Pas encore obtenues
+RecordVibes: Jauge d'appréciation
+RecordWeaponRecord: Stats - armes
+RecordWeaponRecordAppName: Armes
+RecordWinCount: 'Victoires :'
+SettingsAcknowledgements: Copyright
+SettingsAppName: Paramètres
+SettingsCredits: Crédits
+SettingsExpansionPass: Informations sur le Pass d'extension
+SettingsTitle: Paramètres
+StageScheduleBankara: Match anarchie
+StageScheduleBankaraOpen: Ouvert
+StageScheduleBankaraOpenChallenge: Série
+StageScheduleCoop: Salmon Run
+StageScheduleCoopCurrentPeriodStart: "OUVERT\_!"
+StageScheduleEvent: Match Challenge
+StageScheduleEventCurrentSchedule: Actuellement
+StageScheduleEventFuture: Suivant
+StageScheduleEventHolding: "En cours\_!"
+StageScheduleEventNext: Prochain
+StageScheduleEventNextSchedule: Créneau suivant
+StageScheduleEventNoData: Aucun match Challenge prévu pour le moment.
+StageScheduleEventUnknownData: '???'
+StageScheduleEventmatch: "L'événement a commencé\_!"
+StageScheduleFuture: Plus tard
+StageScheduleGuideOpenBrowser: Cette opération entraînera l'ouverture d'une nouvelle fenêtre de navigateur.
+StageScheduleNext: Tout à l'heure
+StageScheduleNoticeBigrun: Big Run en approche !
+StageScheduleNoticeLimited: "Défi œuf sup' en approche\_!"
+StageScheduleNowClosed: "Festival en cours\_!"
+StageScheduleOpen: Actuellement
+StageScheduleOpenBigrun: Big Run en cours !
+StageScheduleOpenLimited: "Défi œuf sup' disponible\_!"
+StageSchedulePrivate: Match privé
+StageScheduleRecruit: >-
+  Un Big Run est en cours ! M. Ours SA embauche, tous types de profils acceptés
+  ! ()
+StageScheduleRecruitTeamContest: "Un défi œuf sup' est disponible. Recrute des joueurs et fais honneur à M. Ours SA\_!"
+StageScheduleRegular: Match classique
+StageScheduleRules: Voir les règles
+StageScheduleSeeAllRules: Voir les règles en détail
+StageScheduleSuppliedWeaponRandom: Aléatoire
+StageScheduleSuppliedWeapons: Armes fournies
+StageScheduleTitle: Planning
+StageScheduleWinRateByRules: Taux de victoire par mode
+StageScheduleXmatch: Match X

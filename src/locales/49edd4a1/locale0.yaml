@@ -1,0 +1,163 @@
+CommonCancel: Abbrechen
+CommonClamBlitz: Muschelchaos
+CommonClose: Schließen
+CommonCoopBigRun: Big Run
+CommonCoopTeamContest: Team-Wettkampf
+CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+CommonDecide: OK
+CommonDownload: Herunterladen
+CommonEnd: Schließen
+CommonGearPowerBlank: Unbekannt
+CommonHome: Startseite
+CommonIkaring3: SplatNet 3
+CommonNowLoading: Ladevorgang...
+CommonPullToRefresh: Zum Aktualisieren ziehen
+CommonRainmaker: Operation Goldfisch
+CommonShare: Teilen
+CommonSplatZones: Herrschaft
+CommonTowerControl: Turm-Kommando
+CommonTricolor: Dreifarb-Angriff
+CommonTricolorMatch: Dreifarb-Match
+CommonTurfWar: Revierkampf
+CommonWpnNotfound: Unbekannt
+CoopHistoryAvailable: Auftritte
+CoopHistoryAvailableBoss: Ober-Salmonide bekämpft
+CoopHistoryAverageClearWaves: Durchschn. überstandene Wellen
+CoopHistoryBigrun: Big Run
+CoopHistoryBigrunBronze: Bronze
+CoopHistoryBigrunGold: Gold
+CoopHistoryBigrunSilver: Silber
+CoopHistoryBonus: Abschluss
+CoopHistoryBossAvailable: Ober-Salmonide gesichtet!
+CoopHistoryClear: Geschafft!
+CoopHistoryDangerRatio: Gefahrenstufe
+CoopHistoryDefeatBoss: Ober-Salmoniden-Angriff!
+CoopHistoryDefeatBossCount: Besiegte Ober-Salmoniden
+CoopHistoryDefeated: Besiegt!
+CoopHistoryDefeatedEnemies: Besiegte Boss-Salmoniden
+CoopHistoryDefeatedEnemiesGuide: '*Die Zahl in Klammern zeigt, wie viele davon du selbst besiegt hast.'
+CoopHistoryDeliverCount: Gesammelte Fischeier
+CoopHistoryEnemy: Boss-Salmoniden
+CoopHistoryExWave: Extra-Welle
+CoopHistoryFailure: Schade...
+CoopHistoryGoToStats: Zurück zu den Schicht-Daten
+CoopHistoryGoldenDeliverCount: Gesammelte Gold-Fischeier
+CoopHistoryHighestScore: Highscore
+CoopHistoryHistory: Karriere
+CoopHistoryJobPoint: Dein Punktestand
+CoopHistoryJobRatio: Bewertung
+CoopHistoryKumaPointCard: Bärenpunkte-Karte
+CoopHistoryLatest: Letzte Schicht
+CoopHistoryLimitedPoint: Spezial-Bonuspunktestand
+CoopHistoryMonthlyReward: Monatsangebot
+CoopHistoryNext: Vor
+CoopHistoryNoData: Keine Schicht-Daten vorhanden.
+CoopHistoryNotAvailable: Schicht-Daten nicht verfügbar
+CoopHistoryNotAvailableDescription: Nur die letzten 50 Einträge sind verfügbar.
+CoopHistoryNotDefeated: Gescheitert...
+CoopHistoryPlayCount: Angetretene Schichten
+CoopHistoryPrevious: Zurück
+CoopHistoryPrivate: Private Schicht
+CoopHistoryRecruit: Eierjäger gesucht!
+CoopHistoryRecruitDescription: >-
+  Jung? Spontan? Risikofreudig? Aufstrebende, fleißige Talente lieben diesen
+  schuppenmäßig gut bezahlten Job!
+CoopHistoryRecruitTag1: Supereinfach!
+CoopHistoryRecruitTag2: Fischeiersammeln bringt Spaß und Profit!
+CoopHistoryRecruitTitle: Fischeiersammeln! Der beste Job der Welt!
+CoopHistoryRegular: Standardschicht
+CoopHistoryRegularPoint: Punktestand
+CoopHistoryRescueCount: Gerettete Teamkollegen
+CoopHistoryRescuedCount: Benötigte Rettungen
+CoopHistoryScale: Schuppen
+CoopHistoryScaleBronze: Bronzeschuppe
+CoopHistoryScaleGold: Goldschuppe
+CoopHistoryScaleSilver: Silberschuppe
+CoopHistoryScore: Leistung
+CoopHistorySeeSchedule: Arbeitszeiten
+CoopHistorySmellMeter: Salmometer
+CoopHistorySupplyWeapon: Verfügbare Waffen
+CoopHistoryTeamContest: Team-Wettkampf
+CoopHistoryTitle: Salmon Run
+CoopHistoryTotalPoint: Gesamtpunkte
+CoopHistoryWave: Welle
+CoopHistoryWaveLevel0: Ebbe
+CoopHistoryWaveLevel1: Normal
+CoopHistoryWaveLevel2: Flut
+ErrorBackToHome: Zurück zur Startseite
+ErrorCurrentlyNotAvailable: Momentan nicht verfügbar. Bitte warte etwas und versuche es dann erneut.
+ErrorError: Fehler
+ErrorErrorOccurred: Ein Fehler ist aufgetreten.
+ErrorErrorReopen: Ladevorgang fehlgeschlagen.
+ErrorMaintenanceDescription: >-
+  Aufgrund von Server-Wartungsarbeiten steht dieser Service momentan nicht zur
+  Verfügung. Bitte versuche es später erneut.
+ErrorMaintenanceTitle: Bitte warten...
+ErrorNetworkNotAvailable: >-
+  Ladevorgang fehlgeschlagen. Bitte überprüfe die Verbindung mit dem Internet
+  und versuche es erneut.
+ErrorNotSupported: >-
+  SplatNet 3 kann nicht angezeigt werden. Bitte überprüfe deine
+  Internetverbindung und warte etwas, bevor du es erneut versuchst. Wenn das
+  Problem dadurch nicht behoben wird, überprüfe, ob du die aktuelle Version
+  deines Browsers verwendest. Wenn dir weiterhin diese Nachricht angezeigt wird,
+  ist es möglich, dass SplatNet 3 nicht mit deinen momentanen Einstellungen oder
+  deinem Smartgerät kompatibel ist.
+ErrorReload: Aktualisieren
+RecordLatestPlayed: Zuletzt gespielt
+RecordLatestUsed: Meistgenutzt
+RecordMain: Hauptwaffe
+RecordNextSkillLevel: Nächste Stufe
+RecordSkillLevel: Waffen-Style
+RecordSort: Sortieren
+RecordSpecial: Spezialwaffe
+RecordStageRecord: Arenen
+RecordStageRecordAppName: Arenen
+RecordSub: Sekundärwaffe
+RecordTitle: Statistiken
+RecordTurfPoint: Gefärbte Fläche
+RecordUnplayedStages: Ungespielt
+RecordUnusedWeapons: Noch freizuschaltende Waffen
+RecordVibes: Miezrichter-Skala
+RecordWeaponRecord: Waffen
+RecordWeaponRecordAppName: Waffen
+RecordWinCount: Siege
+SettingsAcknowledgements: Copyrights
+SettingsAppName: Einstellungen
+SettingsCredits: Credits
+SettingsExpansionPass: Zu Informationen über den Erweiterungspass
+SettingsTitle: Einstellungen
+StageScheduleBankara: Anarchie-Kampf
+StageScheduleBankaraOpen: Offen
+StageScheduleBankaraOpenChallenge: Serie
+StageScheduleCoop: Salmon Run
+StageScheduleCoopCurrentPeriodStart: JETZT GEÖFFNET!
+StageScheduleEvent: Event-Kampf
+StageScheduleEventCurrentSchedule: Aktuell
+StageScheduleEventFuture: Danach
+StageScheduleEventHolding: Läuft!
+StageScheduleEventNext: Demnächst
+StageScheduleEventNextSchedule: Als Nächstes
+StageScheduleEventNoData: Momentan sind keine Event-Kämpfe geplant.
+StageScheduleEventUnknownData: '???'
+StageScheduleEventmatch: Event läuft jetzt!
+StageScheduleFuture: Danach
+StageScheduleGuideOpenBrowser: Text wird als neues Browserfenster geöffnet.
+StageScheduleNext: Demnächst
+StageScheduleNoticeBigrun: 'Demnächst: Big Run!'
+StageScheduleNoticeLimited: 'Ankündigung: Team-Wettkampf demnächst verfügbar!'
+StageScheduleNowClosed: Splatfest!
+StageScheduleOpen: Aktuell
+StageScheduleOpenBigrun: Big Run läuft jetzt!
+StageScheduleOpenLimited: Team-Wettkampf jetzt verfügbar!
+StageSchedulePrivate: Privater Kampf
+StageScheduleRecruit: Big Run läuft! Die Bär GmbH stellt jeden ein! JEDEN! ()
+StageScheduleRecruitTeamContest: Team-Wettkampf jetzt spielbar! Finde Mitarbeiter und rein ins... Vergnügen?
+StageScheduleRegular: Standardkampf
+StageScheduleRules: Regeln lesen
+StageScheduleSeeAllRules: Detaillierte Regeln lesen
+StageScheduleSuppliedWeaponRandom: Zufall
+StageScheduleSuppliedWeapons: Verfügbare Waffen
+StageScheduleTitle: Zeitplan
+StageScheduleWinRateByRules: Siege nach Kampfart
+StageScheduleXmatch: X-Kampf

@@ -1,0 +1,160 @@
+CommonCancel: Annulla
+CommonClamBlitz: Vongol gol
+CommonClose: Chiudi
+CommonCoopBigRun: Big Run
+CommonCoopTeamContest: Sfida tra colleghi
+CommonCopyrightQrCode: QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+CommonDecide: OK
+CommonDownload: Scarica
+CommonEnd: Chiudi
+CommonGearPowerBlank: Sconosciuto
+CommonHome: Pagina iniziale
+CommonIkaring3: SplatNet 3
+CommonNowLoading: Caricamento...
+CommonPullToRefresh: Scorri per aggiornare
+CommonRainmaker: Bazookarp
+CommonShare: Condividi
+CommonSplatZones: Zona splat
+CommonTowerControl: Torre mobile
+CommonTricolor: Attacco tricolore
+CommonTricolorMatch: Scontro tricolore
+CommonTurfWar: Mischie mollusche
+CommonWpnNotfound: Sconosciuto
+CoopHistoryAvailable: Apparizioni
+CoopHistoryAvailableBoss: Salmonarca affrontato
+CoopHistoryAverageClearWaves: Media ondate superate
+CoopHistoryBigrun: Big Run
+CoopHistoryBigrunBronze: Bronzo
+CoopHistoryBigrunGold: Oro
+CoopHistoryBigrunSilver: Argento
+CoopHistoryBonus: Bonus
+CoopHistoryBossAvailable: Salmonarca avvistato!
+CoopHistoryClear: Ce l'hai fatta!
+CoopHistoryDangerRatio: Rischio
+CoopHistoryDefeatBoss: Salmonarca all'attacco!
+CoopHistoryDefeatBossCount: Salmonarchi sconfitti
+CoopHistoryDefeated: Vittoria!
+CoopHistoryDefeatedEnemies: Gran Salmonoidi sconfitti
+CoopHistoryDefeatedEnemiesGuide: '*Il numero tra parentesi indica i nemici sconfitti da te.'
+CoopHistoryDeliverCount: Uova raccolte
+CoopHistoryEnemy: Gran Salmonoidi
+CoopHistoryExWave: Ondata extra
+CoopHistoryFailure: Peccato...
+CoopHistoryGoToStats: Torna alla cronologia dei lavori
+CoopHistoryGoldenDeliverCount: Uova d'oro raccolte
+CoopHistoryHighestScore: Record
+CoopHistoryHistory: Cronologia dei lavori
+CoopHistoryJobPoint: I tuoi punti
+CoopHistoryJobRatio: Tasso
+CoopHistoryKumaPointCard: Carta punti Ursus
+CoopHistoryLatest: Ultimo
+CoopHistoryLimitedPoint: Punti attuali (bonus speciale)
+CoopHistoryMonthlyReward: Oggetto del mese
+CoopHistoryNext: Seguente
+CoopHistoryNoData: Non è presente alcuna cronologia dei lavori.
+CoopHistoryNotAvailable: Cronologia dei lavori non disponibile
+CoopHistoryNotAvailableDescription: Vengono visualizzati solo i 50 lavori più recenti.
+CoopHistoryNotDefeated: Missione fallita...
+CoopHistoryPlayCount: Lavori completati
+CoopHistoryPrevious: Precedente
+CoopHistoryPrivate: Lavoro privato
+CoopHistoryRecruit: Assunzioni aperte!
+CoopHistoryRecruitDescription: >-
+  Un'attività adatta ai principianti per molluschi energici, ottimisti e
+  desiderosi di rischiare il tutto per tutto. Fai squame facili lavorando sodo!
+CoopHistoryRecruitTag1: È facile!
+CoopHistoryRecruitTag2: Raccogli uova per svago e profitto!
+CoopHistoryRecruitTitle: La raccolta di uova di pesce ti si addice!
+CoopHistoryRegular: Normale
+CoopHistoryRegularPoint: Punti attuali
+CoopHistoryRescueCount: Colleghi soccorsi
+CoopHistoryRescuedCount: Salvataggi ricevuti
+CoopHistoryScale: Squame
+CoopHistoryScaleBronze: Squama di bronzo
+CoopHistoryScaleGold: Squama d'oro
+CoopHistoryScaleSilver: Squama d'argento
+CoopHistoryScore: Punti
+CoopHistorySeeSchedule: Vedi calendario
+CoopHistorySmellMeter: Salmometro
+CoopHistorySupplyWeapon: Armi fornite
+CoopHistoryTeamContest: Sfida tra colleghi
+CoopHistoryTitle: Salmon Run
+CoopHistoryTotalPoint: Punti totali
+CoopHistoryWave: Ondata
+CoopHistoryWaveLevel0: Bassa marea
+CoopHistoryWaveLevel1: Normale
+CoopHistoryWaveLevel2: Alta marea
+ErrorBackToHome: Torna alla pagina iniziale
+ErrorCurrentlyNotAvailable: Al momento non disponibile. Riprova più tardi.
+ErrorError: Errore
+ErrorErrorOccurred: Si è verificato un errore.
+ErrorErrorReopen: Errore di caricamento.
+ErrorMaintenanceDescription: Sono in corso dei lavori di manutenzione sul server. Riprova più tardi.
+ErrorMaintenanceTitle: Attendi...
+ErrorNetworkNotAvailable: Caricamento fallito. Controlla la tua connessione a Internet e riprova.
+ErrorNotSupported: >-
+  Impossibile visualizzare SplatNet 3. Controlla la tua connessione a Internet e
+  attendi qualche minuto prima di riprovare. Se il problema persiste, controlla
+  il tuo browser Internet e assicurati che sia aggiornato alla versione più
+  recente. Se ricevi ancora questo messaggio, SplatNet 3 potrebbe non essere
+  compatibile con le tue impostazioni o con il tuo dispositivo.
+ErrorReload: Aggiorna
+RecordLatestPlayed: Giocati per ultimi
+RecordLatestUsed: Preferite
+RecordMain: Principale
+RecordNextSkillLevel: Punti necessari
+RecordSkillLevel: Competenza
+RecordSort: Filtra
+RecordSpecial: Speciale
+RecordStageRecord: Statistiche scenari
+RecordStageRecordAppName: Scenari
+RecordSub: Secondaria
+RecordTitle: Statistiche
+RecordTurfPoint: Sup. colorata
+RecordUnplayedStages: Scenari non affrontati
+RecordUnusedWeapons: Non ancora ottenute
+RecordVibes: Valutometro
+RecordWeaponRecord: Statistiche armi
+RecordWeaponRecordAppName: Armi
+RecordWinCount: Vittorie
+SettingsAcknowledgements: Copyright
+SettingsAppName: Impostazioni
+SettingsCredits: Riconoscimenti
+SettingsExpansionPass: Informazioni sul Pass di espansione
+SettingsTitle: Impostazioni
+StageScheduleBankara: Partita anarchica
+StageScheduleBankaraOpen: Aperta
+StageScheduleBankaraOpenChallenge: Serie
+StageScheduleCoop: Salmon Run
+StageScheduleCoopCurrentPeriodStart: IN CORSO!
+StageScheduleEvent: Partita evento
+StageScheduleEventCurrentSchedule: Attuale
+StageScheduleEventFuture: In futuro
+StageScheduleEventHolding: In corso!
+StageScheduleEventNext: A seguire
+StageScheduleEventNextSchedule: A seguire
+StageScheduleEventNoData: Non ci sono partite evento in programma.
+StageScheduleEventUnknownData: '???'
+StageScheduleEventmatch: Evento ora in corso!
+StageScheduleFuture: In futuro
+StageScheduleGuideOpenBrowser: Si aprirà una nuova pagina del browser.
+StageScheduleNext: A seguire
+StageScheduleNoticeBigrun: Big Run in arrivo!
+StageScheduleNoticeLimited: 'Annuncio: sfida tra colleghi in arrivo!'
+StageScheduleNowClosed: Festival in corso!
+StageScheduleOpen: In corso
+StageScheduleOpenBigrun: Big Run in corso!
+StageScheduleOpenLimited: Sfida tra colleghi ora disponibile!
+StageSchedulePrivate: Partita privata
+StageScheduleRecruit: Big Run in corso! La Ursus & Co assume CHIUNQUE! ()
+StageScheduleRecruitTeamContest: >-
+  È disponibile la sfida tra colleghi. Radunane qualcuno e unisciti al...
+  divertimento?
+StageScheduleRegular: Partita amichevole
+StageScheduleRules: Vedi regole
+StageScheduleSeeAllRules: Vedi regole dettagliate
+StageScheduleSuppliedWeaponRandom: Casuale
+StageScheduleSuppliedWeapons: Armi fornite
+StageScheduleTitle: Calendario
+StageScheduleWinRateByRules: Tasso di vittoria per modalità
+StageScheduleXmatch: Partita X
