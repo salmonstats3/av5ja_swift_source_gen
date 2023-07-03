@@ -17,8 +17,6 @@ internal class Imink: RequestType {
     var baseURL: URL
     var path: String
     var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    var headers: [String: String]?
 
     init(accessToken: AccessToken.Response, server: ServerType = .Imink, requestId: String, timestamp: UInt64) throws {
         let token: JSONWebToken = try JSONWebToken(gameWebToken: accessToken.idToken)

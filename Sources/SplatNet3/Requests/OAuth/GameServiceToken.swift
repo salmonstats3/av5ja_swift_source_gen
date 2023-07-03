@@ -17,8 +17,7 @@ internal class GameServiceToken: RequestType {
     var baseURL = URL(unsafeString: "https://api-lp1.znc.srv.nintendo.net/")
     var path: String = "v3/Account/Login"
     var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    var headers: [String: String]?
+    var headers: HTTPHeaders?
 
     init(imink: Imink.Response, accessToken: AccessToken.Response, version: AppVersion.Response) {
         headers = [

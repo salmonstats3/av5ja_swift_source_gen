@@ -28,7 +28,11 @@ public extension GraphQL {
         "api/graphql"
     }
 
-    var headers: [String: String]? {
+    var headers: HTTPHeaders? {
+        nil
+    }
+
+    var parameters: Parameters? {
         nil
     }
 
@@ -42,7 +46,7 @@ public extension GraphQL {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.timeoutInterval = TimeInterval(10)
-        request.allHTTPHeaderFields = headers
+        request.allHTTPHeaderFields = headers?.dictionary
         // UAを設定
         request.headers.update(.userAgent("SplatNet3/@tkgling"))
         // パラメータを設定

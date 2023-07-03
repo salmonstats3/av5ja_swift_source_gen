@@ -17,8 +17,6 @@ internal class SessionToken: RequestType {
     var baseURL = URL(unsafeString: "https://accounts.nintendo.com/")
     var path: String = "connect/1.0.0/api/session_token"
     var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    var headers: [String: String]?
 
     /// トークンコードとベリファイアから初期化
     init(code: String, verifier: String) {

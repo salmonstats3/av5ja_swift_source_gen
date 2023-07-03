@@ -17,8 +17,7 @@ internal class IksmSession: RequestType {
     var baseURL = URL(unsafeString: "https://app.splatoon2.nintendo.net/")
     var path: String = ""
     var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    var headers: [String: String]?
+    var headers: HTTPHeaders?
 
     init(accessToken: String) {
         headers = [
@@ -30,10 +29,10 @@ internal class IksmSession: RequestType {
     internal struct Response: Codable {
         let iksmSession: String
 
-        init(headers: [String: String]?) throws {
+        init(headers: HTTPHeaders?) throws {
             let url = URL(unsafeString: "https://app.splatoon2.nintendo.net/")
             guard let headers,
-                  let iksmSession = HTTPCookie.cookies(withResponseHeaderFields: headers, for: url).first?.value
+                  let iksmSession = HTTPCookie.cookies(withResponseHeaderFields: headers.dictionary, for: url).first?.value
             else {
                 throw DecodingError.dataCorrupted(.init(codingPath: [], debugDescription: "No iksm session is included."))
             }

@@ -21,8 +21,7 @@ public class AppVersion: RequestType {
     #endif
     public var path: String = "/v3/authorize/version"
     public var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    public var headers: [String: String]?
+    public var headers: HTTPHeaders?
 
     public init() {}
 

@@ -18,8 +18,8 @@ public class CoopStatsResultsQuery: RequestType {
     #endif
     public var path: String = "v1/results"
     public var parameters: Parameters?
-    public var headers: [String: String]?
     public var method: HTTPMethod = .post
+    public var headers: HTTPHeaders?
 
     init(results: [[String: Any]]) {
         parameters = [

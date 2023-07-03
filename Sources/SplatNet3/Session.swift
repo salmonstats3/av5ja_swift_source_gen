@@ -97,13 +97,13 @@ open class Session: ObservableObject {
     }
 
     /// イカスミセッション専用のリクエスト
-    func request(_ request: IksmSession) async -> [String: String]? {
+    func request(_ request: IksmSession) async -> HTTPHeaders? {
         try? await withSwiftyLogger(execute: {
             await session.request(request)
                 .validationWithNXError()
                 .serializingString()
                 .response
-                .response?.allHeaderFields as? [String: String]
+                .response?.allHeaderFields as? HTTPHeaders
         })
     }
 
@@ -266,7 +266,7 @@ extension Session: RequestInterceptor {
 
     /// IksmSession取得
     func getIksmSession(gameWebToken: GameWebToken.Response) async throws -> IksmSession.Response {
-        let headers: [String: String]? = await request(IksmSession(accessToken: gameWebToken.result.accessToken))
+        let headers: HTTPHeaders? = await request(IksmSession(accessToken: gameWebToken.result.accessToken))
         return try IksmSession.Response(headers: headers)
     }
 }

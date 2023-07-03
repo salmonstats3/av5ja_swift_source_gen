@@ -15,6 +15,7 @@ internal final class BankaraBattleHistoriesQuery: GraphQL {
     var hash: SHA256Hash = .BankaraBattleHistoriesQuery
     var variables: [String: String] = [:]
     var parameters: Parameters?
+    var headers: HTTPHeaders?
 
     init() {}
 

@@ -56,6 +56,7 @@ public final class CheckinWithQRCodeMutation: GraphQL {
 
     public struct CreateCheckinHistory: Codable {
         public let event: Event?
+        // swiftlint:disable:next discouraged_optional_collection
         public let userErrors: [ErrorCode]?
     }
 

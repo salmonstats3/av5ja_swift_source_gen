@@ -31,7 +31,7 @@ public final class ScheduleStatsQuery: SalmonStats {
     public var method: Alamofire.HTTPMethod = .get
     public var parameters: Alamofire.Parameters?
     public var path: String
-    public var headers: [String: String]?
+    public var headers: HTTPHeaders?
 
     public typealias ResponseType = ScheduleStatsQuery.Response
 

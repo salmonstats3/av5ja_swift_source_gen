@@ -20,11 +20,11 @@ open class SP3Session: Session {
         super.init()
     }
 
-    override func request(_ request: IksmSession) async -> [String: String]? {
+    override func request(_ request: IksmSession) async -> HTTPHeaders? {
         DispatchQueue.main.async {
             self.requests.append(SPProgress(request))
         }
-        let response: [String: String]? = await super.request(request)
+        let response: HTTPHeaders? = await super.request(request)
         DispatchQueue.main.async {
             self.requests.success()
         }

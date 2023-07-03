@@ -17,8 +17,7 @@ internal class BulletToken: RequestType {
     var baseURL = URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/")
     var path: String = "api/bullet_tokens"
     var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    var headers: [String: String]?
+    var headers: HTTPHeaders?
 
     init(accessToken: String, version: String) {
         headers = [

@@ -15,6 +15,7 @@ internal final class BattleHistoryCurrentPlayerQuery: GraphQL {
     var hash: SHA256Hash = .BattleHistoryCurrentPlayerQuery
     var variables: [String: String] = [:]
     var parameters: Parameters?
+    var headers: HTTPHeaders?
 
     init() {}
 

@@ -17,8 +17,6 @@ public class WebVersion: RequestType {
     public var baseURL = URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/")
     public var path: String = ""
     public var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    public var headers: [String: String]?
 
     public init() {}
 

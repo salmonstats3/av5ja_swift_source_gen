@@ -17,8 +17,7 @@ internal class AccessToken: RequestType {
     var baseURL = URL(unsafeString: "https://accounts.nintendo.com/")
     var path: String = "connect/1.0.0/api/token"
     var parameters: Parameters?
-    //  swiftlint:disable:next discouraged_optional_collection
-    var headers: [String: String]?
+    var headers: HTTPHeaders?
 
     /// セッショントークンコードから初期化
     init(sessionToken: String) {

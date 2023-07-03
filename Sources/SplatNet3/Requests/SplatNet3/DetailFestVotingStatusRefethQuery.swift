@@ -15,6 +15,7 @@ internal final class DetailFestVotingStatusRefethQuery: GraphQL {
     var hash: SHA256Hash = .DetailFestVotingStatusRefethQuery
     var variables: [String: String] = [:]
     var parameters: Parameters?
+    var headers: HTTPHeaders?
 
     init() {}
 

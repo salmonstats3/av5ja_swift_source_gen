@@ -14,10 +14,10 @@ public enum ScaleId: Int, UnsafeRawRepresentable {
     case Gold = 0
     case Silver = 1
     case Bronze = 2
-    
+
     public static var allCases: [ScaleId] = [
         .Bronze,
         .Silver,
-        .Gold
+        .Gold,
     ]
 }

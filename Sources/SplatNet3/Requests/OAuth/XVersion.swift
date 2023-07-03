@@ -17,7 +17,7 @@ internal class XVersion: RequestType {
     var method: HTTPMethod = .get
     var path: String
     var parameters: Parameters?
-    var headers: [String: String]?
+    var headers: HTTPHeaders?
 
     init(id: String = "1234806557") {
         path = "app/id\(id)"

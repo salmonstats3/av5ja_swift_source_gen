@@ -15,6 +15,7 @@ internal final class HomeQuery: GraphQL {
     var hash: SHA256Hash = .HomeQuery
     var variables: [String: String] = [:]
     var parameters: Parameters?
+    var headers: HTTPHeaders?
 
     init() {}
 

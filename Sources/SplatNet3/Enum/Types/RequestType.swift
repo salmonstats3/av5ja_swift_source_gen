@@ -17,9 +17,8 @@ public protocol RequestType: URLRequestConvertible {
     var parameters: Parameters? { get }
     /// パス
     var path: String { get }
-    //  swiftlint:disable:next discouraged_optional_collection
     /// ヘッダー
-    var headers: [String: String]? { get }
+    var headers: HTTPHeaders? { get }
     /// 基本となるURL
     var baseURL: URL { get }
     /// エンコーディング方式
@@ -37,6 +36,16 @@ public extension RequestType {
         }
     }
 
+    /// ヘッダー
+    var headers: HTTPHeaders? {
+        nil
+    }
+
+    /// パラメーター
+    var parameters: Parameters? {
+        nil
+    }
+
     /// URLリクエストに変換する
     func asURLRequest() throws -> URLRequest {
         // swiftlint:disable:next force_unwrapping
@@ -44,7 +53,7 @@ public extension RequestType {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.timeoutInterval = TimeInterval(10)
-        request.allHTTPHeaderFields = headers
+        request.allHTTPHeaderFields = headers?.dictionary
         // UAを設定
         request.headers.update(.userAgent("SplatNet3/@tkgling"))
         // パラメータが設定されていればエンコードして設定する
