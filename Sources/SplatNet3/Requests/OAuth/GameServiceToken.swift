@@ -33,7 +33,7 @@ internal class GameServiceToken: RequestType {
                 "naCountry": "JP",
                 "naBirthday": "1990-01-01",
                 "language": "ja-JP",
-            ],
+            ] as [String: Any],
         ]
     }
 

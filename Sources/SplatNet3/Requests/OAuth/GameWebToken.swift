@@ -32,7 +32,7 @@ internal class GameWebToken: RequestType {
                 "registrationToken": accessToken.result.webApiServerCredential.accessToken,
                 "timestamp": imink.timestamp,
                 "requestId": imink.requestId,
-            ],
+            ] as [String: Any],
         ]
     }
 
