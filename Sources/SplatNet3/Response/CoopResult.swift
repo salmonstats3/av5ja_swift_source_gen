@@ -193,6 +193,7 @@ public struct CoopResult: Codable {
         @NullCodable public var quotaNum: Int?
         public let goldenIkuraPopNum: Int
 
+        // swiftlint:disable:next discouraged_optional_boolean
         init(content: CoopHistoryDetailQuery.WaveResult, resultWave: Int, bossDefeated: Bool?) {
             id = content.waveNumber
             isClear = {
@@ -233,6 +234,7 @@ public struct CoopResult: Codable {
     public struct JobResult: Codable {
         public let isClear: Bool
         @NullCodable public var failureWave: Int?
+        // swiftlint:disable:next discouraged_optional_boolean
         @NullCodable public var isBossDefeated: Bool?
         @NullCodable public var bossId: CoopEnemyInfoId?
 
@@ -246,6 +248,7 @@ public struct CoopResult: Codable {
         public init(
             isClear: Bool,
             failureWave: Int? = nil,
+            // swiftlint:disable:next discouraged_optional_boolean
             isBossDefeated: Bool? = nil,
             bossId: CoopEnemyInfoId? = nil
         ) {

@@ -17,6 +17,7 @@ public class WebRevision: RequestType {
     public var baseURL = URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/")
     public var path: String
     public var parameters: Parameters?
+    public var headers: HTTPHeaders?
 
     public init(hash: String) {
         path = "static/js/main.\(hash).js"
