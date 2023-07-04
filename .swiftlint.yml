@@ -8,7 +8,7 @@ excluded:
   - .swiftpm
 opt_in_rules:
   - array_init
-  - attributes
+  # - attributes
   - balanced_xctest_lifecycle
   - closure_body_length
   - closure_end_indentation

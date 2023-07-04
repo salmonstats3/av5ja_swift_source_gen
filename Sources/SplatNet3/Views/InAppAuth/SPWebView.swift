@@ -39,6 +39,7 @@ internal class SPWebView: WKWebView, WKNavigationDelegate {
         decisionHandler(.allow)
     }
 
+    // swiftlint:disable:next implicitly_unwrapped_optional
     func webView(_: WKWebView, didFinish _: WKNavigation!) {
         indicator.stopAnimating()
     }

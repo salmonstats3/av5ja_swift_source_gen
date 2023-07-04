@@ -141,14 +141,19 @@ internal struct SplatNetView: UIViewControllerRepresentable {
         }
 
         /// 読み込み準備開始
+        // swiftlint:disable:next implicitly_unwrapped_optional
         func webView(_: WKWebView, didStartProvisionalNavigation _: WKNavigation!) {}
 
+        // swiftlint:disable:next implicitly_unwrapped_optional
         func webView(_: WKWebView, didFinish _: WKNavigation!) {}
 
+        // swiftlint:disable:next implicitly_unwrapped_optional
         func webView(_: WKWebView, didFailProvisionalNavigation _: WKNavigation!, withError _: Error) {}
 
+        // swiftlint:disable:next implicitly_unwrapped_optional
         func webView(_: WKWebView, didFail _: WKNavigation!, withError _: Error) {}
 
+        // swiftlint:disable:next implicitly_unwrapped_optional
         func webView(_: WKWebView, didReceiveServerRedirectForProvisionalNavigation _: WKNavigation!) {}
 
         /// JavaScriptを実行する
