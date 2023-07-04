@@ -55,27 +55,28 @@ public extension View {
                     url: URL(state: state, verifier: verifier),
                     callbackURLScheme: "npf71b963c1b7b6d119",
                     onCompletion: { result in
-                    switch result {
-                    case let .success(url):
-                        guard let code = url.absoluteString.capture(pattern: "de=(.*)&", group: 1) else {
-                            SwiftyLogger.error("The callbackURLScheme does not include session token code.")
-                            return
-                        }
-                        let hosting = UIHostingController(
-                            rootView: SignInView(code: code, verifier: verifier, contentId: contentId).environmentObject(session)
-                        )
-                        hosting.isModalInPresentation = true
-                        hosting.modalTransitionStyle = .crossDissolve
-                        hosting.modalPresentationStyle = .overFullScreen
-                        hosting.overrideUserInterfaceStyle = .dark
-                        hosting.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
-                        UIApplication.shared.rootViewController?.present(hosting, animated: true)
-                    case let .failure(error):
-                        if (error as NSError).code != 1 {
-                            SwiftyLogger.error(error)
+                        switch result {
+                        case let .success(url):
+                            guard let code = url.absoluteString.capture(pattern: "de=(.*)&", group: 1) else {
+                                SwiftyLogger.error("The callbackURLScheme does not include session token code.")
+                                return
+                            }
+                            let hosting = UIHostingController(
+                                rootView: SignInView(code: code, verifier: verifier, contentId: contentId).environmentObject(session)
+                            )
+                            hosting.isModalInPresentation = true
+                            hosting.modalTransitionStyle = .crossDissolve
+                            hosting.modalPresentationStyle = .overFullScreen
+                            hosting.overrideUserInterfaceStyle = .dark
+                            hosting.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+                            UIApplication.shared.rootViewController?.present(hosting, animated: true)
+                        case let .failure(error):
+                            if (error as NSError).code != 1 {
+                                SwiftyLogger.error(error)
+                            }
                         }
                     }
-                    })
+                )
                 .prefersEphemeralWebBrowserSession(!session.useEphmeralSession)
             })
         }

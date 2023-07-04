@@ -127,7 +127,8 @@ internal struct SplatNetView: UIViewControllerRepresentable {
             _: WKWebView,
             decidePolicyFor navigationAction: WKNavigationAction,
             decisionHandler: @escaping (WKNavigationActionPolicy
-            ) -> Void) {
+            ) -> Void
+        ) {
             guard let url: URL = navigationAction.request.url
             else {
                 decisionHandler(.cancel)
