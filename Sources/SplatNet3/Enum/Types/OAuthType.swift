@@ -1,8 +1,8 @@
 //
 //  DataRequest.swift
-//  Common
+//  SplatNet3
 //
-//  Created by tkgstrator on 2022/08/12.
+//  Created by devonly on 2022/08/12.
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  String.swift
-//  SplatNet2
+//  SplatNet3
 //
-//  Created by tkgstrator on 2021/12/21.
+//  Created by devonly on 2021/12/21.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 

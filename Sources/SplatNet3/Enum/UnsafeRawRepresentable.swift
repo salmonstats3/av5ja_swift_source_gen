@@ -1,14 +1,16 @@
 //
 //  UnsafeRawRepresentable.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2023/02/28.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
 
 public protocol UnsafeRawRepresentable: Identifiable, RawRepresentable, Codable, CaseIterable, Hashable, Equatable
-    where RawValue: LosslessStringConvertible {
+    where RawValue: LosslessStringConvertible
+{
     static var defaultValue: Self { get }
 }
 

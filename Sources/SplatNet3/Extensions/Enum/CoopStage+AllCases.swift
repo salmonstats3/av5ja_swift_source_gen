@@ -1,8 +1,9 @@
 //
 //  CoopStageHeader.swift
+//  SplatNet3
 //
-//  Created by tkgstrator on 2023/01/30
-//  Copyright @2023 Magi, Corporation. All rights reserved.
+//  Created by devonly on 2023/01/30.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Charts
@@ -21,7 +22,7 @@ public extension CoopStageId {
         .Shakehighway,
         .Carousel,
         .Upland,
-        .Temple,
+        .Temple
     ]
 
     /// 通常のステージ
@@ -39,7 +40,7 @@ public extension CoopStageKey {
         .Shakehighway,
         .Carousel,
         .Upland,
-        .Temple,
+        .Temple
     ]
 }
 

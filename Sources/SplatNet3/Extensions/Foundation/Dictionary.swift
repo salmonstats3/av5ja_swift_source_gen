@@ -1,9 +1,9 @@
 //
 //  Dictionary.swift
+//  SplatNet3
 //
-//
-//  Created by tkgstrator on 2023/04/04.
-//
+//  Created by devonly on 2023/04/04.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
@@ -27,7 +27,7 @@ extension [String: Any] {
                     "registrationToken",
                     "naIdToken",
                     "session_token_code",
-                    "session_token_code_verifier",
+                    "session_token_code_verifier"
                 ].contains(key)
                     ? Array(repeating: "*", count: value.count).joined()
                     : value

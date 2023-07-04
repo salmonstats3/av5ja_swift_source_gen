@@ -1,9 +1,9 @@
 //
 //  RequestHeader.swift
+//  SplatNet3
 //
-//
-//  Created by tkgstrator on 2023/04/04.
-//
+//  Created by devonly on 2023/04/04.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Alamofire

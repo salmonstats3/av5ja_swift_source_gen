@@ -1,8 +1,9 @@
 //
 //  SPError.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2023/01/02.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation

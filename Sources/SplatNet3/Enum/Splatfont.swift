@@ -1,8 +1,9 @@
 //
 //  Splatfont.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2023/05/27.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
@@ -98,7 +99,7 @@ public enum Splatfont1: String, SPFont {
         Splatfont1.Splatoon1Common,
         Splatfont1.Splatoon1SymbolCommon,
         Splatfont1.Splatoon1CJKCommon,
-        Splatfont1.Splatoon1JPHiraganaKatakana,
+        Splatfont1.Splatoon1JPHiraganaKatakana
     ]
 
     public static func locale(_ locale: LocaleType) -> UIFontDescriptor {
@@ -106,17 +107,17 @@ public enum Splatfont1: String, SPFont {
         case .JP:
             return UIFontDescriptor.from(fonts: Splatfont1.Common + [
                 Splatfont1.Splatoon1JPLevel1,
-                Splatfont1.Splatoon1JPLevel2,
+                Splatfont1.Splatoon1JPLevel2
             ])
         case .CN:
             return UIFontDescriptor.from(fonts: Splatfont1.Common + [
                 Splatfont1.Splatoon1CHzhLevel1,
-                Splatfont1.Splatoon1CHzhLevel2,
+                Splatfont1.Splatoon1CHzhLevel2
             ])
         case .TW:
             return UIFontDescriptor.from(fonts: Splatfont1.Common + [
                 Splatfont1.Splatoon1TWzhLevel1,
-                Splatfont1.Splatoon1TWzhLevel2,
+                Splatfont1.Splatoon1TWzhLevel2
             ])
         }
     }
@@ -140,7 +141,7 @@ public enum Splatfont2: String, SPFont {
         Splatfont2.Splatoon2SymbolCommon,
         Splatfont2.Splatoon2CJKCommon,
         Splatfont2.Splatoon2JPHiraganaKatakana,
-        Splatfont2.Splatoon2Common,
+        Splatfont2.Splatoon2Common
     ]
 
     public static func locale(_ locale: LocaleType) -> UIFontDescriptor {
@@ -148,17 +149,17 @@ public enum Splatfont2: String, SPFont {
         case .JP:
             return UIFontDescriptor.from(fonts: Splatfont2.Common + [
                 Splatfont2.Splatoon2JPLevel1,
-                Splatfont2.Splatoon2JPLevel2,
+                Splatfont2.Splatoon2JPLevel2
             ])
         case .CN:
             return UIFontDescriptor.from(fonts: Splatfont2.Common + [
                 Splatfont2.Splatoon2CHzhLevel1,
-                Splatfont2.Splatoon2CHzhLevel2,
+                Splatfont2.Splatoon2CHzhLevel2
             ])
         case .TW:
             return UIFontDescriptor.from(fonts: Splatfont2.Common + [
                 Splatfont2.Splatoon2TWzhLevel1,
-                Splatfont2.Splatoon2TWzhLevel2,
+                Splatfont2.Splatoon2TWzhLevel2
             ])
         }
     }

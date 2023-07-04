@@ -1,8 +1,9 @@
 //
 //  QRReaderSession.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2023/03/16.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import AVFoundation
@@ -28,7 +29,8 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
         let metadataOutput = AVCaptureMetadataOutput()
 
         if canAddInput(deviceInput),
-           canAddOutput(metadataOutput) {
+           canAddOutput(metadataOutput)
+        {
             addInput(deviceInput)
             addOutput(metadataOutput)
 
@@ -157,6 +159,6 @@ extension AVMetadataObject.ObjectType {
             .aztec,
             .interleaved2of5,
             .itf14,
-            .dataMatrix,
+            .dataMatrix
         ]
 }

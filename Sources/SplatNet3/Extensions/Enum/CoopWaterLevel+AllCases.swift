@@ -1,8 +1,9 @@
 //
 //  CoopEvent+AllCases.swift
+//  SplatNet3
 //
-//  Created by tkgstrator on 2023/01/30
-//  Copyright @2023 Magi, Corporation. All rights reserved.
+//  Created by devonly on 2023/01/30.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Charts
@@ -16,7 +17,7 @@ public extension CoopWaterLevelId {
     static var allCases: [CoopWaterLevelId] = [
         .HighTide,
         .NormalTide,
-        .LowTide,
+        .LowTide
     ]
 
     static func allTides(_ eventId: CoopEventId, isBigRun: Bool = false) -> [CoopWaterLevelId] {

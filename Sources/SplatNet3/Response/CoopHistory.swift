@@ -1,8 +1,9 @@
 //
 //  CoopHistory.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2022/11/25.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
@@ -38,7 +39,8 @@ public enum CoopHistory {
                    let stringValue: String = id.base64DecodedString,
                    let rawValue: String = stringValue.capture(pattern: "([0-9]*)$", group: 1),
                    let intValue = Int(rawValue),
-                   let weaponId = S(rawValue: intValue) {
+                   let weaponId = S(rawValue: intValue)
+                {
                     return weaponId
                 }
                 return try container.decode(S.self, forKey: .weaponId)

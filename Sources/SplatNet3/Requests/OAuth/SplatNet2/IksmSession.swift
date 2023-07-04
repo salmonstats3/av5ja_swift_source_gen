@@ -1,8 +1,8 @@
 //
 //  IksmSession.swift
-//  SplatNet2
+//  SplatNet3
 //
-//  Created by tkgstrator on 2021/07/13.
+//  Created by devonly on 2021/07/13.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
@@ -22,7 +22,7 @@ internal class IksmSession: RequestType {
     init(accessToken: String) {
         headers = [
             "Cookie": "iksm_session=",
-            "X-GameWebToken": accessToken,
+            "X-GameWebToken": accessToken
         ]
     }
 

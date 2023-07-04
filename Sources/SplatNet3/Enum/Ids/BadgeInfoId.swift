@@ -2,8 +2,8 @@
 //  BadgeInfoId.swift
 //  SplatNet3
 //
-//  Created by tkgstrator on 2023/06/02.
-//  Copyright 2023 Magi, Corporation. All rights reserved.
+//  Created by devonly on 2023/06/02.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation

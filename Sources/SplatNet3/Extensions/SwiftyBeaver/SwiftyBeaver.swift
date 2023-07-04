@@ -1,8 +1,9 @@
 //
-//  SwiftyBeaver.swift
-//
+//  SwiftyLogger.swift
+//  SplatNet3
 //
 //  Created by devonly on 2022/12/05.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation

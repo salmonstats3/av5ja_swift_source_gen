@@ -1,8 +1,9 @@
 //
 //  NavigationLinker.swift
-//  Salmonia3+
+//  SplatNet3
 //
-//  Created by tkgstrator on 2022/09/17.
+//  Created by devonly on 2022/09/17.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import SwiftUI

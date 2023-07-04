@@ -2,7 +2,7 @@
 //  Imink.swift
 //  SplatNet3
 //
-//  Created by tkgstrator on 2021/07/13.
+//  Created by devonly on 2021/07/13.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
@@ -32,7 +32,7 @@ internal class Imink: RequestType {
             "hash_method": String(IminkType.nso.rawValue),
             "timestamp": timestamp,
             "request_id": requestId,
-            "na_id": token.payload.sub,
+            "na_id": token.payload.sub
         ]
     }
 
@@ -51,7 +51,7 @@ internal class Imink: RequestType {
             "timestamp": timestamp,
             "request_id": requestId,
             "na_id": token.payload.sub,
-            "coral_user_id": accessToken.result.user.id.description,
+            "coral_user_id": accessToken.result.user.id.description
         ]
     }
 
@@ -65,12 +65,12 @@ internal class Imink: RequestType {
                 "hash_method": String(IminkType.nso.rawValue),
                 "timestamp": Date().timeIntervalSince1970,
                 "request_id": UUID().uuidString,
-                "na_id": na_id,
+                "na_id": na_id
             ]
         } else {
             parameters = [
                 "token": accessToken.accessToken,
-                "hash_method": String(IminkType.nso.rawValue),
+                "hash_method": String(IminkType.nso.rawValue)
             ]
         }
     }
@@ -85,12 +85,12 @@ internal class Imink: RequestType {
                 "timestamp": Date().timeIntervalSince1970,
                 "request_id": UUID().uuidString,
                 "na_id": na_id,
-                "coral_user_id": accessToken.result.user.id.description,
+                "coral_user_id": accessToken.result.user.id.description
             ]
         } else {
             parameters = [
                 "token": accessToken.result.webApiServerCredential.accessToken,
-                "hash_method": String(IminkType.nso.rawValue),
+                "hash_method": String(IminkType.nso.rawValue)
             ]
         }
     }

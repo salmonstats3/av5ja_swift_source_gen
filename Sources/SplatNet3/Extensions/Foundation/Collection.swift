@@ -1,8 +1,9 @@
 //
 //  Collection.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2023/02/21.
+//  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
 import Foundation

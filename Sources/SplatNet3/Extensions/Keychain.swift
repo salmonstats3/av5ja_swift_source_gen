@@ -2,7 +2,7 @@
 //  Keychain.swift
 //  SplatNet3
 //
-//  Created by tkgstrator on 2021/07/13.
+//  Created by devonly on 2021/07/13.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
@@ -105,7 +105,8 @@ extension Keychain {
     @discardableResult
     func set(_ account: UserInfo?) -> UserInfo? {
         if let bundleIdentifier: String = Bundle.main.bundleIdentifier,
-           let account {
+           let account
+        {
             try? set(try account.asData(), key: bundleIdentifier)
         }
         return account

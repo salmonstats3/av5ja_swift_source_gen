@@ -2,7 +2,7 @@
 //  WeaponRecordQuery.swift
 //  SplatNet3
 //
-//  Created by tkgstrator on 2022/09/22
+//  Created by devonly on 2022/09/22.
 //  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
@@ -54,7 +54,7 @@ extension WeaponRecordQuery.Response {
         Set(data.weaponRecords.nodes.flatMap { node -> [URL] in
             [
                 node.image2d.url,
-                node.specialWeapon.image.url,
+                node.specialWeapon.image.url
             ]
         })
     }

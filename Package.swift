@@ -22,7 +22,7 @@ let package = Package(
         .package(url: "https://github.com/SDBridge/SDBridgeSwift.git", from: "1.1.0"),
         .package(url: "https://github.com/stleamist/BetterSafariView.git", from: "2.4.0"),
         .package(url: "https://github.com/siteline/SwiftUI-Introspect.git", from: "0.2.3"),
-        .package(url: "https://github.com/realm/SwiftLint.git", from: "0.52.3"),
+        .package(url: "https://github.com/usami-k/SwiftLintPlugin", branch: "main"),
         .package(url: "https://github.com/nicklockwood/SwiftFormat", from: "0.51.12")
     ],
     targets: [
@@ -38,7 +38,7 @@ let package = Package(
             ],
             resources: [.process("Resources")],
             plugins: [
-                .plugin(name: "SwiftLintPlugin", package: "SwiftLint")
+                .plugin(name: "SwiftLintPlugin", package: "SwiftLintPlugin")
             ]
         ),
         .testTarget(

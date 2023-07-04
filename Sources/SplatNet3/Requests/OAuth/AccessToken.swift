@@ -2,7 +2,7 @@
 //  AccessToken.swift
 //  SplatNet3
 //
-//  Created by tkgstrator on 2021/07/13.
+//  Created by devonly on 2021/07/13.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
@@ -24,7 +24,7 @@ internal class AccessToken: RequestType {
         parameters = [
             "client_id": "71b963c1b7b6d119",
             "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer-session-token",
-            "session_token": sessionToken,
+            "session_token": sessionToken
         ]
     }
 

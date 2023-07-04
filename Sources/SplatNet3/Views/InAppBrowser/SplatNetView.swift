@@ -1,9 +1,9 @@
 //
-//  SwiftUIView.swift
-//
+//  SplatNetView.swift
+//  SplatNet3
 //
 //  Created by devonly on 2022/11/28.
-//
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Alamofire
@@ -15,10 +15,6 @@ import WebKit
 
 internal struct SplatNetView: UIViewControllerRepresentable {
     let contentId: ContentId
-
-    init(contentId: ContentId) {
-        self.contentId = contentId
-    }
 
     func makeUIViewController(context _: Context) -> WebViewController {
         WebViewController(contentId: contentId)
@@ -100,8 +96,9 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                                    HTTPCookiePropertyKey.name: "_gtoken",
                                    HTTPCookiePropertyKey.value: account.gameWebToken,
                                    HTTPCookiePropertyKey.domain: host,
-                                   HTTPCookiePropertyKey.path: "/",
-                               ]) {
+                                   HTTPCookiePropertyKey.path: "/"
+                               ])
+                            {
                                 await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
                             }
                             indicator.stopAnimating()

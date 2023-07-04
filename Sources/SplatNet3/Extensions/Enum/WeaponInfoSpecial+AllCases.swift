@@ -1,8 +1,9 @@
 //
-//  CoopEnemyInfo.swift
+//  WeaponInfoSpecial.swift
+//  SplatNet3
 //
-//  Created by tkgstrator on 2023/01/30
-//  Copyright @2022 Magi, Corporation. All rights reserved.
+//  Created by devonly on 2023/01/30.
+//  Copyright © 2022 Magi, Corporation. All rights reserved.
 //
 
 import Charts
@@ -17,7 +18,7 @@ public extension WeaponInfoSpecialId {
             .SpJetpack,
             .SpChariot,
             .SpSkewer,
-            .SpTripleTornado,
+            .SpTripleTornado
         ]
 //    static let allCases: [WeaponInfoSpecialId] =
 //    [
@@ -40,7 +41,7 @@ public extension WeaponInfoSpecialKey {
             .SpJetpack,
             .SpChariot,
             .SpSkewer,
-            .SpTripleTornado,
+            .SpTripleTornado
         ]
 //    static let allCases: [WeaponInfoSpecialKey] =
 //    [

@@ -1,8 +1,8 @@
 //
 //  GraphQL.swift
-//  SplatNet2
+//  SplatNet3
 //
-//  Created by tkgstrator on 2021/07/03.
+//  Created by devonly on 2021/07/03.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
@@ -55,9 +55,9 @@ public extension GraphQL {
             "extensions": [
                 "persistedQuery": [
                     "version": version,
-                    "sha256Hash": hash.rawValue,
-                ] as [String: Any],
-            ],
+                    "sha256Hash": hash.rawValue
+                ] as [String: Any]
+            ]
         ]
         return try encoding.encode(request, with: parameters)
     }

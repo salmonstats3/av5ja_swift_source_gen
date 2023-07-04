@@ -1,8 +1,8 @@
 //
 //  DataRequest.swift
-//  SplatNet2
+//  SplatNet3
 //
-//  Created by tkgstrator on 2021/07/13.
+//  Created by devonly on 2021/07/13.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
@@ -42,7 +42,8 @@ public extension DataRequest {
                 if let httpBody: Data = request?.httpBody,
                    let dictionary: [String: Any] = try? JSONSerialization.jsonObject(with: httpBody) as? [String: Any],
                    let targetURL: URL = request?.url,
-                   !["results", "pages", "query"].contains(targetURL.lastPathComponent) {
+                   !["results", "pages", "query"].contains(targetURL.lastPathComponent)
+                {
                     dictionary.flatten.forEach { key, value in
                         SwiftyLogger.info("Request Body: \(key): \(value)")
                     }
@@ -51,7 +52,8 @@ public extension DataRequest {
                 if let data: Data,
                    let dictionary: [String: Any] = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
                    let targetURL: URL = request?.url,
-                   !["graphql", "results", "pages", "query"].contains(targetURL.lastPathComponent) {
+                   !["graphql", "results", "pages", "query"].contains(targetURL.lastPathComponent)
+                {
                     /// レスポンスボディ
                     dictionary.flatten.forEach { key, value in
                         SwiftyLogger.info("Response Body: \(key): \(value)")

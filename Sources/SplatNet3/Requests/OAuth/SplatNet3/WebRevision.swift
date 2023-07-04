@@ -2,7 +2,7 @@
 //  WebRevision.swift
 //  SplatNet3
 //
-//  Created by tkgstrator on 2021/07/13.
+//  Created by devonly on 2021/07/13.
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
@@ -35,7 +35,8 @@ public class WebRevision: RequestType {
 
         init(context: String) {
             if let version: String = context.capture(pattern: #"`(\d{1}\.\d{1}\.\d{1})-"#, group: 1),
-               let revision: String = context.capture(pattern: #"REACT_APP_REVISION:"([a-f0-9]{8})"#, group: 1) {
+               let revision: String = context.capture(pattern: #"REACT_APP_REVISION:"([a-f0-9]{8})"#, group: 1)
+            {
                 self.version = version
                 self.revision = revision
             } else {

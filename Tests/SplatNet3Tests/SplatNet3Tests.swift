@@ -1,3 +1,11 @@
+//
+//  SplatNet3Tests.swift
+//  SplatNet3Tests
+//
+//  Created by devonly on 2023/05/27.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
+//
+
 @testable import Alamofire
 @testable import SplatNet3
 import XCTest
@@ -183,8 +191,8 @@ struct EnumType: Codable {
         //
         //  \(filename)\(String(describing: type)).swift
         //
-        //  Created by tkgstrator on 2023/01/30
-        //  Copyright @2022 Magi, Corporation. All rights reserved.
+        //  Created by devonly on 2023/01/30
+        //  Copyright © 2022 Magi, Corporation. All rights reserved.
         //
 
         import Foundation

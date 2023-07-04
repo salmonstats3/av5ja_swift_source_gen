@@ -1,8 +1,9 @@
 //
 //  UIApplication.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2022/11/23.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
@@ -112,7 +113,8 @@ public extension UIApplication {
     func popToRootView() {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let rootViewController = windowScene.windows.first(where: { $0.isKeyWindow })?.rootViewController,
-           let navigationController = findNavigationController(rootViewController) {
+           let navigationController = findNavigationController(rootViewController)
+        {
             navigationController.popToRootViewController(animated: true)
         }
     }

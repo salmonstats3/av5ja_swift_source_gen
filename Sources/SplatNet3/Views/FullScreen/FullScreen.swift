@@ -1,8 +1,9 @@
 //
 //  FullScreen.swift
-//
+//  SplatNet3
 //
 //  Created by devonly on 2022/11/23.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import SwiftUI
@@ -39,7 +40,8 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
          transitionStyle: UIModalTransitionStyle? = nil,
          isModalInPresentation: Bool = true,
          backgroundColor: Color = Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)),
-         @ViewBuilder content: @escaping () -> Content) {
+         @ViewBuilder content: @escaping () -> Content)
+    {
         self.content = content
         self.transitionStyle = transitionStyle ?? .coverVertical
         self.presentationStyle = presentationStyle ?? .overFullScreen
@@ -120,7 +122,8 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
              presentationStyle: UIModalPresentationStyle,
              isModalInPresentation: Bool,
              backgroundColor: UIColor,
-             @ViewBuilder content: @escaping () -> Content) {
+             @ViewBuilder content: @escaping () -> Content)
+        {
             self.coordinator = coordinator
             self.content = content
 //            self.hosting = UIHostingController(rootView: content)

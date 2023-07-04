@@ -1,8 +1,9 @@
 //
-//  CoopEvent+AllCases.swift
+//  CoopEventId.swift
+//  SplatNet3
 //
-//  Created by tkgstrator on 2023/01/30
-//  Copyright @2023 Magi, Corporation. All rights reserved.
+//  Created by devonly on 2023/01/30.
+//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Charts
@@ -40,7 +41,7 @@ public extension CoopEventId {
                 .Rush,
                 .Griller,
                 .TheMothership,
-                .Fog,
+                .Fog
             ]
         case false:
             return allCases
