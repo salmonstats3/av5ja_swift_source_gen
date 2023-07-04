@@ -18,7 +18,12 @@ internal class Imink: RequestType {
     var path: String
     var parameters: Parameters?
 
-    init(accessToken: AccessToken.Response, server: ServerType = .Imink, requestId: String, timestamp: UInt64) throws {
+    init(
+        accessToken: AccessToken.Response,
+        requestId: String,
+        timestamp: UInt64,
+        server: ServerType = .Imink
+    ) throws {
         let token: JSONWebToken = try JSONWebToken(gameWebToken: accessToken.idToken)
         baseURL = URL(unsafeString: server.rawValue)
         path = server.path
@@ -31,7 +36,12 @@ internal class Imink: RequestType {
         ]
     }
 
-    init(accessToken: GameServiceToken.Response, server: ServerType = .Imink, requestId: String, timestamp: UInt64) throws {
+    init(
+        accessToken: GameServiceToken.Response,
+        requestId: String,
+        timestamp: UInt64,
+        server: ServerType = .Imink
+    ) throws {
         let token: JSONWebToken = try JSONWebToken(gameWebToken: accessToken.result.webApiServerCredential.accessToken)
         baseURL = URL(unsafeString: server.rawValue)
         path = server.path

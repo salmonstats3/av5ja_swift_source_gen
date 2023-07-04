@@ -71,12 +71,12 @@ public struct CoopResult: Codable {
         }
 
         public init(
-            startTime: Date? = nil,
-            endTime: Date? = nil,
             mode: ModeType,
             rule: RuleType,
             weaponList: [WeaponInfoMainId],
-            stageId: CoopStageId
+            stageId: CoopStageId,
+            startTime: Date? = nil,
+            endTime: Date? = nil
         ) {
             self.startTime = startTime
             self.endTime = endTime
@@ -155,12 +155,12 @@ public struct CoopResult: Codable {
             deadCount: Int,
             helpCount: Int,
             weaponList: [WeaponInfoMainId],
-            specialId: WeaponInfoSpecialId? = nil,
             specialCounts: [Int],
             bossKillCounts: [Int],
             bossKillCountsTotal: Int,
             uniform: CoopSkinInfoId,
-            species: SpeciesType
+            species: SpeciesType,
+            specialId: WeaponInfoSpecialId? = nil
         ) {
             self.id = id
             self.nplnUserId = nplnUserId
@@ -217,9 +217,9 @@ public struct CoopResult: Codable {
             isClear: Bool,
             waterLevel: CoopWaterLevelId,
             eventType: CoopEventId,
+            goldenIkuraPopNum: Int,
             goldenIkuraNum: Int? = nil,
-            quotaNum: Int? = nil,
-            goldenIkuraPopNum: Int
+            quotaNum: Int? = nil
         ) {
             self.id = id
             self.isClear = isClear
@@ -322,26 +322,26 @@ public struct CoopResult: Codable {
     public init(
         id: Common.ResultId,
         scale: [Int?],
-        jobScore: Int? = nil,
-        gradeId: CoopGradeId? = nil,
-        kumaPoint: Int? = nil,
         waveDetails: [CoopResult.WaveResult],
         jobResult: CoopResult.JobResult,
         myResult: CoopResult.PlayerResult,
         otherResults: [CoopResult.PlayerResult],
-        gradePoint: Int? = nil,
-        jobRate: Decimal? = nil,
         playTime: Date,
         bossCounts: [Int],
         bossKillCounts: [Int],
         dangerRate: Decimal,
-        jobBonus: Int? = nil,
         schedule: CoopResult.Schedule,
         goldenIkuraNum: Int,
         goldenIkuraAssistNum: Int,
         ikuraNum: Int,
         smellMeter: Int? = nil,
-        scenarioCode: String? = nil
+        scenarioCode: String? = nil,
+        jobScore: Int? = nil,
+        gradeId: CoopGradeId? = nil,
+        kumaPoint: Int? = nil,
+        jobBonus: Int? = nil,
+        gradePoint: Int? = nil,
+        jobRate: Decimal? = nil
     ) {
         self.id = id
         self.scale = scale

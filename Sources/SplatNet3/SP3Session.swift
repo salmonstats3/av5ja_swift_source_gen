@@ -89,8 +89,13 @@ open class SP3Session: Session {
         try await request(CoopHistoryQuery()).data.coopResult
     }
 
+    // swiftlint:disable function_default_parameter_at_end
     @discardableResult
-    open func getAllCoopHistoryDetailQuery(playTime: Date? = nil, upload: Bool = false, completion: Completion) async throws -> [CoopResult] {
+    open func getAllCoopHistoryDetailQuery(
+        playTime: Date? = nil,
+        upload: Bool = false,
+        completion: Completion
+    ) async throws -> [CoopResult] {
         completion(0, 1)
         let coopResult: CoopHistoryQuery.CoopResult = try await getCoopHistoryQuery()
         /// ノード
@@ -138,9 +143,14 @@ open class SP3Session: Session {
         }
         return response
     }
+    // swiftlint:enable function_default_parameter_at_end
 
+    // swiftlint:disable function_default_parameter_at_end
     @discardableResult
-    open func uploadAllCoopResultDetailQuery(results: [CoopResult] = [], completion: Completion) async throws -> [CoopStatsResultsQuery.Response] {
+    open func uploadAllCoopResultDetailQuery(
+        results: [CoopResult] = [],
+        completion: Completion
+    ) async throws -> [CoopStatsResultsQuery.Response] {
         var count = 0
         completion(Float(count), Float(results.count))
 
@@ -160,4 +170,5 @@ open class SP3Session: Session {
 
         return response
     }
+    // swiftlint:enable function_default_parameter_at_end
 }

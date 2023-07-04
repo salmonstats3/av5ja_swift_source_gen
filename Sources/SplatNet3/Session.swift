@@ -200,7 +200,12 @@ extension Session: RequestInterceptor {
         let timestamp = UInt64(Date().timeIntervalSince1970 * 1_000)
         let requestId: String = UUID().uuidString
 
-        let response: Imink.ServerResponse = try await request(Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
+        let response: Imink.ServerResponse = try await request(Imink(
+            accessToken: accessToken,
+            requestId: requestId,
+            timestamp: timestamp,
+            server: primaryServer
+        ))
         return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
     }
 
@@ -209,7 +214,12 @@ extension Session: RequestInterceptor {
         let timestamp = UInt64(Date().timeIntervalSince1970 * 1_000)
         let requestId: String = UUID().uuidString
 
-        let response: Imink.ServerResponse = try await request(Imink(accessToken: accessToken, server: primaryServer, requestId: requestId, timestamp: timestamp))
+        let response: Imink.ServerResponse = try await request(Imink(
+            accessToken: accessToken,
+            requestId: requestId,
+            timestamp: timestamp,
+            server: primaryServer
+        ))
         return Imink.Response(f: response.f, requsetId: requestId, timestamp: timestamp)
     }
 

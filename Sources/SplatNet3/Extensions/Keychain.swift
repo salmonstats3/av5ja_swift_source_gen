@@ -29,7 +29,7 @@ extension Keychain {
             }
         }
     }
-    
+
     private func set(_ value: String, key: String) throws {
         try set(Data(unsafeString: value), key: key)
     }
