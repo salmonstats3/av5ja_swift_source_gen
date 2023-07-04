@@ -57,7 +57,7 @@ open class SP3Session: Session {
         }
     }
 
-    override open func request<T>(_ request: T, interceptor _: RequestInterceptor? = nil) async throws -> String where T: RequestType {
+    override open func request(_ request: some RequestType, interceptor _: RequestInterceptor? = nil) async throws -> String {
         do {
             DispatchQueue.main.async {
                 self.requests.append(SPProgress(request))
@@ -143,6 +143,7 @@ open class SP3Session: Session {
         }
         return response
     }
+
     // swiftlint:enable function_default_parameter_at_end
 
     // swiftlint:disable function_default_parameter_at_end

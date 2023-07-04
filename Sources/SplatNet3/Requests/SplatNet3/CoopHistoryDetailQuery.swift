@@ -154,7 +154,7 @@ private extension CoopHistoryDetailQuery.Response {
     }
 }
 
-extension Array where Element == CoopHistoryDetailQuery.Response {
+extension [CoopHistoryDetailQuery.Response] {
     /// 1. WeaponInfoMainId
     /// 2. CoopStageId
     /// 3. CoopInfoEnemyId

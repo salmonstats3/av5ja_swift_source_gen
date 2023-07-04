@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Dictionary where Key == String, Value == Any {
+extension [String: Any] {
     var flatten: [Key: Value] {
         map { key, value in
             if let dict: [Key: Value] = value as? [Key: Value] {
@@ -31,7 +31,7 @@ extension Dictionary where Key == String, Value == Any {
     }
 }
 
-extension Array where Element == [String: Any] {
+extension [[String: Any]] {
     func merged() -> [String: Any] {
         reduce(into: [String: Any]()) { $0.merge($1) { $1 } }
     }

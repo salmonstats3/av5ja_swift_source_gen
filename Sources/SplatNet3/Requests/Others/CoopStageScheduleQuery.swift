@@ -11,7 +11,7 @@ import Foundation
 public class CoopStageScheduleQuery: RequestType {
     public typealias ResponseType = [CoopSchedule]
     #if DEBUG
-    public var baseURL = URL(unsafeString: "http://localhost:3000/")
+        public var baseURL = URL(unsafeString: "http://localhost:3000/")
     #else
         public var baseURL = URL(unsafeString: "https://api.splatnet3.com/")
     #endif

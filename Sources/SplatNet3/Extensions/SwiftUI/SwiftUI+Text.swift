@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 public extension Text {
-    init<T: UnsafeRawRepresentable>(_ rawValue: T) {
+    init(_ rawValue: some UnsafeRawRepresentable) {
         self.init(verbatim: NSLocalizedString(String(describing: rawValue), bundle: .module, comment: ""))
     }
 

@@ -80,7 +80,7 @@ open class Session: ObservableObject {
     }
 
     /// 文字列を取得するためのリクエスト
-    open func request<T: RequestType>(_ request: T, interceptor: RequestInterceptor? = nil) async throws -> String {
+    open func request(_ request: some RequestType, interceptor: RequestInterceptor? = nil) async throws -> String {
         try await withSwiftyLogger(execute: {
             try await session.request(request, interceptor: interceptor)
                 .validationWithNXError()

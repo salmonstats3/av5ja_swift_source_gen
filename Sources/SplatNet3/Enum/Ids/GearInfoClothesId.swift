@@ -515,4 +515,5 @@ public enum GearInfoClothesId: Int, UnsafeRawRepresentable {
     ///  アゲアゲコロモ
     case CltTRG000 = 28_000
 }
+
 // swiftlint:enable type_body_length file_length

@@ -673,4 +673,5 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     /// Xマッチ
     case StageScheduleXmatch
 }
+
 // swiftlint:enable type_body_length file_length

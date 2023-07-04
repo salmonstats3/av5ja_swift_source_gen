@@ -440,4 +440,5 @@ public enum BadgeInfoId: Int, UnsafeRawRepresentable {
     case NawaBattlerCardNumLv02 = 7_000_102
     case NawaBattlerWinAllNpcLevel3 = 7_000_200
 }
+
 // swiftlint:enable type_body_length file_length

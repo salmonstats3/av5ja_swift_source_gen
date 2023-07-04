@@ -440,4 +440,5 @@ public enum BadgeInfoKey: String, UnsafeRawRepresentable {
     case NawaBattlerCardNumLv02 = "459a5506781595e30a243cf3f2652ddd9e5957e085db7f98449fe963bb0bc568"
     case NawaBattlerWinAllNpcLevel3 = "ad6c40483b7859b6a9dab44d41a24a9d23eff253b5effb533dc8948b7f1869f9"
 }
+
 // swiftlint:enable type_body_length file_length

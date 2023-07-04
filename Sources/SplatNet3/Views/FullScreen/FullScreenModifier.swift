@@ -10,13 +10,13 @@ import SwiftUI
 
 public extension View {
     /// モーダルをUIKit風に表示する
-    func fullScreen<Content: View>(
+    func fullScreen(
         isPresented: Binding<Bool>,
         presentationStyle _: UIModalPresentationStyle = .overFullScreen,
         transitionStyle _: UIModalTransitionStyle = .coverVertical,
         backgroundColor _: UIColor = .systemBackground,
         isModalInPresentation _: Bool = true,
-        @ViewBuilder content: @escaping () -> Content
+        @ViewBuilder content: @escaping () -> some View
     ) -> some View {
         fullScreenCover(isPresented: isPresented, onDismiss: nil, content: {
             content()
@@ -41,13 +41,13 @@ public extension View {
     }
 
     /// モーダルをUIKit風に表示する
-    func sheet<Content: View>(
+    func sheet(
         isPresented: Binding<Bool>,
         presentationStyle _: UIModalPresentationStyle = .overFullScreen,
         transitionStyle _: UIModalTransitionStyle = .coverVertical,
         backgroundColor: UIColor = .systemBackground,
         isModalInPresentation _: Bool = true,
-        @ViewBuilder content: @escaping () -> Content
+        @ViewBuilder content: @escaping () -> some View
     ) -> some View {
         sheet(isPresented: isPresented, onDismiss: nil, content: {
             content()

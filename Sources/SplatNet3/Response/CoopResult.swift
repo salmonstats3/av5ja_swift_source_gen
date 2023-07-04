@@ -370,7 +370,7 @@ public struct CoopResult: Codable {
     }
 }
 
-extension Collection where Element == CoopHistoryDetailQuery.EnemyResult {
+extension Collection<CoopHistoryDetailQuery.EnemyResult> {
     func bossKillCounts() -> [Int] {
         CoopEnemyInfoId.regular.compactMap { element in
             self.first(where: { $0.enemy.id == element })?.defeatCount ?? .zero

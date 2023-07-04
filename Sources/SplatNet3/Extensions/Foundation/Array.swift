@@ -26,9 +26,9 @@ public extension Array where Element: Numeric {
     }
 }
 
-public extension Array where Element == [Int] {
+public extension [[Int]] {
     func sum() -> [Int] {
-        if let first = first {
+        if let first {
             var sum: [Int] = Element(repeating: 0, count: first.count)
             _ = map { sum = sum.add($0) }
             return sum

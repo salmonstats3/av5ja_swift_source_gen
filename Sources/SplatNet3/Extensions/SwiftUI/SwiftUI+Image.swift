@@ -11,7 +11,7 @@ internal final class SPImageService: ObservableObject {
     @Published var documentPath: URL?
 
     /// 絶対重いよなあと思いながら使っている
-    init<T: UnsafeRawRepresentable>(type: T.Type, rawValue: Int) {
+    init(type: (some UnsafeRawRepresentable).Type, rawValue: Int) {
         let documentURL: URL? = FileManager.default.document
 
         switch type {

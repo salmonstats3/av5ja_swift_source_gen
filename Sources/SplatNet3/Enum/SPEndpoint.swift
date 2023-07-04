@@ -43,7 +43,7 @@ public enum SPEndpoint: String, CaseIterable, Identifiable {
     /// Salmon Stats
     case COOP_SCHEDULES = "v1/schedules"
 
-    init<T: RequestType>(request: T) {
+    init(request: some RequestType) {
         let path: String = request.path.replacingOccurrences(of: "connect/1.0.0/", with: "")
         if let value = SPEndpoint(rawValue: path) {
             self = value

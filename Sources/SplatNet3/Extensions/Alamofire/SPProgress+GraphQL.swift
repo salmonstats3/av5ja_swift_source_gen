@@ -8,7 +8,7 @@
 import Foundation
 
 extension SPProgress {
-    init<T: GraphQL>(_ request: T) {
+    init(_ request: some GraphQL) {
         let path: SPEndpoint = {
             switch request.hash {
             case .StageScheduleQuery:

@@ -97,10 +97,10 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                             if let host: String = contentId.requestURL.host,
                                /// クッキーを設定
                                let cookie = HTTPCookie(properties: [
-                                HTTPCookiePropertyKey.name: "_gtoken",
-                                HTTPCookiePropertyKey.value: account.gameWebToken,
-                                HTTPCookiePropertyKey.domain: host,
-                                HTTPCookiePropertyKey.path: "/",
+                                   HTTPCookiePropertyKey.name: "_gtoken",
+                                   HTTPCookiePropertyKey.value: account.gameWebToken,
+                                   HTTPCookiePropertyKey.domain: host,
+                                   HTTPCookiePropertyKey.path: "/",
                                ]) {
                                 await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
                             }

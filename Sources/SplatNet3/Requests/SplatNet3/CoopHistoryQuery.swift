@@ -159,7 +159,7 @@ extension CoopHistoryQuery.Response {
     }
 }
 
-extension Array where Element == CoopHistoryQuery.HistoryGroup {
+extension [CoopHistoryQuery.HistoryGroup] {
     /// 1. WeaponInfoMainId
     var assetURLs: Set<URL> {
         Set(flatMap { group in

@@ -50,7 +50,7 @@ internal final class HashClient: Alamofire.Session, ObservableObject {
                 })
             }
             return try await task.reduce(into: [ResourceType.Response]()) { results, result in
-                if let result = result {
+                if let result {
                     results.append(result)
                 }
                 self.value += 1
@@ -132,7 +132,7 @@ extension SP3Session {
                 })
             }
             return try await task.reduce(into: [ResourceType.Response]()) { results, result in
-                if let result = result {
+                if let result {
                     results.append(result)
                 }
                 completion()

@@ -22,7 +22,7 @@ public struct SPProgress: Identifiable {
 
     public var progress: ProgressType = .PROGRESS
 
-    init<T: RequestType>(_ request: T) {
+    init(_ request: some RequestType) {
         path = SPEndpoint(request: request)
     }
 
@@ -31,7 +31,7 @@ public struct SPProgress: Identifiable {
     }
 }
 
-public extension Array where Element == SPProgress {
+public extension [SPProgress] {
     /// 通信成功
     mutating func success() {
         if let index: Int = lastIndex(where: { $0.progress == .PROGRESS }) {
