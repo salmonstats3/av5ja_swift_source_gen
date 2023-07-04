@@ -30,9 +30,10 @@ class TranslationType extends Map<string, string> {
     let translations: string[] = [
       '//',
       `//  ${this.name}.swift`,
+      '//  SplatNet3',
       '//',
-      `//  Created by tkgstrator on ${created_at}`,
-      `//  Copyright @${created_year} Magi, Corporation. All rights reserved.`,
+      `//  Created by devonly on ${created_at}.`,
+      `//  Copyright © ${created_year} Magi, Corporation. All rights reserved.`,
       '//',
       '',
       'import Foundation',
@@ -48,7 +49,7 @@ class TranslationType extends Map<string, string> {
           translations.push(`    /// ${value}`);
           translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(key)}"`);
         }
-        
+
         if (this.name === 'CoopStageKey') {
           if (key === 'Unknown') {
             translations.push(`    /// ${value}`);
@@ -56,7 +57,7 @@ class TranslationType extends Map<string, string> {
           } else {
             translations.push(`    /// ${value}`);
             translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Cop_${key}`)}"`);
-          } 
+          }
         } else if (this.name === 'VSStageKey') {
           translations.push(`    /// ${value}`);
           translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Vss_${key}`)}"`);
@@ -105,7 +106,7 @@ export class Translation {
   @Expose({ name: 'CommonMsg/Coop/CoopStageName' })
   @Transform((param) => new TranslationType(param.value, 'CoopStageKey'))
   readonly CoopStageName: TranslationType;
-  
+
   @Expose({ name: 'CommonMsg/VS/VSStageName' })
   @Transform((param) => new TranslationType(param.value, 'VSStageKey'))
   readonly VSStageName: TranslationType;
@@ -256,7 +257,7 @@ export class Translation {
             .replace(/{.*}|^'|'$/g, '')
             .trim()
             .replace(/：|:^/g, ''),
-        ])
+        ]),
     );
     // YAMLを保存
     createFile(yaml.dump(objects), `src/locales/${this.hash}/${this.key}.yaml`);
@@ -274,9 +275,10 @@ export class Translation {
     let translations: string[] = [
       '//',
       `//  LocalizedType.swift`,
+      '//  SplatNet3',
       '//',
-      `//  Created by tkgstrator on ${created_at}`,
-      `//  Copyright @${created_year} Magi, Corporation. All rights reserved.`,
+      `//  Created by devonly on ${created_at}.`,
+      `//  Copyright © ${created_year} Magi, Corporation. All rights reserved.`,
       '//',
       '',
       'import Foundation',
