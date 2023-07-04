@@ -148,13 +148,23 @@ open class Session: ObservableObject {
         switch contentId {
         case .SP2:
             let iksmSession: IksmSession.Response = try await getIksmSession(gameWebToken: gameWebToken)
-            let account = UserInfo(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken, iksmSession: iksmSession)
+            let account = UserInfo(
+                sessionToken: sessionToken,
+                gameServiceToken: gameServiceToken,
+                gameWebToken: gameWebToken,
+                iksmSession: iksmSession
+            )
             /// ログイン時はアカウントを上書き
             self.account = keychain.set(account)
             return account
         case .SP3:
             let bulletToken: BulletToken.Response = try await getBulletToken(gameWebToken: gameWebToken)
-            let account = UserInfo(sessionToken: sessionToken, gameServiceToken: gameServiceToken, gameWebToken: gameWebToken.result.accessToken, bulletToken: bulletToken)
+            let account = UserInfo(
+                sessionToken: sessionToken,
+                gameServiceToken: gameServiceToken,
+                gameWebToken: gameWebToken.result.accessToken,
+                bulletToken: bulletToken
+            )
             /// ログイン時はアカウントを上書き
             self.account = keychain.set(account)
             return account
@@ -257,7 +267,11 @@ extension Session: RequestInterceptor {
     }
 
     /// GameWebToken取得
-    func getGameWebToken(accessToken: GameServiceToken.Response, version: AppVersion.Response, contentId: ContentId) async throws -> GameWebToken.Response {
+    func getGameWebToken(
+        accessToken: GameServiceToken.Response,
+        version: AppVersion.Response,
+        contentId: ContentId
+    ) async throws -> GameWebToken.Response {
         let response: Imink.Response = try await getHash(accessToken: accessToken)
         return try await request(GameWebToken(imink: response, accessToken: accessToken, contentId: contentId, version: version))
     }

@@ -123,7 +123,11 @@ internal struct SplatNetView: UIViewControllerRepresentable {
         }
 
         /// リクエスト前に呼ばれる
-        func webView(_: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        func webView(
+            _: WKWebView,
+            decidePolicyFor navigationAction: WKNavigationAction,
+            decisionHandler: @escaping (WKNavigationActionPolicy
+            ) -> Void) {
             guard let url: URL = navigationAction.request.url
             else {
                 decisionHandler(.cancel)
@@ -139,7 +143,6 @@ internal struct SplatNetView: UIViewControllerRepresentable {
             decisionHandler(.allow)
         }
 
-        /// 読み込み準備開始
         // swiftlint:disable:next implicitly_unwrapped_optional
         func webView(_: WKWebView, didStartProvisionalNavigation _: WKNavigation!) {}
 
@@ -177,12 +180,18 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                         return
                     }
                     let hashTag: String = (["Salmonia3"] + content.hashtags).map { "#\($0)" }.joined(separator: " ")
-                    let controller = UIActivityViewController(activityItems: [CustomShareItem(content: content), image, hashTag], applicationActivities: nil)
+                    let controller = UIActivityViewController(
+                        activityItems: [CustomShareItem(content: content), image, hashTag],
+                        applicationActivities: nil
+                    )
                     self.popover(controller, animated: true)
                 })
             case let .invokeNativeShareUrl(content):
                 let hashTag: String = ["Salmonia3"].map { "#\($0)" }.joined(separator: " ")
-                let controller = UIActivityViewController(activityItems: [CustomShareItem(content: content), content.url, hashTag], applicationActivities: nil)
+                let controller = UIActivityViewController(
+                    activityItems: [CustomShareItem(content: content), content.url, hashTag],
+                    applicationActivities: nil
+                )
                 popover(controller, animated: true)
             case let .copyToClipboard(content):
                 UIPasteboard.general.string = content

@@ -18,9 +18,11 @@ internal final class SPImageService: ObservableObject {
         case is WeaponInfoMainId.Type:
             if let weaponId = WeaponInfoMainId(rawValue: rawValue),
                (WeaponInfoMainId.regular + WeaponInfoMainId.rare).contains(weaponId) {
-                documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
+                documentPath = documentURL?
+                    .appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
             } else {
-                documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.UIImg.rawValue)/\(rawValue)", conformingTo: .png)
+                documentPath = documentURL?
+                    .appendingPathComponent("\(ResourceURLType.UIImg.rawValue)/\(rawValue)", conformingTo: .png)
             }
         case is CoopStageId.Type:
             documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.StageImgIcon.rawValue)/\(rawValue)", conformingTo: .png)

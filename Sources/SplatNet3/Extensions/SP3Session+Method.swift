@@ -54,7 +54,8 @@ extension SP3Session {
     @discardableResult
     public func getCheckInWithQRCode() async throws -> [CheckinWithQRCodeMutation.CreateCheckinHistory] {
         let eventIdHistories: Set<CheckinWithQRCodeMutation.CheckInEventId> = try await Set(getCheckInHistory())
-        let eventIds: Set<CheckinWithQRCodeMutation.CheckInEventId> = Set(CheckinWithQRCodeMutation.CheckInEventId.allCases).subtracting(Set(eventIdHistories))
+        let eventIds: Set<CheckinWithQRCodeMutation.CheckInEventId> = Set(CheckinWithQRCodeMutation.CheckInEventId.allCases)
+            .subtracting(Set(eventIdHistories))
         /// 並列ダウンロード
         return try await withThrowingTaskGroup(of: CheckinWithQRCodeMutation.CreateCheckinHistory.self, body: { task in
             eventIds.forEach { eventId in
@@ -72,7 +73,9 @@ extension SP3Session {
         try await request(CheckinWithQRCodeMutation(eventId: eventId)).data.createCheckinHistory
     }
 
-    internal func getCheckInWithQRCodeMutation(eventId: CheckinWithQRCodeMutation.CheckInEventId) async throws -> CheckinWithQRCodeMutation.CreateCheckinHistory {
+    internal func getCheckInWithQRCodeMutation(
+        eventId: CheckinWithQRCodeMutation.CheckInEventId
+    ) async throws -> CheckinWithQRCodeMutation.CreateCheckinHistory {
         try await request(CheckinWithQRCodeMutation(eventId: eventId)).data.createCheckinHistory
     }
 

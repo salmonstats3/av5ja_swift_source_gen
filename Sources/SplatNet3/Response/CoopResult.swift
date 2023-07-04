@@ -31,8 +31,6 @@ public struct CoopResult: Codable {
     public let ikuraNum: Int
     @NullCodable public var smellMeter: Int?
     @NullCodable public var scenarioCode: String?
-    let enemyURLs: [SPAssetType<CoopEnemyInfoId>]
-    let weaponURLs: [SPAssetType<WeaponInfoMainId>]
 
     public struct Schedule: Codable, Hashable {
         public let startTime: Date?
@@ -290,7 +288,9 @@ public struct CoopResult: Codable {
         scale = [content.scale?.bronze, content.scale?.silver, content.scale?.gold]
         jobScore = content.jobScore
         kumaPoint = content.jobPoint
-        waveDetails = content.waveResults.map { WaveResult(content: $0, resultWave: content.resultWave, bossDefeated: content.bossResult?.hasDefeatBoss) }
+        waveDetails = content.waveResults.map {
+            WaveResult(content: $0, resultWave: content.resultWave, bossDefeated: content.bossResult?.hasDefeatBoss)
+        }
         jobResult = JobResult(content: content)
         let specialCounts: [[WeaponInfoSpecialId]] = content.waveResults.map { $0.specialWeapons.map(\.id) }
         myResult = PlayerResult(content: content.myResult, results: content.enemyResults, specialCounts: specialCounts, isMyself: true)
@@ -309,14 +309,6 @@ public struct CoopResult: Codable {
         goldenIkuraAssistNum = ([content.myResult] + content.memberResults).map(\.goldenAssistCount).reduce(0, +)
         smellMeter = content.smellMeter
         scenarioCode = content.scenarioCode
-        if let bossResult = content.bossResult {
-            enemyURLs = content.enemyResults.map { SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) } + [SPAssetType(key: bossResult.boss.id, url: bossResult.boss.image.url)]
-        } else {
-            enemyURLs = content.enemyResults.map { SPAssetType(key: $0.enemy.id, url: $0.enemy.image.url) }
-        }
-        weaponURLs =
-            ([content.myResult] + content.memberResults).flatMap { $0.weapons.map { SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) } }
-                + content.weapons.map { SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) }
     }
 
     public init(
@@ -365,8 +357,6 @@ public struct CoopResult: Codable {
         self.ikuraNum = ikuraNum
         self.smellMeter = smellMeter
         self.scenarioCode = scenarioCode
-        enemyURLs = []
-        weaponURLs = []
     }
 }
 

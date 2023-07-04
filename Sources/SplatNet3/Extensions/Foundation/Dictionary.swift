@@ -15,9 +15,22 @@ extension [String: Any] {
                 return dict.flatten
             }
             if let value: String = value as? String {
-                let secret: String = ["accessToken", "f", "bulletToken", "id_token", "access_token", "session_token", "code", "token", "registrationToken", "naIdToken", "session_token_code", "session_token_code_verifier"].contains(key)
-                    ? Array(repeating: "*", count: value.count).joined()
-                    : value
+                let secret: String = [
+                    "accessToken",
+                    "f",
+                    "bulletToken",
+                    "id_token",
+                    "access_token",
+                    "session_token",
+                    "code",
+                    "token",
+                    "registrationToken",
+                    "naIdToken",
+                    "session_token_code",
+                    "session_token_code_verifier",
+                ].contains(key)
+                ? Array(repeating: "*", count: value.count).joined()
+                : value
                 return [key: secret]
             }
             if let value: [String] = value as? [String] {

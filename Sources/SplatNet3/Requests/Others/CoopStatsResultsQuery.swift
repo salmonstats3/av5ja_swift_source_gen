@@ -98,7 +98,8 @@ public extension Encodable {
         guard let data: Data = try? encoder.encode(self) else {
             return [:]
         }
-        guard var dictionary: [String: Any] = try? JSONSerialization.jsonObject(with: data, options: [.fragmentsAllowed, .json5Allowed, .mutableContainers, .mutableLeaves]) as? [String: Any] else {
+        guard var dictionary: [String: Any] = try? JSONSerialization.jsonObject(with: data) as? [String: Any]
+        else {
             return [:]
         }
 

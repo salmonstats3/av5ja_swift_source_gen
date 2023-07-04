@@ -51,7 +51,10 @@ public extension View {
             let state = String.randomString
             let verifier = String.randomString
             webAuthenticationSession(isPresented: isPresented, content: {
-                WebAuthenticationSession(url: URL(state: state, verifier: verifier), callbackURLScheme: "npf71b963c1b7b6d119", onCompletion: { result in
+                WebAuthenticationSession(
+                    url: URL(state: state, verifier: verifier),
+                    callbackURLScheme: "npf71b963c1b7b6d119",
+                    onCompletion: { result in
                     switch result {
                     case let .success(url):
                         guard let code = url.absoluteString.capture(pattern: "de=(.*)&", group: 1) else {
@@ -72,7 +75,7 @@ public extension View {
                             SwiftyLogger.error(error)
                         }
                     }
-                })
+                    })
                 .prefersEphemeralWebBrowserSession(!session.useEphmeralSession)
             })
         }

@@ -45,7 +45,11 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
             case .notDetermined:
                 AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
             case .denied:
-                let alert = UIAlertController(title: LocalizedType.CommonHome.description, message: LocalizedType.CommonClose.description, preferredStyle: .alert)
+                let alert = UIAlertController(
+                    title: LocalizedType.CommonHome.description,
+                    message: LocalizedType.CommonClose.description,
+                    preferredStyle: .alert
+                )
                 alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.description, style: .default))
                 UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
             case .restricted:

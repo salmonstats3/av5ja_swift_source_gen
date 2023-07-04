@@ -43,17 +43,26 @@ internal final class CheckinQuery: GraphQL {
             id = try {
                 guard let rawValue: String = try? container.decode(String.self, forKey: .id).base64DecodedString
                 else {
-                    throw DecodingError.keyNotFound(CodingKeys.id, .init(codingPath: container.codingPath, debugDescription: "RawValue is not found."))
+                    throw DecodingError.keyNotFound(
+                        CodingKeys.id,
+                        .init(codingPath: container.codingPath, debugDescription: "RawValue is not found.")
+                    )
                 }
 
                 guard let id: String = rawValue.capture(pattern: #"(T[a-f0-9-].*):"#, group: 1)
                 else {
-                    throw DecodingError.keyNotFound(CodingKeys.id, .init(codingPath: container.codingPath, debugDescription: "RawValue is not found."))
+                    throw DecodingError.keyNotFound(
+                        CodingKeys.id,
+                        .init(codingPath: container.codingPath, debugDescription: "RawValue is not found.")
+                    )
                 }
 
                 guard let eventId = CheckinWithQRCodeMutation.CheckInEventId(rawValue: id)
                 else {
-                    throw DecodingError.keyNotFound(CodingKeys.id, .init(codingPath: container.codingPath, debugDescription: "RawValue is not found."))
+                    throw DecodingError.keyNotFound(
+                        CodingKeys.id,
+                        .init(codingPath: container.codingPath, debugDescription: "RawValue is not found.")
+                    )
                 }
                 return eventId
             }()

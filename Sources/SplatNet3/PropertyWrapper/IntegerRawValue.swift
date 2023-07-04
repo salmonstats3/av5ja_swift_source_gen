@@ -25,7 +25,10 @@ public struct IntegerRawValue<T: RawRepresentable>: Codable where T.RawValue == 
               let intValue = Int(capture),
               let value = T(rawValue: intValue)
         else {
-            throw DecodingError.valueNotFound(T.self, .init(codingPath: container.codingPath, debugDescription: "Given value \(stringValue) is not associated for \(T.self)"))
+            throw DecodingError.valueNotFound(
+                T.self,
+                .init(codingPath: container.codingPath, debugDescription: "Given value \(stringValue) is not associated for \(T.self)")
+            )
         }
         wrappedValue = value
     }

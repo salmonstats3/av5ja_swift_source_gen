@@ -22,7 +22,10 @@ public struct SHA256HashRawValue<T: RawRepresentable>: Codable where T.RawValue 
 
         let hash = String(component.dropLast(6))
         guard let value = T(rawValue: hash) else {
-            throw DecodingError.valueNotFound(T.self, .init(codingPath: container.codingPath, debugDescription: "Given value \(hash) is not associated for \(T.self)"))
+            throw DecodingError.valueNotFound(
+                T.self,
+                .init(codingPath: container.codingPath, debugDescription: "Given value \(hash) is not associated for \(T.self)")
+            )
         }
         wrappedValue = value
     }
