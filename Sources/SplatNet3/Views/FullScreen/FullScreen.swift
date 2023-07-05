@@ -171,7 +171,7 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
                 hosting.view.addGestureRecognizer(gesture)
             }
 
-            if let _ = presentedViewController?.isBeingPresented {} else {
+            if presentedViewController?.isBeingPresented == nil {
                 present(hosting, animated: true, completion: nil)
             }
         }

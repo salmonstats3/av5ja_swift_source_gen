@@ -140,15 +140,15 @@ internal enum NSScriptMessageName: String, CaseIterable {
         }
 
         let decoder = SPDecoder()
-        if let _ = try? decoder.decode(ShareURL.self, from: data) {
+        if (try? decoder.decode(ShareURL.self, from: data)) != nil {
             return .invokeNativeShareUrl
         }
 
-        if let _ = try? decoder.decode(ShareImg.self, from: data) {
+        if (try? decoder.decode(ShareImg.self, from: data)) != nil {
             return .invokeNativeShare
         }
 
-        if let _ = rawValue.capture(pattern: #"([A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4})"#, group: 1) {
+        if (rawValue.capture(pattern: #"([A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4})"#, group: 1)) != nil {
             return .copyToClipboard
         }
 
