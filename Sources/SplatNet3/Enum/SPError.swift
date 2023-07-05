@@ -27,17 +27,17 @@ extension SPError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .invalidURL:
-            return NSLocalizedString("Given URL is invalid.", comment: "")
+            return NSLocalizedString("Given URL is invalid.", bundle: .module, comment: "")
         case .invalidSignature:
-            return NSLocalizedString("Invalid signature.", comment: "")
+            return NSLocalizedString("Invalid signature.", bundle: .module, comment: "")
         case .invalidFormat:
-            return NSLocalizedString("Unacceptable format.", comment: "")
+            return NSLocalizedString("Unacceptable format.", bundle: .module, comment: "")
         case .invalidResultId:
-            return NSLocalizedString("Decoder could not decode to specific type.", comment: "")
+            return NSLocalizedString("Decoder could not decode to specific type.", bundle: .module, comment: "")
         case .invalidExtension:
-            return NSLocalizedString("Unacceptable extension.", comment: "")
+            return NSLocalizedString("Unacceptable extension.", bundle: .module, comment: "")
         case .invalidVersion:
-            return NSLocalizedString("Invalid version.", comment: "")
+            return NSLocalizedString("Invalid version.", bundle: .module, comment: "")
         }
     }
 }
