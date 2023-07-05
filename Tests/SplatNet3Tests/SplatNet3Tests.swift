@@ -178,14 +178,16 @@ struct EnumType: Codable {
     }
 
     func asSourceCode(type: OutputType, filename: String) -> String {
-        let contents: String = root.sorted(by: { $0.id < $1.id }).map { entry in
-            switch type {
-            case .Key:
-                return "\tcase \(entry.rowId) = \"\(entry.hash)\""
-            case .Id:
-                return "\tcase \(entry.rowId) = \(entry.id)"
+        let contents: String = root.sorted(by: { $0.id < $1.id })
+            .map { entry in
+                switch type {
+                case .Key:
+                    return "\tcase \(entry.rowId) = \"\(entry.hash)\""
+                case .Id:
+                    return "\tcase \(entry.rowId) = \(entry.id)"
+                }
             }
-        }.joined(separator: "\n")
+            .joined(separator: "\n")
 
         return """
         //
