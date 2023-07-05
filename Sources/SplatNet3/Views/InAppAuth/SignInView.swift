@@ -161,4 +161,3 @@ internal struct SignInView: View {
         })
     }
 }
-

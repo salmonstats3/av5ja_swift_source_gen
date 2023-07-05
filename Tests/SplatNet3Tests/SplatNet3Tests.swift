@@ -206,4 +206,3 @@ internal final class SplatNet3Tests: XCTestCase {
         }
     }
 }
-

@@ -16,4 +16,3 @@ internal enum NXError: String, CaseIterable, Codable {
     /// クライアントIDが誤っている
     case INVALID_CLIENT = "invalid_client"
 }
-
