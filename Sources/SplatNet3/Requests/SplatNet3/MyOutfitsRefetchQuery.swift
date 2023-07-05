@@ -18,5 +18,5 @@ internal final class MyOutfitsRefetchQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {}
+    internal struct Response: Codable {}
 }

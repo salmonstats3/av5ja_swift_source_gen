@@ -18,32 +18,32 @@ internal final class WeaponRecordQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {
-        public let data: DataClass
+     struct Response: Codable {
+         let data: DataClass
     }
 
-    public struct DataClass: Codable {
-        public let weaponRecords: Common.Node<WeaponStats>
+     struct DataClass: Codable {
+         let weaponRecords: Common.Node<WeaponStats>
     }
 
-    public struct URLComponent: Codable {
-        public let url: URL
+     struct URLComponent: Codable {
+         let url: URL
     }
 
-    public struct WeaponStats: Codable {
-        public let id: String
-        public let image2d: URLComponent
-        public let image2dThumbnail: URLComponent
-        public let image3d: URLComponent
-        public let image3dThumbnail: URLComponent
-        public let name: String
-        public let weaponId: Int
-        public let specialWeapon: SpecialWeapon
+     struct WeaponStats: Codable {
+         let id: String
+         let image2d: URLComponent
+         let image2dThumbnail: URLComponent
+         let image3d: URLComponent
+         let image3dThumbnail: URLComponent
+         let name: String
+         let weaponId: Int
+         let specialWeapon: SpecialWeapon
     }
 
-    public struct SpecialWeapon: Codable {
-        public let specialWeaponId: Int
-        public let image: URLComponent
+     struct SpecialWeapon: Codable {
+         let specialWeaponId: Int
+         let image: URLComponent
     }
 }
 

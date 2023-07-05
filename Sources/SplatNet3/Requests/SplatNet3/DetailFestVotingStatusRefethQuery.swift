@@ -19,5 +19,5 @@ internal final class DetailFestVotingStatusRefethQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {}
+    internal struct Response: Codable {}
 }

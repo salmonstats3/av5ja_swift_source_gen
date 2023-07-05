@@ -18,5 +18,5 @@ internal final class RankingHoldersFestTeamRankingHoldersPaginationQuery: GraphQ
 
     init() {}
 
-    public struct Response: Codable {}
+    internal struct Response: Codable {}
 }

@@ -18,5 +18,5 @@ internal final class HistoryRecordRefetchQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {}
+    internal struct Response: Codable {}
 }

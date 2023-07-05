@@ -18,5 +18,5 @@ internal final class XBattleHistoriesRefetchQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {}
+    internal struct Response: Codable {}
 }

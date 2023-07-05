@@ -18,28 +18,28 @@ internal final class HistoryRecordQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {
-        public let data: ResponseData
+     struct Response: Codable {
+         let data: ResponseData
 
-        public var assets: [SPAssetType<BadgeInfoId>] {
+         var assets: [SPAssetType<BadgeInfoId>] {
             data.playHistory.allBadges.map { SPAssetType(key: $0.id, url: $0.image.url) }
         }
     }
 
-    public struct ResponseData: Codable {
-        public let playHistory: PlayerHistory
+     struct ResponseData: Codable {
+         let playHistory: PlayerHistory
     }
 
-    public struct PlayerHistory: Codable {
+     struct PlayerHistory: Codable {
         let allBadges: [Badge]
     }
 
-    public struct Badge: Codable {
-        @UnsafeRawValue public var id: BadgeInfoId
-        public let image: URLComponent
+     struct Badge: Codable {
+        @UnsafeRawValue  var id: BadgeInfoId
+         let image: URLComponent
     }
 
-    public struct URLComponent: Codable {
-        public let url: URL
+     struct URLComponent: Codable {
+         let url: URL
     }
 }

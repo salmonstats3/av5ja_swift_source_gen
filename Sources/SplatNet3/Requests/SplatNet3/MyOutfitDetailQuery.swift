@@ -18,5 +18,5 @@ internal final class MyOutfitDetailQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {}
+    internal struct Response: Codable {}
 }

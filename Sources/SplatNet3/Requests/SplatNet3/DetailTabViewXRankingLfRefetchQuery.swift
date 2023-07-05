@@ -18,5 +18,5 @@ internal final class DetailTabViewXRankingLfRefetchQuery: GraphQL {
 
     init() {}
 
-    public struct Response: Codable {}
+    internal struct Response: Codable {}
 }

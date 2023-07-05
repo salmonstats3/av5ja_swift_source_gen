@@ -20,82 +20,82 @@ internal final class CoopRecordQuery: GraphQL {
 
     // MARK: - Response
 
-    public struct Response: Codable {
-        public let data: DataClass
+    struct Response: Codable {
+        let data: DataClass
     }
 
     // MARK: - DataClass
 
-    public struct DataClass: Codable {
-        public let coopRecord: CoopRecord
+    struct DataClass: Codable {
+        let coopRecord: CoopRecord
     }
 
     // MARK: - CoopRecord
 
-    public struct CoopRecord: Codable {
-        public let bigRunRecord: BigRunRecord
-//        public let teamContestRecord: JSONNull?
+    struct CoopRecord: Codable {
+        let bigRunRecord: BigRunRecord
+//        let teamContestRecord: JSONNull?
     }
 
     // MARK: - BigRunRecord
 
-    public struct BigRunRecord: Codable {
-        public let records: Records
+    struct BigRunRecord: Codable {
+        let records: Records
     }
 
     // MARK: - Records
 
-    public struct Records: Codable {
-        public let edges: [Edge]
-        public let pageInfo: PageInfo
+    struct Records: Codable {
+        let edges: [Edge]
+        let pageInfo: PageInfo
     }
 
     // MARK: - Edge
 
-    public struct Edge: Codable {
-        public let node: Node
-        public let cursor: String
+    struct Edge: Codable {
+        let node: Node
+        let cursor: String
     }
 
     // MARK: - Node
 
-    public struct Node: Codable {
-//        public let startTime: String
-//        public let endTime: String
-//        public let trophy: String
-        public let coopStage: CoopStage
-//        public let highestGrade: HighestGrade
-//        public let highestGradePoint: Int
-//        public let highestJobScore: Int
-//        public let typename: String
+    struct Node: Codable {
+//        let startTime: String
+//        let endTime: String
+//        let trophy: String
+        let coopStage: CoopStage
+//        let highestGrade: HighestGrade
+//        let highestGradePoint: Int
+//        let highestJobScore: Int
+//        let typename: String
     }
 
     // MARK: - CoopStage
 
-    public struct CoopStage: Codable {
-        public let name: String
-        public let image: CoopStageURL
-        @IntegerRawValue public var id: CoopStageId
+    struct CoopStage: Codable {
+        let name: String
+        let image: CoopStageURL
+        @IntegerRawValue var id: CoopStageId
     }
 
     // MARK: - Image
 
-    public struct CoopStageURL: Codable {
-        public let url: URL
+    struct CoopStageURL: Codable {
+        let url: URL
     }
 
     // MARK: - HighestGrade
 
-    public struct HighestGrade: Codable {
-        public let name: String
-        public let id: String
+    struct HighestGrade: Codable {
+        let name: String
+        let id: String
     }
 
     // MARK: - PageInfo
 
-    public struct PageInfo: Codable {
-        public let endCursor: String
-        public let hasNextPage: Bool
+    struct PageInfo: Codable {
+        let endCursor: String
+        let hasNextPage: Bool
     }
 }
 
