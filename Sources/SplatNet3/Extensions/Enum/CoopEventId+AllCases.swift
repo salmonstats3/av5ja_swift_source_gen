@@ -1,5 +1,5 @@
 //
-//  CoopEventId.swift
+//  CoopEventId+AllCases.swift
 //  SplatNet3
 //
 //  Created by devonly on 2023/01/30.
@@ -50,7 +50,7 @@ public extension CoopEventId {
 }
 
 @available(iOS 16.0, *)
-extension EventKey: Plottable {}
+extension CoopEventKey: Plottable {}
 
 @available(iOS 16.0, *)
 extension CoopEventId: Plottable {

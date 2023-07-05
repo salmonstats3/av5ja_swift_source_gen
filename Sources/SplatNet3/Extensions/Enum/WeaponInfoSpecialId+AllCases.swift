@@ -1,5 +1,5 @@
 //
-//  WeaponInfoSpecial.swift
+//  WeaponInfoSpecialId.swift
 //  SplatNet3
 //
 //  Created by devonly on 2023/01/30.
@@ -20,16 +20,6 @@ public extension WeaponInfoSpecialId {
             .SpSkewer,
             .SpTripleTornado
         ]
-//    static let allCases: [WeaponInfoSpecialId] =
-//    [
-//        .SpNiceBall,
-//        .SpShockSonar,
-//        .SpMicroLaser,
-//        .SpJetpack,
-//        .SpChariot,
-//        .SpSkewer,
-//        .SpTripleTornado,
-//    ]
 }
 
 public extension WeaponInfoSpecialKey {
@@ -43,14 +33,4 @@ public extension WeaponInfoSpecialKey {
             .SpSkewer,
             .SpTripleTornado
         ]
-//    static let allCases: [WeaponInfoSpecialKey] =
-//    [
-//        .SpNiceBall,
-//        .SpShockSonar,
-//        .SpMicroLaser,
-//        .SpJetpack,
-//        .SpChariot,
-//        .SpSkewer,
-//        .SpTripleTornado,
-//    ]
 }

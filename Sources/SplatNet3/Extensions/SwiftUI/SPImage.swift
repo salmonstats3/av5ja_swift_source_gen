@@ -1,5 +1,5 @@
 //
-//  SwiftUI+Image.swift
+//  SPImage.swift
 //  SplatNet3
 //
 //  Created by devonly on 2023/05/28.
@@ -7,6 +7,24 @@
 //
 
 import SwiftUI
+
+public struct SPImage: View {
+    @ObservedObject private var service: SPImageService
+
+    public init<T: UnsafeRawRepresentable>(_ id: T) where T.RawValue == Int {
+        _service = ObservedObject(wrappedValue: SPImageService(type: T.self, rawValue: id.rawValue))
+    }
+
+    public init(_ id: StaticMediaKey) {
+        _service = ObservedObject(wrappedValue: SPImageService(id: id))
+    }
+
+    public var body: some View {
+        Image(url: service.documentPath)
+            .resizable()
+            .scaledToFit()
+    }
+}
 
 internal final class SPImageService: ObservableObject {
     @Published var documentPath: URL?
@@ -43,24 +61,6 @@ internal final class SPImageService: ObservableObject {
     init(id: StaticMediaKey) {
         let documentURL: URL? = FileManager.default.document
         documentPath = documentURL?.appendingPathComponent("\(ResourceURLType.Bundled.rawValue)/\(id.rawValue)", conformingTo: .png)
-    }
-}
-
-public struct SPImage: View {
-    @ObservedObject private var service: SPImageService
-
-    public init<T: UnsafeRawRepresentable>(_ id: T) where T.RawValue == Int {
-        _service = ObservedObject(wrappedValue: SPImageService(type: T.self, rawValue: id.rawValue))
-    }
-
-    public init(_ id: StaticMediaKey) {
-        _service = ObservedObject(wrappedValue: SPImageService(id: id))
-    }
-
-    public var body: some View {
-        Image(url: service.documentPath)
-            .resizable()
-            .scaledToFit()
     }
 }
 

@@ -9,9 +9,9 @@
 import Foundation
 import UniformTypeIdentifiers
 
-public enum StaticAssetType: String, UnsafeRawRepresentable {
+public enum StaticAssetKey: String, UnsafeRawRepresentable {
     public var id: String { rawValue }
-    public static var defaultValue: StaticAssetType = .Trophy_Gold
+    public static var defaultValue: StaticAssetKey = .Trophy_Gold
 
     case Trophy_Gold = "trophy-gold"
     case Trophy_Silver = "trophy-silver"

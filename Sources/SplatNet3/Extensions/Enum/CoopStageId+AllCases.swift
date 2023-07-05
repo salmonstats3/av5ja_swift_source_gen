@@ -1,5 +1,5 @@
 //
-//  CoopStageHeader.swift
+//  CoopStageId+AllCases.swift
 //  SplatNet3
 //
 //  Created by devonly on 2023/01/30.

@@ -1,5 +1,5 @@
 //
-//  ResultType.swift
+//  IdType.swift
 //  SplatNet3
 //
 //  Created by devonly on 2022/12/03.

@@ -1,5 +1,5 @@
 //
-//  QRReaderSession.swift
+//  QRCaptureSession.swift
 //  SplatNet3
 //
 //  Created by devonly on 2023/03/16.

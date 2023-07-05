@@ -1,5 +1,5 @@
 //
-//  CoopEventId.swift
+//  CoopGradeId+AllCases.swift
 //  SplatNet3
 //
 //  Created by devonly on 2023/06/02.

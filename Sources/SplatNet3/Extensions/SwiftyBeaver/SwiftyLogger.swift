@@ -28,7 +28,7 @@ public enum SwiftyLogger {
 
     public static let baseURL: URL = {
         guard let baseURL: URL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else {
-            fatalError()
+            fatalError("Could not find document directory")
         }
         return baseURL.appendingPathComponent("swiftybeaver").appendingPathExtension("log")
     }()

@@ -1,5 +1,5 @@
 //
-//  EventKey.swift
+//  CoopEventKey.swift
 //  SplatNet3
 //
 //  Created by devonly on 2022/11/25.
@@ -9,7 +9,7 @@
 import Charts
 import Foundation
 
-public enum EventKey: String, UnsafeRawRepresentable {
+public enum CoopEventKey: String, UnsafeRawRepresentable {
     public static var defaultValue: Self = .WaterLevels
     public var id: String { rawValue }
 
