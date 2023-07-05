@@ -155,6 +155,7 @@ internal final class SplatNet3Tests: XCTestCase {
             for path in paths {
                 try autoreleasepool {
                     let data: Data = try Data(contentsOf: path)
+                    print(data)
                 }
             }
         } catch {
@@ -164,6 +165,7 @@ internal final class SplatNet3Tests: XCTestCase {
         }
     }
 
+    // swiftlint:disable:next empty_xctest_method
     func testFriendList() throws {}
 
     func testStageSchedule() throws {
@@ -173,6 +175,7 @@ internal final class SplatNet3Tests: XCTestCase {
                 try autoreleasepool {
                     let data: Data = try Data(contentsOf: path)
                     let response: StageScheduleQuery.Response = try decoder.decode(StageScheduleQuery.Response.self, from: data)
+                    print(response)
                 }
             } catch {
                 SwiftyLogger.error(error)

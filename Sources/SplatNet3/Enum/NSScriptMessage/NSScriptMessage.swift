@@ -29,6 +29,7 @@ internal enum NSScriptMessage {
     case sourceCamera
     case sourcePhotoLibrary
 
+    // swiftlint:disable:next function_body_length cyclomatic_complexity
     init?(rawValue: Any?) {
         let decoder = SPDecoder()
         guard let rawValue: String = rawValue as? String,

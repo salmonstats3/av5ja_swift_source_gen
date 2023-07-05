@@ -50,6 +50,7 @@ internal struct SplatNetView: UIViewControllerRepresentable {
             dismiss(animated: true)
         }
 
+        // swiftlint:disable:next function_body_length
         init(contentId: ContentId) {
             /// リクエスト
             let locale: String = NSLocalizedString(LocalizedType.CommonLocale.rawValue, bundle: .module, comment: "")
@@ -156,6 +157,7 @@ internal struct SplatNetView: UIViewControllerRepresentable {
         func webView(_: WKWebView, didReceiveServerRedirectForProvisionalNavigation _: WKNavigation!) {}
 
         /// JavaScriptを実行する
+        // swiftlint:disable:next cyclomatic_complexity function_body_length
         private func evaluateJavaScript(_ content: Any?) {
             guard let script = NSScriptMessage(rawValue: content) else {
                 return

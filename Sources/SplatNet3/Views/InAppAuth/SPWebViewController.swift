@@ -22,6 +22,7 @@ public class SPWebViewController: UIViewController, WKURLSchemeHandler {
     }
 
     override public func viewDidLoad() {
+        super.viewDidLoad()
         let configuration = WKWebViewConfiguration()
         configuration.setURLSchemeHandler(self, forURLScheme: "npf71b963c1b7b6d119")
         configuration.applicationNameForUserAgent = "SplatNet/@tkgling"

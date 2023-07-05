@@ -25,6 +25,7 @@ public enum ResourceURLType: String, CaseIterable, Codable {
     case WeaponInfoMainFlat = "weapon_flat"
     case Scale = "images/coop/"
 
+    // swiftlint:disable:next cyclomatic_complexity function_body_length
     init?(url: URL) {
         if url.absoluteString.contains(ResourceURLType.StageImgBanner.rawValue) {
             self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)
@@ -136,6 +137,7 @@ public struct ResourceType: Codable {
             return nil
         }
 
+        // swiftlint:disable:next cyclomatic_complexity function_body_length
         init?(url: URL, data: Data?) {
             guard let data: Data,
                   let type = ResourceURLType(url: url),
