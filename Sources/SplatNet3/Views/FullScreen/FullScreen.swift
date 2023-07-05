@@ -35,13 +35,14 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
     let isModalInPresentation: Bool
     let backgroundColor: UIColor
 
-    init(isPresented: Binding<Bool>,
-         presentationStyle: UIModalPresentationStyle? = nil,
-         transitionStyle: UIModalTransitionStyle? = nil,
-         isModalInPresentation: Bool = true,
-         backgroundColor: Color = Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)),
-         @ViewBuilder content: @escaping () -> Content)
-    {
+    init(
+        isPresented: Binding<Bool>,
+        presentationStyle: UIModalPresentationStyle? = nil,
+        transitionStyle: UIModalTransitionStyle? = nil,
+        isModalInPresentation: Bool = true,
+        backgroundColor: Color = Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)),
+        @ViewBuilder content: @escaping () -> Content
+    ) {
         self.content = content
         self.transitionStyle = transitionStyle ?? .coverVertical
         self.presentationStyle = presentationStyle ?? .overFullScreen
@@ -117,13 +118,14 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
         let presentationStyle: UIModalPresentationStyle
         let backgroundColor: UIColor
 
-        init(coordinator: FullScreen<Content>.Coordinator,
-             transitionStyle: UIModalTransitionStyle,
-             presentationStyle: UIModalPresentationStyle,
-             isModalInPresentation: Bool,
-             backgroundColor: UIColor,
-             @ViewBuilder content: @escaping () -> Content)
-        {
+        init(
+            coordinator: FullScreen<Content>.Coordinator,
+            transitionStyle: UIModalTransitionStyle,
+            presentationStyle: UIModalPresentationStyle,
+            isModalInPresentation: Bool,
+            backgroundColor: UIColor,
+            @ViewBuilder content: @escaping () -> Content
+        ) {
             self.coordinator = coordinator
             self.content = content
 //            self.hosting = UIHostingController(rootView: content)
