@@ -9,81 +9,6 @@
 import Foundation
 import SwiftUI
 
-internal struct SignInView: View {
-    @EnvironmentObject var session: SP3Session
-    @Environment(\.dismiss) var dismiss
-
-    let code: String
-    let verifier: String
-    let contentId: ContentId
-
-    @ViewBuilder
-    func makeBody(request: SPProgress) -> some View {
-        switch request.progress {
-        case .PROGRESS:
-            ProgressView()
-                .frame(width: 24, height: 24, alignment: .center)
-        case .SUCCESS:
-            Image(systemName: "checkmark.circle")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(.green)
-                .frame(width: 24, height: 24, alignment: .center)
-        case .FAILURE:
-            Image(systemName: "xmark.circle")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(.red)
-                .frame(width: 24, height: 24, alignment: .center)
-        }
-    }
-
-    var body: some View {
-        GroupBox(content: {
-            VStack(content: {
-                ForEach(session.requests, content: { request in
-                    HStack(content: {
-                        RoundedRectangle(cornerRadius: 4)
-                            .frame(width: 60, height: 24, alignment: .center)
-                            .foregroundColor(request.color)
-                            .overlay(content: {
-                                Text(request.type.rawValue)
-                                    .foregroundColor(.white)
-                                    .bold()
-                                    .font(.body)
-                            })
-                        Text(request.path.rawValue)
-                            .font(.body)
-                            .frame(width: 220, height: nil, alignment: .leading)
-                            .lineLimit(1)
-                            .foregroundColor(.white)
-                        makeBody(request: request)
-                    })
-                })
-            })
-            .frame(width: 320)
-        })
-        .animation(.default, value: session.requests.count)
-        .onDisappear(perform: {
-            session.requests.removeAll()
-        })
-        .onAppear(perform: {
-            Task(priority: .utility, operation: {
-                do {
-                    try await session.getCookie(code: code, verifier: verifier, contentId: contentId)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                        UIApplication.shared.rootViewController?.dismiss(animated: true)
-                    }
-                } catch {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                        UIApplication.shared.rootViewController?.dismiss(animated: true)
-                    }
-                }
-            })
-        })
-    }
-}
-
 // swiftlint:disable:next type_name
 internal struct _SignInView: View {
     @StateObject var session = SP3Session()
@@ -161,3 +86,79 @@ internal struct _SignInView: View {
         })
     }
 }
+
+internal struct SignInView: View {
+    @EnvironmentObject var session: SP3Session
+    @Environment(\.dismiss) var dismiss
+
+    let code: String
+    let verifier: String
+    let contentId: ContentId
+
+    @ViewBuilder
+    func makeBody(request: SPProgress) -> some View {
+        switch request.progress {
+        case .PROGRESS:
+            ProgressView()
+                .frame(width: 24, height: 24, alignment: .center)
+        case .SUCCESS:
+            Image(systemName: "checkmark.circle")
+                .resizable()
+                .scaledToFit()
+                .foregroundColor(.green)
+                .frame(width: 24, height: 24, alignment: .center)
+        case .FAILURE:
+            Image(systemName: "xmark.circle")
+                .resizable()
+                .scaledToFit()
+                .foregroundColor(.red)
+                .frame(width: 24, height: 24, alignment: .center)
+        }
+    }
+
+    var body: some View {
+        GroupBox(content: {
+            VStack(content: {
+                ForEach(session.requests, content: { request in
+                    HStack(content: {
+                        RoundedRectangle(cornerRadius: 4)
+                            .frame(width: 60, height: 24, alignment: .center)
+                            .foregroundColor(request.color)
+                            .overlay(content: {
+                                Text(request.type.rawValue)
+                                    .foregroundColor(.white)
+                                    .bold()
+                                    .font(.body)
+                            })
+                        Text(request.path.rawValue)
+                            .font(.body)
+                            .frame(width: 220, height: nil, alignment: .leading)
+                            .lineLimit(1)
+                            .foregroundColor(.white)
+                        makeBody(request: request)
+                    })
+                })
+            })
+            .frame(width: 320)
+        })
+        .animation(.default, value: session.requests.count)
+        .onDisappear(perform: {
+            session.requests.removeAll()
+        })
+        .onAppear(perform: {
+            Task(priority: .utility, operation: {
+                do {
+                    try await session.getCookie(code: code, verifier: verifier, contentId: contentId)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        UIApplication.shared.rootViewController?.dismiss(animated: true)
+                    }
+                } catch {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                        UIApplication.shared.rootViewController?.dismiss(animated: true)
+                    }
+                }
+            })
+        })
+    }
+}
+

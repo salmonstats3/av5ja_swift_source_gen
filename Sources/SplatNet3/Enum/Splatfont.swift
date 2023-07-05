@@ -1,9 +1,8 @@
 //
 //  Splatfont.swift
-//  SplatNet3
+//
 //
 //  Created by devonly on 2023/05/27.
-//  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
 import Foundation
@@ -19,40 +18,6 @@ public protocol SPFont: RawRepresentable, CaseIterable, Identifiable where RawVa
     var fontDescriptor: UIFontDescriptor? { get }
 }
 
-public extension SPFont {
-    var id: String { rawValue }
-
-    var baseURL: URL {
-        URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/static/media")
-    }
-
-    var fontURL: CFURL? {
-        guard let url: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
-        else {
-            return nil
-        }
-        return url
-            .appendingPathComponent(ResourceURLType.StaticMedia.rawValue, conformingTo: .url)
-            .appendingPathComponent(rawValue, conformingTo: .url)
-            .appendingPathExtension("woff2") as CFURL
-    }
-
-    var fontDescriptor: UIFontDescriptor? {
-        guard let fontURL: CFURL = fontURL,
-              let array: CFArray = CTFontManagerCreateFontDescriptorsFromURL(fontURL),
-              let fonts: [CTFontDescriptor] = array as? [CTFontDescriptor],
-              let font: CTFontDescriptor = fonts.first
-        else {
-            return nil
-        }
-        return font as UIFontDescriptor
-    }
-
-    static var fontName: String {
-        String(describing: Self.self)
-    }
-}
-
 public enum FontType: String, CaseIterable {
     case Splatfont1
     case Splatfont2
@@ -62,23 +27,6 @@ public enum LocaleType: String, CaseIterable {
     case JP = "0"
     case CN = "1"
     case TW = "2"
-}
-
-public class Splatfont {
-    var splatfont1: UIFontDescriptor
-    var splatfont2: UIFontDescriptor
-
-    public static let shared = Splatfont(locale: LocaleType(rawValue: LocalizedType.CommonLanguageCode.description) ?? .JP)
-
-    private init(locale: LocaleType) {
-        splatfont1 = Splatfont1.locale(locale)
-        splatfont2 = Splatfont2.locale(locale)
-    }
-
-    public func configure(locale: LocaleType) {
-        splatfont1 = Splatfont1.locale(locale)
-        splatfont2 = Splatfont2.locale(locale)
-    }
 }
 
 public enum Splatfont1: String, SPFont {
@@ -165,6 +113,39 @@ public enum Splatfont2: String, SPFont {
     }
 }
 
+internal struct SplatfontModifier: ViewModifier {
+    let fontName: String
+    let size: CGFloat
+    let locale = LocaleType(rawValue: LocalizedType.CommonLanguageCode.rawValue) ?? .JP
+
+    init(fontName: FontType, size: CGFloat) {
+        self.fontName = fontName.rawValue
+        self.size = size
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .font(.custom(fontName, size: size))
+    }
+}
+
+public class Splatfont {
+    var splatfont1: UIFontDescriptor
+    var splatfont2: UIFontDescriptor
+
+    public static let shared = Splatfont(locale: LocaleType(rawValue: LocalizedType.CommonLanguageCode.description) ?? .JP)
+
+    private init(locale: LocaleType) {
+        splatfont1 = Splatfont1.locale(locale)
+        splatfont2 = Splatfont2.locale(locale)
+    }
+
+    public func configure(locale: LocaleType) {
+        splatfont1 = Splatfont1.locale(locale)
+        splatfont2 = Splatfont2.locale(locale)
+    }
+}
+
 internal extension UIFontDescriptor {
     static func from<T: SPFont>(fonts: [T]) -> UIFontDescriptor {
         guard let font: UIFontDescriptor = fonts.first?.fontDescriptor
@@ -179,19 +160,37 @@ internal extension UIFontDescriptor {
     }
 }
 
-internal struct SplatfontModifier: ViewModifier {
-    let fontName: String
-    let size: CGFloat
-    let locale = LocaleType(rawValue: LocalizedType.CommonLanguageCode.rawValue) ?? .JP
+public extension SPFont {
+    var id: String { rawValue }
 
-    init(fontName: FontType, size: CGFloat) {
-        self.fontName = fontName.rawValue
-        self.size = size
+    var baseURL: URL {
+        URL(unsafeString: "https://api.lp1.av5ja.srv.nintendo.net/static/media")
     }
 
-    func body(content: Content) -> some View {
-        content
-            .font(.custom(fontName, size: size))
+    var fontURL: CFURL? {
+        guard let url: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        else {
+            return nil
+        }
+        return url
+            .appendingPathComponent(ResourceURLType.StaticMedia.rawValue, conformingTo: .url)
+            .appendingPathComponent(rawValue, conformingTo: .url)
+            .appendingPathExtension("woff2") as CFURL
+    }
+
+    var fontDescriptor: UIFontDescriptor? {
+        guard let fontURL: CFURL = fontURL,
+              let array: CFArray = CTFontManagerCreateFontDescriptorsFromURL(fontURL),
+              let fonts: [CTFontDescriptor] = array as? [CTFontDescriptor],
+              let font: CTFontDescriptor = fonts.first
+        else {
+            return nil
+        }
+        return font as UIFontDescriptor
+    }
+
+    static var fontName: String {
+        String(describing: Self.self)
     }
 }
 

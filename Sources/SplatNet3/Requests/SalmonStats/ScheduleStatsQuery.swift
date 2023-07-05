@@ -11,22 +11,6 @@ import Foundation
 
 public protocol SalmonStats: RequestType {}
 
-public extension SalmonStats {
-    #if DEBUG
-        var baseURL: URL {
-            #if targetEnvironment(simulator)
-                URL(unsafeString: "https://api.splatnet3.com")
-            #else
-                URL(unsafeString: "https://api.splatnet3.com")
-            #endif
-        }
-    #else
-        var baseURL: URL {
-            URL(unsafeString: "https://api.splatnet3.com")
-        }
-    #endif
-}
-
 public final class ScheduleStatsQuery: SalmonStats {
     public var method: Alamofire.HTTPMethod = .get
     public var parameters: Alamofire.Parameters?
@@ -79,4 +63,20 @@ public final class ScheduleStatsQuery: SalmonStats {
         public let eventType: CoopEventId
         public let count: Int
     }
+}
+
+public extension SalmonStats {
+    #if DEBUG
+        var baseURL: URL {
+            #if targetEnvironment(simulator)
+                URL(unsafeString: "https://api.splatnet3.com")
+            #else
+                URL(unsafeString: "https://api.splatnet3.com")
+            #endif
+        }
+    #else
+        var baseURL: URL {
+            URL(unsafeString: "https://api.splatnet3.com")
+        }
+    #endif
 }

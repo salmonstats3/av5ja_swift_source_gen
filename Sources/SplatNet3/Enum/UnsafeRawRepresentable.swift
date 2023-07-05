@@ -8,11 +8,6 @@
 
 import Foundation
 
-public protocol UnsafeRawRepresentable: Identifiable, RawRepresentable, Codable, CaseIterable, Hashable, Equatable
-    where RawValue: LosslessStringConvertible {
-    static var defaultValue: Self { get }
-}
-
 @propertyWrapper
 public struct UnsafeSHA256Hash<T: UnsafeRawRepresentable>: Codable {
     public var wrappedValue: T
@@ -69,4 +64,9 @@ public struct UnsafeRawValue<T: UnsafeRawRepresentable>: Codable {
         var container = encoder.singleValueContainer()
         try container.encode(wrappedValue)
     }
+}
+
+public protocol UnsafeRawRepresentable: Identifiable, RawRepresentable, Codable, CaseIterable, Hashable, Equatable
+    where RawValue: LosslessStringConvertible {
+    static var defaultValue: Self { get }
 }

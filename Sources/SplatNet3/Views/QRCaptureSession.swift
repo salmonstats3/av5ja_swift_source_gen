@@ -10,6 +10,54 @@ import AVFoundation
 import Foundation
 import UIKit
 
+// swiftlint:disable:next type_name
+internal class _QRReaderView: UIView {
+    private let session: QRCaptureSession
+    private let previewLayer = AVCaptureVideoPreviewLayer()
+
+    /// イニシャライザ
+    init(session: QRCaptureSession) {
+        self.session = session
+        previewLayer.session = session
+        super.init(frame: .zero)
+    }
+
+    /// イニシャライザ
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
+        fatalError()
+    }
+
+    /// イニシャライザ
+    init(frame: CGRect, reader: QRCaptureSession) {
+        session = reader
+        super.init(frame: frame)
+    }
+
+    /// 起動しているかどうか
+    var isRunning: Bool {
+        session.isRunning
+    }
+
+    /// カメラを起動
+    func startRunning() {
+        session.startRunning()
+    }
+
+    /// カメラを終了
+    func stopRunning() {
+        session.stopRunning()
+    }
+
+    /// サブビューを追加したときの処理
+    override func layoutSubviews() {
+        previewLayer.frame = bounds
+        previewLayer.videoGravity = .resizeAspectFill
+
+        layer.addSublayer(previewLayer)
+    }
+}
+
 internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate {
     /// 処理を実行するキュー
     private let queue = DispatchQueue(label: "QRCaptureSessioin")
@@ -99,53 +147,6 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
     }
 }
 
-// swiftlint:disable:next type_name
-internal class _QRReaderView: UIView {
-    private let session: QRCaptureSession
-    private let previewLayer = AVCaptureVideoPreviewLayer()
-
-    /// イニシャライザ
-    init(session: QRCaptureSession) {
-        self.session = session
-        previewLayer.session = session
-        super.init(frame: .zero)
-    }
-
-    /// イニシャライザ
-    @available(*, unavailable)
-    required init?(coder _: NSCoder) {
-        fatalError()
-    }
-
-    /// イニシャライザ
-    init(frame: CGRect, reader: QRCaptureSession) {
-        session = reader
-        super.init(frame: frame)
-    }
-
-    /// 起動しているかどうか
-    var isRunning: Bool {
-        session.isRunning
-    }
-
-    /// カメラを起動
-    func startRunning() {
-        session.startRunning()
-    }
-
-    /// カメラを終了
-    func stopRunning() {
-        session.stopRunning()
-    }
-
-    /// サブビューを追加したときの処理
-    override func layoutSubviews() {
-        previewLayer.frame = bounds
-        previewLayer.videoGravity = .resizeAspectFill
-
-        layer.addSublayer(previewLayer)
-    }
-}
 
 extension AVMetadataObject.ObjectType {
     static let full: [Self] =

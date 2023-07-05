@@ -9,12 +9,6 @@
 import Foundation
 import SwiftUI
 
-public enum ProgressType: Int, CaseIterable {
-    case PROGRESS = 0
-    case SUCCESS = 1
-    case FAILURE = 2
-}
-
 public enum ProgressAPIType: String, CaseIterable {
     case NSO
     case APP
@@ -22,4 +16,10 @@ public enum ProgressAPIType: String, CaseIterable {
     case IMINK
     case FLAPG
     case NXAPI
+}
+
+public enum ProgressType: Int, CaseIterable {
+    case PROGRESS = 0
+    case SUCCESS = 1
+    case FAILURE = 2
 }

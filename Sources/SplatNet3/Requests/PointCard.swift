@@ -8,19 +8,6 @@
 
 import Foundation
 
-internal protocol PointCard: Codable {
-    /// バイト回数
-    var shiftsWorked: Int { get set }
-    /// イクラ獲得数
-    var ikuraNum: Int { get set }
-    /// 金イクラ納品数
-    var goldenIkuraNum: Int { get set }
-    /// 救助数
-    var helpCount: Int { get set }
-    /// るいけいポイント
-    var totalKumaPoint: Int { get set }
-}
-
 public struct SP3PointCard: PointCard {
     /// バイト回数
     public var shiftsWorked: Int = 0
@@ -58,4 +45,17 @@ public struct SP2PointCard: PointCard {
     public var helpCount: Int = 0
     /// るいけいポイント
     public var totalKumaPoint: Int = 0
+}
+
+internal protocol PointCard: Codable {
+    /// バイト回数
+    var shiftsWorked: Int { get set }
+    /// イクラ獲得数
+    var ikuraNum: Int { get set }
+    /// 金イクラ納品数
+    var goldenIkuraNum: Int { get set }
+    /// 救助数
+    var helpCount: Int { get set }
+    /// るいけいポイント
+    var totalKumaPoint: Int { get set }
 }

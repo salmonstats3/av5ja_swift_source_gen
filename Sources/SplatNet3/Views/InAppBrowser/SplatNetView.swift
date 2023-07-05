@@ -226,15 +226,6 @@ internal struct SplatNetView: UIViewControllerRepresentable {
     }
 }
 
-internal struct SplatNetView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView(content: {
-            SplatNetView(contentId: .SP3)
-                .preferredColorScheme(.dark)
-        })
-    }
-}
-
 extension View {
     /// イカリング2, イカリング3を開く
     public func openInAppBrowser(isPresented: Binding<Bool>, contentId: ContentId) -> some View {
@@ -256,5 +247,14 @@ extension View {
         } else {
             return self
         }
+    }
+}
+
+internal struct SplatNetView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView(content: {
+            SplatNetView(contentId: .SP3)
+                .preferredColorScheme(.dark)
+        })
     }
 }

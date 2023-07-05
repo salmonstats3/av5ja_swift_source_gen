@@ -1,53 +1,24 @@
 //
-//  CoopResultDownloadView.swift
+//  CoopResultUploadView.swift
 //  SplatNet3
 //
 //  Created by devonly on 2022/11/26.
 //  Copyright © 2023 Magi, Corporation. All rights reserved.
 //
 
+import Foundation
 import SwiftUI
 
-internal struct CoopResultDownloadView: View {
-    @EnvironmentObject var session: SP3Session
+public struct CoopResultUploadView: View {
     @Environment(\.dismiss) var dismiss
     @State private var value: Float = .zero
     @State private var total: Float = 1
-    @State private var task: Task<Void, Error>?
+    let session: SP3Session
+    let results: [CoopResult]
 
-    func download() {
-        task = Task {
-            do {
-                try await session.getCoopStageScheduleQuery()
-                let results: [CoopResult] = try await session.getAllCoopHistoryDetailQuery(completion: { value, total in
-                    withAnimation(.default) {
-                        self.value = value
-                        self.total = total
-                    }
-                })
-                if results.isEmpty {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                        dismiss()
-                    }
-                }
-
-                if session.useSalmonStats {
-                    try await session.uploadAllCoopResultDetailQuery(results: results, completion: { _, _ in
-                    })
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    dismiss()
-                }
-            } catch {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                    dismiss()
-                }
-            }
-        }
-    }
-
-    func cancel() {
-        task?.cancel()
+    public init(session: SP3Session, results: [CoopResult]) {
+        self.session = session
+        self.results = results
     }
 
     @ViewBuilder
@@ -72,7 +43,7 @@ internal struct CoopResultDownloadView: View {
         }
     }
 
-    var body: some View {
+    public var body: some View {
         GroupBox(content: {
             VStack(content: {
                 ForEach(session.requests, content: { request in
@@ -90,6 +61,7 @@ internal struct CoopResultDownloadView: View {
                             .font(.body)
                             .frame(width: 220, height: nil, alignment: .leading)
                             .lineLimit(1)
+                            .foregroundColor(.white)
                         makeBody(request: request)
                     })
                 })
@@ -100,10 +72,25 @@ internal struct CoopResultDownloadView: View {
         .animation(.default, value: session.requests.count)
         .onDisappear(perform: {
             session.requests.removeAll()
-            task?.cancel()
         })
         .onAppear(perform: {
-            download()
+            Task(priority: .background, operation: {
+                do {
+                    try await session.uploadAllCoopResultDetailQuery(results: results, completion: { value, total in
+                        withAnimation(.default) {
+                            self.value = value
+                            self.total = total
+                        }
+                    })
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        dismiss()
+                    }
+                } catch {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                        dismiss()
+                    }
+                }
+            })
         })
     }
 }

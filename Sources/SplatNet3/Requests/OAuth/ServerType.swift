@@ -8,6 +8,11 @@
 
 import Foundation
 
+internal enum IminkType: Int, CaseIterable {
+    case app = 2
+    case nso = 1
+}
+
 public enum ServerType: String, CaseIterable, Identifiable, Codable {
     public var id: String { rawValue }
 
@@ -22,9 +27,4 @@ public enum ServerType: String, CaseIterable, Identifiable, Codable {
             return "api/znca/f"
         }
     }
-}
-
-internal enum IminkType: Int, CaseIterable {
-    case app = 2
-    case nso = 1
 }

@@ -10,6 +10,13 @@ import BetterSafariView
 import SwiftUI
 import WebKit
 
+public enum AuthType: Int, CaseIterable, Identifiable {
+    public var id: Int { rawValue }
+
+    case safari
+    case webkit
+}
+
 public struct OAuthView: UIViewControllerRepresentable {
     typealias UIViewType = WKWebView
 
@@ -24,19 +31,6 @@ public struct OAuthView: UIViewControllerRepresentable {
     }
 
     public func updateUIViewController(_: SPWebViewController, context _: Context) {}
-}
-
-internal struct SPAuthorizeView_Previews: PreviewProvider {
-    static var previews: some View {
-        OAuthView(contentId: .SP3)
-    }
-}
-
-public enum AuthType: Int, CaseIterable, Identifiable {
-    public var id: Int { rawValue }
-
-    case safari
-    case webkit
 }
 
 public extension View {
@@ -80,5 +74,11 @@ public extension View {
                 .prefersEphemeralWebBrowserSession(!session.useEphmeralSession)
             })
         }
+    }
+}
+
+internal struct SPAuthorizeView_Previews: PreviewProvider {
+    static var previews: some View {
+        OAuthView(contentId: .SP3)
     }
 }

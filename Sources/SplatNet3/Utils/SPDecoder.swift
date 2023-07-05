@@ -17,11 +17,3 @@ public class SPDecoder: JSONDecoder {
 
     static let `default`: SPDecoder = .init()
 }
-
-public class SPEncoder: JSONEncoder {
-    override public init() {
-        super.init()
-        dateEncodingStrategy = .iso8601
-        keyEncodingStrategy = .convertToSnakeCase
-    }
-}

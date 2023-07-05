@@ -9,6 +9,81 @@
 import Foundation
 import UniformTypeIdentifiers
 
+public enum ResourceURLType: String, CaseIterable, Codable {
+    case StageImgBanner = "stage_img/banner"
+    case StageImgIcon = "stage_img/icon"
+    case UIImg = "ui_img"
+    case ScaleImg = "scale_img"
+    case CoopEnemyImg = "coop_enemy_img"
+    case SpecialImg = "special_img"
+    case WeaponInfoMainIdllust = "weapon_illust"
+    case StaticMedia = "static/media"
+    case Bundled = "bundled"
+    case StageL = "stageL"
+    case StageBanner = "stageBanner"
+    case CoopEnemy = "coopEnemy"
+    case WeaponInfoMainFlat = "weapon_flat"
+    case Scale = "images/coop/"
+
+    init?(url: URL) {
+        if url.absoluteString.contains(ResourceURLType.StageImgBanner.rawValue) {
+            self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.StageImgIcon.rawValue) {
+            self.init(rawValue: ResourceURLType.StageImgIcon.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.UIImg.rawValue) {
+            self.init(rawValue: ResourceURLType.UIImg.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.WeaponInfoMainIdllust.rawValue) {
+            self.init(rawValue: ResourceURLType.WeaponInfoMainIdllust.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.CoopEnemyImg.rawValue) {
+            self.init(rawValue: ResourceURLType.CoopEnemyImg.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.SpecialImg.rawValue) {
+            self.init(rawValue: ResourceURLType.SpecialImg.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.StaticMedia.rawValue) {
+            self.init(rawValue: ResourceURLType.StaticMedia.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.Bundled.rawValue) {
+            self.init(rawValue: ResourceURLType.Bundled.rawValue)
+            return
+        }
+        // Leanny
+        if url.absoluteString.contains(ResourceURLType.StageL.rawValue) {
+            self.init(rawValue: ResourceURLType.StageImgIcon.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.WeaponInfoMainFlat.rawValue) {
+            self.init(rawValue: ResourceURLType.WeaponInfoMainIdllust.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.StageBanner.rawValue) {
+            self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.CoopEnemy.rawValue) {
+            self.init(rawValue: ResourceURLType.CoopEnemyImg.rawValue)
+            return
+        }
+        if url.absoluteString.contains(ResourceURLType.Scale.rawValue) {
+            self.init(rawValue: ResourceURLType.ScaleImg.rawValue)
+            return
+        }
+        SwiftyLogger.error("Invalid url. \(url)")
+        return nil
+    }
+}
+
 public struct ResourceType: Codable {
     let stageImg: StageImage
     let uiImg: [URL]
@@ -139,80 +214,5 @@ public struct ResourceType: Codable {
             SwiftyLogger.error("Could not recognized hash value. \(url)")
             return nil
         }
-    }
-}
-
-public enum ResourceURLType: String, CaseIterable, Codable {
-    case StageImgBanner = "stage_img/banner"
-    case StageImgIcon = "stage_img/icon"
-    case UIImg = "ui_img"
-    case ScaleImg = "scale_img"
-    case CoopEnemyImg = "coop_enemy_img"
-    case SpecialImg = "special_img"
-    case WeaponInfoMainIdllust = "weapon_illust"
-    case StaticMedia = "static/media"
-    case Bundled = "bundled"
-    case StageL = "stageL"
-    case StageBanner = "stageBanner"
-    case CoopEnemy = "coopEnemy"
-    case WeaponInfoMainFlat = "weapon_flat"
-    case Scale = "images/coop/"
-
-    init?(url: URL) {
-        if url.absoluteString.contains(ResourceURLType.StageImgBanner.rawValue) {
-            self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.StageImgIcon.rawValue) {
-            self.init(rawValue: ResourceURLType.StageImgIcon.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.UIImg.rawValue) {
-            self.init(rawValue: ResourceURLType.UIImg.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.WeaponInfoMainIdllust.rawValue) {
-            self.init(rawValue: ResourceURLType.WeaponInfoMainIdllust.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.CoopEnemyImg.rawValue) {
-            self.init(rawValue: ResourceURLType.CoopEnemyImg.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.SpecialImg.rawValue) {
-            self.init(rawValue: ResourceURLType.SpecialImg.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.StaticMedia.rawValue) {
-            self.init(rawValue: ResourceURLType.StaticMedia.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.Bundled.rawValue) {
-            self.init(rawValue: ResourceURLType.Bundled.rawValue)
-            return
-        }
-        // Leanny
-        if url.absoluteString.contains(ResourceURLType.StageL.rawValue) {
-            self.init(rawValue: ResourceURLType.StageImgIcon.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.WeaponInfoMainFlat.rawValue) {
-            self.init(rawValue: ResourceURLType.WeaponInfoMainIdllust.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.StageBanner.rawValue) {
-            self.init(rawValue: ResourceURLType.StageImgBanner.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.CoopEnemy.rawValue) {
-            self.init(rawValue: ResourceURLType.CoopEnemyImg.rawValue)
-            return
-        }
-        if url.absoluteString.contains(ResourceURLType.Scale.rawValue) {
-            self.init(rawValue: ResourceURLType.ScaleImg.rawValue)
-            return
-        }
-        SwiftyLogger.error("Invalid url. \(url)")
-        return nil
     }
 }
