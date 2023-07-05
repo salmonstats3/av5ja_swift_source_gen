@@ -68,7 +68,7 @@ public extension View {
                             hosting.modalTransitionStyle = .crossDissolve
                             hosting.modalPresentationStyle = .overFullScreen
                             hosting.overrideUserInterfaceStyle = .dark
-                            hosting.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+                            hosting.view.backgroundColor = UIColor.backgroundColor
                             UIApplication.shared.rootViewController?.present(hosting, animated: true)
                         case let .failure(error):
                             if (error as NSError).code != 1 {

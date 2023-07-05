@@ -40,7 +40,7 @@ internal struct FullScreen<Content: View>: UIViewControllerRepresentable {
         presentationStyle: UIModalPresentationStyle? = nil,
         transitionStyle: UIModalTransitionStyle? = nil,
         isModalInPresentation: Bool = true,
-        backgroundColor: Color = Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)),
+        backgroundColor: Color = Color(UIColor.backgroundColor),
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.content = content

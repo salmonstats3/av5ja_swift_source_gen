@@ -69,7 +69,7 @@ public extension UIApplication {
         controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .overFullScreen
         controller.overrideUserInterfaceStyle = .dark
-        controller.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
+        controller.view.backgroundColor = UIColor.backgroundColor
         controller.view.addSubview(progress)
         UIApplication.shared.presentedViewController?.present(controller, animated: true, completion: completion)
         UIApplication.shared.presentedViewController?.dismiss(animated: true)
@@ -86,7 +86,7 @@ public extension UIApplication {
         controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .overFullScreen
         controller.overrideUserInterfaceStyle = .dark
-        controller.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
+        controller.view.backgroundColor = UIColor.backgroundColor
         controller.view.addSubview(progress)
         UIApplication.shared.presentedViewController?.present(controller, animated: true)
         do {
@@ -103,7 +103,7 @@ public extension UIApplication {
         hosting.modalPresentationStyle = .overFullScreen
         hosting.modalTransitionStyle = .coverVertical
         hosting.overrideUserInterfaceStyle = .dark
-        hosting.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+        hosting.view.backgroundColor = UIColor.backgroundColor
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.presentedViewController?.present(hosting, animated: true)
         }
