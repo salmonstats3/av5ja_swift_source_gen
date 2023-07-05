@@ -20,11 +20,15 @@ public struct AssetsView: View {
                 if session.total == .zero {
                     ProgressView()
                 } else {
-                    ProgressView(value: Float(session.value), total: Float(session.total), label: {
-                        Text(LocalizedType.InitialSetup.description)
-                    }, currentValueLabel: {
-                        Text("")
-                    })
+                    ProgressView(
+                        value: Float(session.value),
+                        total: Float(session.total),
+                        label: {
+                            Text(LocalizedType.InitialSetup.description)
+                        }, currentValueLabel: {
+                            Text("")
+                        }
+                    )
                 }
             })
             .frame(width: 320)
