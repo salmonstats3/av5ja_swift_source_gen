@@ -147,7 +147,6 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
     }
 }
 
-
 extension AVMetadataObject.ObjectType {
     static let full: [Self] =
         [

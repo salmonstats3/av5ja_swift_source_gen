@@ -6,7 +6,6 @@
 //  Copyright © 2021 Magi, Corporation. All rights reserved.
 //
 
-
 import Foundation
 
 internal enum NXErrorDescription: String, CaseIterable, Codable {
