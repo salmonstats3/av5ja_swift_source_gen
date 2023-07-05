@@ -69,6 +69,7 @@ public extension String {
             return []
         }
         return group.map { group -> String in
+            // swiftlint:disable:next legacy_objc_type
             (self as NSString).substring(with: matches.range(at: group))
         }
     }
@@ -82,6 +83,7 @@ public extension String {
         let matches: [NSTextCheckingResult] = regex.matches(in: self, range: NSRange(location: 0, length: count))
 
         return matches.map { match in
+            // swiftlint:disable:next legacy_objc_type
             (self as NSString).substring(with: match.range)
         }
     }
