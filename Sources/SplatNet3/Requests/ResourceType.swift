@@ -77,61 +77,61 @@ public struct ResourceType: Codable {
             self.hash = hash
             self.ext = ext
 
-            /// WeaponInfoMainKey
+            // WeaponInfoMainKey
             if let rawValue: String = WeaponInfoMainKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// VsStageKey
+            // VsStageKey
             if let rawValue: String = VsStageKey(rawValue: hash)?.coopStageId?.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// StageKey
+            // StageKey
             if let rawValue: String = CoopStageKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// StageBannerKey
+            // StageBannerKey
             if let rawValue: String = CoopStageBannerKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// CoopEnemyInfoKey
+            // CoopEnemyInfoKey
             if let rawValue: String = CoopEnemyInfoKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// WeaponInfoSpecialKey
+            // WeaponInfoSpecialKey
             if let rawValue: String = WeaponInfoSpecialKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// StaticMediaKey
+            // StaticMediaKey
             if let rawValue: String = StaticMediaKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// SP3WOFFKey
+            // SP3WOFFKey
             if let rawValue: String = SP3WOFFKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// SP3WOFF2Key
+            // SP3WOFF2Key
             if let rawValue: String = SP3WOFF2Key(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
             }
 
-            /// Scale
+            // Scale
             if let rawValue: String = ScaleKey(rawValue: hash)?.id.description {
                 self.rawValue = rawValue
                 return
