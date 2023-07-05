@@ -10,7 +10,7 @@
 @testable import SplatNet3
 import XCTest
 
-final class SplatNet3Tests: XCTestCase {
+internal final class SplatNet3Tests: XCTestCase {
     private let decoder = SPDecoder()
 
     private func getListContents(_ type: JSONType) -> [URL] {
@@ -128,7 +128,7 @@ final class SplatNet3Tests: XCTestCase {
     }
 }
 
-enum JSONType: String, CaseIterable, Codable {
+internal enum JSONType: String, CaseIterable, Codable {
     case CoopHistory
     case CoopHistoryDetail
     case FriendList
@@ -139,7 +139,7 @@ enum JSONType: String, CaseIterable, Codable {
     case Internal
 }
 
-enum OutputType: String, CaseIterable {
+internal enum OutputType: String, CaseIterable {
     case Key
     case Id
 
@@ -153,7 +153,7 @@ enum OutputType: String, CaseIterable {
     }
 }
 
-struct EnumType: Codable {
+internal struct EnumType: Codable {
     let root: [Entry]
 
     struct Entry: Codable {
