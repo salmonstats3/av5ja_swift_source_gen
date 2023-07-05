@@ -1,5 +1,5 @@
 //
-//  Zip3.swift
+//  Zip5Sequence.swift
 //  SplatNet3
 //
 //  Created by devonly on 2022/12/31.

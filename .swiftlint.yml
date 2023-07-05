@@ -133,3 +133,5 @@ line_length:
   - 150
 trailing_comma:
   mandatory_comma: false
+file_name: 
+  excluded: ["Typealias.swift"]
