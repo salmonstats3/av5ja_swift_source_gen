@@ -17,8 +17,7 @@ public func zip<A: Sequence, B: Sequence, C: Sequence, D: Sequence>(_ a: A, _ b:
 }
 
 public func zip<A: Sequence, B: Sequence, C: Sequence, D: Sequence, E: Sequence>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E)
-    -> Zip5Sequence<A, B, C, D, E>
-{
+    -> Zip5Sequence<A, B, C, D, E> {
     Zip5Sequence(a, b, c, d, e)
 }
 

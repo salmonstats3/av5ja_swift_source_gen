@@ -55,8 +55,7 @@ public struct ResourceType: Codable {
             }
             if let host: String = url.host,
                let rowId: String = url.lastPathComponent.capture(pattern: #"([\w\d_].*).png"#, group: 1),
-               host == "leanny.github.io"
-            {
+               host == "leanny.github.io" {
                 return rowId.contains("_Bear") ? "\(rowId.replacingOccurrences(of: "Path_Wst_", with: ""))_Coop".sha256Hash : rowId.sha256Hash
             }
             return nil

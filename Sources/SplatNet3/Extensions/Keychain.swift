@@ -105,8 +105,7 @@ extension Keychain {
     @discardableResult
     func set(_ account: UserInfo?) -> UserInfo? {
         if let bundleIdentifier: String = Bundle.main.bundleIdentifier,
-           let account
-        {
+           let account {
             try? set(try account.asData(), key: bundleIdentifier)
         }
         return account

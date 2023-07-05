@@ -18,8 +18,7 @@ internal final class SPImageService: ObservableObject {
         switch type {
         case is WeaponInfoMainId.Type:
             if let weaponId = WeaponInfoMainId(rawValue: rawValue),
-               (WeaponInfoMainId.regular + WeaponInfoMainId.rare).contains(weaponId)
-            {
+               (WeaponInfoMainId.regular + WeaponInfoMainId.rare).contains(weaponId) {
                 documentPath = documentURL?
                     .appendingPathComponent("\(ResourceURLType.WeaponInfoMainIdllust.rawValue)/\(rawValue)", conformingTo: .png)
             } else {
@@ -70,8 +69,7 @@ public extension Image {
     init(url: URL?) {
         if let url: URL,
            let data: Data = try? Data(contentsOf: url),
-           let uiImage = UIImage(data: data)
-        {
+           let uiImage = UIImage(data: data) {
             self.init(uiImage: uiImage)
         } else {
             self.init(uiImage: UIImage())

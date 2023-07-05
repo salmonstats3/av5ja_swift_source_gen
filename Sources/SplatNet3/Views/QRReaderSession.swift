@@ -29,8 +29,7 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
         let metadataOutput = AVCaptureMetadataOutput()
 
         if canAddInput(deviceInput),
-           canAddOutput(metadataOutput)
-        {
+           canAddOutput(metadataOutput) {
             addInput(deviceInput)
             addOutput(metadataOutput)
 

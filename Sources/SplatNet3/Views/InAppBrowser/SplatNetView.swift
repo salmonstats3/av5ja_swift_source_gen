@@ -97,8 +97,7 @@ internal struct SplatNetView: UIViewControllerRepresentable {
                                    HTTPCookiePropertyKey.value: account.gameWebToken,
                                    HTTPCookiePropertyKey.domain: host,
                                    HTTPCookiePropertyKey.path: "/"
-                               ])
-                            {
+                               ]) {
                                 await webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
                             }
                             indicator.stopAnimating()
