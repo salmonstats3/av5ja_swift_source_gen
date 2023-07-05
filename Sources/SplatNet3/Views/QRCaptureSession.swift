@@ -25,7 +25,7 @@ internal class _QRReaderView: UIView {
     /// イニシャライザ
     @available(*, unavailable)
     required init?(coder _: NSCoder) {
-        fatalError()
+        fatalError("init(coder:) has not been implemented")
     }
 
     /// イニシャライザ
@@ -88,24 +88,24 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
 
     private func requestAuthorization() {
         #if !targetEnvironment(simulator)
-            switch AVCaptureDevice.authorizationStatus(for: .video) {
-            case .authorized:
-                break
-            case .notDetermined:
-                AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
-            case .denied:
-                let alert = UIAlertController(
-                    title: LocalizedType.CommonHome.description,
-                    message: LocalizedType.CommonClose.description,
-                    preferredStyle: .alert
-                )
-                alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.description, style: .default))
-                UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
-            case .restricted:
-                break
-            @unknown default:
-                fatalError()
-            }
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+        case .authorized:
+            break
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video, completionHandler: { _ in })
+        case .denied:
+            let alert = UIAlertController(
+                title: LocalizedType.CommonHome.description,
+                message: LocalizedType.CommonClose.description,
+                preferredStyle: .alert
+            )
+            alert.addAction(UIAlertAction(title: LocalizedType.CommonDecide.description, style: .default))
+            UIApplication.shared.foregroundScene?.windows.first?.rootViewController?.present(alert, animated: true)
+        case .restricted:
+            break
+        @unknown default:
+            break
+        }
         #endif
     }
 
