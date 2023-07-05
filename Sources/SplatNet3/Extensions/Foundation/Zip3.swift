@@ -34,8 +34,7 @@ public struct Zip3Sequence<A: Sequence, B: Sequence, C: Sequence>: Sequence, Ite
 
     // swiftlint:disable:next large_tuple
     public mutating func next() -> (A.Element, B.Element, C.Element)? {
-        guard let a = a.next(), let b = b.next(), let c = c.next() else
-        {
+        guard let a = a.next(), let b = b.next(), let c = c.next() else {
             return nil
         }
         return (a, b, c)

@@ -10,21 +10,6 @@ import Foundation
 import SwiftUI
 import UniformTypeIdentifiers
 
-public struct FilePickerView: View {
-    public typealias Completeion = (URL) -> Void
-    let fileType: [UTType]
-    let onSelected: (URL) -> Void
-
-    public init(fileType: [UTType], onSelected: @escaping Completeion) {
-        self.fileType = fileType
-        self.onSelected = onSelected
-    }
-
-    public var body: some View {
-        _FilePickerView(fileType: fileType, onSelected: onSelected)
-    }
-}
-
 private struct _FilePickerView: UIViewControllerRepresentable {
     let fileType: [UTType]
     let onSelected: (URL) -> Void
@@ -53,5 +38,20 @@ private struct _FilePickerView: UIViewControllerRepresentable {
                 parent.onSelected(url)
             }
         }
+    }
+}
+
+public struct FilePickerView: View {
+    public typealias Completeion = (URL) -> Void
+    let fileType: [UTType]
+    let onSelected: (URL) -> Void
+
+    public init(fileType: [UTType], onSelected: @escaping Completeion) {
+        self.fileType = fileType
+        self.onSelected = onSelected
+    }
+
+    public var body: some View {
+        _FilePickerView(fileType: fileType, onSelected: onSelected)
     }
 }

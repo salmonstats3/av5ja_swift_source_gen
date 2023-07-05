@@ -63,24 +63,24 @@ internal class QRCaptureSession: AVCaptureSession, AVCaptureMetadataOutputObject
 
     override func startRunning() {
         #if !targetEnvironment(simulator)
-        requestAuthorization()
-        if isRunning {
-            return
-        }
-        DispatchQueue.global(qos: .background).async {
-            super.startRunning()
-        }
+            requestAuthorization()
+            if isRunning {
+                return
+            }
+            DispatchQueue.global(qos: .background).async {
+                super.startRunning()
+            }
         #endif
     }
 
     override func stopRunning() {
         #if !targetEnvironment(simulator)
-        if !isRunning {
-            return
-        }
-        DispatchQueue.global(qos: .background).async {
-            super.stopRunning()
-        }
+            if !isRunning {
+                return
+            }
+            DispatchQueue.global(qos: .background).async {
+                super.stopRunning()
+            }
         #endif
     }
 

@@ -9,6 +9,7 @@
 import Alamofire
 import Foundation
 
+// swiftlint:disable:next type_name
 internal final class RankingHoldersFestTeamRankingHoldersPaginationQuery: GraphQL {
     typealias ResponseType = RankingHoldersFestTeamRankingHoldersPaginationQuery.Response
 

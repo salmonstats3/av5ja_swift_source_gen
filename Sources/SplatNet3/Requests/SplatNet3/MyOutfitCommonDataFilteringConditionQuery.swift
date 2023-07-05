@@ -9,6 +9,7 @@
 import Alamofire
 import Foundation
 
+// swiftlint:disable:next type_name
 internal final class MyOutfitCommonDataFilteringConditionQuery: GraphQL {
     typealias ResponseType = MyOutfitCommonDataFilteringConditionQuery.Response
 

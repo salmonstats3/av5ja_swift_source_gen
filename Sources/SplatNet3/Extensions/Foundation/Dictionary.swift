@@ -44,7 +44,7 @@ extension Dictionary where Key == String, Value == Any {
     }
 }
 
-extension Array where Element == [String: Any] {
+extension [[String: Any]] {
     func merged() -> [String: Any] {
         reduce(into: [String: Any]()) { $0.merge($1) { $1 } }
     }
