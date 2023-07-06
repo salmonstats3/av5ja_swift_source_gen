@@ -124,6 +124,8 @@
 "SakeBigBoss" = "gran jefe salmónido";
 /// salmómetro
 "SakeBigBossGauge" = "salmómetro";
+/// Instalación en curso
+"InitialSetup" = "Instalación en curso";
 /// Acerca de
 "CommonAbout" = "Acerca de";
 /// Actual
@@ -324,12 +326,38 @@
 "CommonUseSystemTheme" = "Utilizar la configuración del dispositivo";
 /// Licencia
 "CommonLicense" = "Licencia";
+/// dd-MM-yyyy (HH:mm)
+"DateTimeYearFormat" = "dd-MM-yyyy (HH:mm)";
+/// dd-MM HH:mm
+"DateTimeFormat" = "dd-MM HH:mm";
+/// ¡Completo!
+"CoopHistoryRandomComplete" = "¡Completo!";
+/// -
+"WaterLevels" = "-";
+/// Avalanchas
+"Rush" = "Avalanchas";
+/// Detección de salmóreos
+"GoldieSeeking" = "Detección de salmóreos";
+/// Chaparrillas
+"Griller" = "Chaparrillas";
+/// Aerocriaderos
+"TheMothership" = "Aerocriaderos";
+/// Niebla
+"Fog" = "Niebla";
+/// Ataques de escamacarras
+"CohockCharge" = "Ataques de escamacarras";
+/// Tornados gigantes
+"GiantTornado" = "Tornados gigantes";
+/// Erupciones de morrolodos
+"MudmouthEruptions" = "Erupciones de morrolodos";
 /// Cancelar
 "CommonCancel" = "Cancelar";
 /// Asalto almeja
 "CommonClamBlitz" = "Asalto almeja";
 /// Cerrar
 "CommonClose" = "Cerrar";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Alianza alevínica
@@ -408,6 +436,8 @@
 "CoopHistoryExWave" = "Ofensiva extra";
 /// Lástima...
 "CoopHistoryFailure" = "Lástima...";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Volver a los resultados de tareas
 "CoopHistoryGoToStats" = "Volver a los resultados de tareas";
 /// Alevines
@@ -430,6 +460,8 @@
 "CoopHistoryMonthlyReward" = "Objeto del mes";
 /// Siguiente
 "CoopHistoryNext" = "Siguiente";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// No hay resultados de tareas.
 "CoopHistoryNoData" = "No hay resultados de tareas.";
 /// Resultados de tareas no disponibles
@@ -438,6 +470,8 @@
 "CoopHistoryNotAvailableDescription" = "Solo los 50 registros más recientes están disponibles.";
 /// No pudo ser...
 "CoopHistoryNotDefeated" = "No pudo ser...";
+/// p
+"CoopHistoryP" = "p";
 /// Encargos completados
 "CoopHistoryPlayCount" = "Encargos completados";
 /// Anterior
@@ -534,6 +568,8 @@
 "RecordSub" = "Secundaria";
 /// Estadísticas
 "RecordTitle" = "Estadísticas";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// Sup. entintada
 "RecordTurfPoint" = "Sup. entintada";
 /// Sin estrenar
@@ -548,6 +584,8 @@
 "RecordWeaponRecordAppName" = "Armas";
 /// Victorias
 "RecordWinCount" = "Victorias";
+/// %
+"RecordWinRatio" = "%";
 /// Derechos de autor
 "SettingsAcknowledgements" = "Derechos de autor";
 /// Ajustes

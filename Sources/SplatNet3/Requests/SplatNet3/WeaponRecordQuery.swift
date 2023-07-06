@@ -19,31 +19,6 @@ final class WeaponRecordQuery: GraphQL {
 
     public struct Response: Codable {
         public let data: DataClass
-
-        public var assets: Asset {
-            Asset(
-                weapons: data.weaponRecords.nodes.compactMap({ node in
-                    guard let weaponId = WeaponInfoMainId(rawValue: node.weaponId)
-                    else {
-                        return nil
-                    }
-                    return SPAssetType(key: weaponId, url: node.image2d.url)
-                }),
-                specials: Array(Set(data.weaponRecords.nodes.compactMap({ node in
-                    guard let specialId = WeaponInfoSpecialId(rawValue: node.specialWeapon.specialWeaponInfoMainId + 20_000)
-                    else {
-                        return nil
-                    }
-                    return SPAssetType(key: specialId, url: node.specialWeapon.image.url)
-                })))
-            )
-        }
-    }
-
-    public struct Asset: Codable {
-        var weapons: [SPAssetType<WeaponInfoMainId>]
-
-        var specials: [SPAssetType<WeaponInfoSpecialId>]
     }
 
     public struct DataClass: Codable {
@@ -66,7 +41,20 @@ final class WeaponRecordQuery: GraphQL {
     }
 
     public struct SpecialWeapon: Codable {
-        public let specialWeaponInfoMainId: Int
+        public let specialWeaponId: Int
         public let image: URLComponent
+    }
+}
+
+extension WeaponRecordQuery.Response {
+    /// 1. WeaponInfoMainId
+    /// 2. WeaponInfoSpecialId
+    var assetURLs: Set<URL> {
+        Set(data.weaponRecords.nodes.flatMap({ node -> [URL] in
+            [
+                node.image2d.url,
+                node.specialWeapon.image.url
+            ]
+        }))
     }
 }

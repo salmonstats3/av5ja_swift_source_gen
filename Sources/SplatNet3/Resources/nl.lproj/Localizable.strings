@@ -124,6 +124,8 @@
 "SakeBigBoss" = "Salmonster";
 /// Salmometer
 "SakeBigBossGauge" = "Salmometer";
+/// Opstelling bezig
+"InitialSetup" = "Opstelling bezig";
 /// Over
 "CommonAbout" = "Over";
 /// Werkelijk
@@ -324,12 +326,38 @@
 "CommonUseSystemTheme" = "Apparaatinstellingen gebruiken";
 /// Licentie
 "CommonLicense" = "Licentie";
+/// dd-MM-yyyy HH:mm
+"DateTimeYearFormat" = "dd-MM-yyyy HH:mm";
+/// dd-MM HH:mm
+"DateTimeFormat" = "dd-MM HH:mm";
+/// VOLTOOID!
+"CoopHistoryRandomComplete" = "VOLTOOID!";
+/// -
+"WaterLevels" = "-";
+/// Stormloop
+"Rush" = "Stormloop";
+/// Het zoeken van Goldies
+"GoldieSeeking" = "Het zoeken van Goldies";
+/// Grillers
+"Griller" = "Grillers";
+/// Het moederschip
+"TheMothership" = "Het moederschip";
+/// Mist
+"Fog" = "Mist";
+/// Storm van Sallogs
+"CohockCharge" = "Storm van Sallogs";
+/// Reuzentornado
+"GiantTornado" = "Reuzentornado";
+/// Uitbarstingen van Moddermuilen
+"MudmouthEruptions" = "Uitbarstingen van Moddermuilen";
 /// Annuleren
 "CommonCancel" = "Annuleren";
 /// Schelpenstrijd
 "CommonClamBlitz" = "Schelpenstrijd";
 /// Sluiten
 "CommonClose" = "Sluiten";
+/// :
+"CommonColonRule" = ":";
 /// Big Run
 "CommonCoopBigRun" = "Big Run";
 /// Bedrijfseitje
@@ -408,6 +436,8 @@
 "CoopHistoryExWave" = "Extra golf";
 /// Helaas...
 "CoopHistoryFailure" = "Helaas...";
+/// ✓
+"CoopHistoryGj" = "✓";
 /// Terug naar werkverledenlijst
 "CoopHistoryGoToStats" = "Terug naar werkverledenlijst";
 /// Gouden eieren
@@ -430,6 +460,8 @@
 "CoopHistoryMonthlyReward" = "Uitrusting voor deze maand";
 /// Volgende klus
 "CoopHistoryNext" = "Volgende klus";
+/// ✘
+"CoopHistoryNg" = "✘";
 /// Er is geen werkverleden.
 "CoopHistoryNoData" = "Er is geen werkverleden.";
 /// Werkverleden niet beschikbaar
@@ -438,6 +470,8 @@
 "CoopHistoryNotAvailableDescription" = "Alleen de 50 meest recente klussen zijn beschikbaar.";
 /// Mislukt...
 "CoopHistoryNotDefeated" = "Mislukt...";
+/// p
+"CoopHistoryP" = "p";
 /// Klussen
 "CoopHistoryPlayCount" = "Klussen";
 /// Vorige klus
@@ -534,6 +568,8 @@
 "RecordSub" = "Subwapen";
 /// Statistieken
 "RecordTitle" = "Statistieken";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// Geverfde grond
 "RecordTurfPoint" = "Geverfde grond";
 /// Niet gespeelde levels
@@ -548,6 +584,8 @@
 "RecordWeaponRecordAppName" = "Wapens";
 /// Overwinningen
 "RecordWinCount" = "Overwinningen";
+/// %
+"RecordWinRatio" = "%";
 /// Copyrights
 "SettingsAcknowledgements" = "Copyrights";
 /// Instellingen

@@ -1,7 +1,7 @@
 //
 //  LocalizedType.swift
 //
-//  Created by tkgstrator on 2023/06/04
+//  Created by tkgstrator on 2023/07/01
 //  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 
@@ -136,6 +136,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case SakeBigBoss
     /// オカシラゲージ
     case SakeBigBossGauge
+    /// セットアップ中です
+    case InitialSetup
     /// About
     case CommonAbout
     /// 実測値
@@ -336,12 +338,38 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CommonUseSystemTheme
     /// ライセンス
     case CommonLicense
+    /// yyyy M/d HH:mm
+    case DateTimeYearFormat
+    /// M/d HH:mm
+    case DateTimeFormat
+    /// コンプリート！
+    case CoopHistoryRandomComplete
+    /// -
+    case WaterLevels
+    /// ラッシュ
+    case Rush
+    /// キンシャケ探し
+    case GoldieSeeking
+    /// グリル発進
+    case Griller
+    /// ハコビヤ襲来
+    case TheMothership
+    /// 霧
+    case Fog
+    /// ドスコイ大量発生
+    case CohockCharge
+    /// 巨大タツマキ
+    case GiantTornado
+    /// ドロシャケ噴出
+    case MudmouthEruptions
     /// キャンセル
     case CommonCancel
     /// ガチアサリ
     case CommonClamBlitz
     /// 閉じる
     case CommonClose
+    /// :
+    case CommonColonRule
     /// ビッグラン
     case CommonCoopBigRun
     /// バイトチームコンテスト
@@ -388,6 +416,12 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryAverageClearWaves
     /// ビッグラン
     case CoopHistoryBigrun
+    /// 銅
+    case CoopHistoryBigrunBronze
+    /// 金
+    case CoopHistoryBigrunGold
+    /// 銀
+    case CoopHistoryBigrunSilver
     /// クリアボーナス
     case CoopHistoryBonus
     /// オカシラシャケ出現！
@@ -448,6 +482,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case CoopHistoryNotAvailableDescription
     /// 倒せなかった...
     case CoopHistoryNotDefeated
+    /// p
+    case CoopHistoryP
     /// バイト回数
     case CoopHistoryPlayCount
     /// 前のバイト
@@ -538,6 +574,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case RecordSub
     /// きろく
     case RecordTitle
+    /// p
+    case RecordTotalTurfPoint
     /// 塗りポイント
     case RecordTurfPoint
     /// 遊んでないステージ
@@ -552,6 +590,8 @@ public enum LocalizedType: String, CaseIterable, Identifiable {
     case RecordWeaponRecordAppName
     /// 勝利数
     case RecordWinCount
+    /// %
+    case RecordWinRatio
     /// 権利表記
     case SettingsAcknowledgements
     /// 設定

@@ -22,11 +22,6 @@ public final class StageScheduleQuery: GraphQL {
     // MARK: - Response
     public struct Response: Codable {
         public let data: DataClass
-
-        /// アセット
-        public var assets: [SPAssetType<CoopStageId>] {
-            data.coopGroupingSchedule.schedules.map({ SPAssetType<CoopStageId>(key: $0.setting.coopStage.id, url: $0.setting.coopStage.image.url) })
-        }
     }
 
     // MARK: - DataClass
@@ -34,7 +29,7 @@ public final class StageScheduleQuery: GraphQL {
 //        public let xSchedules: Schedules
 //        public let festSchedules: Schedules
 //        public let leagueSchedules: Schedules
-//        public let regularSchedules: Schedules
+        public let regularSchedules: Schedules
 //        public let bankaraSchedules: Schedules
         public let coopGroupingSchedule: CoopGroupingSchedule
 //        public let currentFest: JSONNull?
@@ -66,7 +61,7 @@ public final class StageScheduleQuery: GraphQL {
 //        public let bankaraMatchSettings: [MatchSetting]?
 //        public let festMatchSetting: JSONNull?
 //        public let leagueMatchSetting: MatchSetting?
-//        public let regularMatchSetting: MatchSetting?
+        public let regularMatchSetting: MatchSetting?
 //        public let xMatchSetting: MatchSetting?
     }
 
@@ -108,9 +103,9 @@ public final class StageScheduleQuery: GraphQL {
 
     // MARK: - VsStage
     public struct VsStage: Codable {
-        @IntegerRawValue public var id: VsStageId
+//        @IntegerRawValue public var id: VsStageId
         public var vsStageId: VsStageId
-        public let name: String
+//        public let name: String
         public let image: Common.URL<VsStageKey>
     }
 
@@ -164,5 +159,19 @@ public final class StageScheduleQuery: GraphQL {
         public let winRateLF: Decimal?
         public let winRateGl: Decimal?
         public let winRateCl: Decimal?
+    }
+}
+
+extension StageScheduleQuery.Response {
+    /// 1. WeaponInfoMainId
+    /// 2. CoopStageId
+    var assetURLs: Set<URL> {
+        let coopStageURLs: Set<URL> = Set(data.coopGroupingSchedule.schedules.flatMap({ node -> [URL] in
+            [node.setting.coopStage.image.url] + node.setting.weapons.map({ $0.image.url })
+        }))
+        let regularStageURLs: Set<URL> = Set(data.regularSchedules.nodes.compactMap({ $0.regularMatchSetting }).flatMap({ node -> [URL] in
+            node.vsStages.map({ $0.image.url })
+        }))
+        return coopStageURLs.union(regularStageURLs)
     }
 }

@@ -1,7 +1,7 @@
 //
-//  WeaponInfoMainId.swift
+//  WeaponInfoMain.swift
 //
-//  Created by tkgstrator on 2023/06/02
+//  Created by tkgstrator on 2023/06/11
 //  Copyright @2023 Magi, Corporation. All rights reserved.
 //
 
@@ -132,15 +132,15 @@ public enum WeaponInfoMainKey: String, UnsafeRawRepresentable {
     ///  ドライブワイパー
     case SaberLite = "3aa72d418643038a9e3248af734b0d6a0bf3d3bf9793d75912b1b959f93c2258"
     ///  クマサン印のブラスター
-    case BlasterBear = "fd99f77764454a7d7d3826c9578ee1ef0632ad38b7095c624f4c12c54feb7756"
+    case BlasterBear = "0962405d6aecff4a075c46e895c42984e33b26c4b2b4b25c5058366db3c35ba4"
     ///  クマサン印のチャージャー
-    case ChargerBear = "2d6aa0dfc37c1796ef7ae50b8079d74cb7a8879b75e7a8b87dca7dad5395b0e6"
+    case ChargerBear = "5cc158250a207241f51d767a47bbb6139fe1c4fb652cc182b73aac93baa659c5"
     ///  クマサン印のスロッシャー
-    case SlosherBear = "65c8bcfe3c9dbecb2943bd05a40fcb7273873aeedc6d6d5f9fcd90b83e7cd527"
+    case SlosherBear = "bf89bcf3d3a51badd78b436266e6b7927d99ac386e083023df3551da6b39e412"
     ///  クマサン印のシェルター
-    case ShelterBear = "4ba71522381c0074ec075728f26d3935b21009fc0f34664f68e84f02ef929f89"
+    case ShelterBear = "3380019464e3111a0f40e633be25f73ad34ec1844d2dc7852a349b29b238932b"
     ///  クマサン印のストリンガー
-    case StringerBear = "5fc803c6af92f9707eb01d5892287a2beba3b9504aa7cff82609ed554e03711d"
+    case StringerBear = "36e03d8d1e6bc4f7449c5450f4410c6c8449cde0548797d22ab641cd488d2060"
     ///  クマサン印のワイパー
-    case SaberBear = "f8fa3b11011ba3ebda464c90e074c857b46d6f5fbe5a148add521f544d2b9027"
+    case SaberBear = "480bc1dfb0beed1ce4625a6a6b035e4bac711de019bb9b0e5125e4e7e39e0719"
 }

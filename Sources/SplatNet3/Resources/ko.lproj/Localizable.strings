@@ -124,6 +124,8 @@
 "SakeBigBoss" = "두목연어";
 /// 두목 게이지
 "SakeBigBossGauge" = "두목 게이지";
+/// 설정 진행 중
+"InitialSetup" = "설정 진행 중";
 /// 소개
 "CommonAbout" = "소개";
 /// 실제의
@@ -324,12 +326,38 @@
 "CommonUseSystemTheme" = "장치 설정에 따라 다릅니다";
 /// 라이선스
 "CommonLicense" = "라이선스";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// 컴플리트!
+"CoopHistoryRandomComplete" = "컴플리트!";
+/// undefined
+"WaterLevels" = "undefined";
+/// 러시
+"Rush" = "러시";
+/// 황금연어 찾기
+"GoldieSeeking" = "황금연어 찾기";
+/// 그릴 발진
+"Griller" = "그릴 발진";
+/// 운반함 급습
+"TheMothership" = "운반함 급습";
+/// 안개
+"Fog" = "안개";
+/// 덩치연어 대량 발생
+"CohockCharge" = "덩치연어 대량 발생";
+/// 거대 회오리
+"GiantTornado" = "거대 회오리";
+/// 진흙연어 분출
+"MudmouthEruptions" = "진흙연어 분출";
 /// 취소
 "CommonCancel" = "취소";
 /// 랭크 바지락
 "CommonClamBlitz" = "랭크 바지락";
 /// 닫기
 "CommonClose" = "닫기";
+/// :
+"CommonColonRule" = ":";
 /// 빅 런
 "CommonCoopBigRun" = "빅 런";
 /// 아르바이트 팀 콘테스트
@@ -344,6 +372,8 @@
 "CommonEnd" = "끝내기";
 /// 물음표
 "CommonGearPowerBlank" = "물음표";
+/// 홈
+"CommonHome" = "홈";
 /// 오징어넷 3
 "CommonIkaring3" = "오징어넷 3";
 /// 로딩 중
@@ -374,6 +404,12 @@
 "CoopHistoryAverageClearWaves" = "평균 클리어 WAVE 수";
 /// 빅 런
 "CoopHistoryBigrun" = "빅 런";
+/// 동
+"CoopHistoryBigrunBronze" = "동";
+/// 금
+"CoopHistoryBigrunGold" = "금";
+/// 은
+"CoopHistoryBigrunSilver" = "은";
 /// 클리어 보너스
 "CoopHistoryBonus" = "클리어 보너스";
 /// 두목연어 출현!
@@ -434,6 +470,8 @@
 "CoopHistoryNotAvailableDescription" = "최신 아르바이트 히스토리는 50전까지 열람할 수 있습니다.";
 /// 쓰러뜨리지 못했다…
 "CoopHistoryNotDefeated" = "쓰러뜨리지 못했다…";
+/// p
+"CoopHistoryP" = "p";
 /// 아르바이트 횟수
 "CoopHistoryPlayCount" = "아르바이트 횟수";
 /// 이전 히스토리
@@ -528,6 +566,8 @@
 "RecordSub" = "서브";
 /// 기록
 "RecordTitle" = "기록";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// 색칠 포인트
 "RecordTurfPoint" = "색칠 포인트";
 /// 미플레이 스테이지
@@ -542,6 +582,8 @@
 "RecordWeaponRecordAppName" = "무기";
 /// 승리 수
 "RecordWinCount" = "승리 수";
+/// %
+"RecordWinRatio" = "%";
 /// 권리 표기
 "SettingsAcknowledgements" = "권리 표기";
 /// 설정

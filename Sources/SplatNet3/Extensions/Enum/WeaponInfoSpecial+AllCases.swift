@@ -9,29 +9,47 @@ import Charts
 import Foundation
 
 public extension WeaponInfoSpecialId {
-    static var allCases: [WeaponInfoSpecialId] {
-        [
-            .SpNiceBall,
-            .SpShockSonar,
-            .SpMicroLaser,
-            .SpJetpack,
-            .SpChariot,
-            .SpSkewer,
-            .SpTripleTornado,
-        ]
-    }
+    static let regular: [WeaponInfoSpecialId] =
+    [
+        .SpNiceBall,
+        .SpShockSonar,
+        .SpMicroLaser,
+        .SpJetpack,
+        .SpChariot,
+        .SpSkewer,
+        .SpTripleTornado,
+    ]
+//    static let allCases: [WeaponInfoSpecialId] =
+//    [
+//        .SpNiceBall,
+//        .SpShockSonar,
+//        .SpMicroLaser,
+//        .SpJetpack,
+//        .SpChariot,
+//        .SpSkewer,
+//        .SpTripleTornado,
+//    ]
 }
 
 public extension WeaponInfoSpecialKey {
-    static var allCases: [WeaponInfoSpecialKey] {
-        [
-            .SpNiceBall,
-            .SpShockSonar,
-            .SpMicroLaser,
-            .SpJetpack,
-            .SpChariot,
-            .SpSkewer,
-            .SpTripleTornado,
-        ]
-    }
+    static let regular: [WeaponInfoSpecialKey] =
+    [
+        .SpNiceBall,
+        .SpShockSonar,
+        .SpMicroLaser,
+        .SpJetpack,
+        .SpChariot,
+        .SpSkewer,
+        .SpTripleTornado,
+    ]
+//    static let allCases: [WeaponInfoSpecialKey] =
+//    [
+//        .SpNiceBall,
+//        .SpShockSonar,
+//        .SpMicroLaser,
+//        .SpJetpack,
+//        .SpChariot,
+//        .SpSkewer,
+//        .SpTripleTornado,
+//    ]
 }

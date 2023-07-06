@@ -10,7 +10,7 @@ import Foundation
 
 public extension CoopStageId {
     var description: String {
-        NSLocalizedString("CoopStage_\(String(describing: self))", bundle: .module, comment: "")
+        NSLocalizedString(String(describing: self), bundle: .module, comment: "")
     }
 
     static let allCases: [CoopStageId] = [

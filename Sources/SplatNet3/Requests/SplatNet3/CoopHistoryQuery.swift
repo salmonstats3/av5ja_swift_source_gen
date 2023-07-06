@@ -44,10 +44,6 @@ public final class CoopHistoryQuery: GraphQL {
         public let scale: CoopHistory.Scale
         public let pointCard: PointCard
         public let historyGroups: Common.Node<HistoryGroup>
-
-        var weaponURLs: [SPAssetType<WeaponInfoMainId>] {
-            historyGroups.nodes.flatMap({ $0.historyDetails.nodes.flatMap({ $0.weapons.map({ SPAssetType(key: WeaponInfoMainId(key: $0.image.hash), url: $0.image.url) }) }) })
-        }
     }
 
     // MARK: - CoopSchedule
@@ -136,5 +132,29 @@ public final class CoopHistoryQuery: GraphQL {
 extension CoopHistoryQuery.HistoryGroup {
     func asSchedule() -> CoopHistoryQuery.CoopSchedule {
         CoopHistoryQuery.CoopSchedule(history: self)
+    }
+}
+
+extension CoopHistoryQuery.Response {
+    func getResultIds(from playTime: Date? = nil) -> [Common.ResultId] {
+        let resultIds: [Common.ResultId] = data.coopResult.historyGroups.nodes.flatMap({ node in
+            node.historyDetails.nodes.map({ $0.id })
+        })
+        guard let playTime: Date = playTime
+        else {
+            return resultIds
+        }
+        return resultIds.filter({ $0.playTime > playTime })
+    }
+}
+
+extension Array where Element == CoopHistoryQuery.HistoryGroup {
+    /// 1. WeaponInfoMainId
+    var assetURLs: Set<URL> {
+        Set(flatMap({ group in
+            group.historyDetails.nodes.flatMap({ node in
+                node.weapons.map({ $0.image.url })
+            })
+        }))
     }
 }

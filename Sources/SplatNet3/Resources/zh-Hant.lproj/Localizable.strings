@@ -124,6 +124,8 @@
 "SakeBigBoss" = "頭目鮭魚";
 /// 頭目槽
 "SakeBigBossGauge" = "頭目槽";
+/// 設置正在進行中
+"InitialSetup" = "設置正在進行中";
 /// 關於
 "CommonAbout" = "關於";
 /// 實際的
@@ -324,12 +326,38 @@
 "CommonUseSystemTheme" = "取決於設備設置";
 /// 許可證
 "CommonLicense" = "許可證";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// COMPLETE!
+"CoopHistoryRandomComplete" = "COMPLETE!";
+/// -
+"WaterLevels" = "-";
+/// 狂潮
+"Rush" = "狂潮";
+/// 寻找金鲑鱼
+"GoldieSeeking" = "寻找金鲑鱼";
+/// 烤架鱼进发
+"Griller" = "烤架鱼进发";
+/// 走私鱼来袭
+"TheMothership" = "走私鱼来袭";
+/// 雾
+"Fog" = "雾";
+/// 大胖鱼大量出现
+"CohockCharge" = "大胖鱼大量出现";
+/// 巨型龙卷风
+"GiantTornado" = "巨型龙卷风";
+/// 泥鲑鱼喷发
+"MudmouthEruptions" = "泥鲑鱼喷发";
 /// 取消
 "CommonCancel" = "取消";
 /// 真格蛤蜊
 "CommonClamBlitz" = "真格蛤蜊";
 /// 關閉
 "CommonClose" = "關閉";
+/// 
+"CommonColonRule" = "";
 /// 大型跑
 "CommonCoopBigRun" = "大型跑";
 /// 團隊打工競賽
@@ -376,6 +404,12 @@
 "CoopHistoryAverageClearWaves" = "平均完成WAVE數";
 /// 大型跑
 "CoopHistoryBigrun" = "大型跑";
+/// 銅
+"CoopHistoryBigrunBronze" = "銅";
+/// 金
+"CoopHistoryBigrunGold" = "金";
+/// 銀
+"CoopHistoryBigrunSilver" = "銀";
 /// 完成獎勵
 "CoopHistoryBonus" = "完成獎勵";
 /// 頭目鮭魚出現！
@@ -436,6 +470,8 @@
 "CoopHistoryNotAvailableDescription" = "可瀏覽的打工記錄僅限最新的50戰";
 /// 擊倒失敗……
 "CoopHistoryNotDefeated" = "擊倒失敗……";
+/// p
+"CoopHistoryP" = "p";
 /// 打工次數
 "CoopHistoryPlayCount" = "打工次數";
 /// 上一場打工
@@ -528,6 +564,8 @@
 "RecordSub" = "次要武器";
 /// 記錄
 "RecordTitle" = "記錄";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// 塗墨點數
 "RecordTurfPoint" = "塗墨點數";
 /// 未遊玩的場地
@@ -542,6 +580,8 @@
 "RecordWeaponRecordAppName" = "武器";
 /// 獲勝數
 "RecordWinCount" = "獲勝數";
+/// %
+"RecordWinRatio" = "%";
 /// 著作權聲明
 "SettingsAcknowledgements" = "著作權聲明";
 /// 設定

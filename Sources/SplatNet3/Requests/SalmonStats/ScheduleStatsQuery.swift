@@ -16,7 +16,6 @@ extension SalmonStats {
     public var baseURL: URL {
         #if targetEnvironment(simulator)
         URL(unsafeString: "https://api.splatnet3.com")
-//        URL(unsafeString: "http://localhost:8080/")
         #else
         URL(unsafeString: "https://api.splatnet3.com")
         #endif

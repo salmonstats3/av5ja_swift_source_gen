@@ -124,6 +124,8 @@
 "SakeBigBoss" = "オカシラシャケ";
 /// オカシラゲージ
 "SakeBigBossGauge" = "オカシラゲージ";
+/// セットアップ中です
+"InitialSetup" = "セットアップ中です";
 /// About
 "CommonAbout" = "About";
 /// 実測値
@@ -324,12 +326,38 @@
 "CommonUseSystemTheme" = "端末の設定を利用する";
 /// ライセンス
 "CommonLicense" = "ライセンス";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// コンプリート！
+"CoopHistoryRandomComplete" = "コンプリート！";
+/// -
+"WaterLevels" = "-";
+/// ラッシュ
+"Rush" = "ラッシュ";
+/// キンシャケ探し
+"GoldieSeeking" = "キンシャケ探し";
+/// グリル発進
+"Griller" = "グリル発進";
+/// ハコビヤ襲来
+"TheMothership" = "ハコビヤ襲来";
+/// 霧
+"Fog" = "霧";
+/// ドスコイ大量発生
+"CohockCharge" = "ドスコイ大量発生";
+/// 巨大タツマキ
+"GiantTornado" = "巨大タツマキ";
+/// ドロシャケ噴出
+"MudmouthEruptions" = "ドロシャケ噴出";
 /// キャンセル
 "CommonCancel" = "キャンセル";
 /// ガチアサリ
 "CommonClamBlitz" = "ガチアサリ";
 /// 閉じる
 "CommonClose" = "閉じる";
+/// :
+"CommonColonRule" = ":";
 /// ビッグラン
 "CommonCoopBigRun" = "ビッグラン";
 /// バイトチームコンテスト
@@ -376,6 +404,12 @@
 "CoopHistoryAverageClearWaves" = "平均クリアWAVE数";
 /// ビッグラン
 "CoopHistoryBigrun" = "ビッグラン";
+/// 銅
+"CoopHistoryBigrunBronze" = "銅";
+/// 金
+"CoopHistoryBigrunGold" = "金";
+/// 銀
+"CoopHistoryBigrunSilver" = "銀";
 /// クリアボーナス
 "CoopHistoryBonus" = "クリアボーナス";
 /// オカシラシャケ出現！
@@ -436,6 +470,8 @@
 "CoopHistoryNotAvailableDescription" = "閲覧できるバイトヒストリーは、最新の50戦までです。";
 /// 倒せなかった...
 "CoopHistoryNotDefeated" = "倒せなかった...";
+/// p
+"CoopHistoryP" = "p";
 /// バイト回数
 "CoopHistoryPlayCount" = "バイト回数";
 /// 前のバイト
@@ -526,6 +562,8 @@
 "RecordSub" = "サブ";
 /// きろく
 "RecordTitle" = "きろく";
+/// p
+"RecordTotalTurfPoint" = "p";
 /// 塗りポイント
 "RecordTurfPoint" = "塗りポイント";
 /// 遊んでないステージ
@@ -540,6 +578,8 @@
 "RecordWeaponRecordAppName" = "ブキ";
 /// 勝利数
 "RecordWinCount" = "勝利数";
+/// %
+"RecordWinRatio" = "%";
 /// 権利表記
 "SettingsAcknowledgements" = "権利表記";
 /// 設定
