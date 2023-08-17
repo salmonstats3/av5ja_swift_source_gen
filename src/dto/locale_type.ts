@@ -1,39 +1,40 @@
 import { Expose, Transform, plainToInstance } from 'class-transformer';
 import fetch from 'node-fetch';
+
 import { Translation } from './translation';
 
 export const LocaleKey = {
+  CNzh: 'locale12',
   EUde: 'locale0',
   EUen: 'locale1',
-  USen: 'locale2',
   EUes: 'locale3',
-  USes: 'locale4',
-  USfr: 'locale5',
   EUfr: 'locale6',
   EUit: 'locale7',
-  JPja: 'locale8',
-  KRko: 'locale9',
   EUnl: 'locale10',
   EUru: 'locale11',
-  CNzh: 'locale12',
+  JPja: 'locale8',
+  KRko: 'locale9',
   TWzh: 'locale13',
+  USen: 'locale2',
+  USes: 'locale4',
+  USfr: 'locale5',
 } as const;
 
 export const LocaleId = {
+  CNzh: 153,
   EUde: 139,
   EUen: 495,
-  USen: 0,
   EUes: 888,
-  USes: 835,
-  USfr: 479,
   EUfr: 277,
   EUit: 448,
-  JPja: 31,
-  KRko: 401,
   EUnl: 286,
   EUru: 303,
-  CNzh: 153,
+  JPja: 31,
+  KRko: 401,
   TWzh: 56,
+  USen: 0,
+  USes: 835,
+  USfr: 479,
 } as const;
 
 /**
@@ -123,7 +124,7 @@ export class LocaleType {
     const url = `https://leanny.github.io/splat3/data/language/${locale}.json`;
     const objects = {
       ...JSON.parse(await (await fetch(url)).text()),
-      ...{ id: this.id, key: this.key, locale: this.locale, xcode: this.xcode, hash: this.hash },
+      ...{ hash: this.hash, id: this.id, key: this.key, locale: this.locale, xcode: this.xcode },
     };
     return plainToInstance(Translation, objects, { excludeExtraneousValues: true });
   }

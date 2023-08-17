@@ -1,11 +1,13 @@
-import { EnumURLType, InternalType } from '@/dto/internal_type';
-import { URLType } from '@/dto/urls';
 import dayjs from 'dayjs';
+
 import { createFile } from './revision';
 
+import { EnumURLType, InternalType } from '@/dto/internal_type';
+import { URLType } from '@/dto/urls';
+
 export const OutputType = {
-  Key: 'Key',
   Id: 'Id',
+  Key: 'Key',
 } as const;
 
 type OutputType = (typeof OutputType)[keyof typeof OutputType];
@@ -21,8 +23,10 @@ export class SwiftEnumWriter {
       '//',
       `//  ${this.type.split('.')[0]}.swift`,
       '//',
-      `//  Created by tkgstrator on ${created_at}`,
-      `//  Copyright @${created_year} Magi, Corporation. All rights reserved.`,
+      `//  Created by tkgstrator on ${created_at}.`,
+      `//  Copyright @ ${created_year} Magi, Corporation. All rights reserved.`,
+      '//',
+      '//  Generated automatically by SplatNet3Gen, do not edit.',
       '//',
       '',
       'import Foundation',
@@ -72,7 +76,7 @@ export class SwiftEnumWriter {
 
   write(output: OutputType): void {
     const context: string = this.source(output);
-    const file_name: string = `sources/${output}s/${this.type.split('.')[0]}${output}.swift`;
+    const file_name = `sources/${output}s/${this.type.split('.')[0]}${output}.swift`;
     createFile(context, file_name);
   }
 

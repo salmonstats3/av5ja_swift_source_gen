@@ -1,8 +1,7 @@
 import { EnumURLType } from './dto/internal_type';
 import { LocaleType } from './dto/locale_type';
 import { Translation } from './dto/translation';
-import { Version } from './dto/urls';
-import { URLType } from './dto/urls';
+import { Version , URLType } from './dto/urls';
 import { OutputType, SwiftEnumWriter } from './utils/enum';
 
 const locales: LocaleType[] = await LocaleType.all_cases();

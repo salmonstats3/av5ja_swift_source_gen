@@ -30,16 +30,23 @@ export const Version = {
 } as const;
 
 export const URLType = {
-  WeaponInfoMain: 'WeaponInfoMain.json',
-  // WeaponInfoSub: "WeaponInfoSub.json",
-  WeaponInfoSpecial: 'WeaponInfoSpecial.json',
-  GearInfoHead: 'GearInfoHead.json',
-  GearInfoClothes: 'GearInfoClothes.json',
-  GearInfoShoes: 'GearInfoShoes.json',
-  NamePlateBgInfo: 'NamePlateBgInfo.json',
   BadgeInfo: 'BadgeInfo.json',
-  CoopSkinInfo: 'CoopSkinInfo.json',
+  
   CoopEnemyInfo: 'CoopEnemyInfo.json',
+  
+CoopSkinInfo: 'CoopSkinInfo.json',
+  
+GearInfoClothes: 'GearInfoClothes.json',
+  
+GearInfoHead: 'GearInfoHead.json',
+  
+GearInfoShoes: 'GearInfoShoes.json',
+  
+NamePlateBgInfo: 'NamePlateBgInfo.json',
+  
+WeaponInfoMain: 'WeaponInfoMain.json',
+  // WeaponInfoSub: "WeaponInfoSub.json",
+WeaponInfoSpecial: 'WeaponInfoSpecial.json',
 } as const;
 
 export async function request(url: URLType, version: Version): Promise<InternalType[]> {

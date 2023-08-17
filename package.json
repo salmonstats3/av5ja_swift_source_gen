@@ -4,7 +4,9 @@
   "main": "index.ts",
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "lint:fix": "eslint --fix \"{src,test}/**/*.ts\""
   },
   "type": "module",
   "dependencies": {
@@ -31,5 +33,9 @@
     "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0"
   }
 }

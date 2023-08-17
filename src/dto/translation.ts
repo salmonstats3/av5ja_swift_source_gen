@@ -1,13 +1,16 @@
-import { Expose, Transform } from 'class-transformer';
 import 'reflect-metadata';
-import { createFile } from '../utils/revision';
-import { calc_hash } from './internal_type';
-import dayjs from 'dayjs';
-import { LocaleId, LocaleKey } from './locale_type';
-import fetch, { Response } from 'node-fetch';
-import camelcaseKeys from 'camelcase-keys';
-import yaml from 'js-yaml';
 import fs from 'fs';
+
+import camelcaseKeys from 'camelcase-keys';
+import { Expose, Transform } from 'class-transformer';
+import dayjs from 'dayjs';
+import yaml from 'js-yaml';
+import fetch, { Response } from 'node-fetch';
+
+import { createFile } from '../utils/revision';
+
+import { calc_hash } from './internal_type';
+import { LocaleId, LocaleKey } from './locale_type';
 
 /**
  * 翻訳, ソースコードを出力するクラス
@@ -27,7 +30,7 @@ class TranslationType extends Map<string, string> {
     const created_at: string = dayjs().format('YYYY/MM/DD');
     const created_year: string = dayjs().format('YYYY');
     const default_value: string = this.keys().next().value.replace(/_/g, '');
-    let translations: string[] = [
+    const translations: string[] = [
       '//',
       `//  ${this.name}.swift`,
       '//  SplatNet3',
@@ -91,7 +94,7 @@ export class Translation {
 
   @Expose({ name: 'CommonMsg/Coop/CoopGrade' })
   @Transform((param) => {
-    const objects: Map<string, string> = new Map(Object.entries(param.value).filter(([key, _]) => !key.match(/Arbeiter/))) as Map<
+    const objects: Map<string, string> = new Map(Object.entries(param.value).filter(([key]) => !key.match(/Arbeiter/))) as Map<
       string,
       string
     >;
@@ -114,7 +117,7 @@ export class Translation {
   @Expose({ name: 'CommonMsg/Glossary' })
   @Transform((param) => {
     const objects: Map<string, string> = new Map(
-      Object.entries(param.value).filter(([key, _]) => key.match(/^Coop/) || key.match(/BigBoss/)),
+      Object.entries(param.value).filter(([key]) => key.match(/^Coop/) || key.match(/BigBoss/)),
     ) as Map<string, string>;
     return new TranslationType(Object.fromEntries(objects), 'CoopGlossaryKey');
   })
@@ -272,7 +275,7 @@ export class Translation {
   private get_source(object: TranslationType): string {
     const created_at: string = dayjs().format('YYYY/MM/DD');
     const created_year: string = dayjs().format('YYYY');
-    let translations: string[] = [
+    const translations: string[] = [
       '//',
       `//  LocalizedType.swift`,
       '//  SplatNet3',

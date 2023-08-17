@@ -92,7 +92,7 @@ export async function get_locale_bundles(): Promise<void> {
                 .trim()
                 .replace(/：|:^/g, ''),
             ])
-            .filter(([_, value]) => value.length >= 2),
+            .filter(([value]) => value.length >= 2),
         );
         // Save YAML
         createFile(yaml.dump(objects), `src/locales/${hash}/${locale.locale}.yaml`);

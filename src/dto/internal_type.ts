@@ -1,5 +1,7 @@
-import { Expose, Transform } from 'class-transformer';
 import { createHash } from 'crypto';
+
+import { Expose, Transform } from 'class-transformer';
+
 import { URLType, Version, request } from './urls';
 
 export class EnumURLType {
@@ -17,10 +19,10 @@ export class EnumURLType {
 }
 
 export interface InternalType {
-  id: number;
-  row_id: string;
   hash: string;
+  id: number;
   label?: string;
+  row_id: string;
 }
 
 export function calc_hash(key: string): string {
@@ -108,28 +110,28 @@ export class WeaponInfoMain implements InternalType {
 
   static get Random_Green(): InternalType {
     return {
+      hash: '473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1',
       id: -1,
       label: '緑ランダム',
       row_id: 'Random_Green',
-      hash: '473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1',
     } as InternalType;
   }
 
   static get Random_Gold(): InternalType {
     return {
+      hash: '9d7272733ae2f2282938da17d69f13419a935eef42239132a02fcf37d8678f10',
       id: -2,
       label: '金ランダム',
       row_id: 'Random_Gold',
-      hash: '9d7272733ae2f2282938da17d69f13419a935eef42239132a02fcf37d8678f10',
     } as InternalType;
   }
 
   static get Dummy(): InternalType {
     return {
+      hash: 'a23d035e2f37c502e85b6065ba777d93f42d6ca7017ed029baac6db512e3e17f',
       id: -999,
       label: 'はてな',
       row_id: 'Dummy',
-      hash: 'a23d035e2f37c502e85b6065ba777d93f42d6ca7017ed029baac6db512e3e17f',
     } as InternalType;
   }
 
@@ -167,10 +169,10 @@ export class WeaponInfoSpecial implements InternalType {
 
   static get Random_Green(): InternalType {
     return {
+      hash: '473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1',
       id: -1,
       label: '緑ランダム',
       row_id: 'Random_Green',
-      hash: '473fffb2442075078d8bb7125744905abdeae651b6a5b7453ae295582e45f7d1',
     } as InternalType;
   }
 
