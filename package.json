@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "predev": "yarn format && yarn lint",
     "dev": "ts-node src/index.ts",
-    "lint": "eslint --fix --ignore-path .gitignore './**/*.{js,ts}'",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "lint:fix": "eslint --fix \"{src,test}/**/*.ts\""
   },
   "type": "module",
   "dependencies": {
     "@types/node": "^20.2.5",
     "axios": "^1.4.0",
     "class-transformer": "^0.5.1",
-    "node-fetch": "^3.3.1"
+    "dayjs": "^1.11.7",
+    "node-fetch": "^3.3.1",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
@@ -31,5 +33,9 @@
     "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0"
   }
 }

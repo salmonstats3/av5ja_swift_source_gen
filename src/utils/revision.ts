@@ -67,8 +67,9 @@ export async function get_locale_bundles(): Promise<void> {
           .replace(/\\"/g, "'")
           .replace(/\\'/g, "'");
         const context: string = JSON.stringify(JSON.parse(txt), null, 2);
-        // Save JSON and YAML
+        // Save JSON
         createFile(context, `src/locales/${hash}/${locale.locale}.json`);
+        // Filter JSON keys
         const objects: any = Object.fromEntries(
           Object.entries(camelcaseKeys(JSON.parse(context), { pascalCase: true }))
             .filter(
@@ -91,8 +92,9 @@ export async function get_locale_bundles(): Promise<void> {
                 .trim()
                 .replace(/：|:^/g, ''),
             ])
-            .filter(([_, value]) => value.length >= 2),
+            .filter(([value]) => value.length >= 2),
         );
+        // Save YAML
         createFile(yaml.dump(objects), `src/locales/${hash}/${locale.locale}.yaml`);
       }
     }

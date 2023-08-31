@@ -1318,7 +1318,7 @@ CoopHistoryWaveResult:
     ru: Волны
     zh-Hant: 海浪
     zh-Hans: 波浪
-CoopHistoryHighestScore:
+CoopRecordHighestScore:
     ja: 最高
     en-GB: Max
     en: Max
@@ -1333,7 +1333,7 @@ CoopHistoryHighestScore:
     ru: Макс
     zh-Hant: 最高
     zh-Hans: 最大
-CoopHistoryAverageScore:
+CoopRecordAverageScore:
     ja: 平均
     en-GB: Avg
     en: Avg
@@ -1498,3 +1498,182 @@ CommonLicense:
     ru: Лицензия
     zh-Hant: 許可證
     zh-Hans: 许可证
+DateTimeYearFormat:
+    ja: yyyy M/d HH:mm
+    en-GB: dd/MM/yyyy HH:mm
+    en: dd/MM/yyyy HH:mm a
+    de: dd.MM.yyyy HH:mm
+    es: dd-MM-yyyy (HH:mm)
+    es-MX: dd/MM-yyyy (HH:mm)
+    fr-CA: dd/MM/yyyy HH:mm
+    fr: dd/MM/yyyy HH:mm
+    it: dd/MM/yyyy HH:mm
+    ko: yyyy M/d HH:mm
+    nl: dd-MM-yyyy HH:mm
+    ru: dd.MM.yyyy, HH:mm
+    zh-Hant: yyyy M/d HH:mm
+    zh-Hans: yyyy M/d HH:mm
+DateTimeFormat:
+    ja: M/d HH:mm
+    en-GB: dd/MM HH:mm
+    en: dd/MM HH:mm a
+    de: dd.MM. HH:mm
+    es: dd-MM HH:mm
+    es-MX: dd/MM HH:mm
+    fr-CA: dd/MM HH:mm
+    fr: dd/MM HH:mm
+    it: dd/MM HH:mm
+    ko: M/d HH:mm
+    nl: dd-MM HH:mm
+    ru: dd.MM, HH:mm
+    zh-Hant: M/d HH:mm
+    zh-Hans: M/d HH:mm
+CoopHistoryRandomComplete:
+    ja: コンプリート！
+    en-GB: COMPLETE!
+    en: COMPLETE!
+    de: ABGESCHLOSSEN!
+    es: ¡Completo!
+    es-MX: ¡Completo!
+    fr-CA: TERMINÉ!
+    fr: TERMINÉ!
+    it: COMPLETATO!
+    ko: 컴플리트!
+    nl: VOLTOOID!
+    ru: Выполнено!
+    zh-Hant: COMPLETE!
+    zh-Hans: COMPLETE! 
+WaterLevels:
+    ja: "-"
+    en-GB: "-"
+    en: "-"
+    de: "-"
+    es: "-"
+    es-MX: "-"
+    fr-CA: "-"
+    fr: "-"
+    it: "-"
+    nl: "-"
+    ru: "-"
+    zh-Hant: "-"
+    zh-Hans: "-"
+Rush:
+    ja: ラッシュ
+    en-GB: Rush
+    en: Rush
+    de: Ansturm
+    es: Avalanchas
+    es-MX: Frenesíes
+    fr-CA: Ruées
+    fr: Ruées
+    it: Orde
+    ko: 러시
+    nl: Stormloop
+    ru: Озверевшие самониды
+    zh-Hant: 狂潮
+    zh-Hans: 狂潮
+GoldieSeeking:
+    ja: キンシャケ探し
+    en-GB: Goldie Seeking
+    en: Goldie Seeking
+    de: Goldie-Suche
+    es: Detección de salmóreos
+    es-MX: Detección de orónidos
+    fr-CA: Chasse aux dorax
+    fr: Chasse aux Dorax
+    it: Scovare i Pinne d'oro
+    ko: 황금연어 찾기
+    nl: Het zoeken van Goldies
+    ru: Поиски Великого Сам О’Нида
+    zh-Hant: 寻找金鲑鱼
+    zh-Hans: 尋找金鮭魚
+Griller:
+    ja: グリル発進
+    en-GB: Griller
+    en: Griller
+    de: Killgrills
+    es: Chaparrillas
+    es-MX: Brasaletas
+    fr-CA: Barbeurks
+    fr: Barbeurks
+    it: Grill
+    ko: 그릴 발진
+    nl: Grillers
+    ru: Жаровнер
+    zh-Hant: 烤架鱼进发
+    zh-Hans: 烤架魚出動
+TheMothership:
+    ja: ハコビヤ襲来
+    en-GB: The Mothership
+    en: The Mothership
+    de: Das Mutterschiff
+    es: Aerocriaderos
+    es-MX: La salmonodriza
+    fr-CA: Vaisseau mère
+    fr: Vaisseaux mères
+    it: Astronave madre
+    ko: 운반함 급습
+    nl: Het moederschip
+    ru: Нерестилище
+    zh-Hant: 走私鱼来袭
+    zh-Hans: 走私魚來襲
+Fog:
+    ja: 霧
+    en-GB: Fog
+    en: Fog
+    de: Nebel
+    es: Niebla
+    es-MX: Niebla
+    fr-CA: Brouillard
+    fr: Brouillard
+    it: Nebbia
+    ko: 안개
+    nl: Mist
+    ru: Туман
+    zh-Hant: 雾
+    zh-Hans: 霧
+CohockCharge:
+    ja: ドスコイ大量発生
+    en-GB: Cohock Charge
+    en: Cohock Charge
+    de: Brocken-Sturmangriff
+    es: Ataques de escamacarras
+    es-MX: Ataques de agallones
+    fr-CA: Charges de sumoches
+    fr: Charges de Sumoches
+    it: Orde di Pinne Pingui
+    ko: 덩치연어 대량 발생
+    nl: Storm van Sallogs
+    ru: Штурм сковорейдеров
+    zh-Hant: 大胖鱼大量出现
+    zh-Hans: 大胖魚大量出現
+GiantTornado:
+    ja: 巨大タツマキ
+    en-GB: Giant Tornado
+    en: Giant Tornado
+    de: Riesentornados
+    es: Tornados gigantes
+    es-MX: Tornados gigantes
+    fr-CA: Tornade géante
+    fr: Tornade géante
+    it: Tornado gigante
+    ko: 거대 회오리
+    nl: Reuzentornado
+    ru: Гигантский торнадо
+    zh-Hant: 巨型龙卷风
+    zh-Hans: 巨型龍捲風
+MudmouthEruptions:
+    ja: ドロシャケ噴出
+    en-GB: Mudmouth Eruptions
+    en: Mudmouth Eruptions
+    de: Schlämmermaul-Eruptionen
+    es: Erupciones de morrolodos
+    es-MX: Erupciones de bocalodos
+    fr-CA: Émergence de salmonoïdes de boue
+    fr: Émergence de Salmonoïdes de boue
+    it: Eruzioni di Fangonoidi
+    ko: 진흙연어 분출
+    nl: Uitbarstingen van Moddermuilen
+    ru: Появление илистого ревуна
+    zh-Hant: 泥鲑鱼喷发
+    zh-Hans: 泥鮭魚噴發

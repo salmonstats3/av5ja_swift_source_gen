@@ -1,13 +1,21 @@
-// import { URLType, Version, request } from "./dto/urls"
-import { get_web_revision, get_locale_bundles } from './utils/revision';
+import { EnumURLType } from './dto/internal_type';
+import { LocaleType } from './dto/locale_type';
+import { Translation } from './dto/translation';
+import { Version , URLType } from './dto/urls';
+import { OutputType, SwiftEnumWriter } from './utils/enum';
 
-// 内部データを取得する
-// Object.values(URLType).forEach(async (url) => {
-//     const response = await request(url, Version.V400)
-//     console.log(response)
-// })
+const locales: LocaleType[] = await LocaleType.all_cases();
 
-// イカリング3からデータを取得する
-const response = await get_web_revision();
-console.log(response);
-await get_locale_bundles();
+locales.forEach(async (locale: LocaleType) => {
+  const translation: Translation = await locale.get_translation();
+  translation.write();
+});
+
+Object.values(URLType).forEach(async (url: URLType) => {
+  const data: EnumURLType = await EnumURLType.from(url, Version.V400);
+  const writer = new SwiftEnumWriter(data);
+
+  Object.values(OutputType).forEach((type) => {
+    writer.write(type);
+  });
+});
