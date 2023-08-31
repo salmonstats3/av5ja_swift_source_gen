@@ -7,7 +7,7 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'",
     "format:dev": "prettier --check '{src,tests}/**/*.ts'",
     "lint": "eslint --fix \"{src,test}/**/*.ts\"",
-    "lint:dev": "eslint --max-warnings=0 --ignore-path .gitignore '{src,test}/**/*.{js,ts}'",
+    "lint:dev": "eslint --max-warnings=0 --ignore-path .gitignore '{src,test}/**/*.{js,ts}'"
   },
   "type": "module",
   "dependencies": {
