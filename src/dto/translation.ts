@@ -43,7 +43,9 @@ class TranslationType extends Map<string, string> {
       '',
       `public enum ${this.name}: String, UnsafeRawRepresentable {`,
       `    public static var defaultValue: Self = .${default_value}`,
-      `    public var id: Int { ${this.name.slice(0, -3)}Id.allCases[${this.name}.allCases.firstIndex(of: self) ?? 0].rawValue }`,
+      `    public var id: Int { ${this.name.slice(0, -3)}Id.allCases[${
+        this.name
+      }.allCases.firstIndex(of: self) ?? 0].rawValue }`,
       '',
     ];
     this.forEach((value, key) => {
@@ -56,7 +58,9 @@ class TranslationType extends Map<string, string> {
         if (this.name === 'CoopStageKey') {
           if (key === 'Unknown') {
             translations.push(`    /// ${value}`);
-            translations.push(`    case ${key.replace(/_/g, '')} = "ffa84f05a6437395a0a128cad1a99e8dd0f303ce4fd687fa648617a0075d7ad9"`);
+            translations.push(
+              `    case ${key.replace(/_/g, '')} = "ffa84f05a6437395a0a128cad1a99e8dd0f303ce4fd687fa648617a0075d7ad9"`,
+            );
           } else {
             translations.push(`    /// ${value}`);
             translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Cop_${key}`)}"`);
@@ -94,10 +98,9 @@ export class Translation {
 
   @Expose({ name: 'CommonMsg/Coop/CoopGrade' })
   @Transform((param) => {
-    const objects: Map<string, string> = new Map(Object.entries(param.value).filter(([key]) => !key.match(/Arbeiter/))) as Map<
-      string,
-      string
-    >;
+    const objects: Map<string, string> = new Map(
+      Object.entries(param.value).filter(([key]) => !key.match(/Arbeiter/)),
+    ) as Map<string, string>;
     return new TranslationType(Object.fromEntries(objects), 'CoopGradeKey');
   })
   readonly CoopGrade: TranslationType;
@@ -226,7 +229,9 @@ export class Translation {
    */
   private get_yaml(): TranslationType {
     // YAML -> JSON
-    const array: [string, any][] = Object.entries(JSON.parse(JSON.stringify(yaml.load(fs.readFileSync(`resources/default.yaml`, 'utf8')))));
+    const array: [string, any][] = Object.entries(
+      JSON.parse(JSON.stringify(yaml.load(fs.readFileSync(`resources/default.yaml`, 'utf8')))),
+    );
     const object: Map<string, string> = this.convert(array);
     return new TranslationType(Object.fromEntries(object), 'Custom');
   }
