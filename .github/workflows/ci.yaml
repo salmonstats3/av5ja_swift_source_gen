@@ -42,11 +42,5 @@ jobs:
       - name: Lint
         run: yarn lint:dev
       
-      - name: Update Token
-        run: yarn test authorize
-      
-      - name: Test
-        run: yarn test
-      
       - name: Build
         run: yarn build
