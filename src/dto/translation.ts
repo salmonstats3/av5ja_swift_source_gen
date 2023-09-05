@@ -38,6 +38,8 @@ class TranslationType extends Map<string, string> {
       `//  Created by devonly on ${created_at}.`,
       `//  Copyright © ${created_year} Magi, Corporation. All rights reserved.`,
       '//',
+      '//  Generated automatically by SplatNet3Gen, do not edit.',
+      '//',
       '',
       'import Foundation',
       '',
