@@ -133,7 +133,9 @@ export class LocaleType {
    * LocaleId
    */
   @Expose({ name: 'id' })
-  @Transform((param) => Object.values(LocaleId)[(Object.values(LocaleId) as number[]).indexOf(parseInt(param.value, 10))])
+  @Transform(
+    (param) => Object.values(LocaleId)[(Object.values(LocaleId) as number[]).indexOf(parseInt(param.value, 10))],
+  )
   readonly id: LocaleId;
 
   /**

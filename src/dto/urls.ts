@@ -31,22 +31,22 @@ export const Version = {
 
 export const URLType = {
   BadgeInfo: 'BadgeInfo.json',
-  
+
   CoopEnemyInfo: 'CoopEnemyInfo.json',
-  
-CoopSkinInfo: 'CoopSkinInfo.json',
-  
-GearInfoClothes: 'GearInfoClothes.json',
-  
-GearInfoHead: 'GearInfoHead.json',
-  
-GearInfoShoes: 'GearInfoShoes.json',
-  
-NamePlateBgInfo: 'NamePlateBgInfo.json',
-  
-WeaponInfoMain: 'WeaponInfoMain.json',
+
+  CoopSkinInfo: 'CoopSkinInfo.json',
+
+  GearInfoClothes: 'GearInfoClothes.json',
+
+  GearInfoHead: 'GearInfoHead.json',
+
+  GearInfoShoes: 'GearInfoShoes.json',
+
+  NamePlateBgInfo: 'NamePlateBgInfo.json',
+
+  WeaponInfoMain: 'WeaponInfoMain.json',
   // WeaponInfoSub: "WeaponInfoSub.json",
-WeaponInfoSpecial: 'WeaponInfoSpecial.json',
+  WeaponInfoSpecial: 'WeaponInfoSpecial.json',
 } as const;
 
 export async function request(url: URLType, version: Version): Promise<InternalType[]> {
@@ -78,11 +78,17 @@ export async function request(url: URLType, version: Version): Promise<InternalT
         )
         .sort((a, b) => a.id - b.id);
     case URLType.GearInfoHead:
-      return response.map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true })).sort((a, b) => a.id - b.id);
+      return response
+        .map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true }))
+        .sort((a, b) => a.id - b.id);
     case URLType.GearInfoClothes:
-      return response.map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true })).sort((a, b) => a.id - b.id);
+      return response
+        .map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true }))
+        .sort((a, b) => a.id - b.id);
     case URLType.GearInfoShoes:
-      return response.map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true })).sort((a, b) => a.id - b.id);
+      return response
+        .map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true }))
+        .sort((a, b) => a.id - b.id);
     case URLType.CoopSkinInfo:
       return response
         .map((item: any) => plainToInstance(CoopSkinInfo, item, { excludeExtraneousValues: true }))
@@ -97,7 +103,9 @@ export async function request(url: URLType, version: Version): Promise<InternalT
         .filter((item) => item.id !== -1)
         .sort((a, b) => a.id - b.id);
     case URLType.BadgeInfo:
-      return response.map((item: any) => plainToInstance(BadgeInfo, item, { excludeExtraneousValues: true })).sort((a, b) => a.id - b.id);
+      return response
+        .map((item: any) => plainToInstance(BadgeInfo, item, { excludeExtraneousValues: true }))
+        .sort((a, b) => a.id - b.id);
     case URLType.NamePlateBgInfo:
       return response
         .map((item: any) =>
