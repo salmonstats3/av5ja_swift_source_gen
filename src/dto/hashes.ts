@@ -2,6 +2,7 @@ import dayjs from 'dayjs';
 import fetch from 'node-fetch';
 
 import { createFile } from '../utils/revision';
+import camelCase from 'camelcase';
 
 class Hash {
   id: string;
@@ -34,7 +35,7 @@ export class SHA256Hash {
       `public enum SHA256Hash: String, CaseIterable, Identifiable {`,
       `    public var id: String { rawValue }`,
       '',
-    ].concat(hashes.sort((a, b) => (a.id > b.id ? 1 : -1)).map((hash) => `\t case ${hash.id} = "${hash.key}"`));
+    ].concat(hashes.sort((a, b) => (a.id > b.id ? 1 : -1)).map((hash) => `\t case ${camelCase(hash.id, { pascalCase: true})} = "${hash.key}"`));
     source.push('}');
     createFile(source.join('\n'), `sources/SHA256Hash.swift`);
   }
@@ -45,7 +46,7 @@ export class SHA256Hash {
     const response: string = await (await fetch(url)).text();
     const regexp = /id:"([a-f0-9]{64})",metadata:{},name:"([\w]*)"/g;
     const matches: IterableIterator<RegExpMatchArray> = response.matchAll(regexp);
-    const hashes = [...matches].map((match) => new Hash(match[2], match[1]));
+    const hashes = [...matches].map((match) => new Hash(camelCase(match[2], {pascalCase: true }) , match[1]));
     return hashes;
   }
 
