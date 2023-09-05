@@ -1,9 +1,9 @@
+import { SHA256Hash } from './dto/hashes';
 import { EnumURLType } from './dto/internal_type';
 import { LocaleType } from './dto/locale_type';
 import { Translation } from './dto/translation';
-import { Version , URLType } from './dto/urls';
+import { Version, URLType } from './dto/urls';
 import { OutputType, SwiftEnumWriter } from './utils/enum';
-import { SHA256Hash } from './dto/hashes';
 
 const locales: LocaleType[] = await LocaleType.all_cases();
 
@@ -24,4 +24,4 @@ Object.values(URLType).forEach(async (url: URLType) => {
 });
 
 // SHA256Hashの出力
-console.log(await SHA256Hash.write())
+console.log(await SHA256Hash.write());
