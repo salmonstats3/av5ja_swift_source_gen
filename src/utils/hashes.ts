@@ -2,7 +2,7 @@ import camelCase from 'camelcase';
 import dayjs from 'dayjs';
 import fetch from 'node-fetch';
 
-import { createFile } from '../utils/revision';
+import { createFile } from './revision';
 
 class Hash {
   id: string;

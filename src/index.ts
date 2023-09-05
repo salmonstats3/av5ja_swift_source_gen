@@ -1,4 +1,4 @@
-import { SHA256Hash } from './dto/hashes';
+import { SHA256Hash } from './utils/hashes';
 import { EnumURLType } from './dto/internal_type';
 import { LocaleType } from './dto/locale_type';
 import { Translation } from './dto/translation';
