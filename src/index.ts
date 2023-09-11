@@ -1,9 +1,9 @@
-import { SHA256Hash } from './utils/hashes';
 import { EnumURLType } from './dto/internal_type';
 import { LocaleType } from './dto/locale_type';
 import { Translation } from './dto/translation';
 import { Version, URLType } from './dto/urls';
-import { OutputType, SwiftEnumWriter } from './utils/enum';
+import { SwiftEnumWriter } from './utils/enum';
+import { SHA256Hash } from './utils/hashes';
 
 const locales: LocaleType[] = await LocaleType.all_cases();
 
@@ -15,12 +15,10 @@ locales.forEach(async (locale: LocaleType) => {
 
 // Enumの出力
 Object.values(URLType).forEach(async (url: URLType) => {
-  const data: EnumURLType = await EnumURLType.from(url, Version.V400);
+  const data: EnumURLType = await EnumURLType.from(url, Version.V500);
   const writer = new SwiftEnumWriter(data);
 
-  Object.values(OutputType).forEach((type) => {
-    writer.write(type);
-  });
+  writer.write();
 });
 
 // SHA256Hashの出力

@@ -27,23 +27,18 @@ export const Version = {
   V300: '300',
   V310: '310',
   V400: '400',
+  V410: '410',
+  V500: '500',
 } as const;
 
 export const URLType = {
   BadgeInfo: 'BadgeInfo.json',
-
   CoopEnemyInfo: 'CoopEnemyInfo.json',
-
   CoopSkinInfo: 'CoopSkinInfo.json',
-
   GearInfoClothes: 'GearInfoClothes.json',
-
   GearInfoHead: 'GearInfoHead.json',
-
   GearInfoShoes: 'GearInfoShoes.json',
-
   NamePlateBgInfo: 'NamePlateBgInfo.json',
-
   WeaponInfoMain: 'WeaponInfoMain.json',
   // WeaponInfoSub: "WeaponInfoSub.json",
   WeaponInfoSpecial: 'WeaponInfoSpecial.json',

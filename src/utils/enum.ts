@@ -35,48 +35,77 @@ export class SwiftEnumWriter {
     return headers;
   }
 
-  private body(output: OutputType): string[] {
+  private bulid_body_id(): string[] {
+    const bodies: string[] = [
+      `\tenum Id: Int, CaseIterable, Identifiable, Codable {`,
+      `\t\tpublic var id: Int { rawValue }`,
+      '',
+    ];
+    this.values.forEach((value) => {
+      bodies.push(`\t\tcase ${value.row_id.replace(/_/g, '')} = ${value.id}`);
+    });
+    bodies.push('\t}');
+    return bodies;
+  }
+
+  private bulid_body_hash(): string[] {
+    const bodies: string[] = [
+      `\tenum Hash: String, CaseIterable, Identifiable, Codable {`,
+      `\t\tpublic var id: String { rawValue }`,
+      '',
+    ];
+    this.values.forEach((value) => {
+      bodies.push(`\t\tcase ${value.row_id.replace(/_/g, '')} = "${value.hash}"`);
+    });
+    bodies.push('\t}');
+    return bodies;
+  }
+
+  private build_body(): string[] {
     const class_name: string = this.type.split('.')[0];
 
-    const bodies: string[] = (() => {
-      if (output === OutputType.Key) {
-        return [
-          `public enum ${class_name}Key: String, UnsafeRawRepresentable {`,
-          `    public static var defaultValue: Self = .${this.values[0].row_id.replace(/_/g, '')}`,
-          `    public var id: Int { ${class_name}Id.allCases[${class_name}Key.allCases.firstIndex(of: self) ?? 0].rawValue }`,
-          '',
-        ];
-      } else {
-        return [
-          `public enum ${class_name}Id: Int, UnsafeRawRepresentable {`,
-          `    public static var defaultValue: Self = .${this.values[0].row_id.replace(/_/g, '')}`,
-          `    public var id: Int { rawValue }`,
-          '',
-        ];
-      }
-    })();
-
+    let bodies: string[] = [
+      `public enum ${class_name}: IdHash {`,
+      `\tpublic var id: Int { Self.Id.allCases[index].rawValue }`,
+      `\tpublic var hash: String { Self.Hash.allCases[index].rawValue }`,
+      '',
+      '\tpublic init?(id rawValue: Int) {',
+      '\t\tguard let index: Int = Self.Id.allCases.firstIndex(where: { $0.rawValue == rawValue }) else {',
+      '\t\t\treturn nil',
+      '\t\t}',
+      '\t\tself = Self.allCases[index]',
+      '\t}',
+      '',
+      '\tpublic init?(hash rawValue: String) {',
+      '\t\tguard let index: Int = Self.Hash.allCases.firstIndex(where: { $0.rawValue == rawValue }) else {',
+      '\t\t\treturn nil',
+      '\t\t}',
+      '\t\tself = Self.allCases[index]',
+      '\t}',
+      '',
+    ];
+    // Enum Value
     this.values.forEach((value) => {
       if (value.label !== undefined) {
-        bodies.push(`    ///  ${value.label}`);
+        bodies.push(`\t///  ${value.label}`);
       }
-      if (output === OutputType.Key) {
-        bodies.push(`    case ${value.row_id.replace(/_/g, '')} = "${value.hash}"`);
-      } else {
-        bodies.push(`    case ${value.row_id.replace(/_/g, '')} = ${value.id}`);
-      }
+      bodies.push(`\tcase ${value.row_id.replace(/_/g, '')}`);
     });
+    bodies.push('');
+    bodies = bodies.concat(this.bulid_body_id());
+    bodies.push('');
+    bodies = bodies.concat(this.bulid_body_hash());
     bodies.push('}');
     return bodies;
   }
 
-  private source(output: OutputType): string {
-    return this.header.concat(this.body(output)).join('\n');
+  private build_source(): string {
+    return this.header.concat(this.build_body()).join('\n');
   }
 
-  write(output: OutputType): void {
-    const context: string = this.source(output);
-    const file_name = `sources/${output}s/${this.type.split('.')[0]}${output}.swift`;
+  write(): void {
+    const context: string = this.build_source();
+    const file_name = `sources/Enums/${this.type.split('.')[0]}.swift`;
     createFile(context, file_name);
   }
 
