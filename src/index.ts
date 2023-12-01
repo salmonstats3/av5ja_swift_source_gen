@@ -22,4 +22,4 @@ Object.values(URLType).forEach(async (url: URLType) => {
 });
 
 // SHA256Hashの出力
-console.log(await SHA256Hash.write());
+await SHA256Hash.write();
