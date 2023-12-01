@@ -1,0 +1,682 @@
+/// 鐵球魚
+"SakeArtillery" = "鐵球魚";
+/// 泥鮭魚
+"SakeBigMouth" = "泥鮭魚";
+/// 泥鮭魚
+"SakeBigMouthGold" = "泥鮭魚";
+/// 直升機鮭魚
+"SakeCopter" = "直升機鮭魚";
+/// 潛水魚
+"SakeDolphin" = "潛水魚";
+/// 拾蛋魚
+"SakeFlyBagman" = "拾蛋魚";
+/// 巨顎
+"SakeJaw" = "巨顎";
+/// 柱魚
+"SakePillar" = "柱魚";
+/// 辰龍
+"SakeRope" = "辰龍";
+/// 鍋蓋魚
+"SakeSaucer" = "鍋蓋魚";
+/// 鼴鼠魚
+"Sakediver" = "鼴鼠魚";
+/// 烤架魚
+"Sakedozer" = "烤架魚";
+/// 炸彈魚
+"SakelienBomber" = "炸彈魚";
+/// 墊肩飛魚
+"SakelienCupTwins" = "墊肩飛魚";
+/// 橫綱
+"SakelienGiant" = "橫綱";
+/// 金鮭魚
+"SakelienGolden" = "金鮭魚";
+/// 大胖魚
+"SakelienLarge" = "大胖魚";
+/// 鐵板魚
+"SakelienShield" = "鐵板魚";
+/// 小鮭魚
+"SakelienSmall" = "小鮭魚";
+/// 蛇魚
+"SakelienSnake" = "蛇魚";
+/// 鮭魚
+"SakelienStandard" = "鮭魚";
+/// 高塔魚
+"SakelienTower" = "高塔魚";
+/// 蝙蝠魚
+"Sakerocket" = "蝙蝠魚";
+/// 新手
+"Grade00" = "新手";
+/// 半吊子
+"Grade01" = "半吊子";
+/// 獨當一面
+"Grade02" = "獨當一面";
+/// 熟練
+"Grade03" = "熟練";
+/// 達人
+"Grade04" = "達人";
+/// 達人+1
+"Grade05" = "達人+1";
+/// 達人+2
+"Grade06" = "達人+2";
+/// 達人+3
+"Grade07" = "達人+3";
+/// 傳說
+"Grade08" = "傳說";
+/// 打工連身工作服 橘色
+"Cop001" = "打工連身工作服 橘色";
+/// 打工連身工作服 綠色
+"Cop002" = "打工連身工作服 綠色";
+/// 打工連身工作服 黃色
+"Cop003" = "打工連身工作服 黃色";
+/// 打工連身工作服 粉紅色
+"Cop004" = "打工連身工作服 粉紅色";
+/// 打工連身工作服 藍色
+"Cop005" = "打工連身工作服 藍色";
+/// 打工連身工作服 黑色
+"Cop006" = "打工連身工作服 黑色";
+/// 打工連身工作服 白色
+"Cop007" = "打工連身工作服 白色";
+/// 打工防水衣 橘色
+"Cop008" = "打工防水衣 橘色";
+/// 打工防水衣 黑色
+"Cop009" = "打工防水衣 黑色";
+/// 打工防水衣 黃色
+"Cop010" = "打工防水衣 黃色";
+/// 打工防水衣 棕色
+"Cop011" = "打工防水衣 棕色";
+/// 打工連身工作服 點點
+"Cop012" = "打工連身工作服 點點";
+/// 打工連身工作服 迷彩
+"Cop013" = "打工連身工作服 迷彩";
+/// 打工連身工作服 錦鯉
+"Cop014" = "打工連身工作服 錦鯉";
+/// 醋飯海洋世界
+"Carousel" = "醋飯海洋世界";
+/// 魚露遺跡
+"Factory" = "魚露遺跡";
+/// 塔拉波特購物公園
+"Section" = "塔拉波特購物公園";
+/// 麥年海洋發電所
+"Shakedent" = "麥年海洋發電所";
+/// 生筋子系統交流道遺址
+"Shakehighway" = "生筋子系統交流道遺址";
+/// 時不知鮭煙燻工房
+"Shakelift" = "時不知鮭煙燻工房";
+/// 漂浮落難船
+"Shakeship" = "漂浮落難船";
+/// 新卷堡
+"Shakespiral" = "新卷堡";
+/// 鮭壩
+"Shakeup" = "鮭壩";
+/// 竹蟶疏洪道
+"Temple" = "竹蟶疏洪道";
+/// 新卷堡
+"Tutorial" = "新卷堡";
+/// ？？？
+"Unknown" = "？？？";
+/// 海女美術大學
+"Upland" = "海女美術大學";
+/// 烤架魚出動
+"CoopEventDozer" = "烤架魚出動";
+/// 霧
+"CoopEventFog" = "霧";
+/// 尋找金鮭魚
+"CoopEventGeyser" = "尋找金鮭魚";
+/// 走私魚來襲
+"CoopEventHakobiya" = "走私魚來襲";
+/// 大胖魚大量出現
+"CoopEventMissile" = "大胖魚大量出現";
+/// 巨型龍捲風
+"CoopEventRelay" = "巨型龍捲風";
+/// 狂潮
+"CoopEventRush" = "狂潮";
+/// 泥鮭魚噴發
+"CoopEventTamaire" = "泥鮭魚噴發";
+/// 打工劇本
+"CoopScenario" = "打工劇本";
+/// 大賽活動用的打工劇本
+"CoopScenarioTournament" = "大賽活動用的打工劇本";
+/// 頭目鮭魚
+"SakeBigBoss" = "頭目鮭魚";
+/// 關於
+"CommonAbout" = "關於";
+/// 實際的
+"RecordActualValue" = "實際的";
+/// 外觀
+"CommonAppearances" = "外觀";
+/// 應用程式
+"CommonApplication" = "應用程式";
+/// 平均
+"RecordAverageScore" = "平均";
+/// 備份
+"CommonBackupResults" = "備份";
+/// 壓縮（ZIP）
+"CommonBackupCompress" = "壓縮（ZIP）";
+/// 備份資料庫
+"CommonBackupMessage" = "備份資料庫";
+/// 純文字（JSON）
+"CommonBackupPlain" = "純文字（JSON）";
+/// 信用
+"CommonAppCredit" = "信用";
+/// 暗色模式
+"CommonDarkMode" = "暗色模式";
+/// 資料管理
+"CommonDataManagement" = "資料管理";
+/// 救援計數
+"CoopHistoryDeathCount" = "救援計數";
+/// 擊敗計數
+"CoopHistoryDefeatedCount" = "擊敗計數";
+/// 預估
+"CoopHistoryEstimatedValue" = "預估";
+/// 清除比率
+"CoopHistoryEventClearRatio" = "清除比率";
+/// 事件頻率
+"CoopHistoryEventFrequency" = "事件頻率";
+/// 常見問題
+"CommonFaq" = "常見問題";
+/// 遊戲模式
+"CommonGamingMode" = "遊戲模式";
+/// 成績
+"CoopHistoryGradeId" = "成績";
+/// 成績點數
+"CoopHistoryGradePoint" = "成績點數";
+/// 最高的
+"CoopHistoryHighestRecord" = "最高的";
+/// SplatNet2
+"CommonIkaring2" = "SplatNet2";
+/// 無效的
+"CommonInvalid" = "無效的";
+/// 語言
+"CommonLanguages" = "語言";
+/// 傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。
+"CommonShareLogMessage" = "傳送日誌給開發人員。當發生錯誤時，傳送日誌文件將有助於開發人員識別和修正錯誤的原因。日誌文件不包含任何個人身份識別信息。";
+/// 分享日誌
+"CommonShareLog" = "分享日誌";
+/// 日誌文件
+"CommonLogSize" = "日誌文件";
+/// 我的頁面
+"CommonMyPage" = "我的頁面";
+/// 組
+"CoopHistoryPlayerCrew" = "組";
+/// 您
+"CoopHistoryPlayerYou" = "您";
+/// 隱私政策
+"CommonPrivacyPolicy" = "隱私政策";
+/// 表格
+"CommonRequestForm" = "表格";
+/// 錯誤
+"CommonRequestFormBug" = "錯誤";
+/// 內容
+"CommonRequestFormContent" = "內容";
+/// 增強
+"CommonRequestFormEnhancement" = "增強";
+/// 功能
+"CommonRequestFormFeature" = "功能";
+/// 標題
+"CommonRequestFormTitle" = "標題";
+/// 類型
+"CommonRequestFormType" = "類型";
+/// 提交
+"CommonRequsetFormSubmit" = "提交";
+/// 還原
+"CommonRestore" = "還原";
+/// 在「檔案」應用程式中選擇要還原的檔案。
+"CommonRestoreMessage" = "在「檔案」應用程式中選擇要還原的檔案。";
+/// 結果計數
+"CoopHistoryResultsCount" = "結果計數";
+/// 除錯
+"CommonRoleDebuger" = "除錯";
+/// 開發者
+"CommonRoleDeveloper" = "開發者";
+/// 測試者
+"CommonRoleTester" = "測試者";
+/// 翻譯者
+"CommonRoleTranslator" = "翻譯者";
+/// 儲存成功
+"CommonSaveToPhotoLibrary" = "儲存成功";
+/// 同步排程
+"CommonScheduleSync" = "同步排程";
+/// 從伺服器檢索排程。
+"CommonScheduleSyncMessage" = "從伺服器檢索排程。";
+/// 登入
+"CommonSignIn" = "登入";
+/// 登出
+"CommonSignOut" = "登出";
+/// 登出成功
+"CommonSignOutSuccessfully" = "登出成功";
+/// 取消連結任天堂Switch帳戶。
+"CommonSignOutMessage" = "取消連結任天堂Switch帳戶。";
+/// 原始碼
+"CommonSourceCode" = "原始碼";
+/// 供應比率
+"CoopHistorySuppliedRatio" = "供應比率";
+/// 需要應用程式更新
+"CommonUpdateRequired" = "需要應用程式更新";
+/// 使用者資料
+"CommonUserData" = "使用者資料";
+/// 有效的
+"CommonValid" = "有效的";
+/// 版本
+"CommonAppVersion" = "版本";
+/// 清除日誌
+"CommonWipeLog" = "清除日誌";
+/// 清除所有日誌。
+"CommonWipeLogMessage" = "清除所有日誌。";
+/// 清除結果
+"CommonWipeResults" = "清除結果";
+/// 清除所有資料。
+"CommonWipeResultsMessage" = "清除所有資料。";
+/// 撰寫評論
+"CommonWriteReview" = "撰寫評論";
+/// 整體
+"CoopHistoryOverallRecord" = "整體";
+/// 金蛋
+"CommonGoldenEggs" = "金蛋";
+/// 能量蛋
+"CommonPowerEggs" = "能量蛋";
+/// 概述
+"CommonOverview" = "概述";
+/// zh-TW
+"CommonLocale" = "zh-TW";
+/// 2
+"CommonLanguageCode" = "2";
+/// 資料庫
+"CommonDatabase" = "資料庫";
+/// X-ProductVersion
+"CommonXproductVersion" = "X-ProductVersion";
+/// X-WebViewVer
+"CommonXwebViewVer" = "X-WebViewVer";
+/// 上傳
+"CommonUpload" = "上傳";
+/// 開發者
+"CommonCreditDevelop" = "開發者";
+/// 測試者
+"CommonCreditTest" = "測試者";
+/// UI/UX設計
+"CommonCreditDesign" = "UI/UX設計";
+/// 團隊點數卡
+"CoopHistoryTeamPointCard" = "團隊點數卡";
+/// 使用預估值
+"CoopHistoryUseEstimatedValue" = "使用預估值";
+/// 使用 Safari 的身份驗證
+"CommonUseSecureSession" = "使用 Safari 的身份驗證";
+/// 獎勵
+"CommonCheckInReward" = "獎勵";
+/// 掃描QR碼獲取所有獎勵。
+"CommonGetCheckInReward" = "掃描QR碼獲取所有獎勵。";
+/// 團隊
+"CoopHistoryTeamResult" = "團隊";
+/// 您
+"CoopHistoryPlayerResult" = "您";
+/// 船員的平均數
+"CoopHistoryCrewAvgResult" = "船員的平均數";
+/// 船員
+"CoopHistoryCrewResult" = "船員";
+/// 海浪
+"CoopHistoryWaveResult" = "海浪";
+/// 最高
+"CoopRecordHighestScore" = "最高";
+/// 平均
+"CoopRecordAverageScore" = "平均";
+/// 您必須更新到iOS 16或更高版本才能使用此功能
+"CommonRequirediOs16" = "您必須更新到iOS 16或更高版本才能使用此功能";
+/// 登錄 Nintendo 帳戶才能使用此應用程式
+"CommonRequiredSignIn" = "登錄 Nintendo 帳戶才能使用此應用程式";
+/// 成功還原結果
+"CommonRestoreSuccessMessage" = "成功還原結果";
+/// 還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。
+"CommonRestoreFailureMessage" = "還原結果失敗。不支援的格式或檔案簽章不符合，因為檔案已被篡改。";
+/// 結果
+"CommonResultsCount" = "結果";
+/// 開發者的回應
+"CommonDeveloperAnswer" = "開發者的回應";
+/// 無法恢復以不支援的版本備份的結果
+"CommonMinimumVersion" = "無法恢復以不支援的版本備份的結果";
+/// 由於備份簽名不匹配，無法恢復。結果可能已被篡改
+"ErrorInvalidSignature" = "由於備份簽名不匹配，無法恢復。結果可能已被篡改";
+/// 取決於設備設置
+"CommonUseSystemTheme" = "取決於設備設置";
+/// 許可證
+"CommonLicense" = "許可證";
+/// yyyy M/d HH:mm
+"DateTimeYearFormat" = "yyyy M/d HH:mm";
+/// M/d HH:mm
+"DateTimeFormat" = "M/d HH:mm";
+/// COMPLETE!
+"CoopHistoryRandomComplete" = "COMPLETE!";
+/// -
+"WaterLevels" = "-";
+/// 狂潮
+"Rush" = "狂潮";
+/// 寻找金鲑鱼
+"GoldieSeeking" = "寻找金鲑鱼";
+/// 烤架鱼进发
+"Griller" = "烤架鱼进发";
+/// 走私鱼来袭
+"TheMothership" = "走私鱼来袭";
+/// 雾
+"Fog" = "雾";
+/// 大胖鱼大量出现
+"CohockCharge" = "大胖鱼大量出现";
+/// 巨型龙卷风
+"GiantTornado" = "巨型龙卷风";
+/// 泥鲑鱼喷发
+"MudmouthEruptions" = "泥鲑鱼喷发";
+/// 取消
+"CommonCancel" = "取消";
+/// 真格蛤蜊
+"CommonClamBlitz" = "真格蛤蜊";
+/// 關閉
+"CommonClose" = "關閉";
+/// 
+"CommonColonRule" = "";
+/// 大型跑
+"CommonCoopBigRun" = "大型跑";
+/// 頭目隨機
+"CommonCoopBossRandom" = "頭目隨機";
+/// ？
+"CommonCoopBossRandomSign" = "？";
+/// 團隊打工競賽
+"CommonCoopTeamContest" = "團隊打工競賽";
+/// QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+"CommonCopyrightQrCode" = "QR Code is a registered trademark of DENSO WAVE INCORPORATED.";
+/// 確定
+"CommonDecide" = "確定";
+/// 下載
+"CommonDownload" = "下載";
+/// 結束
+"CommonEnd" = "結束";
+/// 問號
+"CommonGearPowerBlank" = "問號";
+/// 主頁
+"CommonHome" = "主頁";
+/// 魷魚圈 3
+"CommonIkaring3" = "魷魚圈 3";
+/// 載入中
+"CommonNowLoading" = "載入中";
+/// 下拉更新
+"CommonPullToRefresh" = "下拉更新";
+/// 真格魚虎對戰
+"CommonRainmaker" = "真格魚虎對戰";
+/// 分享
+"CommonShare" = "分享";
+/// 真格區域
+"CommonSplatZones" = "真格區域";
+/// 大賽支援助手
+"CommonTournamentManager" = "大賽支援助手";
+/// 真格塔樓
+"CommonTowerControl" = "真格塔樓";
+/// 三色奪寶攻擊
+"CommonTricolor" = "三色奪寶攻擊";
+/// 三色奪寶比賽
+"CommonTricolorMatch" = "三色奪寶比賽";
+/// 占地對戰
+"CommonTurfWar" = "占地對戰";
+/// 問號
+"CommonWpnNotfound" = "問號";
+/// 每個班次的打工次數不包括因連線中斷等理由而中斷的打工。
+"CoopHistoryAnnotation01" = "每個班次的打工次數不包括因連線中斷等理由而中斷的打工。";
+/// 出現數
+"CoopHistoryAvailable" = "出現數";
+/// 已出現的頭目鮭魚
+"CoopHistoryAvailableBoss" = "已出現的頭目鮭魚";
+/// 平均完成WAVE數
+"CoopHistoryAverageClearWaves" = "平均完成WAVE數";
+/// 大型跑
+"CoopHistoryBigrun" = "大型跑";
+/// 銅
+"CoopHistoryBigrunBronze" = "銅";
+/// 金
+"CoopHistoryBigrunGold" = "金";
+/// 銀
+"CoopHistoryBigrunSilver" = "銀";
+/// 完成獎勵
+"CoopHistoryBonus" = "完成獎勵";
+/// 頭目鮭魚出現！
+"CoopHistoryBossAvailable" = "頭目鮭魚出現！";
+/// Clear!!
+"CoopHistoryClear" = "Clear!!";
+/// 危險度
+"CoopHistoryDangerRatio" = "危險度";
+/// 擊倒頭目鮭魚！
+"CoopHistoryDefeatBoss" = "擊倒頭目鮭魚！";
+/// 已擊倒的頭目鮭魚
+"CoopHistoryDefeatBossCount" = "已擊倒的頭目鮭魚";
+/// 成功擊倒！
+"CoopHistoryDefeated" = "成功擊倒！";
+/// 已擊倒的巨大鮭魚
+"CoopHistoryDefeatedEnemies" = "已擊倒的巨大鮭魚";
+/// ※括號內的數字為自己擊倒的數量
+"CoopHistoryDefeatedEnemiesGuide" = "※括號內的數字為自己擊倒的數量";
+/// 已收集的鮭魚卵
+"CoopHistoryDeliverCount" = "已收集的鮭魚卵";
+/// 巨大鮭魚
+"CoopHistoryEnemy" = "巨大鮭魚";
+/// EX-WAVE
+"CoopHistoryExWave" = "EX-WAVE";
+/// Failure
+"CoopHistoryFailure" = "Failure";
+/// GJ！
+"CoopHistoryGj" = "GJ！";
+/// 返回打工記錄一覽
+"CoopHistoryGoToStats" = "返回打工記錄一覽";
+/// 已收集的金鮭魚卵
+"CoopHistoryGoldenDeliverCount" = "已收集的金鮭魚卵";
+/// 最高分數
+"CoopHistoryHighestScore" = "最高分數";
+/// 打工記錄
+"CoopHistoryHistory" = "打工記錄";
+/// 獲得點數
+"CoopHistoryJobPoint" = "獲得點數";
+/// 評價倍率
+"CoopHistoryJobRatio" = "評價倍率";
+/// 熊先生集點卡
+"CoopHistoryKumaPointCard" = "熊先生集點卡";
+/// 前往最新打工
+"CoopHistoryLatest" = "前往最新打工";
+/// 現有的期間限定點數
+"CoopHistoryLimitedPoint" = "現有的期間限定點數";
+/// 本月的裝備
+"CoopHistoryMonthlyReward" = "本月的裝備";
+/// 下一場打工
+"CoopHistoryNext" = "下一場打工";
+/// NG
+"CoopHistoryNg" = "NG";
+/// 沒有打工記錄
+"CoopHistoryNoData" = "沒有打工記錄";
+/// 無法顯示打工記錄
+"CoopHistoryNotAvailable" = "無法顯示打工記錄";
+/// 可瀏覽的打工記錄僅限最新的50戰
+"CoopHistoryNotAvailableDescription" = "可瀏覽的打工記錄僅限最新的50戰";
+/// 擊倒失敗……
+"CoopHistoryNotDefeated" = "擊倒失敗……";
+/// p
+"CoopHistoryP" = "p";
+/// 打工次數
+"CoopHistoryPlayCount" = "打工次數";
+/// 場打工
+"CoopHistoryPlayCountBySchedule" = "場打工";
+/// 上一場打工
+"CoopHistoryPrevious" = "上一場打工";
+/// 私人
+"CoopHistoryPrivate" = "私人";
+/// 招募員工
+"CoopHistoryRecruit" = "招募員工";
+/// 簡單
+"CoopHistoryRecruitTag1" = "簡單";
+/// 收集鮭魚卵
+"CoopHistoryRecruitTag2" = "收集鮭魚卵";
+/// ～穿上超魷型的制服收集鮭魚卵～
+"CoopHistoryRecruitTitle" = "～穿上超魷型的制服收集鮭魚卵～";
+/// 一般打工
+"CoopHistoryRegular" = "一般打工";
+/// 現有點數
+"CoopHistoryRegularPoint" = "現有點數";
+/// 救援次數
+"CoopHistoryRescueCount" = "救援次數";
+/// 被救助的次數
+"CoopHistoryRescuedCount" = "被救助的次數";
+/// 鱗片
+"CoopHistoryScale" = "鱗片";
+/// 銅鱗片
+"CoopHistoryScaleBronze" = "銅鱗片";
+/// 金鱗片
+"CoopHistoryScaleGold" = "金鱗片";
+/// 銀鱗片
+"CoopHistoryScaleSilver" = "銀鱗片";
+/// 打工分數
+"CoopHistoryScore" = "打工分數";
+/// 查看時間表
+"CoopHistorySeeSchedule" = "查看時間表";
+/// 頭目槽
+"CoopHistorySmellMeter" = "頭目槽";
+/// 派發武器
+"CoopHistorySupplyWeapon" = "派發武器";
+/// 團隊打工競賽
+"CoopHistoryTeamContest" = "團隊打工競賽";
+/// SALMON RUN
+"CoopHistoryTitle" = "SALMON RUN";
+/// 累計點數
+"CoopHistoryTotalPoint" = "累計點數";
+/// WAVE
+"CoopHistoryWave" = "WAVE";
+/// 乾潮
+"CoopHistoryWaveLevel0" = "乾潮";
+/// 普通
+"CoopHistoryWaveLevel1" = "普通";
+/// 滿潮
+"CoopHistoryWaveLevel2" = "滿潮";
+/// 返回主頁
+"ErrorBackToHome" = "返回主頁";
+/// 目前無法使用，請稍待片刻。
+"ErrorCurrentlyNotAvailable" = "目前無法使用，請稍待片刻。";
+/// 錯誤
+"ErrorError" = "錯誤";
+/// 發生錯誤。
+"ErrorErrorOccurred" = "發生錯誤。";
+/// 讀取失敗。
+"ErrorErrorReopen" = "讀取失敗。";
+/// 目前伺服器正在維護中，請稍後再重新連接。
+"ErrorMaintenanceDescription" = "目前伺服器正在維護中，請稍後再重新連接。";
+/// 請稍待片刻
+"ErrorMaintenanceTitle" = "請稍待片刻";
+/// 讀取失敗，請在良好的網路環境下重新再試一次。
+"ErrorNetworkNotAvailable" = "讀取失敗，請在良好的網路環境下重新再試一次。";
+/// 重新讀取
+"ErrorReload" = "重新讀取";
+/// 最後遊玩時間
+"RecordLatestPlayed" = "最後遊玩時間";
+/// 常用武器
+"RecordLatestUsed" = "常用武器";
+/// 主要武器
+"RecordMain" = "主要武器";
+/// 離熟練度提升仍需
+"RecordNextSkillLevel" = "離熟練度提升仍需";
+/// 熟練度
+"RecordSkillLevel" = "熟練度";
+/// 排序
+"RecordSort" = "排序";
+/// 特殊武器
+"RecordSpecial" = "特殊武器";
+/// 場地記錄
+"RecordStageRecord" = "場地記錄";
+/// 場地
+"RecordStageRecordAppName" = "場地";
+/// 次要武器
+"RecordSub" = "次要武器";
+/// 記錄
+"RecordTitle" = "記錄";
+/// p
+"RecordTotalTurfPoint" = "p";
+/// 塗墨點數
+"RecordTurfPoint" = "塗墨點數";
+/// 未遊玩的場地
+"RecordUnplayedStages" = "未遊玩的場地";
+/// 未持有的武器
+"RecordUnusedWeapons" = "未持有的武器";
+/// 狀態值
+"RecordVibes" = "狀態值";
+/// 武器記錄
+"RecordWeaponRecord" = "武器記錄";
+/// 武器
+"RecordWeaponRecordAppName" = "武器";
+/// 獲勝數
+"RecordWinCount" = "獲勝數";
+/// %
+"RecordWinRatio" = "%";
+/// 關於發送使用資料
+"SettingsAboutSendingUsageData" = "關於發送使用資料";
+/// 使用《魷魚圈 3》時，將適用「Nintendo Switch Online」應用程式的「關於送出使用資料」設定。此設定隨時都可以進行更改。
+"SettingsAboutSendingUsageDataDescription" = "使用《魷魚圈 3》時，將適用「Nintendo Switch Online」應用程式的「關於送出使用資料」設定。此設定隨時都可以進行更改。";
+/// 著作權聲明
+"SettingsAcknowledgements" = "著作權聲明";
+/// 設定
+"SettingsAppName" = "設定";
+/// 工作人員
+"SettingsCredits" = "工作人員";
+/// 前往擴充票購買網站
+"SettingsExpansionPass" = "前往擴充票購買網站";
+/// 設定
+"SettingsTitle" = "設定";
+/// 蠻頹比賽
+"StageScheduleBankara" = "蠻頹比賽";
+/// 開放
+"StageScheduleBankaraOpen" = "開放";
+/// 挑戰
+"StageScheduleBankaraOpenChallenge" = "挑戰";
+/// SALMON RUN
+"StageScheduleCoop" = "SALMON RUN";
+/// 活動比賽
+"StageScheduleEvent" = "活動比賽";
+/// 現在
+"StageScheduleEventCurrentSchedule" = "現在";
+/// 下下次
+"StageScheduleEventFuture" = "下下次";
+/// 舉行中！！
+"StageScheduleEventHolding" = "舉行中！！";
+/// 下次
+"StageScheduleEventNext" = "下次";
+/// 下一場
+"StageScheduleEventNextSchedule" = "下一場";
+/// 時間表未定
+"StageScheduleEventNoData" = "時間表未定";
+/// ？？？？？
+"StageScheduleEventUnknownData" = "？？？？？";
+/// 下下次
+"StageScheduleFuture" = "下下次";
+/// 將開啟網路瀏覽器
+"StageScheduleGuideOpenBrowser" = "將開啟網路瀏覽器";
+/// 下次
+"StageScheduleNext" = "下次";
+/// 大型跑接近中！
+"StageScheduleNoticeBigrun" = "大型跑接近中！";
+/// 團隊打工競賽舉行預告！
+"StageScheduleNoticeLimited" = "團隊打工競賽舉行預告！";
+/// 祭典比賽舉行中！
+"StageScheduleNowClosed" = "祭典比賽舉行中！";
+/// 開放！
+"StageScheduleOpen" = "開放！";
+/// 大型跑發生中！
+"StageScheduleOpenBigrun" = "大型跑發生中！";
+/// 團隊打工競賽舉行中！
+"StageScheduleOpenLimited" = "團隊打工競賽舉行中！";
+/// 大型跑要來了！！打工大招募
+"StageScheduleRecruit" = "大型跑要來了！！打工大招募";
+/// 團隊打工競賽！大家一起組隊參加吧！
+"StageScheduleRecruitTeamContest" = "團隊打工競賽！大家一起組隊參加吧！";
+/// 一般比賽
+"StageScheduleRegular" = "一般比賽";
+/// 查看規則
+"StageScheduleRules" = "查看規則";
+/// 請從此處確認詳細規則
+"StageScheduleSeeAllRules" = "請從此處確認詳細規則";
+/// 隨機
+"StageScheduleSuppliedWeaponRandom" = "隨機";
+/// 派發武器
+"StageScheduleSuppliedWeapons" = "派發武器";
+/// 時間表
+"StageScheduleTitle" = "時間表";
+/// 個別規則勝率
+"StageScheduleWinRateByRules" = "個別規則勝率";
+/// X比賽
+"StageScheduleXmatch" = "X比賽";

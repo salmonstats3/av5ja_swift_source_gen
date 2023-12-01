@@ -41,7 +41,7 @@ export class SHA256Hash {
         .map((hash) => `\t case ${camelCase(hash.id, { pascalCase: true })} = "${hash.key}"`),
     );
     source.push('}');
-    createFile(source.join('\n'), `sources/SHA256Hash.swift`);
+    createFile(source.join('\n'), `../Sources/SplatNet3/Enum/SHA256Hash.swift`);
   }
 
   private static async get_hash(): Promise<Hash[]> {

@@ -5,6 +5,7 @@ import { Version, URLType } from './dto/urls';
 import { SwiftEnumWriter } from './utils/enum';
 import { SHA256Hash } from './utils/hashes';
 
+console.log('Getting translations from SplatNet3');
 const locales: LocaleType[] = await LocaleType.all_cases();
 
 // 翻訳の出力
@@ -15,7 +16,7 @@ locales.forEach(async (locale: LocaleType) => {
 
 // Enumの出力
 Object.values(URLType).forEach(async (url: URLType) => {
-  const data: EnumURLType = await EnumURLType.from(url, Version.V500);
+  const data: EnumURLType = await EnumURLType.from(url, Version.V600);
   const writer = new SwiftEnumWriter(data);
 
   writer.write();

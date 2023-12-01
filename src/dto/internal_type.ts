@@ -67,6 +67,8 @@ export class CoopEnemyInfo implements InternalType {
         return 23;
       case 'SakeRope':
         return 24;
+      case 'SakeJaw':
+        return 25;
       default:
         return -1;
     }
