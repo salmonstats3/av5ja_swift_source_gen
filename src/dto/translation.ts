@@ -220,7 +220,7 @@ export class Translation {
 
     if (this.id === LocaleId.JPja) {
       const source: string = this.get_source(translation);
-      createFile(source, 'sources/LocalizedType.swift');
+      createFile(source, '../Sources/SplatNet3/Enum/Types/LocalizedType.swift');
     }
   }
 
