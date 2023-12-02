@@ -67,7 +67,7 @@ class TranslationType extends Map<string, string> {
             translations.push(`    /// ${value}`);
             translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Cop_${key}`)}"`);
           }
-        } else if (this.name === 'VSStageKey') {
+        } else if (this.name === 'VsStageKey') {
           translations.push(`    /// ${value}`);
           translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Vss_${key}`)}"`);
         } else {
@@ -116,7 +116,7 @@ export class Translation {
   readonly CoopStageName: TranslationType;
 
   @Expose({ name: 'CommonMsg/VS/VSStageName' })
-  @Transform((param) => new TranslationType(param.value, 'VSStageKey'))
+  @Transform((param) => new TranslationType(param.value, 'VsStageKey'))
   readonly VSStageName: TranslationType;
 
   @Expose({ name: 'CommonMsg/Glossary' })
