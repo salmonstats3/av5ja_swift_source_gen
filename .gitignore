@@ -46,3 +46,10 @@ lerna-debug.log*
 src/locales/*
 sources/**/*.swift
 sources/Resources/*
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
