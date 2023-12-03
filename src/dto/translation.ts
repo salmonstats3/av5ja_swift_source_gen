@@ -196,7 +196,7 @@ export class Translation {
     if (this.id === LocaleId.JPja) {
       // キーファイルの作成
       [this.CoopStageName, this.CoopGrade, this.VSStageName].forEach((translation: TranslationType) => {
-        createFile(translation.source, `../Sources/SplatNet3/Enum/Keys/${translation.name}.swift`);
+        createFile(translation.source, `../Sources/SplatNet3/Enums/IdHash/${translation.name}.swift`);
       });
     }
 
@@ -220,7 +220,7 @@ export class Translation {
 
     if (this.id === LocaleId.JPja) {
       const source: string = this.get_source(translation);
-      createFile(source, '../Sources/SplatNet3/Enum/Types/LocalizedType.swift');
+      createFile(source, '../Sources/SplatNet3/Enums/Types/LocalizedType.swift');
     }
   }
 

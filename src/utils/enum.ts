@@ -105,7 +105,7 @@ export class SwiftEnumWriter {
 
   write(): void {
     const context: string = this.build_source();
-    const file_name = `../Sources/SplatNet3/Enum/Keys/${this.type.split('.')[0]}.swift`;
+    const file_name = `../Sources/SplatNet3/Enums/IdHash/${this.type.split('.')[0]}.swift`;
     createFile(context, file_name);
   }
 
