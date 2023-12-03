@@ -32,7 +32,7 @@ export class SHA256Hash {
       '',
       'import Foundation',
       '',
-      `public enum SHA256Hash: String, CaseIterable, Identifiable {`,
+      `public enum SHA256Hash: String, CaseIterable, Identifiable, Codable {`,
       `    public var id: String { rawValue }`,
       '',
     ].concat(

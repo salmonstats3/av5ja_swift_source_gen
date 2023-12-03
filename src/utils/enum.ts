@@ -37,7 +37,7 @@ export class SwiftEnumWriter {
 
   private bulid_body_id(): string[] {
     const bodies: string[] = [
-      `\tenum Id: Int, CaseIterable, Identifiable, Codable {`,
+      `\tpublic enum Id: Int, CaseIterable, Identifiable, Codable {`,
       `\t\tpublic var id: Int { rawValue }`,
       '',
     ]
@@ -50,7 +50,7 @@ export class SwiftEnumWriter {
 
   private bulid_body_hash(): string[] {
     const bodies: string[] = [
-      `\tenum Hash: String, CaseIterable, Identifiable, Codable {`,
+      `\tpublic enum Hash: String, CaseIterable, Identifiable, Codable {`,
       `\t\tpublic var id: String { rawValue }`,
       '',
     ]
