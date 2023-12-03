@@ -115,5 +115,6 @@ export const createFile = (data: string, filePath: string) => {
       });
       return;
     }
+    console.log('Generating', filePath);
   });
 };

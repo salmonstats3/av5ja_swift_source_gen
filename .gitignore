@@ -45,7 +45,6 @@ lerna-debug.log*
 # Locale
 src/locales/*
 sources/**/*.swift
-sources/Resources/*
 
 # yarn v2
 .yarn/cache

@@ -1,3 +1,18 @@
+InitialSetup:
+  ja: セットアップ中です
+  en-GB: Setup in progress
+  en: Setup in progress
+  de: Einrichtung im Gange
+  es: Instalación en curso
+  es-MX: Instalación en curso
+  fr-CA: Mise en place en cours
+  fr: Mise en place en cours
+  it: Allestimento in corso
+  ko: 설정 진행 중
+  nl: Opstelling bezig
+  ru: Установка в процессе
+  zh-Hant: 設置正在進行中
+  zh-Hans: 设置正在进行中
 CommonAbout:
   ja: About
   en-GB: About

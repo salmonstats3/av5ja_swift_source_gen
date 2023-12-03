@@ -38,6 +38,8 @@ class TranslationType extends Map<string, string> {
       `//  Created by devonly on ${created_at}.`,
       `//  Copyright © ${created_year} Magi, Corporation. All rights reserved.`,
       '//',
+      '//  Generated automatically by SplatNet3Gen, do not edit.',
+      '//',
       '',
       'import Foundation',
       '',
@@ -65,7 +67,7 @@ class TranslationType extends Map<string, string> {
             translations.push(`    /// ${value}`);
             translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Cop_${key}`)}"`);
           }
-        } else if (this.name === 'VSStageKey') {
+        } else if (this.name === 'VsStageKey') {
           translations.push(`    /// ${value}`);
           translations.push(`    case ${key.replace(/_/g, '')} = "${calc_hash(`Vss_${key}`)}"`);
         } else {
@@ -114,7 +116,7 @@ export class Translation {
   readonly CoopStageName: TranslationType;
 
   @Expose({ name: 'CommonMsg/VS/VSStageName' })
-  @Transform((param) => new TranslationType(param.value, 'VSStageKey'))
+  @Transform((param) => new TranslationType(param.value, 'VsStageKey'))
   readonly VSStageName: TranslationType;
 
   @Expose({ name: 'CommonMsg/Glossary' })
@@ -194,7 +196,7 @@ export class Translation {
     if (this.id === LocaleId.JPja) {
       // キーファイルの作成
       [this.CoopStageName, this.CoopGrade, this.VSStageName].forEach((translation: TranslationType) => {
-        createFile(translation.source, `sources/Keys/${translation.name}.swift`);
+        createFile(translation.source, `../Sources/SplatNet3/Enum/Keys/${translation.name}.swift`);
       });
     }
 
@@ -211,11 +213,14 @@ export class Translation {
       'Merged',
     );
     // 翻訳ファイルの作成
-    createFile(translation.translations.join('\n'), `sources/Resources/${this.xcode}.lproj/Localizable.strings`);
+    createFile(
+      translation.translations.join('\n'),
+      `../Sources/SplatNet3/Resources/${this.xcode}.lproj/Localizable.strings`,
+    );
 
     if (this.id === LocaleId.JPja) {
       const source: string = this.get_source(translation);
-      createFile(source, 'sources/LocalizedType.swift');
+      createFile(source, '../Sources/SplatNet3/Enum/Types/LocalizedType.swift');
     }
   }
 
