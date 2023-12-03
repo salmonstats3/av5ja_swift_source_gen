@@ -193,12 +193,13 @@ export class Translation {
    * ソースコードと翻訳ファイルを出力する
    */
   async write(): Promise<void> {
-    if (this.id === LocaleId.JPja) {
-      // キーファイルの作成
-      [this.CoopStageName, this.CoopGrade, this.VSStageName].forEach((translation: TranslationType) => {
-        createFile(translation.source, `../Sources/SplatNet3/Enums/IdHash/${translation.name}.swift`);
-      });
-    }
+    // 6.0.0以降は不要
+    // if (this.id === LocaleId.JPja) {
+    //   // キーファイルの作成
+    //   [this.CoopStageName, this.CoopGrade, this.VSStageName].forEach((translation: TranslationType) => {
+    //     createFile(translation.source, `../Sources/SplatNet3/Enums/IdHash/${translation.name}.swift`);
+    //   });
+    // }
 
     const translation: TranslationType = new TranslationType(
       [
