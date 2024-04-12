@@ -32,6 +32,8 @@ export const Version = {
   V510: '510',
   V520: '520',
   V600: '600',
+  V700: '700',
+  V710: '710',
 } as const
 
 export const URLType = {

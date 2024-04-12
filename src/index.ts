@@ -16,7 +16,7 @@ locales.forEach(async (locale: LocaleType) => {
 
 // Enumの出力
 Object.values(URLType).forEach(async (url: URLType) => {
-  const data: EnumURLType = await EnumURLType.from(url, Version.V600)
+  const data: EnumURLType = await EnumURLType.from(url, Version.V710)
   const writer = new SwiftEnumWriter(data)
 
   writer.write()
