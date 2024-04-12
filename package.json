@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/index.ts",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'",
-    "format:dev": "prettier --check '{src,tests}/**/*.ts'",
-    "lint": "eslint --fix \"{src,test}/**/*.ts\"",
-    "lint:dev": "eslint --max-warnings=0 --ignore-path .gitignore '{src,test}/**/*.{js,ts}'"
+    "dev": "bun run src/index.ts",
+    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,ts}'",
+    "format": "prettier --check '{src,tests}/**/*.ts'",
+    "lint:fix": "eslint --fix \"{src,test}/**/*.ts\"",
+    "lint": "eslint --max-warnings=0 --ignore-path .gitignore '{src,test}/**/*.{js,ts}'",
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "type": "module",
   "dependencies": {
@@ -19,24 +25,26 @@
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "@commitlint/cz-commitlint": "^18.6.0",
     "@types/js-yaml": "^4.0.5",
-    "@typescript-eslint/eslint-plugin": "^5.59.2",
-    "@typescript-eslint/parser": "^5.59.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "camelcase-keys": "^8.0.2",
-    "eslint": "^8.25.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "commitizen": "^4.3.0",
+    "commitlint": "^18.6.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "eslint-plugin-typescript-sort-keys": "^2.1.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-typescript-sort-keys": "^3.1.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^9.0.10",
     "js-yaml": "^4.1.0",
-    "prettier": "^2.8.8",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
-  },
-  "engines": {
-    "node": ">=16.0.0",
-    "yarn": ">=1.22.0"
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.0.0",
+    "typescript": "5.3.3"
   }
 }

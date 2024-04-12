@@ -12,15 +12,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set Node v18.0.0
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.0.0
-
-      - name: Install Yarn
-        run: npm install -g yarn
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
 
       - name: Cache CDK Dependencies
         uses: actions/cache@v3
@@ -29,18 +24,18 @@ jobs:
           cache-name: cache-cdk-dependency
         with:
           path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('bun.lockb') }}
           restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-
 
       - name: Install Dependencies
         # if: ${{ steps.cache_cdk_dependency_id.outputs.cache-hit != 'true' }}
-        run: yarn install
+        run: bun install
 
       - name: Format
-        run: yarn format:dev
+        run: bun format
       
       - name: Lint
-        run: yarn lint:dev
+        run: bun lint 
       
       - name: Build
-        run: yarn dev
+        run: bun dev

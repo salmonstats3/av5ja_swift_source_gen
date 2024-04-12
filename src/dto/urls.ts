@@ -1,5 +1,5 @@
-import { plainToInstance } from 'class-transformer';
-import fetch from 'node-fetch';
+import { plainToInstance } from 'class-transformer'
+import fetch from 'node-fetch'
 
 import {
   BadgeInfo,
@@ -10,11 +10,11 @@ import {
   NamePlateBgInfo,
   WeaponInfoMain,
   WeaponInfoSpecial,
-} from './internal_type';
+} from './internal_type'
 
 const base_url = (version: Version): string => {
-  return `https://leanny.github.io/splat3/data/mush/${version}/`;
-};
+  return `https://leanny.github.io/splat3/data/mush/${version}/`
+}
 
 export const Version = {
   V0: '099',
@@ -32,7 +32,7 @@ export const Version = {
   V510: '510',
   V520: '520',
   V600: '600',
-} as const;
+} as const
 
 export const URLType = {
   BadgeInfo: 'BadgeInfo.json',
@@ -45,11 +45,11 @@ export const URLType = {
   WeaponInfoMain: 'WeaponInfoMain.json',
   // WeaponInfoSub: "WeaponInfoSub.json",
   WeaponInfoSpecial: 'WeaponInfoSpecial.json',
-} as const;
+} as const
 
 export async function request(url: URLType, version: Version): Promise<InternalType[]> {
-  const target_url: string = base_url(version) + url;
-  const response: any[] = (await (await fetch(target_url)).json()) as any[];
+  const target_url: string = base_url(version) + url
+  const response: any[] = (await (await fetch(target_url)).json()) as any[]
   switch (url) {
     case URLType.WeaponInfoMain:
       return [WeaponInfoMain.Dummy, WeaponInfoMain.Random_Gold, WeaponInfoMain.Random_Green]
@@ -62,7 +62,7 @@ export async function request(url: URLType, version: Version): Promise<InternalT
             )
             .filter((item: WeaponInfoMain) => item.for_coop),
         )
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     // case URLType.WeaponInfoSub:
     //   return response
     //     .map((item: any) => plainToInstance(WeaponInfoMain, item, { excludeExtraneousValues: true }))
@@ -74,23 +74,23 @@ export async function request(url: URLType, version: Version): Promise<InternalT
             .map((item: any) => plainToInstance(WeaponInfoSpecial, item, { excludeExtraneousValues: true }))
             .filter((item: WeaponInfoSpecial) => item.for_coop),
         )
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     case URLType.GearInfoHead:
       return response
         .map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true }))
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     case URLType.GearInfoClothes:
       return response
         .map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true }))
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     case URLType.GearInfoShoes:
       return response
         .map((item: any) => plainToInstance(GearInfo, item, { excludeExtraneousValues: true }))
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     case URLType.CoopSkinInfo:
       return response
         .map((item: any) => plainToInstance(CoopSkinInfo, item, { excludeExtraneousValues: true }))
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     case URLType.CoopEnemyInfo:
       return response
         .map((item: any) =>
@@ -99,11 +99,11 @@ export async function request(url: URLType, version: Version): Promise<InternalT
           }),
         )
         .filter((item) => item.id !== -1)
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     case URLType.BadgeInfo:
       return response
         .map((item: any) => plainToInstance(BadgeInfo, item, { excludeExtraneousValues: true }))
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     case URLType.NamePlateBgInfo:
       return response
         .map((item: any) =>
@@ -111,11 +111,11 @@ export async function request(url: URLType, version: Version): Promise<InternalT
             excludeExtraneousValues: true,
           }),
         )
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => a.id - b.id)
     default:
-      throw new Error('Invalid URLType');
+      throw new Error('Invalid URLType')
   }
 }
 
-export type URLType = (typeof URLType)[keyof typeof URLType];
-export type Version = (typeof Version)[keyof typeof Version];
+export type URLType = (typeof URLType)[keyof typeof URLType]
+export type Version = (typeof Version)[keyof typeof Version]
