@@ -26,7 +26,7 @@ export class SwiftEnumWriter {
       `//  Created by tkgstrator on ${created_at}.`,
       `//  Copyright @ ${created_year} Magi, Corporation. All rights reserved.`,
       '//',
-      '//  Generated automatically by SplatNet3Gen, do not edit.',
+      '//  Generated automatically by Generator, do not edit.',
       '//',
       '',
       'import Foundation',
