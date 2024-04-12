@@ -9,7 +9,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
         uses: oven-sh/setup-bun@v1
 
       - name: Cache CDK Dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: cache_cdk_dependency_id
         env:
           cache-name: cache-cdk-dependency
