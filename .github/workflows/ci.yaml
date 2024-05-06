@@ -14,13 +14,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set Node v18.0.0
-        uses: actions/setup-node@v3
+      - name: Set Bun 1.1.7
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18.0.0
-
-      - name: Install Yarn
-        run: npm install -g yarn
+          bun-version: 1.1.7
 
       - name: Cache CDK Dependencies
         uses: actions/cache@v3
@@ -29,18 +26,15 @@ jobs:
           cache-name: cache-cdk-dependency
         with:
           path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('bun.lockb') }}
           restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-
 
       - name: Install Dependencies
         # if: ${{ steps.cache_cdk_dependency_id.outputs.cache-hit != 'true' }}
-        run: yarn install
+        run: bun install 
 
-      - name: Format
-        run: yarn format:dev
-      
-      - name: Lint
-        run: yarn lint:dev
+      - name: Format & Lint
+        run: bun run check 
       
       - name: Build
-        run: yarn dev
+        run: bun run build 
