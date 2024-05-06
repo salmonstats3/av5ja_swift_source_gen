@@ -10,16 +10,15 @@ const locales: LocaleType[] = await LocaleType.all_cases();
 
 // 翻訳の出力
 locales.forEach(async (locale: LocaleType) => {
-	const translation: Translation = await locale.get_translation();
-	translation.write();
+  const translation: Translation = await locale.get_translation();
+  translation.write();
 });
 
 // Enumの出力
 Object.values(URLType).forEach(async (url: URLType) => {
-	const data: EnumURLType = await EnumURLType.from(url, Version.V600);
-	const writer = new SwiftEnumWriter(data);
-
-	writer.write();
+  const data: EnumURLType = await EnumURLType.from(url, Version.V720);
+  const writer = new SwiftEnumWriter(data);
+  writer.write();
 });
 
 // SHA256Hashの出力

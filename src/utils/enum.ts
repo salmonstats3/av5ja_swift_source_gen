@@ -6,115 +6,123 @@ import type { EnumURLType, InternalType } from "@/dto/internal_type";
 import type { URLType } from "@/dto/urls";
 
 export const OutputType = {
-	Id: "Id",
-	Key: "Key",
+  Id: "Id",
+  Key: "Key",
 } as const;
 
 type OutputType = (typeof OutputType)[keyof typeof OutputType];
 
 export class SwiftEnumWriter {
-	readonly type: URLType;
-	readonly values: InternalType[];
+  readonly type: URLType;
+  readonly values: InternalType[];
 
-	private get header(): string[] {
-		const created_at: string = dayjs().format("YYYY/MM/DD");
-		const created_year: string = dayjs().format("YYYY");
-		const headers: string[] = [
-			"//",
-			`//  ${this.type.split(".")[0]}.swift`,
-			"//",
-			`//  Created by tkgstrator on ${created_at}.`,
-			`//  Copyright @ ${created_year} Magi, Corporation. All rights reserved.`,
-			"//",
-			"//  Generated automatically by SplatNet3Gen, do not edit.",
-			"//",
-			"",
-			"import Foundation",
-			"",
-		];
-		return headers;
-	}
+  private get header(): string[] {
+    const created_at: string = dayjs().format("YYYY/MM/DD");
+    const created_year: string = dayjs().format("YYYY");
+    const headers: string[] = [
+      "//",
+      `//  ${this.type.split(".")[0]}.swift`,
+      "//  SP3KeyHash",
+      "//",
+      `//  Created by tkgstrator on ${created_at}.`,
+      `//  Copyright @ ${created_year} Magi, Corporation. All rights reserved.`,
+      "//",
+      "//  Generated automatically by SplatNet3Gen, do not edit.",
+      "//",
+      "",
+      "import Foundation",
+      "",
+    ];
+    return headers;
+  }
 
-	private bulid_body_id(): string[] {
-		const bodies: string[] = [
-			`\tenum Id: Int, CaseIterable, Identifiable, Codable {`,
-			`\t\tpublic var id: Int { rawValue }`,
-			"",
-		];
-		this.values.forEach((value) => {
-			bodies.push(`\t\tcase ${value.row_id.replace(/_/g, "")} = ${value.id}`);
-		});
-		bodies.push("\t}");
-		return bodies;
-	}
+  private build_all_cases(): string[] {
+    return [
+      "\t\tpublic static let allCases: AllCases = [",
+      this.values.map((value) => `\t\t\t.${value.row_id.replace(/_/g, "")},`),
+      "\t\t]",
+      "",
+    ].flat();
+  }
 
-	private bulid_body_hash(): string[] {
-		const bodies: string[] = [
-			`\tenum Hash: String, CaseIterable, Identifiable, Codable {`,
-			`\t\tpublic var id: String { rawValue }`,
-			"",
-		];
-		this.values.forEach((value) => {
-			bodies.push(
-				`\t\tcase ${value.row_id.replace(/_/g, "")} = "${value.hash}"`,
-			);
-		});
-		bodies.push("\t}");
-		return bodies;
-	}
+  private bulid_body_id(): string[] {
+    const bodies: string[] = [
+      `\t// swiftlint:disable:next type_name type_body_length`,
+      `\tpublic enum Id: UndefinedRawRepresentable, InternalCode {`,
+      `\t\tpublic typealias RawValue = Int`,
+      "",
+    ].concat(this.build_all_cases());
+    bodies.push("\t\tpublic var rawValue: RawValue {");
+    bodies.push("\t\t\tswitch self {");
+    this.values.forEach((value) => {
+      bodies.push(`\t\t\tcase .${value.row_id.replace(/_/g, "")}:`);
+      bodies.push(`\t\t\t\treturn ${value.id}`);
+    });
+    bodies.push("\t\t\tcase .Undefined(let rawValue):");
+    bodies.push("\t\t\t\treturn rawValue");
+    bodies.push("\t\t\t}");
+    bodies.push("\t\t}");
+    bodies.push("");
+    this.values.forEach((value) => {
+      bodies.push(`\t\tcase ${value.row_id.replace(/_/g, "")}`);
+    });
+    bodies.push("\t\tcase Undefined(RawValue)");
+    bodies.push("\t}");
+    return bodies;
+  }
 
-	private build_body(): string[] {
-		const class_name: string = this.type.split(".")[0];
+  private bulid_body_hash(): string[] {
+    const bodies: string[] = [
+      `\t// swiftlint:disable:next type_body_length`,
+      `\tpublic enum Key: UndefinedRawRepresentable, HashKey {`,
+      `\t\tpublic typealias RawValue = String`,
+      "",
+    ].concat(this.build_all_cases());
+    bodies.push("\t\tpublic var rawValue: RawValue {");
+    bodies.push("\t\t\tswitch self {");
+    this.values.forEach((value) => {
+      bodies.push(`\t\t\tcase .${value.row_id.replace(/_/g, "")}:`);
+      bodies.push(`\t\t\t\treturn "${value.hash}"`);
+    });
+    bodies.push("\t\t\tcase .Undefined(let rawValue):");
+    bodies.push("\t\t\t\treturn rawValue");
+    bodies.push("\t\t\t}");
+    bodies.push("\t\t}");
+    bodies.push("");
+    this.values.forEach((value) => {
+      bodies.push(`\t\tcase ${value.row_id.replace(/_/g, "")}`);
+    });
+    bodies.push("\t\tcase Undefined(RawValue)");
+    bodies.push("\t}");
+    return bodies;
+  }
 
-		let bodies: string[] = [
-			`public enum ${class_name}: IdHash {`,
-			`\tpublic var id: Int { Self.Id.allCases[index].rawValue }`,
-			`\tpublic var hash: String { Self.Hash.allCases[index].rawValue }`,
-			"",
-			"\tpublic init?(id rawValue: Int) {",
-			"\t\tguard let index: Int = Self.Id.allCases.firstIndex(where: { $0.rawValue == rawValue }) else {",
-			"\t\t\treturn nil",
-			"\t\t}",
-			"\t\tself = Self.allCases[index]",
-			"\t}",
-			"",
-			"\tpublic init?(hash rawValue: String) {",
-			"\t\tguard let index: Int = Self.Hash.allCases.firstIndex(where: { $0.rawValue == rawValue }) else {",
-			"\t\t\treturn nil",
-			"\t\t}",
-			"\t\tself = Self.allCases[index]",
-			"\t}",
-			"",
-		];
-		// Enum Value
-		this.values.forEach((value) => {
-			if (value.label !== undefined) {
-				bodies.push(`\t///  ${value.label}`);
-			}
-			bodies.push(`\tcase ${value.row_id.replace(/_/g, "")}`);
-		});
-		bodies.push("");
-		bodies = bodies.concat(this.bulid_body_id());
-		bodies.push("");
-		bodies = bodies.concat(this.bulid_body_hash());
-		bodies.push("}");
-		return bodies;
-	}
+  private build_body(): string[] {
+    const class_name: string = this.type.split(".")[0];
 
-	private build_source(): string {
-		return this.header.concat(this.build_body()).join("\n");
-	}
+    let bodies: string[] = [
+      "// swiftlint:disable:next type_body_length",
+      `public enum ${class_name}: Compositable {`,
+    ];
+    bodies = bodies.concat(this.bulid_body_hash());
+    bodies.push("");
+    bodies = bodies.concat(this.bulid_body_id());
+    bodies.push("}");
+    return bodies;
+  }
 
-	write(): void {
-		const context: string = this.build_source();
-		const file_name = `../Sources/SplatNet3/Enum/Keys/${
-			this.type.split(".")[0]
-		}.swift`;
-		createFile(context, file_name);
-	}
+  private build_source(): string {
+    return this.header.concat(this.build_body()).join("\n");
+  }
 
-	constructor(type: EnumURLType) {
-		this.type = type.key;
-		this.values = type.values;
-	}
+  write(): void {
+    const context: string = this.build_source();
+    const file_name = `Sources/SplatNet3/Enum/${this.type.split(".")[0]}.swift`;
+    createFile(context, file_name);
+  }
+
+  constructor(type: EnumURLType) {
+    this.type = type.key;
+    this.values = type.values.sort((a: any, b: any) => a.id - b.id);
+  }
 }
